@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name core-cache)(type Legacy)(uri D:/home/fredr/Downloads/atmega2560_core-master/atmega2560_core-master/core-cache.lib)(options "")(descr ""))
+)

@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name TIDA-00746-SchDoc-cache)(type Legacy)(uri ${KIPRJMOD}/PowerSupply/TIDA-00746-SchDoc-cache.lib)(options "")(descr ""))
+  (lib (name TIDA-00746-SchDoc-rescue)(type Legacy)(uri ${KIPRJMOD}/PowerSupply/TIDA-00746-SchDoc-rescue.lib)(options "")(descr ""))
+  (lib (name 2020-06-08_08-52-19)(type Legacy)(uri ${KIPRJMOD}/PowerSupply/2020-06-08_08-52-19.lib)(options "")(descr ""))
+  (lib (name 2021-02-24_09-52-09)(type Legacy)(uri ${KIPRJMOD}/UsbAudio/2021-02-24_09-52-09.lib)(options "")(descr ""))
+  (lib (name 2021-02-24_09-53-57)(type Legacy)(uri ${KIPRJMOD}/UsbAudio/2021-02-24_09-53-57.lib)(options "")(descr ""))
+  (lib (name 2021-03-01_19-59-31)(type Legacy)(uri ${KIPRJMOD}/UsbAudio/2021-03-01_19-59-31.lib)(options "")(descr ""))
+  (lib (name 2021-03-06_05-15-48)(type Legacy)(uri ${KIPRJMOD}/UsbAudio/2021-03-06_05-15-48.lib)(options "")(descr ""))
+  (lib (name MOUDLE-BLUETOOTH-AUDIO-RN52-I_RM_50P-26X13.5MM_)(type Legacy)(uri ${KIPRJMOD}/UsbAudio/MOUDLE-BLUETOOTH-AUDIO-RN52-I_RM_50P-26X13.5MM_.lib)(options "")(descr ""))
+  (lib (name hd1077r)(type Legacy)(uri ${KIPRJMOD}/libs/hd1077r.lib)(options "")(descr ""))
+  (lib (name 2021-06-01_14-02-01)(type Legacy)(uri ${KIPRJMOD}/libs/2021-06-01_14-02-01.lib)(options "")(descr ""))
+  (lib (name ReleaseDeviceDigitalAudio-rescue)(type Legacy)(uri ${KIPRJMOD}/ReleaseDeviceDigitalAudio-rescue.lib)(options "")(descr ""))
+)

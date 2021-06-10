@@ -1,0 +1,2083 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 2 2
+Title "TIDA-00746-SchDoc"
+Date "05 06 2020"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8350 4350 7450 4350
+Wire Wire Line
+	8350 4950 8350 4350
+Wire Wire Line
+	8050 4950 8350 4950
+Wire Wire Line
+	6650 4350 7150 4350
+Wire Wire Line
+	6650 4750 6650 4350
+Wire Wire Line
+	8050 3150 8050 4750
+Wire Wire Line
+	8050 3150 7150 3150
+Wire Wire Line
+	6450 4950 6650 4950
+Wire Wire Line
+	6450 3750 6450 4950
+Wire Wire Line
+	6850 3750 6450 3750
+Wire Wire Line
+	6850 3550 6850 3750
+Wire Wire Line
+	8650 5150 8050 5150
+Wire Wire Line
+	8650 3750 8650 5150
+Wire Wire Line
+	6850 3750 8650 3750
+Wire Wire Line
+	6150 5350 6650 5350
+Wire Wire Line
+	6150 3150 6150 5350
+Wire Wire Line
+	9150 3150 8850 3150
+Wire Wire Line
+	9350 3150 9150 3150
+Wire Wire Line
+	9350 3150 9350 3250
+Wire Wire Line
+	9350 3150 9350 3050
+Wire Wire Line
+	9750 6350 8950 6350
+Wire Wire Line
+	9150 3150 9150 3250
+Wire Wire Line
+	9150 3750 9150 3650
+Wire Wire Line
+	9750 3750 9150 3750
+Wire Wire Line
+	9750 3550 9750 3750
+Wire Wire Line
+	9150 3750 8850 3750
+Wire Wire Line
+	11850 3150 11850 3350
+Wire Wire Line
+	11850 4450 11850 3650
+Wire Wire Line
+	6050 6550 6050 6450
+Wire Wire Line
+	6550 6550 6300 6550
+Wire Wire Line
+	6050 5950 6050 6050
+Wire Wire Line
+	6050 6050 6350 6050
+Wire Wire Line
+	6550 5450 6050 5450
+Wire Wire Line
+	6550 5550 6550 5450
+Wire Wire Line
+	9750 3750 9750 3850
+Wire Wire Line
+	10550 3850 10550 3650
+Wire Wire Line
+	10950 3150 11150 3150
+Wire Wire Line
+	10550 3150 10950 3150
+Wire Wire Line
+	10550 3150 10550 3350
+Wire Wire Line
+	10950 3150 10950 3350
+Wire Wire Line
+	10950 3850 10950 3650
+Wire Wire Line
+	10550 3850 10950 3850
+Wire Wire Line
+	10150 3150 10050 3150
+Wire Wire Line
+	10550 3150 10150 3150
+Wire Wire Line
+	10150 3150 10150 3350
+Wire Wire Line
+	10150 3850 10150 3650
+Wire Wire Line
+	10550 3850 10150 3850
+Wire Wire Line
+	8850 3150 8850 3250
+Wire Wire Line
+	6150 3150 6050 3150
+Wire Wire Line
+	6450 3150 6150 3150
+Wire Wire Line
+	5750 3450 5450 3450
+Wire Wire Line
+	1700 3950 1700 3750
+Wire Wire Line
+	1700 3450 1700 3050
+Wire Wire Line
+	1700 4650 1700 4250
+Wire Wire Line
+	2300 3250 2300 3050
+Wire Wire Line
+	2300 4650 2300 4450
+Wire Wire Line
+	3000 3050 2300 3050
+Wire Wire Line
+	3000 3750 3000 3050
+Wire Wire Line
+	3000 4650 2300 4650
+Wire Wire Line
+	6050 5450 6050 5550
+Wire Wire Line
+	6050 3150 6050 5450
+Wire Wire Line
+	6550 6050 6550 5950
+Wire Wire Line
+	6450 3150 6450 3050
+Wire Wire Line
+	6450 3250 6450 3150
+Wire Wire Line
+	11850 3150 11750 3150
+Wire Wire Line
+	11850 3150 12050 3150
+Connection ~ 2300 4650
+Connection ~ 2300 3050
+Connection ~ 5450 3450
+Connection ~ 6050 5450
+Connection ~ 6050 3150
+Connection ~ 6150 3150
+Connection ~ 6450 3150
+Connection ~ 6850 3750
+Connection ~ 8050 3150
+Connection ~ 8850 3150
+Connection ~ 9150 3750
+Connection ~ 9150 3150
+Connection ~ 9350 3150
+Connection ~ 9750 3750
+Connection ~ 10150 3150
+Connection ~ 10550 3850
+Connection ~ 10550 3150
+Connection ~ 10950 3150
+Connection ~ 11850 3150
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:LM74610--ReleaseDevice-rescue U13
+U 1 1 5EDA4414
+P 7350 4950
+F 0 "U13" H 6850 5250 60  0000 L BNN
+F 1 "LM74610" H 6850 4350 60  0000 L BNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 6850 4350 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm74610-q1.pdf" H 6850 4350 60  0001 C CNN
+F 4 "Out of stock" H 7350 4950 50  0001 C CNN "Availability"
+	1    7350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW06032K00FKEA--ReleaseDevice-rescue R65
+U 1 1 5EDA4413
+P 6050 6250
+F 0 "R65" V 6060 6220 60  0000 R TNN
+F 1 "2.00k" V 6000 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6050 6250 50  0001 C CNN
+F 3 "" H 6050 6250 50  0001 C CNN
+F 4 "2.00k" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    6050 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW060320K0FKEA--ReleaseDevice-rescue R66
+U 1 1 5EDA4412
+P 6550 5750
+F 0 "R66" V 6560 5720 60  0000 R TNN
+F 1 "20.0k" V 6500 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 5750 50  0001 C CNN
+F 3 "" H 6550 5750 50  0001 C CNN
+F 4 "20.0k" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    6550 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:06031C102KAT2A--ReleaseDevice-rescue C?
+U 1 1 5EDA4411
+P 10150 3550
+AR Path="/5EDA4411" Ref="C?"  Part="1" 
+AR Path="/64BEC8E8/5EDA4411" Ref="C97"  Part="1" 
+F 0 "C97" V 10160 3460 60  0000 R TNN
+F 1 "1000pF" V 10100 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10150 3550 50  0001 C CNN
+F 3 "" H 10150 3550 50  0001 C CNN
+F 4 "1000pF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    10150 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:ACM1211-102-2PL-TL01--ReleaseDevice-rescue L1
+U 1 1 5EDA4410
+P 4550 3250
+F 0 "L1" H 4500 3650 60  0000 L BNN
+F 1 "ACM1211-102-2PL-TL01" H 3950 3500 60  0000 L BNN
+F 2 "footprints:ACM1211" H 4150 2750 60  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_power_acm1211_en.pdf" H 4150 2750 60  0001 C CNN
+	1    4550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:06031C102KAT2A--ReleaseDevice-rescue C?
+U 1 1 5EDA440F
+P 5050 3350
+AR Path="/5EDA440F" Ref="C?"  Part="1" 
+AR Path="/64BEC8E8/5EDA440F" Ref="C93"  Part="1" 
+F 0 "C93" V 5150 3250 60  0000 R TNN
+F 1 "1000pF" V 5050 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 3350 50  0001 C CNN
+F 3 "" H 5050 3350 50  0001 C CNN
+F 4 "1000pF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    5050 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:6091--ReleaseDevice-rescue J18
+U 1 1 5EDA440E
+P 1400 3050
+F 0 "J18" H 1300 3150 60  0000 L BNN
+F 1 "INPUT" H 1300 2850 60  0000 L BNN
+F 2 "" H 1300 2850 60  0001 C CNN
+F 3 "" H 1300 2850 60  0000 C CNN
+	1    1400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:6092--ReleaseDevice-rescue J19
+U 1 1 5EDA440D
+P 1400 4650
+F 0 "J19" H 1300 4750 60  0000 L BNN
+F 1 "GROUND" H 1300 4450 60  0000 L BNN
+F 2 "" H 1300 4450 60  0001 C CNN
+F 3 "" H 1300 4450 60  0000 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:SMBJ14A-13-F--ReleaseDevice-rescue D6
+U 1 1 5EDA440C
+P 2300 4150
+F 0 "D6" V 2310 4040 60  0000 R TNN
+F 1 "SMBJ14A-13-F" V 2210 4040 60  0000 R TNN
+F 2 "Diode_SMD:D_SMB" H 2210 4040 60  0001 C CNN
+F 3 "" H 2210 4040 60  0000 C CNN
+	1    2300 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:SMBJ28A-13-F--ReleaseDevice-rescue D5
+U 1 1 5EDA440B
+P 2300 3550
+F 0 "D5" V 2290 3660 60  0000 L BNN
+F 1 "SMBJ28A-13-F" V 2390 3660 60  0000 L BNN
+F 2 "Diode_SMD:D_SMB" H 2490 3660 60  0001 C CNN
+F 3 "" H 2490 3660 60  0000 C CNN
+	1    2300 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C2012X7R2A472K--ReleaseDevice-rescue C87
+U 1 1 5EDA440A
+P 1700 3650
+F 0 "C87" V 1710 3560 60  0000 R TNN
+F 1 "4700pF" V 1650 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 3650 50  0001 C CNN
+F 3 "" H 1700 3650 50  0001 C CNN
+F 4 "4700pF" V 1100 1450 60  0001 C CNN "ValueDisplayed"
+	1    1700 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C2012X7R2A472K--ReleaseDevice-rescue C88
+U 1 1 5EDA4408
+P 1700 4150
+F 0 "C88" V 1710 4060 60  0000 R TNN
+F 1 "4700pF" V 1650 3900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1700 4150 50  0001 C CNN
+F 3 "" H 1700 4150 50  0001 C CNN
+F 4 "4700pF" V 1100 1450 60  0001 R CNN "ValueDisplayed"
+	1    1700 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:06031C102KAT2A--ReleaseDevice-rescue C?
+U 1 1 5EDA4407
+P 3700 3350
+AR Path="/5EDA4407" Ref="C?"  Part="1" 
+AR Path="/64BEC8E8/5EDA4407" Ref="C92"  Part="1" 
+F 0 "C92" V 3710 3260 60  0000 R TNN
+F 1 "1000pF" V 3650 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 3350 50  0001 C CNN
+F 3 "" H 3700 3350 50  0001 C CNN
+F 4 "1000pF" V 1100 1450 60  0001 C CNN "ValueDisplayed"
+	1    3700 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:IHLP2020CZER2R2M11--ReleaseDevice-rescue LF1
+U 1 1 5EDA4405
+P 11450 3150
+F 0 "LF1" H 11350 3500 60  0000 L BNN
+F 1 "IHLP2020CZER2R2M11" H 10900 3350 60  0000 L BNN
+F 2 "footprints:IHLP-2020CZ-11" H 10850 3350 60  0001 C CNN
+F 3 "https://www.vishay.com/docs/34260/ihlp2020cz11.pdf" H 10850 3350 60  0001 C CNN
+F 4 "2.2µH" H 11450 3050 60  0000 C CNN "ValueDisplayed"
+	1    11450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM32ER71H106KA12L--ReleaseDevice-rescue C94
+U 1 1 5EDA4404
+P 5450 3350
+F 0 "C94" V 5550 3250 60  0000 R TNN
+F 1 "10µF" V 5450 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 3350 50  0001 C CNN
+F 3 "" H 5450 3350 50  0001 C CNN
+F 4 "10µF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    5450 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM32ER71H106KA12L--ReleaseDevice-rescue C95
+U 1 1 5EDA4403
+P 5750 3350
+F 0 "C95" V 5850 3250 60  0000 R TNN
+F 1 "10µF" V 5750 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5750 3350 50  0001 C CNN
+F 3 "" H 5750 3350 50  0001 C CNN
+F 4 "10µF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    5750 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM31CR71H475KA12L--ReleaseDevice-rescue C98
+U 1 1 5EDA4402
+P 10550 3550
+F 0 "C98" V 10560 3460 60  0000 R TNN
+F 1 "4.7µF" V 10500 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10550 3550 50  0001 C CNN
+F 3 "" H 10550 3550 50  0001 C CNN
+F 4 "4.7µF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    10550 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM31CR71H475KA12L--ReleaseDevice-rescue C99
+U 1 1 5EDA4401
+P 10950 3550
+F 0 "C99" V 10960 3460 60  0000 R TNN
+F 1 "4.7µF" V 10900 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10950 3550 50  0001 C CNN
+F 3 "" H 10950 3550 50  0001 C CNN
+F 4 "4.7µF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    10950 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM32ER71H106KA12L--ReleaseDevice-rescue C100
+U 1 1 5EDA4400
+P 11850 3550
+F 0 "C100" V 11860 3460 60  0000 R TNN
+F 1 "10µF" V 11800 3350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11850 3550 50  0001 C CNN
+F 3 "" H 11850 3550 50  0001 C CNN
+F 4 "10µF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    11850 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM32ER71H106KA12L--ReleaseDevice-rescue C91
+U 1 1 5EDA43FF
+P 3000 3950
+F 0 "C91" V 3010 3860 60  0000 R TNN
+F 1 "10µF" V 2950 3750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3000 3950 50  0001 C CNN
+F 3 "" H 3000 3950 50  0001 C CNN
+F 4 "10µF" V 1100 1450 60  0001 C CNN "ValueDisplayed"
+	1    3000 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:SQJ422EP-T1-GE3--ReleaseDevice-rescue Q1
+U 1 1 5EDA43FE
+P 6850 3250
+F 0 "Q1" V 6300 3300 60  0000 R TNN
+F 1 "SQJ422EP-T1-GE3" V 6450 3700 60  0000 R TNN
+F 2 "Package_SO:PowerPAK_SO-8_Single" H 7250 3550 60  0001 C CNN
+F 3 "https://www.vishay.com/docs/63989/sqj422ep.pdf" H 7250 3550 60  0001 C CNN
+	1    6850 3250
+	0    -1   1    0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C2012X5R1H225K125AB--ReleaseDevice-rescue C96
+U 1 1 5EDA43FD
+P 7250 4350
+F 0 "C96" H 7240 4440 60  0000 L BNN
+F 1 "2.2µF" H 7350 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7250 4350 50  0001 C CNN
+F 3 "" H 7250 4350 50  0001 C CNN
+F 4 "2.2µF" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    7250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CPF0603B100KE--ReleaseDevice-rescue R69
+U 1 1 5EDA43FC
+P 9150 3450
+F 0 "R69" V 9160 3420 60  0000 R TNN
+F 1 "100k" V 9100 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9150 3450 50  0001 C CNN
+F 3 "" H 9150 3450 50  0001 C CNN
+F 4 "100k" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    9150 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:MMSZ5245B-7-F--ReleaseDevice-rescue D7
+U 1 1 5EDA43FB
+P 8850 3450
+F 0 "D7" V 8800 3363 60  0000 R BNN
+F 1 "MMSZ5245B-7-F" V 8901 3369 60  0000 R BNN
+F 2 "Diode_SMD:D_SOD-123" H 8650 3250 60  0001 C CNN
+F 3 "" H 8650 3250 60  0001 C CNN
+	1    8850 3450
+	0    1    -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:SQ2360EES-T1-GE3--ReleaseDevice-rescue Q2
+U 1 1 5EDA43FA
+P 9650 5950
+F 0 "Q2" H 9910 5960 60  0000 L BNN
+F 1 "SQ2360EES-T1-GE3" H 9910 5860 60  0000 L BNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9910 5860 60  0001 C CNN
+F 3 "" H 9910 5860 60  0000 C CNN
+	1    9650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CPF0603B100KE--ReleaseDevice-rescue R68
+U 1 1 5EDA43F9
+P 8950 6150
+F 0 "R68" V 8960 6120 60  0000 R TNN
+F 1 "100k" V 8900 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8950 6150 50  0001 C CNN
+F 3 "" H 8950 6150 50  0001 C CNN
+F 4 "100k" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    8950 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW060320K0JNEA--ReleaseDevice-rescue R70
+U 1 1 5EDA43F8
+P 9750 4050
+F 0 "R70" V 9760 4020 60  0000 R TNN
+F 1 "20k" V 9700 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 9750 4050 50  0001 C CNN
+F 3 "" H 9750 4050 50  0001 C CNN
+F 4 "20k" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    9750 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:TLVH431AQDBVR_1--ReleaseDevice-rescue U12
+U 1 1 5EDA43F7
+P 6650 6350
+F 0 "U12" V 6450 6150 60  0000 L TNN
+F 1 "TLVH431AQDBVRA" V 6600 5500 60  0000 L TNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6700 6340 60  0001 C CNN
+F 3 "" H 6700 6340 60  0001 C CNN
+	1    6650 6350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8050 3150 8850 3150
+Wire Wire Line
+	5050 3150 5450 3150
+Wire Wire Line
+	1700 3050 2000 3050
+Wire Wire Line
+	6550 5950 8950 5950
+Wire Wire Line
+	9750 4250 9750 5650
+Wire Wire Line
+	7100 12150 6950 12150
+Wire Wire Line
+	7100 12250 6950 12250
+Wire Wire Line
+	11300 9850 11300 10100
+Wire Wire Line
+	10400 9850 10400 10100
+Wire Wire Line
+	11300 10650 11300 10400
+Wire Wire Line
+	7300 11450 7300 11650
+Wire Wire Line
+	6950 11450 7300 11450
+Wire Wire Line
+	7100 12350 6950 12350
+Wire Wire Line
+	7100 12250 7100 12350
+Wire Wire Line
+	7100 12450 6950 12450
+Wire Wire Line
+	7100 12350 7100 12450
+Wire Wire Line
+	7100 11750 6950 11750
+Wire Wire Line
+	7200 10350 6950 10350
+Wire Wire Line
+	7700 10350 7500 10350
+Wire Wire Line
+	7700 10650 7700 10350
+Wire Wire Line
+	9900 10650 9900 10450
+Wire Wire Line
+	10400 10650 9900 10650
+Wire Wire Line
+	10800 10650 10400 10650
+Wire Wire Line
+	4800 10950 4900 10950
+Wire Wire Line
+	11300 10650 11500 10650
+Wire Wire Line
+	10400 10400 10400 10650
+Wire Wire Line
+	5300 10350 5350 10350
+Wire Wire Line
+	5300 10550 5300 10350
+Wire Wire Line
+	5300 10550 5350 10550
+Wire Wire Line
+	4100 10550 5300 10550
+Wire Wire Line
+	3800 10550 4100 10550
+Wire Wire Line
+	3300 10550 3800 10550
+Wire Wire Line
+	2800 10550 3300 10550
+Wire Wire Line
+	2300 10550 2800 10550
+Wire Wire Line
+	1900 10550 2300 10550
+Wire Wire Line
+	1900 10700 1900 10550
+Wire Wire Line
+	2300 10550 2300 10700
+Wire Wire Line
+	1900 11350 2100 11350
+Wire Wire Line
+	7100 12250 7100 12150
+Wire Wire Line
+	7100 11650 7100 11750
+Wire Wire Line
+	6950 11650 7100 11650
+Wire Wire Line
+	7100 11850 6950 11850
+Wire Wire Line
+	7100 11750 7100 11850
+Wire Wire Line
+	7100 11950 6950 11950
+Wire Wire Line
+	7100 11850 7100 11950
+Wire Wire Line
+	7100 12150 7100 11950
+Wire Wire Line
+	7100 12650 7100 12450
+Wire Wire Line
+	5350 12650 5350 12350
+Wire Wire Line
+	5000 12650 5000 12300
+Wire Wire Line
+	3300 11000 3300 11350
+Wire Wire Line
+	5300 10750 5350 10750
+Wire Wire Line
+	5300 10550 5300 10750
+Wire Wire Line
+	7700 12050 7700 12250
+Wire Wire Line
+	9900 10150 9900 9850
+Wire Wire Line
+	10400 9850 9900 9850
+Wire Wire Line
+	10800 9850 10400 9850
+Wire Wire Line
+	3300 10550 3300 10700
+Wire Wire Line
+	5000 11650 5000 11900
+Wire Wire Line
+	7700 10850 7900 10850
+Wire Wire Line
+	6000 13250 6100 13250
+Wire Wire Line
+	6600 13250 6500 13250
+Wire Wire Line
+	4100 10550 4100 10650
+Wire Wire Line
+	4100 11250 4100 11050
+Wire Wire Line
+	3800 11450 3800 10550
+Wire Wire Line
+	5350 11450 3800 11450
+Wire Wire Line
+	5350 11650 5000 11650
+Wire Wire Line
+	2800 10550 2800 10700
+Wire Wire Line
+	2800 11350 2800 11000
+Wire Wire Line
+	10800 10650 10800 10400
+Wire Wire Line
+	10800 9850 10800 10100
+Connection ~ 2300 10550
+Connection ~ 2800 10550
+Connection ~ 3300 10550
+Connection ~ 3800 10550
+Connection ~ 4100 10550
+Connection ~ 5300 10550
+Connection ~ 7100 12450
+Connection ~ 7100 12350
+Connection ~ 7100 12250
+Connection ~ 7100 12150
+Connection ~ 7100 11950
+Connection ~ 7100 11850
+Connection ~ 7100 11750
+Connection ~ 7700 10850
+Connection ~ 7700 10650
+Connection ~ 9900 10650
+Connection ~ 10400 9850
+Connection ~ 10400 10650
+Connection ~ 10800 9850
+Connection ~ 10800 10650
+Connection ~ 11300 10650
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM188R71H473KA61D--ReleaseDevice-rescue Cin_hf2
+U 1 1 5EDA44AE
+P 3300 10900
+F 0 "Cin_hf2" V 3310 10810 60  0000 R TNN
+F 1 "0.047µF" V 3250 10650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3300 10900 50  0001 C CNN
+F 3 "" H 3300 10900 50  0001 C CNN
+F 4 "0.047µF" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    3300 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM188R71H473KA61D--ReleaseDevice-rescue Cin_hf1
+U 1 1 5EDA44AD
+P 2300 10900
+F 0 "Cin_hf1" V 2310 10810 60  0000 R TNN
+F 1 "0.047µF" V 2250 10650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2300 10900 50  0001 C CNN
+F 3 "" H 2300 10900 50  0001 C CNN
+F 4 "0.047µF" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    2300 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:LM53635RNL--ReleaseDevice-rescue U11
+U 1 1 5EDA44AC
+P 6150 11350
+F 0 "U11" H 5550 12550 60  0000 L BNN
+F 1 "LM536355QRNL" H 5550 10050 60  0000 L BNN
+F 2 "footprints:LM536253QRNLRQ1" H 5550 10050 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm53625-q1.pdf" H 5550 10050 60  0001 C CNN
+F 4 "Out of stock" H 6150 11350 50  0001 C CNN "Availability"
+	1    6150 11350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GCM21BR71C475KA73L--ReleaseDevice-rescue Cvcc1
+U 1 1 5EDA44AA
+P 5000 10950
+F 0 "Cvcc1" H 4900 11150 60  0000 L BNN
+F 1 "4.7µF" H 5050 11100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5000 10950 50  0001 C CNN
+F 3 "" H 5000 10950 50  0001 C CNN
+F 4 "4.7µF" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    5000 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW0603100KJNEA--ReleaseDevice-rescue R63
+U 1 1 5EDA44A9
+P 5000 12100
+F 0 "R63" V 5010 12070 60  0000 R TNN
+F 1 "100k" V 4950 11950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5000 12100 50  0001 C CNN
+F 3 "" H 5000 12100 50  0001 C CNN
+F 4 "100k" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    5000 12100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GCM188R71C104KA37J--ReleaseDevice-rescue Cbias1
+U 1 1 5EDA44A8
+P 7700 11950
+F 0 "Cbias1" V 7800 11900 60  0000 R TNN
+F 1 "0.1µF" V 7700 11700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7700 11950 50  0001 C CNN
+F 3 "" H 7700 11950 50  0001 C CNN
+F 4 "0.1µF" V -800 11200 60  0001 C CNN "ValueDisplayed"
+	1    7700 11950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM188R61E474KA12D--ReleaseDevice-rescue Cb1
+U 1 1 5EDA44A7
+P 7300 10350
+F 0 "Cb1" H 7150 10550 60  0000 L BNN
+F 1 "0.47µF" H 7300 10500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7300 10350 50  0001 C CNN
+F 3 "" H 7300 10350 50  0001 C CNN
+F 4 "0.47µF" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    7300 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW06033R00JNEA--ReleaseDevice-rescue Rbias1
+U 1 1 5EDA44A4
+P 8100 10850
+F 0 "Rbias1" H 7950 10900 60  0000 L BNN
+F 1 "3.0" H 8100 10750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8100 10850 50  0001 C CNN
+F 3 "" H 8100 10850 50  0001 C CNN
+F 4 "3.0" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    8100 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:Net-Tie--ReleaseDevice-rescue NTG1
+U 1 1 5EDA44A3
+P 6300 13250
+F 0 "NTG1" H 6200 13300 60  0000 L BNN
+F 1 "Net-Tie" H 6200 13100 60  0000 L BNN
+F 2 "" H 6200 13100 60  0001 C CNN
+F 3 "" H 6200 13100 60  0000 C CNN
+	1    6300 13250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM31CR61H106KA12L--ReleaseDevice-rescue C89
+U 1 1 5EDA4487
+P 1900 10900
+F 0 "C89" V 1910 10810 60  0000 R TNN
+F 1 "10µF" V 1850 10700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1900 10900 50  0001 C CNN
+F 3 "" H 1900 10900 50  0001 C CNN
+F 4 "10µF" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    1900 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GCM188R71C104KA37J--ReleaseDevice-rescue Co1
+U 1 1 5EDA4486
+P 9900 10250
+F 0 "Co1" V 9910 10160 60  0000 R TNN
+F 1 "0.1µF" V 9850 10050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9900 10250 50  0001 C CNN
+F 3 "" H 9900 10250 50  0001 C CNN
+F 4 "0.1µF" V -800 9800 60  0001 C CNN "ValueDisplayed"
+	1    9900 10250
+	0    -1   1    0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM31CR61H106KA12L--ReleaseDevice-rescue C90
+U 1 1 5EDA4481
+P 2800 10900
+F 0 "C90" V 2810 10810 60  0000 R TNN
+F 1 "10µF" V 2750 10700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 10900 50  0001 C CNN
+F 3 "" H 2800 10900 50  0001 C CNN
+F 4 "10µF" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    2800 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM31CR71A226KE15L--ReleaseDevice-rescue Co3
+U 1 1 5EDA447E
+P 10800 10200
+F 0 "Co3" V 10810 10110 60  0000 R TNN
+F 1 "22µF" V 10750 10000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10800 10200 50  0001 C CNN
+F 3 "" H 10800 10200 50  0001 C CNN
+F 4 "22µF" V -800 9700 60  0001 C CNN "ValueDisplayed"
+	1    10800 10200
+	0    -1   1    0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM31CR71A226KE15L--ReleaseDevice-rescue Co2
+U 1 1 5EDA447D
+P 10400 10200
+F 0 "Co2" V 10410 10110 60  0000 R TNN
+F 1 "22µF" V 10350 10000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10400 10200 50  0001 C CNN
+F 3 "" H 10400 10200 50  0001 C CNN
+F 4 "22µF" V -800 9700 60  0001 C CNN "ValueDisplayed"
+	1    10400 10200
+	0    -1   1    0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM32ER71A476KE15L--ReleaseDevice-rescue Co4
+U 1 1 5EDA447C
+P 11300 10200
+F 0 "Co4" V 11310 10110 60  0000 R TNN
+F 1 "47µF" V 11250 10000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11300 10200 50  0001 C CNN
+F 3 "" H 11300 10200 50  0001 C CNN
+F 4 "47µF" V -800 9700 60  0001 C CNN "ValueDisplayed"
+	1    11300 10200
+	0    -1   1    0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW0603100KJNEA--ReleaseDevice-rescue R62
+U 1 1 5EDA447B
+P 4100 10850
+F 0 "R62" V 4110 10820 60  0000 R TNN
+F 1 "100k" V 4050 10700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4100 10850 50  0001 C CNN
+F 3 "" H 4100 10850 50  0001 C CNN
+F 4 "100k" V -800 10600 60  0001 C CNN "ValueDisplayed"
+	1    4100 10850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW0603100KJNEA--ReleaseDevice-rescue R67
+U 1 1 5EDA447A
+P 8500 11250
+F 0 "R67" H 8550 11200 60  0000 R TNN
+F 1 "100k" H 8500 11350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8500 11250 50  0001 C CNN
+F 3 "" H 8500 11250 50  0001 C CNN
+F 4 "100k" V -600 9000 60  0001 C CNN "ValueDisplayed"
+	1    8500 11250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 11250 5350 11250
+Wire Wire Line
+	1900 11000 1900 11350
+Wire Wire Line
+	2300 11000 2300 11350
+Wire Wire Line
+	2800 11350 3300 11350
+Wire Wire Line
+	10800 10650 11300 10650
+Wire Wire Line
+	10800 9850 11300 9850
+Wire Wire Line
+	20550 6100 20550 6700
+Wire Wire Line
+	20150 6100 20150 6700
+Wire Wire Line
+	19750 6100 19750 6700
+Wire Wire Line
+	19350 6100 19350 6700
+Wire Wire Line
+	19750 7000 19750 8100
+Wire Wire Line
+	20150 7000 20150 8100
+Wire Wire Line
+	20550 7000 20550 8100
+Wire Wire Line
+	19350 7000 19350 8100
+Wire Wire Line
+	17050 6100 17300 6100
+Wire Wire Line
+	16450 6100 17050 6100
+Wire Wire Line
+	16050 6100 16450 6100
+Wire Wire Line
+	18350 7600 18350 7700
+Wire Wire Line
+	18350 7500 18350 7600
+Text GLabel 18250 7600 0    60   Input ~ 0
+VSNS1
+Text GLabel 15150 7500 3    60   Output ~ 0
+VSNS1
+Wire Wire Line
+	15150 7300 15150 7500
+Wire Wire Line
+	18350 7600 18250 7600
+Wire Wire Line
+	18350 7000 18350 7100
+Wire Wire Line
+	16350 6700 16350 6800
+Wire Wire Line
+	16050 6700 16350 6700
+Wire Wire Line
+	14350 6700 14650 6700
+Wire Wire Line
+	14350 7500 14350 6700
+Wire Wire Line
+	14350 6500 14350 6700
+Wire Wire Line
+	14650 6500 14350 6500
+Wire Wire Line
+	14950 7300 14950 7500
+Wire Wire Line
+	14950 5300 14950 5600
+Wire Wire Line
+	14750 5300 14950 5300
+Wire Wire Line
+	14750 5400 14750 5300
+Text Notes 15950 7300 0    60   ~ 0
+fsw=2Mhz
+Wire Wire Line
+	15550 7300 15550 7400
+Wire Wire Line
+	15350 8500 15350 8700
+Wire Wire Line
+	14950 9000 14950 9100
+Wire Wire Line
+	15750 5300 15750 5600
+Wire Wire Line
+	15850 5300 15750 5300
+Wire Wire Line
+	16450 5300 16450 6100
+Wire Wire Line
+	16150 5300 16450 5300
+Wire Wire Line
+	17050 7000 17050 7100
+Wire Wire Line
+	17050 6100 17050 6600
+Wire Wire Line
+	17050 7400 17050 8100
+Wire Wire Line
+	14350 6200 14350 6300
+Wire Wire Line
+	14350 6100 14350 6200
+Wire Wire Line
+	14350 5100 14350 6100
+Wire Wire Line
+	15150 5100 14350 5100
+Wire Wire Line
+	15150 5600 15150 5100
+Wire Wire Line
+	14650 6100 14350 6100
+Wire Wire Line
+	14650 6300 14350 6300
+Wire Wire Line
+	12750 6200 12750 6500
+Wire Wire Line
+	12750 6800 12750 7500
+Wire Wire Line
+	12250 6200 12250 6500
+Wire Wire Line
+	11850 6200 11850 6500
+Wire Wire Line
+	12250 6800 12250 7500
+Wire Wire Line
+	11850 6800 11850 7500
+Wire Wire Line
+	15350 4900 15350 5600
+Wire Wire Line
+	15150 4900 15350 4900
+Wire Wire Line
+	18750 7500 18350 7500
+Wire Wire Line
+	18750 7400 18750 7500
+Wire Wire Line
+	18750 7000 18750 7100
+Wire Wire Line
+	18350 7000 18750 7000
+Wire Wire Line
+	15550 5400 15550 5600
+Wire Wire Line
+	15550 4600 15550 5000
+Wire Wire Line
+	15150 4600 15550 4600
+Wire Wire Line
+	14850 4600 15150 4600
+Wire Wire Line
+	14950 8100 14950 8700
+Wire Wire Line
+	12250 6200 11850 6200
+Wire Wire Line
+	12750 6200 12250 6200
+Wire Wire Line
+	14350 6200 12750 6200
+Wire Wire Line
+	19350 6100 18350 6100
+Wire Wire Line
+	19750 6100 19350 6100
+Wire Wire Line
+	20150 6100 19750 6100
+Wire Wire Line
+	20550 6100 20150 6100
+Wire Wire Line
+	15350 8100 15350 7300
+Wire Wire Line
+	15350 8100 14950 8100
+Wire Wire Line
+	15150 4600 15150 4900
+Connection ~ 12250 6200
+Connection ~ 12750 6200
+Connection ~ 14350 6700
+Connection ~ 14350 6200
+Connection ~ 14350 6100
+Connection ~ 15150 4600
+Connection ~ 16450 6100
+Connection ~ 17050 6100
+Connection ~ 18350 7600
+Connection ~ 18350 7000
+Connection ~ 18350 6100
+Connection ~ 19350 6100
+Connection ~ 19750 6100
+Connection ~ 20150 6100
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM188R71H103KA01D--ReleaseDevice-rescue C108
+U 1 1 5EDA4450
+P 16350 7000
+F 0 "C108" V 16360 6910 60  0000 R TNN
+F 1 "0.01µF" V 16300 6750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16350 7000 50  0001 C CNN
+F 3 "" H 16350 7000 50  0001 C CNN
+F 4 "0.01µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    16350 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C3225X5R0J476M--ReleaseDevice-rescue C111
+U 1 1 5EDA444F
+P 19350 6900
+F 0 "C111" V 19360 6810 60  0000 R TNN
+F 1 "47µF" V 19300 6700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 19350 6900 50  0001 C CNN
+F 3 "" H 19350 6900 50  0001 C CNN
+F 4 "47µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    19350 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C3225X5R0J476M--ReleaseDevice-rescue C112
+U 1 1 5EDA444E
+P 19750 6900
+F 0 "C112" V 19760 6810 60  0000 R TNN
+F 1 "47µF" V 19700 6700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 19750 6900 50  0001 C CNN
+F 3 "" H 19750 6900 50  0001 C CNN
+F 4 "47µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    19750 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C3225X5R0J476M--ReleaseDevice-rescue C113
+U 1 1 5EDA444D
+P 20150 6900
+F 0 "C113" V 20160 6810 60  0000 R TNN
+F 1 "47µF" V 20100 6700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 20150 6900 50  0001 C CNN
+F 3 "" H 20150 6900 50  0001 C CNN
+F 4 "47µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    20150 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C3225X5R0J476M--ReleaseDevice-rescue C114
+U 1 1 5EDA444C
+P 20550 6900
+F 0 "C114" V 20560 6810 60  0000 R TNN
+F 1 "47µF" V 20500 6700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 20550 6900 50  0001 C CNN
+F 3 "" H 20550 6900 50  0001 C CNN
+F 4 "47µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    20550 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW060380K6FKEA--ReleaseDevice-rescue R76
+U 1 1 5EDA444B
+P 18350 7900
+F 0 "R76" V 18360 7870 60  0000 R TNN
+F 1 "80.6k" V 18300 7700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 18350 7900 50  0001 C CNN
+F 3 "" H 18350 7900 50  0001 C CNN
+F 4 "80.6k" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    18350 7900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:08051A470JAT2A--ReleaseDevice-rescue C104
+U 1 1 5EDA444A
+P 14950 8900
+F 0 "C104" V 14960 8810 60  0000 R TNN
+F 1 "47pF" V 14900 8700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 14950 8900 50  0001 C CNN
+F 3 "" H 14950 8900 50  0001 C CNN
+F 4 "47pF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    14950 8900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:RG1608P-2493-B-T5--ReleaseDevice-rescue R75
+U 1 1 5EDA4447
+P 18350 7300
+F 0 "R75" V 18360 7270 60  0000 R TNN
+F 1 "249k" V 18300 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 18350 7300 50  0001 C CNN
+F 3 "" H 18350 7300 50  0001 C CNN
+F 4 "249k" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    18350 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:06035C104KAT2A--ReleaseDevice-rescue C103
+U 1 1 5EDA4445
+P 12750 6700
+F 0 "C103" V 12760 6610 60  0000 R TNN
+F 1 "0.1µF" V 12700 6500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12750 6700 50  0001 C CNN
+F 3 "" H 12750 6700 50  0001 C CNN
+F 4 "0.1µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    12750 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW06034K75FKEA--ReleaseDevice-rescue R71
+U 1 1 5EDA4444
+P 15350 8300
+F 0 "R71" V 15360 8270 60  0000 R TNN
+F 1 "4.75k" V 15300 8150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 15350 8300 50  0001 C CNN
+F 3 "" H 15350 8300 50  0001 C CNN
+F 4 "4.75k" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    15350 8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM1885C1H242JA01D--ReleaseDevice-rescue C105
+U 1 1 5EDA4443
+P 15350 8900
+F 0 "C105" V 15360 8810 60  0000 R TNN
+F 1 "2400pF" V 15300 8650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15350 8900 50  0001 C CNN
+F 3 "" H 15350 8900 50  0001 C CNN
+F 4 "2400pF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    15350 8900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW060382K5FKEA--ReleaseDevice-rescue R73
+U 1 1 5EDA4442
+P 15550 7600
+F 0 "R73" V 15560 7570 60  0000 R TNN
+F 1 "82.5k" V 15500 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 15550 7600 50  0001 C CNN
+F 3 "" H 15550 7600 50  0001 C CNN
+F 4 "82.5k" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    15550 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:06035C104KAT2A--ReleaseDevice-rescue C107
+U 1 1 5EDA443A
+P 16050 5300
+F 0 "C107" H 16150 5100 60  0000 R TNN
+F 1 "0.1µF" H 16050 5150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16050 5300 50  0001 C CNN
+F 3 "" H 16050 5300 50  0001 C CNN
+F 4 "0.1µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    16050 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:C0603C222K5RACTU--ReleaseDevice-rescue C109
+U 1 1 5EDA442F
+P 17050 7300
+F 0 "C109" V 17060 7210 60  0000 R TNN
+F 1 "2200pF" V 17000 7050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 17050 7300 50  0001 C CNN
+F 3 "" H 17050 7300 50  0001 C CNN
+F 4 "2200pF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    17050 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:TPS57114QRTERQ1--ReleaseDevice-rescue U14
+U 1 1 5EDA4425
+P 15350 6500
+F 0 "U14" H 15750 7400 60  0000 L BNN
+F 1 "TPS57114CQRTERQ1" H 15750 5500 60  0000 L BNN
+F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm_ThermalVias" H 15750 5500 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps57114c-q1.pdf" H 15750 5500 60  0001 C CNN
+F 4 "problematic" H 15350 6500 50  0001 C CNN "Availability"
+	1    15350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW08054R70JNEA--ReleaseDevice-rescue R74
+U 1 1 5EDA4424
+P 17050 6800
+F 0 "R74" V 17060 6770 60  0000 R TNN
+F 1 "4.7" V 16960 6770 60  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 16960 6770 60  0001 C CNN
+F 3 "" H 16960 6770 60  0000 C CNN
+	1    17050 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM21BR71A106KE51L--ReleaseDevice-rescue C102
+U 1 1 5EDA4422
+P 12250 6700
+F 0 "C102" V 12260 6610 60  0000 R TNN
+F 1 "10µF" V 12200 6500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12250 6700 50  0001 C CNN
+F 3 "" H 12250 6700 50  0001 C CNN
+F 4 "10µF" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    12250 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM21BR71A106KE51L--ReleaseDevice-rescue C101
+U 1 1 5EDA4421
+P 11850 6700
+F 0 "C101" V 11860 6610 60  0000 R TNN
+F 1 "10µF" V 11750 6600 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11650 6600 60  0001 C CNN
+F 3 "" H 11650 6600 60  0000 C CNN
+	1    11850 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:06035A100JAT2A--ReleaseDevice-rescue C110
+U 1 1 5EDA4420
+P 18750 7300
+F 0 "C110" V 18760 7210 60  0000 R TNN
+F 1 "DNP" V 18700 7100 50  0000 C CNN
+F 2 "" H 18750 7300 50  0001 C CNN
+F 3 "" H 18750 7300 50  0001 C CNN
+F 4 "DNP" V 6650 6000 60  0001 C CNN "ValueDisplayed"
+	1    18750 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW0603100KFKEA--ReleaseDevice-rescue R72
+U 1 1 5EDA441F
+P 15550 5200
+F 0 "R72" V 15560 5170 60  0000 R TNN
+F 1 "100k" V 15460 5170 60  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 15460 5170 60  0001 C CNN
+F 3 "" H 15460 5170 60  0000 C CNN
+	1    15550 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16050 6100 16050 6300
+Wire Wire Line
+	18350 6100 18350 7000
+Wire Wire Line
+	2000 2900 2000 3050
+Connection ~ 2000 3050
+Wire Wire Line
+	2000 3050 2300 3050
+Wire Wire Line
+	3700 3000 3700 3150
+Wire Wire Line
+	1700 4650 2000 4650
+Wire Wire Line
+	2000 4800 2000 4650
+Wire Wire Line
+	3700 3600 3700 3450
+Connection ~ 5050 3150
+Connection ~ 5050 3450
+Connection ~ 5450 3150
+Wire Wire Line
+	5450 3150 5750 3150
+Connection ~ 5750 3150
+Wire Wire Line
+	5750 3150 6050 3150
+Connection ~ 6050 6050
+Connection ~ 6550 5950
+Connection ~ 8950 5950
+Wire Wire Line
+	8950 5950 9250 5950
+Connection ~ 9750 5650
+Wire Wire Line
+	9750 5650 9750 5750
+Wire Wire Line
+	3700 3450 4050 3450
+Wire Wire Line
+	3700 3150 4050 3150
+$Comp
+L power:Earth #PWR0138
+U 1 1 5F9B4A89
+P 5250 3750
+F 0 "#PWR0138" H 5250 3500 50  0001 C CNN
+F 1 "Earth" H 5250 3600 50  0001 C CNN
+F 2 "" H 5250 3750 50  0001 C CNN
+F 3 "~" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0141
+U 1 1 5F9E5CF5
+P 6300 6550
+F 0 "#PWR0141" H 6300 6300 50  0001 C CNN
+F 1 "Earth" H 6300 6400 50  0001 C CNN
+F 2 "" H 6300 6550 50  0001 C CNN
+F 3 "~" H 6300 6550 50  0001 C CNN
+	1    6300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0146
+U 1 1 5FA44F11
+P 9750 6350
+F 0 "#PWR0146" H 9750 6100 50  0001 C CNN
+F 1 "Earth" H 9750 6200 50  0001 C CNN
+F 2 "" H 9750 6350 50  0001 C CNN
+F 3 "~" H 9750 6350 50  0001 C CNN
+	1    9750 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 9750 6350
+$Comp
+L power:Earth #PWR0148
+U 1 1 5FAD2FC5
+P 10550 3850
+F 0 "#PWR0148" H 10550 3600 50  0001 C CNN
+F 1 "Earth" H 10550 3700 50  0001 C CNN
+F 2 "" H 10550 3850 50  0001 C CNN
+F 3 "~" H 10550 3850 50  0001 C CNN
+	1    10550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0149
+U 1 1 5FB3176C
+P 11850 4450
+F 0 "#PWR0149" H 11850 4200 50  0001 C CNN
+F 1 "Earth" H 11850 4300 50  0001 C CNN
+F 2 "" H 11850 4450 50  0001 C CNN
+F 3 "~" H 11850 4450 50  0001 C CNN
+	1    11850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:CRCW060330K1FKEA--ReleaseDevice-rescue R64
+U 1 1 5EDA4406
+P 6050 5750
+F 0 "R64" V 6060 5720 60  0000 R TNN
+F 1 "30.1k" V 6000 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6050 5750 50  0001 C CNN
+F 3 "" H 6050 5750 50  0001 C CNN
+F 4 "30.1k" V 1350 1450 60  0001 C CNN "ValueDisplayed"
+	1    6050 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:SQJ461EP--ReleaseDevice-rescue Q3
+U 1 1 5EDA4409
+P 9750 3250
+F 0 "Q3" V 9250 3200 60  0000 L TNN
+F 1 "SQJ461EP" V 9400 3050 60  0000 L CNN
+F 2 "Package_SO:PowerPAK_SO-8_Single" H 10170 3460 60  0001 C CNN
+F 3 "https://www.vishay.com/docs/65541/sqj461ep.pdf" H 10170 3460 60  0001 C CNN
+	1    9750 3250
+	0    -1   1    0   
+$EndComp
+Connection ~ 15350 8100
+Connection ~ 16050 6100
+Connection ~ 16050 6300
+Wire Wire Line
+	16050 6300 16050 6500
+Connection ~ 18350 7500
+Wire Wire Line
+	3000 4050 3000 4650
+Wire Wire Line
+	5350 10950 5200 10950
+Wire Wire Line
+	11500 10850 11500 10650
+Connection ~ 11500 10650
+Wire Wire Line
+	8300 10850 11500 10850
+Wire Wire Line
+	6950 10650 7700 10650
+Wire Wire Line
+	9900 11050 9900 10650
+Wire Wire Line
+	6950 11050 9900 11050
+Wire Wire Line
+	6950 10850 7700 10850
+Wire Wire Line
+	7700 10850 7700 11750
+Wire Wire Line
+	6950 11250 8300 11250
+Wire Wire Line
+	8700 11250 11500 11250
+Wire Wire Line
+	11500 11250 11500 10850
+Connection ~ 11500 10850
+$Comp
+L power:+BATT #PWR0130
+U 1 1 5F3EFBA5
+P 2000 2900
+F 0 "#PWR0130" H 2000 2750 50  0001 C CNN
+F 1 "+BATT" H 2015 3073 50  0000 C CNN
+F 2 "" H 2000 2900 50  0001 C CNN
+F 3 "" H 2000 2900 50  0001 C CNN
+	1    2000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR0131
+U 1 1 5F40E5CA
+P 2000 4800
+F 0 "#PWR0131" H 2000 4650 50  0001 C CNN
+F 1 "-BATT" H 2015 4973 50  0000 C CNN
+F 2 "" H 2000 4800 50  0001 C CNN
+F 3 "" H 2000 4800 50  0001 C CNN
+	1    2000 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-BATT #PWR0135
+U 1 1 5F40FAB1
+P 3700 3600
+F 0 "#PWR0135" H 3700 3450 50  0001 C CNN
+F 1 "-BATT" H 3715 3773 50  0000 C CNN
+F 2 "" H 3700 3600 50  0001 C CNN
+F 3 "" H 3700 3600 50  0001 C CNN
+	1    3700 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR0134
+U 1 1 5F41EFC7
+P 3700 3000
+F 0 "#PWR0134" H 3700 2850 50  0001 C CNN
+F 1 "+BATT" H 3715 3173 50  0000 C CNN
+F 2 "" H 3700 3000 50  0001 C CNN
+F 3 "" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0140
+U 1 1 5F4899B6
+P 6000 13250
+F 0 "#PWR0140" H 6000 13000 50  0001 C CNN
+F 1 "GNDA" H 6005 13077 50  0000 C CNN
+F 2 "" H 6000 13250 50  0001 C CNN
+F 3 "" H 6000 13250 50  0001 C CNN
+	1    6000 13250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0144
+U 1 1 5F48A99A
+P 7300 11650
+F 0 "#PWR0144" H 7300 11400 50  0001 C CNN
+F 1 "GNDA" H 7305 11477 50  0000 C CNN
+F 2 "" H 7300 11650 50  0001 C CNN
+F 3 "" H 7300 11650 50  0001 C CNN
+	1    7300 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0145
+U 1 1 5F4A8F40
+P 7700 12250
+F 0 "#PWR0145" H 7700 12000 50  0001 C CNN
+F 1 "GNDA" H 7705 12077 50  0000 C CNN
+F 2 "" H 7700 12250 50  0001 C CNN
+F 3 "" H 7700 12250 50  0001 C CNN
+	1    7700 12250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0136
+U 1 1 5F4C71D1
+P 4800 10950
+F 0 "#PWR0136" H 4800 10700 50  0001 C CNN
+F 1 "GNDA" H 4805 10777 50  0000 C CNN
+F 2 "" H 4800 10950 50  0001 C CNN
+F 3 "" H 4800 10950 50  0001 C CNN
+	1    4800 10950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0132
+U 1 1 5F4E577B
+P 2100 11350
+F 0 "#PWR0132" H 2100 11100 50  0001 C CNN
+F 1 "Earth" H 2100 11200 50  0001 C CNN
+F 2 "" H 2100 11350 50  0001 C CNN
+F 3 "~" H 2100 11350 50  0001 C CNN
+	1    2100 11350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 11350
+Wire Wire Line
+	2100 11350 2300 11350
+$Comp
+L power:Earth #PWR0133
+U 1 1 5F4E670A
+P 3300 11350
+F 0 "#PWR0133" H 3300 11100 50  0001 C CNN
+F 1 "Earth" H 3300 11200 50  0001 C CNN
+F 2 "" H 3300 11350 50  0001 C CNN
+F 3 "~" H 3300 11350 50  0001 C CNN
+	1    3300 11350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 11350
+$Comp
+L power:Earth #PWR0139
+U 1 1 5F5236C6
+P 5350 12650
+F 0 "#PWR0139" H 5350 12400 50  0001 C CNN
+F 1 "Earth" H 5350 12500 50  0001 C CNN
+F 2 "" H 5350 12650 50  0001 C CNN
+F 3 "~" H 5350 12650 50  0001 C CNN
+	1    5350 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0137
+U 1 1 5F532A68
+P 5000 12650
+F 0 "#PWR0137" H 5000 12400 50  0001 C CNN
+F 1 "Earth" H 5000 12500 50  0001 C CNN
+F 2 "" H 5000 12650 50  0001 C CNN
+F 3 "~" H 5000 12650 50  0001 C CNN
+	1    5000 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0143
+U 1 1 5F5513CE
+P 7100 12650
+F 0 "#PWR0143" H 7100 12400 50  0001 C CNN
+F 1 "Earth" H 7100 12500 50  0001 C CNN
+F 2 "" H 7100 12650 50  0001 C CNN
+F 3 "~" H 7100 12650 50  0001 C CNN
+	1    7100 12650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0147
+U 1 1 5F56FB31
+P 9900 9750
+F 0 "#PWR0147" H 9900 9500 50  0001 C CNN
+F 1 "Earth" H 9900 9600 50  0001 C CNN
+F 2 "" H 9900 9750 50  0001 C CNN
+F 3 "~" H 9900 9750 50  0001 C CNN
+	1    9900 9750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0142
+U 1 1 5F58EAC5
+P 6600 13250
+F 0 "#PWR0142" H 6600 13000 50  0001 C CNN
+F 1 "Earth" H 6600 13100 50  0001 C CNN
+F 2 "" H 6600 13250 50  0001 C CNN
+F 3 "~" H 6600 13250 50  0001 C CNN
+	1    6600 13250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0160
+U 1 1 5F5D1ADB
+P 14950 7500
+F 0 "#PWR0160" H 14950 7250 50  0001 C CNN
+F 1 "Earth" H 14950 7350 50  0001 C CNN
+F 2 "" H 14950 7500 50  0001 C CNN
+F 3 "~" H 14950 7500 50  0001 C CNN
+	1    14950 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0151
+U 1 1 5F5FF83C
+P 11850 7500
+F 0 "#PWR0151" H 11850 7250 50  0001 C CNN
+F 1 "Earth" H 11850 7350 50  0001 C CNN
+F 2 "" H 11850 7500 50  0001 C CNN
+F 3 "~" H 11850 7500 50  0001 C CNN
+	1    11850 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0154
+U 1 1 5F60ED2A
+P 12250 7500
+F 0 "#PWR0154" H 12250 7250 50  0001 C CNN
+F 1 "Earth" H 12250 7350 50  0001 C CNN
+F 2 "" H 12250 7500 50  0001 C CNN
+F 3 "~" H 12250 7500 50  0001 C CNN
+	1    12250 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0155
+U 1 1 5F61E165
+P 12750 7500
+F 0 "#PWR0155" H 12750 7250 50  0001 C CNN
+F 1 "Earth" H 12750 7350 50  0001 C CNN
+F 2 "" H 12750 7500 50  0001 C CNN
+F 3 "~" H 12750 7500 50  0001 C CNN
+	1    12750 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0156
+U 1 1 5F62D65D
+P 14350 7500
+F 0 "#PWR0156" H 14350 7250 50  0001 C CNN
+F 1 "Earth" H 14350 7350 50  0001 C CNN
+F 2 "" H 14350 7500 50  0001 C CNN
+F 3 "~" H 14350 7500 50  0001 C CNN
+	1    14350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0163
+U 1 1 5F64C02A
+P 15550 7800
+F 0 "#PWR0163" H 15550 7550 50  0001 C CNN
+F 1 "Earth" H 15550 7650 50  0001 C CNN
+F 2 "" H 15550 7800 50  0001 C CNN
+F 3 "~" H 15550 7800 50  0001 C CNN
+	1    15550 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0167
+U 1 1 5F66AB95
+P 17050 8100
+F 0 "#PWR0167" H 17050 7850 50  0001 C CNN
+F 1 "Earth" H 17050 7950 50  0001 C CNN
+F 2 "" H 17050 8100 50  0001 C CNN
+F 3 "~" H 17050 8100 50  0001 C CNN
+	1    17050 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0165
+U 1 1 5F6986F3
+P 16350 7100
+F 0 "#PWR0165" H 16350 6850 50  0001 C CNN
+F 1 "Earth" H 16350 6950 50  0001 C CNN
+F 2 "" H 16350 7100 50  0001 C CNN
+F 3 "~" H 16350 7100 50  0001 C CNN
+	1    16350 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0168
+U 1 1 5F6B76DC
+P 18350 8100
+F 0 "#PWR0168" H 18350 7850 50  0001 C CNN
+F 1 "Earth" H 18350 7950 50  0001 C CNN
+F 2 "" H 18350 8100 50  0001 C CNN
+F 3 "~" H 18350 8100 50  0001 C CNN
+	1    18350 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0169
+U 1 1 5F6C6AD2
+P 19350 8100
+F 0 "#PWR0169" H 19350 7850 50  0001 C CNN
+F 1 "Earth" H 19350 7950 50  0001 C CNN
+F 2 "" H 19350 8100 50  0001 C CNN
+F 3 "~" H 19350 8100 50  0001 C CNN
+	1    19350 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0171
+U 1 1 5F6D5DAD
+P 19750 8100
+F 0 "#PWR0171" H 19750 7850 50  0001 C CNN
+F 1 "Earth" H 19750 7950 50  0001 C CNN
+F 2 "" H 19750 8100 50  0001 C CNN
+F 3 "~" H 19750 8100 50  0001 C CNN
+	1    19750 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0172
+U 1 1 5F6E52BA
+P 20150 8100
+F 0 "#PWR0172" H 20150 7850 50  0001 C CNN
+F 1 "Earth" H 20150 7950 50  0001 C CNN
+F 2 "" H 20150 8100 50  0001 C CNN
+F 3 "~" H 20150 8100 50  0001 C CNN
+	1    20150 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0173
+U 1 1 5F6F461A
+P 20550 8100
+F 0 "#PWR0173" H 20550 7850 50  0001 C CNN
+F 1 "Earth" H 20550 7950 50  0001 C CNN
+F 2 "" H 20550 8100 50  0001 C CNN
+F 3 "~" H 20550 8100 50  0001 C CNN
+	1    20550 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0161
+U 1 1 5F7132B1
+P 14950 9100
+F 0 "#PWR0161" H 14950 8850 50  0001 C CNN
+F 1 "Earth" H 14950 8950 50  0001 C CNN
+F 2 "" H 14950 9100 50  0001 C CNN
+F 3 "~" H 14950 9100 50  0001 C CNN
+	1    14950 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0166
+U 1 1 5F72279A
+P 16750 12300
+F 0 "#PWR0166" H 16750 12050 50  0001 C CNN
+F 1 "Earth" H 16750 12150 50  0001 C CNN
+F 2 "" H 16750 12300 50  0001 C CNN
+F 3 "~" H 16750 12300 50  0001 C CNN
+	1    16750 12300
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0158
+U 1 1 5F7410A6
+P 14750 5400
+F 0 "#PWR0158" H 14750 5150 50  0001 C CNN
+F 1 "Earth" H 14750 5250 50  0001 C CNN
+F 2 "" H 14750 5400 50  0001 C CNN
+F 3 "~" H 14750 5400 50  0001 C CNN
+	1    14750 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 19050 7400 0    50   ~ 0
+??\n
+Wire Wire Line
+	20550 6100 20750 6100
+Wire Wire Line
+	20750 6100 20750 6000
+Connection ~ 20550 6100
+Connection ~ 6300 6550
+Wire Wire Line
+	6300 6550 6050 6550
+Wire Wire Line
+	9900 9750 9900 9850
+Connection ~ 9900 9850
+$Comp
+L power:+5V #PWR0152
+U 1 1 5F848C1E
+P 11950 10600
+F 0 "#PWR0152" H 11950 10450 50  0001 C CNN
+F 1 "+5V" H 11965 10773 50  0000 C CNN
+F 2 "" H 11950 10600 50  0001 C CNN
+F 3 "" H 11950 10600 50  0001 C CNN
+	1    11950 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 10650 11950 10600
+Wire Wire Line
+	11500 10650 11950 10650
+$Comp
+L power:+5V #PWR0159
+U 1 1 5F8790F9
+P 14850 4500
+F 0 "#PWR0159" H 14850 4350 50  0001 C CNN
+F 1 "+5V" H 14865 4673 50  0000 C CNN
+F 2 "" H 14850 4500 50  0001 C CNN
+F 3 "" H 14850 4500 50  0001 C CNN
+	1    14850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0150
+U 1 1 5F898D61
+P 11850 6100
+F 0 "#PWR0150" H 11850 5950 50  0001 C CNN
+F 1 "+5V" H 11865 6273 50  0000 C CNN
+F 2 "" H 11850 6100 50  0001 C CNN
+F 3 "" H 11850 6100 50  0001 C CNN
+	1    11850 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 6100 11850 6200
+Connection ~ 11850 6200
+Wire Wire Line
+	14850 4500 14850 4600
+$Comp
+L TIDA-00746-SchDoc-cache:VIN #PWR0153
+U 1 1 5F8E9FDC
+P 12050 3150
+F 0 "#PWR0153" H 12050 3000 50  0001 C CNN
+F 1 "VIN" H 12065 3323 50  0000 C CNN
+F 2 "" H 12050 3150 60  0000 C CNN
+F 3 "" H 12050 3150 60  0000 C CNN
+	1    12050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TIDA-00746-SchDoc-cache:VIN #PWR0129
+U 1 1 5F8FAEFE
+P 1900 10550
+F 0 "#PWR0129" H 1900 10400 50  0001 C CNN
+F 1 "VIN" H 1915 10723 50  0000 C CNN
+F 2 "" H 1900 10550 60  0000 C CNN
+F 3 "" H 1900 10550 60  0000 C CNN
+	1    1900 10550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 3050
+Connection ~ 1700 4650
+Connection ~ 2000 4650
+Wire Wire Line
+	2000 4650 2300 4650
+Connection ~ 3700 3150
+Connection ~ 3700 3450
+Connection ~ 1900 10550
+Text Notes 16650 4850 0    168  ~ 0
+3.3V\n
+$Comp
+L 2020-06-08_08-52-19:TPS62293TDRVRQ1 U15
+U 1 1 68804327
+P 19400 12200
+F 0 "U15" H 20600 12587 60  0000 C CNN
+F 1 "TPS62293TDRVRQ1" H 20600 12481 60  0000 C CNN
+F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias" H 20600 12440 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps62293-q1.pdf" H 19400 12200 60  0001 C CNN
+F 4 "Out of stock" H 19400 12200 50  0001 C CNN "Availability"
+	1    19400 12200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	15350 9000 15350 9100
+$Comp
+L power:Earth #PWR0162
+U 1 1 68866D4E
+P 15350 9100
+F 0 "#PWR0162" H 15350 8850 50  0001 C CNN
+F 1 "Earth" H 15350 8950 50  0001 C CNN
+F 2 "" H 15350 9100 50  0001 C CNN
+F 3 "~" H 15350 9100 50  0001 C CNN
+	1    15350 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 12300 19500 12300
+$Comp
+L power:Earth #PWR0170
+U 1 1 688782D9
+P 19500 12300
+F 0 "#PWR0170" H 19500 12050 50  0001 C CNN
+F 1 "Earth" H 19500 12150 50  0001 C CNN
+F 2 "" H 19500 12300 50  0001 C CNN
+F 3 "~" H 19500 12300 50  0001 C CNN
+	1    19500 12300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	16000 12400 16000 12700
+Wire Wire Line
+	16000 13000 16000 13700
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM21BR71A106KE51L--ReleaseDevice-rescue C106
+U 1 1 6889964E
+P 16000 12900
+F 0 "C106" V 16010 12810 60  0000 R TNN
+F 1 "10µF" V 15900 12800 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15800 12800 60  0001 C CNN
+F 3 "" H 15800 12800 60  0000 C CNN
+	1    16000 12900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0164
+U 1 1 68899654
+P 16000 13700
+F 0 "#PWR0164" H 16000 13450 50  0001 C CNN
+F 1 "Earth" H 16000 13550 50  0001 C CNN
+F 2 "" H 16000 13700 50  0001 C CNN
+F 3 "~" H 16000 13700 50  0001 C CNN
+	1    16000 13700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0157
+U 1 1 68899666
+P 14500 12300
+F 0 "#PWR0157" H 14500 12150 50  0001 C CNN
+F 1 "+5V" H 14515 12473 50  0000 C CNN
+F 2 "" H 14500 12300 50  0001 C CNN
+F 3 "" H 14500 12300 50  0001 C CNN
+	1    14500 12300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 12300 14500 12400
+Wire Wire Line
+	17000 12400 16700 12400
+Connection ~ 16000 12400
+Wire Wire Line
+	16000 12400 14500 12400
+Wire Wire Line
+	16700 12400 16700 12500
+Wire Wire Line
+	16700 12500 17000 12500
+Connection ~ 16700 12400
+Wire Wire Line
+	16700 12400 16000 12400
+Wire Wire Line
+	21100 12800 21100 13500
+$Comp
+L ReleaseDeviceDigitalAudio-rescue:GRM21BR71A106KE51L--ReleaseDevice-rescue C115
+U 1 1 6892B5B1
+P 21100 12700
+F 0 "C115" V 21110 12610 60  0000 R TNN
+F 1 "10µF" V 21000 12600 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 20900 12600 60  0001 C CNN
+F 3 "" H 20900 12600 60  0000 C CNN
+	1    21100 12700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR0174
+U 1 1 6892B5B7
+P 21100 13500
+F 0 "#PWR0174" H 21100 13250 50  0001 C CNN
+F 1 "Earth" H 21100 13350 50  0001 C CNN
+F 2 "" H 21100 13500 50  0001 C CNN
+F 3 "~" H 21100 13500 50  0001 C CNN
+	1    21100 13500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21100 12200 20900 12200
+Wire Wire Line
+	20100 12200 19400 12200
+Wire Wire Line
+	21100 12050 21100 12200
+Connection ~ 21100 12200
+Wire Wire Line
+	16750 12300 16900 12300
+Wire Wire Line
+	16900 12300 16900 12200
+Wire Wire Line
+	16900 12200 17000 12200
+Connection ~ 16900 12300
+Wire Wire Line
+	16900 12300 17000 12300
+Text Notes 18650 10950 0    168  ~ 0
+1.8V\n
+Text Notes 7850 10000 0    168  ~ 0
+5V\n
+Text HLabel 20750 6000 2    50   UnSpc ~ 0
+3.3V
+Text HLabel 21100 12050 2    50   UnSpc ~ 0
+1.8V
+Text HLabel 11950 10650 2    50   UnSpc ~ 0
+5V
+Text HLabel 5450 3750 2    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	5050 3450 5350 3450
+Wire Wire Line
+	5250 3750 5350 3750
+Wire Wire Line
+	5350 3750 5350 3450
+Connection ~ 5350 3750
+Wire Wire Line
+	5350 3750 5450 3750
+Connection ~ 5350 3450
+Wire Wire Line
+	5350 3450 5450 3450
+Wire Wire Line
+	21100 12200 21100 12400
+$Comp
+L Device:C C67
+U 1 1 6054A9A3
+P 19850 12400
+F 0 "C67" V 19598 12400 50  0000 C CNN
+F 1 "22pF" V 19689 12400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 19888 12250 50  0001 C CNN
+F 3 "~" H 19850 12400 50  0001 C CNN
+	1    19850 12400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19400 12400 19700 12400
+Wire Wire Line
+	20000 12400 21100 12400
+Connection ~ 21100 12400
+Wire Wire Line
+	21100 12400 21100 12500
+$Comp
+L SamacSys_Parts:IHLP3232DZER2R2M11 L2
+U 1 1 60856EC1
+P 8500 10650
+F 0 "L2" H 8900 10875 50  0000 C CNN
+F 1 "IHLP3232DZER2R2M11" H 8900 10784 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM8682X300N" H 9150 10700 50  0001 L CNN
+F 3 "" H 9150 10600 50  0001 L CNN
+F 4 "Vishay IHLP-3232DZ Series Shielded Wire-wound SMD Inductor 2.2 uH +/-20% 14.5A Idc" H 9150 10500 50  0001 L CNN "Description"
+F 5 "3" H 9150 10400 50  0001 L CNN "Height"
+F 6 "70-IHLP3232DZER2R2M1" H 9150 10300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP3232DZER2R2M11?qs=Nbmv7C3%2FzlCI2d67CQkkdw%3D%3D" H 9150 10200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 9150 10100 50  0001 L CNN "Manufacturer_Name"
+F 9 "IHLP3232DZER2R2M11" H 9150 10000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8500 10650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 10650 7700 10650
+Wire Wire Line
+	9300 10650 9900 10650
+$Comp
+L SamacSys_Parts:XFL4020-102MEB L3
+U 1 1 6085CCC2
+P 17300 6100
+F 0 "L3" H 17700 6325 50  0000 C CNN
+F 1 "XFL4020-102MEB" H 17700 6234 50  0000 C CNN
+F 2 "SamacSys_Parts:XFL4020102MEB" H 17950 6150 50  0001 L CNN
+F 3 "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf" H 17950 6050 50  0001 L CNN
+F 4 "1 ELEMENT, 1 uH, METAL COMPOSITE-CORE, GENERAL PURPOSE INDUCTOR, SMD" H 17950 5950 50  0001 L CNN "Description"
+F 5 "2.1" H 17950 5850 50  0001 L CNN "Height"
+F 6 "994-XFL4020-102MEB" H 17950 5750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Coilcraft/XFL4020-102MEB/?qs=VJjuEbE9QBMkuCkoKl%252B%2FQw%3D%3D" H 17950 5650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "COILCRAFT" H 17950 5550 50  0001 L CNN "Manufacturer_Name"
+F 9 "XFL4020-102MEB" H 17950 5450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    17300 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18100 6100 18350 6100
+$Comp
+L SamacSys_Parts:IHLP3232DZER2R2M11 L4
+U 1 1 60888F5C
+P 20100 12200
+F 0 "L4" H 20500 12425 50  0000 C CNN
+F 1 "IHLP3232DZER2R2M11" H 20500 12334 50  0000 C CNN
+F 2 "SamacSys_Parts:INDPM8682X300N" H 20750 12250 50  0001 L CNN
+F 3 "" H 20750 12150 50  0001 L CNN
+F 4 "Vishay IHLP-3232DZ Series Shielded Wire-wound SMD Inductor 2.2 uH +/-20% 14.5A Idc" H 20750 12050 50  0001 L CNN "Description"
+F 5 "3" H 20750 11950 50  0001 L CNN "Height"
+F 6 "70-IHLP3232DZER2R2M1" H 20750 11850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/IHLP3232DZER2R2M11?qs=Nbmv7C3%2FzlCI2d67CQkkdw%3D%3D" H 20750 11750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 20750 11650 50  0001 L CNN "Manufacturer_Name"
+F 9 "IHLP3232DZER2R2M11" H 20750 11550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    20100 12200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
