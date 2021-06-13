@@ -880,11 +880,11 @@ Wire Wire Line
 	24800 4500 24200 4500
 Text Label 24200 4500 2    50   ~ 0
 DataEncoderOutputEnable
-Text Label 29900 16150 0    50   ~ 0
+Text Label 29900 16050 0    50   ~ 0
 Master_Mic_In_+
 Wire Wire Line
-	29550 16150 29900 16150
-Text Label 27700 16100 0    50   ~ 0
+	29550 16050 29900 16050
+Text Label 27700 16000 0    50   ~ 0
 Handset_Mic_In_+
 Text Label 26100 15700 0    50   ~ 0
 Audio_Handset_Out_R
@@ -4174,7 +4174,7 @@ Wire Wire Line
 Wire Wire Line
 	25900 15600 26100 15600
 Wire Wire Line
-	27700 16100 27500 16100
+	27700 16000 27500 16000
 Wire Wire Line
 	26100 15500 25900 15500
 Wire Notes Line
@@ -4283,10 +4283,10 @@ F 3 "~" H 25700 15600 50  0001 C CNN
 	1    25700 15600
 	1    0    0    -1  
 $EndComp
-Text Label 27700 16000 0    50   ~ 0
+Text Label 27700 16100 0    50   ~ 0
 Handset_Mic_In_-
 Wire Wire Line
-	27700 16000 27500 16000
+	27700 16100 27500 16100
 $Comp
 L power:Earth #PWR065
 U 1 1 617D711B
@@ -4300,10 +4300,10 @@ F 3 "~" H 27700 15900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	27700 15900 27500 15900
-Text Label 29900 16050 0    50   ~ 0
+Text Label 29900 16150 0    50   ~ 0
 Master_Mic_In_-
 Wire Wire Line
-	29550 16050 29900 16050
+	29550 16150 29900 16150
 Text Label 44550 11550 0    50   ~ 0
 Master_Mic_In_-
 Text Label 44550 12200 0    50   ~ 0

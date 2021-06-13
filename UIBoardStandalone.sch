@@ -704,17 +704,6 @@ Wire Wire Line
 Wire Wire Line
 	3950 7600 3950 7850
 $Comp
-L Device:Voltmeter_DC MES1
-U 1 1 5FEEEACA
-P 9450 4600
-F 0 "MES1" H 9603 4646 50  0000 L CNN
-F 1 "Voltmeter_DC" H 9603 4555 50  0000 L CNN
-F 2 "" V 9450 4700 50  0001 C CNN
-F 3 "~" V 9450 4700 50  0001 C CNN
-	1    9450 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x15_Odd_Even J?
 U 1 1 60B2D605
 P 2450 4550
@@ -781,31 +770,6 @@ Text Label 3050 5150 0    50   ~ 0
 Pinline_GND
 Text Label 3050 5250 0    50   ~ 0
 Pinline_VCC
-$Comp
-L Connector_Generic:Conn_02x01 J?
-U 1 1 6A6FC93C
-P 9450 5300
-AR Path="/6A6FC93C" Ref="J?"  Part="1" 
-AR Path="/6101166B/6A6FC93C" Ref="J14"  Part="1" 
-F 0 "J14" H 9500 5517 50  0000 C CNN
-F 1 "Conn_02x01" H 9500 5426 50  0000 C CNN
-F 2 "" H 9450 5300 50  0001 C CNN
-F 3 "~" H 9450 5300 50  0001 C CNN
-	1    9450 5300
-	1    0    0    -1  
-$EndComp
-Text HLabel 9750 5300 2    50   UnSpc ~ 0
-Signal_Strngth_Dial_+
-Text HLabel 9250 5300 0    50   UnSpc ~ 0
-Signal_Strngth_Dial_-
-Wire Wire Line
-	9750 5300 9750 4400
-Wire Wire Line
-	9750 4400 9450 4400
-Wire Wire Line
-	9450 4800 9250 4800
-Wire Wire Line
-	9250 4800 9250 5300
 Wire Wire Line
 	2750 3850 3050 3850
 Wire Wire Line
