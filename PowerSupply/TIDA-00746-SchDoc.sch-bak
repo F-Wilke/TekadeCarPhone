@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "TIDA-00746-SchDoc"
 Date "05 06 2020"
 Rev ""
@@ -2024,7 +2024,7 @@ Connection ~ 21100 12400
 Wire Wire Line
 	21100 12400 21100 12500
 $Comp
-L SamacSys_Parts:IHLP3232DZER2R2M11 L2
+L ReleaseDeviceDigitalAudio-rescue:IHLP3232DZER2R2M11-SamacSys_Parts L2
 U 1 1 60856EC1
 P 8500 10650
 F 0 "L2" H 8900 10875 50  0000 C CNN
@@ -2045,7 +2045,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 10650 9900 10650
 $Comp
-L SamacSys_Parts:XFL4020-102MEB L3
+L ReleaseDeviceDigitalAudio-rescue:XFL4020-102MEB-SamacSys_Parts L3
 U 1 1 6085CCC2
 P 17300 6100
 F 0 "L3" H 17700 6325 50  0000 C CNN
@@ -2064,7 +2064,7 @@ $EndComp
 Wire Wire Line
 	18100 6100 18350 6100
 $Comp
-L SamacSys_Parts:IHLP3232DZER2R2M11 L4
+L ReleaseDeviceDigitalAudio-rescue:IHLP3232DZER2R2M11-SamacSys_Parts L4
 U 1 1 60888F5C
 P 20100 12200
 F 0 "L4" H 20500 12425 50  0000 C CNN
