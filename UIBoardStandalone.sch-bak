@@ -43,7 +43,7 @@ Text Label 13500 4700 0    50   ~ 0
 Small_LED_Yellow_Cathode
 Text Label 13500 4800 0    50   ~ 0
 Data_Encoder_Data_Out_E
-Text Label 12550 4800 2    50   ~ 0
+Text Label 12500 4800 2    50   ~ 0
 Data_Encoder_Data_Out_D
 Text Label 12550 4700 2    50   ~ 0
 Small_LED_Yellow_Anode
@@ -842,7 +842,7 @@ Wire Wire Line
 Wire Wire Line
 	12550 4700 12800 4700
 Wire Wire Line
-	12800 4800 12550 4800
+	12800 4800 12500 4800
 Wire Wire Line
 	13300 4800 13500 4800
 Wire Wire Line
@@ -860,7 +860,7 @@ Wire Wire Line
 Wire Wire Line
 	13300 4100 13500 4100
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 61846D93
 P 3300 800
 F 0 "U?" H 3250 700 50  0000 L CNN
@@ -871,7 +871,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 3300 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618635E6
 P 4050 800
 F 0 "U?" H 4000 700 50  0000 L CNN
@@ -882,7 +882,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 4050 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 6187EE3E
 P 4750 800
 F 0 "U?" H 4700 700 50  0000 L CNN
@@ -893,7 +893,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 4750 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 6187EE44
 P 5500 800
 F 0 "U?" H 5450 700 50  0000 L CNN
@@ -904,7 +904,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 5500 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 6189C8E7
 P 6950 800
 F 0 "U?" H 6900 700 50  0000 L CNN
@@ -915,7 +915,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 6950 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 6189C8ED
 P 7650 800
 F 0 "U?" H 7600 700 50  0000 L CNN
@@ -926,7 +926,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 7650 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 6189C8F3
 P 8400 800
 F 0 "U?" H 8350 700 50  0000 L CNN
@@ -937,7 +937,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 8400 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618B84C4
 P 9050 800
 F 0 "U?" H 9000 700 50  0000 L CNN
@@ -948,7 +948,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 9050 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618B84CA
 P 9800 800
 F 0 "U?" H 9750 700 50  0000 L CNN
@@ -959,7 +959,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 9800 900 5
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618B84D0
 P 10500 800
 F 0 "U?" H 10450 700 50  0000 L CNN
@@ -970,7 +970,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 10500 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618B84D6
 P 11250 800
 F 0 "U?" H 11200 700 50  0000 L CNN
@@ -981,7 +981,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 11250 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618D410F
 P 12000 800
 F 0 "U?" H 11950 700 50  0000 L CNN
@@ -992,7 +992,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 12000 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618D4115
 P 12750 800
 F 0 "U?" H 12700 700 50  0000 L CNN
@@ -1003,7 +1003,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 12750 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618D411B
 P 13450 800
 F 0 "U?" H 13400 700 50  0000 L CNN
@@ -1014,7 +1014,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 13450 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 618D4121
 P 14200 800
 F 0 "U?" H 14150 700 50  0000 L CNN
@@ -1522,7 +1522,7 @@ Connection ~ 10950 2000
 Wire Wire Line
 	10950 2000 11700 2000
 $Comp
-L hd1077r:HD1077R U?
+L TeKaDe:HD1077R U?
 U 1 1 6189C8E1
 P 6200 800
 F 0 "U?" H 6150 700 50  0000 L CNN

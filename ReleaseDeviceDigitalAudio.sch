@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:Board_RPi_CM3_200pConnector-KiCADinfo_RPi-modules-ReleaseDevice-rescue MD1
+L TeKaDe:Board_RPi_CM3_200pConnector MD1
 U 1 1 5ED04753
 P 13900 15450
 F 0 "MD1" H 13900 23190 50  0000 C CNN
@@ -41,7 +41,7 @@ F 4 "good" H 29500 21200 50  0001 C CNN "Availability"
 	1    0    0    -1  
 $EndComp
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:CD4511BE-CD4511BE-ReleaseDevice-rescue U5
+L TeKaDe:CD4511BE U5
 U 1 1 5ED2A37A
 P 41400 3950
 F 0 "U5" H 41400 4720 50  0000 C CNN
@@ -1209,7 +1209,7 @@ $EndComp
 Text Label 4000 17950 0    50   ~ 0
 CM_1V8
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:FE1.1s-Interface_USB U1
+L TeKaDe:FE1.1s-Interface_USB U1
 U 1 1 63328D15
 P 8750 4950
 F 0 "U1" H 8750 3761 50  0000 C CNN
@@ -2557,7 +2557,7 @@ F 3 "~" H 33900 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:CD4515-CD4515-ReleaseDevice-rescue U7
+L TeKaDe:CD4515 U7
 U 1 1 621172AA
 P 34550 4750
 F 0 "U7" H 34550 5525 50  0000 C CNN
@@ -3344,7 +3344,7 @@ F 3 "~" H 37700 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:TS5A23157DGSTG4-SamacSys_Parts IC2
+L TeKaDe:TS5A23157DGSTG4 IC2
 U 1 1 612493BD
 P 34050 3000
 F 0 "IC2" H 34600 3265 50  0000 C CNN
@@ -3557,7 +3557,7 @@ Wire Notes Line
 Wire Notes Line
 	25250 16450 30650 16450
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:BM83SM1-00TA-SamacSys_Parts IC?
+L TeKaDe:BM83SM1-00TA IC?
 U 1 1 657E4829
 P 23700 21100
 F 0 "IC?" H 24700 21365 50  0000 C CNN

@@ -229,7 +229,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 7000 6250 7000
 $Comp
-L ReleaseDeviceDigitalAudio-rescue:830208220101-SamacSys_Parts Y?
+L TeKaDe:WE_830208220101 Y?
 U 1 1 60E6079E
 P 4550 6900
 F 0 "Y?" H 5750 7150 50  0000 C CNN

@@ -353,18 +353,6 @@ F 4 "Out of stock" H 6050 13450 50  0001 C CNN "Availability"
 	1    6050 13450
 	1    0    0    -1  
 $EndComp
-$Comp
-L ReleaseDeviceDigitalAudio-rescue:GCM21BR71C475KA73L--ReleaseDevice-rescue Cvcc?
-U 1 1 5EDA44AA
-P 4900 13050
-F 0 "Cvcc?" H 4800 13250 60  0000 L BNN
-F 1 "4.7µF" H 4950 13200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4900 13050 50  0001 C CNN
-F 3 "" H 4900 13050 50  0001 C CNN
-F 4 "4.7µF" V -900 12700 60  0001 C CNN "ValueDisplayed"
-	1    4900 13050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 13350 5250 13350
 Wire Wire Line
@@ -2053,5 +2041,16 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 4000 50  0001 C CNN
 F 3 "~" H 10500 4000 50  0001 C CNN
 	1    10500 4000
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E76C83
+P 4950 13050
+F 0 "C?" H 5065 13096 50  0000 L CNN
+F 1 "4u7/16V/X7R" H 5065 13005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4988 12900 50  0001 C CNN
+F 3 "~" H 4950 13050 50  0001 C CNN
+	1    4950 13050
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
