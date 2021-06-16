@@ -1,108 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 2020-06-08_08-52-19_TPS62293TDRVRQ1
-#
-DEF 2020-06-08_08-52-19_TPS62293TDRVRQ1 U 0 10 Y Y 1 L N
-F0 "U" 1200 400 60 H V C CNN
-F1 "2020-06-08_08-52-19_TPS62293TDRVRQ1" 1200 300 60 H V C CNN
-F2 "DRV6_1P6X1" 1200 240 60 H I C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- DRV6_1P6X1
-$ENDFPLIST
-DRAW
-P 2 1 1 5 300 -500 2100 -500 N
-P 2 1 1 5 300 200 300 -500 N
-P 2 1 1 5 2100 -500 2100 200 N
-P 2 1 1 5 2100 200 300 200 N
-X SW 1 0 0 300 R 59 59 1 1 O
-X MODE 2 0 -100 300 R 59 59 1 1 I
-X FB 3 0 -200 300 R 59 59 1 1 I
-X EN 4 2400 -300 300 L 59 59 1 1 I
-X VIN 5 2400 -200 300 L 59 59 1 1 W
-X GND 6 2400 -100 300 L 59 59 1 1 W
-X EPAD 7 2400 0 300 L 59 59 1 1 U
-ENDDRAW
-ENDDEF
-#
-# 2021-06-01_14-02-01_MAX98089ETN+
-#
-DEF 2021-06-01_14-02-01_MAX98089ETN+ U 0 10 Y Y 1 L N
-F0 "U" 0 1700 60 H V C CNN
-F1 "2021-06-01_14-02-01_MAX98089ETN+" 0 1600 60 H V C CNN
-F2 "21-0144H_T5677-1_MXM" 0 -1750 60 H I C CNN
-F3 "" -1350 1300 60 H V C CNN
-$FPLIST
- 21-0144H_T5677-1_MXM
- 21-0144H_T5677-1_MXM-M
- 21-0144H_T5677-1_MXM-L
-$ENDFPLIST
-DRAW
-P 2 1 1 5 -1050 -1700 950 -1700 N
-P 2 1 1 5 -1050 1500 -1050 -1700 N
-P 2 1 1 5 950 -1700 950 1500 N
-P 2 1 1 5 950 1500 -1050 1500 N
-X SDOUTS2 1 -1350 1300 300 R 59 59 1 1 O
-X LRCLKS1 10 -1350 400 300 R 59 59 1 1 B
-X NC 11 -1350 300 300 R 59 59 1 1 N
-X NC 12 -1350 200 300 R 59 59 1 1 N
-X NC 13 -1350 100 300 R 59 59 1 1 N
-X NC 14 -1350 0 300 R 59 59 1 1 N
-X SPKRN 15 -1350 -100 300 R 59 59 1 1 O
-X SPKRGND 16 -1350 -200 300 R 59 59 1 1 W
-X SPKRP 17 -1350 -300 300 R 59 59 1 1 O
-X SPKRVDD 18 -1350 -400 300 R 59 59 1 1 W
-X SPKLVDD 19 -1350 -500 300 R 59 59 1 1 W
-X BCLKS2 2 -1350 1200 300 R 59 59 1 1 B
-X SPKLP 20 -1350 -600 300 R 59 59 1 1 O
-X SPKLGND 21 -1350 -700 300 R 59 59 1 1 W
-X SPKLN 22 -1350 -800 300 R 59 59 1 1 O
-X RECN/LOUTR/RXINN 23 -1350 -900 300 R 59 59 1 1 O
-X RECP/LOUTL/RXINP 24 -1350 -1000 300 R 59 59 1 1 O
-X PVDD 25 -1350 -1100 300 R 59 59 1 1 W
-X C1P 26 -1350 -1200 300 R 59 59 1 1 U
-X C1N 27 -1350 -1300 300 R 59 59 1 1 U
-X NC 28 -1350 -1400 300 R 59 59 1 1 N
-X NC 29 1250 -1500 300 L 59 59 1 1 N
-X DGND 3 -1350 1100 300 R 59 59 1 1 W
-X HPGND 30 1250 -1400 300 L 59 59 1 1 W
-X HPVSS 31 1250 -1300 300 L 59 59 1 1 W
-X HPVDD 32 1250 -1200 300 L 59 59 1 1 W
-X HPL 33 1250 -1100 300 L 59 59 1 1 O
-X HPSNS 34 1250 -1000 300 L 59 59 1 1 U
-X HPR 35 1250 -900 300 L 59 59 1 1 O
-X INB2 36 1250 -800 300 L 59 59 1 1 I
-X INB1 37 1250 -700 300 L 59 59 1 1 I
-X INA2/EXTMICN 38 1250 -600 300 L 59 59 1 1 I
-X INA1/EXTMICP 39 1250 -500 300 L 59 59 1 1 I
-X LRCLKS2 4 -1350 1000 300 R 59 59 1 1 B
-X MIC1P/DIGMICDATA 40 1250 -400 300 L 59 59 1 1 I
-X MIC1N/DIGMICCLK 41 1250 -300 300 L 59 59 1 1 I
-X MIC2P 42 1250 -200 300 L 59 59 1 1 I
-X MIC2N 43 1250 -100 300 L 59 59 1 1 I
-X MICBIAS 44 1250 0 300 L 59 59 1 1 U
-X JACKSNS 45 1250 100 300 L 59 59 1 1 U
-X NC 46 1250 200 300 L 59 59 1 1 N
-X AGND 47 1250 300 300 L 59 59 1 1 W
-X REF 48 1250 400 300 L 59 59 1 1 U
-X REG 49 1250 500 300 L 59 59 1 1 U
-X MCLK 5 -1350 900 300 R 59 59 1 1 I
-X AVDD 50 1250 600 300 L 59 59 1 1 W
-X SCL 51 1250 700 300 L 59 59 1 1 I
-X SDA 52 1250 800 300 L 59 59 1 1 B
-X DVDD 53 1250 900 300 L 59 59 1 1 W
-X SDINS2 54 1250 1000 300 L 59 59 1 1 I
-X DVDDS2 55 1250 1100 300 L 59 59 1 1 W
-X *IRQ 56 1250 1200 300 L 59 59 1 1 O
-X EPAD 57 1250 1300 300 L 59 59 1 1 U
-X DVDDS1 6 -1350 800 300 R 59 59 1 1 W
-X SDOUTS1 7 -1350 700 300 R 59 59 1 1 O
-X BCLKS1 8 -1350 600 300 R 59 59 1 1 B
-X SDINS1 9 -1350 500 300 R 59 59 1 1 I
-ENDDRAW
-ENDDEF
-#
 # Connector_AudioJack3
 #
 DEF Connector_AudioJack3 J 0 20 Y Y 1 F N
@@ -400,6 +298,67 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_D_Schottky
+#
+DEF Device_D_Schottky D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_Schottky" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 8 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Zener
+#
+DEF Device_D_Zener D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_Zener" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 8 -50 -50 -50 50 -30 50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_US
 #
 DEF Device_R_US R 0 0 N Y 1 F N
@@ -632,110 +591,6 @@ X GND 99 0 -2900 150 U 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_06031C102KAT2A--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_06031C102KAT2A--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_06031C102KAT2A--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_06035A100JAT2A--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_06035A100JAT2A--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_06035A100JAT2A--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_06035C104KAT2A--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_06035C104KAT2A--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" -110 90 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_06035C104KAT2A--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_08051A470JAT2A--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_08051A470JAT2A--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_08051A470JAT2A--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_6091--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_6091--ReleaseDevice-rescue J 0 40 Y Y 1 F N
-F0 "J" -100 100 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_6091--ReleaseDevice-rescue" -100 -200 60 H V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-A 0 0 75 0 1200 1 1 30 N 75 0 -37 64
-A 0 0 100 7 1206 1 1 0 N 99 1 -50 86
-A 0 0 75 1200 -1200 1 1 30 N -37 64 -37 -64
-A 0 0 100 1206 -1195 1 1 0 N -50 86 -49 -87
-A 0 0 75 -1200 0 1 1 30 N -37 -64 75 0
-A 0 0 100 -1195 4 1 1 0 N -49 -87 99 0
-X 1 1 300 0 200 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_6092--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_6092--ReleaseDevice-rescue J 0 40 Y Y 1 F N
-F0 "J" -100 100 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_6092--ReleaseDevice-rescue" -100 -200 60 H V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-A 0 0 75 0 1200 1 1 30 N 75 0 -37 64
-A 0 0 100 7 1206 1 1 0 N 99 1 -50 86
-A 0 0 75 1200 -1200 1 1 30 N -37 64 -37 -64
-A 0 0 100 1206 -1195 1 1 0 N -50 86 -49 -87
-A 0 0 75 -1200 0 1 1 30 N -37 -64 75 0
-A 0 0 100 -1195 4 1 1 0 N -49 -87 99 0
-X 1 1 300 0 200 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
 # ReleaseDeviceDigitalAudio-rescue_830208220101-SamacSys_Parts
 #
 DEF ReleaseDeviceDigitalAudio-rescue_830208220101-SamacSys_Parts Y 0 30 Y Y 1 F N
@@ -753,44 +608,6 @@ X ENABLE 1 600 -100 200 R 50 50 0 0 P
 X GND 2 1700 -100 200 L 50 50 0 0 P
 X OUTPUT 3 1700 0 200 L 50 50 0 0 P
 X +VS 4 600 0 200 R 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_ACM1211-102-2PL-TL01--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_ACM1211-102-2PL-TL01--ReleaseDevice-rescue L 0 40 Y Y 1 F N
-F0 "L" -310 200 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_ACM1211-102-2PL-TL01--ReleaseDevice-rescue" -400 -500 60 H V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-A -150 -200 50 0 900 1 1 10 N -100 -200 -150 -150
-A -150 -200 50 900 1800 1 1 10 N -150 -150 -200 -200
-A -150 100 50 1800 -900 1 1 10 N -200 99 -150 50
-A -150 100 50 -900 0 1 1 10 N -150 50 -100 100
-A -50 -200 50 0 900 1 1 10 N 0 -200 -50 -150
-A -50 -200 50 900 1800 1 1 10 N -50 -150 -100 -200
-A -50 100 50 1800 -900 1 1 10 N -100 99 -50 50
-A -50 100 50 -900 0 1 1 10 N -50 50 0 100
-A 50 -200 50 0 900 1 1 10 N 100 -200 49 -150
-A 50 -200 50 900 1800 1 1 10 N 49 -150 0 -200
-A 50 100 50 1800 -900 1 1 10 N 0 99 49 50
-A 50 100 50 -900 0 1 1 10 N 49 50 100 100
-A 150 -200 50 0 900 1 1 10 N 200 -200 149 -150
-A 150 -200 50 900 1800 1 1 10 N 149 -150 100 -200
-A 150 100 50 1800 -900 1 1 10 N 100 99 149 50
-A 150 100 50 -900 0 1 1 10 N 149 50 200 100
-S -300 -300 300 200 0 1 10 f
-P 2 0 1 10 -300 -200 -200 -200 N
-P 2 0 1 10 -300 100 -200 100 N
-P 2 0 1 10 -200 -100 200 -100 N
-P 2 0 1 10 200 -200 300 -200 N
-P 2 0 1 10 200 0 -200 0 N
-P 2 0 1 10 200 100 300 100 N
-X 1 1 -500 -200 200 R 70 1 0 1 P
-X 2 2 -500 100 200 R 70 1 0 1 P
-X 3 3 500 100 200 L 70 1 0 1 P
-X 4 4 500 -200 200 L 70 1 0 1 P
 ENDDRAW
 ENDDEF
 #
@@ -1086,74 +903,6 @@ X DSI0_DN0 99 -1000 0 150 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_C0603C222K5RACTU--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_C0603C222K5RACTU--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_C0603C222K5RACTU--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_C2012X5R1H225K125AB--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_C2012X5R1H225K125AB--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" -10 90 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_C2012X5R1H225K125AB--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_C2012X7R2A472K--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_C2012X7R2A472K--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_C2012X7R2A472K--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_C3225X5R0J476M--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_C3225X5R0J476M--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_C3225X5R0J476M--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
 # ReleaseDeviceDigitalAudio-rescue_CD4511BE-CD4511BE-ReleaseDevice-rescue
 #
 DEF ReleaseDeviceDigitalAudio-rescue_CD4511BE-CD4511BE-ReleaseDevice-rescue U 0 40 Y Y 1 L N
@@ -1225,174 +974,6 @@ X S1 9 -400 -250 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_CPF0603B100KE--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CPF0603B100KE--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CPF0603B100KE--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW0603100KFKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW0603100KFKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW0603100KFKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW0603100KJNEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW0603100KJNEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW0603100KJNEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW060320K0FKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW060320K0FKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW060320K0FKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW060320K0JNEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW060320K0JNEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW060320K0JNEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW06032K00FKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW06032K00FKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW06032K00FKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW060330K1FKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW060330K1FKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW060330K1FKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW06033R00JNEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW06033R00JNEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" -110 30 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW06033R00JNEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW06034K75FKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW06034K75FKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW06034K75FKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW060380K6FKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW060380K6FKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW060380K6FKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW060382K5FKEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW060382K5FKEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW060382K5FKEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_CRCW08054R70JNEA--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_CRCW08054R70JNEA--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_CRCW08054R70JNEA--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
 # ReleaseDeviceDigitalAudio-rescue_FE1.1s-Interface_USB
 #
 DEF ReleaseDeviceDigitalAudio-rescue_FE1.1s-Interface_USB U 0 20 Y Y 1 F N
@@ -1436,215 +1017,77 @@ X DP2 9 700 600 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_GCM188R71C104KA37J--ReleaseDevice-rescue
+# ReleaseDeviceDigitalAudio-rescue_TS5A23157DGSTG4-SamacSys_Parts
 #
-DEF ReleaseDeviceDigitalAudio-rescue_GCM188R71C104KA37J--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 50 100 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GCM188R71C104KA37J--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
+DEF ReleaseDeviceDigitalAudio-rescue_TS5A23157DGSTG4-SamacSys_Parts IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "ReleaseDeviceDigitalAudio-rescue_TS5A23157DGSTG4-SamacSys_Parts" 950 200 50 H V L CNN
+F2 "SOP50P490X110-10N" 950 100 50 H I L CNN
+F3 "" 950 0 50 H I L CNN
+F4 "Analog Switch ICs Dual 10-Ohm SPDT Analog Switch" 950 -100 50 H I L CNN "Description"
+F5 "1.1" 950 -200 50 H I L CNN "Height"
+F6 "595-TS5A23157DGSTG4" 950 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TS5A23157DGSTG4" 950 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Texas Instruments" 950 -500 50 H I L CNN "Manufacturer_Name"
+F9 "TS5A23157DGSTG4" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
+P 5 0 1 6 200 100 900 100 900 -500 200 -500 200 100 N
+X IN1 1 0 0 200 R 50 50 0 0 P
+X COM1 10 1100 0 200 L 50 50 0 0 P
+X NO1 2 0 -100 200 R 50 50 0 0 P
+X GND 3 0 -200 200 R 50 50 0 0 P
+X NO2 4 0 -300 200 R 50 50 0 0 P
+X IN2 5 0 -400 200 R 50 50 0 0 P
+X COM2 6 1100 -400 200 L 50 50 0 0 P
+X NC2 7 1100 -300 200 L 50 50 0 0 P
+X V+ 8 1100 -200 200 L 50 50 0 0 P
+X NC1 9 1100 -100 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_GCM21BR71C475KA73L--ReleaseDevice-rescue
+# TeKaDe_ACM1211-102-2PL-TL01-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_GCM21BR71C475KA73L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" -150 100 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GCM21BR71C475KA73L--ReleaseDevice-rescue" 0 0 60 H V C CNN
+DEF TeKaDe_ACM1211-102-2PL-TL01- L 0 40 Y Y 1 F N
+F0 "L" -300 250 60 H V L BNN
+F1 "TeKaDe_ACM1211-102-2PL-TL01-" -300 -400 60 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
+A -150 -200 50 0 900 1 1 10 N -100 -200 -150 -150
+A -150 -200 50 900 1800 1 1 10 N -150 -150 -200 -200
+A -150 100 50 1800 -900 1 1 10 N -200 99 -150 50
+A -150 100 50 -900 0 1 1 10 N -150 50 -100 100
+A -50 -200 50 0 900 1 1 10 N 0 -200 -50 -150
+A -50 -200 50 900 1800 1 1 10 N -50 -150 -100 -200
+A -50 100 50 1800 -900 1 1 10 N -100 99 -50 50
+A -50 100 50 -900 0 1 1 10 N -50 50 0 100
+A 50 -200 50 0 900 1 1 10 N 100 -200 49 -150
+A 50 -200 50 900 1800 1 1 10 N 49 -150 0 -200
+A 50 100 50 1800 -900 1 1 10 N 0 99 49 50
+A 50 100 50 -900 0 1 1 10 N 49 50 100 100
+A 150 -200 50 0 900 1 1 10 N 200 -200 149 -150
+A 150 -200 50 900 1800 1 1 10 N 149 -150 100 -200
+A 150 100 50 1800 -900 1 1 10 N 100 99 149 50
+A 150 100 50 -900 0 1 1 10 N 149 50 200 100
+S -300 -300 300 200 0 1 10 N
+P 2 0 1 10 -300 -200 -200 -200 N
+P 2 0 1 10 -300 100 -200 100 N
+P 2 0 1 10 -200 -100 200 -100 N
+P 2 0 1 10 200 -200 300 -200 N
+P 2 0 1 10 200 0 -200 0 N
+P 2 0 1 10 200 100 300 100 N
+X 1 1 -500 -200 200 R 70 1 0 1 P
+X 2 2 -500 100 200 R 70 1 0 1 P
+X 3 3 500 100 200 L 70 1 0 1 P
+X 4 4 500 -200 200 L 70 1 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_GRM1885C1H242JA01D--ReleaseDevice-rescue
+# TeKaDe_IHLP2020CZER2R2M11-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_GRM1885C1H242JA01D--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM1885C1H242JA01D--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM188R61E474KA12D--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM188R61E474KA12D--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 100 50 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM188R61E474KA12D--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM188R71H103KA01D--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM188R71H103KA01D--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM188R71H103KA01D--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM188R71H473KA61D--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM188R71H473KA61D--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM188R71H473KA61D--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM21BR71A106KE51L--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM21BR71A106KE51L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM21BR71A106KE51L--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM31CR61H106KA12L--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM31CR61H106KA12L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM31CR61H106KA12L--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM31CR71A226KE15L--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM31CR71A226KE15L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM31CR71A226KE15L--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM31CR71H475KA12L--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM31CR71H475KA12L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM31CR71H475KA12L--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM32ER71A476KE15L--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM32ER71A476KE15L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM32ER71A476KE15L--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_GRM32ER71H106KA12L--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_GRM32ER71H106KA12L--ReleaseDevice-rescue C 0 40 Y Y 1 F N
-F0 "C" 90 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_GRM32ER71H106KA12L--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 0 0 30 0 N
-P 2 0 1 10 30 80 30 -80 N
-P 2 0 1 10 70 80 70 -80 N
-P 2 0 1 10 100 0 70 0 N
-X 1 1 200 0 100 L 1 1 0 1 P
-X 2 2 -100 0 100 R 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_IHLP2020CZER2R2M11--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_IHLP2020CZER2R2M11--ReleaseDevice-rescue LF 0 40 Y Y 1 F N
+DEF TeKaDe_IHLP2020CZER2R2M11- LF 0 40 Y Y 1 F N
 F0 "LF" -200 -200 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_IHLP2020CZER2R2M11--ReleaseDevice-rescue" -600 200 60 H V L BNN
+F1 "TeKaDe_IHLP2020CZER2R2M11-" -600 200 60 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1663,11 +1106,11 @@ X 2 2 300 0 100 L 1 1 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_IHLP3232DZER2R2M11-SamacSys_Parts
+# TeKaDe_IHLP3232DZER2R2M11-SamacSys_Parts
 #
-DEF ReleaseDeviceDigitalAudio-rescue_IHLP3232DZER2R2M11-SamacSys_Parts L 0 30 Y Y 1 F N
+DEF TeKaDe_IHLP3232DZER2R2M11-SamacSys_Parts L 0 30 Y Y 1 F N
 F0 "L" 650 250 50 H V L CNN
-F1 "ReleaseDeviceDigitalAudio-rescue_IHLP3232DZER2R2M11-SamacSys_Parts" 650 150 50 H V L CNN
+F1 "TeKaDe_IHLP3232DZER2R2M11-SamacSys_Parts" 650 150 50 H V L CNN
 F2 "INDPM8682X300N" 650 50 50 H I L CNN
 F3 "" 650 -50 50 H I L CNN
 F4 "Vishay IHLP-3232DZ Series Shielded Wire-wound SMD Inductor 2.2 uH +/-20% 14.5A Idc" 650 -150 50 H I L CNN "Description"
@@ -1686,15 +1129,15 @@ X ~ 2 800 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_LM53635RNL--ReleaseDevice-rescue
+# TeKaDe_LM53635RNL
 #
-DEF ReleaseDeviceDigitalAudio-rescue_LM53635RNL--ReleaseDevice-rescue U 0 40 Y Y 1 F N
+DEF TeKaDe_LM53635RNL U 0 40 Y Y 1 F N
 F0 "U" -600 1200 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_LM53635RNL--ReleaseDevice-rescue" -600 -1300 60 H V L BNN
+F1 "TeKaDe_LM53635RNL" -600 -1300 60 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
-S -600 -1200 600 1200 0 1 10 f
+S -600 -1200 600 1200 0 1 10 N
 X VCC 1 -800 400 200 R 70 70 0 1 W
 X PGND2 10 800 -800 200 L 70 70 0 1 W
 X PGND2 11 800 -900 200 L 70 70 0 1 W
@@ -1720,118 +1163,108 @@ X SW 9 800 700 200 L 70 70 0 1 W
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_LM74610--ReleaseDevice-rescue
+# TeKaDe_LM74610-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_LM74610--ReleaseDevice-rescue U 0 40 Y Y 1 F N
-F0 "U" -500 300 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_LM74610--ReleaseDevice-rescue" -500 -600 60 H V L BNN
+DEF TeKaDe_LM74610- U 0 40 Y Y 1 F N
+F0 "U" -500 350 60 H V L BNN
+F1 "TeKaDe_LM74610-" -500 -600 60 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
-S -500 -500 500 300 0 1 10 f
-X VCAPL 1 -700 200 200 R 70 70 0 1 P
-X GTPULLDN 2 -700 0 200 R 70 70 0 1 P
-X ANODE1 3 -700 -200 200 R 70 70 0 1 P
-X ANODE 4 -700 -400 200 R 70 70 0 1 P
-X NC 5 700 -400 200 L 70 70 0 1 P
-X GATEDRIVE 6 700 -200 200 L 70 70 0 1 P
-X VCAPH 7 700 0 200 L 70 70 0 1 P
-X CATHODE 8 700 200 200 L 70 70 0 1 P
+S -550 -500 550 300 0 1 10 N
+X VCAPL 1 -750 200 200 R 70 70 0 1 P
+X GTPULLDN 2 -750 0 200 R 70 70 0 1 P
+X ANODE1 3 -750 -200 200 R 70 70 0 1 P
+X ANODE 4 -750 -400 200 R 70 70 0 1 P
+X NC 5 750 -400 200 L 70 70 0 1 P
+X GATEDRIVE 6 750 -200 200 L 70 70 0 1 P
+X VCAPH 7 750 0 200 L 70 70 0 1 P
+X CATHODE 8 750 200 200 L 70 70 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_MMSZ5245B-7-F--ReleaseDevice-rescue
+# TeKaDe_MAX98089ETN+
 #
-DEF ReleaseDeviceDigitalAudio-rescue_MMSZ5245B-7-F--ReleaseDevice-rescue D 0 40 Y Y 1 F N
-F0 "D" 110 -50 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_MMSZ5245B-7-F--ReleaseDevice-rescue" -200 -500 60 V V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
+DEF TeKaDe_MAX98089ETN+ U 0 10 Y Y 1 L N
+F0 "U" 0 1700 60 H V C CNN
+F1 "TeKaDe_MAX98089ETN+" 0 1600 60 H V C CNN
+F2 "21-0144H_T5677-1_MXM" 0 -1750 60 H I C CNN
+F3 "" -1350 1300 60 H V C CNN
+$FPLIST
+ 21-0144H_T5677-1_MXM
+ 21-0144H_T5677-1_MXM-M
+ 21-0144H_T5677-1_MXM-L
+$ENDFPLIST
 DRAW
-P 4 0 1 10 -100 -100 0 0 -100 100 -100 -100 F
-P 4 0 1 10 40 -100 0 -60 0 60 -40 100 N
-X K 1 200 0 200 L 1 1 0 1 P
-X A 2 -300 0 200 R 1 1 0 1 P
+P 2 1 1 5 -1050 -1700 950 -1700 N
+P 2 1 1 5 -1050 1500 -1050 -1700 N
+P 2 1 1 5 950 -1700 950 1500 N
+P 2 1 1 5 950 1500 -1050 1500 N
+X SDOUTS2 1 -1350 1300 300 R 59 59 1 1 O
+X LRCLKS1 10 -1350 400 300 R 59 59 1 1 B
+X NC 11 -1350 300 300 R 59 59 1 1 N
+X NC 12 -1350 200 300 R 59 59 1 1 N
+X NC 13 -1350 100 300 R 59 59 1 1 N
+X NC 14 -1350 0 300 R 59 59 1 1 N
+X SPKRN 15 -1350 -100 300 R 59 59 1 1 O
+X SPKRGND 16 -1350 -200 300 R 59 59 1 1 W
+X SPKRP 17 -1350 -300 300 R 59 59 1 1 O
+X SPKRVDD 18 -1350 -400 300 R 59 59 1 1 W
+X SPKLVDD 19 -1350 -500 300 R 59 59 1 1 W
+X BCLKS2 2 -1350 1200 300 R 59 59 1 1 B
+X SPKLP 20 -1350 -600 300 R 59 59 1 1 O
+X SPKLGND 21 -1350 -700 300 R 59 59 1 1 W
+X SPKLN 22 -1350 -800 300 R 59 59 1 1 O
+X RECN/LOUTR/RXINN 23 -1350 -900 300 R 59 59 1 1 O
+X RECP/LOUTL/RXINP 24 -1350 -1000 300 R 59 59 1 1 O
+X PVDD 25 -1350 -1100 300 R 59 59 1 1 W
+X C1P 26 -1350 -1200 300 R 59 59 1 1 U
+X C1N 27 -1350 -1300 300 R 59 59 1 1 U
+X NC 28 -1350 -1400 300 R 59 59 1 1 N
+X NC 29 1250 -1500 300 L 59 59 1 1 N
+X DGND 3 -1350 1100 300 R 59 59 1 1 W
+X HPGND 30 1250 -1400 300 L 59 59 1 1 W
+X HPVSS 31 1250 -1300 300 L 59 59 1 1 W
+X HPVDD 32 1250 -1200 300 L 59 59 1 1 W
+X HPL 33 1250 -1100 300 L 59 59 1 1 O
+X HPSNS 34 1250 -1000 300 L 59 59 1 1 U
+X HPR 35 1250 -900 300 L 59 59 1 1 O
+X INB2 36 1250 -800 300 L 59 59 1 1 I
+X INB1 37 1250 -700 300 L 59 59 1 1 I
+X INA2/EXTMICN 38 1250 -600 300 L 59 59 1 1 I
+X INA1/EXTMICP 39 1250 -500 300 L 59 59 1 1 I
+X LRCLKS2 4 -1350 1000 300 R 59 59 1 1 B
+X MIC1P/DIGMICDATA 40 1250 -400 300 L 59 59 1 1 I
+X MIC1N/DIGMICCLK 41 1250 -300 300 L 59 59 1 1 I
+X MIC2P 42 1250 -200 300 L 59 59 1 1 I
+X MIC2N 43 1250 -100 300 L 59 59 1 1 I
+X MICBIAS 44 1250 0 300 L 59 59 1 1 U
+X JACKSNS 45 1250 100 300 L 59 59 1 1 U
+X NC 46 1250 200 300 L 59 59 1 1 N
+X AGND 47 1250 300 300 L 59 59 1 1 W
+X REF 48 1250 400 300 L 59 59 1 1 U
+X REG 49 1250 500 300 L 59 59 1 1 U
+X MCLK 5 -1350 900 300 R 59 59 1 1 I
+X AVDD 50 1250 600 300 L 59 59 1 1 W
+X SCL 51 1250 700 300 L 59 59 1 1 I
+X SDA 52 1250 800 300 L 59 59 1 1 B
+X DVDD 53 1250 900 300 L 59 59 1 1 W
+X SDINS2 54 1250 1000 300 L 59 59 1 1 I
+X DVDDS2 55 1250 1100 300 L 59 59 1 1 W
+X *IRQ 56 1250 1200 300 L 59 59 1 1 O
+X EPAD 57 1250 1300 300 L 59 59 1 1 U
+X DVDDS1 6 -1350 800 300 R 59 59 1 1 W
+X SDOUTS1 7 -1350 700 300 R 59 59 1 1 O
+X BCLKS1 8 -1350 600 300 R 59 59 1 1 B
+X SDINS1 9 -1350 500 300 R 59 59 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_Net-Tie--ReleaseDevice-rescue
+# TeKaDe_SQ2360EES-T1-GE3-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_Net-Tie--ReleaseDevice-rescue NTG 0 40 Y Y 1 F N
-F0 "NTG" -100 50 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_Net-Tie--ReleaseDevice-rescue" -100 -150 60 H V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-S -100 -50 100 50 0 1 10 f
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_RG1608P-2493-B-T5--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_RG1608P-2493-B-T5--ReleaseDevice-rescue R 0 40 Y Y 1 F N
-F0 "R" 30 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_RG1608P-2493-B-T5--ReleaseDevice-rescue" 0 0 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 10 0 1 10 100 0 60 0 50 -20 30 20 10 -20 -10 20 -30 -20 -50 20 -60 0 -100 0 N
-X 1 1 -200 0 100 R 1 1 0 1 P
-X 2 2 200 0 100 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_SMBJ14A-13-F--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_SMBJ14A-13-F--ReleaseDevice-rescue D 0 40 Y Y 1 F N
-F0 "D" 110 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_SMBJ14A-13-F--ReleaseDevice-rescue" 110 -90 60 V V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 -60 -50 0 -100 N
-P 2 0 1 10 -60 0 -100 0 N
-P 2 0 1 10 -60 0 -60 -50 N
-P 2 0 1 10 -60 70 -60 0 N
-P 2 0 1 10 -40 -70 -40 0 N
-P 2 0 1 10 -40 0 -40 60 N
-P 2 0 1 10 -40 60 -100 100 N
-P 2 0 1 10 100 0 60 0 N
-P 4 0 1 10 60 100 -40 0 60 -100 60 100 F
-X K 1 -300 0 200 R 1 1 0 1 P
-X A 2 300 0 200 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_SMBJ28A-13-F--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_SMBJ28A-13-F--ReleaseDevice-rescue D 0 40 Y Y 1 F N
-F0 "D" 110 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_SMBJ28A-13-F--ReleaseDevice-rescue" 110 -90 60 V V L BNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 10 -60 -60 0 -100 N
-P 2 0 1 10 -60 0 -100 0 N
-P 2 0 1 10 -60 0 -60 -60 N
-P 2 0 1 10 -60 70 -60 0 N
-P 2 0 1 10 -40 -70 -40 0 N
-P 2 0 1 10 -40 0 -40 50 N
-P 2 0 1 10 -40 50 -100 100 N
-P 2 0 1 10 100 0 60 0 N
-P 4 0 1 10 60 100 -40 0 60 -100 60 100 F
-X K 1 -300 0 200 R 1 1 0 1 P
-X A 2 300 0 200 L 1 1 0 1 P
-ENDDRAW
-ENDDEF
-#
-# ReleaseDeviceDigitalAudio-rescue_SQ2360EES-T1-GE3--ReleaseDevice-rescue
-#
-DEF ReleaseDeviceDigitalAudio-rescue_SQ2360EES-T1-GE3--ReleaseDevice-rescue Q 0 40 Y Y 1 F N
+DEF TeKaDe_SQ2360EES-T1-GE3- Q 0 40 Y Y 1 F N
 F0 "Q" 260 10 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_SQ2360EES-T1-GE3--ReleaseDevice-rescue" 260 -90 60 H V L BNN
+F1 "TeKaDe_SQ2360EES-T1-GE3-" 260 -90 60 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1877,11 +1310,11 @@ X D 3 100 300 200 D 70 1 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_SQJ422EP-T1-GE3--ReleaseDevice-rescue
+# TeKaDe_SQJ422EP-T1-GE3-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_SQJ422EP-T1-GE3--ReleaseDevice-rescue Q 0 40 Y Y 1 F N
+DEF TeKaDe_SQJ422EP-T1-GE3- Q 0 40 Y Y 1 F N
 F0 "Q" -210 240 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_SQJ422EP-T1-GE3--ReleaseDevice-rescue" -300 400 60 V V L BNN
+F1 "TeKaDe_SQJ422EP-T1-GE3-" -300 400 60 V V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1912,11 +1345,11 @@ X D 5 -100 -300 200 U 70 1 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_SQJ461EP--ReleaseDevice-rescue
+# TeKaDe_SQJ461EP-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_SQJ461EP--ReleaseDevice-rescue Q 0 40 Y Y 1 F N
+DEF TeKaDe_SQJ461EP- Q 0 40 Y Y 1 F N
 F0 "Q" -210 240 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_SQJ461EP--ReleaseDevice-rescue" -210 -420 60 V V L BNN
+F1 "TeKaDe_SQJ461EP-" -210 -420 60 V V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1948,11 +1381,11 @@ X D 5 -100 -300 200 U 70 1 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_TLVH431AQDBVR_1--ReleaseDevice-rescue
+# TeKaDe_TLVH431AQDBVR_1-
 #
-DEF ReleaseDeviceDigitalAudio-rescue_TLVH431AQDBVR_1--ReleaseDevice-rescue U 0 40 Y Y 1 F N
+DEF TeKaDe_TLVH431AQDBVR_1- U 0 40 Y Y 1 F N
 F0 "U" 10 50 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_TLVH431AQDBVR_1--ReleaseDevice-rescue" 10 -50 60 V V L BNN
+F1 "TeKaDe_TLVH431AQDBVR_1-" 10 -50 60 V V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -1965,15 +1398,15 @@ X ANODE 5 200 100 200 L 70 1 0 1 P
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_TPS57114QRTERQ1--ReleaseDevice-rescue
+# TeKaDe_TPS57114QRTERQ1
 #
-DEF ReleaseDeviceDigitalAudio-rescue_TPS57114QRTERQ1--ReleaseDevice-rescue U 0 40 Y Y 1 F N
+DEF TeKaDe_TPS57114QRTERQ1 U 0 40 Y Y 1 F N
 F0 "U" 500 800 60 H V L BNN
-F1 "ReleaseDeviceDigitalAudio-rescue_TPS57114QRTERQ1--ReleaseDevice-rescue" 400 -1000 60 H V L BNN
+F1 "TeKaDe_TPS57114QRTERQ1" 400 -1000 60 H V L BNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
-S -500 -600 500 700 0 1 10 f
+S -500 -600 500 700 0 1 10 N
 X VIN 1 -700 400 200 R 70 70 0 1 W
 X PH 10 700 0 200 L 70 70 0 1 W
 X PH 11 700 200 200 L 70 70 0 1 W
@@ -1994,39 +1427,36 @@ X SS/TR 9 700 -200 200 L 70 70 0 1 I
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_TS5A23157DGSTG4-SamacSys_Parts
+# TeKaDe_TPS62293TDRVRQ1
 #
-DEF ReleaseDeviceDigitalAudio-rescue_TS5A23157DGSTG4-SamacSys_Parts IC 0 30 Y Y 1 F N
-F0 "IC" 950 300 50 H V L CNN
-F1 "ReleaseDeviceDigitalAudio-rescue_TS5A23157DGSTG4-SamacSys_Parts" 950 200 50 H V L CNN
-F2 "SOP50P490X110-10N" 950 100 50 H I L CNN
-F3 "" 950 0 50 H I L CNN
-F4 "Analog Switch ICs Dual 10-Ohm SPDT Analog Switch" 950 -100 50 H I L CNN "Description"
-F5 "1.1" 950 -200 50 H I L CNN "Height"
-F6 "595-TS5A23157DGSTG4" 950 -300 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TS5A23157DGSTG4" 950 -400 50 H I L CNN "Mouser Price/Stock"
-F8 "Texas Instruments" 950 -500 50 H I L CNN "Manufacturer_Name"
-F9 "TS5A23157DGSTG4" 950 -600 50 H I L CNN "Manufacturer_Part_Number"
+DEF TeKaDe_TPS62293TDRVRQ1 U 0 10 Y Y 1 L N
+F0 "U" 1200 400 60 H V C CNN
+F1 "TeKaDe_TPS62293TDRVRQ1" 1200 300 60 H V C CNN
+F2 "DRV6_1P6X1" 1200 240 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ DRV6_1P6X1
+$ENDFPLIST
 DRAW
-P 5 0 1 6 200 100 900 100 900 -500 200 -500 200 100 N
-X IN1 1 0 0 200 R 50 50 0 0 P
-X COM1 10 1100 0 200 L 50 50 0 0 P
-X NO1 2 0 -100 200 R 50 50 0 0 P
-X GND 3 0 -200 200 R 50 50 0 0 P
-X NO2 4 0 -300 200 R 50 50 0 0 P
-X IN2 5 0 -400 200 R 50 50 0 0 P
-X COM2 6 1100 -400 200 L 50 50 0 0 P
-X NC2 7 1100 -300 200 L 50 50 0 0 P
-X V+ 8 1100 -200 200 L 50 50 0 0 P
-X NC1 9 1100 -100 200 L 50 50 0 0 P
+P 2 1 1 5 300 -500 2100 -500 N
+P 2 1 1 5 300 200 300 -500 N
+P 2 1 1 5 2100 -500 2100 200 N
+P 2 1 1 5 2100 200 300 200 N
+X SW 1 0 0 300 R 59 59 1 1 O
+X MODE 2 0 -100 300 R 59 59 1 1 I
+X FB 3 0 -200 300 R 59 59 1 1 I
+X EN 4 2400 -300 300 L 59 59 1 1 I
+X VIN 5 2400 -200 300 L 59 59 1 1 W
+X GND 6 2400 -100 300 L 59 59 1 1 W
+X EPAD 7 2400 0 300 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# ReleaseDeviceDigitalAudio-rescue_XFL4020-102MEB-SamacSys_Parts
+# TeKaDe_XFL4020-102MEB-SamacSys_Parts
 #
-DEF ReleaseDeviceDigitalAudio-rescue_XFL4020-102MEB-SamacSys_Parts L 0 30 Y Y 1 F N
+DEF TeKaDe_XFL4020-102MEB-SamacSys_Parts L 0 30 Y Y 1 F N
 F0 "L" 650 250 50 H V L CNN
-F1 "ReleaseDeviceDigitalAudio-rescue_XFL4020-102MEB-SamacSys_Parts" 650 150 50 H V L CNN
+F1 "TeKaDe_XFL4020-102MEB-SamacSys_Parts" 650 150 50 H V L CNN
 F2 "XFL4020102MEB" 650 50 50 H I L CNN
 F3 "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf" 650 -50 50 H I L CNN
 F4 "1 ELEMENT, 1 uH, METAL COMPOSITE-CORE, GENERAL PURPOSE INDUCTOR, SMD" 650 -150 50 H I L CNN "Description"
@@ -2042,21 +1472,6 @@ A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
 A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
 X ~ 1 0 0 200 R 50 50 0 0 P
 X ~ 2 800 0 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
-# TIDA-00746-SchDoc-cache_VIN
-#
-DEF TIDA-00746-SchDoc-cache_VIN #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "TIDA-00746-SchDoc-cache_VIN" 0 150 50 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X VIN 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -2282,6 +1697,21 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VPP
+#
+DEF power_VPP #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VPP" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VPP 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

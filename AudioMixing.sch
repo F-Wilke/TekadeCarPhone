@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L 2021-06-01_14-02-01:MAX98089ETN+ U?
-U 1 1 60E60614
-P 5900 3350
-AR Path="/60E60614" Ref="U?"  Part="1" 
-AR Path="/60D33366/60E60614" Ref="U?"  Part="1" 
-F 0 "U?" H 5800 5100 60  0000 C CNN
-F 1 "MAX98089ETN+" H 5900 4950 60  0000 C CNN
-F 2 "21-0144H_T5677-1_MXM" H 8100 3590 60  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/256/MAX98089-1516211.pdf" H 5900 3350 60  0001 C CNN
-F 4 "sufficient" H 5900 3350 50  0001 C CNN "Availability"
-	1    5900 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 4350 7250 4350
 Wire Wire Line
@@ -1403,4 +1389,15 @@ Wire Notes Line
 	10100 4500 10100 3800
 Text Notes 11250 4700 1    50   ~ 0
 Signal müssen noch global\noder hirarschisch gemacht werden
+$Comp
+L TeKaDe:MAX98089ETN+ U?
+U 1 1 60D6B3CA
+P 5900 3350
+F 0 "U?" H 5850 5037 60  0000 C CNN
+F 1 "MAX98089ETN+" H 5850 4931 60  0000 C CNN
+F 2 "21-0144H_T5677-1_MXM" H 5900 1600 60  0001 C CNN
+F 3 "" H 4550 4650 60  0000 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,8 +1,4 @@
 (sym_lib_table
-  (lib (name TIDA-00746-SchDoc-cache)(type Legacy)(uri ${KIPRJMOD}/PowerSupply/TIDA-00746-SchDoc-cache.lib)(options "")(descr ""))
-  (lib (name TIDA-00746-SchDoc-rescue)(type Legacy)(uri ${KIPRJMOD}/PowerSupply/TIDA-00746-SchDoc-rescue.lib)(options "")(descr ""))
-  (lib (name 2020-06-08_08-52-19)(type Legacy)(uri ${KIPRJMOD}/PowerSupply/2020-06-08_08-52-19.lib)(options "")(descr ""))
-  (lib (name hd1077r)(type Legacy)(uri ${KIPRJMOD}/libs/hd1077r.lib)(options "")(descr ""))
-  (lib (name 2021-06-01_14-02-01)(type Legacy)(uri ${KIPRJMOD}/libs/2021-06-01_14-02-01.lib)(options "")(descr ""))
   (lib (name ReleaseDeviceDigitalAudio-rescue)(type Legacy)(uri ${KIPRJMOD}/ReleaseDeviceDigitalAudio-rescue.lib)(options "")(descr ""))
+  (lib (name TeKaDe)(type Legacy)(uri ${KIPRJMOD}/libs/TeKaDe.lib)(options "")(descr ""))
 )

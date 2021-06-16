@@ -1851,16 +1851,6 @@ Wire Wire Line
 	22100 16800 22100 16700
 Wire Wire Line
 	22100 16700 22250 16700
-$Sheet
-S 1650 11800 5450 2500
-U 64BEC8E8
-F0 "PowerSupply" 50
-F1 "PowerSupply/TIDA-00746-SchDoc.sch" 50
-F2 "3.3V" U R 7100 12250 50 
-F3 "1.8V" U R 7100 12800 50 
-F4 "5V" U R 7100 13300 50 
-F5 "GND" U R 7100 13750 50 
-$EndSheet
 Wire Wire Line
 	27100 4800 26400 4800
 Wire Wire Line
@@ -3494,10 +3484,6 @@ Wire Notes Line
 Text Notes 26600 14700 0    50   ~ 0
 Audio interfacing
 Wire Notes Line
-	32900 16400 32900 10000
-Text Notes 32950 10100 0    50   ~ 0
-Audio mixing
-Wire Notes Line
 	19450 2300 19450 9700
 Wire Notes Line
 	19450 9700 31100 9700
@@ -3570,12 +3556,6 @@ Wire Notes Line
 	25250 14600 30650 14600
 Wire Notes Line
 	25250 16450 30650 16450
-Wire Notes Line
-	45400 10000 45400 16400
-Wire Notes Line
-	32900 16400 45400 16400
-Wire Notes Line
-	32900 10000 45400 10000
 $Comp
 L ReleaseDeviceDigitalAudio-rescue:BM83SM1-00TA-SamacSys_Parts IC?
 U 1 1 657E4829
@@ -3863,4 +3843,14 @@ Wire Wire Line
 	27500 16000 27700 16000
 Wire Wire Line
 	27500 16100 27700 16100
+$Sheet
+S 1650 11800 5450 2500
+U 64BEC8E8
+F0 "PowerSupply" 50
+F1 "PowerSupply.sch" 50
+F2 "3.3V" U R 7100 12250 50 
+F3 "1.8V" U R 7100 12800 50 
+F4 "5V" U R 7100 13300 50 
+F5 "GND" U R 7100 13750 50 
+$EndSheet
 $EndSCHEMATC
