@@ -582,17 +582,6 @@ Wire Wire Line
 Connection ~ 7250 4350
 Wire Wire Line
 	7150 2250 7350 2250
-$Comp
-L power:+5V #PWR?
-U 1 1 6104A42A
-P 2600 850
-F 0 "#PWR?" H 2600 700 50  0001 C CNN
-F 1 "+5V" H 2615 1023 50  0000 C CNN
-F 2 "" H 2600 850 50  0001 C CNN
-F 3 "" H 2600 850 50  0001 C CNN
-	1    2600 850 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 4250 3500 4050
 Wire Wire Line
@@ -940,32 +929,10 @@ F 3 "" H 2050 850 50  0001 C CNN
 	1    2050 850 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60D2585E
-P 2950 850
-F 0 "#PWR?" H 2950 700 50  0001 C CNN
-F 1 "+5V" H 2965 1023 50  0000 C CNN
-F 2 "" H 2950 850 50  0001 C CNN
-F 3 "" H 2950 850 50  0001 C CNN
-	1    2950 850 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3900 3850 4550 3850
 Wire Wire Line
 	3900 1700 3900 3750
-$Comp
-L power:+5V #PWR?
-U 1 1 61041039
-P 3900 1700
-F 0 "#PWR?" H 3900 1550 50  0001 C CNN
-F 1 "+5V" H 3915 1873 50  0000 C CNN
-F 2 "" H 3900 1700 50  0001 C CNN
-F 3 "" H 3900 1700 50  0001 C CNN
-	1    3900 1700
-	1    0    0    -1  
-$EndComp
 Connection ~ 3900 3750
 Wire Wire Line
 	3900 3750 4550 3750
@@ -1265,7 +1232,7 @@ Wire Notes Line
 Wire Notes Line
 	3800 1850 3800 1350
 Text Notes 3350 1200 0    50   ~ 0
-An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?
+An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?\n=> Ja, laut S.126, aber es reichen auf 3V3
 Text Notes 10150 2800 0    50   ~ 0
 Pullups??
 Wire Notes Line
@@ -1398,6 +1365,30 @@ F 1 "MAX98089ETN+" H 5850 4931 60  0000 C CNN
 F 2 "21-0144H_T5677-1_MXM" H 5900 1600 60  0001 C CNN
 F 3 "" H 4550 4650 60  0000 C CNN
 	1    5900 3350
+	1    0    0    -1  
+$EndComp
+Text Notes 6050 1200 0    50   ~ 0
+AVDD - Analog Supply - 1V8\nPVDD - Headphone Supply - 1V8\nDVDD - Digital Core + I2C Supply - 1V8\nDVDDS1/2 - S1/2 Digital Audio IF Supply - 3V3
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FABA8B
+P 2600 850
+F 0 "#PWR?" H 2600 700 50  0001 C CNN
+F 1 "+3V3" H 2615 1023 50  0000 C CNN
+F 2 "" H 2600 850 50  0001 C CNN
+F 3 "" H 2600 850 50  0001 C CNN
+	1    2600 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FAC0E8
+P 2950 850
+F 0 "#PWR?" H 2950 700 50  0001 C CNN
+F 1 "+3V3" H 2965 1023 50  0000 C CNN
+F 2 "" H 2950 850 50  0001 C CNN
+F 3 "" H 2950 850 50  0001 C CNN
+	1    2950 850 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -596,8 +596,6 @@ Text Label 19800 15200 0    50   ~ 0
 DataEncoderDataOutD
 Text Label 19800 15100 0    50   ~ 0
 OnSwitchLedAnode
-Text Label 19800 15000 0    50   ~ 0
-DataEncoderVcc
 Text Label 19800 14900 0    50   ~ 0
 DataEncoderDataOutB
 Text Label 42600 3550 0    50   ~ 0
@@ -1817,8 +1815,6 @@ Text Label 24200 5700 2    50   ~ 0
 OnSwitchLedAnode
 Wire Wire Line
 	24200 5700 24800 5700
-Text Label 20700 14200 2    50   ~ 0
-DataEncoderVcc
 $Comp
 L power:+5V #PWR080
 U 1 1 63313029
@@ -1831,9 +1827,7 @@ F 3 "" H 20900 14100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	20700 14200 20900 14200
-Wire Wire Line
-	20900 14200 20900 14100
+	20900 15000 20900 14100
 Text Label 22250 16700 0    50   ~ 0
 OnSwitchLedCathode
 $Comp
@@ -3287,8 +3281,6 @@ Wire Wire Line
 Wire Wire Line
 	19800 15100 19550 15100
 Wire Wire Line
-	19550 15000 19800 15000
-Wire Wire Line
 	19800 14900 19550 14900
 Wire Wire Line
 	19550 14800 19800 14800
@@ -3853,4 +3845,6 @@ F3 "1.8V" U R 7100 12800 50
 F4 "5V" U R 7100 13300 50 
 F5 "GND" U R 7100 13750 50 
 $EndSheet
+Wire Wire Line
+	19550 15000 20900 15000
 $EndSCHEMATC
