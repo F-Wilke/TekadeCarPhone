@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/UsbAudio/footprints.pretty)(options "")(descr ""))
-  (lib (name Connectors)(type KiCad)(uri ${KIPRJMOD}/UsbAudio/Connectors.pretty)(options "")(descr ""))
+  (lib (name TeKaDe)(type KiCad)(uri ${KIPRJMOD}/libs/TeKaDeFootprints.pretty)(options "")(descr ""))
+  (lib (name TeKaDeConn)(type KiCad)(uri ${KIPRJMOD}/libs/TeKaDeConn.pretty)(options "")(descr ""))
 )

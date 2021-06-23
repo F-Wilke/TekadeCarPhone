@@ -1100,7 +1100,7 @@ Wire Notes Line
 Text Notes 1300 5850 0    50   ~ 0
 So nicht in Appnote fig 40\nStattdessen in EvKit guide fig 4a\n-> differential/single ended an EvKit zu prüfen!
 Text Notes 3350 1200 0    50   ~ 0
-An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig? Ja, kann aber zwischen 2.8 und 5.5V liegen
+An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?\n=> Ja, laut S.126, aber es reichen auf 3V3
 Text Notes 10150 2800 0    50   ~ 0
 Pullups??
 Wire Notes Line
