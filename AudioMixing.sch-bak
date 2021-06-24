@@ -1167,14 +1167,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 5300 3500 5300
 Wire Notes Line
-	4300 5150 3500 5150
-Wire Notes Line
-	3500 5150 3500 6650
-Wire Notes Line
-	3500 6650 4300 6650
-Wire Notes Line
-	4300 6650 4300 5150
-Wire Notes Line
 	10000 1950 10800 1950
 Wire Notes Line
 	10800 1950 10800 3100
@@ -1182,16 +1174,6 @@ Wire Notes Line
 	10800 3100 10000 3100
 Wire Notes Line
 	10000 3100 10000 1950
-Wire Notes Line
-	10100 3800 11050 3800
-Wire Notes Line
-	11050 3800 11050 4500
-Wire Notes Line
-	11050 4500 10100 4500
-Wire Notes Line
-	10100 4500 10100 3800
-Text Notes 11250 4700 1    50   ~ 0
-Signal müssen noch global\noder hirarschisch gemacht werden
 $Comp
 L TeKaDe:MAX98089ETN+ U?
 U 1 1 60D6B3CA
