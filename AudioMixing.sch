@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -30,10 +30,6 @@ F 3 "~" H 8350 4900 50  0001 C CNN
 	1    8350 4900
 	1    0    0    -1  
 $EndComp
-Text Label 10150 4250 0    50   ~ 0
-Audio_Handset_Out_R
-Text Label 10150 4450 0    50   ~ 0
-Audio_Handset_Out_L
 Wire Wire Line
 	10150 4250 8350 4250
 Wire Wire Line
@@ -85,12 +81,6 @@ Connection ~ 8350 4250
 Wire Wire Line
 	10150 4450 8050 4450
 Connection ~ 8050 4450
-Text Label 10650 5900 0    50   ~ 0
-Line_In_-
-Text Label 10150 4100 0    50   ~ 0
-Line_In_L
-Text Label 10150 3950 0    50   ~ 0
-Line_In_R
 $Comp
 L Device:C C?
 U 1 1 60E60671
@@ -168,8 +158,6 @@ F 3 "~" H 9200 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7150 3250
-Text Label 10150 2150 0    50   ~ 0
-MAX_*IRQ
 Wire Wire Line
 	7150 2150 7900 2150
 $Comp
@@ -188,10 +176,6 @@ Wire Wire Line
 Connection ~ 7900 2150
 Wire Wire Line
 	7900 2150 10150 2150
-Text Label 10150 2350 0    50   ~ 0
-RPi_I2S_SD_OUT
-Wire Wire Line
-	10150 2350 7150 2350
 Text Label 10150 2550 0    50   ~ 0
 Rpi.SDA1
 Text Label 10150 2650 0    50   ~ 0
@@ -374,13 +358,6 @@ Wire Wire Line
 Connection ~ 9400 3950
 Wire Wire Line
 	9400 3950 9500 3950
-Wire Wire Line
-	9400 5800 9400 5750
-Wire Wire Line
-	10650 5900 9400 5750
-Connection ~ 9400 5750
-Wire Wire Line
-	9400 5750 9400 5050
 Connection ~ 4400 4050
 Wire Wire Line
 	4400 3550 4400 4050
@@ -404,34 +381,6 @@ Wire Wire Line
 	3100 2450 4550 2450
 Text Label 3100 2450 2    50   ~ 0
 MAX_MCLK
-Wire Wire Line
-	3100 2050 4550 2050
-Wire Wire Line
-	3100 2150 4550 2150
-Wire Wire Line
-	3100 2350 4550 2350
-Text Label 3100 2150 2    50   ~ 0
-RPi_I2S_SD_CLK
-Text Label 3100 2350 2    50   ~ 0
-RPi_I2S_WS
-Text Label 3100 2050 2    50   ~ 0
-RPi_I2S_SD_IN
-Wire Wire Line
-	3100 2650 4550 2650
-Wire Wire Line
-	4550 2750 3100 2750
-Wire Wire Line
-	3100 2950 4550 2950
-Wire Wire Line
-	3100 2850 4550 2850
-Text Label 3100 2750 2    50   ~ 0
-BM83_I2S_SD_CLK
-Text Label 3100 2950 2    50   ~ 0
-BM83_I2S_WS
-Text Label 3100 2650 2    50   ~ 0
-BM83_I2S_SD_IN
-Text Label 3100 2850 2    50   ~ 0
-BM83_I2S_SD_OUT
 NoConn ~ 4550 3450
 NoConn ~ 4550 3650
 NoConn ~ 4550 3950
@@ -475,28 +424,6 @@ F 3 "~" H 2050 1150 50  0001 C CNN
 	1    2050 1150
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 60E606B0
-P 2950 1150
-F 0 "C?" V 2698 1150 50  0000 C CNN
-F 1 "1uF" V 2789 1150 50  0000 C CNN
-F 2 "" H 2988 1000 50  0001 C CNN
-F 3 "~" H 2950 1150 50  0001 C CNN
-	1    2950 1150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E606AA
-P 2600 1150
-F 0 "C?" V 2348 1150 50  0000 C CNN
-F 1 "1uF" V 2439 1150 50  0000 C CNN
-F 2 "" H 2638 1000 50  0001 C CNN
-F 3 "~" H 2600 1150 50  0001 C CNN
-	1    2600 1150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	3450 4050 3500 4050
 Wire Wire Line
@@ -525,8 +452,6 @@ F 3 "~" H 3300 4050 50  0001 C CNN
 	1    3300 4050
 	0    1    1    0   
 $EndComp
-Text Label 3100 4550 2    50   ~ 0
-Audio_Master_Out_L
 $Comp
 L power:+3V3 #PWR?
 U 1 1 610082E0
@@ -666,8 +591,6 @@ Wire Wire Line
 	4300 4650 4550 4650
 Wire Wire Line
 	4400 4050 4400 4900
-Text Label 3100 4050 2    50   ~ 0
-Audio_Master_Out_R
 $Comp
 L power:+1V8 #PWR?
 U 1 1 61263550
@@ -690,28 +613,6 @@ F 1 "GND" H 2055 1327 50  0000 C CNN
 F 2 "" H 2050 1500 50  0001 C CNN
 F 3 "" H 2050 1500 50  0001 C CNN
 	1    2050 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6129DB16
-P 2950 1500
-F 0 "#PWR?" H 2950 1250 50  0001 C CNN
-F 1 "GND" H 2955 1327 50  0000 C CNN
-F 2 "" H 2950 1500 50  0001 C CNN
-F 3 "" H 2950 1500 50  0001 C CNN
-	1    2950 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6129DD97
-P 2600 1500
-F 0 "#PWR?" H 2600 1250 50  0001 C CNN
-F 1 "GND" H 2605 1327 50  0000 C CNN
-F 2 "" H 2600 1500 50  0001 C CNN
-F 3 "" H 2600 1500 50  0001 C CNN
-	1    2600 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -739,11 +640,7 @@ $EndComp
 Wire Wire Line
 	1200 1300 1200 1500
 Wire Wire Line
-	2600 1300 2600 1500
-Wire Wire Line
 	1550 1300 1550 1500
-Wire Wire Line
-	2950 1300 2950 1500
 Wire Wire Line
 	2050 1300 2050 1500
 Wire Wire Line
@@ -915,9 +812,7 @@ MAX_MIC1P
 Text Label 10150 3350 0    50   ~ 0
 MAX_MICBIAS
 Text Notes 5050 5700 0    50   ~ 0
-fix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert\nI2S braucht pullups?\nHPSNS ist GND an Klinkenbuchse, vgl. Fig 40
-Wire Wire Line
-	2600 850  2600 1000
+fix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert\nI2S braucht pullups?\nHPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60D18DB4
@@ -929,15 +824,6 @@ F 3 "" H 2050 850 50  0001 C CNN
 	1    2050 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 3850 4550 3850
-Wire Wire Line
-	3900 1700 3900 3750
-Connection ~ 3900 3750
-Wire Wire Line
-	3900 3750 4550 3750
-Wire Wire Line
-	3900 3750 3900 3850
 Wire Wire Line
 	3650 1700 3650 4450
 $Comp
@@ -1001,7 +887,7 @@ Wire Notes Line
 Wire Notes Line
 	9200 5450 9200 4550
 Text Notes 9250 4750 0    50   ~ 0
-S. 122 nicht vorhanden\n
+S. 122 nicht vorhanden\nÜbernommen aus EvKit S.12
 Wire Notes Line
 	7900 4700 8550 4700
 Wire Notes Line
@@ -1011,7 +897,7 @@ Wire Notes Line
 Wire Notes Line
 	7900 5550 7900 4700
 Text Notes 7850 4650 0    50   ~ 0
-S. 122 nicht vorhanden\n
+S. 122 nicht vorhanden\nÜbernommen aus Evkit S.12
 Wire Notes Line
 	2000 3850 3550 3850
 Wire Notes Line
@@ -1021,11 +907,9 @@ Wire Notes Line
 Wire Notes Line
 	2000 4850 2000 3850
 Text Notes 2100 3800 0    50   ~ 0
-Line Out?\nHier keine Cs gegen GND wie bei:\n- Line In\n- Headset Out\n
+Line Out?\nHier keine Cs gegen GND wie bei:\n- Line In\n- Headset Out\n-> Orientiert an Referenzdesign, werde ich aber empirisch prüfen
 Wire Wire Line
 	2050 850  2050 1000
-Wire Wire Line
-	2950 850  2950 1000
 Wire Wire Line
 	1550 850  1550 1000
 Wire Wire Line
@@ -1201,18 +1085,10 @@ Wire Notes Line
 	2050 7050 1300 7050
 Wire Notes Line
 	1300 7050 1300 6600
-Text Notes 3050 7150 0    50   ~ 0
-So nicht in Appnote fig 40
+Text Notes 3050 7250 0    50   ~ 0
+So nicht in Appnote fig 40\nDafür in Evkit guide fig 4a
 Wire Wire Line
 	4550 4250 3500 4250
-Wire Notes Line
-	2400 500  3200 500 
-Wire Notes Line
-	3200 500  3200 1850
-Wire Notes Line
-	3200 1850 2400 1850
-Wire Notes Line
-	2400 1850 2400 500 
 Wire Notes Line
 	3000 5550 3000 6200
 Wire Notes Line
@@ -1221,16 +1097,8 @@ Wire Notes Line
 	3400 6200 3400 5550
 Wire Notes Line
 	3000 5550 3400 5550
-Text Notes 1950 5750 0    50   ~ 0
-So nicht in Appnote fig 40
-Wire Notes Line
-	3800 1350 4050 1350
-Wire Notes Line
-	4050 1350 4050 1850
-Wire Notes Line
-	4050 1850 3800 1850
-Wire Notes Line
-	3800 1850 3800 1350
+Text Notes 1300 5850 0    50   ~ 0
+So nicht in Appnote fig 40\nStattdessen in EvKit guide fig 4a\n-> differential/single ended an EvKit zu prüfen!
 Text Notes 3350 1200 0    50   ~ 0
 An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?\n=> Ja, laut S.126, aber es reichen auf 3V3
 Text Notes 10150 2800 0    50   ~ 0
@@ -1259,16 +1127,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 2050 7250 3050
 Connection ~ 7250 3050
-Text Notes 10400 6250 0    50   ~ 0
-Alle anderen GND von \nKlinkensteckern sind direkt auf GND\nWarum dieser hier nicht?
-Wire Notes Line
-	10200 5700 11850 5700
-Wire Notes Line
-	11850 5700 11850 6350
-Wire Notes Line
-	11850 6350 10200 6350
-Wire Notes Line
-	10200 6350 10200 5700
 $Comp
 L Device:C C?
 U 1 1 613F5D28
@@ -1306,14 +1164,6 @@ Wire Wire Line
 	4650 6700 4650 6850
 Wire Wire Line
 	4650 7150 4650 7350
-Text GLabel 3650 5300 2    50   Input ~ 0
-MasterMicInN
-Text GLabel 3650 5500 2    50   Input ~ 0
-MasterMicInP
-Text GLabel 3650 6500 2    50   Input ~ 0
-HeadsetMicInN
-Text GLabel 3650 6300 2    50   Input ~ 0
-HeadsetMicInP
 Wire Wire Line
 	3650 5300 3500 5300
 Wire Notes Line
@@ -1324,20 +1174,6 @@ Wire Notes Line
 	3500 6650 4300 6650
 Wire Notes Line
 	4300 6650 4300 5150
-Text Notes 3600 6100 0    50   ~ 0
-Hier ist nun eigenes Schaltplan Bild\n-> lokale Netzlabel sind lokal also\naußerhalb dieser Seite nicht sichbar\n2 Möglichkeiten\n- globale Labels, wie her gezeigt\n- Hirarchische Labels
-Wire Notes Line
-	2400 1900 3200 1900
-Wire Notes Line
-	3200 1900 3200 3100
-Wire Notes Line
-	3200 3100 2400 3100
-Wire Notes Line
-	2400 3100 2400 1900
-Text Notes 2350 3150 1    50   ~ 0
-Signal müssen noch global\noder hirarschisch gemacht werden
-Text Notes 11000 3050 1    50   ~ 0
-Signal müssen noch global\noder hirarschisch gemacht werden
 Wire Notes Line
 	10000 1950 10800 1950
 Wire Notes Line
@@ -1367,28 +1203,102 @@ F 3 "" H 4550 4650 60  0000 C CNN
 	1    5900 3350
 	1    0    0    -1  
 $EndComp
-Text Notes 6050 1200 0    50   ~ 0
-AVDD - Analog Supply - 1V8\nPVDD - Headphone Supply - 1V8\nDVDD - Digital Core + I2C Supply - 1V8\nDVDDS1/2 - S1/2 Digital Audio IF Supply - 3V3
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60FABA8B
-P 2600 850
-F 0 "#PWR?" H 2600 700 50  0001 C CNN
-F 1 "+3V3" H 2615 1023 50  0000 C CNN
-F 2 "" H 2600 850 50  0001 C CNN
-F 3 "" H 2600 850 50  0001 C CNN
-	1    2600 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60FAC0E8
-P 2950 850
-F 0 "#PWR?" H 2950 700 50  0001 C CNN
-F 1 "+3V3" H 2965 1023 50  0000 C CNN
-F 2 "" H 2950 850 50  0001 C CNN
-F 3 "" H 2950 850 50  0001 C CNN
-	1    2950 850 
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	4150 2550 4150 3750
+Connection ~ 4150 2550
+Wire Wire Line
+	4150 3850 4550 3850
+Wire Wire Line
+	4150 3750 4550 3750
+Connection ~ 4150 3750
+Wire Wire Line
+	4150 3750 4150 3850
+Wire Wire Line
+	9400 5050 9400 5800
+Text HLabel 3100 4050 0    50   Output ~ 0
+Audio_Master_Out_R
+Text HLabel 3100 4550 0    50   Output ~ 0
+Audio_Master_Out_L
+Text HLabel 10150 3950 2    50   Input ~ 0
+Line_In_R
+Text HLabel 10150 4100 2    50   Input ~ 0
+Line_In_L
+Text HLabel 10150 4250 2    50   Output ~ 0
+Audio_Handset_Out_R
+Text HLabel 10150 4450 2    50   Output ~ 0
+Audio_Handset_Out_L
+Text HLabel 3650 5300 2    50   Input ~ 0
+MasterMicInN
+Text HLabel 3650 5500 2    50   Input ~ 0
+MasterMicInP
+Text HLabel 3650 6300 2    50   Input ~ 0
+HandsetMicInP
+Text HLabel 3650 6500 2    50   Input ~ 0
+HandsetMicInN
+Text HLabel 10150 2150 2    50   Output ~ 0
+MAX_*IRQ
+Text Label 10150 2350 0    50   ~ 0
+RPi_I2S_SD_OUT
+Text Label 3100 2050 2    50   ~ 0
+RPi_I2S_SD_IN
+Text Label 3100 2350 2    50   ~ 0
+RPi_I2S_WS
+Text Label 3100 2150 2    50   ~ 0
+RPi_I2S_SD_CLK
+Text HLabel 1700 1950 0    50   BiDi ~ 0
+I2S2
+Entry Wire Line
+	1850 1950 1950 2050
+Wire Wire Line
+	1950 2050 4550 2050
+Entry Wire Line
+	1850 2050 1950 2150
+Wire Wire Line
+	1950 2150 4550 2150
+Entry Wire Line
+	1850 2250 1950 2350
+Wire Wire Line
+	1950 2350 4550 2350
+Wire Bus Line
+	1850 1950 1700 1950
+Wire Bus Line
+	10900 2250 11050 2250
+Entry Wire Line
+	10900 2250 10800 2350
+Wire Wire Line
+	10800 2350 7150 2350
+Text HLabel 1700 2550 0    50   BiDi ~ 0
+I2S1
+Entry Wire Line
+	1850 2550 1950 2650
+Entry Wire Line
+	1850 2650 1950 2750
+Wire Bus Line
+	1850 2550 1700 2550
+Wire Wire Line
+	1950 2650 4550 2650
+Wire Wire Line
+	1950 2750 4550 2750
+Text Label 3100 2650 2    50   ~ 0
+BM83_I2S_SD_IN
+Text Label 3100 2750 2    50   ~ 0
+BM83_I2S_CLK
+Text Label 3100 2850 2    50   ~ 0
+BM83_I2S_SD_OUT
+Text Label 3100 2950 2    50   ~ 0
+BM83_I2S_WS
+Entry Wire Line
+	1850 2750 1950 2850
+Entry Wire Line
+	1850 2850 1950 2950
+Wire Wire Line
+	1950 2950 4550 2950
+Wire Wire Line
+	1950 2850 4550 2850
+Text HLabel 11050 2250 2    50   BiDi ~ 0
+I2S2
+Wire Bus Line
+	1850 1950 1850 2250
+Wire Bus Line
+	1850 2550 1850 2850
 $EndSCHEMATC
