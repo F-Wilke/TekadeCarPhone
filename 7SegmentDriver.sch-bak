@@ -1,0 +1,651 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TeKaDe:CD4511BE U?
+U 1 1 60FBCEB3
+P 9250 3700
+AR Path="/60FBCEB3" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCEB3" Ref="U?"  Part="1" 
+F 0 "U?" H 9250 4470 50  0000 C CNN
+F 1 "CD4511" H 9250 4379 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 9250 3700 50  0001 L BNN
+F 3 "60K5141" H 9250 3700 50  0001 L BNN
+F 4 "CD4511BE" H 9250 3700 50  0001 L BNN "Field4"
+F 5 "1106122" H 9250 3700 50  0001 L BNN "Field5"
+F 6 "PDIP-16" H 9250 3700 50  0001 L BNN "Field6"
+F 7 "Texas Instruments" H 9250 3700 50  0001 L BNN "Field7"
+F 8 "good" H 9250 3700 50  0001 C CNN "Availability"
+	1    9250 3700
+	1    0    0    -1  
+$EndComp
+Text Label 10450 3300 0    50   ~ 0
+SegmentAAnode
+Text Label 10450 3400 0    50   ~ 0
+SegmentBAnode
+Text Label 10450 3500 0    50   ~ 0
+SegmentCAnode
+Text Label 10450 3600 0    50   ~ 0
+SegmentDAnode
+Text Label 10450 3700 0    50   ~ 0
+SegmentEAnode
+Text Label 10450 3900 0    50   ~ 0
+SegmentFAnode
+Text Label 10450 3800 0    50   ~ 0
+SegmentGAnode
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCEC0
+P 8300 3050
+AR Path="/60FBCEC0" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCEC0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8300 2900 50  0001 C CNN
+F 1 "+5V" H 8315 3223 50  0000 C CNN
+F 2 "" H 8300 3050 50  0001 C CNN
+F 3 "" H 8300 3050 50  0001 C CNN
+	1    8300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 3050 8300 3300
+Wire Wire Line
+	8300 3300 8550 3300
+Wire Wire Line
+	8300 3300 8300 3500
+Wire Wire Line
+	8300 3500 8550 3500
+Connection ~ 8300 3300
+Wire Wire Line
+	8550 3700 8300 3700
+Wire Wire Line
+	8300 3700 8300 4400
+Wire Wire Line
+	8550 4400 8300 4400
+Connection ~ 8300 4400
+Wire Wire Line
+	8300 4400 8300 4750
+Text Label 8050 3900 2    50   ~ 0
+7_Segment_Driver_A
+Text Label 8050 4000 2    50   ~ 0
+7_Segment_Driver_B
+Text Label 8050 4100 2    50   ~ 0
+7_Segment_Driver_C
+Text Label 8050 4200 2    50   ~ 0
+7_Segment_Driver_D
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCED4
+P 8300 4750
+AR Path="/60FBCED4" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCED4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8300 4500 50  0001 C CNN
+F 1 "Earth" H 8300 4600 50  0001 C CNN
+F 2 "" H 8300 4750 50  0001 C CNN
+F 3 "~" H 8300 4750 50  0001 C CNN
+	1    8300 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3300 10450 3300
+Wire Wire Line
+	9950 3400 10450 3400
+Wire Wire Line
+	9950 3500 10450 3500
+Wire Wire Line
+	9950 3600 10450 3600
+Wire Wire Line
+	9950 3700 10450 3700
+Wire Wire Line
+	9950 3800 10450 3800
+Wire Wire Line
+	9950 3900 10450 3900
+Text Label 8050 3600 2    50   ~ 0
+BrightnessRegulation
+Wire Wire Line
+	8050 3600 8550 3600
+Wire Wire Line
+	3050 5050 2800 5050
+Wire Wire Line
+	2800 4950 3050 4950
+Wire Wire Line
+	3050 4350 2800 4350
+Wire Wire Line
+	2800 4450 3050 4450
+Wire Wire Line
+	3050 4550 2800 4550
+Wire Wire Line
+	2800 4650 3050 4650
+Wire Wire Line
+	2000 4950 1900 4950
+Wire Wire Line
+	1900 4850 2000 4850
+Wire Wire Line
+	2000 4750 1900 4750
+Wire Wire Line
+	1900 4650 2000 4650
+Wire Wire Line
+	2000 4550 1900 4550
+Wire Wire Line
+	1900 4450 2000 4450
+Wire Wire Line
+	2000 4350 1900 4350
+Wire Wire Line
+	1900 4250 2000 4250
+Wire Wire Line
+	2950 3850 2950 3950
+Wire Wire Line
+	2950 3950 2800 3950
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCEF3
+P 2950 3850
+AR Path="/60FBCEF3" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCEF3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2950 3700 50  0001 C CNN
+F 1 "+5V" H 2965 4023 50  0000 C CNN
+F 2 "" H 2950 3850 50  0001 C CNN
+F 3 "" H 2950 3850 50  0001 C CNN
+	1    2950 3850
+	1    0    0    -1  
+$EndComp
+Text Label 3050 4450 0    50   ~ 0
+Digit15CathodeSignal
+Text Label 3050 5050 0    50   ~ 0
+Digit17CathodeSignal
+Text Label 3050 4950 0    50   ~ 0
+Digit16CathodeSignal
+Text Label 3050 4350 0    50   ~ 0
+Digit14CathodeSignal
+Text Label 3050 4650 0    50   ~ 0
+Digit13CathodeSignal
+Text Label 3050 4550 0    50   ~ 0
+Digit12CathodeSignal
+Text Label 1900 4250 2    50   ~ 0
+Digit11CathodeSignal
+Text Label 1900 4350 2    50   ~ 0
+Digit10CathodeSignal
+Text Label 1900 4450 2    50   ~ 0
+Digit9CathodeSignal
+Text Label 1900 4550 2    50   ~ 0
+Digit8CathodeSignal
+Text Label 1900 4650 2    50   ~ 0
+Digit7CathodeSignal
+Text Label 1900 4850 2    50   ~ 0
+Digit6CathodeSignal
+Text Label 1900 4750 2    50   ~ 0
+Digit3CathodeSignal
+Text Label 1900 4950 2    50   ~ 0
+Digit2CathodeSignal
+Wire Wire Line
+	1750 5050 2000 5050
+Wire Wire Line
+	1750 5150 1750 5050
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCF09
+P 1750 5150
+AR Path="/60FBCF09" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF09" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 4900 50  0001 C CNN
+F 1 "Earth" H 1750 5000 50  0001 C CNN
+F 2 "" H 1750 5150 50  0001 C CNN
+F 3 "~" H 1750 5150 50  0001 C CNN
+	1    1750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:CD4515 U?
+U 1 1 60FBCF10
+P 2400 4500
+AR Path="/60FBCF10" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF10" Ref="U?"  Part="1" 
+F 0 "U?" H 2400 5275 50  0000 C CNN
+F 1 "CD4515" H 2400 5184 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2400 5150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4514b.pdf" H 2400 5150 50  0001 C CNN
+F 4 "good" H 2400 4500 50  0001 C CNN "Availability"
+	1    2400 4500
+	1    0    0    -1  
+$EndComp
+Text Label 1850 4050 2    50   ~ 0
+DecoderData1
+Text Label 1850 4150 2    50   ~ 0
+DecoderData2
+Text Label 3050 4250 0    50   ~ 0
+DecoderData3
+Text Label 3050 4150 0    50   ~ 0
+DecoderData4
+Wire Wire Line
+	3050 4150 2800 4150
+Wire Wire Line
+	2800 4250 3050 4250
+Wire Wire Line
+	1850 4050 2000 4050
+Wire Wire Line
+	2000 4150 1850 4150
+Wire Wire Line
+	3050 4050 2800 4050
+Wire Wire Line
+	3050 3950 3050 4050
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCF20
+P 3050 3950
+AR Path="/60FBCF20" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF20" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3050 3700 50  0001 C CNN
+F 1 "Earth" H 3050 3800 50  0001 C CNN
+F 2 "" H 3050 3950 50  0001 C CNN
+F 3 "~" H 3050 3950 50  0001 C CNN
+	1    3050 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 3950 2000 3850
+Wire Wire Line
+	2000 3850 2950 3850
+Connection ~ 2950 3850
+Wire Wire Line
+	8050 3900 8550 3900
+Wire Wire Line
+	8550 4000 8050 4000
+Wire Wire Line
+	8050 4100 8550 4100
+Wire Wire Line
+	8550 4200 8050 4200
+Text Label 3050 4750 0    50   ~ 0
+DecoderS14
+Text Label 3050 4850 0    50   ~ 0
+DecoderS15
+Text Label 3150 2750 0    50   ~ 0
+DecoderS14
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCF30
+P 1500 2950
+AR Path="/60FBCF30" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF30" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 2700 50  0001 C CNN
+F 1 "Earth" H 1500 2800 50  0001 C CNN
+F 2 "" H 1500 2950 50  0001 C CNN
+F 3 "~" H 1500 2950 50  0001 C CNN
+	1    1500 2950
+	0    1    1    0   
+$EndComp
+Text Label 3150 3150 0    50   ~ 0
+DecoderS15
+Wire Wire Line
+	3050 4750 2800 4750
+Wire Wire Line
+	2800 4850 3050 4850
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 60FBCF3A
+P 5500 3600
+AR Path="/60FBCF3A" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF3A" Ref="U?"  Part="1" 
+F 0 "U?" H 5500 4267 50  0000 C CNN
+F 1 "ULN2003" H 5500 4176 50  0000 C CNN
+F 2 "" H 5550 3050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5600 3400 50  0001 C CNN
+F 4 "good" H 5500 3600 50  0001 C CNN "Availability"
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4300 5500 4200
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCF41
+P 5500 4300
+AR Path="/60FBCF41" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF41" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5500 4050 50  0001 C CNN
+F 1 "Earth" H 5500 4150 50  0001 C CNN
+F 2 "" H 5500 4300 50  0001 C CNN
+F 3 "~" H 5500 4300 50  0001 C CNN
+	1    5500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCF47
+P 6050 3050
+AR Path="/60FBCF47" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF47" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6050 2900 50  0001 C CNN
+F 1 "+5V" H 6065 3223 50  0000 C CNN
+F 2 "" H 6050 3050 50  0001 C CNN
+F 3 "" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3200 6050 3200
+Wire Wire Line
+	6050 3050 6050 3200
+Text Label 6100 4000 0    50   ~ 0
+Digit10Cathode
+Text Label 6100 3900 0    50   ~ 0
+Digit9Cathode
+Text Label 6100 3800 0    50   ~ 0
+Digit8Cathode
+Text Label 6100 3700 0    50   ~ 0
+Digit7Cathode
+Text Label 6100 3500 0    50   ~ 0
+Digit6Cathode
+Text Label 6100 3600 0    50   ~ 0
+Digit3Cathode
+Text Label 6100 3400 0    50   ~ 0
+Digit2Cathode
+Text Label 4950 4000 2    50   ~ 0
+Digit10CathodeSignal
+Text Label 4950 3900 2    50   ~ 0
+Digit9CathodeSignal
+Text Label 4950 3800 2    50   ~ 0
+Digit8CathodeSignal
+Text Label 4950 3700 2    50   ~ 0
+Digit7CathodeSignal
+Text Label 4950 3500 2    50   ~ 0
+Digit6CathodeSignal
+Text Label 4950 3600 2    50   ~ 0
+Digit3CathodeSignal
+Text Label 4950 3400 2    50   ~ 0
+Digit2CathodeSignal
+Wire Wire Line
+	4950 4000 5100 4000
+Wire Wire Line
+	5100 3900 4950 3900
+Wire Wire Line
+	4950 3800 5100 3800
+Wire Wire Line
+	5100 3700 4950 3700
+Wire Wire Line
+	4950 3600 5100 3600
+Wire Wire Line
+	4950 3500 5100 3500
+Wire Wire Line
+	4950 3400 5100 3400
+Wire Wire Line
+	6100 3400 5900 3400
+Wire Wire Line
+	5900 3500 6100 3500
+Wire Wire Line
+	6100 3600 5900 3600
+Wire Wire Line
+	5900 3700 6100 3700
+Wire Wire Line
+	6100 3800 5900 3800
+Wire Wire Line
+	5900 3900 6100 3900
+Wire Wire Line
+	6100 4000 5900 4000
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 60FBCF6C
+P 5550 5200
+AR Path="/60FBCF6C" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF6C" Ref="U?"  Part="1" 
+F 0 "U?" H 5550 5867 50  0000 C CNN
+F 1 "ULN2003" H 5550 5776 50  0000 C CNN
+F 2 "" H 5600 4650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5650 5000 50  0001 C CNN
+F 4 "good" H 5550 5200 50  0001 C CNN "Availability"
+	1    5550 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5900 5550 5800
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCF73
+P 5550 5900
+AR Path="/60FBCF73" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF73" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5550 5650 50  0001 C CNN
+F 1 "Earth" H 5550 5750 50  0001 C CNN
+F 2 "" H 5550 5900 50  0001 C CNN
+F 3 "~" H 5550 5900 50  0001 C CNN
+	1    5550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCF79
+P 6100 4650
+AR Path="/60FBCF79" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF79" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 4500 50  0001 C CNN
+F 1 "+5V" H 6115 4823 50  0000 C CNN
+F 2 "" H 6100 4650 50  0001 C CNN
+F 3 "" H 6100 4650 50  0001 C CNN
+	1    6100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4800 6100 4800
+Wire Wire Line
+	6100 4650 6100 4800
+Wire Wire Line
+	5000 5600 5150 5600
+Wire Wire Line
+	5150 5500 5000 5500
+Wire Wire Line
+	5000 5400 5150 5400
+Wire Wire Line
+	5150 5300 5000 5300
+Wire Wire Line
+	5000 5200 5150 5200
+Wire Wire Line
+	5000 5100 5150 5100
+Wire Wire Line
+	5000 5000 5150 5000
+Wire Wire Line
+	6150 5000 5950 5000
+Wire Wire Line
+	5950 5100 6150 5100
+Wire Wire Line
+	6150 5200 5950 5200
+Wire Wire Line
+	5950 5300 6150 5300
+Wire Wire Line
+	6150 5400 5950 5400
+Wire Wire Line
+	5950 5500 6150 5500
+Wire Wire Line
+	6150 5600 5950 5600
+Text Label 5000 5000 2    50   ~ 0
+Digit11CathodeSignal
+Text Label 5000 5300 2    50   ~ 0
+Digit15CathodeSignal
+Text Label 5000 5400 2    50   ~ 0
+Digit14CathodeSignal
+Text Label 5000 5100 2    50   ~ 0
+Digit13CathodeSignal
+Text Label 5000 5200 2    50   ~ 0
+Digit12CathodeSignal
+Text Label 5000 5500 2    50   ~ 0
+Digit17CathodeSignal
+Text Label 5000 5600 2    50   ~ 0
+Digit16CathodeSignal
+Text Label 6150 5000 0    50   ~ 0
+Digit11Cathode
+Text Label 6150 5300 0    50   ~ 0
+Digit15Cathode
+Text Label 6150 5400 0    50   ~ 0
+Digit14Cathode
+Text Label 6150 5100 0    50   ~ 0
+Digit13Cathode
+Text Label 6150 5200 0    50   ~ 0
+Digit12Cathode
+Text Label 6150 5500 0    50   ~ 0
+Digit17Cathode
+Text Label 6150 5600 0    50   ~ 0
+Digit16Cathode
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 60FBCF9E
+P 5550 2050
+AR Path="/60FBCF9E" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF9E" Ref="U?"  Part="1" 
+F 0 "U?" H 5550 2717 50  0000 C CNN
+F 1 "ULN2003" H 5550 2626 50  0000 C CNN
+F 2 "" H 5600 1500 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5650 1850 50  0001 C CNN
+F 4 "good" H 5550 2050 50  0001 C CNN "Availability"
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCFA4
+P 6100 1500
+AR Path="/60FBCFA4" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCFA4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6100 1350 50  0001 C CNN
+F 1 "+5V" H 6115 1673 50  0000 C CNN
+F 2 "" H 6100 1500 50  0001 C CNN
+F 3 "" H 6100 1500 50  0001 C CNN
+	1    6100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1650 6100 1650
+Wire Wire Line
+	6100 1500 6100 1650
+Wire Wire Line
+	5550 2750 5550 2650
+$Comp
+L power:Earth #PWR?
+U 1 1 60FBCFAD
+P 5550 2750
+AR Path="/60FBCFAD" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCFAD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5550 2500 50  0001 C CNN
+F 1 "Earth" H 5550 2600 50  0001 C CNN
+F 2 "" H 5550 2750 50  0001 C CNN
+F 3 "~" H 5550 2750 50  0001 C CNN
+	1    5550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:TS5A23157DGSTG4 IC?
+U 1 1 60FBCFBA
+P 1900 2750
+AR Path="/60FBCFBA" Ref="IC?"  Part="1" 
+AR Path="/60F87146/60FBCFBA" Ref="IC?"  Part="1" 
+F 0 "IC?" H 2450 3015 50  0000 C CNN
+F 1 "TS5A23157DGSTG4" H 2450 2924 50  0000 C CNN
+F 2 "SOP50P490X110-10N" H 2850 2850 50  0001 L CNN
+F 3 "" H 2850 2750 50  0001 L CNN
+F 4 "Analog Switch ICs Dual 10-Ohm SPDT Analog Switch" H 2850 2650 50  0001 L CNN "Description"
+F 5 "1.1" H 2850 2550 50  0001 L CNN "Height"
+F 6 "595-TS5A23157DGSTG4" H 2850 2450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TS5A23157DGSTG4" H 2850 2350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 2850 2250 50  0001 L CNN "Manufacturer_Name"
+F 9 "TS5A23157DGSTG4" H 2850 2150 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "Out of stock" H 1900 2750 50  0001 C CNN "Availability"
+	1    1900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2750 3000 2750
+Text Label 1500 2750 2    50   ~ 0
+DecoderExtraSwitch
+Wire Wire Line
+	1750 2750 1750 3150
+Text Label 1500 2850 2    50   ~ 0
+Digit18CathodeSignal
+Wire Wire Line
+	1500 2850 1900 2850
+Text Label 3150 2850 0    50   ~ 0
+Digit20CathodeSignal
+Wire Wire Line
+	1450 3050 1900 3050
+Connection ~ 1750 2750
+Wire Wire Line
+	1750 2750 1900 2750
+Wire Wire Line
+	1750 3150 1900 3150
+Wire Wire Line
+	1500 2750 1750 2750
+Wire Wire Line
+	3150 2850 3000 2850
+Text Label 1450 3050 2    50   ~ 0
+Digit19CathodeSignal
+Text Label 3150 3050 0    50   ~ 0
+Digit21CathodeSignal
+Wire Wire Line
+	3150 3150 3000 3150
+Wire Wire Line
+	3000 3050 3150 3050
+Wire Wire Line
+	1500 2950 1900 2950
+Wire Wire Line
+	3150 2950 3000 2950
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCFD2
+P 3150 2950
+AR Path="/60FBCFD2" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCFD2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3150 2800 50  0001 C CNN
+F 1 "+5V" V 3165 3078 50  0000 L CNN
+F 2 "" H 3150 2950 50  0001 C CNN
+F 3 "" H 3150 2950 50  0001 C CNN
+	1    3150 2950
+	0    1    1    0   
+$EndComp
+Text Label 6150 2050 0    50   ~ 0
+Digit20Cathode
+Text Label 6150 2150 0    50   ~ 0
+Digit21Cathode
+Text Label 6150 1850 0    50   ~ 0
+Digit18Cathode
+Text Label 6150 1950 0    50   ~ 0
+Digit19Cathode
+Wire Wire Line
+	6150 1850 5950 1850
+Wire Wire Line
+	5950 1950 6150 1950
+Wire Wire Line
+	6150 2050 5950 2050
+Wire Wire Line
+	5950 2150 6150 2150
+Text Label 4900 1850 2    50   ~ 0
+Digit18CathodeSignal
+Text Label 4900 1950 2    50   ~ 0
+Digit19CathodeSignal
+Text Label 4900 2050 2    50   ~ 0
+Digit20CathodeSignal
+Text Label 4900 2150 2    50   ~ 0
+Digit21CathodeSignal
+Wire Wire Line
+	4900 1850 5150 1850
+Wire Wire Line
+	5150 1950 4900 1950
+Wire Wire Line
+	4900 2050 5150 2050
+Wire Wire Line
+	5150 2150 4900 2150
+NoConn ~ 5950 2250
+NoConn ~ 5950 2350
+NoConn ~ 5950 2450
+NoConn ~ 5150 2250
+NoConn ~ 5150 2350
+NoConn ~ 5150 2450
+Text Notes 700  1350 0    50   ~ 0
+Display Driving
+$EndSCHEMATC

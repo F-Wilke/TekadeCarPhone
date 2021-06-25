@@ -1,0 +1,990 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega2560-16AU U?
+U 1 1 60F80B5B
+P 5950 4300
+AR Path="/60F80B5B" Ref="U?"  Part="1" 
+AR Path="/60F18E7A/60F80B5B" Ref="U?"  Part="1" 
+F 0 "U?" H 5950 1311 50  0000 C CNN
+F 1 "ATmega2560-16AU" H 5950 1220 50  0000 C CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 5950 4300 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf" H 5950 4300 50  0001 C CNN
+F 4 "sufficient" H 5950 4300 50  0001 C CNN "Availability"
+	1    5950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60F80B61
+P 5100 750
+AR Path="/60F80B61" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80B61" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5100 600 50  0001 C CNN
+F 1 "+5V" H 5115 923 50  0000 C CNN
+F 2 "" H 5100 750 50  0001 C CNN
+F 3 "" H 5100 750 50  0001 C CNN
+	1    5100 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1050 5100 950 
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80B68
+P 5950 7500
+AR Path="/60F80B68" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80B68" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5950 7250 50  0001 C CNN
+F 1 "Earth" H 5950 7350 50  0001 C CNN
+F 2 "" H 5950 7500 50  0001 C CNN
+F 3 "~" H 5950 7500 50  0001 C CNN
+	1    5950 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 60F80B6E
+P 4200 1750
+AR Path="/60F80B6E" Ref="Y?"  Part="1" 
+AR Path="/60F18E7A/60F80B6E" Ref="Y?"  Part="1" 
+F 0 "Y?" V 4154 1881 50  0000 L CNN
+F 1 "16MHz" V 4245 1881 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 4200 1750 50  0001 C CNN
+F 3 "https://abracon.com/Resonators/abm3.pdf" H 4200 1750 50  0001 C CNN
+	1    4200 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80B74
+P 3500 1750
+AR Path="/60F80B74" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80B74" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 1500 50  0001 C CNN
+F 1 "Earth" H 3500 1600 50  0001 C CNN
+F 2 "" H 3500 1750 50  0001 C CNN
+F 3 "~" H 3500 1750 50  0001 C CNN
+	1    3500 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80B7A
+P 3950 1550
+AR Path="/60F80B7A" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80B7A" Ref="C?"  Part="1" 
+F 0 "C?" V 3698 1550 50  0000 C CNN
+F 1 "22pF" V 3789 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1400 50  0001 C CNN
+F 3 "~" H 3950 1550 50  0001 C CNN
+	1    3950 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80B80
+P 3950 2000
+AR Path="/60F80B80" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80B80" Ref="C?"  Part="1" 
+F 0 "C?" V 3698 2000 50  0000 C CNN
+F 1 "22pF" V 3789 2000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1850 50  0001 C CNN
+F 3 "~" H 3950 2000 50  0001 C CNN
+	1    3950 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 1550 4200 1550
+Wire Wire Line
+	4200 1550 4200 1600
+Wire Wire Line
+	4200 1900 4200 2000
+Wire Wire Line
+	4200 2000 4100 2000
+Wire Wire Line
+	3800 2000 3500 2000
+Wire Wire Line
+	3500 2000 3500 1750
+Wire Wire Line
+	3800 1550 3500 1550
+Wire Wire Line
+	3500 1550 3500 1750
+Connection ~ 3500 1750
+Connection ~ 4200 1550
+Wire Wire Line
+	4200 1550 4400 1550
+Wire Wire Line
+	4200 2000 4400 2000
+Connection ~ 4200 2000
+$Comp
+L Device:R_US R?
+U 1 1 60F80B93
+P 2900 1750
+AR Path="/60F80B93" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80B93" Ref="R?"  Part="1" 
+F 0 "R?" H 2968 1796 50  0000 L CNN
+F 1 "1M" H 2968 1705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2940 1740 50  0001 C CNN
+F 3 "~" H 2900 1750 50  0001 C CNN
+	1    2900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1600 2900 1250
+Wire Wire Line
+	2900 1250 4200 1250
+Wire Wire Line
+	4200 1250 4200 1550
+Wire Wire Line
+	4200 2000 4200 2150
+Wire Wire Line
+	4200 2150 3350 2150
+Wire Wire Line
+	2900 2150 2900 1900
+$Comp
+L Device:C C?
+U 1 1 60F80B9F
+P 5100 1200
+AR Path="/60F80B9F" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80B9F" Ref="C?"  Part="1" 
+F 0 "C?" H 5215 1246 50  0000 L CNN
+F 1 "100n" H 5215 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5138 1050 50  0001 C CNN
+F 3 "~" H 5100 1200 50  0001 C CNN
+	1    5100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80BA5
+P 5400 1200
+AR Path="/60F80BA5" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80BA5" Ref="C?"  Part="1" 
+F 0 "C?" H 5515 1246 50  0000 L CNN
+F 1 "100n" H 5515 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 1050 50  0001 C CNN
+F 3 "~" H 5400 1200 50  0001 C CNN
+	1    5400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80BAB
+P 5750 1200
+AR Path="/60F80BAB" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80BAB" Ref="C?"  Part="1" 
+F 0 "C?" H 5865 1246 50  0000 L CNN
+F 1 "100n" H 5865 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 1050 50  0001 C CNN
+F 3 "~" H 5750 1200 50  0001 C CNN
+	1    5750 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 950  5400 1050
+Wire Wire Line
+	5400 950  5750 950 
+Wire Wire Line
+	5750 950  5750 1050
+Connection ~ 5400 950 
+Wire Wire Line
+	5750 950  6050 950 
+Wire Wire Line
+	6050 950  6050 1300
+Connection ~ 5750 950 
+Wire Wire Line
+	6050 1300 5950 1300
+Wire Wire Line
+	5950 1300 5950 1400
+Connection ~ 6050 1300
+Wire Wire Line
+	6050 1300 6050 1400
+Wire Wire Line
+	5750 1350 5400 1350
+Wire Wire Line
+	5400 1350 5100 1350
+Connection ~ 5400 1350
+Wire Wire Line
+	5100 1350 5100 1450
+Connection ~ 5100 1350
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80BC1
+P 5100 1450
+AR Path="/60F80BC1" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80BC1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5100 1200 50  0001 C CNN
+F 1 "Earth" H 5100 1300 50  0001 C CNN
+F 2 "" H 5100 1450 50  0001 C CNN
+F 3 "~" H 5100 1450 50  0001 C CNN
+	1    5100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 950  5400 950 
+Wire Wire Line
+	5100 950  5100 750 
+Connection ~ 5100 950 
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80BCA
+P 4150 2300
+AR Path="/60F80BCA" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80BCA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4150 2050 50  0001 C CNN
+F 1 "Earth" H 4150 2150 50  0001 C CNN
+F 2 "" H 4150 2300 50  0001 C CNN
+F 3 "~" H 4150 2300 50  0001 C CNN
+	1    4150 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2000 4400 2100
+Wire Wire Line
+	4400 1550 4400 1900
+$Comp
+L Device:C C?
+U 1 1 60F80BD2
+P 4300 2300
+AR Path="/60F80BD2" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80BD2" Ref="C?"  Part="1" 
+F 0 "C?" V 4048 2300 50  0000 C CNN
+F 1 "100nF" V 4139 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 2150 50  0001 C CNN
+F 3 "~" H 4300 2300 50  0001 C CNN
+	1    4300 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Interface_USB:CH340G U?
+U 1 1 60F80BD9
+P 2400 5150
+AR Path="/60F80BD9" Ref="U?"  Part="1" 
+AR Path="/60F18E7A/60F80BD9" Ref="U?"  Part="1" 
+F 0 "U?" H 2400 4461 50  0000 C CNN
+F 1 "CH340G" H 2400 4370 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2450 4600 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 2050 5950 50  0001 C CNN
+F 4 "sufficient" H 2400 5150 50  0001 C CNN "Availability"
+	1    2400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5400 7600 5400
+Wire Wire Line
+	6750 5300 7600 5300
+Wire Wire Line
+	2800 4750 3100 4750
+Wire Wire Line
+	3100 4850 2800 4850
+Wire Wire Line
+	4400 1900 5150 1900
+Wire Wire Line
+	4400 2100 5150 2100
+Wire Wire Line
+	4450 2300 5150 2300
+$Comp
+L Device:C C?
+U 1 1 60F80BE6
+P 3200 5450
+AR Path="/60F80BE6" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80BE6" Ref="C?"  Part="1" 
+F 0 "C?" V 2948 5450 50  0000 C CNN
+F 1 "100nF" V 3039 5450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 5300 50  0001 C CNN
+F 3 "~" H 3200 5450 50  0001 C CNN
+	1    3200 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 5450 3050 5450
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80BED
+P 2400 5950
+AR Path="/60F80BED" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80BED" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 5700 50  0001 C CNN
+F 1 "Earth" H 2400 5800 50  0001 C CNN
+F 2 "" H 2400 5950 50  0001 C CNN
+F 3 "~" H 2400 5950 50  0001 C CNN
+	1    2400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5750 2400 5950
+$Comp
+L power:+5V #PWR?
+U 1 1 60F80BF4
+P 2400 4400
+AR Path="/60F80BF4" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80BF4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 4250 50  0001 C CNN
+F 1 "+5V" H 2415 4573 50  0000 C CNN
+F 2 "" H 2400 4400 50  0001 C CNN
+F 3 "" H 2400 4400 50  0001 C CNN
+	1    2400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80BFA
+P 1450 4550
+AR Path="/60F80BFA" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80BFA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1450 4300 50  0001 C CNN
+F 1 "Earth" H 1450 4400 50  0001 C CNN
+F 2 "" H 1450 4550 50  0001 C CNN
+F 3 "~" H 1450 4550 50  0001 C CNN
+	1    1450 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80C00
+P 1600 4550
+AR Path="/60F80C00" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80C00" Ref="C?"  Part="1" 
+F 0 "C?" V 1348 4550 50  0000 C CNN
+F 1 "100nF" V 1439 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1638 4400 50  0001 C CNN
+F 3 "~" H 1600 4550 50  0001 C CNN
+	1    1600 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 5000 1850 5000
+Wire Wire Line
+	1850 5000 1850 5050
+Wire Wire Line
+	1850 5050 2000 5050
+Wire Wire Line
+	1700 5150 2000 5150
+Wire Wire Line
+	2400 4400 2400 4500
+Text Notes 8750 1300 2    50   ~ 0
+Platzierung einer Schnittstelle zum Flashen vor oder nach CH340G?
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 60F80C0C
+P 2150 3250
+AR Path="/60F80C0C" Ref="J?"  Part="1" 
+AR Path="/60F18E7A/60F80C0C" Ref="J?"  Part="1" 
+F 0 "J?" H 2200 3567 50  0000 C CNN
+F 1 "ATMEGA_ICSP" H 2200 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2150 3250 50  0001 C CNN
+F 3 "~" H 2150 3250 50  0001 C CNN
+	1    2150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C12
+P 2850 3550
+AR Path="/60F80C12" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C12" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2850 3300 50  0001 C CNN
+F 1 "Earth" H 2850 3400 50  0001 C CNN
+F 2 "" H 2850 3550 50  0001 C CNN
+F 3 "~" H 2850 3550 50  0001 C CNN
+	1    2850 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3350 2850 3550
+Wire Wire Line
+	2850 3350 2450 3350
+$Comp
+L power:+5V #PWR?
+U 1 1 60F80C1A
+P 2850 3000
+AR Path="/60F80C1A" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C1A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2850 2850 50  0001 C CNN
+F 1 "+5V" H 2865 3173 50  0000 C CNN
+F 2 "" H 2850 3000 50  0001 C CNN
+F 3 "" H 2850 3000 50  0001 C CNN
+	1    2850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3000 2850 3150
+Wire Wire Line
+	2850 3150 2450 3150
+Wire Wire Line
+	1700 3250 1950 3250
+Wire Wire Line
+	1700 3150 1950 3150
+Wire Wire Line
+	1950 3350 1700 3350
+Wire Wire Line
+	1750 4550 2300 4550
+$Comp
+L power:+5V #PWR?
+U 1 1 60F80C26
+P 4800 1200
+AR Path="/60F80C26" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C26" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4800 1050 50  0001 C CNN
+F 1 "+5V" H 4815 1373 50  0000 C CNN
+F 2 "" H 4800 1200 50  0001 C CNN
+F 3 "" H 4800 1200 50  0001 C CNN
+	1    4800 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1400 4800 1200
+$Comp
+L Device:R_US R?
+U 1 1 60F80C2D
+P 4800 1550
+AR Path="/60F80C2D" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C2D" Ref="R?"  Part="1" 
+F 0 "R?" H 4868 1596 50  0000 L CNN
+F 1 "100k" H 4868 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4840 1540 50  0001 C CNN
+F 3 "~" H 4800 1550 50  0001 C CNN
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1700 4800 1700
+Wire Wire Line
+	5150 1700 4800 1700
+Connection ~ 4800 1700
+Wire Wire Line
+	4650 1700 4650 1050
+Wire Wire Line
+	4650 1050 4300 1050
+Wire Wire Line
+	6750 6200 8300 6200
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C39
+P 8600 6200
+AR Path="/60F80C39" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C39" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8600 5950 50  0001 C CNN
+F 1 "Earth" H 8600 6050 50  0001 C CNN
+F 2 "" H 8600 6200 50  0001 C CNN
+F 3 "~" H 8600 6200 50  0001 C CNN
+	1    8600 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60F80C3F
+P 8450 6200
+AR Path="/60F80C3F" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C3F" Ref="R?"  Part="1" 
+F 0 "R?" V 8245 6200 50  0000 C CNN
+F 1 "22k" V 8336 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8490 6190 50  0001 C CNN
+F 3 "~" H 8450 6200 50  0001 C CNN
+	1    8450 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C45
+P 9000 6300
+AR Path="/60F80C45" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C45" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9000 6050 50  0001 C CNN
+F 1 "Earth" H 9000 6150 50  0001 C CNN
+F 2 "" H 9000 6300 50  0001 C CNN
+F 3 "~" H 9000 6300 50  0001 C CNN
+	1    9000 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60F80C4B
+P 8850 6300
+AR Path="/60F80C4B" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C4B" Ref="R?"  Part="1" 
+F 0 "R?" V 8645 6300 50  0000 C CNN
+F 1 "22k" V 8736 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8890 6290 50  0001 C CNN
+F 3 "~" H 8850 6300 50  0001 C CNN
+	1    8850 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C51
+P 9400 6400
+AR Path="/60F80C51" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C51" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9400 6150 50  0001 C CNN
+F 1 "Earth" H 9400 6250 50  0001 C CNN
+F 2 "" H 9400 6400 50  0001 C CNN
+F 3 "~" H 9400 6400 50  0001 C CNN
+	1    9400 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60F80C57
+P 9250 6400
+AR Path="/60F80C57" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C57" Ref="R?"  Part="1" 
+F 0 "R?" V 9045 6400 50  0000 C CNN
+F 1 "22k" V 9136 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9290 6390 50  0001 C CNN
+F 3 "~" H 9250 6400 50  0001 C CNN
+	1    9250 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C5D
+P 9800 6500
+AR Path="/60F80C5D" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C5D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9800 6250 50  0001 C CNN
+F 1 "Earth" H 9800 6350 50  0001 C CNN
+F 2 "" H 9800 6500 50  0001 C CNN
+F 3 "~" H 9800 6500 50  0001 C CNN
+	1    9800 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60F80C63
+P 9650 6500
+AR Path="/60F80C63" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C63" Ref="R?"  Part="1" 
+F 0 "R?" V 9445 6500 50  0000 C CNN
+F 1 "22k" V 9536 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9690 6490 50  0001 C CNN
+F 3 "~" H 9650 6500 50  0001 C CNN
+	1    9650 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 6300 8700 6300
+Wire Wire Line
+	6750 6400 9100 6400
+Wire Wire Line
+	6750 6500 9500 6500
+Text Label 7150 6200 0    50   ~ 0
+DataEncoderDataOutA
+Text Label 7150 6300 0    50   ~ 0
+DataEncoderDataOutB
+Text Label 7150 6400 0    50   ~ 0
+DataEncoderDataOutC
+Text Label 7150 6500 0    50   ~ 0
+DataEncoderDataOutD
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C70
+P 10200 6600
+AR Path="/60F80C70" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C70" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10200 6350 50  0001 C CNN
+F 1 "Earth" H 10200 6450 50  0001 C CNN
+F 2 "" H 10200 6600 50  0001 C CNN
+F 3 "~" H 10200 6600 50  0001 C CNN
+	1    10200 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60F80C76
+P 10050 6600
+AR Path="/60F80C76" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C76" Ref="R?"  Part="1" 
+F 0 "R?" V 9845 6600 50  0000 C CNN
+F 1 "22k" V 9936 6600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10090 6590 50  0001 C CNN
+F 3 "~" H 10050 6600 50  0001 C CNN
+	1    10050 6600
+	0    1    1    0   
+$EndComp
+Text Label 7150 6600 0    50   ~ 0
+DataEncoderDataOutE
+Wire Wire Line
+	6750 6600 9900 6600
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80C7E
+P 10600 6700
+AR Path="/60F80C7E" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C7E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10600 6450 50  0001 C CNN
+F 1 "Earth" H 10600 6550 50  0001 C CNN
+F 2 "" H 10600 6700 50  0001 C CNN
+F 3 "~" H 10600 6700 50  0001 C CNN
+	1    10600 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60F80C84
+P 10450 6700
+AR Path="/60F80C84" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C84" Ref="R?"  Part="1" 
+F 0 "R?" V 10245 6700 50  0000 C CNN
+F 1 "22k" V 10336 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10490 6690 50  0001 C CNN
+F 3 "~" H 10450 6700 50  0001 C CNN
+	1    10450 6700
+	0    1    1    0   
+$EndComp
+Text Label 7150 6700 0    50   ~ 0
+DataEncoderDataAvailable
+Wire Wire Line
+	6750 6700 10300 6700
+$Comp
+L Device:R_US R?
+U 1 1 60F80C8C
+P 10850 6800
+AR Path="/60F80C8C" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C8C" Ref="R?"  Part="1" 
+F 0 "R?" V 10645 6800 50  0000 C CNN
+F 1 "22k" V 10736 6800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10890 6790 50  0001 C CNN
+F 3 "~" H 10850 6800 50  0001 C CNN
+	1    10850 6800
+	0    1    1    0   
+$EndComp
+Text Label 7150 6800 0    50   ~ 0
+ButtonA2GND
+Wire Wire Line
+	6750 6800 10700 6800
+$Comp
+L power:+5V #PWR?
+U 1 1 60F80C94
+P 11000 6800
+AR Path="/60F80C94" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80C94" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 11000 6650 50  0001 C CNN
+F 1 "+5V" V 11015 6928 50  0000 L CNN
+F 2 "" H 11000 6800 50  0001 C CNN
+F 3 "" H 11000 6800 50  0001 C CNN
+	1    11000 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3300 8000 3300
+$Comp
+L Device:R_US R?
+U 1 1 60F80C9B
+P 7050 3300
+AR Path="/60F80C9B" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80C9B" Ref="R?"  Part="1" 
+F 0 "R?" V 6845 3300 50  0000 C CNN
+F 1 "10k" V 6936 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7090 3290 50  0001 C CNN
+F 3 "~" H 7050 3300 50  0001 C CNN
+	1    7050 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 3300 6900 3300
+Wire Wire Line
+	5150 2700 4550 2700
+Text Label 4550 2700 2    50   ~ 0
+Mic_Mode_Switch
+Wire Wire Line
+	5150 2600 4550 2600
+Text Label 4550 2600 2    50   ~ 0
+DataEncoderOutputEnable
+Text Label 1700 5000 2    50   ~ 0
+ATMEGA_USB_DP
+Text Label 1700 5150 2    50   ~ 0
+ATMEGA_USB_DM
+Text Label 8000 3300 0    50   ~ 0
+Signal_Strength_Dial_+
+Wire Wire Line
+	7250 2000 6750 2000
+Wire Wire Line
+	6750 2100 7250 2100
+Wire Wire Line
+	7250 2200 6750 2200
+Wire Wire Line
+	6750 2300 7250 2300
+Text Label 7450 2600 0    50   ~ 0
+7_Segment_Driver_A
+Wire Wire Line
+	7450 2600 6750 2600
+Text Label 4650 6400 2    50   ~ 0
+7_Segment_Driver_B
+Text Label 4550 3300 2    50   ~ 0
+7_Segment_Driver_C
+Text Label 7250 5100 0    50   ~ 0
+7_Segment_Driver_D
+Wire Wire Line
+	5150 6400 4650 6400
+Wire Wire Line
+	5150 3300 4550 3300
+Wire Wire Line
+	6750 5100 7250 5100
+Wire Wire Line
+	5950 7200 5950 7500
+Text Label 7250 6900 0    50   ~ 0
+UiLdr
+Wire Wire Line
+	7250 6900 6750 6900
+Text Label 4550 3600 2    50   ~ 0
+LedRedCathode
+Text Label 4550 3500 2    50   ~ 0
+LedYellowCathode
+Wire Wire Line
+	4550 3500 5150 3500
+Wire Wire Line
+	4550 3600 5150 3600
+Text Label 4550 3700 2    50   ~ 0
+LedGreenCathode
+Wire Wire Line
+	4550 3700 5150 3700
+Text Label 4550 3800 2    50   ~ 0
+OnSwitchLedAnode
+Wire Wire Line
+	4550 3800 5150 3800
+Wire Wire Line
+	7450 2900 6750 2900
+Wire Wire Line
+	7450 2800 6750 2800
+Wire Wire Line
+	7450 2700 6750 2700
+Text Label 7450 2700 0    50   ~ 0
+ATMEGA_ICSP_SCK
+Text Label 7450 2800 0    50   ~ 0
+ATMEGA_ICSP_MOSI
+Text Label 7450 2900 0    50   ~ 0
+ATMEGA_ICSP_MISO
+Text Label 2450 3250 0    50   ~ 0
+ATMEGA_ICSP_MOSI
+Text Label 1700 3150 2    50   ~ 0
+ATMEGA_ICSP_MISO
+Text Label 1700 3250 2    50   ~ 0
+ATMEGA_ICSP_SCK
+Text Label 4300 1050 2    50   ~ 0
+ATMEGA_RESET
+Text Label 1700 3350 2    50   ~ 0
+ATMEGA_RESET
+Text Label 3350 5450 0    50   ~ 0
+ATMEGA_RESET
+Text Label 7600 5300 0    50   ~ 0
+ATMEGA_RX0
+Text Label 7600 5400 0    50   ~ 0
+ATMEGA_TX0
+Text Label 3100 4750 0    50   ~ 0
+ATMEGA_RX0
+Text Label 3100 4850 0    50   ~ 0
+ATMEGA_TX0
+$Comp
+L Device:C C?
+U 1 1 60F80CD0
+P 2600 4350
+AR Path="/60F80CD0" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80CD0" Ref="C?"  Part="1" 
+F 0 "C?" H 2715 4396 50  0000 L CNN
+F 1 "100n" H 2715 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 4200 50  0001 C CNN
+F 3 "~" H 2600 4350 50  0001 C CNN
+	1    2600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80CD6
+P 3000 4350
+AR Path="/60F80CD6" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80CD6" Ref="C?"  Part="1" 
+F 0 "C?" H 3115 4396 50  0000 L CNN
+F 1 "100n" H 3115 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 4200 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4500 2600 4500
+Connection ~ 2600 4500
+Wire Wire Line
+	2600 4500 3000 4500
+$Comp
+L Device:CP1 C?
+U 1 1 60F80CDF
+P 3450 4350
+AR Path="/60F80CDF" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80CDF" Ref="C?"  Part="1" 
+F 0 "C?" H 3335 4304 50  0000 R CNN
+F 1 "4.7µF" H 3335 4395 50  0000 R CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 3450 4350 50  0001 C CNN
+F 3 "~" H 3450 4350 50  0001 C CNN
+	1    3450 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 4500 3000 4500
+Connection ~ 3000 4500
+Wire Wire Line
+	3450 4200 3000 4200
+Connection ~ 3000 4200
+Wire Wire Line
+	3000 4200 2600 4200
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80CEA
+P 3000 4200
+AR Path="/60F80CEA" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80CEA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 3950 50  0001 C CNN
+F 1 "Earth" H 3000 4050 50  0001 C CNN
+F 2 "" H 3000 4200 50  0001 C CNN
+F 3 "~" H 3000 4200 50  0001 C CNN
+	1    3000 4200
+	-1   0    0    1   
+$EndComp
+Connection ~ 2400 4500
+Wire Wire Line
+	2400 4500 2400 4550
+Text Label 4600 6700 2    50   ~ 0
+BrightnessRegulation
+Wire Wire Line
+	4600 6700 5150 6700
+Text Label 7250 2000 0    50   ~ 0
+DecoderData1
+Text Label 7250 2100 0    50   ~ 0
+DecoderData2
+Text Label 7250 2200 0    50   ~ 0
+DecoderData3
+Text Label 7250 2300 0    50   ~ 0
+DecoderData4
+Text Label 8150 2400 0    50   ~ 0
+DecoderExtraSwitch
+$Comp
+L Device:Crystal Y?
+U 1 1 60F80CF9
+P 850 5450
+AR Path="/60F80CF9" Ref="Y?"  Part="1" 
+AR Path="/60F18E7A/60F80CF9" Ref="Y?"  Part="1" 
+F 0 "Y?" V 804 5581 50  0000 L CNN
+F 1 "12MHz" V 895 5581 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 850 5450 50  0001 C CNN
+F 3 "~" H 850 5450 50  0001 C CNN
+	1    850  5450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60F80CFF
+P 150 5450
+AR Path="/60F80CFF" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/60F80CFF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 150 5200 50  0001 C CNN
+F 1 "Earth" H 150 5300 50  0001 C CNN
+F 2 "" H 150 5450 50  0001 C CNN
+F 3 "~" H 150 5450 50  0001 C CNN
+	1    150  5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80D05
+P 600 5250
+AR Path="/60F80D05" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80D05" Ref="C?"  Part="1" 
+F 0 "C?" V 348 5250 50  0000 C CNN
+F 1 "22pF" V 439 5250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 638 5100 50  0001 C CNN
+F 3 "~" H 600 5250 50  0001 C CNN
+	1    600  5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60F80D0B
+P 600 5700
+AR Path="/60F80D0B" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/60F80D0B" Ref="C?"  Part="1" 
+F 0 "C?" V 348 5700 50  0000 C CNN
+F 1 "22pF" V 439 5700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 638 5550 50  0001 C CNN
+F 3 "~" H 600 5700 50  0001 C CNN
+	1    600  5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  5250 850  5250
+Wire Wire Line
+	850  5250 850  5300
+Wire Wire Line
+	850  5600 850  5700
+Wire Wire Line
+	850  5700 750  5700
+Wire Wire Line
+	450  5700 150  5700
+Wire Wire Line
+	150  5700 150  5450
+Wire Wire Line
+	450  5250 150  5250
+Wire Wire Line
+	150  5250 150  5450
+Connection ~ 150  5450
+Connection ~ 850  5250
+Connection ~ 850  5700
+Wire Wire Line
+	1600 5250 1600 5350
+Wire Wire Line
+	1600 5350 2000 5350
+Wire Wire Line
+	850  5250 1600 5250
+Wire Wire Line
+	2000 5550 1600 5550
+Wire Wire Line
+	1600 5550 1600 5700
+Wire Wire Line
+	850  5700 1600 5700
+NoConn ~ 2800 5050
+NoConn ~ 2800 5150
+NoConn ~ 2800 5250
+NoConn ~ 2800 5350
+NoConn ~ 2800 5550
+NoConn ~ 2000 4850
+Text Label 7250 1800 0    50   ~ 0
+KeyLock.A
+Text Label 7250 1700 0    50   ~ 0
+KeyLock.B
+Wire Wire Line
+	7250 1800 6750 1800
+Wire Wire Line
+	6750 1700 7250 1700
+$Comp
+L Device:R_US R?
+U 1 1 60F80D2C
+P 7950 2400
+AR Path="/60F80D2C" Ref="R?"  Part="1" 
+AR Path="/60F18E7A/60F80D2C" Ref="R?"  Part="1" 
+F 0 "R?" V 7745 2400 50  0000 C CNN
+F 1 "330" V 7836 2400 50  0000 C CNN
+F 2 "" V 7990 2390 50  0001 C CNN
+F 3 "~" H 7950 2400 50  0001 C CNN
+	1    7950 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2400 8150 2400
+Wire Wire Line
+	6750 2400 7800 2400
+Wire Wire Line
+	3050 2150 2900 2150
+$EndSCHEMATC
