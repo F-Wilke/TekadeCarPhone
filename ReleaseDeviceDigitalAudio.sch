@@ -976,6 +976,7 @@ F11 "HandsetMicInN" I R 8800 3050 50
 F12 "MAX_*IRQ" O L 7200 1600 50 
 F13 "I2S2" B L 7200 2200 50 
 F14 "I2S1" B L 7200 2000 50 
+F15 "I2C" B L 7200 2400 50 
 $EndSheet
 Connection ~ 11050 2150
 Wire Wire Line
@@ -1008,4 +1009,12 @@ U 60F87146
 F0 "7SegmentDriver" 50
 F1 "7SegmentDriver.sch" 50
 $EndSheet
+Text Label 5850 2050 0    50   ~ 0
+RPI_I2C_0
+Wire Bus Line
+	5550 2050 5850 2050
+Text Label 6900 2400 2    50   ~ 0
+RPI_I2C_0
+Wire Bus Line
+	7200 2400 6900 2400
 $EndSCHEMATC

@@ -177,13 +177,9 @@ Connection ~ 7900 2150
 Wire Wire Line
 	7900 2150 10150 2150
 Text Label 10150 2550 0    50   ~ 0
-Rpi.SDA1
+Rpi.SDA0
 Text Label 10150 2650 0    50   ~ 0
-Rpi.SCL1
-Wire Wire Line
-	7150 2550 10150 2550
-Wire Wire Line
-	10150 2650 7150 2650
+Rpi.SCL0
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60E6077F
@@ -1327,6 +1323,20 @@ F 3 "~" H 2000 4150 50  0001 C CNN
 	1    2000 4150
 	0    1    1    0   
 $EndComp
+Entry Wire Line
+	10900 2550 10800 2650
+Entry Wire Line
+	10900 2450 10800 2550
+Text HLabel 11050 2450 2    50   BiDi ~ 0
+I2C
+Wire Wire Line
+	7150 2650 10800 2650
+Wire Wire Line
+	7150 2550 10800 2550
+Wire Bus Line
+	10900 2550 10900 2450
+Wire Bus Line
+	10900 2450 11050 2450
 Wire Bus Line
 	1850 1950 1850 2250
 Wire Bus Line
