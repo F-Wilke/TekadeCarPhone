@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -879,26 +879,6 @@ Wire Wire Line
 Wire Wire Line
 	9050 5450 9050 5800
 Wire Notes Line
-	9200 4550 10150 4550
-Wire Notes Line
-	10150 4550 10150 5450
-Wire Notes Line
-	10150 5450 9200 5450
-Wire Notes Line
-	9200 5450 9200 4550
-Text Notes 9250 4750 0    50   ~ 0
-S. 122 nicht vorhanden\nÜbernommen aus EvKit S.12
-Wire Notes Line
-	7900 4700 8550 4700
-Wire Notes Line
-	8550 4700 8550 5550
-Wire Notes Line
-	8550 5550 7900 5550
-Wire Notes Line
-	7900 5550 7900 4700
-Text Notes 7850 4650 0    50   ~ 0
-S. 122 nicht vorhanden\nÜbernommen aus Evkit S.12
-Wire Notes Line
 	2000 3850 3550 3850
 Wire Notes Line
 	3550 3850 3550 4850
@@ -906,7 +886,7 @@ Wire Notes Line
 	3550 4850 2000 4850
 Wire Notes Line
 	2000 4850 2000 3850
-Text Notes 2100 3800 0    50   ~ 0
+Text Notes 900  3750 0    50   ~ 0
 Line Out?\nHier keine Cs gegen GND wie bei:\n- Line In\n- Headset Out\n-> Orientiert an Referenzdesign, werde ich aber empirisch prüfen
 Wire Wire Line
 	2050 850  2050 1000
@@ -1069,40 +1049,14 @@ Text Label 1150 6500 2    50   ~ 0
 MAX_MIC1N
 Wire Wire Line
 	1150 6500 2950 6500
-Wire Notes Line
-	1300 6600 3300 6600
-Wire Notes Line
-	3300 6600 3300 7050
-Wire Notes Line
-	3300 7050 2450 7050
-Wire Notes Line
-	2450 7050 2450 6900
-Wire Notes Line
-	2450 6900 2050 6900
-Wire Notes Line
-	2050 6900 2050 7050
-Wire Notes Line
-	2050 7050 1300 7050
-Wire Notes Line
-	1300 7050 1300 6600
-Text Notes 3050 7250 0    50   ~ 0
-So nicht in Appnote fig 40\nDafür in Evkit guide fig 4a
 Wire Wire Line
 	4550 4250 3500 4250
-Wire Notes Line
-	3000 5550 3000 6200
-Wire Notes Line
-	3000 6200 3400 6200
-Wire Notes Line
-	3400 6200 3400 5550
-Wire Notes Line
-	3000 5550 3400 5550
-Text Notes 1300 5850 0    50   ~ 0
-So nicht in Appnote fig 40\nStattdessen in EvKit guide fig 4a\n-> differential/single ended an EvKit zu prüfen!
+Text Notes 3650 6050 0    50   ~ 0
+MICxN muss noch auf GND oder über 2k2 R\n-> differential/single ended an EvKit zu prüfen!
 Text Notes 3350 1200 0    50   ~ 0
 An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?\n=> Ja, laut S.126, aber es reichen auf 3V3
 Text Notes 10150 2800 0    50   ~ 0
-Pullups??
+Pullups??\nVerbindung\n
 Wire Notes Line
 	10050 2400 10600 2400
 Wire Notes Line
@@ -1166,14 +1120,6 @@ Wire Wire Line
 	4650 7150 4650 7350
 Wire Wire Line
 	3650 5300 3500 5300
-Wire Notes Line
-	10000 1950 10800 1950
-Wire Notes Line
-	10800 1950 10800 3100
-Wire Notes Line
-	10800 3100 10000 3100
-Wire Notes Line
-	10000 3100 10000 1950
 $Comp
 L TeKaDe:MAX98089ETN+ U?
 U 1 1 60D6B3CA
@@ -1218,7 +1164,7 @@ HandsetMicInP
 Text HLabel 3650 6500 2    50   Input ~ 0
 HandsetMicInN
 Text HLabel 10150 2150 2    50   Output ~ 0
-MAX_*IRQ
+IRQ
 Text Label 10150 2350 0    50   ~ 0
 RPi_I2S_SD_OUT
 Text Label 3100 2050 2    50   ~ 0
