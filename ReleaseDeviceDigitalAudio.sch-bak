@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -1008,18 +1008,6 @@ S 7200 6450 1600 2250
 U 60F87146
 F0 "7SegmentDriver" 50
 F1 "7SegmentDriver.sch" 50
-$EndSheet
-$Sheet
-S 3950 1350 1600 2250
-U 614D7E9D
-F0 "RPiCM" 50
-F1 "RaspberryPiCM.sch" 50
-F2 "RPi_USB" B R 5550 1550 50 
-F3 "RPI_I2S" B R 5550 1750 50 
-F4 "GPIO8" O R 5550 2550 50 
-F5 "GPIO9" O R 5550 2650 50 
-F6 "GPIO10" I R 5550 2750 50 
-F7 "RPI_UART" B R 5550 2050 50 
 $EndSheet
 Text Label 5850 2050 0    50   ~ 0
 RPI_I2C_0
