@@ -177,9 +177,9 @@ Connection ~ 7900 2150
 Wire Wire Line
 	7900 2150 10150 2150
 Text Label 10150 2550 0    50   ~ 0
-Rpi.SDA1
+Rpi.SDA0
 Text Label 10150 2650 0    50   ~ 0
-Rpi.SCL1
+Rpi.SCL0
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60E6077F

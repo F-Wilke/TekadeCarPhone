@@ -987,4 +987,48 @@ Wire Wire Line
 	6750 2400 7800 2400
 Wire Wire Line
 	3050 2150 2900 2150
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 61627570
+P 9350 4450
+F 0 "Q?" H 9554 4496 50  0000 L CNN
+F 1 "BSS138" H 9554 4405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9550 4375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9350 4450 50  0001 L CNN
+	1    9350 4450
+	1    0    0    -1  
+$EndComp
+Text HLabel 9850 4250 2    50   Output ~ 0
+RPI_RUN_3.3V
+Wire Wire Line
+	9450 4250 9850 4250
+Text Label 9000 4450 2    50   ~ 0
+RPI_RUN_5V
+$Comp
+L power:GND #PWR?
+U 1 1 6163335F
+P 9450 5050
+F 0 "#PWR?" H 9450 4800 50  0001 C CNN
+F 1 "GND" H 9455 4877 50  0000 C CNN
+F 2 "" H 9450 5050 50  0001 C CNN
+F 3 "" H 9450 5050 50  0001 C CNN
+	1    9450 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4650 9450 5050
+Wire Wire Line
+	9000 4450 9150 4450
+Text Label 7250 5000 0    50   ~ 0
+RPI_RUN_5V
+Wire Wire Line
+	7250 5000 6750 5000
+Text HLabel 7250 4900 2    50   Input ~ 0
+IGNITION_SENSE
+Text HLabel 7250 4800 2    50   Output ~ 0
+5V_EN_OUT
+Wire Wire Line
+	7250 4800 6750 4800
+Wire Wire Line
+	6750 4900 7250 4900
 $EndSCHEMATC

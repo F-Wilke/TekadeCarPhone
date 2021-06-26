@@ -874,6 +874,7 @@ F6 "GPIO10" I R 5550 2750 50
 F7 "RPI_UART" B R 5550 1900 50 
 F8 "I2C_0" B R 5550 2050 50 
 F9 "I2C_1" B R 5550 2200 50 
+F10 "RUN" I R 5550 2850 50 
 $EndSheet
 Text Label 5850 2750 0    50   ~ 0
 MAX_*IRQ
@@ -944,6 +945,8 @@ F2 "3.3V" U R 2800 1700 50
 F3 "1.8V" U R 2800 1800 50 
 F4 "5V" U R 2800 1600 50 
 F5 "GND" U R 2800 2050 50 
+F6 "5V_EN_Coupled" I L 1200 1700 50 
+F7 "Ignition_5V" O L 1200 1850 50 
 $EndSheet
 Wire Wire Line
 	3350 1800 2800 1800
@@ -976,6 +979,7 @@ F11 "HandsetMicInN" I R 8800 3050 50
 F12 "MAX_*IRQ" O L 7200 1600 50 
 F13 "I2S2" B L 7200 2200 50 
 F14 "I2S1" B L 7200 2000 50 
+F15 "I2C" B L 7200 2400 50 
 $EndSheet
 Connection ~ 11050 2150
 Wire Wire Line
@@ -1001,6 +1005,7 @@ S 4000 6450 1600 2250
 U 60F18E7A
 F0 "ControllerUIBoard" 50
 F1 "ControllerUIBoard.sch" 50
+F2 "RPI_RUN_3.3V" O R 5600 6650 50 
 $EndSheet
 $Sheet
 S 7200 6450 1600 2250
@@ -1008,4 +1013,20 @@ U 60F87146
 F0 "7SegmentDriver" 50
 F1 "7SegmentDriver.sch" 50
 $EndSheet
+Text Label 5850 2050 0    50   ~ 0
+RPI_I2C_0
+Wire Bus Line
+	5550 2050 5850 2050
+Text Label 6900 2400 2    50   ~ 0
+RPI_I2C_0
+Wire Bus Line
+	7200 2400 6900 2400
+Text Label 5900 6650 0    50   ~ 0
+RPI_RUN
+Text Label 5850 2850 0    50   ~ 0
+RPI_RUN
+Wire Wire Line
+	5550 2850 5850 2850
+Wire Wire Line
+	5600 6650 5900 6650
 $EndSCHEMATC

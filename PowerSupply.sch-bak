@@ -11677,4 +11677,221 @@ Wire Wire Line
 	11500 2800 11500 3100
 Wire Wire Line
 	10900 2500 11300 2500
+$Comp
+L power:VPP #PWR?
+U 1 1 60D96107
+P -2400 8100
+F 0 "#PWR?" H -2400 7950 50  0001 C CNN
+F 1 "VPP" H -2385 8273 50  0000 C CNN
+F 2 "" H -2400 8100 50  0001 C CNN
+F 3 "" H -2400 8100 50  0001 C CNN
+	1    -2400 8100
+	1    0    0    -1  
+$EndComp
+Text HLabel -4050 10750 0    50   Input ~ 0
+5V_EN_Coupled
+$Comp
+L power:GND #PWR?
+U 1 1 60DC4DCB
+P -1100 10200
+F 0 "#PWR?" H -1100 9950 50  0001 C CNN
+F 1 "GND" H -1095 10027 50  0000 C CNN
+F 2 "" H -1100 10200 50  0001 C CNN
+F 3 "" H -1100 10200 50  0001 C CNN
+	1    -1100 10200
+	1    0    0    -1  
+$EndComp
+Text HLabel -200 9450 2    50   Output ~ 0
+Ignition_5V
+Text Label -1550 10950 0    50   ~ 0
+5V_EN
+$Comp
+L power:-BATT #PWR?
+U 1 1 60E53236
+P -3350 9250
+F 0 "#PWR?" H -3350 9100 50  0001 C CNN
+F 1 "-BATT" H -3335 9423 50  0000 C CNN
+F 2 "" H -3350 9250 50  0001 C CNN
+F 3 "" H -3350 9250 50  0001 C CNN
+	1    -3350 9250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-3350 9250 -3350 8850
+Wire Wire Line
+	-3350 8850 -3000 8850
+Wire Wire Line
+	-3000 8650 -3350 8650
+$Comp
+L Isolator:NSL-32 U?
+U 1 1 60EE3D3B
+P -800 9350
+F 0 "U?" H -800 9667 50  0000 C CNN
+F 1 "NSL-32" H -800 9576 50  0000 C CNN
+F 2 "OptoDevice:Luna_NSL-32" H -800 9050 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H -750 9350 50  0001 C CNN
+	1    -800 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60F76FDA
+P -500 8650
+F 0 "#PWR?" H -500 8500 50  0001 C CNN
+F 1 "+5V" H -485 8823 50  0000 C CNN
+F 2 "" H -500 8650 50  0001 C CNN
+F 3 "" H -500 8650 50  0001 C CNN
+	1    -500 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1250 9250 -1100 9250
+Wire Wire Line
+	-2400 8850 -2250 8850
+$Comp
+L Isolator:NSL-32 U?
+U 1 1 60E503E3
+P -2700 8750
+F 0 "U?" H -2700 9067 50  0000 C CNN
+F 1 "NSL-32" H -2700 8976 50  0000 C CNN
+F 2 "OptoDevice:Luna_NSL-32" H -2700 8450 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H -2650 8750 50  0001 C CNN
+	1    -2700 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2400 8650 -2400 8100
+Wire Wire Line
+	-1100 9450 -1100 10200
+Wire Wire Line
+	-500 9250 -500 8650
+Wire Wire Line
+	-500 9450 -200 9450
+$Comp
+L Isolator:NSL-32 U?
+U 1 1 61106169
+P -2800 10850
+F 0 "U?" H -2800 11167 50  0000 C CNN
+F 1 "NSL-32" H -2800 11076 50  0000 C CNN
+F 2 "OptoDevice:Luna_NSL-32" H -2800 10550 50  0001 C CNN
+F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H -2750 10850 50  0001 C CNN
+	1    -2800 10850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3350 10750 -3100 10750
+$Comp
+L power:GND #PWR?
+U 1 1 6119BF29
+P -3100 11700
+F 0 "#PWR?" H -3100 11450 50  0001 C CNN
+F 1 "GND" H -3095 11527 50  0000 C CNN
+F 2 "" H -3100 11700 50  0001 C CNN
+F 3 "" H -3100 11700 50  0001 C CNN
+	1    -3100 11700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3100 10950 -3100 11700
+$Comp
+L power:VPP #PWR?
+U 1 1 611CEBBE
+P -2500 10200
+F 0 "#PWR?" H -2500 10050 50  0001 C CNN
+F 1 "VPP" H -2485 10373 50  0000 C CNN
+F 2 "" H -2500 10200 50  0001 C CNN
+F 3 "" H -2500 10200 50  0001 C CNN
+	1    -2500 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2500 10750 -2500 10200
+Text Label -2250 8850 0    50   ~ 0
+Ignition_VPP
+Text Label -1800 9250 2    50   ~ 0
+Ignition_VPP
+$Comp
+L pspice:DIODE D?
+U 1 1 612EFD78
+P -2000 10600
+F 0 "D?" H -2000 10865 50  0000 C CNN
+F 1 "DIODE" H -2000 10774 50  0000 C CNN
+F 2 "" H -2000 10600 50  0001 C CNN
+F 3 "~" H -2000 10600 50  0001 C CNN
+	1    -2000 10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1800 10600 -1800 10950
+Wire Wire Line
+	-1800 10950 -1550 10950
+Wire Wire Line
+	-2500 10950 -1800 10950
+Connection ~ -1800 10950
+Text Label -2250 10150 0    50   ~ 0
+Ignition_VPP
+Wire Wire Line
+	-2250 10150 -2250 10600
+Wire Wire Line
+	-2250 10600 -2200 10600
+$Comp
+L Device:R R?
+U 1 1 613760CF
+P -3500 8650
+F 0 "R?" V -3707 8650 50  0000 C CNN
+F 1 "R" V -3616 8650 50  0000 C CNN
+F 2 "" V -3570 8650 50  0001 C CNN
+F 3 "~" H -3500 8650 50  0001 C CNN
+	1    -3500 8650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613FB201
+P -3500 10750
+F 0 "R?" V -3707 10750 50  0000 C CNN
+F 1 "R" V -3616 10750 50  0000 C CNN
+F 2 "" V -3570 10750 50  0001 C CNN
+F 3 "~" H -3500 10750 50  0001 C CNN
+	1    -3500 10750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	-3650 10750 -4050 10750
+$Comp
+L Device:R R?
+U 1 1 6146556A
+P -1400 9250
+F 0 "R?" V -1607 9250 50  0000 C CNN
+F 1 "R" V -1516 9250 50  0000 C CNN
+F 2 "" V -1470 9250 50  0001 C CNN
+F 3 "~" H -1400 9250 50  0001 C CNN
+	1    -1400 9250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	-1800 9250 -1550 9250
+Wire Notes Line
+	-5000 12000 300  12000
+Wire Notes Line
+	300  12000 300  7700
+Wire Notes Line
+	300  7700 -5000 7700
+Wire Notes Line
+	-5000 7700 -5000 12000
+Text Notes -4900 7900 0    50   ~ 0
+Ermöglicht verzögertes Abschalten durch ATMEGA
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 6150EB49
+P -4200 8650
+F 0 "J?" H -4282 8425 50  0000 C CNN
+F 1 "IGNITION" H -4282 8516 50  0000 C CNN
+F 2 "" H -4200 8650 50  0001 C CNN
+F 3 "~" H -4200 8650 50  0001 C CNN
+	1    -4200 8650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-3650 8650 -4000 8650
 $EndSCHEMATC

@@ -1230,6 +1230,12 @@ F 3 "" H 18900 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	18900 3450 18900 3700
+Text HLabel 1200 14100 0    50   Input ~ 0
+RUN
+Wire Wire Line
+	1200 14100 3700 14100
+Text Notes 750  14050 0    50   ~ 0
+pull low for *s to boot
 Wire Bus Line
 	900  5450 900  6050
 $EndSCHEMATC
