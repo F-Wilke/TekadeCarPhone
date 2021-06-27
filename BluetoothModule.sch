@@ -270,8 +270,6 @@ Wire Bus Line
 	1450 2600 1350 2600
 Text HLabel 2400 5200 0    50   Input ~ 0
 BM83_MFB
-NoConn ~ 4900 4800
-NoConn ~ 4900 3100
 Wire Wire Line
 	5500 5350 5500 5550
 Wire Wire Line
@@ -328,10 +326,10 @@ Wire Wire Line
 	4900 3000 6700 3000
 Wire Bus Line
 	6800 2700 6850 2700
-Text Label 6200 3000 0    50   ~ 0
-RPi_UART_RX
-Text Label 6200 2900 0    50   ~ 0
-RPi_UART_TX
+Text Label 6150 3000 0    50   ~ 0
+RPi_UART0_RX
+Text Label 6150 2900 0    50   ~ 0
+RPi_UART0_TX
 Wire Wire Line
 	4900 2900 6700 2900
 Wire Wire Line
@@ -346,8 +344,20 @@ Wire Wire Line
 	5100 5000 5100 5100
 Wire Wire Line
 	5100 5100 5100 5200
-Wire Bus Line
-	6800 2700 6800 2900
+Entry Wire Line
+	6700 3100 6800 3000
+Entry Wire Line
+	6700 4800 6800 4700
+Wire Wire Line
+	4900 4800 6700 4800
+Text Label 6150 4800 0    50   ~ 0
+RPi_UART0_RTS
+Text Label 6150 3100 0    50   ~ 0
+RPi_UART0_CTS
+Wire Wire Line
+	4900 3100 6700 3100
 Wire Bus Line
 	1450 2600 1450 2900
+Wire Bus Line
+	6800 2700 6800 4700
 $EndSCHEMATC
