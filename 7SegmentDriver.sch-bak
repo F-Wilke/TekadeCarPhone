@@ -100,20 +100,6 @@ Text Label 3750 3000 0    50   ~ 0
 Digit13CathodeSignal
 Wire Wire Line
 	3500 2300 3250 2300
-$Comp
-L TeKaDe:CD4515 U?
-U 1 1 60FBCF10
-P 2850 2750
-AR Path="/60FBCF10" Ref="U?"  Part="1" 
-AR Path="/60F87146/60FBCF10" Ref="U?"  Part="1" 
-F 0 "U?" H 2850 3525 50  0000 C CNN
-F 1 "CD4515" H 2850 3434 50  0000 C CNN
-F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2850 3400 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4514b.pdf" H 2850 3400 50  0001 C CNN
-F 4 "good" H 2850 2750 50  0001 C CNN "Availability"
-	1    2850 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 3300 2450 3300
 Text Label 2000 3200 2    50   ~ 0
@@ -631,6 +617,8 @@ Wire Wire Line
 	1600 6450 2900 6450
 Wire Bus Line
 	1500 6100 1350 6100
+Text HLabel 2400 5950 0    50   Input ~ 0
+BrightnessRegulation
 Wire Bus Line
 	4400 1900 4400 2400
 Wire Bus Line
@@ -641,6 +629,18 @@ Wire Bus Line
 	5600 5350 5600 6150
 Wire Bus Line
 	9300 1050 9300 4950
-Text HLabel 2400 5950 0    50   Input ~ 0
-BrightnessRegulation
+$Comp
+L TeKaDe:CD4515 U?
+U 1 1 60FBCF10
+P 2850 2750
+AR Path="/60FBCF10" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF10" Ref="U?"  Part="1" 
+F 0 "U?" H 2850 3525 50  0000 C CNN
+F 1 "CD4515" H 2850 3434 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2850 3400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4514b.pdf" H 2850 3400 50  0001 C CNN
+F 4 "good" H 2850 2750 50  0001 C CNN "Availability"
+	1    2850 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
