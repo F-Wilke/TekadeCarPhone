@@ -14,42 +14,31 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x15_Odd_Even J3
-U 1 1 5F0813F7
-P 14500 7200
-F 0 "J3" H 14550 8117 50  0000 C CNN
-F 1 "Conn_02x15_Odd_Even" H 14550 8026 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 14500 7200 50  0001 C CNN
-F 3 "~" H 14500 7200 50  0001 C CNN
-	1    14500 7200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x08_Odd_Even J9
 U 1 1 5F085A19
-P 11100 7200
-F 0 "J9" H 11150 7717 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 11150 7626 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 11100 7200 50  0001 C CNN
-F 3 "~" H 11100 7200 50  0001 C CNN
-	1    11100 7200
+P 11150 7100
+F 0 "J9" H 11200 7617 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 11200 7526 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 11150 7100 50  0001 C CNN
+F 3 "~" H 11150 7100 50  0001 C CNN
+	1    11150 7100
 	1    0    0    -1  
 $EndComp
-Text Label 10650 7200 2    50   ~ 0
+Text Label 10700 7100 2    50   ~ 0
 DataEncoderDataAvailable
-Text Label 10650 7300 2    50   ~ 0
+Text Label 10700 7200 2    50   ~ 0
 DataEncoderDataOutC
-Text Label 10650 7400 2    50   ~ 0
+Text Label 10700 7300 2    50   ~ 0
 DataEncoderDataOutA
-Text Label 10650 7500 2    50   ~ 0
+Text Label 10700 7400 2    50   ~ 0
 OnSwitchLedCathode
-Text Label 10650 7600 2    50   ~ 0
+Text Label 10700 7500 2    50   ~ 0
 DataEncoderDataOutE
-Text Label 11650 7600 0    50   ~ 0
+Text Label 11700 7500 0    50   ~ 0
 DataEncoderDataOutD
-Text Label 11650 7500 0    50   ~ 0
+Text Label 11700 7400 0    50   ~ 0
 OnSwitchLedAnode
-Text Label 11650 7300 0    50   ~ 0
+Text Label 11700 7200 0    50   ~ 0
 DataEncoderDataOutB
 $Comp
 L Connector_Generic:Conn_02x01 J8
@@ -295,22 +284,16 @@ Wire Wire Line
 	3100 -3200 3200 -3200
 Wire Wire Line
 	3200 -3100 3100 -3100
-Text Label 15050 7600 0    50   ~ 0
-Digit9Cathode
 Text Label 15050 7500 0    50   ~ 0
-Digit7Cathode
+Digit2Cathode
 Text Label 15050 7400 0    50   ~ 0
-Digit3Cathode
+DigitBCathode
 Text Label 15050 7300 0    50   ~ 0
-Digit18Cathode
+Digit13Cathode
 Text Label 15050 7200 0    50   ~ 0
-Digit16Cathode
-Text Label 15050 7100 0    50   ~ 0
-Digit14Cathode
+Digit11Cathode
 Text Label 15050 7000 0    50   ~ 0
-Digit12Cathode
-Text Label 15050 6900 0    50   ~ 0
-Digit20Cathode
+Digit7Cathode
 Text Label 15050 6800 0    50   ~ 0
 SegmentCAnode
 Text Label 15050 6700 0    50   ~ 0
@@ -325,55 +308,49 @@ Text Label 14000 6600 2    50   ~ 0
 SegmentBAnode
 Text Label 14000 6700 2    50   ~ 0
 SegmentGAnode
-Text Label 14000 6800 2    50   ~ 0
-Digit21Cathode
 Text Label 14000 6900 2    50   ~ 0
-Digit19Cathode
+Digit14Cathode
 Text Label 14000 7000 2    50   ~ 0
-Digit13Cathode
-Text Label 14000 7100 2    50   ~ 0
-Digit15Cathode
-Text Label 14000 7200 2    50   ~ 0
-Digit17Cathode
-Text Label 14000 7300 2    50   ~ 0
-Digit11Cathode
-Text Label 14000 7400 2    50   ~ 0
-Digit2Cathode
-Text Label 14000 7500 2    50   ~ 0
-Digit6Cathode
-Text Label 14000 7600 2    50   ~ 0
 Digit8Cathode
-Text Label 14000 7700 2    50   ~ 0
+Text Label 14000 7100 2    50   ~ 0
 Digit10Cathode
-Text Label 14000 7800 2    50   ~ 0
-PinlineGND
-Text Label 14000 7900 2    50   ~ 0
-PinlineVcc
-Text Label 10650 6900 2    50   ~ 0
+Text Label 14000 7200 2    50   ~ 0
+Digit12Cathode
+Text Label 14000 7300 2    50   ~ 0
+Digit6Cathode
+Text Label 14000 7400 2    50   ~ 0
+DigitACathode
+Text Label 14000 7500 2    50   ~ 0
+Digit1Cathode
+Text Label 14000 7600 2    50   ~ 0
+Digit3Cathode
+Text Label 14000 7700 2    50   ~ 0
+Digit5Cathode
+Text Label 10700 6800 2    50   ~ 0
 UiLdr
-Text Label 10650 7000 2    50   ~ 0
+Text Label 10700 6900 2    50   ~ 0
 LedGreenCathode
-Text Label 11650 7200 0    50   ~ 0
+Text Label 11700 7100 0    50   ~ 0
 DataEncoderOutputEnable
-Text Label 11650 7100 0    50   ~ 0
+Text Label 11700 7000 0    50   ~ 0
 ButtonA2GND
-Text Label 11650 7000 0    50   ~ 0
+Text Label 11700 6900 0    50   ~ 0
 LedRedCathode
-Text Label 11650 6900 0    50   ~ 0
+Text Label 11700 6800 0    50   ~ 0
 LedYellowCathode
 $Comp
 L power:+5V #PWR080
 U 1 1 63313029
-P 12750 6500
-F 0 "#PWR080" H 12750 6350 50  0001 C CNN
-F 1 "+5V" H 12765 6673 50  0000 C CNN
-F 2 "" H 12750 6500 50  0001 C CNN
-F 3 "" H 12750 6500 50  0001 C CNN
-	1    12750 6500
+P 12800 6400
+F 0 "#PWR080" H 12800 6250 50  0001 C CNN
+F 1 "+5V" H 12815 6573 50  0000 C CNN
+F 2 "" H 12800 6400 50  0001 C CNN
+F 3 "" H 12800 6400 50  0001 C CNN
+	1    12800 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12750 7400 12750 6500
+	12800 7300 12800 6400
 Text Label 14100 9100 0    50   ~ 0
 OnSwitchLedCathode
 $Comp
@@ -631,98 +608,42 @@ Text Label 10850 1600 2    50   ~ 0
 Audio_Master_Out_R
 Text Label 10850 1700 2    50   ~ 0
 Audio_Master_Out_L
-Wire Wire Line
-	14800 6500 15050 6500
-Wire Wire Line
-	15050 6600 14800 6600
-Wire Wire Line
-	14800 6700 15050 6700
-Wire Wire Line
-	15050 6800 14800 6800
-Wire Wire Line
-	14800 6900 15050 6900
-Wire Wire Line
-	15050 7000 14800 7000
-Wire Wire Line
-	14800 7100 15050 7100
-Wire Wire Line
-	15050 7200 14800 7200
-Wire Wire Line
-	14800 7300 15050 7300
-Wire Wire Line
-	15050 7400 14800 7400
-Wire Wire Line
-	14800 7500 15050 7500
-Wire Wire Line
-	15050 7600 14800 7600
-Wire Wire Line
-	14300 6500 14000 6500
-Wire Wire Line
-	14000 6600 14300 6600
-Wire Wire Line
-	14300 6700 14000 6700
-Wire Wire Line
-	14000 6800 14300 6800
-Wire Wire Line
-	14300 6900 14000 6900
-Wire Wire Line
-	14000 7000 14300 7000
-Wire Wire Line
-	14300 7100 14000 7100
-Wire Wire Line
-	14000 7200 14300 7200
-Wire Wire Line
-	14300 7300 14000 7300
-Wire Wire Line
-	14000 7400 14300 7400
-Wire Wire Line
-	14300 7500 14000 7500
-Wire Wire Line
-	14000 7600 14300 7600
-Wire Wire Line
-	14300 7700 14000 7700
-Wire Wire Line
-	14000 7800 14300 7800
-Wire Wire Line
-	14300 7900 14000 7900
 NoConn ~ 14800 7700
 NoConn ~ 14800 7800
 NoConn ~ 14800 7900
 Wire Wire Line
-	10900 6900 10650 6900
+	10950 6800 10700 6800
 Wire Wire Line
-	10650 7000 10900 7000
+	10700 6900 10950 6900
 Wire Wire Line
-	10900 7200 10650 7200
+	10950 7100 10700 7100
 Wire Wire Line
-	10650 7300 10900 7300
+	10700 7200 10950 7200
 Wire Wire Line
-	10900 7400 10650 7400
+	10950 7300 10700 7300
 Wire Wire Line
-	10650 7500 10900 7500
+	10700 7400 10950 7400
 Wire Wire Line
-	10900 7600 10650 7600
+	10950 7500 10700 7500
 Wire Wire Line
-	11400 7600 11650 7600
+	11450 7500 11700 7500
 Wire Wire Line
-	11650 7500 11400 7500
+	11700 7400 11450 7400
 Wire Wire Line
-	11650 7300 11400 7300
+	11700 7200 11450 7200
 Wire Wire Line
-	11400 7200 11650 7200
+	11450 7100 11700 7100
 Wire Wire Line
-	11650 7100 11400 7100
+	11700 7000 11450 7000
 Wire Wire Line
-	11400 7000 11650 7000
+	11450 6900 11700 6900
 Wire Wire Line
-	11650 6900 11400 6900
-NoConn ~ 10900 7100
+	11700 6800 11450 6800
+NoConn ~ 10950 7000
 Wire Wire Line
 	10650 8250 10900 8250
 Wire Wire Line
 	11400 8250 11700 8250
-Wire Notes Line
-	15850 5950 15850 9650
 Wire Notes Line
 	15850 9650 9500 9650
 Wire Notes Line
@@ -936,7 +857,7 @@ RPI_BM83_UART
 Wire Bus Line
 	6900 4200 7200 4200
 Wire Wire Line
-	11400 7400 12750 7400
+	11450 7300 12800 7300
 $Sheet
 S 1200 1350 1600 900 
 U 64BEC8E8
@@ -985,8 +906,6 @@ $EndSheet
 Connection ~ 11050 2150
 Wire Wire Line
 	10850 2650 12000 2650
-Wire Notes Line
-	9500 5950 15850 5950
 Wire Wire Line
 	11050 2150 11050 2850
 Wire Wire Line
@@ -1002,19 +921,25 @@ Connection ~ 11850 2550
 Wire Wire Line
 	11850 2550 11850 3450
 $Sheet
-S 4000 6450 1600 2250
+S 2200 6350 1600 2250
 U 60F18E7A
 F0 "ControllerUIBoard" 50
 F1 "ControllerUIBoard.sch" 50
-F2 "RPI_RUN_3.3V" O R 5600 6650 50 
-F3 "IGNITION_SENSE" I R 5600 6800 50 
-F4 "5V_EN_OUT" O R 5600 6950 50 
+F2 "RPI_RUN_3.3V" O R 3800 6550 50 
+F3 "IGNITION_SENSE" I R 3800 6700 50 
+F4 "5V_EN_OUT" O R 3800 6850 50 
+F5 "3V3_UART" B R 3800 7500 50 
 $EndSheet
 $Sheet
-S 7200 6450 1600 2250
+S 6500 8150 1600 2250
 U 60F87146
 F0 "7SegmentDriver" 50
 F1 "7SegmentDriver.sch" 50
+F2 "DigitCathodes" O R 8100 8400 50 
+F3 "DecoderData" I L 6500 8400 50 
+F4 "SegmentAnodes" O R 8100 8550 50 
+F5 "SegmentDriverData" I L 6500 8550 50 
+F6 "BrightnessRegulation" I L 6500 8800 50 
 $EndSheet
 Text Label 5850 2200 0    50   ~ 0
 RPI_I2C_0
@@ -1024,22 +949,22 @@ Text Label 6900 2400 2    50   ~ 0
 RPI_I2C_0
 Wire Bus Line
 	7200 2400 6900 2400
-Text Label 5900 6650 0    50   ~ 0
+Text Label 4100 6550 0    50   ~ 0
 RPI_RUN
 Text Label 5850 3150 0    50   ~ 0
 RPI_RUN
 Wire Wire Line
 	5550 3150 5850 3150
 Wire Wire Line
-	5600 6650 5900 6650
-Text Label 5900 6800 0    50   ~ 0
+	3800 6550 4100 6550
+Text Label 4100 6700 0    50   ~ 0
 IGNITION_5V
 Wire Wire Line
-	5600 6800 5900 6800
-Text Label 5900 6950 0    50   ~ 0
+	3800 6700 4100 6700
+Text Label 4100 6850 0    50   ~ 0
 5V_EN_Signal
 Wire Wire Line
-	5600 6950 5900 6950
+	3800 6850 4100 6850
 Text Label 900  1850 2    50   ~ 0
 IGNITION_5V
 Wire Wire Line
@@ -1052,4 +977,171 @@ Text Label 5850 2050 0    50   ~ 0
 RPI_ATMEGA_UART
 Wire Bus Line
 	5550 2050 5850 2050
+Text Label 4100 7500 0    50   ~ 0
+RPI_ATMEGA_UART
+Wire Bus Line
+	3800 7500 4100 7500
+Text Label 8550 8550 0    50   ~ 0
+SegmentAnodes
+Wire Bus Line
+	8100 8550 8550 8550
+Text Label 8550 8400 0    50   ~ 0
+DigitCathodes
+Wire Bus Line
+	8100 8400 8550 8400
+Text Label 13250 5950 0    50   ~ 0
+SegmentAnodes
+Text Label 13250 8200 0    50   ~ 0
+DigitCathodes
+Entry Wire Line
+	15750 6500 15850 6400
+Entry Wire Line
+	15750 6600 15850 6500
+Entry Wire Line
+	13350 7500 13250 7600
+Entry Wire Line
+	13350 7400 13250 7500
+Entry Wire Line
+	13350 7300 13250 7400
+Entry Wire Line
+	13350 7200 13250 7300
+Entry Wire Line
+	13350 7100 13250 7200
+Entry Wire Line
+	13350 7000 13250 7100
+Entry Wire Line
+	13350 6900 13250 7000
+Entry Wire Line
+	13250 6600 13350 6700
+Entry Wire Line
+	15850 6600 15750 6700
+Entry Wire Line
+	13350 6500 13250 6400
+Entry Wire Line
+	13350 6600 13250 6500
+Entry Wire Line
+	15750 6800 15850 6700
+Entry Wire Line
+	15850 7100 15750 7000
+Entry Wire Line
+	15850 7200 15750 7100
+Entry Wire Line
+	15850 7300 15750 7200
+Entry Wire Line
+	15850 7400 15750 7300
+Entry Wire Line
+	15850 7500 15750 7400
+Entry Wire Line
+	15850 7600 15750 7500
+Wire Wire Line
+	13350 7700 14300 7700
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J3
+U 1 1 5F0813F7
+P 14500 7200
+F 0 "J3" H 14550 8117 50  0000 C CNN
+F 1 "Conn_02x15_Odd_Even" H 14550 8026 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 14500 7200 50  0001 C CNN
+F 3 "~" H 14500 7200 50  0001 C CNN
+	1    14500 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 7600 14300 7600
+Wire Wire Line
+	13350 7400 14300 7400
+Wire Wire Line
+	13350 7500 14300 7500
+Wire Wire Line
+	13350 7200 14300 7200
+Wire Wire Line
+	13350 7300 14300 7300
+Wire Wire Line
+	13350 7000 14300 7000
+Wire Wire Line
+	13350 7100 14300 7100
+Wire Wire Line
+	13350 6900 14300 6900
+Wire Wire Line
+	13350 6600 14300 6600
+Wire Wire Line
+	13350 6700 14300 6700
+Wire Wire Line
+	13350 6500 14300 6500
+Wire Wire Line
+	14800 6600 15750 6600
+Wire Wire Line
+	14800 6500 15750 6500
+Wire Wire Line
+	14800 6700 15750 6700
+Wire Wire Line
+	14800 6800 15750 6800
+Wire Wire Line
+	14800 7000 15750 7000
+Wire Wire Line
+	14800 7100 15750 7100
+Wire Wire Line
+	14800 7200 15750 7200
+Wire Wire Line
+	14800 7300 15750 7300
+Wire Wire Line
+	14800 7400 15750 7400
+Wire Wire Line
+	14800 7500 15750 7500
+Wire Wire Line
+	14800 7600 15750 7600
+Entry Wire Line
+	13350 7700 13250 7800
+Entry Wire Line
+	13350 7600 13250 7700
+Entry Wire Line
+	15850 7700 15750 7600
+Text Label 15850 8200 2    50   ~ 0
+DigitCathodes
+Text Label 15850 5950 2    50   ~ 0
+SegmentAnodes
+Text Label 15050 7600 0    50   ~ 0
+Digit4Cathode
+Text Label 15050 7100 0    50   ~ 0
+Digit9Cathode
+NoConn ~ 14800 6900
+NoConn ~ 14300 6800
+$Comp
+L power:GND #PWR?
+U 1 1 61257BDD
+P 14250 8150
+F 0 "#PWR?" H 14250 7900 50  0001 C CNN
+F 1 "GND" H 14255 7977 50  0000 C CNN
+F 2 "" H 14250 8150 50  0001 C CNN
+F 3 "" H 14250 8150 50  0001 C CNN
+	1    14250 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 7800 14250 7800
+Wire Wire Line
+	14250 7800 14250 8150
+$Comp
+L power:+5V #PWR?
+U 1 1 6127A338
+P 14100 5950
+F 0 "#PWR?" H 14100 5800 50  0001 C CNN
+F 1 "+5V" H 14115 6123 50  0000 C CNN
+F 2 "" H 14100 5950 50  0001 C CNN
+F 3 "" H 14100 5950 50  0001 C CNN
+	1    14100 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 5950 14100 7900
+Wire Wire Line
+	14100 7900 14300 7900
+Wire Bus Line
+	13250 5950 13250 6600
+Wire Bus Line
+	15850 5950 15850 6700
+Wire Bus Line
+	13250 7000 13250 8200
+Wire Bus Line
+	15850 7100 15850 8200
 $EndSCHEMATC

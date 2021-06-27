@@ -13,639 +13,634 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L TeKaDe:CD4511BE U?
-U 1 1 60FBCEB3
-P 9250 3700
-AR Path="/60FBCEB3" Ref="U?"  Part="1" 
-AR Path="/60F87146/60FBCEB3" Ref="U?"  Part="1" 
-F 0 "U?" H 9250 4470 50  0000 C CNN
-F 1 "CD4511" H 9250 4379 50  0000 C CNN
-F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 9250 3700 50  0001 L BNN
-F 3 "60K5141" H 9250 3700 50  0001 L BNN
-F 4 "CD4511BE" H 9250 3700 50  0001 L BNN "Field4"
-F 5 "1106122" H 9250 3700 50  0001 L BNN "Field5"
-F 6 "PDIP-16" H 9250 3700 50  0001 L BNN "Field6"
-F 7 "Texas Instruments" H 9250 3700 50  0001 L BNN "Field7"
-F 8 "good" H 9250 3700 50  0001 C CNN "Availability"
-	1    9250 3700
-	1    0    0    -1  
-$EndComp
-Text Label 10450 3300 0    50   ~ 0
-SegmentAAnode
-Text Label 10450 3400 0    50   ~ 0
-SegmentBAnode
-Text Label 10450 3500 0    50   ~ 0
-SegmentCAnode
-Text Label 10450 3600 0    50   ~ 0
-SegmentDAnode
-Text Label 10450 3700 0    50   ~ 0
-SegmentEAnode
-Text Label 10450 3900 0    50   ~ 0
-SegmentFAnode
-Text Label 10450 3800 0    50   ~ 0
-SegmentGAnode
+Text Notes 700  1350 0    50   ~ 0
+Display Driving
+Wire Wire Line
+	2200 2200 2200 1750
 $Comp
 L power:+5V #PWR?
-U 1 1 60FBCEC0
-P 8300 3050
-AR Path="/60FBCEC0" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCEC0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8300 2900 50  0001 C CNN
-F 1 "+5V" H 8315 3223 50  0000 C CNN
-F 2 "" H 8300 3050 50  0001 C CNN
-F 3 "" H 8300 3050 50  0001 C CNN
-	1    8300 3050
+U 1 1 60E3506C
+P 2200 1750
+AR Path="/60E3506C" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60E3506C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2200 1600 50  0001 C CNN
+F 1 "+5V" H 2215 1923 50  0000 C CNN
+F 2 "" H 2200 1750 50  0001 C CNN
+F 3 "" H 2200 1750 50  0001 C CNN
+	1    2200 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 3050 8300 3300
+	2200 2200 2450 2200
 Wire Wire Line
-	8300 3300 8550 3300
+	2000 3100 2450 3100
 Wire Wire Line
-	8300 3300 8300 3500
+	2000 3200 2450 3200
 Wire Wire Line
-	8300 3500 8550 3500
-Connection ~ 8300 3300
+	2000 2900 2450 2900
 Wire Wire Line
-	8550 3700 8300 3700
+	2000 3000 2450 3000
 Wire Wire Line
-	8300 3700 8300 4400
+	2000 2700 2450 2700
 Wire Wire Line
-	8550 4400 8300 4400
-Connection ~ 8300 4400
+	2000 2800 2450 2800
 Wire Wire Line
-	8300 4400 8300 4750
-Text Label 8050 3900 2    50   ~ 0
-7_Segment_Driver_A
-Text Label 8050 4000 2    50   ~ 0
-7_Segment_Driver_B
-Text Label 8050 4100 2    50   ~ 0
-7_Segment_Driver_C
-Text Label 8050 4200 2    50   ~ 0
-7_Segment_Driver_D
+	1950 2500 2450 2500
+Wire Wire Line
+	1950 2600 2450 2600
+Wire Wire Line
+	3250 2200 3500 2200
+Wire Wire Line
+	3500 2200 3500 1750
+Wire Wire Line
+	2200 3300 2200 3700
+Wire Wire Line
+	3500 2300 3500 3700
 $Comp
-L power:Earth #PWR?
-U 1 1 60FBCED4
-P 8300 4750
-AR Path="/60FBCED4" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCED4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8300 4500 50  0001 C CNN
-F 1 "Earth" H 8300 4600 50  0001 C CNN
-F 2 "" H 8300 4750 50  0001 C CNN
-F 3 "~" H 8300 4750 50  0001 C CNN
-	1    8300 4750
+L power:GND #PWR?
+U 1 1 60DF5331
+P 3500 3700
+F 0 "#PWR?" H 3500 3450 50  0001 C CNN
+F 1 "GND" H 3505 3527 50  0000 C CNN
+F 2 "" H 3500 3700 50  0001 C CNN
+F 3 "" H 3500 3700 50  0001 C CNN
+	1    3500 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 3300 10450 3300
-Wire Wire Line
-	9950 3400 10450 3400
-Wire Wire Line
-	9950 3500 10450 3500
-Wire Wire Line
-	9950 3600 10450 3600
-Wire Wire Line
-	9950 3700 10450 3700
-Wire Wire Line
-	9950 3800 10450 3800
-Wire Wire Line
-	9950 3900 10450 3900
-Text Label 8050 3600 2    50   ~ 0
-BrightnessRegulation
-Wire Wire Line
-	8050 3600 8550 3600
-Wire Wire Line
-	3050 5050 2800 5050
-Wire Wire Line
-	2800 4950 3050 4950
-Wire Wire Line
-	3050 4350 2800 4350
-Wire Wire Line
-	2800 4450 3050 4450
-Wire Wire Line
-	3050 4550 2800 4550
-Wire Wire Line
-	2800 4650 3050 4650
-Wire Wire Line
-	2000 4950 1900 4950
-Wire Wire Line
-	1900 4850 2000 4850
-Wire Wire Line
-	2000 4750 1900 4750
-Wire Wire Line
-	1900 4650 2000 4650
-Wire Wire Line
-	2000 4550 1900 4550
-Wire Wire Line
-	1900 4450 2000 4450
-Wire Wire Line
-	2000 4350 1900 4350
-Wire Wire Line
-	1900 4250 2000 4250
-Wire Wire Line
-	2950 3850 2950 3950
-Wire Wire Line
-	2950 3950 2800 3950
 $Comp
-L power:+5V #PWR?
-U 1 1 60FBCEF3
-P 2950 3850
-AR Path="/60FBCEF3" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCEF3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2950 3700 50  0001 C CNN
-F 1 "+5V" H 2965 4023 50  0000 C CNN
-F 2 "" H 2950 3850 50  0001 C CNN
-F 3 "" H 2950 3850 50  0001 C CNN
-	1    2950 3850
+L power:GND #PWR?
+U 1 1 60DF4EA7
+P 2200 3700
+F 0 "#PWR?" H 2200 3450 50  0001 C CNN
+F 1 "GND" H 2205 3527 50  0000 C CNN
+F 2 "" H 2200 3700 50  0001 C CNN
+F 3 "" H 2200 3700 50  0001 C CNN
+	1    2200 3700
 	1    0    0    -1  
 $EndComp
-Text Label 3050 4450 0    50   ~ 0
-Digit15CathodeSignal
-Text Label 3050 5050 0    50   ~ 0
-Digit17CathodeSignal
-Text Label 3050 4950 0    50   ~ 0
-Digit16CathodeSignal
-Text Label 3050 4350 0    50   ~ 0
+Wire Wire Line
+	3250 3100 3750 3100
+Wire Wire Line
+	3250 3000 3750 3000
+Wire Wire Line
+	3250 2900 3750 2900
+Wire Wire Line
+	3250 2800 3750 2800
+Wire Wire Line
+	3250 2700 3750 2700
+Wire Wire Line
+	3250 2600 3750 2600
+Wire Wire Line
+	3250 3200 3750 3200
+Wire Wire Line
+	3250 3300 3750 3300
+Text Label 3750 3100 0    50   ~ 0
 Digit14CathodeSignal
-Text Label 3050 4650 0    50   ~ 0
+Text Label 3750 3000 0    50   ~ 0
 Digit13CathodeSignal
-Text Label 3050 4550 0    50   ~ 0
-Digit12CathodeSignal
-Text Label 1900 4250 2    50   ~ 0
-Digit11CathodeSignal
-Text Label 1900 4350 2    50   ~ 0
-Digit10CathodeSignal
-Text Label 1900 4450 2    50   ~ 0
-Digit9CathodeSignal
-Text Label 1900 4550 2    50   ~ 0
-Digit8CathodeSignal
-Text Label 1900 4650 2    50   ~ 0
-Digit7CathodeSignal
-Text Label 1900 4850 2    50   ~ 0
-Digit6CathodeSignal
-Text Label 1900 4750 2    50   ~ 0
-Digit3CathodeSignal
-Text Label 1900 4950 2    50   ~ 0
-Digit2CathodeSignal
 Wire Wire Line
-	1750 5050 2000 5050
-Wire Wire Line
-	1750 5150 1750 5050
-$Comp
-L power:Earth #PWR?
-U 1 1 60FBCF09
-P 1750 5150
-AR Path="/60FBCF09" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF09" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1750 4900 50  0001 C CNN
-F 1 "Earth" H 1750 5000 50  0001 C CNN
-F 2 "" H 1750 5150 50  0001 C CNN
-F 3 "~" H 1750 5150 50  0001 C CNN
-	1    1750 5150
-	1    0    0    -1  
-$EndComp
+	3500 2300 3250 2300
 $Comp
 L TeKaDe:CD4515 U?
 U 1 1 60FBCF10
-P 2400 4500
+P 2850 2750
 AR Path="/60FBCF10" Ref="U?"  Part="1" 
 AR Path="/60F87146/60FBCF10" Ref="U?"  Part="1" 
-F 0 "U?" H 2400 5275 50  0000 C CNN
-F 1 "CD4515" H 2400 5184 50  0000 C CNN
-F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2400 5150 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4514b.pdf" H 2400 5150 50  0001 C CNN
-F 4 "good" H 2400 4500 50  0001 C CNN "Availability"
-	1    2400 4500
-	1    0    0    -1  
-$EndComp
-Text Label 1850 4050 2    50   ~ 0
-DecoderData1
-Text Label 1850 4150 2    50   ~ 0
-DecoderData2
-Text Label 3050 4250 0    50   ~ 0
-DecoderData3
-Text Label 3050 4150 0    50   ~ 0
-DecoderData4
-Wire Wire Line
-	3050 4150 2800 4150
-Wire Wire Line
-	2800 4250 3050 4250
-Wire Wire Line
-	1850 4050 2000 4050
-Wire Wire Line
-	2000 4150 1850 4150
-Wire Wire Line
-	3050 4050 2800 4050
-Wire Wire Line
-	3050 3950 3050 4050
-$Comp
-L power:Earth #PWR?
-U 1 1 60FBCF20
-P 3050 3950
-AR Path="/60FBCF20" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF20" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3050 3700 50  0001 C CNN
-F 1 "Earth" H 3050 3800 50  0001 C CNN
-F 2 "" H 3050 3950 50  0001 C CNN
-F 3 "~" H 3050 3950 50  0001 C CNN
-	1    3050 3950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2000 3950 2000 3850
-Wire Wire Line
-	2000 3850 2950 3850
-Connection ~ 2950 3850
-Wire Wire Line
-	8050 3900 8550 3900
-Wire Wire Line
-	8550 4000 8050 4000
-Wire Wire Line
-	8050 4100 8550 4100
-Wire Wire Line
-	8550 4200 8050 4200
-Text Label 3050 4750 0    50   ~ 0
-DecoderS14
-Text Label 3050 4850 0    50   ~ 0
-DecoderS15
-Text Label 3150 2750 0    50   ~ 0
-DecoderS14
-$Comp
-L power:Earth #PWR?
-U 1 1 60FBCF30
-P 1500 2950
-AR Path="/60FBCF30" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF30" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1500 2700 50  0001 C CNN
-F 1 "Earth" H 1500 2800 50  0001 C CNN
-F 2 "" H 1500 2950 50  0001 C CNN
-F 3 "~" H 1500 2950 50  0001 C CNN
-	1    1500 2950
-	0    1    1    0   
-$EndComp
-Text Label 3150 3150 0    50   ~ 0
-DecoderS15
-Wire Wire Line
-	3050 4750 2800 4750
-Wire Wire Line
-	2800 4850 3050 4850
-$Comp
-L Transistor_Array:ULN2003 U?
-U 1 1 60FBCF3A
-P 5500 3600
-AR Path="/60FBCF3A" Ref="U?"  Part="1" 
-AR Path="/60F87146/60FBCF3A" Ref="U?"  Part="1" 
-F 0 "U?" H 5500 4267 50  0000 C CNN
-F 1 "ULN2003" H 5500 4176 50  0000 C CNN
-F 2 "" H 5550 3050 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5600 3400 50  0001 C CNN
-F 4 "good" H 5500 3600 50  0001 C CNN "Availability"
-	1    5500 3600
+F 0 "U?" H 2850 3525 50  0000 C CNN
+F 1 "CD4515" H 2850 3434 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2850 3400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4514b.pdf" H 2850 3400 50  0001 C CNN
+F 4 "good" H 2850 2750 50  0001 C CNN "Availability"
+	1    2850 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 4300 5500 4200
-$Comp
-L power:Earth #PWR?
-U 1 1 60FBCF41
-P 5500 4300
-AR Path="/60FBCF41" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF41" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5500 4050 50  0001 C CNN
-F 1 "Earth" H 5500 4150 50  0001 C CNN
-F 2 "" H 5500 4300 50  0001 C CNN
-F 3 "~" H 5500 4300 50  0001 C CNN
-	1    5500 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60FBCF47
-P 6050 3050
-AR Path="/60FBCF47" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF47" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6050 2900 50  0001 C CNN
-F 1 "+5V" H 6065 3223 50  0000 C CNN
-F 2 "" H 6050 3050 50  0001 C CNN
-F 3 "" H 6050 3050 50  0001 C CNN
-	1    6050 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 3200 6050 3200
-Wire Wire Line
-	6050 3050 6050 3200
-Text Label 6100 4000 0    50   ~ 0
-Digit10Cathode
-Text Label 6100 3900 0    50   ~ 0
-Digit9Cathode
-Text Label 6100 3800 0    50   ~ 0
-Digit8Cathode
-Text Label 6100 3700 0    50   ~ 0
-Digit7Cathode
-Text Label 6100 3500 0    50   ~ 0
-Digit6Cathode
-Text Label 6100 3600 0    50   ~ 0
-Digit3Cathode
-Text Label 6100 3400 0    50   ~ 0
-Digit2Cathode
-Text Label 4950 4000 2    50   ~ 0
-Digit10CathodeSignal
-Text Label 4950 3900 2    50   ~ 0
-Digit9CathodeSignal
-Text Label 4950 3800 2    50   ~ 0
-Digit8CathodeSignal
-Text Label 4950 3700 2    50   ~ 0
-Digit7CathodeSignal
-Text Label 4950 3500 2    50   ~ 0
-Digit6CathodeSignal
-Text Label 4950 3600 2    50   ~ 0
-Digit3CathodeSignal
-Text Label 4950 3400 2    50   ~ 0
+	2200 3300 2450 3300
+Text Label 2000 3200 2    50   ~ 0
+DigitACathodeSignal
+Text Label 2000 3000 2    50   ~ 0
+DigitBCathodeSignal
+Text Label 2000 3100 2    50   ~ 0
+Digit1CathodeSignal
+Text Label 2000 2900 2    50   ~ 0
 Digit2CathodeSignal
-Wire Wire Line
-	4950 4000 5100 4000
-Wire Wire Line
-	5100 3900 4950 3900
-Wire Wire Line
-	4950 3800 5100 3800
-Wire Wire Line
-	5100 3700 4950 3700
-Wire Wire Line
-	4950 3600 5100 3600
-Wire Wire Line
-	4950 3500 5100 3500
-Wire Wire Line
-	4950 3400 5100 3400
-Wire Wire Line
-	6100 3400 5900 3400
-Wire Wire Line
-	5900 3500 6100 3500
-Wire Wire Line
-	6100 3600 5900 3600
-Wire Wire Line
-	5900 3700 6100 3700
-Wire Wire Line
-	6100 3800 5900 3800
-Wire Wire Line
-	5900 3900 6100 3900
-Wire Wire Line
-	6100 4000 5900 4000
-$Comp
-L Transistor_Array:ULN2003 U?
-U 1 1 60FBCF6C
-P 5550 5200
-AR Path="/60FBCF6C" Ref="U?"  Part="1" 
-AR Path="/60F87146/60FBCF6C" Ref="U?"  Part="1" 
-F 0 "U?" H 5550 5867 50  0000 C CNN
-F 1 "ULN2003" H 5550 5776 50  0000 C CNN
-F 2 "" H 5600 4650 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5650 5000 50  0001 C CNN
-F 4 "good" H 5550 5200 50  0001 C CNN "Availability"
-	1    5550 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 5900 5550 5800
-$Comp
-L power:Earth #PWR?
-U 1 1 60FBCF73
-P 5550 5900
-AR Path="/60FBCF73" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF73" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 5650 50  0001 C CNN
-F 1 "Earth" H 5550 5750 50  0001 C CNN
-F 2 "" H 5550 5900 50  0001 C CNN
-F 3 "~" H 5550 5900 50  0001 C CNN
-	1    5550 5900
-	1    0    0    -1  
-$EndComp
+Text Label 2000 2800 2    50   ~ 0
+Digit3CathodeSignal
+Text Label 2000 2700 2    50   ~ 0
+Digit4CathodeSignal
+Text Label 2000 2600 2    50   ~ 0
+Digit5CathodeSignal
+Text Label 2000 2500 2    50   ~ 0
+Digit6CathodeSignal
+Text Label 3750 2800 0    50   ~ 0
+Digit7CathodeSignal
+Text Label 3750 2900 0    50   ~ 0
+Digit8CathodeSignal
+Text Label 3750 2600 0    50   ~ 0
+Digit9CathodeSignal
+Text Label 3750 3200 0    50   ~ 0
+Digit11CathodeSignal
+Text Label 3750 3300 0    50   ~ 0
+Digit12CathodeSignal
+Text Label 3750 2700 0    50   ~ 0
+Digit10CathodeSignal
 $Comp
 L power:+5V #PWR?
-U 1 1 60FBCF79
-P 6100 4650
-AR Path="/60FBCF79" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCF79" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6100 4500 50  0001 C CNN
-F 1 "+5V" H 6115 4823 50  0000 C CNN
-F 2 "" H 6100 4650 50  0001 C CNN
-F 3 "" H 6100 4650 50  0001 C CNN
-	1    6100 4650
+U 1 1 60FBCEF3
+P 3500 1750
+AR Path="/60FBCEF3" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCEF3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 1600 50  0001 C CNN
+F 1 "+5V" H 3515 1923 50  0000 C CNN
+F 2 "" H 3500 1750 50  0001 C CNN
+F 3 "" H 3500 1750 50  0001 C CNN
+	1    3500 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 4800 6100 4800
-Wire Wire Line
-	6100 4650 6100 4800
-Wire Wire Line
-	5000 5600 5150 5600
-Wire Wire Line
-	5150 5500 5000 5500
-Wire Wire Line
-	5000 5400 5150 5400
-Wire Wire Line
-	5150 5300 5000 5300
-Wire Wire Line
-	5000 5200 5150 5200
-Wire Wire Line
-	5000 5100 5150 5100
-Wire Wire Line
-	5000 5000 5150 5000
-Wire Wire Line
-	6150 5000 5950 5000
-Wire Wire Line
-	5950 5100 6150 5100
-Wire Wire Line
-	6150 5200 5950 5200
-Wire Wire Line
-	5950 5300 6150 5300
-Wire Wire Line
-	6150 5400 5950 5400
-Wire Wire Line
-	5950 5500 6150 5500
-Wire Wire Line
-	6150 5600 5950 5600
-Text Label 5000 5000 2    50   ~ 0
-Digit11CathodeSignal
-Text Label 5000 5300 2    50   ~ 0
-Digit15CathodeSignal
-Text Label 5000 5400 2    50   ~ 0
-Digit14CathodeSignal
-Text Label 5000 5100 2    50   ~ 0
-Digit13CathodeSignal
-Text Label 5000 5200 2    50   ~ 0
-Digit12CathodeSignal
-Text Label 5000 5500 2    50   ~ 0
-Digit17CathodeSignal
-Text Label 5000 5600 2    50   ~ 0
-Digit16CathodeSignal
-Text Label 6150 5000 0    50   ~ 0
-Digit11Cathode
-Text Label 6150 5300 0    50   ~ 0
-Digit15Cathode
-Text Label 6150 5400 0    50   ~ 0
-Digit14Cathode
-Text Label 6150 5100 0    50   ~ 0
-Digit13Cathode
-Text Label 6150 5200 0    50   ~ 0
-Digit12Cathode
-Text Label 6150 5500 0    50   ~ 0
-Digit17Cathode
-Text Label 6150 5600 0    50   ~ 0
-Digit16Cathode
+NoConn ~ 7500 5250
+NoConn ~ 7500 5150
+NoConn ~ 8300 5250
+NoConn ~ 8300 5150
 $Comp
-L Transistor_Array:ULN2003 U?
-U 1 1 60FBCF9E
-P 5550 2050
-AR Path="/60FBCF9E" Ref="U?"  Part="1" 
-AR Path="/60F87146/60FBCF9E" Ref="U?"  Part="1" 
-F 0 "U?" H 5550 2717 50  0000 C CNN
-F 1 "ULN2003" H 5550 2626 50  0000 C CNN
-F 2 "" H 5600 1500 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5650 1850 50  0001 C CNN
-F 4 "good" H 5550 2050 50  0001 C CNN "Availability"
-	1    5550 2050
+L power:GND #PWR?
+U 1 1 60DCB09E
+P 7900 4050
+F 0 "#PWR?" H 7900 3800 50  0001 C CNN
+F 1 "GND" H 7905 3877 50  0000 C CNN
+F 2 "" H 7900 4050 50  0001 C CNN
+F 3 "" H 7900 4050 50  0001 C CNN
+	1    7900 4050
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DC7859
+P 7900 5850
+F 0 "#PWR?" H 7900 5600 50  0001 C CNN
+F 1 "GND" H 7905 5677 50  0000 C CNN
+F 2 "" H 7900 5850 50  0001 C CNN
+F 3 "" H 7900 5850 50  0001 C CNN
+	1    7900 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DC3F48
+P 7900 2300
+F 0 "#PWR?" H 7900 2050 50  0001 C CNN
+F 1 "GND" H 7905 2127 50  0000 C CNN
+F 2 "" H 7900 2300 50  0001 C CNN
+F 3 "" H 7900 2300 50  0001 C CNN
+	1    7900 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 5550
+NoConn ~ 7500 5450
+NoConn ~ 7500 5350
+NoConn ~ 8300 5550
+NoConn ~ 8300 5450
+NoConn ~ 8300 5350
+Wire Wire Line
+	7500 5050 7250 5050
+Wire Wire Line
+	7250 4950 7500 4950
+Text Label 7250 5050 2    50   ~ 0
+Digit14CathodeSignal
+Text Label 7250 4950 2    50   ~ 0
+Digit13CathodeSignal
+Wire Wire Line
+	7900 5850 7900 5750
+Wire Wire Line
+	8450 4600 8450 4750
+Wire Wire Line
+	8300 4750 8450 4750
 $Comp
 L power:+5V #PWR?
 U 1 1 60FBCFA4
-P 6100 1500
+P 8450 4600
 AR Path="/60FBCFA4" Ref="#PWR?"  Part="1" 
 AR Path="/60F87146/60FBCFA4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6100 1350 50  0001 C CNN
-F 1 "+5V" H 6115 1673 50  0000 C CNN
-F 2 "" H 6100 1500 50  0001 C CNN
-F 3 "" H 6100 1500 50  0001 C CNN
-	1    6100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 1650 6100 1650
-Wire Wire Line
-	6100 1500 6100 1650
-Wire Wire Line
-	5550 2750 5550 2650
-$Comp
-L power:Earth #PWR?
-U 1 1 60FBCFAD
-P 5550 2750
-AR Path="/60FBCFAD" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCFAD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 2500 50  0001 C CNN
-F 1 "Earth" H 5550 2600 50  0001 C CNN
-F 2 "" H 5550 2750 50  0001 C CNN
-F 3 "~" H 5550 2750 50  0001 C CNN
-	1    5550 2750
+F 0 "#PWR?" H 8450 4450 50  0001 C CNN
+F 1 "+5V" H 8465 4773 50  0000 C CNN
+F 2 "" H 8450 4600 50  0001 C CNN
+F 3 "" H 8450 4600 50  0001 C CNN
+	1    8450 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L TeKaDe:TS5A23157DGSTG4 IC?
-U 1 1 60FBCFBA
-P 1900 2750
-AR Path="/60FBCFBA" Ref="IC?"  Part="1" 
-AR Path="/60F87146/60FBCFBA" Ref="IC?"  Part="1" 
-F 0 "IC?" H 2450 3015 50  0000 C CNN
-F 1 "TS5A23157DGSTG4" H 2450 2924 50  0000 C CNN
-F 2 "SOP50P490X110-10N" H 2850 2850 50  0001 L CNN
-F 3 "" H 2850 2750 50  0001 L CNN
-F 4 "Analog Switch ICs Dual 10-Ohm SPDT Analog Switch" H 2850 2650 50  0001 L CNN "Description"
-F 5 "1.1" H 2850 2550 50  0001 L CNN "Height"
-F 6 "595-TS5A23157DGSTG4" H 2850 2450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TS5A23157DGSTG4" H 2850 2350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 2850 2250 50  0001 L CNN "Manufacturer_Name"
-F 9 "TS5A23157DGSTG4" H 2850 2150 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "Out of stock" H 1900 2750 50  0001 C CNN "Availability"
-	1    1900 2750
+L Transistor_Array:ULN2003 U?
+U 1 1 60FBCF9E
+P 7900 5150
+AR Path="/60FBCF9E" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF9E" Ref="U?"  Part="1" 
+F 0 "U?" H 7900 5817 50  0000 C CNN
+F 1 "ULN2003" H 7900 5726 50  0000 C CNN
+F 2 "" H 7950 4600 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 8000 4950 50  0001 C CNN
+F 4 "good" H 7900 5150 50  0001 C CNN "Availability"
+	1    7900 5150
 	1    0    0    -1  
 $EndComp
+Text Label 7350 3150 2    50   ~ 0
+Digit6CathodeSignal
 Wire Wire Line
-	3150 2750 3000 2750
-Text Label 1500 2750 2    50   ~ 0
-DecoderExtraSwitch
+	7350 3150 7500 3150
 Wire Wire Line
-	1750 2750 1750 3150
-Text Label 1500 2850 2    50   ~ 0
-Digit18CathodeSignal
+	7350 3250 7500 3250
 Wire Wire Line
-	1500 2850 1900 2850
-Text Label 3150 2850 0    50   ~ 0
-Digit20CathodeSignal
+	7350 3350 7500 3350
 Wire Wire Line
-	1450 3050 1900 3050
-Connection ~ 1750 2750
+	7500 3450 7350 3450
 Wire Wire Line
-	1750 2750 1900 2750
+	7350 3550 7500 3550
 Wire Wire Line
-	1750 3150 1900 3150
+	7500 3650 7350 3650
 Wire Wire Line
-	1500 2750 1750 2750
+	7350 3750 7500 3750
 Wire Wire Line
-	3150 2850 3000 2850
-Text Label 1450 3050 2    50   ~ 0
-Digit19CathodeSignal
-Text Label 3150 3050 0    50   ~ 0
-Digit21CathodeSignal
+	8450 2800 8450 2950
 Wire Wire Line
-	3150 3150 3000 3150
-Wire Wire Line
-	3000 3050 3150 3050
-Wire Wire Line
-	1500 2950 1900 2950
-Wire Wire Line
-	3150 2950 3000 2950
+	8300 2950 8450 2950
 $Comp
 L power:+5V #PWR?
-U 1 1 60FBCFD2
-P 3150 2950
-AR Path="/60FBCFD2" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/60FBCFD2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3150 2800 50  0001 C CNN
-F 1 "+5V" V 3165 3078 50  0000 L CNN
-F 2 "" H 3150 2950 50  0001 C CNN
-F 3 "" H 3150 2950 50  0001 C CNN
-	1    3150 2950
-	0    1    1    0   
+U 1 1 60FBCF79
+P 8450 2800
+AR Path="/60FBCF79" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF79" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 2650 50  0001 C CNN
+F 1 "+5V" H 8465 2973 50  0000 C CNN
+F 2 "" H 8450 2800 50  0001 C CNN
+F 3 "" H 8450 2800 50  0001 C CNN
+	1    8450 2800
+	1    0    0    -1  
 $EndComp
-Text Label 6150 2050 0    50   ~ 0
-Digit20Cathode
-Text Label 6150 2150 0    50   ~ 0
-Digit21Cathode
-Text Label 6150 1850 0    50   ~ 0
-Digit18Cathode
-Text Label 6150 1950 0    50   ~ 0
-Digit19Cathode
 Wire Wire Line
-	6150 1850 5950 1850
+	7900 4050 7900 3950
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 60FBCF6C
+P 7900 3350
+AR Path="/60FBCF6C" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF6C" Ref="U?"  Part="1" 
+F 0 "U?" H 7900 4017 50  0000 C CNN
+F 1 "ULN2003" H 7900 3926 50  0000 C CNN
+F 2 "" H 7950 2800 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 8000 3150 50  0001 C CNN
+F 4 "good" H 7900 3350 50  0001 C CNN "Availability"
+	1    7900 3350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5950 1950 6150 1950
+	7350 1400 7500 1400
 Wire Wire Line
-	6150 2050 5950 2050
+	7350 1500 7500 1500
 Wire Wire Line
-	5950 2150 6150 2150
-Text Label 4900 1850 2    50   ~ 0
-Digit18CathodeSignal
-Text Label 4900 1950 2    50   ~ 0
-Digit19CathodeSignal
-Text Label 4900 2050 2    50   ~ 0
-Digit20CathodeSignal
-Text Label 4900 2150 2    50   ~ 0
-Digit21CathodeSignal
+	7350 1600 7500 1600
 Wire Wire Line
-	4900 1850 5150 1850
+	7500 1700 7350 1700
 Wire Wire Line
-	5150 1950 4900 1950
+	7350 1800 7500 1800
 Wire Wire Line
-	4900 2050 5150 2050
+	7500 1900 7350 1900
 Wire Wire Line
-	5150 2150 4900 2150
-NoConn ~ 5950 2250
-NoConn ~ 5950 2350
-NoConn ~ 5950 2450
-NoConn ~ 5150 2250
-NoConn ~ 5150 2350
-NoConn ~ 5150 2450
-Text Notes 700  1350 0    50   ~ 0
-Display Driving
+	7350 2000 7500 2000
+Text Label 7350 1400 2    50   ~ 0
+DigitACathodeSignal
+Text Label 7350 1500 2    50   ~ 0
+DigitBCathodeSignal
+Text Label 7350 1600 2    50   ~ 0
+Digit1CathodeSignal
+Text Label 7350 1700 2    50   ~ 0
+Digit2CathodeSignal
+Text Label 7350 1800 2    50   ~ 0
+Digit3CathodeSignal
+Text Label 7350 1900 2    50   ~ 0
+Digit4CathodeSignal
+Text Label 7350 2000 2    50   ~ 0
+Digit5CathodeSignal
+Wire Wire Line
+	8450 1050 8450 1200
+Wire Wire Line
+	8300 1200 8450 1200
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCF47
+P 8450 1050
+AR Path="/60FBCF47" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCF47" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 900 50  0001 C CNN
+F 1 "+5V" H 8465 1223 50  0000 C CNN
+F 2 "" H 8450 1050 50  0001 C CNN
+F 3 "" H 8450 1050 50  0001 C CNN
+	1    8450 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2300 7900 2200
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 60FBCF3A
+P 7900 1600
+AR Path="/60FBCF3A" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCF3A" Ref="U?"  Part="1" 
+F 0 "U?" H 7900 2267 50  0000 C CNN
+F 1 "ULN2003" H 7900 2176 50  0000 C CNN
+F 2 "" H 7950 1050 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 8000 1400 50  0001 C CNN
+F 4 "good" H 7900 1600 50  0001 C CNN "Availability"
+	1    7900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DC32CA
+P 2650 7100
+F 0 "#PWR?" H 2650 6850 50  0001 C CNN
+F 1 "GND" H 2655 6927 50  0000 C CNN
+F 2 "" H 2650 7100 50  0001 C CNN
+F 3 "" H 2650 7100 50  0001 C CNN
+	1    2650 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5950 2900 5950
+Text Label 2400 6550 2    50   ~ 0
+7_Segment_Driver_D
+Text Label 2400 6450 2    50   ~ 0
+7_Segment_Driver_C
+Text Label 2400 6350 2    50   ~ 0
+7_Segment_Driver_B
+Text Label 2400 6250 2    50   ~ 0
+7_Segment_Driver_A
+Wire Wire Line
+	2650 6750 2650 7100
+Connection ~ 2650 6750
+Wire Wire Line
+	2900 6750 2650 6750
+Wire Wire Line
+	2650 6050 2650 6750
+Wire Wire Line
+	2900 6050 2650 6050
+Connection ~ 2650 5650
+Wire Wire Line
+	2650 5850 2900 5850
+Wire Wire Line
+	2650 5650 2650 5850
+Wire Wire Line
+	2650 5650 2900 5650
+Wire Wire Line
+	2650 5400 2650 5650
+$Comp
+L power:+5V #PWR?
+U 1 1 60FBCEC0
+P 2650 5400
+AR Path="/60FBCEC0" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/60FBCEC0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 5250 50  0001 C CNN
+F 1 "+5V" H 2665 5573 50  0000 C CNN
+F 2 "" H 2650 5400 50  0001 C CNN
+F 3 "" H 2650 5400 50  0001 C CNN
+	1    2650 5400
+	1    0    0    -1  
+$EndComp
+Text Label 4800 6150 0    50   ~ 0
+SegmentGAnode
+Text Label 4800 6250 0    50   ~ 0
+SegmentFAnode
+Text Label 4800 6050 0    50   ~ 0
+SegmentEAnode
+Text Label 4800 5950 0    50   ~ 0
+SegmentDAnode
+Text Label 4800 5850 0    50   ~ 0
+SegmentCAnode
+Text Label 4800 5750 0    50   ~ 0
+SegmentBAnode
+Text Label 4800 5650 0    50   ~ 0
+SegmentAAnode
+$Comp
+L TeKaDe:CD4511BE U?
+U 1 1 60FBCEB3
+P 3600 6050
+AR Path="/60FBCEB3" Ref="U?"  Part="1" 
+AR Path="/60F87146/60FBCEB3" Ref="U?"  Part="1" 
+F 0 "U?" H 3600 6820 50  0000 C CNN
+F 1 "CD4511" H 3600 6729 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 3600 6050 50  0001 L BNN
+F 3 "60K5141" H 3600 6050 50  0001 L BNN
+F 4 "CD4511BE" H 3600 6050 50  0001 L BNN "Field4"
+F 5 "1106122" H 3600 6050 50  0001 L BNN "Field5"
+F 6 "PDIP-16" H 3600 6050 50  0001 L BNN "Field6"
+F 7 "Texas Instruments" H 3600 6050 50  0001 L BNN "Field7"
+F 8 "good" H 3600 6050 50  0001 C CNN "Availability"
+	1    3600 6050
+	1    0    0    -1  
+$EndComp
+Text Label 7350 3350 2    50   ~ 0
+Digit8CathodeSignal
+Text Label 7350 3250 2    50   ~ 0
+Digit7CathodeSignal
+Text Label 7350 3550 2    50   ~ 0
+Digit10CathodeSignal
+Text Label 7350 3450 2    50   ~ 0
+Digit9CathodeSignal
+Text Label 7350 3750 2    50   ~ 0
+Digit12CathodeSignal
+Text Label 7350 3650 2    50   ~ 0
+Digit11CathodeSignal
+Text Label 8500 5050 0    50   ~ 0
+Digit14Cathode
+Text Label 8500 4950 0    50   ~ 0
+Digit13Cathode
+Text Label 8500 3650 0    50   ~ 0
+Digit11Cathode
+Text Label 8500 3750 0    50   ~ 0
+Digit12Cathode
+Text Label 8500 3250 0    50   ~ 0
+Digit7Cathode
+Text Label 8500 3350 0    50   ~ 0
+Digit8Cathode
+Text Label 8500 3450 0    50   ~ 0
+Digit9Cathode
+Text Label 8500 3550 0    50   ~ 0
+Digit10Cathode
+Text Label 8500 3150 0    50   ~ 0
+Digit6Cathode
+Text Label 8500 1400 0    50   ~ 0
+DigitACathode
+Text Label 8500 1500 0    50   ~ 0
+DigitBCathode
+Text Label 8500 1600 0    50   ~ 0
+Digit1Cathode
+Text Label 8500 1700 0    50   ~ 0
+Digit2Cathode
+Text Label 8500 1800 0    50   ~ 0
+Digit3Cathode
+Text Label 8500 1900 0    50   ~ 0
+Digit4Cathode
+Text Label 8500 2000 0    50   ~ 0
+Digit5Cathode
+Wire Wire Line
+	8300 1400 9200 1400
+Entry Wire Line
+	9200 1400 9300 1300
+Entry Wire Line
+	9200 1500 9300 1400
+Wire Wire Line
+	8300 1500 9200 1500
+Entry Wire Line
+	9200 1600 9300 1500
+Entry Wire Line
+	9200 1700 9300 1600
+Wire Wire Line
+	8300 1700 9200 1700
+Wire Wire Line
+	8300 1600 9200 1600
+Entry Wire Line
+	9200 1800 9300 1700
+Entry Wire Line
+	9200 1900 9300 1800
+Wire Wire Line
+	8300 1900 9200 1900
+Wire Wire Line
+	8300 1800 9200 1800
+Entry Wire Line
+	9200 4950 9300 4850
+Entry Wire Line
+	9200 5050 9300 4950
+Wire Wire Line
+	8300 5050 9200 5050
+Wire Wire Line
+	8300 4950 9200 4950
+Entry Wire Line
+	9200 2000 9300 1900
+Wire Wire Line
+	8300 2000 9200 2000
+Entry Wire Line
+	9200 3150 9300 3050
+Entry Wire Line
+	9200 3250 9300 3150
+Entry Wire Line
+	9200 3350 9300 3250
+Entry Wire Line
+	9200 3450 9300 3350
+Entry Wire Line
+	9200 3550 9300 3450
+Entry Wire Line
+	9200 3650 9300 3550
+Entry Wire Line
+	9200 3750 9300 3650
+Wire Wire Line
+	8300 3750 9200 3750
+Wire Wire Line
+	8300 3650 9200 3650
+Wire Wire Line
+	8300 3550 9200 3550
+Wire Wire Line
+	8300 3450 9200 3450
+Wire Wire Line
+	8300 3350 9200 3350
+Wire Wire Line
+	8300 3250 9200 3250
+Wire Wire Line
+	8300 3150 9200 3150
+Wire Bus Line
+	9300 1050 9800 1050
+Text HLabel 9800 1050 2    50   Output ~ 0
+DigitCathodes
+Text HLabel 1250 1900 0    50   Input ~ 0
+DecoderData
+Text Label 2000 2300 2    50   ~ 0
+DecoderData1
+Text Label 2000 2400 2    50   ~ 0
+DecoderData2
+Text Label 3750 2400 0    50   ~ 0
+DecoderData4
+Text Label 3750 2500 0    50   ~ 0
+DecoderData3
+Entry Wire Line
+	1450 2300 1350 2200
+Entry Wire Line
+	1450 2400 1350 2300
+Entry Wire Line
+	4300 2400 4400 2300
+Entry Wire Line
+	4300 2500 4400 2400
+Wire Wire Line
+	3250 2500 4300 2500
+Wire Wire Line
+	3250 2400 4300 2400
+Wire Wire Line
+	1450 2300 2450 2300
+Wire Wire Line
+	1450 2400 2450 2400
+Text HLabel 4600 1900 2    50   Input ~ 0
+DecoderData
+Wire Bus Line
+	4400 1900 4600 1900
+Wire Bus Line
+	1350 1900 1250 1900
+Text HLabel 5700 5350 2    50   Output ~ 0
+SegmentAnodes
+Entry Wire Line
+	5500 5650 5600 5550
+Entry Wire Line
+	5500 5750 5600 5650
+Entry Wire Line
+	5500 5850 5600 5750
+Entry Wire Line
+	5500 5950 5600 5850
+Entry Wire Line
+	5500 6050 5600 5950
+Entry Wire Line
+	5500 6150 5600 6050
+Entry Wire Line
+	5500 6250 5600 6150
+Wire Wire Line
+	4300 6250 5500 6250
+Wire Wire Line
+	4300 6150 5500 6150
+Wire Wire Line
+	4300 6050 5500 6050
+Wire Wire Line
+	4300 5950 5500 5950
+Wire Wire Line
+	4300 5850 5500 5850
+Wire Wire Line
+	4300 5750 5500 5750
+Wire Wire Line
+	4300 5650 5500 5650
+Wire Bus Line
+	5600 5350 5700 5350
+Text HLabel 1350 6100 0    50   Input ~ 0
+SegmentDriverData
+Entry Wire Line
+	1600 6250 1500 6150
+Entry Wire Line
+	1600 6350 1500 6250
+Wire Wire Line
+	1600 6350 2900 6350
+Wire Wire Line
+	1600 6250 2900 6250
+Entry Wire Line
+	1600 6450 1500 6350
+Entry Wire Line
+	1600 6550 1500 6450
+Wire Wire Line
+	1600 6550 2900 6550
+Wire Wire Line
+	1600 6450 2900 6450
+Wire Bus Line
+	1500 6100 1350 6100
+Wire Bus Line
+	4400 1900 4400 2400
+Wire Bus Line
+	1350 1900 1350 2300
+Wire Bus Line
+	1500 6100 1500 6450
+Wire Bus Line
+	5600 5350 5600 6150
+Wire Bus Line
+	9300 1050 9300 4950
+Text HLabel 2400 5950 0    50   Input ~ 0
+BrightnessRegulation
 $EndSCHEMATC
