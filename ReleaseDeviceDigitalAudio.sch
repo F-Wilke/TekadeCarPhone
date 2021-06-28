@@ -64,12 +64,6 @@ F 3 "~" H 11100 8250 50  0001 C CNN
 $EndComp
 Text Label 11700 8250 0    50   ~ 0
 Signal_Strength_Dial_+
-Wire Wire Line
-	12000 1850 10850 1850
-Text Label 10850 2650 2    50   ~ 0
-Audio_Handset_Out_R
-Text Label 10850 2750 2    50   ~ 0
-Audio_Handset_Out_L
 $Comp
 L Connector:AudioJack3 J6
 U 1 1 66962862
@@ -623,14 +617,6 @@ F 3 "~" H 11400 2250 50  0001 C CNN
 	1    11400 2250
 	-1   0    0    -1  
 $EndComp
-Text Label 10850 2350 2    50   ~ 0
-Line_In_L
-Text Label 10850 2250 2    50   ~ 0
-Line_In_R
-Text Label 10850 1600 2    50   ~ 0
-Audio_Master_Out_R
-Text Label 10850 1700 2    50   ~ 0
-Audio_Master_Out_L
 Wire Wire Line
 	14800 6500 15050 6500
 Wire Wire Line
@@ -759,8 +745,6 @@ F 3 "~" H 12200 2650 50  0001 C CNN
 	1    12200 2650
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	12000 1950 10850 1950
 NoConn ~ 3100 -2900
 NoConn ~ 3100 -2800
 NoConn ~ 3100 -2600
@@ -784,14 +768,6 @@ F 3 "~" H 11050 3450 50  0001 C CNN
 	1    11050 3450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	12000 2750 10850 2750
-Wire Wire Line
-	11200 1600 10850 1600
-Wire Wire Line
-	11200 1700 10850 1700
-Wire Wire Line
-	11200 2950 10850 2950
 $Comp
 L power:Earth #PWR?
 U 1 1 6171EDEC
@@ -803,20 +779,6 @@ F 3 "~" H 11850 3450 50  0001 C CNN
 	1    11850 3450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	11200 3050 10850 3050
-Wire Wire Line
-	11200 2250 10850 2250
-Wire Wire Line
-	11200 2350 10850 2350
-Text Label 10850 2950 2    50   ~ 0
-HeadsetMicInP
-Text Label 10850 3050 2    50   ~ 0
-HeadsetMicInN
-Text Label 10850 1850 2    50   ~ 0
-MasterMicInP
-Text Label 10850 1950 2    50   ~ 0
-MasterMicInN
 Text Label 9200 2350 0    50   ~ 0
 Line_In_L
 Text Label 9200 2250 0    50   ~ 0
@@ -837,77 +799,50 @@ Text Label 9200 2650 0    50   ~ 0
 Audio_Handset_Out_R
 Text Label 9200 2750 0    50   ~ 0
 Audio_Handset_Out_L
-Wire Wire Line
-	9200 2950 8800 2950
-Wire Wire Line
-	9200 3050 8800 3050
-Wire Wire Line
-	9200 2650 8800 2650
-Wire Wire Line
-	9200 2750 8800 2750
-Wire Wire Line
-	9200 1850 8800 1850
-Wire Wire Line
-	9200 1950 8800 1950
-Wire Wire Line
-	9200 1600 8800 1600
-Wire Wire Line
-	9200 1700 8800 1700
-Wire Wire Line
-	9200 2250 8800 2250
-Wire Wire Line
-	9200 2350 8800 2350
-Text Label 6800 1600 2    50   ~ 0
+Text Label 6800 1550 2    50   ~ 0
 MAX_*IRQ
 Wire Wire Line
-	7200 1600 6800 1600
+	7200 1550 6800 1550
 $Sheet
 S 3950 1350 1600 2250
 U 614D7E9D
 F0 "RPiCM" 50
 F1 "RaspberryPiCM.sch" 50
 F2 "RPi_USB" B R 5550 1550 50 
-F3 "RPI_I2S" B R 5550 1750 50 
-F4 "GPIO8" O R 5550 2550 50 
-F5 "GPIO9" O R 5550 2650 50 
-F6 "GPIO10" I R 5550 2750 50 
-F7 "RPI_UART" B R 5550 1900 50 
-F8 "I2C_0" B R 5550 2050 50 
-F9 "I2C_1" B R 5550 2200 50 
+F3 "I2S_Master" B R 5550 1900 50 
+F4 "GPIO8" O R 5550 3250 50 
+F5 "GPIO9" O R 5550 3350 50 
+F6 "GPIO10" I R 5550 3450 50 
+F7 "UART0" B R 5550 2350 50 
+F8 "I2C0" B R 5550 2050 50 
 $EndSheet
-Text Label 5850 2750 0    50   ~ 0
+Text Label 5850 3450 0    50   ~ 0
 MAX_*IRQ
-Text Label 5850 2650 0    50   ~ 0
+Text Label 5850 3350 0    50   ~ 0
 BM83_MFB
-Text Label 5850 2550 0    50   ~ 0
+Text Label 5850 3250 0    50   ~ 0
 BM83_Reset
 Wire Wire Line
-	5850 2750 5550 2750
+	5850 3450 5550 3450
 Wire Wire Line
-	5550 2650 5850 2650
+	5550 3350 5850 3350
 Wire Wire Line
-	5850 2550 5550 2550
+	5850 3250 5550 3250
 Text Label 5850 1550 0    50   ~ 0
 RPi_USB
-Text Label 5850 1750 0    50   ~ 0
-RPI_I2S
+Text Label 5750 1900 0    50   ~ 0
+I2S_RPI_MAX98
 Wire Bus Line
 	5550 1550 5850 1550
-Wire Bus Line
-	5850 1750 5550 1750
-Text Label 6900 2200 2    50   ~ 0
-RPI_I2S
-Wire Bus Line
-	6900 2200 7200 2200
 $Sheet
 S 7200 3900 1600 2250
 U 620639FD
 F0 "BluetoothModule" 50
 F1 "BluetoothModule.sch" 50
-F2 "BM83_I2S" B L 7200 4050 50 
+F2 "I2S_Slave" B L 7200 4050 50 
 F3 "BM83_Reset" I L 7200 4500 50 
 F4 "BM83_MFB" I L 7200 4750 50 
-F5 "BM83_UART" B L 7200 4200 50 
+F5 "UART" B L 7200 4200 50 
 $EndSheet
 Text Label 6900 4750 2    50   ~ 0
 BM83_MFB
@@ -917,22 +852,10 @@ Wire Wire Line
 	7200 4750 6900 4750
 Wire Wire Line
 	6900 4500 7200 4500
-Text Label 6900 2000 2    50   ~ 0
-BM83_I2S
-Wire Bus Line
-	6900 2000 7200 2000
-Text Label 6900 4050 2    50   ~ 0
-BM83_I2S
-Wire Bus Line
-	6900 4050 7200 4050
-Text Label 5850 1900 0    50   ~ 0
-RPI_UART
-Wire Bus Line
-	5850 1900 5550 1900
-Text Label 6900 4200 2    50   ~ 0
-RPI_UART
-Wire Bus Line
-	6900 4200 7200 4200
+Text Label 7100 2350 2    50   ~ 0
+I2S_MAX98_BM83
+Text Label 5750 2350 0    50   ~ 0
+UART_RPI_BM83
 Wire Wire Line
 	11400 7400 12750 7400
 $Sheet
@@ -973,14 +896,12 @@ F8 "MasterMicInN" I R 8800 1850 50
 F9 "MasterMicInP" I R 8800 1950 50 
 F10 "HandsetMicInP" I R 8800 2950 50 
 F11 "HandsetMicInN" I R 8800 3050 50 
-F12 "IRQ" O L 7200 1600 50 
-F13 "I2S2" B L 7200 2200 50 
-F14 "I2S1" B L 7200 2000 50 
-F15 "I2C" B L 7200 2400 50 
+F12 "IRQ" O L 7200 1550 50 
+F13 "I2S2_Slave" B L 7200 1900 50 
+F14 "I2S1_Master" B L 7200 2350 50 
+F15 "I2C" B L 7200 2050 50 
 $EndSheet
 Connection ~ 11050 2150
-Wire Wire Line
-	10850 2650 12000 2650
 Wire Notes Line
 	9500 5950 15850 5950
 Wire Wire Line
@@ -1009,12 +930,42 @@ U 60F87146
 F0 "7SegmentDriver" 50
 F1 "7SegmentDriver.sch" 50
 $EndSheet
-Text Label 5850 2050 0    50   ~ 0
-RPI_I2C_0
+Text Label 5750 2050 0    50   ~ 0
+I2C_RPI_MAX98
 Wire Bus Line
-	5550 2050 5850 2050
-Text Label 6900 2400 2    50   ~ 0
-RPI_I2C_0
+	6450 2350 6450 4050
 Wire Bus Line
-	7200 2400 6900 2400
+	6450 2350 7200 2350
+Wire Bus Line
+	6450 4050 7200 4050
+Wire Bus Line
+	6350 4200 6350 2350
+Wire Bus Line
+	5550 2350 6350 2350
+Wire Bus Line
+	6350 4200 7200 4200
+Wire Bus Line
+	5550 1900 7200 1900
+Wire Bus Line
+	5550 2050 7200 2050
+Wire Wire Line
+	8800 1600 11200 1600
+Wire Wire Line
+	8800 1700 11200 1700
+Wire Wire Line
+	8800 1850 12000 1850
+Wire Wire Line
+	8800 1950 12000 1950
+Wire Wire Line
+	8800 2250 11200 2250
+Wire Wire Line
+	8800 2350 11200 2350
+Wire Wire Line
+	8800 2650 12000 2650
+Wire Wire Line
+	8800 2750 12000 2750
+Wire Wire Line
+	8800 2950 11200 2950
+Wire Wire Line
+	8800 3050 11200 3050
 $EndSCHEMATC

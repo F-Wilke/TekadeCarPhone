@@ -159,7 +159,7 @@ NoConn ~ 6050 2100
 Text HLabel 8300 3300 2    50   Input ~ 0
 BM83_Reset
 Text HLabel 8950 1700 2    50   BiDi ~ 0
-BM83_UART
+UART
 Entry Wire Line
 	8800 1900 8900 1800
 Entry Wire Line
@@ -185,7 +185,7 @@ Multi-function push button and Power On key
 Text Notes 2200 7400 0    50   ~ 0
 Wer ist I2S master??\nLED1 und 2 nicht verwenden?\nWarum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nUSB FW Update implementieren?\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nÄnderungen:\n- Bypass C an VDD_IO ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefügt\n- Pullup für active low reset pin
 $Bitmap
-Pos 10000 5450
+Pos 9750 5450
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 24 00 00 02 35 08 02 00 00 00 A8 95 A9 
@@ -1326,7 +1326,7 @@ Wire Wire Line
 Entry Wire Line
 	2000 1600 2100 1700
 Text HLabel 1900 1600 0    50   BiDi ~ 0
-BM83_I2S
+I2S_Slave
 Text Notes 950  1450 0    50   ~ 0
 The point-to-point nature of I2S \ntransmission eliminates the need \nfor I2C’s pullup resistors
 Text Notes 800  900  0    50   ~ 0

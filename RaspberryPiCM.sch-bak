@@ -869,7 +869,7 @@ RPi_USB
 Wire Bus Line
 	1200 13100 1200 13250
 Text HLabel 850  5450 0    50   BiDi ~ 0
-RPI_I2S
+I2S_Master
 Entry Wire Line
 	900  5450 1000 5550
 Wire Wire Line
