@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -1067,7 +1067,6 @@ Wire Wire Line
 	4650 6700 4650 6850
 Wire Wire Line
 	4650 7150 4650 7350
-<<<<<<< HEAD
 Wire Notes Line
 	10000 1950 10800 1950
 Wire Notes Line
@@ -1076,8 +1075,6 @@ Wire Notes Line
 	10800 3100 10000 3100
 Wire Notes Line
 	10000 3100 10000 1950
-=======
->>>>>>> 42e7572c42184a585cefb1ab27caded6131c4441
 $Comp
 L TeKaDe:MAX98089ETN+ U?
 U 1 1 60D6B3CA

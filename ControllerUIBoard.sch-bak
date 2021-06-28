@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -272,15 +272,15 @@ $EndComp
 $Comp
 L Interface_USB:CH340G U?
 U 1 1 60F80BD9
-P 2400 5150
+P 2350 5100
 AR Path="/60F80BD9" Ref="U?"  Part="1" 
 AR Path="/60F18E7A/60F80BD9" Ref="U?"  Part="1" 
-F 0 "U?" H 2400 4461 50  0000 C CNN
-F 1 "CH340G" H 2400 4370 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2450 4600 50  0001 L CNN
-F 3 "http://www.datasheet5.com/pdf-local-2195953" H 2050 5950 50  0001 C CNN
-F 4 "sufficient" H 2400 5150 50  0001 C CNN "Availability"
-	1    2400 5150
+F 0 "U?" H 2350 4411 50  0000 C CNN
+F 1 "CH340G" H 2350 4320 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2400 4550 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 2000 5900 50  0001 C CNN
+F 4 "sufficient" H 2350 5100 50  0001 C CNN "Availability"
+	1    2350 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -288,9 +288,9 @@ Wire Wire Line
 Wire Wire Line
 	6750 5300 7600 5300
 Wire Wire Line
-	2800 4750 3100 4750
+	2750 4700 3050 4700
 Wire Wire Line
-	3100 4850 2800 4850
+	3050 4800 2750 4800
 Wire Wire Line
 	4400 1900 5150 1900
 Wire Wire Line
@@ -300,82 +300,82 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 60F80BE6
-P 3200 5450
+P 3150 5400
 AR Path="/60F80BE6" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80BE6" Ref="C?"  Part="1" 
-F 0 "C?" V 2948 5450 50  0000 C CNN
-F 1 "100nF" V 3039 5450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 5300 50  0001 C CNN
-F 3 "~" H 3200 5450 50  0001 C CNN
-	1    3200 5450
+F 0 "C?" V 2898 5400 50  0000 C CNN
+F 1 "100nF" V 2989 5400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3188 5250 50  0001 C CNN
+F 3 "~" H 3150 5400 50  0001 C CNN
+	1    3150 5400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2800 5450 3050 5450
+	2750 5400 3000 5400
 $Comp
 L power:Earth #PWR?
 U 1 1 60F80BED
-P 2400 5950
+P 2350 5900
 AR Path="/60F80BED" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/60F80BED" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 5700 50  0001 C CNN
-F 1 "Earth" H 2400 5800 50  0001 C CNN
-F 2 "" H 2400 5950 50  0001 C CNN
-F 3 "~" H 2400 5950 50  0001 C CNN
-	1    2400 5950
+F 0 "#PWR?" H 2350 5650 50  0001 C CNN
+F 1 "Earth" H 2350 5750 50  0001 C CNN
+F 2 "" H 2350 5900 50  0001 C CNN
+F 3 "~" H 2350 5900 50  0001 C CNN
+	1    2350 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 5750 2400 5950
+	2350 5700 2350 5900
 $Comp
 L power:+5V #PWR?
 U 1 1 60F80BF4
-P 2400 4400
+P 2350 4350
 AR Path="/60F80BF4" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/60F80BF4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2400 4250 50  0001 C CNN
-F 1 "+5V" H 2415 4573 50  0000 C CNN
-F 2 "" H 2400 4400 50  0001 C CNN
-F 3 "" H 2400 4400 50  0001 C CNN
-	1    2400 4400
+F 0 "#PWR?" H 2350 4200 50  0001 C CNN
+F 1 "+5V" H 2365 4523 50  0000 C CNN
+F 2 "" H 2350 4350 50  0001 C CNN
+F 3 "" H 2350 4350 50  0001 C CNN
+	1    2350 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 60F80BFA
-P 1450 4550
+P 1400 4500
 AR Path="/60F80BFA" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/60F80BFA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1450 4300 50  0001 C CNN
-F 1 "Earth" H 1450 4400 50  0001 C CNN
-F 2 "" H 1450 4550 50  0001 C CNN
-F 3 "~" H 1450 4550 50  0001 C CNN
-	1    1450 4550
+F 0 "#PWR?" H 1400 4250 50  0001 C CNN
+F 1 "Earth" H 1400 4350 50  0001 C CNN
+F 2 "" H 1400 4500 50  0001 C CNN
+F 3 "~" H 1400 4500 50  0001 C CNN
+	1    1400 4500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60F80C00
-P 1600 4550
+P 1550 4500
 AR Path="/60F80C00" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80C00" Ref="C?"  Part="1" 
-F 0 "C?" V 1348 4550 50  0000 C CNN
-F 1 "100nF" V 1439 4550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1638 4400 50  0001 C CNN
-F 3 "~" H 1600 4550 50  0001 C CNN
-	1    1600 4550
+F 0 "C?" V 1298 4500 50  0000 C CNN
+F 1 "100nF" V 1389 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1588 4350 50  0001 C CNN
+F 3 "~" H 1550 4500 50  0001 C CNN
+	1    1550 4500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1700 5000 1850 5000
+	1650 4950 1800 4950
 Wire Wire Line
-	1850 5000 1850 5050
+	1800 4950 1800 5000
 Wire Wire Line
-	1850 5050 2000 5050
+	1800 5000 1950 5000
 Wire Wire Line
-	1700 5150 2000 5150
+	1650 5100 1950 5100
 Wire Wire Line
-	2400 4400 2400 4500
+	2350 4350 2350 4450
 Text Notes 8750 1300 2    50   ~ 0
 Platzierung einer Schnittstelle zum Flashen vor oder nach CH340G?
 $Comp
@@ -432,7 +432,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 3350 1700 3350
 Wire Wire Line
-	1750 4550 2300 4550
+	1700 4500 2250 4500
 $Comp
 L power:+5V #PWR?
 U 1 1 60F80C26
@@ -705,9 +705,9 @@ Wire Wire Line
 	5150 2600 4550 2600
 Text Label 4550 2600 2    50   ~ 0
 DataEncoderOutputEnable
-Text Label 1700 5000 2    50   ~ 0
+Text Label 1650 4950 2    50   ~ 0
 ATMEGA_USB_DP
-Text Label 1700 5150 2    50   ~ 0
+Text Label 1650 5100 2    50   ~ 0
 ATMEGA_USB_DM
 Text Label 8000 3300 0    50   ~ 0
 Signal_Strength_Dial_+
@@ -779,84 +779,84 @@ Text Label 4300 1050 2    50   ~ 0
 ATMEGA_RESET
 Text Label 1700 3350 2    50   ~ 0
 ATMEGA_RESET
-Text Label 3350 5450 0    50   ~ 0
+Text Label 3300 5400 0    50   ~ 0
 ATMEGA_RESET
 Text Label 7600 5300 0    50   ~ 0
 ATMEGA_RX0
 Text Label 7600 5400 0    50   ~ 0
 ATMEGA_TX0
-Text Label 3100 4750 0    50   ~ 0
+Text Label 3050 4700 0    50   ~ 0
 ATMEGA_RX0
-Text Label 3100 4850 0    50   ~ 0
+Text Label 3050 4800 0    50   ~ 0
 ATMEGA_TX0
 $Comp
 L Device:C C?
 U 1 1 60F80CD0
-P 2600 4350
+P 2550 4300
 AR Path="/60F80CD0" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80CD0" Ref="C?"  Part="1" 
-F 0 "C?" H 2715 4396 50  0000 L CNN
-F 1 "100n" H 2715 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2638 4200 50  0001 C CNN
-F 3 "~" H 2600 4350 50  0001 C CNN
-	1    2600 4350
+F 0 "C?" H 2665 4346 50  0000 L CNN
+F 1 "100n" H 2665 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 4150 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+	1    2550 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60F80CD6
-P 3000 4350
+P 2950 4300
 AR Path="/60F80CD6" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80CD6" Ref="C?"  Part="1" 
-F 0 "C?" H 3115 4396 50  0000 L CNN
-F 1 "100n" H 3115 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 4200 50  0001 C CNN
-F 3 "~" H 3000 4350 50  0001 C CNN
-	1    3000 4350
+F 0 "C?" H 3065 4346 50  0000 L CNN
+F 1 "100n" H 3065 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2988 4150 50  0001 C CNN
+F 3 "~" H 2950 4300 50  0001 C CNN
+	1    2950 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 4500 2600 4500
-Connection ~ 2600 4500
+	2350 4450 2550 4450
+Connection ~ 2550 4450
 Wire Wire Line
-	2600 4500 3000 4500
+	2550 4450 2950 4450
 $Comp
 L Device:CP1 C?
 U 1 1 60F80CDF
-P 3450 4350
+P 3400 4300
 AR Path="/60F80CDF" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80CDF" Ref="C?"  Part="1" 
-F 0 "C?" H 3335 4304 50  0000 R CNN
-F 1 "4.7µF" H 3335 4395 50  0000 R CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 3450 4350 50  0001 C CNN
-F 3 "~" H 3450 4350 50  0001 C CNN
-	1    3450 4350
+F 0 "C?" H 3285 4254 50  0000 R CNN
+F 1 "4.7µF" H 3285 4345 50  0000 R CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 3400 4300 50  0001 C CNN
+F 3 "~" H 3400 4300 50  0001 C CNN
+	1    3400 4300
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3450 4500 3000 4500
-Connection ~ 3000 4500
+	3400 4450 2950 4450
+Connection ~ 2950 4450
 Wire Wire Line
-	3450 4200 3000 4200
-Connection ~ 3000 4200
+	3400 4150 2950 4150
+Connection ~ 2950 4150
 Wire Wire Line
-	3000 4200 2600 4200
+	2950 4150 2550 4150
 $Comp
 L power:Earth #PWR?
 U 1 1 60F80CEA
-P 3000 4200
+P 2950 4150
 AR Path="/60F80CEA" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/60F80CEA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3000 3950 50  0001 C CNN
-F 1 "Earth" H 3000 4050 50  0001 C CNN
-F 2 "" H 3000 4200 50  0001 C CNN
-F 3 "~" H 3000 4200 50  0001 C CNN
-	1    3000 4200
+F 0 "#PWR?" H 2950 3900 50  0001 C CNN
+F 1 "Earth" H 2950 4000 50  0001 C CNN
+F 2 "" H 2950 4150 50  0001 C CNN
+F 3 "~" H 2950 4150 50  0001 C CNN
+	1    2950 4150
 	-1   0    0    1   
 $EndComp
-Connection ~ 2400 4500
+Connection ~ 2350 4450
 Wire Wire Line
-	2400 4500 2400 4550
+	2350 4450 2350 4500
 Text Label 4600 6700 2    50   ~ 0
 BrightnessRegulation
 Wire Wire Line
@@ -874,92 +874,92 @@ DecoderExtraSwitch
 $Comp
 L Device:Crystal Y?
 U 1 1 60F80CF9
-P 850 5450
+P 800 5400
 AR Path="/60F80CF9" Ref="Y?"  Part="1" 
 AR Path="/60F18E7A/60F80CF9" Ref="Y?"  Part="1" 
-F 0 "Y?" V 804 5581 50  0000 L CNN
-F 1 "12MHz" V 895 5581 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 850 5450 50  0001 C CNN
-F 3 "~" H 850 5450 50  0001 C CNN
-	1    850  5450
+F 0 "Y?" V 754 5531 50  0000 L CNN
+F 1 "12MHz" V 845 5531 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 800 5400 50  0001 C CNN
+F 3 "~" H 800 5400 50  0001 C CNN
+	1    800  5400
 	0    1    1    0   
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 60F80CFF
-P 150 5450
+P 100 5400
 AR Path="/60F80CFF" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/60F80CFF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 150 5200 50  0001 C CNN
-F 1 "Earth" H 150 5300 50  0001 C CNN
-F 2 "" H 150 5450 50  0001 C CNN
-F 3 "~" H 150 5450 50  0001 C CNN
-	1    150  5450
+F 0 "#PWR?" H 100 5150 50  0001 C CNN
+F 1 "Earth" H 100 5250 50  0001 C CNN
+F 2 "" H 100 5400 50  0001 C CNN
+F 3 "~" H 100 5400 50  0001 C CNN
+	1    100  5400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60F80D05
-P 600 5250
+P 550 5200
 AR Path="/60F80D05" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80D05" Ref="C?"  Part="1" 
-F 0 "C?" V 348 5250 50  0000 C CNN
-F 1 "22pF" V 439 5250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 638 5100 50  0001 C CNN
-F 3 "~" H 600 5250 50  0001 C CNN
-	1    600  5250
+F 0 "C?" V 298 5200 50  0000 C CNN
+F 1 "22pF" V 389 5200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 588 5050 50  0001 C CNN
+F 3 "~" H 550 5200 50  0001 C CNN
+	1    550  5200
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60F80D0B
-P 600 5700
+P 550 5650
 AR Path="/60F80D0B" Ref="C?"  Part="1" 
 AR Path="/60F18E7A/60F80D0B" Ref="C?"  Part="1" 
-F 0 "C?" V 348 5700 50  0000 C CNN
-F 1 "22pF" V 439 5700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 638 5550 50  0001 C CNN
-F 3 "~" H 600 5700 50  0001 C CNN
-	1    600  5700
+F 0 "C?" V 298 5650 50  0000 C CNN
+F 1 "22pF" V 389 5650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 588 5500 50  0001 C CNN
+F 3 "~" H 550 5650 50  0001 C CNN
+	1    550  5650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	750  5250 850  5250
+	700  5200 800  5200
 Wire Wire Line
-	850  5250 850  5300
+	800  5200 800  5250
 Wire Wire Line
-	850  5600 850  5700
+	800  5550 800  5650
 Wire Wire Line
-	850  5700 750  5700
+	800  5650 700  5650
 Wire Wire Line
-	450  5700 150  5700
+	400  5650 100  5650
 Wire Wire Line
-	150  5700 150  5450
+	100  5650 100  5400
 Wire Wire Line
-	450  5250 150  5250
+	400  5200 100  5200
 Wire Wire Line
-	150  5250 150  5450
-Connection ~ 150  5450
-Connection ~ 850  5250
-Connection ~ 850  5700
+	100  5200 100  5400
+Connection ~ 100  5400
+Connection ~ 800  5200
+Connection ~ 800  5650
 Wire Wire Line
-	1600 5250 1600 5350
+	1550 5200 1550 5300
 Wire Wire Line
-	1600 5350 2000 5350
+	1550 5300 1950 5300
 Wire Wire Line
-	850  5250 1600 5250
+	800  5200 1550 5200
 Wire Wire Line
-	2000 5550 1600 5550
+	1950 5500 1550 5500
 Wire Wire Line
-	1600 5550 1600 5700
+	1550 5500 1550 5650
 Wire Wire Line
-	850  5700 1600 5700
-NoConn ~ 2800 5050
-NoConn ~ 2800 5150
-NoConn ~ 2800 5250
-NoConn ~ 2800 5350
-NoConn ~ 2800 5550
-NoConn ~ 2000 4850
+	800  5650 1550 5650
+NoConn ~ 2750 5000
+NoConn ~ 2750 5100
+NoConn ~ 2750 5200
+NoConn ~ 2750 5300
+NoConn ~ 2750 5500
+NoConn ~ 1950 4800
 Text Label 7250 1800 0    50   ~ 0
 KeyLock.A
 Text Label 7250 1700 0    50   ~ 0
