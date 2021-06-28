@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -894,7 +894,7 @@ F8 "MasterMicInN" I R 8800 1850 50
 F9 "MasterMicInP" I R 8800 1950 50 
 F10 "HandsetMicInP" I R 8800 2950 50 
 F11 "HandsetMicInN" I R 8800 3050 50 
-F12 "MAX_*IRQ" O L 7200 1600 50 
+F12 "IRQ" O L 7200 1600 50 
 F13 "I2S2" B L 7200 2200 50 
 F14 "I2S1" B L 7200 2000 50 
 F15 "I2C" B L 7200 2400 50 

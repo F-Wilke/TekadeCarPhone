@@ -762,20 +762,20 @@ F 3 "" H 2050 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 1700 3650 4450
+	3900 1700 3900 4450
 $Comp
 L power:+1V8 #PWR?
 U 1 1 60E60765
-P 3650 1700
-F 0 "#PWR?" H 3650 1550 50  0001 C CNN
-F 1 "+1V8" H 3665 1873 50  0000 C CNN
-F 2 "" H 3650 1700 50  0001 C CNN
-F 3 "" H 3650 1700 50  0001 C CNN
-	1    3650 1700
+P 3900 1700
+F 0 "#PWR?" H 3900 1550 50  0001 C CNN
+F 1 "+1V8" H 3915 1873 50  0000 C CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 4450 4550 4450
+	3900 4450 4550 4450
 $Comp
 L power:+1V8 #PWR?
 U 1 1 60D4A87A
@@ -815,26 +815,8 @@ Wire Wire Line
 	9050 2850 9050 5150
 Wire Wire Line
 	9050 5450 9050 5800
-Wire Notes Line
-	9200 4550 10150 4550
-Wire Notes Line
-	10150 4550 10150 5450
-Wire Notes Line
-	10150 5450 9200 5450
-Wire Notes Line
-	9200 5450 9200 4550
-Text Notes 9250 4750 0    50   ~ 0
-S. 122 nicht vorhanden\nÜbernommen aus EvKit S.12
-Wire Notes Line
-	7900 4700 8550 4700
-Wire Notes Line
-	8550 4700 8550 5550
-Wire Notes Line
-	8550 5550 7900 5550
-Wire Notes Line
-	7900 5550 7900 4700
-Text Notes 7850 4650 0    50   ~ 0
-S. 122 nicht vorhanden\nÜbernommen aus Evkit S.12
+Text Notes 1000 3350 0    50   ~ 0
+Line Out?\nHier keine Cs gegen GND wie bei:\n- Line In\n- Headset Out\n-> Orientiert an Referenzdesign, werde ich aber empirisch prüfen
 Wire Wire Line
 	2050 850  2050 1000
 Wire Wire Line
@@ -1023,7 +1005,7 @@ So nicht in Appnote fig 40\nStattdessen in EvKit guide fig 4a\n-> differential/s
 Text Notes 3350 1200 0    50   ~ 0
 An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?\n=> Ja, laut S.126, aber es reichen auf 3V3
 Text Notes 10150 2800 0    50   ~ 0
-Pullups??
+Pullups??\n
 Wire Notes Line
 	10050 2400 10600 2400
 Wire Notes Line
@@ -1137,7 +1119,7 @@ HandsetMicInP
 Text HLabel 3800 6750 2    50   Input ~ 0
 HandsetMicInN
 Text HLabel 10150 2150 2    50   Output ~ 0
-MAX_*IRQ
+IRQ
 Text Label 10150 2350 0    50   ~ 0
 RPi_I2S_SD_OUT
 Text Label 3100 2050 2    50   ~ 0
