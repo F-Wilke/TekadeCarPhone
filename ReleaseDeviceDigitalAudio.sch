@@ -53,12 +53,6 @@ F 3 "~" H 11100 8250 50  0001 C CNN
 $EndComp
 Text Label 11700 8250 0    50   ~ 0
 Signal_Strength_Dial_+
-Wire Wire Line
-	12000 1850 10850 1850
-Text Label 10850 2650 2    50   ~ 0
-Audio_Handset_Out_R
-Text Label 10850 2750 2    50   ~ 0
-Audio_Handset_Out_L
 $Comp
 L Connector:AudioJack3 J6
 U 1 1 66962862
@@ -266,6 +260,10 @@ Text Label 10850 1600 2    50   ~ 0
 Audio_Master_Out_R
 Text Label 10850 1700 2    50   ~ 0
 Audio_Master_Out_L
+Wire Wire Line
+	14800 6900 15050 6900
+Wire Wire Line
+	14000 6800 14300 6800
 NoConn ~ 14800 7700
 NoConn ~ 14800 7800
 NoConn ~ 14800 7900
@@ -324,8 +322,10 @@ F 3 "~" H 12200 2650 50  0001 C CNN
 	1    12200 2650
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	12000 1950 10850 1950
+NoConn ~ 3100 -2900
+NoConn ~ 3100 -2800
+NoConn ~ 3100 -2600
+NoConn ~ 3100 -2500
 Wire Wire Line
 	12000 1750 11850 1750
 Wire Wire Line
@@ -345,14 +345,6 @@ F 3 "~" H 11050 3450 50  0001 C CNN
 	1    11050 3450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	12000 2750 10850 2750
-Wire Wire Line
-	11200 1600 10850 1600
-Wire Wire Line
-	11200 1700 10850 1700
-Wire Wire Line
-	11200 2950 10850 2950
 $Comp
 L power:Earth #PWR?
 U 1 1 6171EDEC
@@ -364,20 +356,6 @@ F 3 "~" H 11850 3450 50  0001 C CNN
 	1    11850 3450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	11200 3050 10850 3050
-Wire Wire Line
-	11200 2250 10850 2250
-Wire Wire Line
-	11200 2350 10850 2350
-Text Label 10850 2950 2    50   ~ 0
-HeadsetMicInP
-Text Label 10850 3050 2    50   ~ 0
-HeadsetMicInN
-Text Label 10850 1850 2    50   ~ 0
-MasterMicInP
-Text Label 10850 1950 2    50   ~ 0
-MasterMicInN
 Text Label 9200 2350 0    50   ~ 0
 Line_In_L
 Text Label 9200 2250 0    50   ~ 0
@@ -398,30 +376,10 @@ Text Label 9200 2650 0    50   ~ 0
 Audio_Handset_Out_R
 Text Label 9200 2750 0    50   ~ 0
 Audio_Handset_Out_L
-Wire Wire Line
-	9200 2950 8800 2950
-Wire Wire Line
-	9200 3050 8800 3050
-Wire Wire Line
-	9200 2650 8800 2650
-Wire Wire Line
-	9200 2750 8800 2750
-Wire Wire Line
-	9200 1850 8800 1850
-Wire Wire Line
-	9200 1950 8800 1950
-Wire Wire Line
-	9200 1600 8800 1600
-Wire Wire Line
-	9200 1700 8800 1700
-Wire Wire Line
-	9200 2250 8800 2250
-Wire Wire Line
-	9200 2350 8800 2350
-Text Label 6800 1600 2    50   ~ 0
+Text Label 6800 1550 2    50   ~ 0
 MAX_*IRQ
 Wire Wire Line
-	7200 1600 6800 1600
+	7200 1550 6800 1550
 $Sheet
 S 3950 1350 1600 2250
 U 614D7E9D
@@ -450,27 +408,33 @@ Wire Wire Line
 	5550 2950 5850 2950
 Wire Wire Line
 	5850 2850 5550 2850
+Text Label 5850 3450 0    50   ~ 0
+MAX_*IRQ
+Text Label 5850 3350 0    50   ~ 0
+BM83_MFB
+Text Label 5850 3250 0    50   ~ 0
+BM83_Reset
+Wire Wire Line
+	5850 3450 5550 3450
+Wire Wire Line
+	5550 3350 5850 3350
+Wire Wire Line
+	5850 3250 5550 3250
 Text Label 5850 1550 0    50   ~ 0
 RPi_USB
-Text Label 5850 1750 0    50   ~ 0
-RPI_I2S
+Text Label 5750 1900 0    50   ~ 0
+I2S_RPI_MAX98
 Wire Bus Line
 	5550 1550 5850 1550
-Wire Bus Line
-	5850 1750 5550 1750
-Text Label 6900 2200 2    50   ~ 0
-RPI_I2S
-Wire Bus Line
-	6900 2200 7200 2200
 $Sheet
 S 7200 3900 1600 2250
 U 620639FD
 F0 "BluetoothModule" 50
 F1 "BluetoothModule.sch" 50
-F2 "BM83_I2S" B L 7200 4050 50 
+F2 "I2S_Slave" B L 7200 4050 50 
 F3 "BM83_Reset" I L 7200 4500 50 
 F4 "BM83_MFB" I L 7200 4750 50 
-F5 "BM83_UART" B L 7200 4200 50 
+F5 "UART" B L 7200 4200 50 
 $EndSheet
 Text Label 6900 4750 2    50   ~ 0
 BM83_MFB
@@ -486,16 +450,14 @@ Wire Bus Line
 	6900 2000 7200 2000
 Text Label 6900 4050 2    50   ~ 0
 BM83_I2S
-Wire Bus Line
-	6900 4050 7200 4050
 Text Label 5850 1900 0    50   ~ 0
 RPI_BM83_UART
-Wire Bus Line
-	5850 1900 5550 1900
 Text Label 6900 4200 2    50   ~ 0
 RPI_BM83_UART
-Wire Bus Line
-	6900 4200 7200 4200
+Text Label 7100 2350 2    50   ~ 0
+I2S_MAX98_BM83
+Text Label 5750 2350 0    50   ~ 0
+UART_RPI_BM83
 Wire Wire Line
 	11450 7300 12800 7300
 $Sheet
@@ -538,14 +500,12 @@ F8 "MasterMicInN" I R 8800 1850 50
 F9 "MasterMicInP" I R 8800 1950 50 
 F10 "HandsetMicInP" I R 8800 2950 50 
 F11 "HandsetMicInN" I R 8800 3050 50 
-F12 "IRQ" O L 7200 1600 50 
-F13 "I2S2" B L 7200 2200 50 
-F14 "I2S1" B L 7200 2000 50 
-F15 "I2C" B L 7200 2400 50 
+F12 "IRQ" O L 7200 1550 50 
+F13 "I2S2_Slave" B L 7200 1900 50 
+F14 "I2S1_Master" B L 7200 2350 50 
+F15 "I2C" B L 7200 2050 50 
 $EndSheet
 Connection ~ 11050 2150
-Wire Wire Line
-	10850 2650 12000 2650
 Wire Wire Line
 	11050 2150 11050 2850
 Wire Wire Line
@@ -615,8 +575,6 @@ Wire Wire Line
 	1200 1700 900  1700
 Text Label 5850 2050 0    50   ~ 0
 RPI_ATMEGA_UART
-Wire Bus Line
-	5550 2050 5850 2050
 Text Label 4100 7500 0    50   ~ 0
 RPI_ATMEGA_UART
 Wire Bus Line
@@ -673,8 +631,6 @@ Entry Wire Line
 	15850 7500 15750 7400
 Entry Wire Line
 	15850 7600 15750 7500
-Wire Wire Line
-	13350 7700 14300 7700
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J3
 U 1 1 5F0813F7
@@ -686,50 +642,6 @@ F 3 "~" H 14500 7200 50  0001 C CNN
 	1    14500 7200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13350 7600 14300 7600
-Wire Wire Line
-	13350 7400 14300 7400
-Wire Wire Line
-	13350 7500 14300 7500
-Wire Wire Line
-	13350 7200 14300 7200
-Wire Wire Line
-	13350 7300 14300 7300
-Wire Wire Line
-	13350 7000 14300 7000
-Wire Wire Line
-	13350 7100 14300 7100
-Wire Wire Line
-	13350 6900 14300 6900
-Wire Wire Line
-	13350 6600 14300 6600
-Wire Wire Line
-	13350 6700 14300 6700
-Wire Wire Line
-	13350 6500 14300 6500
-Wire Wire Line
-	14800 6600 15750 6600
-Wire Wire Line
-	14800 6500 15750 6500
-Wire Wire Line
-	14800 6700 15750 6700
-Wire Wire Line
-	14800 6800 15750 6800
-Wire Wire Line
-	14800 7000 15750 7000
-Wire Wire Line
-	14800 7100 15750 7100
-Wire Wire Line
-	14800 7200 15750 7200
-Wire Wire Line
-	14800 7300 15750 7300
-Wire Wire Line
-	14800 7400 15750 7400
-Wire Wire Line
-	14800 7500 15750 7500
-Wire Wire Line
-	14800 7600 15750 7600
 Entry Wire Line
 	13350 7700 13250 7800
 Entry Wire Line
@@ -758,8 +670,6 @@ F 3 "" H 14250 8150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14300 7800 14250 7800
-Wire Wire Line
 	14250 7800 14250 8150
 $Comp
 L power:+5V #PWR?
@@ -774,8 +684,6 @@ F 3 "" H 14100 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14100 5950 14100 7900
-Wire Wire Line
-	14100 7900 14300 7900
 Wire Notes Line
 	9500 5500 15950 5500
 Wire Notes Line
@@ -784,6 +692,94 @@ Wire Notes Line
 	9500 9650 15950 9650
 Wire Notes Line
 	9500 5500 9500 9650
+Text Label 5750 2050 0    50   ~ 0
+I2C_RPI_MAX98
+Wire Bus Line
+	6450 2350 6450 4050
+Wire Bus Line
+	6450 2350 7200 2350
+Wire Bus Line
+	6350 4200 6350 2350
+Wire Bus Line
+	5550 2350 6350 2350
+Wire Wire Line
+	8800 1600 11200 1600
+Wire Wire Line
+	8800 1700 11200 1700
+Wire Wire Line
+	8800 1850 12000 1850
+Wire Wire Line
+	8800 2250 11200 2250
+Wire Wire Line
+	8800 2350 11200 2350
+Wire Wire Line
+	8800 2750 12000 2750
+Wire Wire Line
+	8800 2950 11200 2950
+Wire Wire Line
+	8800 3050 11200 3050
+Wire Wire Line
+	14800 6500 15750 6500
+Wire Wire Line
+	14800 6600 15750 6600
+Wire Wire Line
+	14800 6700 15750 6700
+Wire Wire Line
+	14800 6800 15750 6800
+Wire Wire Line
+	14800 7000 15750 7000
+Wire Wire Line
+	14800 7100 15750 7100
+Wire Wire Line
+	14800 7200 15750 7200
+Wire Wire Line
+	14800 7300 15750 7300
+Wire Wire Line
+	14800 7400 15750 7400
+Wire Wire Line
+	14800 7500 15750 7500
+Wire Wire Line
+	14800 7600 15750 7600
+Wire Wire Line
+	13350 6500 14300 6500
+Wire Wire Line
+	13350 6600 14300 6600
+Wire Wire Line
+	13350 6700 14300 6700
+Wire Wire Line
+	13350 6900 14300 6900
+Wire Wire Line
+	13350 7000 14300 7000
+Wire Wire Line
+	13350 7100 14300 7100
+Wire Wire Line
+	13350 7200 14300 7200
+Wire Wire Line
+	13350 7300 14300 7300
+Wire Wire Line
+	13350 7400 14300 7400
+Wire Wire Line
+	13350 7500 14300 7500
+Wire Wire Line
+	13350 7600 14300 7600
+Wire Wire Line
+	13350 7700 14300 7700
+Wire Wire Line
+	14000 7800 14300 7800
+Wire Wire Line
+	14000 7900 14300 7900
+Wire Wire Line
+	8800 1950 12000 1950
+Wire Bus Line
+	6450 4050 7200 4050
+Wire Bus Line
+	5550 1900 7200 1900
+Wire Bus Line
+	6350 4200 7200 4200
+Wire Wire Line
+	8800 2650 12000 2650
+Wire Bus Line
+	5550 2050 7200 2050
 Wire Bus Line
 	13250 5950 13250 6600
 Wire Bus Line

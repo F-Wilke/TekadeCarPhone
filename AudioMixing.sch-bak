@@ -748,8 +748,8 @@ Text Label 1000 6550 2    50   ~ 0
 MAX_MIC1P
 Text Label 10150 3350 0    50   ~ 0
 MAX_MICBIAS
-Text Notes 5050 5700 0    50   ~ 0
-fix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert\nI2S braucht pullups?\nHPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND
+Text Notes 5050 1500 0    50   ~ 0
+MCLK ist nicht für I2S!! \n12.2880MHz für 48kHz / 11.2896 für 44,1kHz\nWird diese vom BM83 geliefert? der hat MCLK out???\nHPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\n\nÄnderungen:\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60D18DB4
@@ -1129,7 +1129,7 @@ RPi_I2S_WS
 Text Label 3100 2150 2    50   ~ 0
 RPi_I2S_SD_CLK
 Text HLabel 1700 1950 0    50   BiDi ~ 0
-I2S2
+I2S2_Slave
 Entry Wire Line
 	1850 1950 1950 2050
 Wire Wire Line
@@ -1151,7 +1151,7 @@ Entry Wire Line
 Wire Wire Line
 	10800 2350 7150 2350
 Text HLabel 1700 2550 0    50   BiDi ~ 0
-I2S1
+I2S1_Master
 Entry Wire Line
 	1850 2550 1950 2650
 Entry Wire Line
@@ -1354,6 +1354,27 @@ Wire Wire Line
 	3650 7550 3650 7400
 Wire Wire Line
 	3400 7150 3400 7550
+Text Notes 550  8550 0    50   ~ 0
+The microphone differential signals (MIC.MAIN.P and MIC.MAIN.N) are very low-level and must be\nbalanced and routed in parallel, the same distance from start to end, the same impedance for both\nsignals.\nFigure 5 and Figure 6 show typical schematics for microphone input. The microphone filtering capacitor\nmust be as close as possible to the microphone. The other components must be as close as possible to\nthe device.\nTPS65920 Layout Guide LineIn LineOut Mic.pdf
+Text Notes 5500 7200 0    50   ~ 0
+12.2880MHz
+Wire Notes Line
+	9450 3800 10100 3800
+Wire Notes Line
+	10100 3800 10100 4200
+Wire Notes Line
+	10100 4200 9450 4200
+Wire Notes Line
+	9450 4200 9450 3800
+Text Notes 10150 3850 0    50   ~ 0
+Nah am IC vlg. TPS Guidelines 4.4.2
+Text Notes -1900 4850 0    50   ~ 0
+The PreDriv.LEFT and PreDriv.RIGHT signals are the stereo audio output lines. To prevent audio\ndegradation, these signals must be shielded and routed to avoid noise sources, especially those that\ngenerate noise in the audio range.\nTypically, these signals drive external class-D amplifiers, as shown in Figure 8. Resistors Ri and\ncapacitors Ci must be as close as possible to the external class-D chip.\nvlg. TPS Guidelines 4.4.3
+Wire Wire Line
+	2950 6750 1150 6750
+Connection ~ 2950 6750
+Wire Wire Line
+	3500 5550 3650 5550
 Wire Bus Line
 	1850 1950 1850 2250
 Wire Bus Line

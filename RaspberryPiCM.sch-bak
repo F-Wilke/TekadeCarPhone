@@ -861,7 +861,7 @@ RPi_USB
 Wire Bus Line
 	1200 13100 1200 13250
 Text HLabel 850  5450 0    50   BiDi ~ 0
-RPI_I2S
+I2S_Master
 Entry Wire Line
 	900  5450 1000 5550
 Wire Wire Line
@@ -901,7 +901,7 @@ RPi_UART1_RX
 Text Label 1550 4650 2    50   ~ 0
 RPi_UART1_TX
 Text HLabel 850  4550 0    50   BiDi ~ 0
-RPI_UART1
+<<<<<<< HEAD
 Entry Wire Line
 	900  4550 1000 4650
 Entry Wire Line
@@ -1098,7 +1098,7 @@ Entry Wire Line
 Wire Bus Line
 	1000 800  1350 800 
 Text HLabel 1000 800  0    50   BiDi ~ 0
-I2C_0
+I2C0
 Wire Bus Line
 	1350 800  1350 950 
 Entry Wire Line
