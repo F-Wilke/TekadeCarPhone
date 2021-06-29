@@ -880,12 +880,8 @@ Wire Wire Line
 	1000 6150 3700 6150
 Wire Bus Line
 	900  5450 850  5450
-Text HLabel 1150 2700 0    50   Output ~ 0
-GPIO8
 Text HLabel 1150 2850 0    50   Output ~ 0
 GPIO9
-Wire Wire Line
-	1150 2700 3700 2700
 Wire Wire Line
 	1150 2850 3700 2850
 Text HLabel 1150 3150 0    50   Input ~ 0
@@ -901,7 +897,7 @@ RPi_UART1_RX
 Text Label 1550 4650 2    50   ~ 0
 RPi_UART1_TX
 Text HLabel 850  4550 0    50   BiDi ~ 0
-<<<<<<< HEAD
+RPI_UART1
 Entry Wire Line
 	900  4550 1000 4650
 Entry Wire Line
@@ -1112,9 +1108,9 @@ I2C_1
 Wire Bus Line
 	1350 1250 1350 1400
 Text Label 17200 2850 2    50   ~ 0
-Rpi.SDA1
+Rpi.SDA0
 Text Label 17200 2950 2    50   ~ 0
-Rpi.SCL1
+Rpi.SCL0
 Entry Wire Line
 	16750 2750 16850 2850
 Entry Wire Line
@@ -1122,7 +1118,7 @@ Entry Wire Line
 Wire Bus Line
 	16400 2750 16750 2750
 Text HLabel 16400 2750 0    50   BiDi ~ 0
-I2C_1
+I2C_0
 Wire Bus Line
 	16750 2850 16750 2750
 Wire Wire Line

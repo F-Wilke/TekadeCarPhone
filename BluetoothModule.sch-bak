@@ -154,10 +154,6 @@ Wire Wire Line
 	3750 1150 3750 3900
 Text HLabel 1900 4200 0    50   Input ~ 0
 BM83_MFB
-NoConn ~ 6050 3800
-NoConn ~ 6050 2100
-Text HLabel 8300 3300 2    50   Input ~ 0
-BM83_Reset
 Text HLabel 8950 1700 2    50   BiDi ~ 0
 UART
 Entry Wire Line
@@ -1321,12 +1317,6 @@ Wire Wire Line
 	2100 1800 4050 1800
 Entry Wire Line
 	2000 1700 2100 1800
-Wire Wire Line
-	1550 3000 2900 3000
-Wire Bus Line
-	1450 2600 1350 2600
-Text HLabel 2400 5200 0    50   Input ~ 0
-BM83_MFB
 Entry Wire Line
 	2000 1600 2100 1700
 Text HLabel 1900 1600 0    50   BiDi ~ 0
@@ -1352,21 +1342,12 @@ F 3 "~" H 6350 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7100 1050 6350 1050
-Connection ~ 7100 1050
-Wire Wire Line
-	7350 1050 7100 1050
-Wire Wire Line
 	7350 3650 7350 1050
 Wire Wire Line
 	7350 5050 7350 3950
 Wire Wire Line
-	6900 3700 6900 5050
-Wire Wire Line
 	6900 1700 7100 1700
 Connection ~ 6900 1700
-Wire Wire Line
-	6900 3400 6900 1700
 $Comp
 L power:GND #PWR?
 U 1 1 60DAF699
@@ -1415,10 +1396,6 @@ Text Notes 6750 1000 0    50   ~ 0
 Overtemp SD
 Wire Wire Line
 	6050 1900 8800 1900
-Text Label 8300 1900 0    50   ~ 0
-RPi_UART_TX
-Text Label 8300 2000 0    50   ~ 0
-RPi_UART_RX
 Wire Wire Line
 	6050 2000 8800 2000
 Connection ~ 7100 1700
@@ -1463,13 +1440,9 @@ Wire Wire Line
 	7100 4350 7100 4500
 Wire Wire Line
 	7100 1550 7100 1700
-Wire Wire Line
-	0    0    0    0   
-Wire Bus Line
-	6800 2700 6850 2700
-Text Label 6150 3000 0    50   ~ 0
+Text Label 8150 2000 0    50   ~ 0
 RPi_UART0_RX
-Text Label 6150 2900 0    50   ~ 0
+Text Label 8150 1900 0    50   ~ 0
 RPi_UART0_TX
 $Comp
 L Device:R R?
@@ -1494,25 +1467,14 @@ Wire Wire Line
 	6350 1250 6350 1050
 Wire Wire Line
 	6350 1050 6150 1050
-Wire Wire Line
-	0    0    0    0   
 Entry Wire Line
-	6700 3100 6800 3000
+	8800 2100 8900 2000
 Entry Wire Line
-	6700 4800 6800 4700
-Wire Wire Line
-	4900 4800 6700 4800
-Text Label 6150 4800 0    50   ~ 0
+	8800 3800 8900 3700
+Text Label 8150 3800 0    50   ~ 0
 RPi_UART0_RTS
-Text Label 6150 3100 0    50   ~ 0
+Text Label 8150 2100 0    50   ~ 0
 RPi_UART0_CTS
-Wire Wire Line
-	4900 3100 6700 3100
-Wire Bus Line
-	1450 2600 1450 2900
-Wire Bus Line
-	6800 2700 6800 4700
-Connection ~ 6350 3300
 Connection ~ 6350 1050
 Wire Notes Line
 	6700 900  7550 900 
@@ -1522,8 +1484,25 @@ Wire Notes Line
 	7550 5350 6700 5350
 Wire Notes Line
 	6700 5350 6700 900 
-Wire Bus Line
-	8900 1700 8900 1900
+Wire Wire Line
+	6350 1050 7100 1050
+Wire Wire Line
+	4050 1700 2100 1700
+Wire Wire Line
+	6900 1700 6900 3400
+Wire Wire Line
+	6900 3700 6900 5050
+Wire Wire Line
+	6050 3800 8800 3800
+Wire Wire Line
+	7100 1250 7100 1050
+Connection ~ 7100 1050
+Wire Wire Line
+	7100 1050 7350 1050
+Wire Wire Line
+	6050 2100 8800 2100
 Wire Bus Line
 	2000 1600 2000 1900
+Wire Bus Line
+	8900 1700 8900 3700
 $EndSCHEMATC

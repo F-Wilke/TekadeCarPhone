@@ -260,10 +260,6 @@ Text Label 10850 1600 2    50   ~ 0
 Audio_Master_Out_R
 Text Label 10850 1700 2    50   ~ 0
 Audio_Master_Out_L
-Wire Wire Line
-	14800 6900 15050 6900
-Wire Wire Line
-	14000 6800 14300 6800
 NoConn ~ 14800 7700
 NoConn ~ 14800 7800
 NoConn ~ 14800 7900
@@ -386,43 +382,26 @@ U 614D7E9D
 F0 "RPiCM" 50
 F1 "RaspberryPiCM.sch" 50
 F2 "RPi_USB" B R 5550 1550 50 
-F3 "RPI_I2S" B R 5550 1750 50 
-F4 "GPIO8" O R 5550 2850 50 
-F5 "GPIO9" O R 5550 2950 50 
-F6 "GPIO10" I R 5550 3050 50 
-F7 "I2C_0" B R 5550 2200 50 
-F8 "I2C_1" B R 5550 2350 50 
-F9 "RUN" I R 5550 3150 50 
-F10 "RPI_UART1" B R 5550 2050 50 
-F11 "RPI_UART0" B R 5550 1900 50 
+F3 "RPI_I2S" B R 5550 1900 50 
+F4 "GPIO9" O R 5550 2950 50 
+F5 "GPIO10" I R 5550 3050 50 
+F6 "I2C_0" B R 5550 2200 50 
+F7 "I2C_1" B R 5550 2050 50 
+F8 "RUN" I R 5550 3150 50 
+F9 "RPI_UART1" B R 5550 1750 50 
+F10 "RPI_UART0" B R 5550 2350 50 
 $EndSheet
 Text Label 5850 3050 0    50   ~ 0
 MAX_*IRQ
 Text Label 5850 2950 0    50   ~ 0
 BM83_MFB
-Text Label 5850 2850 0    50   ~ 0
-BM83_Reset
 Wire Wire Line
 	5850 3050 5550 3050
 Wire Wire Line
 	5550 2950 5850 2950
-Wire Wire Line
-	5850 2850 5550 2850
-Text Label 5850 3450 0    50   ~ 0
-MAX_*IRQ
-Text Label 5850 3350 0    50   ~ 0
-BM83_MFB
-Text Label 5850 3250 0    50   ~ 0
-BM83_Reset
-Wire Wire Line
-	5850 3450 5550 3450
-Wire Wire Line
-	5550 3350 5850 3350
-Wire Wire Line
-	5850 3250 5550 3250
 Text Label 5850 1550 0    50   ~ 0
 RPi_USB
-Text Label 5750 1900 0    50   ~ 0
+Text Label 5800 1900 0    50   ~ 0
 I2S_RPI_MAX98
 Wire Bus Line
 	5550 1550 5850 1550
@@ -432,28 +411,13 @@ U 620639FD
 F0 "BluetoothModule" 50
 F1 "BluetoothModule.sch" 50
 F2 "I2S_Slave" B L 7200 4050 50 
-F3 "BM83_Reset" I L 7200 4500 50 
-F4 "BM83_MFB" I L 7200 4750 50 
-F5 "UART" B L 7200 4200 50 
+F3 "BM83_MFB" I L 7200 4750 50 
+F4 "UART" B L 7200 4200 50 
 $EndSheet
 Text Label 6900 4750 2    50   ~ 0
 BM83_MFB
-Text Label 6900 4500 2    50   ~ 0
-BM83_Reset
 Wire Wire Line
 	7200 4750 6900 4750
-Wire Wire Line
-	6900 4500 7200 4500
-Text Label 6900 2000 2    50   ~ 0
-BM83_I2S
-Wire Bus Line
-	6900 2000 7200 2000
-Text Label 6900 4050 2    50   ~ 0
-BM83_I2S
-Text Label 5850 1900 0    50   ~ 0
-RPI_BM83_UART
-Text Label 6900 4200 2    50   ~ 0
-RPI_BM83_UART
 Text Label 7100 2350 2    50   ~ 0
 I2S_MAX98_BM83
 Text Label 5750 2350 0    50   ~ 0
@@ -545,10 +509,6 @@ Text Label 5850 2200 0    50   ~ 0
 RPI_I2C_0
 Wire Bus Line
 	5550 2200 5850 2200
-Text Label 6900 2400 2    50   ~ 0
-RPI_I2C_0
-Wire Bus Line
-	7200 2400 6900 2400
 Text Label 4100 6550 0    50   ~ 0
 RPI_RUN
 Text Label 5850 3150 0    50   ~ 0
@@ -573,8 +533,6 @@ Text Label 900  1700 2    50   ~ 0
 5V_EN_Signal
 Wire Wire Line
 	1200 1700 900  1700
-Text Label 5850 2050 0    50   ~ 0
-RPI_ATMEGA_UART
 Text Label 4100 7500 0    50   ~ 0
 RPI_ATMEGA_UART
 Wire Bus Line
@@ -692,7 +650,7 @@ Wire Notes Line
 	9500 9650 15950 9650
 Wire Notes Line
 	9500 5500 9500 9650
-Text Label 5750 2050 0    50   ~ 0
+Text Label 5800 2050 0    50   ~ 0
 I2C_RPI_MAX98
 Wire Bus Line
 	6450 2350 6450 4050
@@ -765,10 +723,6 @@ Wire Wire Line
 Wire Wire Line
 	13350 7700 14300 7700
 Wire Wire Line
-	14000 7800 14300 7800
-Wire Wire Line
-	14000 7900 14300 7900
-Wire Wire Line
 	8800 1950 12000 1950
 Wire Bus Line
 	6450 4050 7200 4050
@@ -780,6 +734,14 @@ Wire Wire Line
 	8800 2650 12000 2650
 Wire Bus Line
 	5550 2050 7200 2050
+Text Label 5800 1750 0    50   ~ 0
+UART_RPI_ATMEGA
+Wire Bus Line
+	5800 1750 5550 1750
+Wire Wire Line
+	14100 7900 14300 7900
+Wire Wire Line
+	14300 7800 14250 7800
 Wire Bus Line
 	13250 5950 13250 6600
 Wire Bus Line
