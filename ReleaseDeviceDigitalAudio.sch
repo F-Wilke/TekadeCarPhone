@@ -750,4 +750,6 @@ Wire Bus Line
 	13250 7000 13250 8200
 Wire Bus Line
 	15850 7100 15850 8200
+Text Notes 9500 5750 0    50   ~ 0
+Spiegelung um Längsachse nätig, je nach Orientierung
 $EndSCHEMATC

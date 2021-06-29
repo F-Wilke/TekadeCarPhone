@@ -717,21 +717,19 @@ F 3 "~" H 2450 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1900 4950 2    50   ~ 0
-Digit9_Cathode
+Digit4_Cathode
 Text Label 1900 4850 2    50   ~ 0
-Digit7_Cathode
+Digit2_Cathode
 Text Label 1900 4750 2    50   ~ 0
-Digit3_Cathode
+DigitB_Cathode
 Text Label 1900 4650 2    50   ~ 0
-Digit18_Cathode
+Digit13_Cathode
 Text Label 1900 4550 2    50   ~ 0
-Digit16_Cathode
+Digit11_Cathode
 Text Label 1900 4450 2    50   ~ 0
-Digit14_Cathode
+Digit9_Cathode
 Text Label 1900 4350 2    50   ~ 0
-Digit12_Cathode
-Text Label 1900 4250 2    50   ~ 0
-Digit20_Cathode
+Digit7_Cathode
 Text Label 1900 4150 2    50   ~ 0
 SegmentC_Anode
 Text Label 1900 4050 2    50   ~ 0
@@ -746,26 +744,24 @@ Text Label 3050 3950 0    50   ~ 0
 SegmentB_Anode
 Text Label 3050 4050 0    50   ~ 0
 SegmentG_Anode
-Text Label 3050 4150 0    50   ~ 0
-Digit21_Cathode
 Text Label 3050 4250 0    50   ~ 0
-Digit19_Cathode
+Digit14_Cathode
 Text Label 3050 4350 0    50   ~ 0
-Digit13_Cathode
-Text Label 3050 4450 0    50   ~ 0
-Digit15_Cathode
-Text Label 3050 4550 0    50   ~ 0
-Digit17_Cathode
-Text Label 3050 4650 0    50   ~ 0
-Digit11_Cathode
-Text Label 3050 4750 0    50   ~ 0
-Digit2_Cathode
-Text Label 3050 4850 0    50   ~ 0
-Digit6_Cathode
-Text Label 3050 4950 0    50   ~ 0
 Digit8_Cathode
-Text Label 3050 5050 0    50   ~ 0
+Text Label 3050 4450 0    50   ~ 0
 Digit10_Cathode
+Text Label 3050 4550 0    50   ~ 0
+Digit12_Cathode
+Text Label 3050 4650 0    50   ~ 0
+Digit6_Cathode
+Text Label 3050 4750 0    50   ~ 0
+DigitA_Cathode
+Text Label 3050 4850 0    50   ~ 0
+Digit1_Cathode
+Text Label 3050 4950 0    50   ~ 0
+Digit3_Cathode
+Text Label 3050 5050 0    50   ~ 0
+Digit5_Cathode
 Text Label 3050 5150 0    50   ~ 0
 Pinline_GND
 Text Label 3050 5250 0    50   ~ 0
@@ -776,8 +772,6 @@ Wire Wire Line
 	2750 3950 3050 3950
 Wire Wire Line
 	2750 4050 3050 4050
-Wire Wire Line
-	3050 4150 2750 4150
 Wire Wire Line
 	2750 4250 3050 4250
 Wire Wire Line
@@ -814,8 +808,6 @@ Wire Wire Line
 	1900 4450 2250 4450
 Wire Wire Line
 	2250 4350 1900 4350
-Wire Wire Line
-	1900 4250 2250 4250
 Wire Wire Line
 	2250 4150 1900 4150
 Wire Wire Line
@@ -1700,98 +1692,94 @@ Text Label 2800 2000 2    50   ~ 0
 SegmentG_Anode
 Text Label 2800 2100 2    50   ~ 0
 SegmentD_Anode
-Text Label 3200 2350 2    50   ~ 0
-Digit2_Cathode
+Text Label 13450 2350 2    50   ~ 0
+DigitA_Cathode
 Wire Wire Line
 	3300 2350 3200 2350
 Wire Wire Line
 	3300 1700 3300 2350
-Text Label 3950 2350 2    50   ~ 0
-Digit3_Cathode
-Text Label 14150 2350 2    50   ~ 0
-Digit19_Cathode
-Text Label 9750 2350 2    50   ~ 0
-Digit13_Cathode
-Text Label 11200 2350 2    50   ~ 0
-Digit15_Cathode
+Text Label 14200 2350 2    50   ~ 0
+DigitB_Cathode
 Text Label 12700 2350 2    50   ~ 0
-Digit17_Cathode
-Text Label 8300 2350 2    50   ~ 0
-Digit11_Cathode
-Text Label 4650 2350 2    50   ~ 0
-Digit6_Cathode
-Text Label 6100 2350 2    50   ~ 0
-Digit8_Cathode
-Text Label 7600 2350 2    50   ~ 0
-Digit10_Cathode
-Text Label 6850 2350 2    50   ~ 0
-Digit9_Cathode
-Text Label 5350 2350 2    50   ~ 0
-Digit7_Cathode
-Text Label 13400 2350 2    50   ~ 0
-Digit18_Cathode
-Text Label 11900 2350 2    50   ~ 0
-Digit16_Cathode
-Text Label 10450 2350 2    50   ~ 0
 Digit14_Cathode
-Text Label 9050 2350 2    50   ~ 0
+Text Label 8350 2350 2    50   ~ 0
+Digit8_Cathode
+Text Label 9750 2350 2    50   ~ 0
+Digit10_Cathode
+Text Label 11200 2350 2    50   ~ 0
 Digit12_Cathode
+Text Label 6850 2350 2    50   ~ 0
+Digit6_Cathode
+Text Label 3200 2350 2    50   ~ 0
+Digit1_Cathode
+Text Label 4650 2350 2    50   ~ 0
+Digit3_Cathode
+Text Label 6150 2350 2    50   ~ 0
+Digit5_Cathode
+Text Label 5400 2350 2    50   ~ 0
+Digit4_Cathode
+Text Label 3900 2350 2    50   ~ 0
+Digit2_Cathode
+Text Label 11950 2350 2    50   ~ 0
+Digit13_Cathode
+Text Label 10500 2350 2    50   ~ 0
+Digit11_Cathode
+Text Label 9000 2350 2    50   ~ 0
+Digit9_Cathode
+Text Label 7650 2350 2    50   ~ 0
+Digit7_Cathode
 Wire Wire Line
-	14150 2350 14200 2350
-Wire Wire Line
-	14200 1700 14200 2350
-Wire Wire Line
-	13450 2350 13400 2350
-Wire Wire Line
-	13450 1700 13450 2350
-Wire Wire Line
-	12750 2350 12700 2350
+	12700 2350 12750 2350
 Wire Wire Line
 	12750 1700 12750 2350
 Wire Wire Line
-	12000 2350 11900 2350
+	12000 2350 11950 2350
 Wire Wire Line
 	12000 1700 12000 2350
 Wire Wire Line
-	11200 2350 11250 2350
+	11250 2350 11200 2350
 Wire Wire Line
 	11250 1700 11250 2350
 Wire Wire Line
-	10500 2350 10450 2350
-Wire Wire Line
 	10500 1700 10500 2350
 Wire Wire Line
-	9800 2350 9750 2350
+	9750 2350 9800 2350
 Wire Wire Line
 	9800 1700 9800 2350
 Wire Wire Line
+	9050 2350 9000 2350
+Wire Wire Line
 	9050 1700 9050 2350
 Wire Wire Line
-	8400 2350 8300 2350
+	8400 2350 8350 2350
 Wire Wire Line
 	8400 1700 8400 2350
 Wire Wire Line
 	7650 1700 7650 2350
 Wire Wire Line
-	6850 2350 6950 2350
+	6950 2350 6850 2350
 Wire Wire Line
 	6950 1700 6950 2350
 Wire Wire Line
 	6200 1700 6200 2350
 Wire Wire Line
-	5500 2350 5350 2350
+	5400 2350 5500 2350
 Wire Wire Line
 	5500 1700 5500 2350
 Wire Wire Line
-	6100 2350 6200 2350
-Wire Wire Line
-	4750 2350 4650 2350
-Wire Wire Line
 	4750 1700 4750 2350
-Wire Wire Line
-	4050 2350 3950 2350
 Wire Wire Line
 	4050 1700 4050 2350
 Wire Wire Line
-	7600 2350 7650 2350
+	4650 2350 4750 2350
+Wire Wire Line
+	6150 2350 6200 2350
+Wire Wire Line
+	3900 2350 4050 2350
+Wire Wire Line
+	13450 2350 13450 1700
+Wire Wire Line
+	14200 2350 14200 1700
+NoConn ~ 2750 4150
+NoConn ~ 2250 4250
 $EndSCHEMATC
