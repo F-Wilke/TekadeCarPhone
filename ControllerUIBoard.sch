@@ -43,19 +43,6 @@ $EndComp
 Wire Wire Line
 	5100 1050 5100 950 
 $Comp
-L power:Earth #PWR?
-U 1 1 60F80B68
-P 5950 7500
-AR Path="/60F80B68" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80B68" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5950 7250 50  0001 C CNN
-F 1 "Earth" H 5950 7350 50  0001 C CNN
-F 2 "" H 5950 7500 50  0001 C CNN
-F 3 "~" H 5950 7500 50  0001 C CNN
-	1    5950 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal Y?
 U 1 1 60F80B6E
 P 4200 1750
@@ -66,19 +53,6 @@ F 1 "16MHz" V 4245 1881 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 4200 1750 50  0001 C CNN
 F 3 "https://abracon.com/Resonators/abm3.pdf" H 4200 1750 50  0001 C CNN
 	1    4200 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80B74
-P 3500 1750
-AR Path="/60F80B74" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80B74" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3500 1500 50  0001 C CNN
-F 1 "Earth" H 3500 1600 50  0001 C CNN
-F 2 "" H 3500 1750 50  0001 C CNN
-F 3 "~" H 3500 1750 50  0001 C CNN
-	1    3500 1750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -118,12 +92,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2000 3500 2000
 Wire Wire Line
-	3500 2000 3500 1750
-Wire Wire Line
 	3800 1550 3500 1550
-Wire Wire Line
-	3500 1550 3500 1750
-Connection ~ 3500 1750
 Connection ~ 4200 1550
 Wire Wire Line
 	4200 1550 4400 1550
@@ -221,37 +190,11 @@ Connection ~ 5400 1350
 Wire Wire Line
 	5100 1350 5100 1450
 Connection ~ 5100 1350
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80BC1
-P 5100 1450
-AR Path="/60F80BC1" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80BC1" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5100 1200 50  0001 C CNN
-F 1 "Earth" H 5100 1300 50  0001 C CNN
-F 2 "" H 5100 1450 50  0001 C CNN
-F 3 "~" H 5100 1450 50  0001 C CNN
-	1    5100 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 950  5400 950 
 Wire Wire Line
 	5100 950  5100 750 
 Connection ~ 5100 950 
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80BCA
-P 4150 2300
-AR Path="/60F80BCA" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80BCA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4150 2050 50  0001 C CNN
-F 1 "Earth" H 4150 2150 50  0001 C CNN
-F 2 "" H 4150 2300 50  0001 C CNN
-F 3 "~" H 4150 2300 50  0001 C CNN
-	1    4150 2300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4400 2000 4400 2100
 Wire Wire Line
@@ -313,21 +256,6 @@ $EndComp
 Wire Wire Line
 	2750 5400 3000 5400
 $Comp
-L power:Earth #PWR?
-U 1 1 60F80BED
-P 2350 5900
-AR Path="/60F80BED" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80BED" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2350 5650 50  0001 C CNN
-F 1 "Earth" H 2350 5750 50  0001 C CNN
-F 2 "" H 2350 5900 50  0001 C CNN
-F 3 "~" H 2350 5900 50  0001 C CNN
-	1    2350 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 5700 2350 5900
-$Comp
 L power:+5V #PWR?
 U 1 1 60F80BF4
 P 2350 4350
@@ -339,19 +267,6 @@ F 2 "" H 2350 4350 50  0001 C CNN
 F 3 "" H 2350 4350 50  0001 C CNN
 	1    2350 4350
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80BFA
-P 1400 4500
-AR Path="/60F80BFA" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80BFA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1400 4250 50  0001 C CNN
-F 1 "Earth" H 1400 4350 50  0001 C CNN
-F 2 "" H 1400 4500 50  0001 C CNN
-F 3 "~" H 1400 4500 50  0001 C CNN
-	1    1400 4500
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
@@ -389,19 +304,6 @@ F 1 "ATMEGA_ICSP" H 2200 3476 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2150 3250 50  0001 C CNN
 F 3 "~" H 2150 3250 50  0001 C CNN
 	1    2150 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80C12
-P 2850 3550
-AR Path="/60F80C12" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C12" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2850 3300 50  0001 C CNN
-F 1 "Earth" H 2850 3400 50  0001 C CNN
-F 2 "" H 2850 3550 50  0001 C CNN
-F 3 "~" H 2850 3550 50  0001 C CNN
-	1    2850 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -473,19 +375,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 6200 8300 6200
 $Comp
-L power:Earth #PWR?
-U 1 1 60F80C39
-P 8600 6200
-AR Path="/60F80C39" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C39" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8600 5950 50  0001 C CNN
-F 1 "Earth" H 8600 6050 50  0001 C CNN
-F 2 "" H 8600 6200 50  0001 C CNN
-F 3 "~" H 8600 6200 50  0001 C CNN
-	1    8600 6200
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_US R?
 U 1 1 60F80C3F
 P 8450 6200
@@ -497,19 +386,6 @@ F 2 "Resistor_SMD:R_0402_1005Metric" V 8490 6190 50  0001 C CNN
 F 3 "~" H 8450 6200 50  0001 C CNN
 	1    8450 6200
 	0    1    1    0   
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80C45
-P 9000 6300
-AR Path="/60F80C45" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C45" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9000 6050 50  0001 C CNN
-F 1 "Earth" H 9000 6150 50  0001 C CNN
-F 2 "" H 9000 6300 50  0001 C CNN
-F 3 "~" H 9000 6300 50  0001 C CNN
-	1    9000 6300
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R?
@@ -525,19 +401,6 @@ F 3 "~" H 8850 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
-U 1 1 60F80C51
-P 9400 6400
-AR Path="/60F80C51" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C51" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9400 6150 50  0001 C CNN
-F 1 "Earth" H 9400 6250 50  0001 C CNN
-F 2 "" H 9400 6400 50  0001 C CNN
-F 3 "~" H 9400 6400 50  0001 C CNN
-	1    9400 6400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_US R?
 U 1 1 60F80C57
 P 9250 6400
@@ -549,19 +412,6 @@ F 2 "Resistor_SMD:R_0402_1005Metric" V 9290 6390 50  0001 C CNN
 F 3 "~" H 9250 6400 50  0001 C CNN
 	1    9250 6400
 	0    1    1    0   
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80C5D
-P 9800 6500
-AR Path="/60F80C5D" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C5D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9800 6250 50  0001 C CNN
-F 1 "Earth" H 9800 6350 50  0001 C CNN
-F 2 "" H 9800 6500 50  0001 C CNN
-F 3 "~" H 9800 6500 50  0001 C CNN
-	1    9800 6500
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_US R?
@@ -591,19 +441,6 @@ DataEncoderDataOutC
 Text Label 7150 6500 0    50   ~ 0
 DataEncoderDataOutD
 $Comp
-L power:Earth #PWR?
-U 1 1 60F80C70
-P 10200 6600
-AR Path="/60F80C70" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C70" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10200 6350 50  0001 C CNN
-F 1 "Earth" H 10200 6450 50  0001 C CNN
-F 2 "" H 10200 6600 50  0001 C CNN
-F 3 "~" H 10200 6600 50  0001 C CNN
-	1    10200 6600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_US R?
 U 1 1 60F80C76
 P 10050 6600
@@ -620,19 +457,6 @@ Text Label 7150 6600 0    50   ~ 0
 DataEncoderDataOutE
 Wire Wire Line
 	6750 6600 9900 6600
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80C7E
-P 10600 6700
-AR Path="/60F80C7E" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C7E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10600 6450 50  0001 C CNN
-F 1 "Earth" H 10600 6550 50  0001 C CNN
-F 2 "" H 10600 6700 50  0001 C CNN
-F 3 "~" H 10600 6700 50  0001 C CNN
-	1    10600 6700
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R_US R?
 U 1 1 60F80C84
@@ -840,20 +664,7 @@ Wire Wire Line
 	3400 4150 2950 4150
 Connection ~ 2950 4150
 Wire Wire Line
-	2950 4150 2550 4150
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80CEA
-P 2950 4150
-AR Path="/60F80CEA" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80CEA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2950 3900 50  0001 C CNN
-F 1 "Earth" H 2950 4000 50  0001 C CNN
-F 2 "" H 2950 4150 50  0001 C CNN
-F 3 "~" H 2950 4150 50  0001 C CNN
-	1    2950 4150
-	-1   0    0    1   
-$EndComp
+	2950 4150 2750 4150
 Connection ~ 2350 4450
 Wire Wire Line
 	2350 4450 2350 4500
@@ -882,19 +693,6 @@ F 1 "12MHz" V 845 5531 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 800 5400 50  0001 C CNN
 F 3 "~" H 800 5400 50  0001 C CNN
 	1    800  5400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 60F80CFF
-P 100 5400
-AR Path="/60F80CFF" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80CFF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 100 5150 50  0001 C CNN
-F 1 "Earth" H 100 5250 50  0001 C CNN
-F 2 "" H 100 5400 50  0001 C CNN
-F 3 "~" H 100 5400 50  0001 C CNN
-	1    100  5400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -932,14 +730,9 @@ Wire Wire Line
 Wire Wire Line
 	800  5650 700  5650
 Wire Wire Line
-	400  5650 100  5650
-Wire Wire Line
-	100  5650 100  5400
+	400  5650 200  5650
 Wire Wire Line
 	400  5200 100  5200
-Wire Wire Line
-	100  5200 100  5400
-Connection ~ 100  5400
 Connection ~ 800  5200
 Connection ~ 800  5650
 Wire Wire Line
@@ -1163,4 +956,190 @@ Wire Wire Line
 	5900 -750 6500 -750
 Wire Wire Line
 	1900 -750 2950 -750
+$Comp
+L power:GND #PWR?
+U 1 1 60E95E20
+P 5950 7500
+F 0 "#PWR?" H 5950 7250 50  0001 C CNN
+F 1 "GND" H 5955 7327 50  0000 C CNN
+F 2 "" H 5950 7500 50  0001 C CNN
+F 3 "" H 5950 7500 50  0001 C CNN
+	1    5950 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5700 2350 5900
+$Comp
+L power:GND #PWR?
+U 1 1 60E96B53
+P 2350 5900
+F 0 "#PWR?" H 2350 5650 50  0001 C CNN
+F 1 "GND" H 2355 5727 50  0000 C CNN
+F 2 "" H 2350 5900 50  0001 C CNN
+F 3 "" H 2350 5900 50  0001 C CNN
+	1    2350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E96FD9
+P 200 5750
+F 0 "#PWR?" H 200 5500 50  0001 C CNN
+F 1 "GND" H 205 5577 50  0000 C CNN
+F 2 "" H 200 5750 50  0001 C CNN
+F 3 "" H 200 5750 50  0001 C CNN
+	1    200  5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	100  5200 100  5650
+Wire Wire Line
+	200  5650 200  5750
+Connection ~ 200  5650
+Wire Wire Line
+	200  5650 100  5650
+$Comp
+L power:GND #PWR?
+U 1 1 60E9D02C
+P 1400 4500
+F 0 "#PWR?" H 1400 4250 50  0001 C CNN
+F 1 "GND" H 1405 4327 50  0000 C CNN
+F 2 "" H 1400 4500 50  0001 C CNN
+F 3 "" H 1400 4500 50  0001 C CNN
+	1    1400 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EA3704
+P 2750 4100
+F 0 "#PWR?" H 2750 3850 50  0001 C CNN
+F 1 "GND" H 2755 3927 50  0000 C CNN
+F 2 "" H 2750 4100 50  0001 C CNN
+F 3 "" H 2750 4100 50  0001 C CNN
+	1    2750 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4100 2750 4150
+Connection ~ 2750 4150
+Wire Wire Line
+	2750 4150 2550 4150
+$Comp
+L power:GND #PWR?
+U 1 1 60EA9CE3
+P 2850 3550
+F 0 "#PWR?" H 2850 3300 50  0001 C CNN
+F 1 "GND" H 2855 3377 50  0000 C CNN
+F 2 "" H 2850 3550 50  0001 C CNN
+F 3 "" H 2850 3550 50  0001 C CNN
+	1    2850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EAA21B
+P 5100 1450
+F 0 "#PWR?" H 5100 1200 50  0001 C CNN
+F 1 "GND" H 5105 1277 50  0000 C CNN
+F 2 "" H 5100 1450 50  0001 C CNN
+F 3 "" H 5100 1450 50  0001 C CNN
+	1    5100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EAA6B6
+P 4150 2300
+F 0 "#PWR?" H 4150 2050 50  0001 C CNN
+F 1 "GND" H 4155 2127 50  0000 C CNN
+F 2 "" H 4150 2300 50  0001 C CNN
+F 3 "" H 4150 2300 50  0001 C CNN
+	1    4150 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 1550 3500 1750
+$Comp
+L power:GND #PWR?
+U 1 1 60EAAEB7
+P 3400 1750
+F 0 "#PWR?" H 3400 1500 50  0001 C CNN
+F 1 "GND" H 3405 1577 50  0000 C CNN
+F 2 "" H 3400 1750 50  0001 C CNN
+F 3 "" H 3400 1750 50  0001 C CNN
+	1    3400 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 1750 3500 1750
+Connection ~ 3500 1750
+Wire Wire Line
+	3500 1750 3500 2000
+$Comp
+L power:GND #PWR?
+U 1 1 60EB154A
+P 8600 6200
+F 0 "#PWR?" H 8600 5950 50  0001 C CNN
+F 1 "GND" H 8605 6027 50  0000 C CNN
+F 2 "" H 8600 6200 50  0001 C CNN
+F 3 "" H 8600 6200 50  0001 C CNN
+	1    8600 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EB1D90
+P 9000 6300
+F 0 "#PWR?" H 9000 6050 50  0001 C CNN
+F 1 "GND" H 9005 6127 50  0000 C CNN
+F 2 "" H 9000 6300 50  0001 C CNN
+F 3 "" H 9000 6300 50  0001 C CNN
+	1    9000 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EB207D
+P 9400 6400
+F 0 "#PWR?" H 9400 6150 50  0001 C CNN
+F 1 "GND" H 9405 6227 50  0000 C CNN
+F 2 "" H 9400 6400 50  0001 C CNN
+F 3 "" H 9400 6400 50  0001 C CNN
+	1    9400 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EB239D
+P 9800 6500
+F 0 "#PWR?" H 9800 6250 50  0001 C CNN
+F 1 "GND" H 9805 6327 50  0000 C CNN
+F 2 "" H 9800 6500 50  0001 C CNN
+F 3 "" H 9800 6500 50  0001 C CNN
+	1    9800 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EB2710
+P 10200 6600
+F 0 "#PWR?" H 10200 6350 50  0001 C CNN
+F 1 "GND" H 10205 6427 50  0000 C CNN
+F 2 "" H 10200 6600 50  0001 C CNN
+F 3 "" H 10200 6600 50  0001 C CNN
+	1    10200 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EB2A2C
+P 10600 6700
+F 0 "#PWR?" H 10600 6450 50  0001 C CNN
+F 1 "GND" H 10605 6527 50  0000 C CNN
+F 2 "" H 10600 6700 50  0001 C CNN
+F 3 "" H 10600 6700 50  0001 C CNN
+	1    10600 6700
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

@@ -21,7 +21,7 @@ AR Path="/61584E90" Ref="MD?"  Part="1"
 AR Path="/614D7E9D/61584E90" Ref="MD?"  Part="1" 
 F 0 "MD?" H 4700 15990 50  0000 C CNN
 F 1 "Board_RPi_CM3_200pConnector" H 4700 15899 50  0000 C CNN
-F 2 "footprints:Conn_TE-DDR2-SODIMM-0.6-200P-doublesided" H 4700 8250 10  0001 C CNN
+F 2 "TeKaDe:Conn_TE-DDR2-SODIMM-0.6-200P-doublesided" H 4700 8250 10  0001 C CNN
 F 3 "_" H 4700 8250 10  0001 C CNN
 F 4 "_" H 4700 8250 10  0001 C CNN "Manf#"
 F 5 "_" H 4700 8250 10  0001 C CNN "Manf"

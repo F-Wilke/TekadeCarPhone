@@ -179,7 +179,7 @@ ADAP_IN To be used for USB Device Firmware Upgrade (DFU)
 Text Notes 2600 4350 2    50   ~ 0
 Multi-function push button and Power On key
 Text Notes 2200 7400 0    50   ~ 0
-LED1 und 2 nicht verwenden?\nWarum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nUSB FW Update implementieren?\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nÄnderungen:\n- Bypass C an VDD_IO ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefügt\n- Pullup für active low reset pin
+BM83 im Host Mode (gesteuert von RPI)\nMFB active high -> Pulldown??\nLED1 und 2 nicht verwenden?\nWarum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nUSB FW Update implementieren?\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nÄnderungen:\n- Bypass C an VDD_IO ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefügt\n- Pullup für active low reset pin
 $Bitmap
 Pos 9750 5450
 Scale 1.000000
@@ -1340,10 +1340,6 @@ F 3 "~" H 6350 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7350 3650 7350 1050
-Wire Wire Line
-	7350 5050 7350 3950
-Wire Wire Line
 	6900 1700 7100 1700
 Connection ~ 6900 1700
 $Comp
@@ -1370,24 +1366,13 @@ F 3 "" H 6900 5050 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 60DADF73
-P 7350 3800
-F 0 "C?" H 7465 3846 50  0000 L CNN
-F 1 "100n/16V/X7R" H 7465 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3650 50  0001 C CNN
-F 3 "~" H 7350 3800 50  0001 C CNN
-	1    7350 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 60DAD2BA
-P 6900 3550
-F 0 "C?" H 7015 3596 50  0000 L CNN
-F 1 "1u/16V" H 7015 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6938 3400 50  0001 C CNN
-F 3 "~" H 6900 3550 50  0001 C CNN
-	1    6900 3550
+P 6900 3400
+F 0 "C?" H 7015 3446 50  0000 L CNN
+F 1 "1u/16V" H 7015 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6938 3250 50  0001 C CNN
+F 3 "~" H 6900 3400 50  0001 C CNN
+	1    6900 3400
 	1    0    0    -1  
 $EndComp
 Text Notes 6750 1000 0    50   ~ 0
@@ -1487,11 +1472,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 1700 2100 1700
 Wire Wire Line
-	6900 1700 6900 3400
+	6900 1700 6900 3250
 Wire Wire Line
-	6900 3700 6900 5050
-Wire Wire Line
-	6050 3800 8800 3800
+	6900 3550 6900 5050
 Wire Wire Line
 	7100 1250 7100 1050
 Connection ~ 7100 1050
@@ -1499,6 +1482,23 @@ Wire Wire Line
 	7100 1050 7350 1050
 Wire Wire Line
 	6050 2100 8800 2100
+Wire Wire Line
+	6050 3800 8800 3800
+Wire Wire Line
+	7350 5050 7350 3750
+Wire Wire Line
+	7350 3450 7350 1050
+$Comp
+L Device:C C?
+U 1 1 60DADF73
+P 7350 3600
+F 0 "C?" H 7465 3646 50  0000 L CNN
+F 1 "100n/16V/X7R" H 7465 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3450 50  0001 C CNN
+F 3 "~" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	2000 1600 2000 1900
 Wire Bus Line
