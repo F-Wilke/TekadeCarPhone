@@ -252,14 +252,6 @@ F 3 "~" H 11400 2250 50  0001 C CNN
 	1    11400 2250
 	-1   0    0    -1  
 $EndComp
-Text Label 10850 2350 2    50   ~ 0
-Line_In_L
-Text Label 10850 2250 2    50   ~ 0
-Line_In_R
-Text Label 10850 1600 2    50   ~ 0
-Audio_Master_Out_R
-Text Label 10850 1700 2    50   ~ 0
-Audio_Master_Out_L
 NoConn ~ 14800 7700
 NoConn ~ 14800 7800
 NoConn ~ 14800 7900
@@ -381,15 +373,15 @@ S 3950 1350 1600 2250
 U 614D7E9D
 F0 "RPiCM" 50
 F1 "RaspberryPiCM.sch" 50
-F2 "RPi_USB" B R 5550 1550 50 
-F3 "RPI_I2S" B R 5550 1900 50 
-F4 "GPIO9" O R 5550 2950 50 
-F5 "GPIO10" I R 5550 3050 50 
-F6 "I2C_0" B R 5550 2200 50 
-F7 "I2C_1" B R 5550 2050 50 
-F8 "RUN" I R 5550 3150 50 
-F9 "RPI_UART1" B R 5550 1750 50 
-F10 "RPI_UART0" B R 5550 2350 50 
+F2 "GPIO9" O R 5550 2950 50 
+F3 "GPIO10" I R 5550 3050 50 
+F4 "I2C0" B R 5550 2200 50 
+F5 "I2C1" B R 5550 2050 50 
+F6 "RUN" I R 5550 3150 50 
+F7 "I2S_Master" B R 5550 1900 50 
+F8 "USB" B R 5550 1550 50 
+F9 "UART1" B R 5550 1750 50 
+F10 "UART0" B R 5550 2350 50 
 $EndSheet
 Text Label 5850 3050 0    50   ~ 0
 MAX_*IRQ
@@ -505,10 +497,6 @@ F4 "SegmentAnodes" O R 8100 8550 50
 F5 "SegmentDriverData" I L 6500 8550 50 
 F6 "BrightnessRegulation" I L 6500 8800 50 
 $EndSheet
-Text Label 5850 2200 0    50   ~ 0
-RPI_I2C_0
-Wire Bus Line
-	5550 2200 5850 2200
 Text Label 4100 6550 0    50   ~ 0
 RPI_RUN
 Text Label 5850 3150 0    50   ~ 0
@@ -534,7 +522,7 @@ Text Label 900  1700 2    50   ~ 0
 Wire Wire Line
 	1200 1700 900  1700
 Text Label 4100 7500 0    50   ~ 0
-RPI_ATMEGA_UART
+UART_RPI_ATMEGA
 Wire Bus Line
 	3800 7500 4100 7500
 Text Label 8550 8550 0    50   ~ 0
@@ -742,6 +730,8 @@ Wire Wire Line
 	14100 7900 14300 7900
 Wire Wire Line
 	14300 7800 14250 7800
+Text Notes 9500 5750 0    50   ~ 0
+Spiegelung um Längsachse nätig, je nach Orientierung
 Wire Bus Line
 	13250 5950 13250 6600
 Wire Bus Line

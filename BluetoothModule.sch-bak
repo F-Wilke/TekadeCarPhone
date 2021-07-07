@@ -179,7 +179,7 @@ ADAP_IN To be used for USB Device Firmware Upgrade (DFU)
 Text Notes 2600 4350 2    50   ~ 0
 Multi-function push button and Power On key
 Text Notes 2200 7400 0    50   ~ 0
-Wer ist I2S master??\nLED1 und 2 nicht verwenden?\nWarum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nUSB FW Update implementieren?\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nÄnderungen:\n- Bypass C an VDD_IO ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefügt\n- Pullup für active low reset pin
+LED1 und 2 nicht verwenden?\nWarum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nUSB FW Update implementieren?\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nÄnderungen:\n- Bypass C an VDD_IO ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefügt\n- Pullup für active low reset pin
 $Bitmap
 Pos 9750 5450
 Scale 1.000000
@@ -1326,10 +1326,8 @@ The point-to-point nature of I2S \ntransmission eliminates the need \nfor I2C’
 Text Notes 800  900  0    50   ~ 0
 For the I2C, I2S, and UART groups, each respective group's traces should run parallel\nwith as wide spacing as possible and be isolated from other groups with GND copper\nfoil. If isolation is not possible due to limited space, please at least increase the interval\nbetween traces belonging to different groups. 
 NoConn ~ 4050 2100
-Text Notes 4550 2200 0    50   ~ 0
-OUTPUT!!\nvgl. DS 6.5
 Text Notes 1550 -150 0    50   ~ 0
-The BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nThe BM83 serves as a slave to receive clock and frame synchronous signals from the external codec or\nDSP devices\n\nMaster CLK nicht notwendig?\nThis is not part of the I2S standard,[4] \nbut is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
+Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung des Slaves verwendet werden.\nDies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten, vgl. DS 6.5\nVermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, so dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK nicht notwendig?\nThis is not part of the I2S standard,[4] \nbut is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
 $Comp
 L Device:R R?
 U 1 1 60DB214B

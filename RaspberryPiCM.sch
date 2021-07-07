@@ -21,7 +21,7 @@ AR Path="/61584E90" Ref="MD?"  Part="1"
 AR Path="/614D7E9D/61584E90" Ref="MD?"  Part="1" 
 F 0 "MD?" H 4700 15990 50  0000 C CNN
 F 1 "Board_RPi_CM3_200pConnector" H 4700 15899 50  0000 C CNN
-F 2 "footprints:Conn_TE-DDR2-SODIMM-0.6-200P-doublesided" H 4700 8250 10  0001 C CNN
+F 2 "TeKaDe:Conn_TE-DDR2-SODIMM-0.6-200P-doublesided" H 4700 8250 10  0001 C CNN
 F 3 "_" H 4700 8250 10  0001 C CNN
 F 4 "_" H 4700 8250 10  0001 C CNN "Manf#"
 F 5 "_" H 4700 8250 10  0001 C CNN "Manf"
@@ -857,7 +857,7 @@ Wire Wire Line
 Wire Bus Line
 	850  13100 1200 13100
 Text HLabel 850  13100 0    50   BiDi ~ 0
-RPi_USB
+USB
 Wire Bus Line
 	1200 13100 1200 13250
 Text HLabel 850  5450 0    50   BiDi ~ 0
@@ -889,15 +889,15 @@ GPIO10
 Wire Wire Line
 	1150 3150 3700 3150
 Wire Wire Line
-	1450 1350 3700 1350
+	1450 1350 2500 1350
 Wire Wire Line
-	1450 1500 3700 1500
+	1450 1500 2850 1500
 Text Label 1550 4800 2    50   ~ 0
 RPi_UART1_RX
 Text Label 1550 4650 2    50   ~ 0
 RPi_UART1_TX
 Text HLabel 850  4550 0    50   BiDi ~ 0
-RPI_UART1
+UART1
 Entry Wire Line
 	900  4550 1000 4650
 Entry Wire Line
@@ -1084,9 +1084,9 @@ Rpi.SDA0
 Text Label 1800 1050 2    50   ~ 0
 Rpi.SCL0
 Wire Wire Line
-	1450 900  3700 900 
+	1450 900  1750 900 
 Wire Wire Line
-	1450 1050 3700 1050
+	1450 1050 2150 1050
 Entry Wire Line
 	1350 800  1450 900 
 Entry Wire Line
@@ -1104,7 +1104,7 @@ Entry Wire Line
 Wire Bus Line
 	1000 1250 1350 1250
 Text HLabel 1000 1250 0    50   BiDi ~ 0
-I2C_1
+I2C1
 Wire Bus Line
 	1350 1250 1350 1400
 Text Label 17200 2850 2    50   ~ 0
@@ -1118,7 +1118,7 @@ Entry Wire Line
 Wire Bus Line
 	16400 2750 16750 2750
 Text HLabel 16400 2750 0    50   BiDi ~ 0
-I2C_0
+I2C0
 Wire Bus Line
 	16750 2850 16750 2750
 Wire Wire Line
@@ -1228,8 +1228,6 @@ Text Label 9200 4350 0    50   ~ 0
 RPi_UART0_RX
 Text Label 9200 4200 0    50   ~ 0
 RPi_UART0_TX
-Text HLabel 10100 3050 2    50   BiDi ~ 0
-RPI_UART0
 Entry Wire Line
 	9850 4250 9750 4350
 Entry Wire Line
@@ -1260,6 +1258,134 @@ Wire Wire Line
 	5700 3300 9750 3300
 Wire Bus Line
 	10100 3050 9850 3050
+$Comp
+L Device:R R?
+U 1 1 60F86D30
+P 1750 -100
+AR Path="/64BEC8E8/60F86D30" Ref="R?"  Part="1" 
+AR Path="/614D7E9D/60F86D30" Ref="R?"  Part="1" 
+F 0 "R?" H 1820 -54 50  0000 L CNN
+F 1 "4k7/1%" H 1820 -145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1680 -100 50  0001 C CNN
+F 3 "~" H 1750 -100 50  0001 C CNN
+	1    1750 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F9440E
+P 2150 -100
+AR Path="/64BEC8E8/60F9440E" Ref="R?"  Part="1" 
+AR Path="/614D7E9D/60F9440E" Ref="R?"  Part="1" 
+F 0 "R?" H 2220 -54 50  0000 L CNN
+F 1 "4k7/1%" H 2220 -145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 -100 50  0001 C CNN
+F 3 "~" H 2150 -100 50  0001 C CNN
+	1    2150 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F9470F
+P 2500 -100
+AR Path="/64BEC8E8/60F9470F" Ref="R?"  Part="1" 
+AR Path="/614D7E9D/60F9470F" Ref="R?"  Part="1" 
+F 0 "R?" H 2570 -54 50  0000 L CNN
+F 1 "4k7/1%" H 2570 -145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2430 -100 50  0001 C CNN
+F 3 "~" H 2500 -100 50  0001 C CNN
+	1    2500 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F94A2C
+P 2850 -100
+AR Path="/64BEC8E8/60F94A2C" Ref="R?"  Part="1" 
+AR Path="/614D7E9D/60F94A2C" Ref="R?"  Part="1" 
+F 0 "R?" H 2920 -54 50  0000 L CNN
+F 1 "4k7/1%" H 2920 -145 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 -100 50  0001 C CNN
+F 3 "~" H 2850 -100 50  0001 C CNN
+	1    2850 -100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 50   1750 900 
+Connection ~ 1750 900 
+Wire Wire Line
+	1750 900  3700 900 
+Wire Wire Line
+	2150 50   2150 1050
+Connection ~ 2150 1050
+Wire Wire Line
+	2150 1050 3700 1050
+Wire Wire Line
+	2500 50   2500 1350
+Connection ~ 2500 1350
+Wire Wire Line
+	2500 1350 3700 1350
+Wire Wire Line
+	2850 50   2850 1500
+Connection ~ 2850 1500
+Wire Wire Line
+	2850 1500 3700 1500
+Text Notes 4700 -250 0    50   ~ 0
+I2C läuft mit 3V3 Pegeln?\nAlles bzgl Levelshifter checken\n\nÄnderungen: \nAlle I2C Pullups hier!
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FCD84F
+P 2850 -500
+F 0 "#PWR?" H 2850 -650 50  0001 C CNN
+F 1 "+3V3" H 2865 -327 50  0000 C CNN
+F 2 "" H 2850 -500 50  0001 C CNN
+F 3 "" H 2850 -500 50  0001 C CNN
+	1    2850 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FCDCC0
+P 2500 -500
+F 0 "#PWR?" H 2500 -650 50  0001 C CNN
+F 1 "+3V3" H 2515 -327 50  0000 C CNN
+F 2 "" H 2500 -500 50  0001 C CNN
+F 3 "" H 2500 -500 50  0001 C CNN
+	1    2500 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FCE1C7
+P 2150 -500
+F 0 "#PWR?" H 2150 -650 50  0001 C CNN
+F 1 "+3V3" H 2165 -327 50  0000 C CNN
+F 2 "" H 2150 -500 50  0001 C CNN
+F 3 "" H 2150 -500 50  0001 C CNN
+	1    2150 -500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FCE655
+P 1750 -500
+F 0 "#PWR?" H 1750 -650 50  0001 C CNN
+F 1 "+3V3" H 1765 -327 50  0000 C CNN
+F 2 "" H 1750 -500 50  0001 C CNN
+F 3 "" H 1750 -500 50  0001 C CNN
+	1    1750 -500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 -500 1750 -250
+Wire Wire Line
+	2150 -500 2150 -250
+Wire Wire Line
+	2500 -250 2500 -500
+Wire Wire Line
+	2850 -500 2850 -250
+Text HLabel 10100 3050 2    50   BiDi ~ 0
+UART0
 Wire Bus Line
 	900  5450 900  6050
 Wire Bus Line

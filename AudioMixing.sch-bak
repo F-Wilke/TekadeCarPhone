@@ -19,33 +19,11 @@ Wire Wire Line
 	7250 4350 7250 4750
 Wire Wire Line
 	7250 4750 7150 4750
-$Comp
-L Device:C C?
-U 1 1 60E6063B
-P 8350 4900
-F 0 "C?" H 8465 4946 50  0000 L CNN
-F 1 "10pF" H 8465 4855 50  0000 L CNN
-F 2 "" H 8388 4750 50  0001 C CNN
-F 3 "~" H 8350 4900 50  0001 C CNN
-	1    8350 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10150 4250 8350 4250
 Wire Wire Line
 	7250 4750 7250 5800
 Connection ~ 7250 4750
-$Comp
-L Device:C C?
-U 1 1 60E6064D
-P 7750 5100
-F 0 "C?" H 7865 5146 50  0000 L CNN
-F 1 "1uF" H 7865 5055 50  0000 L CNN
-F 2 "" H 7788 4950 50  0001 C CNN
-F 3 "~" H 7750 5100 50  0001 C CNN
-	1    7750 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 4550 7750 4550
 Wire Wire Line
@@ -54,17 +32,6 @@ Wire Wire Line
 	7450 5050 7450 5800
 Wire Wire Line
 	7750 5250 7750 5800
-$Comp
-L Device:C C?
-U 1 1 60E6065C
-P 8050 5300
-F 0 "C?" H 8165 5346 50  0000 L CNN
-F 1 "10pF" H 8165 5255 50  0000 L CNN
-F 2 "" H 8088 5150 50  0001 C CNN
-F 3 "~" H 8050 5300 50  0001 C CNN
-	1    8050 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8350 5800 8350 5050
 Wire Wire Line
@@ -81,41 +48,8 @@ Connection ~ 8350 4250
 Wire Wire Line
 	10150 4450 8050 4450
 Connection ~ 8050 4450
-$Comp
-L Device:C C?
-U 1 1 60E60671
-P 9400 4900
-F 0 "C?" H 9515 4946 50  0000 L CNN
-F 1 "10pF" H 9515 4855 50  0000 L CNN
-F 2 "" H 9438 4750 50  0001 C CNN
-F 3 "~" H 9400 4900 50  0001 C CNN
-	1    9400 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 4150 7150 4150
-$Comp
-L Device:C C?
-U 1 1 60E6068E
-P 9650 3950
-F 0 "C?" V 9850 3900 50  0000 L CNN
-F 1 "1uF" V 9750 3850 50  0000 L CNN
-F 2 "" H 9688 3800 50  0001 C CNN
-F 3 "~" H 9650 3950 50  0001 C CNN
-	1    9650 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E60694
-P 9950 4100
-F 0 "C?" V 10150 4050 50  0000 L CNN
-F 1 "1uF" V 10050 4000 50  0000 L CNN
-F 2 "" H 9988 3950 50  0001 C CNN
-F 3 "~" H 9950 4100 50  0001 C CNN
-	1    9950 4100
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	10100 4100 10150 4100
 Wire Wire Line
@@ -124,128 +58,36 @@ Wire Wire Line
 	8400 3950 9400 3950
 Wire Wire Line
 	10150 3950 9800 3950
-$Comp
-L Device:C C?
-U 1 1 60E606BC
-P 9550 1100
-F 0 "C?" V 9298 1100 50  0000 C CNN
-F 1 "1uF" V 9389 1100 50  0000 C CNN
-F 2 "" H 9588 950 50  0001 C CNN
-F 3 "~" H 9550 1100 50  0001 C CNN
-	1    9550 1100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E606C2
-P 8750 1100
-F 0 "C?" V 8498 1100 50  0000 C CNN
-F 1 "1uF" V 8589 1100 50  0000 C CNN
-F 2 "" H 8788 950 50  0001 C CNN
-F 3 "~" H 8750 1100 50  0001 C CNN
-	1    8750 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E606C8
-P 9200 1100
-F 0 "C?" V 8948 1100 50  0000 C CNN
-F 1 "1uF" V 9039 1100 50  0000 C CNN
-F 2 "" H 9238 950 50  0001 C CNN
-F 3 "~" H 9200 1100 50  0001 C CNN
-	1    9200 1100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7150 3250
 Wire Wire Line
 	7150 2150 7900 2150
-$Comp
-L Device:R_US R?
-U 1 1 60E60737
-P 7900 1900
-F 0 "R?" H 7968 1946 50  0000 L CNN
-F 1 "10k" H 7968 1855 50  0000 L CNN
-F 2 "" V 7940 1890 50  0001 C CNN
-F 3 "~" H 7900 1900 50  0001 C CNN
-	1    7900 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 2050 7900 2150
 Connection ~ 7900 2150
-Wire Wire Line
-	7900 2150 10150 2150
-Text Label 10150 2550 0    50   ~ 0
+Text Label 9300 2550 0    50   ~ 0
 Rpi.SDA0
-Text Label 10150 2650 0    50   ~ 0
+Text Label 9300 2650 0    50   ~ 0
 Rpi.SCL0
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60E6077F
-P 5000 6700
-F 0 "#PWR?" H 5000 6550 50  0001 C CNN
-F 1 "+3V3" H 5015 6873 50  0000 C CNN
-F 2 "" H 5000 6700 50  0001 C CNN
-F 3 "" H 5000 6700 50  0001 C CNN
-	1    5000 6700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 6700 5000 6900
-Wire Wire Line
-	5000 6900 5000 7000
-Wire Wire Line
-	5000 7000 5150 7000
-Connection ~ 5000 6900
-Wire Wire Line
-	5000 6900 5150 6900
-Text Label 6450 6900 0    50   ~ 0
-MAX_MCLK
-Wire Wire Line
-	6250 6900 6450 6900
-Wire Wire Line
-	6350 7400 6350 7000
-Wire Wire Line
-	6350 7000 6250 7000
-$Comp
-L TeKaDe:WE_830208220101 Y?
-U 1 1 60E6079E
-P 4550 6900
-F 0 "Y?" H 5750 7150 50  0000 C CNN
-F 1 "830208220101" H 5750 7050 50  0000 C CNN
-F 2 "830208220101" H 6100 7000 50  0001 L CNN
-F 3 "https://www.we-online.de/katalog/datasheet/830208220101.pdf" H 6100 6900 50  0001 L CNN
-F 4 "Standard 2.5 x 2.0 oscillator in a ceramic package with a hermetically sealed metal lid." H 6100 6800 50  0001 L CNN "Description"
-F 5 "1" H 6100 6700 50  0001 L CNN "Height"
-F 6 "" H 6100 6600 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 6100 6500 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Wurth Elektronik" H 6100 6400 50  0001 L CNN "Manufacturer_Name"
-F 9 "830208220101" H 6100 6300 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "sufficient" H 4550 6900 50  0001 C CNN "Availability"
-	1    4550 6900
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7150 3850
 NoConn ~ 7150 3950
-Text Label 10150 3650 0    50   ~ 0
+Text Label 7850 3650 0    50   ~ 0
 MAX_MIC1N
-Text Label 10150 3750 0    50   ~ 0
+Text Label 7850 3750 0    50   ~ 0
 MAX_MIC1P
-Text Label 10150 3450 0    50   ~ 0
+Text Label 7850 3450 0    50   ~ 0
 MAX_MIC2N
-Text Label 10150 3550 0    50   ~ 0
+Text Label 7850 3550 0    50   ~ 0
 MAX_MIC2P
 Wire Wire Line
-	7150 3350 10150 3350
+	7150 3350 7850 3350
 Wire Wire Line
-	10150 3450 7150 3450
+	7850 3450 7150 3450
 Wire Wire Line
-	7150 3550 10150 3550
+	7150 3550 7850 3550
 Wire Wire Line
-	10150 3650 7150 3650
+	7850 3650 7150 3650
 Wire Wire Line
-	7150 3750 10150 3750
+	7150 3750 7850 3750
 $Comp
 L power:GND #PWR?
 U 1 1 60E78C59
@@ -306,28 +148,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 4650 7450 4750
 $Comp
-L Device:C C?
-U 1 1 60E60641
-P 7450 4900
-F 0 "C?" H 7565 4946 50  0000 L CNN
-F 1 "1uF" H 7565 4855 50  0000 L CNN
-F 2 "" H 7488 4750 50  0001 C CNN
-F 3 "~" H 7450 4900 50  0001 C CNN
-	1    7450 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E60677
-P 9750 5100
-F 0 "C?" H 9865 5146 50  0000 L CNN
-F 1 "10pF" H 9865 5055 50  0000 L CNN
-F 2 "" H 9788 4950 50  0001 C CNN
-F 3 "~" H 9750 5100 50  0001 C CNN
-	1    9750 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 60F39C98
 P 9400 5800
@@ -365,17 +185,17 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 60FAC558
-P 4400 4900
-F 0 "#PWR?" H 4400 4650 50  0001 C CNN
-F 1 "GND" H 4405 4727 50  0000 C CNN
-F 2 "" H 4400 4900 50  0001 C CNN
-F 3 "" H 4400 4900 50  0001 C CNN
-	1    4400 4900
+P 4400 4950
+F 0 "#PWR?" H 4400 4700 50  0001 C CNN
+F 1 "GND" H 4405 4777 50  0000 C CNN
+F 2 "" H 4400 4950 50  0001 C CNN
+F 3 "" H 4400 4950 50  0001 C CNN
+	1    4400 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 2450 4550 2450
-Text Label 3100 2450 2    50   ~ 0
+	3650 2450 4550 2450
+Text Label 3650 2450 2    50   ~ 0
 MAX_MCLK
 NoConn ~ 4550 3450
 NoConn ~ 4550 3650
@@ -383,43 +203,10 @@ NoConn ~ 4550 3950
 NoConn ~ 4550 4150
 Wire Wire Line
 	3900 4550 4550 4550
-$Comp
-L Device:C C?
-U 1 1 60E606E9
-P 1550 1150
-F 0 "C?" H 1435 1104 50  0000 R CNN
-F 1 "0.1uF" H 1435 1195 50  0000 R CNN
-F 2 "" H 1588 1000 50  0001 C CNN
-F 3 "~" H 1550 1150 50  0001 C CNN
-	1    1550 1150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E606E3
-P 1200 1150
-F 0 "C?" H 1200 950 50  0000 R CNN
-F 1 "10uF" H 1300 1050 50  0000 R CNN
-F 2 "" H 1238 1000 50  0001 C CNN
-F 3 "~" H 1200 1150 50  0001 C CNN
-	1    1200 1150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4550 4050 4400 4050
 Wire Wire Line
 	4550 3550 4400 3550
-$Comp
-L Device:C C?
-U 1 1 60E606B6
-P 2050 1150
-F 0 "C?" V 1798 1150 50  0000 C CNN
-F 1 "1uF" V 1889 1150 50  0000 C CNN
-F 2 "" H 2088 1000 50  0001 C CNN
-F 3 "~" H 2050 1150 50  0001 C CNN
-	1    2050 1150
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 610082E0
@@ -444,28 +231,6 @@ F 1 "+3V3" H 7365 1873 50  0000 C CNN
 F 2 "" H 7350 1700 50  0001 C CNN
 F 3 "" H 7350 1700 50  0001 C CNN
 	1    7350 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 6101D3E3
-P 9550 800
-F 0 "#PWR?" H 9550 650 50  0001 C CNN
-F 1 "+3V3" H 9565 973 50  0000 C CNN
-F 2 "" H 9550 800 50  0001 C CNN
-F 3 "" H 9550 800 50  0001 C CNN
-	1    9550 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6101E444
-P 9550 1450
-F 0 "#PWR?" H 9550 1200 50  0001 C CNN
-F 1 "GND" H 9555 1277 50  0000 C CNN
-F 2 "" H 9550 1450 50  0001 C CNN
-F 3 "" H 9550 1450 50  0001 C CNN
-	1    9550 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -503,28 +268,6 @@ F 3 "" H 7600 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7600 2450 7600 1700
-$Comp
-L power:+1V8 #PWR?
-U 1 1 611742C7
-P 8750 800
-F 0 "#PWR?" H 8750 650 50  0001 C CNN
-F 1 "+1V8" H 8765 973 50  0000 C CNN
-F 2 "" H 8750 800 50  0001 C CNN
-F 3 "" H 8750 800 50  0001 C CNN
-	1    8750 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 61174893
-P 9200 800
-F 0 "#PWR?" H 9200 650 50  0001 C CNN
-F 1 "+1V8" H 9215 973 50  0000 C CNN
-F 2 "" H 9200 800 50  0001 C CNN
-F 3 "" H 9200 800 50  0001 C CNN
-	1    9200 800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7150 2450 7600 2450
 Wire Wire Line
@@ -532,17 +275,6 @@ Wire Wire Line
 Wire Wire Line
 	7600 2750 7600 2450
 Connection ~ 7600 2450
-$Comp
-L Device:C C?
-U 1 1 60E6070D
-P 4150 4650
-F 0 "C?" H 4265 4696 50  0000 L CNN
-F 1 "1uF" H 4265 4605 50  0000 L CNN
-F 2 "" H 4188 4500 50  0001 C CNN
-F 3 "~" H 4150 4650 50  0001 C CNN
-	1    4150 4650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3900 4550 3900 4650
 Wire Wire Line
@@ -550,59 +282,59 @@ Wire Wire Line
 Wire Wire Line
 	4300 4650 4550 4650
 Wire Wire Line
-	4400 4050 4400 4900
+	4400 4050 4400 4950
 $Comp
 L power:+1V8 #PWR?
 U 1 1 61263550
-P 1200 850
-F 0 "#PWR?" H 1200 700 50  0001 C CNN
-F 1 "+1V8" H 1215 1023 50  0000 C CNN
-F 2 "" H 1200 850 50  0001 C CNN
-F 3 "" H 1200 850 50  0001 C CNN
-	1    1200 850 
+P 1250 900
+F 0 "#PWR?" H 1250 750 50  0001 C CNN
+F 1 "+1V8" H 1265 1073 50  0000 C CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 850  1200 1000
+	1250 900  1250 1050
 $Comp
 L power:GND #PWR?
 U 1 1 6129D658
-P 2050 1500
-F 0 "#PWR?" H 2050 1250 50  0001 C CNN
-F 1 "GND" H 2055 1327 50  0000 C CNN
-F 2 "" H 2050 1500 50  0001 C CNN
-F 3 "" H 2050 1500 50  0001 C CNN
-	1    2050 1500
+P 2250 1550
+F 0 "#PWR?" H 2250 1300 50  0001 C CNN
+F 1 "GND" H 2255 1377 50  0000 C CNN
+F 2 "" H 2250 1550 50  0001 C CNN
+F 3 "" H 2250 1550 50  0001 C CNN
+	1    2250 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6129DF5B
-P 1550 1500
-F 0 "#PWR?" H 1550 1250 50  0001 C CNN
-F 1 "GND" H 1555 1327 50  0000 C CNN
-F 2 "" H 1550 1500 50  0001 C CNN
-F 3 "" H 1550 1500 50  0001 C CNN
-	1    1550 1500
+P 1650 1550
+F 0 "#PWR?" H 1650 1300 50  0001 C CNN
+F 1 "GND" H 1655 1377 50  0000 C CNN
+F 2 "" H 1650 1550 50  0001 C CNN
+F 3 "" H 1650 1550 50  0001 C CNN
+	1    1650 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6129E17B
-P 1200 1500
-F 0 "#PWR?" H 1200 1250 50  0001 C CNN
-F 1 "GND" H 1205 1327 50  0000 C CNN
-F 2 "" H 1200 1500 50  0001 C CNN
-F 3 "" H 1200 1500 50  0001 C CNN
-	1    1200 1500
+P 1250 1550
+F 0 "#PWR?" H 1250 1300 50  0001 C CNN
+F 1 "GND" H 1255 1377 50  0000 C CNN
+F 2 "" H 1250 1550 50  0001 C CNN
+F 3 "" H 1250 1550 50  0001 C CNN
+	1    1250 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 1300 1200 1500
+	1250 1350 1250 1550
 Wire Wire Line
-	1550 1300 1550 1500
+	1650 1350 1650 1550
 Wire Wire Line
-	2050 1300 2050 1500
+	2250 1350 2250 1550
 Wire Wire Line
 	9750 5800 9750 5250
 $Comp
@@ -622,143 +354,19 @@ Wire Wire Line
 	8700 2950 7150 2950
 Wire Wire Line
 	8700 5800 8700 5250
-$Comp
-L Device:C C?
-U 1 1 60E6071C
-P 9050 5300
-F 0 "C?" V 8798 5300 50  0000 C CNN
-F 1 "1uF" V 8889 5300 50  0000 C CNN
-F 2 "" H 9088 5150 50  0001 C CNN
-F 3 "~" H 9050 5300 50  0001 C CNN
-	1    9050 5300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E60722
-P 8700 5100
-F 0 "C?" V 8448 5100 50  0000 C CNN
-F 1 "2.2uF" V 8539 5100 50  0000 C CNN
-F 2 "" H 8738 4950 50  0001 C CNN
-F 3 "~" H 8700 5100 50  0001 C CNN
-	1    8700 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2950 5750 2950 5850
-Wire Wire Line
-	2500 6550 1000 6550
-Connection ~ 2500 6550
-Wire Wire Line
-	2550 6550 2500 6550
-Connection ~ 2950 6550
-Wire Wire Line
-	2950 6550 2850 6550
-Wire Wire Line
-	2950 6450 2950 6550
-Connection ~ 2950 5750
-Wire Wire Line
-	2950 5750 2850 5750
-Wire Wire Line
-	1000 6150 2050 6150
-$Comp
-L Device:C C?
-U 1 1 60E607ED
-P 3200 5550
-F 0 "C?" V 2948 5550 50  0000 C CNN
-F 1 "1uF" V 3039 5550 50  0000 C CNN
-F 2 "" H 3238 5400 50  0001 C CNN
-F 3 "~" H 3200 5550 50  0001 C CNN
-	1    3200 5550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E607E7
-P 2700 5750
-F 0 "C?" V 2448 5750 50  0000 C CNN
-F 1 "1uF" V 2539 5750 50  0000 C CNN
-F 2 "" H 2738 5600 50  0001 C CNN
-F 3 "~" H 2700 5750 50  0001 C CNN
-	1    2700 5750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E607E1
-P 2700 6550
-F 0 "C?" V 2448 6550 50  0000 C CNN
-F 1 "1uF" V 2539 6550 50  0000 C CNN
-F 2 "" H 2738 6400 50  0001 C CNN
-F 3 "~" H 2700 6550 50  0001 C CNN
-	1    2700 6550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E607DB
-P 1600 7200
-F 0 "C?" H 1715 7246 50  0000 L CNN
-F 1 "10pF" H 1715 7155 50  0000 L CNN
-F 2 "" H 1638 7050 50  0001 C CNN
-F 3 "~" H 1600 7200 50  0001 C CNN
-	1    1600 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E607D5
-P 2500 7000
-F 0 "C?" H 2615 7046 50  0000 L CNN
-F 1 "10pF" H 2615 6955 50  0000 L CNN
-F 2 "" H 2538 6850 50  0001 C CNN
-F 3 "~" H 2500 7000 50  0001 C CNN
-	1    2500 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E607CF
-P 2800 7200
-F 0 "C?" V 2548 7200 50  0000 C CNN
-F 1 "10pF" V 2639 7200 50  0000 C CNN
-F 2 "" H 2838 7050 50  0001 C CNN
-F 3 "~" H 2800 7200 50  0001 C CNN
-	1    2800 7200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60E607C3
-P 2050 7350
-F 0 "C?" V 1798 7350 50  0000 C CNN
-F 1 "1uF" V 1889 7350 50  0000 C CNN
-F 2 "" H 2088 7200 50  0001 C CNN
-F 3 "~" H 2050 7350 50  0001 C CNN
-	1    2050 7350
-	-1   0    0    1   
-$EndComp
-Text Label 1000 6150 2    50   ~ 0
+Text Label 7850 3350 0    50   ~ 0
 MAX_MICBIAS
-Text Label 1000 5750 2    50   ~ 0
-MAX_MIC2P
-Text Label 1000 5550 2    50   ~ 0
-MAX_MIC2N
-Text Label 1000 6550 2    50   ~ 0
-MAX_MIC1P
-Text Label 10150 3350 0    50   ~ 0
-MAX_MICBIAS
-Text Notes 5050 1500 0    50   ~ 0
-MCLK ist nicht für I2S!! \n12.2880MHz für 48kHz / 11.2896 für 44,1kHz\nWird diese vom BM83 geliefert? der hat MCLK out???\nHPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\n\nÄnderungen:\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert
+Text Notes 4700 1550 0    50   ~ 0
+HPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\nMic: differential + biasing\n\nÄnderungen:\nI2C Pullups auf RPi Seite machen\nFootprints angepasst\nSPKRVDD auf 3V3, nicht mehr 5V (siehe DS S.126)\nReihen Cs bei Line Out entfernt (siehe Email Maxim 02.07.2021)\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60D18DB4
-P 2050 850
-F 0 "#PWR?" H 2050 700 50  0001 C CNN
-F 1 "+3V3" H 2065 1023 50  0000 C CNN
-F 2 "" H 2050 850 50  0001 C CNN
-F 3 "" H 2050 850 50  0001 C CNN
-	1    2050 850 
+P 2250 900
+F 0 "#PWR?" H 2250 750 50  0001 C CNN
+F 1 "+3V3" H 2265 1073 50  0000 C CNN
+F 2 "" H 2250 900 50  0001 C CNN
+F 3 "" H 2250 900 50  0001 C CNN
+	1    2250 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -779,12 +387,12 @@ Wire Wire Line
 $Comp
 L power:+1V8 #PWR?
 U 1 1 60D4A87A
-P 1550 850
-F 0 "#PWR?" H 1550 700 50  0001 C CNN
-F 1 "+1V8" H 1565 1023 50  0000 C CNN
-F 2 "" H 1550 850 50  0001 C CNN
-F 3 "" H 1550 850 50  0001 C CNN
-	1    1550 850 
+P 1650 900
+F 0 "#PWR?" H 1650 750 50  0001 C CNN
+F 1 "+1V8" H 1665 1073 50  0000 C CNN
+F 2 "" H 1650 900 50  0001 C CNN
+F 3 "" H 1650 900 50  0001 C CNN
+	1    1650 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -815,273 +423,22 @@ Wire Wire Line
 	9050 2850 9050 5150
 Wire Wire Line
 	9050 5450 9050 5800
-Text Notes 1000 3350 0    50   ~ 0
-Line Out?\nHier keine Cs gegen GND wie bei:\n- Line In\n- Headset Out\n-> Orientiert an Referenzdesign, werde ich aber empirisch prüfen
 Wire Wire Line
-	2050 850  2050 1000
+	2250 900  2250 1050
 Wire Wire Line
-	1550 850  1550 1000
-Wire Wire Line
-	9550 800  9550 950 
-Wire Wire Line
-	9550 1250 9550 1450
-$Comp
-L power:GND #PWR?
-U 1 1 60F1692D
-P 9200 1450
-F 0 "#PWR?" H 9200 1200 50  0001 C CNN
-F 1 "GND" H 9205 1277 50  0000 C CNN
-F 2 "" H 9200 1450 50  0001 C CNN
-F 3 "" H 9200 1450 50  0001 C CNN
-	1    9200 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60F16C8F
-P 8750 1450
-F 0 "#PWR?" H 8750 1200 50  0001 C CNN
-F 1 "GND" H 8755 1277 50  0000 C CNN
-F 2 "" H 8750 1450 50  0001 C CNN
-F 3 "" H 8750 1450 50  0001 C CNN
-	1    8750 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 1450 8750 1250
-Wire Wire Line
-	9200 1250 9200 1450
-Wire Wire Line
-	9200 800  9200 950 
-Wire Wire Line
-	8750 800  8750 950 
-$Comp
-L power:GND #PWR?
-U 1 1 60F3FB84
-P 2800 7550
-F 0 "#PWR?" H 2800 7300 50  0001 C CNN
-F 1 "GND" H 2805 7377 50  0000 C CNN
-F 2 "" H 2800 7550 50  0001 C CNN
-F 3 "" H 2800 7550 50  0001 C CNN
-	1    2800 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 7350 2800 7550
-Wire Wire Line
-	2500 6550 2500 6850
-$Comp
-L power:GND #PWR?
-U 1 1 60F65EF3
-P 2500 7550
-F 0 "#PWR?" H 2500 7300 50  0001 C CNN
-F 1 "GND" H 2505 7377 50  0000 C CNN
-F 2 "" H 2500 7550 50  0001 C CNN
-F 3 "" H 2500 7550 50  0001 C CNN
-	1    2500 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 7150 2500 7550
-$Comp
-L Device:C C?
-U 1 1 60E607C9
-P 1300 7000
-F 0 "C?" V 1048 7000 50  0000 C CNN
-F 1 "10pF" V 1139 7000 50  0000 C CNN
-F 2 "" H 1338 6850 50  0001 C CNN
-F 3 "~" H 1300 7000 50  0001 C CNN
-	1    1300 7000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1000 5550 1300 5550
-Wire Wire Line
-	1300 5550 1300 6850
-Connection ~ 1300 5550
-Wire Wire Line
-	1300 5550 3050 5550
-$Comp
-L power:GND #PWR?
-U 1 1 60FD950D
-P 1300 7550
-F 0 "#PWR?" H 1300 7300 50  0001 C CNN
-F 1 "GND" H 1305 7377 50  0000 C CNN
-F 2 "" H 1300 7550 50  0001 C CNN
-F 3 "" H 1300 7550 50  0001 C CNN
-	1    1300 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 7150 1300 7550
-Wire Wire Line
-	1000 5750 1600 5750
-Wire Wire Line
-	1600 5750 1600 7050
-Connection ~ 1600 5750
-Wire Wire Line
-	1600 5750 2550 5750
-$Comp
-L power:GND #PWR?
-U 1 1 60FEAF9C
-P 1600 7550
-F 0 "#PWR?" H 1600 7300 50  0001 C CNN
-F 1 "GND" H 1605 7377 50  0000 C CNN
-F 2 "" H 1600 7550 50  0001 C CNN
-F 3 "" H 1600 7550 50  0001 C CNN
-	1    1600 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 7350 1600 7550
-$Comp
-L power:GND #PWR?
-U 1 1 6102F308
-P 2050 7550
-F 0 "#PWR?" H 2050 7300 50  0001 C CNN
-F 1 "GND" H 2055 7377 50  0000 C CNN
-F 2 "" H 2050 7550 50  0001 C CNN
-F 3 "" H 2050 7550 50  0001 C CNN
-	1    2050 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 6150 2050 7200
-Connection ~ 2050 6150
-Wire Wire Line
-	2050 6150 2950 6150
-Wire Wire Line
-	2050 7500 2050 7550
-$Comp
-L Device:C C?
-U 1 1 60E607F3
-P 3200 6750
-F 0 "C?" V 2948 6750 50  0000 C CNN
-F 1 "1uF" V 3039 6750 50  0000 C CNN
-F 2 "" H 3238 6600 50  0001 C CNN
-F 3 "~" H 3200 6750 50  0001 C CNN
-	1    3200 6750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2800 6750 3050 6750
-Wire Wire Line
-	2800 6750 2800 7050
-Connection ~ 2800 6750
-Text Label 1000 6750 2    50   ~ 0
-MAX_MIC1N
-Wire Wire Line
-	1000 6750 2800 6750
-Wire Notes Line
-	1150 6850 3150 6850
-Wire Notes Line
-	3150 6850 3150 7300
-Wire Notes Line
-	3150 7300 2300 7300
-Wire Notes Line
-	2300 7300 2300 7150
-Wire Notes Line
-	2300 7150 1900 7150
-Wire Notes Line
-	1900 7150 1900 7300
-Wire Notes Line
-	1900 7300 1150 7300
-Wire Notes Line
-	1150 7300 1150 6850
-Text Notes 150  7500 0    50   ~ 0
-So nicht in Appnote fig 40\nDafür in Evkit guide fig 4a
-Wire Wire Line
-	4550 4250 3500 4250
-Wire Notes Line
-	2850 5800 2850 6450
-Wire Notes Line
-	2850 6450 3250 6450
-Wire Notes Line
-	3250 6450 3250 5800
-Wire Notes Line
-	2850 5800 3250 5800
-Text Notes 1150 6100 0    50   ~ 0
-So nicht in Appnote fig 40\nStattdessen in EvKit guide fig 4a\n-> differential/single ended an EvKit zu prüfen!
-Text Notes 3350 1200 0    50   ~ 0
-An SPKRP/N SPKLP/N keine Speaker angeschlossen\n-> Versorgung SPKL/R VDD notwendig?\n=> Ja, laut S.126, aber es reichen auf 3V3
-Text Notes 10150 2800 0    50   ~ 0
-Pullups??\n
-Wire Notes Line
-	10050 2400 10600 2400
-Wire Notes Line
-	10600 2400 10600 2900
-Wire Notes Line
-	10600 2900 10050 2900
-Wire Notes Line
-	10050 2900 10050 2400
-$Comp
-L power:GND #PWR?
-U 1 1 613206C7
-P 6350 7400
-F 0 "#PWR?" H 6350 7150 50  0001 C CNN
-F 1 "GND" H 6355 7227 50  0000 C CNN
-F 2 "" H 6350 7400 50  0001 C CNN
-F 3 "" H 6350 7400 50  0001 C CNN
-	1    6350 7400
-	1    0    0    -1  
-$EndComp
+	1650 900  1650 1050
 Wire Wire Line
 	7150 2050 7250 2050
 Wire Wire Line
 	7250 2050 7250 3050
 Connection ~ 7250 3050
 $Comp
-L Device:C C?
-U 1 1 613F5D28
-P 4650 7000
-F 0 "C?" V 4398 7000 50  0000 C CNN
-F 1 "100n" V 4489 7000 50  0000 C CNN
-F 2 "" H 4688 6850 50  0001 C CNN
-F 3 "~" H 4650 7000 50  0001 C CNN
-	1    4650 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 613F5D2E
-P 4650 6700
-F 0 "#PWR?" H 4650 6550 50  0001 C CNN
-F 1 "+3V3" H 4665 6873 50  0000 C CNN
-F 2 "" H 4650 6700 50  0001 C CNN
-F 3 "" H 4650 6700 50  0001 C CNN
-	1    4650 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 613F5D34
-P 4650 7350
-F 0 "#PWR?" H 4650 7100 50  0001 C CNN
-F 1 "GND" H 4655 7177 50  0000 C CNN
-F 2 "" H 4650 7350 50  0001 C CNN
-F 3 "" H 4650 7350 50  0001 C CNN
-	1    4650 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 6700 4650 6850
-Wire Wire Line
-	4650 7150 4650 7350
-Wire Notes Line
-	10000 1950 10800 1950
-Wire Notes Line
-	10800 1950 10800 3100
-Wire Notes Line
-	10800 3100 10000 3100
-Wire Notes Line
-	10000 3100 10000 1950
-$Comp
 L TeKaDe:MAX98089ETN+ U?
 U 1 1 60D6B3CA
 P 5900 3350
 F 0 "U?" H 5850 5037 60  0000 C CNN
 F 1 "MAX98089ETN+" H 5850 4931 60  0000 C CNN
-F 2 "21-0144H_T5677-1_MXM" H 5900 1600 60  0001 C CNN
+F 2 "TeKaDe:QFN-56_EP_7x7_Pitch0.4mm" H 5900 1600 60  0001 C CNN
 F 3 "" H 4550 4650 60  0000 C CNN
 	1    5900 3350
 	1    0    0    -1  
@@ -1098,10 +455,6 @@ Wire Wire Line
 	4150 3750 4150 3850
 Wire Wire Line
 	9400 5050 9400 5800
-Text HLabel 1400 3650 0    50   Output ~ 0
-Audio_Master_Out_R
-Text HLabel 1400 4150 0    50   Output ~ 0
-Audio_Master_Out_L
 Text HLabel 10150 3950 2    50   Input ~ 0
 Line_In_R
 Text HLabel 10150 4100 2    50   Input ~ 0
@@ -1110,17 +463,9 @@ Text HLabel 10150 4250 2    50   Output ~ 0
 Audio_Handset_Out_R
 Text HLabel 10150 4450 2    50   Output ~ 0
 Audio_Handset_Out_L
-Text HLabel 3800 5550 2    50   Input ~ 0
-MasterMicInN
-Text HLabel 3800 5750 2    50   Input ~ 0
-MasterMicInP
-Text HLabel 3800 6550 2    50   Input ~ 0
-HandsetMicInP
-Text HLabel 3800 6750 2    50   Input ~ 0
-HandsetMicInN
 Text HLabel 10150 2150 2    50   Output ~ 0
 IRQ
-Text Label 10150 2350 0    50   ~ 0
+Text Label 7850 2350 0    50   ~ 0
 RPi_I2S_SD_OUT
 Text Label 3100 2050 2    50   ~ 0
 RPi_I2S_SD_IN
@@ -1144,12 +489,8 @@ Wire Wire Line
 	1950 2350 4550 2350
 Wire Bus Line
 	1850 1950 1700 1950
-Wire Bus Line
-	10900 2250 11050 2250
-Entry Wire Line
-	10900 2250 10800 2350
 Wire Wire Line
-	10800 2350 7150 2350
+	7850 2350 7150 2350
 Text HLabel 1700 2550 0    50   BiDi ~ 0
 I2S1_Master
 Entry Wire Line
@@ -1178,41 +519,6 @@ Wire Wire Line
 	1950 2950 4550 2950
 Wire Wire Line
 	1950 2850 4550 2850
-Text HLabel 11050 2250 2    50   BiDi ~ 0
-I2S2
-$Comp
-L Device:C C?
-U 1 1 60F47BFA
-P 2600 4400
-F 0 "C?" H 2715 4446 50  0000 L CNN
-F 1 "10pF" H 2715 4355 50  0000 L CNN
-F 2 "" H 2638 4250 50  0001 C CNN
-F 3 "~" H 2600 4400 50  0001 C CNN
-	1    2600 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60F47C00
-P 2300 4600
-F 0 "C?" H 2415 4646 50  0000 L CNN
-F 1 "10pF" H 2415 4555 50  0000 L CNN
-F 2 "" H 2338 4450 50  0001 C CNN
-F 3 "~" H 2300 4600 50  0001 C CNN
-	1    2300 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60F47C0A
-P 2300 4950
-F 0 "#PWR?" H 2300 4700 50  0001 C CNN
-F 1 "GND" H 2305 4777 50  0000 C CNN
-F 2 "" H 2300 4950 50  0001 C CNN
-F 3 "" H 2300 4950 50  0001 C CNN
-	1    2300 4950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60F47C10
@@ -1225,181 +531,922 @@ F 3 "" H 2600 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3650 2600 3650
+	2600 4450 2600 4250
+Connection ~ 2600 4250
+Connection ~ 2300 4350
 Wire Wire Line
-	3500 3650 3500 4250
-Wire Wire Line
-	3400 4350 3400 4150
-Wire Wire Line
-	3400 4150 2300 4150
-Wire Wire Line
-	3400 4350 4550 4350
-Wire Wire Line
-	2600 4250 2600 3650
-Connection ~ 2600 3650
-Wire Wire Line
-	2600 3650 2150 3650
-Wire Wire Line
-	2300 4450 2300 4150
-Connection ~ 2300 4150
-Wire Wire Line
-	2300 4150 2150 4150
-Wire Wire Line
-	2600 4550 2600 4950
-Wire Wire Line
-	2300 4750 2300 4950
-Wire Wire Line
-	1400 4150 1850 4150
-Wire Wire Line
-	1400 3650 1850 3650
-$Comp
-L Device:C C?
-U 1 1 60FB3F8F
-P 2000 3650
-F 0 "C?" V 1748 3650 50  0000 C CNN
-F 1 "1uF" V 1839 3650 50  0000 C CNN
-F 2 "" H 2038 3500 50  0001 C CNN
-F 3 "~" H 2000 3650 50  0001 C CNN
-	1    2000 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60FB483C
-P 2000 4150
-F 0 "C?" V 1748 4150 50  0000 C CNN
-F 1 "1uF" V 1839 4150 50  0000 C CNN
-F 2 "" H 2038 4000 50  0001 C CNN
-F 3 "~" H 2000 4150 50  0001 C CNN
-	1    2000 4150
-	0    1    1    0   
-$EndComp
+	2600 4750 2600 4950
 Entry Wire Line
-	10900 2550 10800 2650
+	10050 2550 9950 2650
 Entry Wire Line
-	10900 2450 10800 2550
-Text HLabel 11050 2450 2    50   BiDi ~ 0
+	10050 2450 9950 2550
+Text HLabel 10150 2450 2    50   BiDi ~ 0
 I2C
-Wire Wire Line
-	7150 2650 10800 2650
-Wire Wire Line
-	7150 2550 10800 2550
 Wire Bus Line
-	10900 2550 10900 2450
+	10050 2550 10050 2450
 Wire Bus Line
-	10900 2450 11050 2450
-Wire Wire Line
-	3350 5550 3400 5550
-Wire Wire Line
-	2950 5750 3800 5750
-Wire Wire Line
-	2950 6550 3800 6550
-Wire Wire Line
-	3350 6750 3650 6750
-$Comp
-L Device:R R?
-U 1 1 61323D42
-P 3400 7000
-F 0 "R?" H 3470 7046 50  0000 L CNN
-F 1 "2.2k" H 3470 6955 50  0000 L CNN
-F 2 "" V 3330 7000 50  0001 C CNN
-F 3 "~" H 3400 7000 50  0001 C CNN
-	1    3400 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61324ADA
-P 3650 7250
-F 0 "R?" H 3720 7296 50  0000 L CNN
-F 1 "2.2k" H 3720 7205 50  0000 L CNN
-F 2 "" V 3580 7250 50  0001 C CNN
-F 3 "~" H 3650 7250 50  0001 C CNN
-	1    3650 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 7100 3650 6750
-Connection ~ 3650 6750
-Wire Wire Line
-	3650 6750 3800 6750
-Wire Wire Line
-	3400 6850 3400 5550
-Connection ~ 3400 5550
-Wire Wire Line
-	3400 5550 3800 5550
-$Comp
-L power:GND #PWR?
-U 1 1 6133448B
-P 3400 7550
-F 0 "#PWR?" H 3400 7300 50  0001 C CNN
-F 1 "GND" H 3405 7377 50  0000 C CNN
-F 2 "" H 3400 7550 50  0001 C CNN
-F 3 "" H 3400 7550 50  0001 C CNN
-	1    3400 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61334CE4
-P 3650 7550
-F 0 "#PWR?" H 3650 7300 50  0001 C CNN
-F 1 "GND" H 3655 7377 50  0000 C CNN
-F 2 "" H 3650 7550 50  0001 C CNN
-F 3 "" H 3650 7550 50  0001 C CNN
-	1    3650 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 7550 3650 7400
-Wire Wire Line
-	3400 7150 3400 7550
-Text Notes 550  8550 0    50   ~ 0
-The microphone differential signals (MIC.MAIN.P and MIC.MAIN.N) are very low-level and must be\nbalanced and routed in parallel, the same distance from start to end, the same impedance for both\nsignals.\nFigure 5 and Figure 6 show typical schematics for microphone input. The microphone filtering capacitor\nmust be as close as possible to the microphone. The other components must be as close as possible to\nthe device.\nTPS65920 Layout Guide LineIn LineOut Mic.pdf
-Text Notes 5500 7200 0    50   ~ 0
-12.2880MHz
+	10050 2450 10150 2450
 Wire Notes Line
-	9450 3800 10100 3800
+	9350 3650 10100 3650
 Wire Notes Line
-	10100 3800 10100 4200
+	10100 3650 10100 4200
 Wire Notes Line
-	10100 4200 9450 4200
+	10100 4200 9350 4200
 Wire Notes Line
-	9450 4200 9450 3800
-Text Notes 10150 3850 0    50   ~ 0
+	9350 4200 9350 3650
+Text Notes 9150 3600 0    50   ~ 0
 Nah am IC vlg. TPS Guidelines 4.4.2
-Text Notes -1900 4850 0    50   ~ 0
-The PreDriv.LEFT and PreDriv.RIGHT signals are the stereo audio output lines. To prevent audio\ndegradation, these signals must be shielded and routed to avoid noise sources, especially those that\ngenerate noise in the audio range.\nTypically, these signals drive external class-D amplifiers, as shown in Figure 8. Resistors Ri and\ncapacitors Ci must be as close as possible to the external class-D chip.\nvlg. TPS Guidelines 4.4.3
-Wire Wire Line
-	2950 6750 1150 6750
-Connection ~ 2950 6750
-Wire Wire Line
-	3500 5550 3650 5550
-Wire Bus Line
-	1850 1950 1850 2250
-Wire Bus Line
-	1850 2550 1850 2850
 $Comp
-L Device:R R?
-U 1 1 61344D04
-P 2950 6000
-F 0 "R?" H 3020 6046 50  0000 L CNN
-F 1 "2.2k" H 3020 5955 50  0000 L CNN
-F 2 "" V 2880 6000 50  0001 C CNN
-F 3 "~" H 2950 6000 50  0001 C CNN
-	1    2950 6000
+L power:GND #PWR?
+U 1 1 60E72D12
+P 2850 1550
+F 0 "#PWR?" H 2850 1300 50  0001 C CNN
+F 1 "GND" H 2855 1377 50  0000 C CNN
+F 2 "" H 2850 1550 50  0001 C CNN
+F 3 "" H 2850 1550 50  0001 C CNN
+	1    2850 1550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2850 1350 2850 1550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60E72D1D
+P 2850 900
+F 0 "#PWR?" H 2850 750 50  0001 C CNN
+F 1 "+3V3" H 2865 1073 50  0000 C CNN
+F 2 "" H 2850 900 50  0001 C CNN
+F 3 "" H 2850 900 50  0001 C CNN
+	1    2850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 900  2850 1050
+$Comp
+L power:GND #PWR?
+U 1 1 60E7BDE8
+P 3300 1550
+F 0 "#PWR?" H 3300 1300 50  0001 C CNN
+F 1 "GND" H 3305 1377 50  0000 C CNN
+F 2 "" H 3300 1550 50  0001 C CNN
+F 3 "" H 3300 1550 50  0001 C CNN
+	1    3300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1350 3300 1550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60E7BDF3
+P 3300 900
+F 0 "#PWR?" H 3300 750 50  0001 C CNN
+F 1 "+3V3" H 3315 1073 50  0000 C CNN
+F 2 "" H 3300 900 50  0001 C CNN
+F 3 "" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 900  3300 1050
+Wire Notes Line
+	2650 550  3650 550 
+Wire Notes Line
+	3650 550  3650 1800
+Wire Notes Line
+	3650 1800 2650 1800
+Wire Notes Line
+	2650 1800 2650 550 
+Text Notes 2950 650  0    50   ~ 0
+SPKRxVDD
+Wire Wire Line
+	2300 4350 4550 4350
+Wire Wire Line
+	2600 4250 4550 4250
+Wire Wire Line
+	2300 4600 2300 4350
+Wire Wire Line
+	2300 4900 2300 4950
+$Comp
+L power:GND #PWR?
+U 1 1 60F47C0A
+P 2300 4950
+F 0 "#PWR?" H 2300 4700 50  0001 C CNN
+F 1 "GND" H 2305 4777 50  0000 C CNN
+F 2 "" H 2300 4950 50  0001 C CNN
+F 3 "" H 2300 4950 50  0001 C CNN
+	1    2300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2550 9950 2550
+Wire Wire Line
+	7150 2650 9950 2650
+Wire Wire Line
+	7900 2150 10150 2150
+Text Notes 1400 650  0    50   ~ 0
+PVDD
+Wire Notes Line
+	1100 550  2000 550 
+Wire Notes Line
+	2000 550  2000 1800
+Wire Notes Line
+	2000 1800 1100 1800
+Wire Notes Line
+	1100 1800 1100 550 
+Wire Notes Line
+	2050 550  2600 550 
+Wire Notes Line
+	2600 550  2600 1800
+Wire Notes Line
+	2600 1800 2050 1800
+Wire Notes Line
+	2050 1800 2050 550 
+Text Notes 2150 650  0    50   ~ 0
+DVDDS1
+$Comp
+L power:+1V8 #PWR?
+U 1 1 61039A6E
+P 8450 900
+F 0 "#PWR?" H 8450 750 50  0001 C CNN
+F 1 "+1V8" H 8465 1073 50  0000 C CNN
+F 2 "" H 8450 900 50  0001 C CNN
+F 3 "" H 8450 900 50  0001 C CNN
+	1    8450 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 900  8450 1050
+$Comp
+L power:GND #PWR?
+U 1 1 61039A79
+P 9450 1550
+F 0 "#PWR?" H 9450 1300 50  0001 C CNN
+F 1 "GND" H 9455 1377 50  0000 C CNN
+F 2 "" H 9450 1550 50  0001 C CNN
+F 3 "" H 9450 1550 50  0001 C CNN
+	1    9450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61039A83
+P 8850 1550
+F 0 "#PWR?" H 8850 1300 50  0001 C CNN
+F 1 "GND" H 8855 1377 50  0000 C CNN
+F 2 "" H 8850 1550 50  0001 C CNN
+F 3 "" H 8850 1550 50  0001 C CNN
+	1    8850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61039A8D
+P 8450 1550
+F 0 "#PWR?" H 8450 1300 50  0001 C CNN
+F 1 "GND" H 8455 1377 50  0000 C CNN
+F 2 "" H 8450 1550 50  0001 C CNN
+F 3 "" H 8450 1550 50  0001 C CNN
+	1    8450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1350 8450 1550
+Wire Wire Line
+	8850 1350 8850 1550
+Wire Wire Line
+	9450 1350 9450 1550
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61039A9A
+P 9450 900
+F 0 "#PWR?" H 9450 750 50  0001 C CNN
+F 1 "+3V3" H 9465 1073 50  0000 C CNN
+F 2 "" H 9450 900 50  0001 C CNN
+F 3 "" H 9450 900 50  0001 C CNN
+	1    9450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 61039AA4
+P 8850 900
+F 0 "#PWR?" H 8850 750 50  0001 C CNN
+F 1 "+1V8" H 8865 1073 50  0000 C CNN
+F 2 "" H 8850 900 50  0001 C CNN
+F 3 "" H 8850 900 50  0001 C CNN
+	1    8850 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 900  9450 1050
+Wire Wire Line
+	8850 900  8850 1050
+Text Notes 8400 650  0    50   ~ 0
+DVDD / AVDD
+Wire Notes Line
+	8250 550  9200 550 
+Wire Notes Line
+	9200 550  9200 1800
+Wire Notes Line
+	9200 1800 8250 1800
+Wire Notes Line
+	8250 1800 8250 550 
+Wire Notes Line
+	9250 550  9800 550 
+Wire Notes Line
+	9800 550  9800 1800
+Wire Notes Line
+	9800 1800 9250 1800
+Wire Notes Line
+	9250 1800 9250 550 
+Text Notes 9350 650  0    50   ~ 0
+DVDDS2
+$Comp
+L Device:C C?
+U 1 1 610B364D
+P 2300 4750
+F 0 "C?" H 2415 4796 50  0000 L CNN
+F 1 "10p/50V/C0G" H 2415 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2338 4600 50  0001 C CNN
+F 3 "~" H 2300 4750 50  0001 C CNN
+	1    2300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610B3AD0
+P 2600 4600
+F 0 "C?" H 2715 4646 50  0000 L CNN
+F 1 "10p/50V/C0G" H 2715 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2638 4450 50  0001 C CNN
+F 3 "~" H 2600 4600 50  0001 C CNN
+	1    2600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610B3DDE
+P 8050 5300
+F 0 "C?" H 8165 5346 50  0000 L CNN
+F 1 "10p/50V/C0G" H 8165 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8088 5150 50  0001 C CNN
+F 3 "~" H 8050 5300 50  0001 C CNN
+	1    8050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610B48A5
+P 8350 4900
+F 0 "C?" H 8465 4946 50  0000 L CNN
+F 1 "10p/50V/C0G" H 8465 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8388 4750 50  0001 C CNN
+F 3 "~" H 8350 4900 50  0001 C CNN
+	1    8350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610B4D51
+P 9400 4900
+F 0 "C?" H 9515 4946 50  0000 L CNN
+F 1 "10p/50V/C0G" H 9515 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9438 4750 50  0001 C CNN
+F 3 "~" H 9400 4900 50  0001 C CNN
+	1    9400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610B523A
+P 9750 5100
+F 0 "C?" H 9865 5146 50  0000 L CNN
+F 1 "10p/50V/C0G" H 9865 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9788 4950 50  0001 C CNN
+F 3 "~" H 9750 5100 50  0001 C CNN
+	1    9750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6110C7F7
+P 4150 4650
+F 0 "C?" V 4400 4600 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 4300 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4188 4500 50  0001 C CNN
+F 3 "~" H 4150 4650 50  0001 C CNN
+	1    4150 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6110CF16
+P 7750 5100
+F 0 "C?" H 7865 5146 50  0000 L CNN
+F 1 "1u/6V3/X5R" H 7865 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7788 4950 50  0001 C CNN
+F 3 "~" H 7750 5100 50  0001 C CNN
+	1    7750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6110D4A7
+P 7450 4900
+F 0 "C?" H 7565 4946 50  0000 L CNN
+F 1 "1u/6V3/X5R" H 7565 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7488 4750 50  0001 C CNN
+F 3 "~" H 7450 4900 50  0001 C CNN
+	1    7450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6110E09B
+P 9050 5300
+F 0 "C?" H 9165 5346 50  0000 L CNN
+F 1 "1u/6V3/X5R" H 9165 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9088 5150 50  0001 C CNN
+F 3 "~" H 9050 5300 50  0001 C CNN
+	1    9050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6110EC7A
+P 8700 5100
+F 0 "C?" H 8815 5146 50  0000 L CNN
+F 1 "2u2/6V3/X5R" H 8815 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8738 4950 50  0001 C CNN
+F 3 "~" H 8700 5100 50  0001 C CNN
+	1    8700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6110F8C9
+P 9650 3950
+F 0 "C?" V 9900 3900 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 9800 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9688 3800 50  0001 C CNN
+F 3 "~" H 9650 3950 50  0001 C CNN
+	1    9650 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 611109FF
+P 9950 4100
+F 0 "C?" V 9800 4050 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 9700 3850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9988 3950 50  0001 C CNN
+F 3 "~" H 9950 4100 50  0001 C CNN
+	1    9950 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61135F1B
+P 7900 1900
+F 0 "R?" H 7970 1946 50  0000 L CNN
+F 1 "10k/5%" H 7970 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 1900 50  0001 C CNN
+F 3 "~" H 7900 1900 50  0001 C CNN
+	1    7900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612172A6
+P 8450 1200
+F 0 "C?" V 8700 1150 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 8600 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8488 1050 50  0001 C CNN
+F 3 "~" H 8450 1200 50  0001 C CNN
+	1    8450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612192D7
+P 8850 1200
+F 0 "C?" V 9100 1150 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 9000 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8888 1050 50  0001 C CNN
+F 3 "~" H 8850 1200 50  0001 C CNN
+	1    8850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6123F41A
+P 9450 1200
+F 0 "C?" V 9700 1150 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 9600 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9488 1050 50  0001 C CNN
+F 3 "~" H 9450 1200 50  0001 C CNN
+	1    9450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6124EA04
+P 3300 1200
+F 0 "C?" V 3550 1150 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 3450 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3338 1050 50  0001 C CNN
+F 3 "~" H 3300 1200 50  0001 C CNN
+	1    3300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6124FBF4
+P 2250 1200
+F 0 "C?" V 2500 1150 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 2400 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2288 1050 50  0001 C CNN
+F 3 "~" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61250298
+P 2850 1200
+F 0 "C?" V 3100 1150 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 3000 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2888 1050 50  0001 C CNN
+F 3 "~" H 2850 1200 50  0001 C CNN
+	1    2850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61267B0D
+P 1250 1200
+F 0 "C?" V 1500 1150 50  0000 L CNN
+F 1 "10u/6V3/X5R" V 1400 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1288 1050 50  0001 C CNN
+F 3 "~" H 1250 1200 50  0001 C CNN
+	1    1250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61267EAD
+P 1650 1200
+F 0 "C?" V 1900 1150 50  0000 L CNN
+F 1 "100n/10V/X7R" V 1800 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1688 1050 50  0001 C CNN
+F 3 "~" H 1650 1200 50  0001 C CNN
+	1    1650 1200
+	1    0    0    -1  
+$EndComp
+Text Notes 7400 6900 0    50   ~ 0
+The microphone differential signals (MIC.MAIN.P and MIC.MAIN.N) \nare very low-level and must be balanced and routed \nin parallel, the same distance from start to end, \nthe same impedance for both signals.\n\nFigure 5 and Figure 6 show typical schematics for microphone input. \nThe microphone filtering capacitor must be as close as possible to the mic. \nThe other components must be as close as possible to the device.\nTPS65920 Layout Guide LineIn LineOut Mic.pdf
+Connection ~ 2200 6100
+Wire Wire Line
+	2200 6050 2200 6100
+Connection ~ 3200 6100
+Wire Wire Line
+	2200 6100 2200 6150
+Wire Wire Line
+	3200 6100 2200 6100
+Wire Wire Line
+	4250 6700 2450 6700
+Wire Wire Line
+	2400 5700 2200 5700
+$Comp
+L Device:C C?
+U 1 1 610CFC07
+P 2550 5700
+F 0 "C?" V 2400 5650 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 2300 5450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2588 5550 50  0001 C CNN
+F 3 "~" H 2550 5700 50  0001 C CNN
+	1    2550 5700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610CF67A
+P 2550 6500
+F 0 "C?" V 2800 6450 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 2700 6250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2588 6350 50  0001 C CNN
+F 3 "~" H 2550 6500 50  0001 C CNN
+	1    2550 6500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610CEC75
+P 2050 6700
+F 0 "C?" V 1900 6650 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 1800 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2088 6550 50  0001 C CNN
+F 3 "~" H 2050 6700 50  0001 C CNN
+	1    2050 6700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610B6812
+P 2050 5500
+F 0 "C?" V 2300 5450 50  0000 L CNN
+F 1 "1u/6V3/X5R" V 2200 5250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2088 5350 50  0001 C CNN
+F 3 "~" H 2050 5500 50  0001 C CNN
+	1    2050 5500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1700 5500 1300 5500
+Wire Wire Line
+	2450 6700 2200 6700
 $Comp
 L Device:R R?
 U 1 1 613452A7
-P 2950 6300
-F 0 "R?" H 3020 6346 50  0000 L CNN
-F 1 "2.2k" H 3020 6255 50  0000 L CNN
-F 2 "" V 2880 6300 50  0001 C CNN
-F 3 "~" H 2950 6300 50  0001 C CNN
-	1    2950 6300
+P 2200 6300
+F 0 "R?" H 2270 6346 50  0000 L CNN
+F 1 "2k2/1%" H 2270 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 6300 50  0001 C CNN
+F 3 "~" H 2200 6300 50  0001 C CNN
+	1    2200 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61344D04
+P 2200 5900
+F 0 "R?" H 2270 5946 50  0000 L CNN
+F 1 "2k2/1%" H 2270 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 5900 50  0001 C CNN
+F 3 "~" H 2200 5900 50  0001 C CNN
+	1    2200 5900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 7100 1700 7500
+Wire Wire Line
+	1400 7500 1400 7350
+$Comp
+L power:GND #PWR?
+U 1 1 61334CE4
+P 1400 7500
+F 0 "#PWR?" H 1400 7250 50  0001 C CNN
+F 1 "GND" H 1405 7327 50  0000 C CNN
+F 2 "" H 1400 7500 50  0001 C CNN
+F 3 "" H 1400 7500 50  0001 C CNN
+	1    1400 7500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6133448B
+P 1700 7500
+F 0 "#PWR?" H 1700 7250 50  0001 C CNN
+F 1 "GND" H 1705 7327 50  0000 C CNN
+F 2 "" H 1700 7500 50  0001 C CNN
+F 3 "" H 1700 7500 50  0001 C CNN
+	1    1700 7500
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1700 5500
+Wire Wire Line
+	1700 6800 1700 5500
+Wire Wire Line
+	1400 6700 1300 6700
+Connection ~ 1400 6700
+Wire Wire Line
+	1400 7050 1400 6700
+$Comp
+L Device:R R?
+U 1 1 61324ADA
+P 1400 7200
+F 0 "R?" H 1470 7246 50  0000 L CNN
+F 1 "2k2/1%" H 1470 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 7200 50  0001 C CNN
+F 3 "~" H 1400 7200 50  0001 C CNN
+	1    1400 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61323D42
+P 1700 6950
+F 0 "R?" H 1770 6996 50  0000 L CNN
+F 1 "2k2/1%" H 1770 6905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1630 6950 50  0001 C CNN
+F 3 "~" H 1700 6950 50  0001 C CNN
+	1    1700 6950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6700 1400 6700
+Wire Wire Line
+	2200 6500 1300 6500
+Wire Wire Line
+	2200 5700 1300 5700
+Wire Wire Line
+	1900 5500 1700 5500
+Text HLabel 1300 6700 0    50   Input ~ 0
+HandsetMicInN
+Text HLabel 1300 6500 0    50   Input ~ 0
+HandsetMicInP
+Text HLabel 1300 5700 0    50   Input ~ 0
+MasterMicInP
+Text HLabel 1300 5500 0    50   Input ~ 0
+MasterMicInN
+Text Label 4250 6700 0    50   ~ 0
+MAX_MIC1N
+Connection ~ 2450 6700
+Wire Wire Line
+	2450 6700 2450 6850
+Wire Wire Line
+	3200 7150 3200 7500
+Wire Wire Line
+	3200 6100 3200 6850
+$Comp
+L power:GND #PWR?
+U 1 1 6102F308
+P 3200 7500
+F 0 "#PWR?" H 3200 7250 50  0001 C CNN
+F 1 "GND" H 3205 7327 50  0000 C CNN
+F 2 "" H 3200 7500 50  0001 C CNN
+F 3 "" H 3200 7500 50  0001 C CNN
+	1    3200 7500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 7450 3650 7500
+$Comp
+L power:GND #PWR?
+U 1 1 60FEAF9C
+P 3650 7500
+F 0 "#PWR?" H 3650 7250 50  0001 C CNN
+F 1 "GND" H 3655 7327 50  0000 C CNN
+F 2 "" H 3650 7500 50  0001 C CNN
+F 3 "" H 3650 7500 50  0001 C CNN
+	1    3650 7500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5700 2700 5700
+Connection ~ 3650 5700
+Wire Wire Line
+	3650 5700 3650 7150
+Wire Wire Line
+	4250 5700 3650 5700
+Wire Wire Line
+	3950 7150 3950 7500
+$Comp
+L power:GND #PWR?
+U 1 1 60FD950D
+P 3950 7500
+F 0 "#PWR?" H 3950 7250 50  0001 C CNN
+F 1 "GND" H 3955 7327 50  0000 C CNN
+F 2 "" H 3950 7500 50  0001 C CNN
+F 3 "" H 3950 7500 50  0001 C CNN
+	1    3950 7500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5500 2200 5500
+Connection ~ 3950 5500
+Wire Wire Line
+	3950 5500 3950 6850
+Wire Wire Line
+	4250 5500 3950 5500
+Wire Wire Line
+	2750 7450 2750 7500
+$Comp
+L power:GND #PWR?
+U 1 1 60F65EF3
+P 2750 7500
+F 0 "#PWR?" H 2750 7250 50  0001 C CNN
+F 1 "GND" H 2755 7327 50  0000 C CNN
+F 2 "" H 2750 7500 50  0001 C CNN
+F 3 "" H 2750 7500 50  0001 C CNN
+	1    2750 7500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6500 2750 7150
+Wire Wire Line
+	2450 7150 2450 7500
+$Comp
+L power:GND #PWR?
+U 1 1 60F3FB84
+P 2450 7500
+F 0 "#PWR?" H 2450 7250 50  0001 C CNN
+F 1 "GND" H 2455 7327 50  0000 C CNN
+F 2 "" H 2450 7500 50  0001 C CNN
+F 3 "" H 2450 7500 50  0001 C CNN
+	1    2450 7500
+	-1   0    0    -1  
+$EndComp
+Text Label 4250 6500 0    50   ~ 0
+MAX_MIC1P
+Text Label 4250 5500 0    50   ~ 0
+MAX_MIC2N
+Text Label 4250 5700 0    50   ~ 0
+MAX_MIC2P
+Text Label 4250 6100 0    50   ~ 0
+MAX_MICBIAS
+Wire Wire Line
+	4250 6100 3200 6100
+Connection ~ 2200 5700
+Wire Wire Line
+	2200 6450 2200 6500
+Wire Wire Line
+	2200 6500 2400 6500
+Connection ~ 2200 6500
+Wire Wire Line
+	2700 6500 2750 6500
+Connection ~ 2750 6500
+Wire Wire Line
+	2750 6500 4250 6500
+Wire Wire Line
+	2200 5700 2200 5750
+Wire Wire Line
+	1700 4250 2600 4250
+Text HLabel 1700 4250 0    50   Output ~ 0
+Audio_Master_Out_R
+Wire Wire Line
+	1700 4350 2300 4350
+Text HLabel 1700 4350 0    50   Output ~ 0
+Audio_Master_Out_L
+$Comp
+L Device:C C?
+U 1 1 613742E4
+P 2750 7300
+F 0 "C?" H 2865 7346 50  0000 L CNN
+F 1 "10p/50V/C0G" H 2865 7255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2788 7150 50  0001 C CNN
+F 3 "~" H 2750 7300 50  0001 C CNN
+	1    2750 7300
 	1    0    0    -1  
 $EndComp
-Connection ~ 2950 6150
+$Comp
+L Device:C C?
+U 1 1 6137550F
+P 2450 7000
+F 0 "C?" H 2565 7046 50  0000 L CNN
+F 1 "10p/50V/C0G" H 2565 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2488 6850 50  0001 C CNN
+F 3 "~" H 2450 7000 50  0001 C CNN
+	1    2450 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6137598A
+P 3650 7300
+F 0 "C?" H 3765 7346 50  0000 L CNN
+F 1 "10p/50V/C0G" H 3765 7255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3688 7150 50  0001 C CNN
+F 3 "~" H 3650 7300 50  0001 C CNN
+	1    3650 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61375E2F
+P 3950 7000
+F 0 "C?" H 4065 7046 50  0000 L CNN
+F 1 "10p/50V/C0G" H 4065 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3988 6850 50  0001 C CNN
+F 3 "~" H 3950 7000 50  0001 C CNN
+	1    3950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 613766B2
+P 3200 7000
+F 0 "C?" H 3315 7046 50  0000 L CNN
+F 1 "1u/6V3/X5R" H 3315 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3238 6850 50  0001 C CNN
+F 3 "~" H 3200 7000 50  0001 C CNN
+	1    3200 7000
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 6700 0    50   ~ 0
+Clock Generator MCLK\n12.2880MHz für 48kHz / 11.2896 für 44,1kHz
+$Comp
+L Device:C C?
+U 1 1 61268F71
+P 4900 7200
+F 0 "C?" V 5150 7150 50  0000 L CNN
+F 1 "100n/10V/X7R" V 5050 6950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4938 7050 50  0001 C CNN
+F 3 "~" H 4900 7200 50  0001 C CNN
+	1    4900 7200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4750 7750 4750 6500
+Wire Notes Line
+	6900 7750 4750 7750
+Wire Notes Line
+	6900 6500 6900 7750
+Wire Notes Line
+	4750 6500 6900 6500
+Text Notes 5650 7400 0    50   ~ 0
+12.2880MHz
+Wire Wire Line
+	4900 7350 4900 7500
+Wire Wire Line
+	4900 6950 4900 7050
+$Comp
+L power:GND #PWR?
+U 1 1 613F5D34
+P 4900 7500
+F 0 "#PWR?" H 4900 7250 50  0001 C CNN
+F 1 "GND" H 4905 7327 50  0000 C CNN
+F 2 "" H 4900 7500 50  0001 C CNN
+F 3 "" H 4900 7500 50  0001 C CNN
+	1    4900 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 613F5D2E
+P 4900 6950
+F 0 "#PWR?" H 4900 6800 50  0001 C CNN
+F 1 "+3V3" H 4915 7123 50  0000 C CNN
+F 2 "" H 4900 6950 50  0001 C CNN
+F 3 "" H 4900 6950 50  0001 C CNN
+	1    4900 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613206C7
+P 6450 7500
+F 0 "#PWR?" H 6450 7250 50  0001 C CNN
+F 1 "GND" H 6455 7327 50  0000 C CNN
+F 2 "" H 6450 7500 50  0001 C CNN
+F 3 "" H 6450 7500 50  0001 C CNN
+	1    6450 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:WE_830208220101 Y?
+U 1 1 60E6079E
+P 4700 7100
+F 0 "Y?" H 5900 7350 50  0000 C CNN
+F 1 "830208220101" H 5900 7250 50  0000 C CNN
+F 2 "TeKaDe:WE_IQXO-791" H 6250 7200 50  0001 L CNN
+F 3 "https://www.we-online.de/katalog/datasheet/830208220101.pdf" H 6250 7100 50  0001 L CNN
+F 4 "Standard 2.5 x 2.0 oscillator in a ceramic package with a hermetically sealed metal lid." H 6250 7000 50  0001 L CNN "Description"
+F 5 "1" H 6250 6900 50  0001 L CNN "Height"
+F 6 "" H 6250 6800 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 6250 6700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 6250 6600 50  0001 L CNN "Manufacturer_Name"
+F 9 "830208220101" H 6250 6500 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "sufficient" H 4700 7100 50  0001 C CNN "Availability"
+	1    4700 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 7200 6400 7200
+Wire Wire Line
+	6450 7500 6450 7200
+Wire Wire Line
+	6400 7100 6450 7100
+Text Label 6450 7100 0    50   ~ 0
+MAX_MCLK
+Wire Wire Line
+	5250 7100 5300 7100
+Connection ~ 5250 7100
+Wire Wire Line
+	5250 7200 5300 7200
+Wire Wire Line
+	5250 7100 5250 7200
+Wire Wire Line
+	5250 6950 5250 7100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60E6077F
+P 5250 6950
+F 0 "#PWR?" H 5250 6800 50  0001 C CNN
+F 1 "+3V3" H 5265 7123 50  0000 C CNN
+F 2 "" H 5250 6950 50  0001 C CNN
+F 3 "" H 5250 6950 50  0001 C CNN
+	1    5250 6950
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	1950 2250 1850 2150
+Text Label 2500 2250 0    50   ~ 0
+RPi_I2S_SD_OUT
+Wire Wire Line
+	2500 2250 1950 2250
+Wire Bus Line
+	1850 2550 1850 2850
+Wire Bus Line
+	1850 1950 1850 2250
 $EndSCHEMATC
