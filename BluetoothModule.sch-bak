@@ -13,175 +13,169 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 3700 1700 2    50   ~ 0
+Text Label 4050 1450 2    50   ~ 0
 BM83_I2S_SD_IN
-Text Label 3700 1800 2    50   ~ 0
+Text Label 4050 1550 2    50   ~ 0
 BM83_I2S_WS
-Text Label 3700 1900 2    50   ~ 0
+Text Label 4050 1650 2    50   ~ 0
 BM83_I2S_SD_CLK
 $Comp
-L TeKaDe:BM83SM1-00TA IC?
+L TeKaDe:BM83SM1-00TA U2
 U 1 1 620D3641
-P 4050 1700
-F 0 "IC?" H 5050 1965 50  0000 C CNN
-F 1 "BM83SM1-00TA" H 5050 1874 50  0000 C CNN
-F 2 "BM83SM100TA" H 5900 1800 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/BM83_Bluetooth_Stereo_Audio_Module_Data_Sheet_DS70005402A.pdf" H 5900 1700 50  0001 L CNN
-F 4 "Bluetooth Modules (802.15.1) Bluetooth Audio Class 1 Transceiver Module with A2DP Source" H 5900 1600 50  0001 L CNN "Description"
-F 5 "2.5" H 5900 1500 50  0001 L CNN "Height"
-F 6 "579-BM83SM1-00TA" H 5900 1400 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/BM83SM1-00TA/?qs=W%2FMpXkg%252BdQ4DzNNx0q4h4Q%3D%3D" H 5900 1300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 5900 1200 50  0001 L CNN "Manufacturer_Name"
-F 9 "BM83SM1-00TA" H 5900 1100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4050 1700
+P 4400 1450
+F 0 "U2" H 5400 1715 50  0000 C CNN
+F 1 "BM83SM1-00TA" H 5400 1624 50  0000 C CNN
+F 2 "TeKaDe:BM83SM1" H 6250 1550 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/BM83_Bluetooth_Stereo_Audio_Module_Data_Sheet_DS70005402A.pdf" H 6250 1450 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) Bluetooth Audio Class 1 Transceiver Module with A2DP Source" H 6250 1350 50  0001 L CNN "Description"
+F 5 "2.5" H 6250 1250 50  0001 L CNN "Height"
+F 6 "579-BM83SM1-00TA" H 6250 1150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/BM83SM1-00TA/?qs=W%2FMpXkg%252BdQ4DzNNx0q4h4Q%3D%3D" H 6250 1050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 6250 950 50  0001 L CNN "Manufacturer_Name"
+F 9 "BM83SM1-00TA" H 6250 850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4400 1450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4050 2200
-NoConn ~ 4050 2300
-NoConn ~ 4050 2400
-NoConn ~ 4050 2500
-NoConn ~ 4050 2600
-NoConn ~ 4050 2700
-NoConn ~ 4050 2800
-NoConn ~ 4050 2900
-NoConn ~ 4050 3000
-NoConn ~ 4050 3100
-NoConn ~ 4050 3300
-NoConn ~ 4050 3400
-NoConn ~ 4050 3500
-NoConn ~ 4050 3600
-NoConn ~ 4050 3700
-NoConn ~ 4050 3800
+NoConn ~ 4400 1950
+NoConn ~ 4400 2050
+NoConn ~ 4400 2150
+NoConn ~ 4400 2250
+NoConn ~ 4400 2350
+NoConn ~ 4400 2450
+NoConn ~ 4400 2550
+NoConn ~ 4400 2650
+NoConn ~ 4400 2750
+NoConn ~ 4400 2850
+NoConn ~ 4400 3050
+NoConn ~ 4400 3150
+NoConn ~ 4400 3250
+NoConn ~ 4400 3350
+NoConn ~ 4400 3450
+NoConn ~ 4400 3550
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR052
 U 1 1 620D3663
-P 3750 1150
-F 0 "#PWR?" H 3750 1000 50  0001 C CNN
-F 1 "+3.3V" H 3765 1323 50  0000 C CNN
-F 2 "" H 3750 1150 50  0001 C CNN
-F 3 "" H 3750 1150 50  0001 C CNN
-	1    3750 1150
+P 4100 900
+F 0 "#PWR052" H 4100 750 50  0001 C CNN
+F 1 "+3.3V" H 4115 1073 50  0000 C CNN
+F 2 "" H 4100 900 50  0001 C CNN
+F 3 "" H 4100 900 50  0001 C CNN
+	1    4100 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C11
 U 1 1 620D366F
-P 2550 2900
-F 0 "C?" H 2665 2946 50  0000 L CNN
-F 1 "1u/16V" H 2665 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 2750 50  0001 C CNN
-F 3 "~" H 2550 2900 50  0001 C CNN
-	1    2550 2900
+P 2400 2600
+F 0 "C11" H 2515 2646 50  0000 L CNN
+F 1 "1u/16V" H 2515 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 2450 50  0001 C CNN
+F 3 "~" H 2400 2600 50  0001 C CNN
+	1    2400 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 3900 4050 3900
+	4100 3650 4400 3650
 Wire Wire Line
-	4050 4200 1900 4200
-NoConn ~ 6050 2200
-NoConn ~ 6050 2400
-NoConn ~ 6050 2600
-NoConn ~ 6050 2700
+	4400 3950 2650 3950
+NoConn ~ 6400 2350
+NoConn ~ 6400 2450
 Wire Wire Line
-	6050 4000 6250 4000
-Text Label 1900 4100 2    50   ~ 0
-BM83_VDD_IO
-NoConn ~ 6050 3600
-NoConn ~ 6050 3700
-NoConn ~ 6050 2300
-NoConn ~ 6050 2500
-NoConn ~ 6050 2800
-NoConn ~ 6050 2900
-NoConn ~ 6050 3000
-NoConn ~ 6050 3100
-NoConn ~ 6050 3200
-NoConn ~ 6050 3400
-NoConn ~ 6050 3500
-NoConn ~ 6050 3900
+	6400 3750 6600 3750
+Text Label 3000 3850 2    50   ~ 0
+VDD_IO
+NoConn ~ 6400 3350
+NoConn ~ 6400 3450
+NoConn ~ 6400 2050
+NoConn ~ 6400 2250
+NoConn ~ 6400 2550
+NoConn ~ 6400 2650
+NoConn ~ 6400 2750
+NoConn ~ 6400 2850
+NoConn ~ 6400 2950
+NoConn ~ 6400 3150
+NoConn ~ 6400 3250
+NoConn ~ 6400 3650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR057
 U 1 1 620E43D7
-P 3850 5050
-F 0 "#PWR?" H 3850 4800 50  0001 C CNN
-F 1 "GND" H 3855 4877 50  0000 C CNN
-F 2 "" H 3850 5050 50  0001 C CNN
-F 3 "" H 3850 5050 50  0001 C CNN
-	1    3850 5050
+P 4200 4800
+F 0 "#PWR057" H 4200 4550 50  0001 C CNN
+F 1 "GND" H 4205 4627 50  0000 C CNN
+F 2 "" H 4200 4800 50  0001 C CNN
+F 3 "" H 4200 4800 50  0001 C CNN
+	1    4200 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 5050 3850 3200
+	4200 4800 4200 2950
 Wire Wire Line
-	3850 3200 4050 3200
+	4200 2950 4400 2950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR058
 U 1 1 620E7F5A
-P 6250 5050
-F 0 "#PWR?" H 6250 4800 50  0001 C CNN
-F 1 "GND" H 6255 4877 50  0000 C CNN
-F 2 "" H 6250 5050 50  0001 C CNN
-F 3 "" H 6250 5050 50  0001 C CNN
-	1    6250 5050
+P 6600 4800
+F 0 "#PWR058" H 6600 4550 50  0001 C CNN
+F 1 "GND" H 6605 4627 50  0000 C CNN
+F 2 "" H 6600 4800 50  0001 C CNN
+F 3 "" H 6600 4800 50  0001 C CNN
+	1    6600 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR053
 U 1 1 620F327C
-P 2550 5050
-F 0 "#PWR?" H 2550 4800 50  0001 C CNN
-F 1 "GND" H 2555 4877 50  0000 C CNN
-F 2 "" H 2550 5050 50  0001 C CNN
-F 3 "" H 2550 5050 50  0001 C CNN
-	1    2550 5050
+P 2400 4750
+F 0 "#PWR053" H 2400 4500 50  0001 C CNN
+F 1 "GND" H 2405 4577 50  0000 C CNN
+F 2 "" H 2400 4750 50  0001 C CNN
+F 3 "" H 2400 4750 50  0001 C CNN
+	1    2400 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 5050 2550 3050
+	2400 4750 2400 2750
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR051
 U 1 1 620F6127
-P 2550 1150
-F 0 "#PWR?" H 2550 1000 50  0001 C CNN
-F 1 "+3.3V" H 2565 1323 50  0000 C CNN
-F 2 "" H 2550 1150 50  0001 C CNN
-F 3 "" H 2550 1150 50  0001 C CNN
-	1    2550 1150
+P 2400 900
+F 0 "#PWR051" H 2400 750 50  0001 C CNN
+F 1 "+3.3V" H 2415 1073 50  0000 C CNN
+F 2 "" H 2400 900 50  0001 C CNN
+F 3 "" H 2400 900 50  0001 C CNN
+	1    2400 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 1150 2550 2750
+	2400 900  2400 2450
 Wire Wire Line
-	3750 1150 3750 3900
-Text HLabel 1900 4200 0    50   Input ~ 0
+	4100 900  4100 3650
+Text HLabel 1750 3950 0    50   Input ~ 0
 BM83_MFB
-Text HLabel 8950 1700 2    50   BiDi ~ 0
+Text HLabel 10050 1450 2    50   BiDi ~ 0
 UART
 Entry Wire Line
-	8800 1900 8900 1800
+	9900 1650 10000 1550
 Entry Wire Line
-	8800 2000 8900 1900
+	9900 1750 10000 1650
 Wire Bus Line
-	8900 1700 8950 1700
+	10000 1450 10050 1450
 Wire Wire Line
-	6250 4200 6250 5050
+	6600 3950 6600 4800
 Wire Wire Line
-	6050 4200 6250 4200
-Connection ~ 6250 4200
+	6400 3950 6600 3950
+Connection ~ 6600 3950
 Wire Wire Line
-	6050 4100 6250 4100
-Connection ~ 6250 4100
+	6400 3850 6600 3850
+Connection ~ 6600 3850
 Wire Wire Line
-	6250 4000 6250 4100
+	6600 3750 6600 3850
 Wire Wire Line
-	6250 4100 6250 4200
-Text Notes 1700 3800 0    50   ~ 0
-ADAP_IN To be used for USB Device Firmware Upgrade (DFU)
-Text Notes 2600 4350 2    50   ~ 0
-Multi-function push button and Power On key
-Text Notes 2200 7400 0    50   ~ 0
-BM83 im Host Mode (gesteuert von RPI)\nMFB active high -> Pulldown??\nLED1 und 2 nicht verwenden?\nWarum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nUSB FW Update implementieren?\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nÄnderungen:\n- Bypass C an VDD_IO ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefügt\n- Pullup für active low reset pin
+	6600 3850 6600 3950
+Text Notes 1050 7150 0    50   ~ 0
+BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57
 $Bitmap
-Pos 9750 5450
+Pos 5150 6250
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 24 00 00 02 35 08 02 00 00 00 A8 95 A9 
@@ -1243,264 +1237,338 @@ BA E6 3D AE 83 00 9D 4C DC 22 D6 2C E6 3A 08 00 00 E8 D4 FF 03 5E 69 20 78 CA 3F
 EndData
 $EndBitmap
 $Comp
-L Device:C C?
+L Device:C C15
 U 1 1 60DA1121
-P 3350 4750
-F 0 "C?" H 3465 4796 50  0000 L CNN
-F 1 "100n/16V/X7R" H 3465 4705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3388 4600 50  0001 C CNN
-F 3 "~" H 3350 4750 50  0001 C CNN
-	1    3350 4750
+P 3700 4500
+F 0 "C15" H 3815 4546 50  0000 L CNN
+F 1 "100n/16V/X7R" H 3815 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 4350 50  0001 C CNN
+F 3 "~" H 3700 4500 50  0001 C CNN
+	1    3700 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR056
 U 1 1 60DA112B
-P 3350 5050
-F 0 "#PWR?" H 3350 4800 50  0001 C CNN
-F 1 "GND" H 3355 4877 50  0000 C CNN
-F 2 "" H 3350 5050 50  0001 C CNN
-F 3 "" H 3350 5050 50  0001 C CNN
-	1    3350 5050
+P 3700 4800
+F 0 "#PWR056" H 3700 4550 50  0001 C CNN
+F 1 "GND" H 3705 4627 50  0000 C CNN
+F 2 "" H 3700 4800 50  0001 C CNN
+F 3 "" H 3700 4800 50  0001 C CNN
+	1    3700 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 5050 3350 4900
+	3700 4800 3700 4650
 Wire Wire Line
-	3350 4100 3350 4600
+	3700 3850 3700 4350
 $Comp
-L Device:C C?
+L Device:C C14
 U 1 1 60DA7A8D
-P 2850 4500
-F 0 "C?" H 2965 4546 50  0000 L CNN
-F 1 "100n/16V/X7R" H 2965 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 4350 50  0001 C CNN
-F 3 "~" H 2850 4500 50  0001 C CNN
-	1    2850 4500
+P 3200 4250
+F 0 "C14" H 3315 4296 50  0000 L CNN
+F 1 "100n/16V/X7R" H 3315 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 4100 50  0001 C CNN
+F 3 "~" H 3200 4250 50  0001 C CNN
+	1    3200 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR055
 U 1 1 60DA7A97
-P 2850 5050
-F 0 "#PWR?" H 2850 4800 50  0001 C CNN
-F 1 "GND" H 2855 4877 50  0000 C CNN
-F 2 "" H 2850 5050 50  0001 C CNN
-F 3 "" H 2850 5050 50  0001 C CNN
-	1    2850 5050
+P 3200 4800
+F 0 "#PWR055" H 3200 4550 50  0001 C CNN
+F 1 "GND" H 3205 4627 50  0000 C CNN
+F 2 "" H 3200 4800 50  0001 C CNN
+F 3 "" H 3200 4800 50  0001 C CNN
+	1    3200 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 5050 2850 4650
+	3200 4800 3200 4400
 Wire Wire Line
-	2850 4000 2850 4350
+	3200 3750 3200 4100
 Wire Wire Line
-	2850 4000 4050 4000
+	3200 3750 4400 3750
 Wire Wire Line
-	1900 4100 3350 4100
-Connection ~ 3350 4100
+	3000 3850 3700 3850
+Connection ~ 3700 3850
 Wire Wire Line
-	3350 4100 4050 4100
-Text Label 3700 2000 2    50   ~ 0
+	3700 3850 4400 3850
+Text Label 4050 1750 2    50   ~ 0
 BM83_I2S_SD_OUT
 Wire Bus Line
-	2000 1600 1900 1600
+	1850 1350 1750 1350
 Wire Wire Line
-	2100 2000 4050 2000
+	1950 1750 4400 1750
 Entry Wire Line
-	2000 1900 2100 2000
+	1850 1650 1950 1750
 Wire Wire Line
-	2100 1900 4050 1900
+	1950 1650 4400 1650
 Entry Wire Line
-	2000 1800 2100 1900
+	1850 1550 1950 1650
 Wire Wire Line
-	2100 1800 4050 1800
+	1950 1550 4400 1550
 Entry Wire Line
-	2000 1700 2100 1800
+	1850 1450 1950 1550
 Entry Wire Line
-	2000 1600 2100 1700
-Text HLabel 1900 1600 0    50   BiDi ~ 0
+	1850 1350 1950 1450
+Text HLabel 1750 1350 0    50   BiDi ~ 0
 I2S_Slave
-Text Notes 950  1450 0    50   ~ 0
+Text Notes 2600 1350 0    50   ~ 0
 The point-to-point nature of I2S \ntransmission eliminates the need \nfor I2C’s pullup resistors
-Text Notes 800  900  0    50   ~ 0
-For the I2C, I2S, and UART groups, each respective group's traces should run parallel\nwith as wide spacing as possible and be isolated from other groups with GND copper\nfoil. If isolation is not possible due to limited space, please at least increase the interval\nbetween traces belonging to different groups. 
-NoConn ~ 4050 2100
-Text Notes 1550 -150 0    50   ~ 0
-Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung des Slaves verwendet werden.\nDies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten, vgl. DS 6.5\nVermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, so dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK nicht notwendig?\nThis is not part of the I2S standard,[4] \nbut is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
+Text Notes 3400 7600 0    50   ~ 0
+For the I2C, I2S, and UART groups, each respective group's traces should run parallel\nwith as wide spacing as possible and be isolated from other groups with GND copper\nfoil. If isolation is not possible due to limited space, please at least increase the \ninterval between traces belonging to different groups. 
+NoConn ~ 4400 1850
+Text Notes 7000 6350 0    50   ~ 0
+Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung \ndes Slaves verwendet werden. Dies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten.\nvgl. DS 6.5. Vermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, \nso dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK is not part of the I2S standard, but is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 60DB214B
-P 6350 1400
-F 0 "R?" H 6150 1350 50  0000 C CNN
-F 1 "4k7/1%" H 6100 1450 50  0000 C CNN
-F 2 "" V 6390 1390 50  0001 C CNN
-F 3 "~" H 6350 1400 50  0001 C CNN
-	1    6350 1400
+P 6700 1150
+F 0 "R9" H 6500 1100 50  0000 C CNN
+F 1 "4k7/1%" H 6450 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6740 1140 50  0001 C CNN
+F 3 "~" H 6700 1150 50  0001 C CNN
+	1    6700 1150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6900 1700 7100 1700
-Connection ~ 6900 1700
+	8000 1450 8200 1450
+Connection ~ 8000 1450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR061
 U 1 1 60DAF699
-P 7350 5050
-F 0 "#PWR?" H 7350 4800 50  0001 C CNN
-F 1 "GND" H 7355 4877 50  0000 C CNN
-F 2 "" H 7350 5050 50  0001 C CNN
-F 3 "" H 7350 5050 50  0001 C CNN
-	1    7350 5050
+P 8450 4800
+F 0 "#PWR061" H 8450 4550 50  0001 C CNN
+F 1 "GND" H 8455 4627 50  0000 C CNN
+F 2 "" H 8450 4800 50  0001 C CNN
+F 3 "" H 8450 4800 50  0001 C CNN
+	1    8450 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR059
 U 1 1 60DAEFE7
-P 6900 5050
-F 0 "#PWR?" H 6900 4800 50  0001 C CNN
-F 1 "GND" H 6905 4877 50  0000 C CNN
-F 2 "" H 6900 5050 50  0001 C CNN
-F 3 "" H 6900 5050 50  0001 C CNN
-	1    6900 5050
+P 8000 4800
+F 0 "#PWR059" H 8000 4550 50  0001 C CNN
+F 1 "GND" H 8005 4627 50  0000 C CNN
+F 2 "" H 8000 4800 50  0001 C CNN
+F 3 "" H 8000 4800 50  0001 C CNN
+	1    8000 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C12
 U 1 1 60DAD2BA
-P 6900 3400
-F 0 "C?" H 7015 3446 50  0000 L CNN
-F 1 "1u/16V" H 7015 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6938 3250 50  0001 C CNN
-F 3 "~" H 6900 3400 50  0001 C CNN
-	1    6900 3400
+P 8000 3150
+F 0 "C12" H 8115 3196 50  0000 L CNN
+F 1 "1u/16V" H 8115 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 3000 50  0001 C CNN
+F 3 "~" H 8000 3150 50  0001 C CNN
+	1    8000 3150
 	1    0    0    -1  
 $EndComp
-Text Notes 6750 1000 0    50   ~ 0
+Text Notes 7850 750  0    50   ~ 0
 Overtemp SD
 Wire Wire Line
-	6050 1900 8800 1900
+	6400 1650 9900 1650
 Wire Wire Line
-	6050 2000 8800 2000
-Connection ~ 7100 1700
+	6400 1750 9900 1750
+Connection ~ 8200 1450
 Wire Wire Line
-	7100 1700 7100 4050
+	8200 1450 8200 3800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR060
 U 1 1 60E2C9E3
-P 7100 5050
-F 0 "#PWR?" H 7100 4800 50  0001 C CNN
-F 1 "GND" H 7105 4877 50  0000 C CNN
-F 2 "" H 7100 5050 50  0001 C CNN
-F 3 "" H 7100 5050 50  0001 C CNN
-	1    7100 5050
+P 8200 4800
+F 0 "#PWR060" H 8200 4550 50  0001 C CNN
+F 1 "GND" H 8205 4627 50  0000 C CNN
+F 2 "" H 8200 4800 50  0001 C CNN
+F 3 "" H 8200 4800 50  0001 C CNN
+	1    8200 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Thermistor TH?
+L Device:Thermistor TH1
 U 1 1 620D36B7
-P 7100 4700
-F 0 "TH?" H 6850 4650 50  0000 C CNN
-F 1 "100k: Murata NCP15WF104F" H 6450 4750 50  0000 C CNN
-F 2 "" H 7100 4700 50  0001 C CNN
-F 3 "~" H 7100 4700 50  0001 C CNN
-	1    7100 4700
+P 8200 4450
+F 0 "TH1" H 7950 4400 50  0000 C CNN
+F 1 "NTC/100k/1%/4250–4299K" H 7550 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8200 4450 50  0001 C CNN
+F 3 "~" H 8200 4450 50  0001 C CNN
+	1    8200 4450
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R11
 U 1 1 620D36B1
-P 7100 4200
-F 0 "R?" H 6900 4150 50  0000 C CNN
-F 1 "86k6/1%" H 6850 4250 50  0000 C CNN
-F 2 "" V 7140 4190 50  0001 C CNN
-F 3 "~" H 7100 4200 50  0001 C CNN
-	1    7100 4200
+P 8200 3950
+F 0 "R11" H 8000 3900 50  0000 C CNN
+F 1 "86k6/1%" H 7950 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8240 3940 50  0001 C CNN
+F 3 "~" H 8200 3950 50  0001 C CNN
+	1    8200 3950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7100 5050 7100 4900
+	8200 4800 8200 4650
 Wire Wire Line
-	7100 4350 7100 4500
+	8200 4100 8200 4250
 Wire Wire Line
-	7100 1550 7100 1700
-Text Label 8150 2000 0    50   ~ 0
+	8200 1300 8200 1450
+Text Label 9250 1750 0    50   ~ 0
 RPi_UART0_RX
-Text Label 8150 1900 0    50   ~ 0
+Text Label 9250 1650 0    50   ~ 0
 RPi_UART0_TX
 $Comp
-L Device:R R?
+L Device:R R10
 U 1 1 620D36AB
-P 7100 1400
-F 0 "R?" H 7168 1446 50  0000 L CNN
-F 1 "1M/1%" H 7168 1355 50  0000 L CNN
-F 2 "" V 7140 1390 50  0001 C CNN
-F 3 "~" H 7100 1400 50  0001 C CNN
-	1    7100 1400
+P 8200 1150
+F 0 "R10" H 8268 1196 50  0000 L CNN
+F 1 "1M/1%" H 8268 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8240 1140 50  0001 C CNN
+F 3 "~" H 8200 1150 50  0001 C CNN
+	1    8200 1150
 	1    0    0    -1  
 $EndComp
-Text Label 6150 1050 2    50   ~ 0
-BM83_VDD_IO
+Text Label 6500 800  2    50   ~ 0
+VDD_IO
 Wire Wire Line
-	6050 3300 6350 3300
+	6400 3050 6700 3050
 Wire Wire Line
-	6050 1700 6900 1700
+	6400 1450 8000 1450
 Wire Wire Line
-	6350 1550 6350 3300
+	6700 1300 6700 3050
 Wire Wire Line
-	6350 1250 6350 1050
+	6700 1000 6700 800 
 Wire Wire Line
-	6350 1050 6150 1050
-Entry Wire Line
-	8800 2100 8900 2000
-Entry Wire Line
-	8800 3800 8900 3700
-Text Label 8150 3800 0    50   ~ 0
-RPi_UART0_RTS
-Text Label 8150 2100 0    50   ~ 0
-RPi_UART0_CTS
-Connection ~ 6350 1050
+	6700 800  6500 800 
 Wire Notes Line
-	6700 900  7550 900 
+	7800 650  8650 650 
 Wire Notes Line
-	7550 900  7550 5350
+	8650 650  8650 5100
 Wire Notes Line
-	7550 5350 6700 5350
+	8650 5100 7800 5100
 Wire Notes Line
-	6700 5350 6700 900 
+	7800 5100 7800 650 
 Wire Wire Line
-	6350 1050 7100 1050
+	6700 800  8200 800 
 Wire Wire Line
-	4050 1700 2100 1700
+	4400 1450 1950 1450
 Wire Wire Line
-	6900 1700 6900 3250
+	8000 1450 8000 3000
 Wire Wire Line
-	6900 3550 6900 5050
+	8000 3300 8000 4800
 Wire Wire Line
-	7100 1250 7100 1050
-Connection ~ 7100 1050
+	8200 1000 8200 800 
+Connection ~ 8200 800 
 Wire Wire Line
-	7100 1050 7350 1050
+	8200 800  8450 800 
 Wire Wire Line
-	6050 2100 8800 2100
+	8450 4800 8450 3500
 Wire Wire Line
-	6050 3800 8800 3800
-Wire Wire Line
-	7350 5050 7350 3750
-Wire Wire Line
-	7350 3450 7350 1050
+	8450 3200 8450 800 
 $Comp
-L Device:C C?
+L Device:C C13
 U 1 1 60DADF73
-P 7350 3600
-F 0 "C?" H 7465 3646 50  0000 L CNN
-F 1 "100n/16V/X7R" H 7465 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3450 50  0001 C CNN
-F 3 "~" H 7350 3600 50  0001 C CNN
-	1    7350 3600
+P 8450 3350
+F 0 "C13" H 8565 3396 50  0000 L CNN
+F 1 "100n/16V/X7R" H 8565 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 3200 50  0001 C CNN
+F 3 "~" H 8450 3350 50  0001 C CNN
+	1    8450 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R12
+U 1 1 60E6FDE1
+P 2650 4250
+F 0 "R12" H 2450 4200 50  0000 C CNN
+F 1 "10k/5%" H 2400 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2690 4240 50  0001 C CNN
+F 3 "~" H 2650 4250 50  0001 C CNN
+	1    2650 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 60E7094B
+P 2650 4750
+F 0 "#PWR054" H 2650 4500 50  0001 C CNN
+F 1 "GND" H 2655 4577 50  0000 C CNN
+F 2 "" H 2650 4750 50  0001 C CNN
+F 3 "" H 2650 4750 50  0001 C CNN
+	1    2650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3950 2650 4100
+Connection ~ 2650 3950
+Wire Wire Line
+	2650 3950 1750 3950
+Wire Wire Line
+	2650 4400 2650 4750
+NoConn ~ 6400 3550
+NoConn ~ 6400 1850
+Text Notes 3800 9050 0    50   ~ 0
+Warum Temperatur messen?\nUnused Pin Connections nicht beschrieben\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
+Wire Wire Line
+	3000 3750 3200 3750
+Connection ~ 3200 3750
+Text Label 3000 3750 2    50   ~ 0
+SYS_PWR
+$Comp
+L Device:LED D1
+U 1 1 60E96C02
+P 7000 1950
+F 0 "D1" H 6993 2166 50  0000 C CNN
+F 1 "LED_BLUE" H 6993 2075 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7000 1950 50  0001 C CNN
+F 3 "~" H 7000 1950 50  0001 C CNN
+	1    7000 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 800 
+$Comp
+L Device:LED D2
+U 1 1 60EA3694
+P 7000 2150
+F 0 "D2" H 7000 2000 50  0000 C CNN
+F 1 "LED_RED" H 7000 1900 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7000 2150 50  0001 C CNN
+F 3 "~" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1950 6850 1950
+Wire Wire Line
+	6400 2150 6850 2150
+Wire Wire Line
+	7150 2150 7250 2150
+Wire Wire Line
+	7250 2150 7250 1950
+Wire Wire Line
+	7250 1950 7150 1950
+Wire Wire Line
+	7250 1950 7350 1950
+Connection ~ 7250 1950
+Text Label 7350 1950 0    50   ~ 0
+SYS_PWR
+NoConn ~ 6400 1550
+Text Notes 9450 4650 0    50   ~ 0
+NOTE: (NCP15WF104F03)\nThermistor must be placed close to the\nbattery in the user application for\naccurate measurements and to enable\nthe thermal shutdown feature.
+Wire Notes Line
+	8050 4200 11000 4200
+Wire Notes Line
+	11000 4200 11000 4750
+Wire Notes Line
+	11000 4750 8050 4750
+Wire Notes Line
+	8050 4750 8050 4200
 Wire Bus Line
-	2000 1600 2000 1900
+	10000 1450 10000 1650
 Wire Bus Line
-	8900 1700 8900 3700
+	1850 1350 1850 1650
 $EndSCHEMATC
