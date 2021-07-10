@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -20,10 +20,10 @@ BM83_I2S_WS
 Text Label 4050 1650 2    50   ~ 0
 BM83_I2S_SD_CLK
 $Comp
-L TeKaDe:BM83SM1-00TA U2
+L TeKaDe:BM83SM1-00TA U1
 U 1 1 620D3641
 P 4400 1450
-F 0 "U2" H 5400 1715 50  0000 C CNN
+F 0 "U1" H 5400 1715 50  0000 C CNN
 F 1 "BM83SM1-00TA" H 5400 1624 50  0000 C CNN
 F 2 "TeKaDe:BM83SM1" H 6250 1550 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/BM83_Bluetooth_Stereo_Audio_Module_Data_Sheet_DS70005402A.pdf" H 6250 1450 50  0001 L CNN
@@ -53,10 +53,10 @@ NoConn ~ 4400 3350
 NoConn ~ 4400 3450
 NoConn ~ 4400 3550
 $Comp
-L power:+3.3V #PWR052
+L power:+3.3V #PWR014
 U 1 1 620D3663
 P 4100 900
-F 0 "#PWR052" H 4100 750 50  0001 C CNN
+F 0 "#PWR014" H 4100 750 50  0001 C CNN
 F 1 "+3.3V" H 4115 1073 50  0000 C CNN
 F 2 "" H 4100 900 50  0001 C CNN
 F 3 "" H 4100 900 50  0001 C CNN
@@ -64,10 +64,10 @@ F 3 "" H 4100 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C11
+L Device:C C1
 U 1 1 620D366F
 P 2400 2600
-F 0 "C11" H 2515 2646 50  0000 L CNN
+F 0 "C1" H 2515 2646 50  0000 L CNN
 F 1 "1u/16V" H 2515 2555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2438 2450 50  0001 C CNN
 F 3 "~" H 2400 2600 50  0001 C CNN
@@ -97,10 +97,10 @@ NoConn ~ 6400 3150
 NoConn ~ 6400 3250
 NoConn ~ 6400 3650
 $Comp
-L power:GND #PWR057
+L power:GND #PWR015
 U 1 1 620E43D7
 P 4200 4800
-F 0 "#PWR057" H 4200 4550 50  0001 C CNN
+F 0 "#PWR015" H 4200 4550 50  0001 C CNN
 F 1 "GND" H 4205 4627 50  0000 C CNN
 F 2 "" H 4200 4800 50  0001 C CNN
 F 3 "" H 4200 4800 50  0001 C CNN
@@ -112,10 +112,10 @@ Wire Wire Line
 Wire Wire Line
 	4200 2950 4400 2950
 $Comp
-L power:GND #PWR058
+L power:GND #PWR016
 U 1 1 620E7F5A
 P 6600 4800
-F 0 "#PWR058" H 6600 4550 50  0001 C CNN
+F 0 "#PWR016" H 6600 4550 50  0001 C CNN
 F 1 "GND" H 6605 4627 50  0000 C CNN
 F 2 "" H 6600 4800 50  0001 C CNN
 F 3 "" H 6600 4800 50  0001 C CNN
@@ -123,10 +123,10 @@ F 3 "" H 6600 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR053
+L power:GND #PWR010
 U 1 1 620F327C
 P 2400 4750
-F 0 "#PWR053" H 2400 4500 50  0001 C CNN
+F 0 "#PWR010" H 2400 4500 50  0001 C CNN
 F 1 "GND" H 2405 4577 50  0000 C CNN
 F 2 "" H 2400 4750 50  0001 C CNN
 F 3 "" H 2400 4750 50  0001 C CNN
@@ -136,10 +136,10 @@ $EndComp
 Wire Wire Line
 	2400 4750 2400 2750
 $Comp
-L power:+3.3V #PWR051
+L power:+3.3V #PWR09
 U 1 1 620F6127
 P 2400 900
-F 0 "#PWR051" H 2400 750 50  0001 C CNN
+F 0 "#PWR09" H 2400 750 50  0001 C CNN
 F 1 "+3.3V" H 2415 1073 50  0000 C CNN
 F 2 "" H 2400 900 50  0001 C CNN
 F 3 "" H 2400 900 50  0001 C CNN
@@ -1237,10 +1237,10 @@ BA E6 3D AE 83 00 9D 4C DC 22 D6 2C E6 3A 08 00 00 E8 D4 FF 03 5E 69 20 78 CA 3F
 EndData
 $EndBitmap
 $Comp
-L Device:C C15
+L Device:C C3
 U 1 1 60DA1121
 P 3700 4500
-F 0 "C15" H 3815 4546 50  0000 L CNN
+F 0 "C3" H 3815 4546 50  0000 L CNN
 F 1 "100n/16V/X7R" H 3815 4455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3738 4350 50  0001 C CNN
 F 3 "~" H 3700 4500 50  0001 C CNN
@@ -1248,10 +1248,10 @@ F 3 "~" H 3700 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR056
+L power:GND #PWR013
 U 1 1 60DA112B
 P 3700 4800
-F 0 "#PWR056" H 3700 4550 50  0001 C CNN
+F 0 "#PWR013" H 3700 4550 50  0001 C CNN
 F 1 "GND" H 3705 4627 50  0000 C CNN
 F 2 "" H 3700 4800 50  0001 C CNN
 F 3 "" H 3700 4800 50  0001 C CNN
@@ -1263,10 +1263,10 @@ Wire Wire Line
 Wire Wire Line
 	3700 3850 3700 4350
 $Comp
-L Device:C C14
+L Device:C C2
 U 1 1 60DA7A8D
 P 3200 4250
-F 0 "C14" H 3315 4296 50  0000 L CNN
+F 0 "C2" H 3315 4296 50  0000 L CNN
 F 1 "100n/16V/X7R" H 3315 4205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 4100 50  0001 C CNN
 F 3 "~" H 3200 4250 50  0001 C CNN
@@ -1274,10 +1274,10 @@ F 3 "~" H 3200 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR055
+L power:GND #PWR012
 U 1 1 60DA7A97
 P 3200 4800
-F 0 "#PWR055" H 3200 4550 50  0001 C CNN
+F 0 "#PWR012" H 3200 4550 50  0001 C CNN
 F 1 "GND" H 3205 4627 50  0000 C CNN
 F 2 "" H 3200 4800 50  0001 C CNN
 F 3 "" H 3200 4800 50  0001 C CNN
@@ -1323,10 +1323,10 @@ NoConn ~ 4400 1850
 Text Notes 7000 6350 0    50   ~ 0
 Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung \ndes Slaves verwendet werden. Dies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten.\nvgl. DS 6.5. Vermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, \nso dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK is not part of the I2S standard, but is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
 $Comp
-L Device:R R9
+L Device:R R2
 U 1 1 60DB214B
 P 6700 1150
-F 0 "R9" H 6500 1100 50  0000 C CNN
+F 0 "R2" H 6500 1100 50  0000 C CNN
 F 1 "4k7/1%" H 6450 1200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6740 1140 50  0001 C CNN
 F 3 "~" H 6700 1150 50  0001 C CNN
@@ -1337,10 +1337,10 @@ Wire Wire Line
 	8000 1450 8200 1450
 Connection ~ 8000 1450
 $Comp
-L power:GND #PWR061
+L power:GND #PWR019
 U 1 1 60DAF699
 P 8450 4800
-F 0 "#PWR061" H 8450 4550 50  0001 C CNN
+F 0 "#PWR019" H 8450 4550 50  0001 C CNN
 F 1 "GND" H 8455 4627 50  0000 C CNN
 F 2 "" H 8450 4800 50  0001 C CNN
 F 3 "" H 8450 4800 50  0001 C CNN
@@ -1348,10 +1348,10 @@ F 3 "" H 8450 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR059
+L power:GND #PWR017
 U 1 1 60DAEFE7
 P 8000 4800
-F 0 "#PWR059" H 8000 4550 50  0001 C CNN
+F 0 "#PWR017" H 8000 4550 50  0001 C CNN
 F 1 "GND" H 8005 4627 50  0000 C CNN
 F 2 "" H 8000 4800 50  0001 C CNN
 F 3 "" H 8000 4800 50  0001 C CNN
@@ -1359,10 +1359,10 @@ F 3 "" H 8000 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L Device:C C4
 U 1 1 60DAD2BA
 P 8000 3150
-F 0 "C12" H 8115 3196 50  0000 L CNN
+F 0 "C4" H 8115 3196 50  0000 L CNN
 F 1 "1u/16V" H 8115 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 3000 50  0001 C CNN
 F 3 "~" H 8000 3150 50  0001 C CNN
@@ -1379,10 +1379,10 @@ Connection ~ 8200 1450
 Wire Wire Line
 	8200 1450 8200 3800
 $Comp
-L power:GND #PWR060
+L power:GND #PWR018
 U 1 1 60E2C9E3
 P 8200 4800
-F 0 "#PWR060" H 8200 4550 50  0001 C CNN
+F 0 "#PWR018" H 8200 4550 50  0001 C CNN
 F 1 "GND" H 8205 4627 50  0000 C CNN
 F 2 "" H 8200 4800 50  0001 C CNN
 F 3 "" H 8200 4800 50  0001 C CNN
@@ -1401,10 +1401,10 @@ F 3 "~" H 8200 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R11
+L Device:R R4
 U 1 1 620D36B1
 P 8200 3950
-F 0 "R11" H 8000 3900 50  0000 C CNN
+F 0 "R4" H 8000 3900 50  0000 C CNN
 F 1 "86k6/1%" H 7950 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8240 3940 50  0001 C CNN
 F 3 "~" H 8200 3950 50  0001 C CNN
@@ -1422,10 +1422,10 @@ RPi_UART0_RX
 Text Label 9250 1650 0    50   ~ 0
 RPi_UART0_TX
 $Comp
-L Device:R R10
+L Device:R R3
 U 1 1 620D36AB
 P 8200 1150
-F 0 "R10" H 8268 1196 50  0000 L CNN
+F 0 "R3" H 8268 1196 50  0000 L CNN
 F 1 "1M/1%" H 8268 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8240 1140 50  0001 C CNN
 F 3 "~" H 8200 1150 50  0001 C CNN
@@ -1470,10 +1470,10 @@ Wire Wire Line
 Wire Wire Line
 	8450 3200 8450 800 
 $Comp
-L Device:C C13
+L Device:C C5
 U 1 1 60DADF73
 P 8450 3350
-F 0 "C13" H 8565 3396 50  0000 L CNN
+F 0 "C5" H 8565 3396 50  0000 L CNN
 F 1 "100n/16V/X7R" H 8565 3305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 3200 50  0001 C CNN
 F 3 "~" H 8450 3350 50  0001 C CNN
@@ -1481,10 +1481,10 @@ F 3 "~" H 8450 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R12
+L Device:R R1
 U 1 1 60E6FDE1
 P 2650 4250
-F 0 "R12" H 2450 4200 50  0000 C CNN
+F 0 "R1" H 2450 4200 50  0000 C CNN
 F 1 "10k/5%" H 2400 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2690 4240 50  0001 C CNN
 F 3 "~" H 2650 4250 50  0001 C CNN
@@ -1492,10 +1492,10 @@ F 3 "~" H 2650 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR054
+L power:GND #PWR011
 U 1 1 60E7094B
 P 2650 4750
-F 0 "#PWR054" H 2650 4500 50  0001 C CNN
+F 0 "#PWR011" H 2650 4500 50  0001 C CNN
 F 1 "GND" H 2655 4577 50  0000 C CNN
 F 2 "" H 2650 4750 50  0001 C CNN
 F 3 "" H 2650 4750 50  0001 C CNN
@@ -1512,7 +1512,7 @@ Wire Wire Line
 NoConn ~ 6400 3550
 NoConn ~ 6400 1850
 Text Notes 3800 9050 0    50   ~ 0
-Warum Temperatur messen?\nUnused Pin Connections nicht beschrieben\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
+Warum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nMFB wird noch getestet\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
 Wire Wire Line
 	3000 3750 3200 3750
 Connection ~ 3200 3750
