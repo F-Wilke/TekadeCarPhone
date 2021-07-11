@@ -62,14 +62,6 @@ Text HLabel 8300 4100 2    50   Input ~ 0
 IGNITION_SENSE
 Text HLabel 8300 4200 2    50   Output ~ 0
 5V_EN_OUT
-Text Label 8300 5400 0    50   ~ 0
-DecoderData4
-Text Label 8300 5300 0    50   ~ 0
-DecoderData3
-Text Label 8300 5200 0    50   ~ 0
-DecoderData2
-Text Label 8300 5100 0    50   ~ 0
-DecoderData1
 Text Label 3700 3600 2    50   ~ 0
 OnSwitchLedCathode
 Text Label 3700 3500 2    50   ~ 0
@@ -287,14 +279,6 @@ Wire Wire Line
 	6600 4800 8300 4800
 Wire Wire Line
 	6600 4700 8300 4700
-Text Label 3700 4100 2    50   ~ 0
-7_Segment_Driver_A
-Text Label 3700 4200 2    50   ~ 0
-7_Segment_Driver_B
-Text Label 3700 4300 2    50   ~ 0
-7_Segment_Driver_C
-Text Label 3700 4400 2    50   ~ 0
-7_Segment_Driver_D
 Text Label 8300 4300 0    50   ~ 0
 KeySwitch.A
 Text Label 8300 4400 0    50   ~ 0
@@ -316,8 +300,6 @@ Wire Wire Line
 	6600 3200 7850 3200
 Wire Wire Line
 	8150 3200 8300 3200
-Text Label 8300 3100 0    50   ~ 0
-BrightnessRegulation
 Wire Wire Line
 	6600 3100 8300 3100
 Text Label 3700 3800 2    50   ~ 0
@@ -614,4 +596,22 @@ NoConn ~ 6600 3600
 NoConn ~ 6600 3700
 Text Notes 6900 1100 0    50   ~ 0
 Empfehlung zur Kompatibilität:\nhttps://microchipdeveloper.com/atmelice:updi
+Text HLabel 3700 4400 0    50   Output ~ 0
+7Seg_Driver_D
+Text HLabel 3700 4300 0    50   Output ~ 0
+7Seg_Driver_C
+Text HLabel 3700 4200 0    50   Output ~ 0
+7Seg_Driver_B
+Text HLabel 3700 4100 0    50   Output ~ 0
+7Seg_Driver_A
+Text HLabel 8300 5300 2    50   Output ~ 0
+7Seg_Decoder_D3
+Text HLabel 8300 5400 2    50   Output ~ 0
+7Seg_Decoder_D4
+Text HLabel 8300 5200 2    50   Output ~ 0
+7Seg_Decoder_D2
+Text HLabel 8300 5100 2    50   Output ~ 0
+7Seg_Decoder_D1
+Text HLabel 8300 3100 2    50   Output ~ 0
+BrightnessRegulation
 $EndSCHEMATC
