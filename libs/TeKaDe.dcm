@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ULN2003F12FN-7
+D DiodesZetex ULN2003F12FN-7, MOSFET Sink Driver, 3.3  5 V, 10-Pin DFN3030
+$ENDCMP
+#
 #End Doc Library

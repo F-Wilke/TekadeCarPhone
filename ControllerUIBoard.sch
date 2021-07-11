@@ -280,9 +280,9 @@ Wire Wire Line
 Wire Wire Line
 	4700 4850 6400 4850
 Text Label 6400 4450 0    50   ~ 0
-KeySwitch.A
+KeySwitchA
 Text Label 6400 4550 0    50   ~ 0
-KeySwitch.B
+KeySwitchB
 Text Label 6400 3350 0    50   ~ 0
 Signal_Strength_Dial_+
 $Comp
@@ -702,10 +702,6 @@ F 3 "~" H 9350 5500 50  0001 C CNN
 	1    9350 5500
 	1    0    0    -1  
 $EndComp
-Text Label 9850 5400 0    50   ~ 0
-KeyLock.A
-Text Label 9850 5500 0    50   ~ 0
-KeyLock.B
 Wire Wire Line
 	9850 5500 9550 5500
 Wire Wire Line
@@ -725,13 +721,9 @@ Wire Wire Line
 Wire Wire Line
 	8850 3650 8600 3650
 Wire Wire Line
-	8700 3750 8850 3750
-Wire Wire Line
 	8850 3850 8600 3850
 Wire Wire Line
 	9350 3850 9600 3850
-Wire Wire Line
-	9600 3750 9350 3750
 Wire Wire Line
 	9600 3550 9350 3550
 Wire Wire Line
@@ -749,8 +741,6 @@ Wire Wire Line
 	9300 4600 9600 4600
 Wire Wire Line
 	9350 3650 10700 3650
-Wire Notes Line
-	7600 1850 7600 6000
 Text Notes 7650 2100 0    50   ~ 0
 Spiegelung um Längsachse nätig, je nach Orientierung
 $Comp
@@ -781,24 +771,21 @@ F 3 "" H 8550 4900 50  0001 C CNN
 	1    8550 4900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6205CDDF
-P 8700 4150
-AR Path="/6205CDDF" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/6205CDDF" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/6205CDDF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8700 3900 50  0001 C CNN
-F 1 "GND" H 8705 3977 50  0000 C CNN
-F 2 "" H 8700 4150 50  0001 C CNN
-F 3 "" H 8700 4150 50  0001 C CNN
-	1    8700 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 3750 8700 4150
 Wire Wire Line
 	8550 4600 8550 4900
 Text Notes 6400 3450 0    50   ~ 0
 PWM Output\n
+Text Label 8600 3750 2    50   ~ 0
+OnSwitchLedCathode
+Wire Wire Line
+	8600 3750 8850 3750
+Wire Wire Line
+	10700 3750 10700 3650
+Wire Wire Line
+	9350 3750 10700 3750
+Connection ~ 10700 3650
+Text Label 9850 5400 0    50   ~ 0
+KeySwitchA
+Text Label 9850 5500 0    50   ~ 0
+KeySwitchB
 $EndSCHEMATC

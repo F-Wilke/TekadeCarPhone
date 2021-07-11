@@ -27,38 +27,22 @@ F 3 "~" H 13000 4400 50  0001 C CNN
 	1    13000 4400
 	1    0    0    -1  
 $EndComp
-Text Label 13500 4100 0    50   ~ 0
-5V_via_LDR
-Text Label 13500 4200 0    50   ~ 0
-LED_GREEN_Cathode
-Text Label 13500 4300 0    50   ~ 0
-PINLINE_RIGHT_6
 Text Label 13500 4400 0    50   ~ 0
 Data_Encoder_Data_Available
 Text Label 13500 4500 0    50   ~ 0
 Data_Encoder_Data_Out_C
 Text Label 13500 4600 0    50   ~ 0
 Data_Encoder_Data_Out_A
-Text Label 13500 4700 0    50   ~ 0
-Small_LED_Yellow_Cathode
 Text Label 13500 4800 0    50   ~ 0
 Data_Encoder_Data_Out_E
 Text Label 12550 4800 2    50   ~ 0
 Data_Encoder_Data_Out_D
-Text Label 12550 4700 2    50   ~ 0
-Small_LED_Yellow_Anode
-Text Label 12550 4600 2    50   ~ 0
-Data_Encoder_VCC
 Text Label 12550 4500 2    50   ~ 0
 Data_Encoder_Data_Out_B
 Text Label 12550 4400 2    50   ~ 0
 Data_Encoder_Output_Enable
 Text Label 12550 4300 2    50   ~ 0
-GND_via_Button_A2
-Text Label 12550 4200 2    50   ~ 0
-LED_Red_Cathode
-Text Label 12550 4100 2    50   ~ 0
-LED_Yellow_Cathode
+ButtonA2GND
 $Comp
 L 74xx:MM74C923 U10
 U 1 1 60D1026E
@@ -113,13 +97,6 @@ Wire Wire Line
 	12200 7400 12900 7400
 Wire Wire Line
 	12900 7400 12900 7500
-Wire Wire Line
-	11700 7800 12350 7800
-Wire Wire Line
-	12900 7800 13400 7800
-Connection ~ 12900 7800
-Text Label 13400 7800 0    50   ~ 0
-Pinline_GND
 $Comp
 L Device:C C85
 U 1 1 60E085DC
@@ -131,15 +108,8 @@ F 3 "~" H 12350 7650 50  0001 C CNN
 	1    12350 7650
 	1    0    0    -1  
 $EndComp
-Connection ~ 12350 7800
-Wire Wire Line
-	12350 7800 12900 7800
 Wire Wire Line
 	12200 7500 12350 7500
-Text Label 11150 6200 2    50   ~ 0
-Data_Encoder_VCC
-Wire Wire Line
-	11150 6200 11700 6200
 $Comp
 L Switch:SW_Push_45deg SW2
 U 1 1 5EF300D4
@@ -552,7 +522,7 @@ Wire Wire Line
 	4200 6500 4700 6500
 Wire Wire Line
 	4200 10350 4400 10350
-Text Notes 10550 8150 0    50   ~ 0
+Text Notes 10650 8550 0    50   ~ 0
 Ursprüngliches, an Ziffern statt an Raster orientiertes Schema übernommen\n
 Wire Wire Line
 	7750 7400 7450 7400
@@ -564,61 +534,56 @@ Wire Wire Line
 $Comp
 L Device:LED D1
 U 1 1 5F71F5BF
-P 5450 4750
-F 0 "D1" V 5397 4830 50  0000 L CNN
-F 1 "LED_RED" V 5488 4830 50  0000 L CNN
-F 2 "" H 5450 4750 50  0001 C CNN
-F 3 "~" H 5450 4750 50  0001 C CNN
-	1    5450 4750
-	0    1    1    0   
+P 6550 4650
+F 0 "D1" V 6497 4730 50  0000 L CNN
+F 1 "LED_RED" V 6588 4730 50  0000 L CNN
+F 2 "" H 6550 4650 50  0001 C CNN
+F 3 "~" H 6550 4650 50  0001 C CNN
+	1    6550 4650
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5F720429
-P 5950 4750
-F 0 "D2" V 5897 4830 50  0000 L CNN
-F 1 "LED_YELLOW" V 5988 4830 50  0000 L CNN
-F 2 "" H 5950 4750 50  0001 C CNN
-F 3 "~" H 5950 4750 50  0001 C CNN
-	1    5950 4750
-	0    1    1    0   
+P 6050 4650
+F 0 "D2" V 5997 4730 50  0000 L CNN
+F 1 "LED_YELLOW" V 6088 4730 50  0000 L CNN
+F 2 "" H 6050 4650 50  0001 C CNN
+F 3 "~" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5F73BBA8
-P 6600 4750
-F 0 "D3" V 6547 4830 50  0000 L CNN
-F 1 "LED_GREEN" V 6638 4830 50  0000 L CNN
-F 2 "" H 6600 4750 50  0001 C CNN
-F 3 "~" H 6600 4750 50  0001 C CNN
-	1    6600 4750
-	0    1    1    0   
+P 5400 4650
+F 0 "D3" V 5347 4730 50  0000 L CNN
+F 1 "LED_GREEN" V 5438 4730 50  0000 L CNN
+F 2 "" H 5400 4650 50  0001 C CNN
+F 3 "~" H 5400 4650 50  0001 C CNN
+	1    5400 4650
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5450 4900 5450 5000
+	6550 4500 6550 4400
 Wire Wire Line
-	5950 5000 5950 4900
+	6050 4400 6050 4500
 Wire Wire Line
-	6600 5000 6600 4900
-Text Label 6750 5000 0    50   ~ 0
-Data_Encoder_VCC
+	5400 4400 5400 4500
+Text Label 5250 5150 2    50   ~ 0
+LedRedCathode
+Text Label 5250 5050 2    50   ~ 0
+LedYellowCathode
+Text Label 5250 4950 2    50   ~ 0
+LedGreenCathode
 Wire Wire Line
-	6750 5000 6600 5000
-Connection ~ 6600 5000
-Text Label 6750 4250 0    50   ~ 0
-LED_Red_Cathode
-Text Label 6750 4350 0    50   ~ 0
-LED_Yellow_Cathode
-Text Label 6750 4450 0    50   ~ 0
-LED_GREEN_Cathode
+	5250 4950 5400 4950
 Wire Wire Line
-	6750 4450 6600 4450
+	5400 4950 5400 4800
 Wire Wire Line
-	6600 4450 6600 4600
+	6050 5050 6050 4800
 Wire Wire Line
-	5950 4350 5950 4600
-Wire Wire Line
-	5450 4250 5450 4600
+	6550 5150 6550 4800
 Wire Wire Line
 	3600 10250 4300 10250
 Wire Wire Line
@@ -644,63 +609,51 @@ Wire Wire Line
 $Comp
 L Device:LED D4
 U 1 1 5FB3CE46
-P 7650 4750
-F 0 "D4" V 7597 4830 50  0000 L CNN
-F 1 "Small_LED_YELLOW" V 7688 4830 50  0000 L CNN
-F 2 "" H 7650 4750 50  0001 C CNN
-F 3 "~" H 7650 4750 50  0001 C CNN
-	1    7650 4750
-	0    1    1    0   
+P 8400 4700
+F 0 "D4" V 8347 4780 50  0000 L CNN
+F 1 "OnSwitchLED" V 8438 4780 50  0000 L CNN
+F 2 "" H 8400 4700 50  0001 C CNN
+F 3 "~" H 8400 4700 50  0001 C CNN
+	1    8400 4700
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7650 5000 7650 4900
+	8400 4450 8400 4550
 Wire Wire Line
-	7650 4450 7650 4600
-Text Label 7750 5000 0    50   ~ 0
-Small_LED_Yellow_Anode
-Text Label 7750 4450 0    50   ~ 0
-Small_LED_Yellow_Cathode
+	8400 5000 8400 4850
+Text Label 8300 4450 2    50   ~ 0
+OnSwitchLedAnode
+Text Label 8300 5000 2    50   ~ 0
+OnSwitchLedCathode
 Wire Wire Line
-	7750 4450 7650 4450
+	8300 5000 8400 5000
 Wire Wire Line
-	7650 5000 7750 5000
+	8400 4450 8300 4450
 $Comp
 L Device:R_PHOTO R61
 U 1 1 5FC1430B
-P 4900 4700
-F 0 "R61" H 4970 4746 50  0000 L CNN
-F 1 "LDR" H 4970 4655 50  0000 L CNN
-F 2 "" V 4950 4450 50  0001 L CNN
-F 3 "~" H 4900 4650 50  0001 C CNN
-	1    4900 4700
-	1    0    0    -1  
+P 7100 4700
+F 0 "R61" H 7170 4746 50  0000 L CNN
+F 1 "LDR" H 7170 4655 50  0000 L CNN
+F 2 "" V 7150 4450 50  0001 L CNN
+F 3 "~" H 7100 4650 50  0001 C CNN
+	1    7100 4700
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4900 4850 4900 5000
+	7100 4550 7100 4400
 Wire Wire Line
-	4900 4550 4900 4150
-Text Label 6750 4150 0    50   ~ 0
-5V_via_LDR
-Connection ~ 5950 5000
+	7100 4850 7100 5250
+Text Label 5250 5250 2    50   ~ 0
+UiLdr
 Wire Wire Line
-	5950 5000 6600 5000
-Connection ~ 5450 5000
+	7100 5250 5250 5250
 Wire Wire Line
-	5450 5000 5950 5000
+	6550 5150 5250 5150
 Wire Wire Line
-	4900 4150 6750 4150
+	6050 5050 5250 5050
 Wire Wire Line
-	5450 4250 6750 4250
-Wire Wire Line
-	5950 4350 6750 4350
-Wire Wire Line
-	4900 5000 5450 5000
-Text Label 3950 7850 3    50   ~ 0
-Pinline_GND
-Text Label 3750 7850 3    50   ~ 0
-GND_via_Button_A2
-Wire Wire Line
-	3750 7400 3750 7850
+	3750 7400 3750 7750
 Wire Wire Line
 	3950 7600 3950 7850
 $Comp
@@ -717,67 +670,57 @@ F 3 "~" H 2450 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1900 4950 2    50   ~ 0
-Digit4_Cathode
+CathodeDigit4
 Text Label 1900 4850 2    50   ~ 0
-Digit2_Cathode
+CathodeDigit2
 Text Label 1900 4750 2    50   ~ 0
-DigitB_Cathode
+CathodeDigitB
 Text Label 1900 4650 2    50   ~ 0
-Digit13_Cathode
+CathodeDigit13
 Text Label 1900 4550 2    50   ~ 0
-Digit11_Cathode
+CathodeDigit11
 Text Label 1900 4450 2    50   ~ 0
-Digit9_Cathode
+CathodeDigit9
 Text Label 1900 4350 2    50   ~ 0
-Digit7_Cathode
-Text Label 1900 4250 2    50   ~ 0
-Digit20_Cathode
+CathodeDigit7
 Text Label 1900 4150 2    50   ~ 0
-SegmentC_Anode
+AnodeSegmentC
 Text Label 1900 4050 2    50   ~ 0
-SegmentD_Anode
+AnodeSegmentD
 Text Label 1900 3950 2    50   ~ 0
-SegmentA_Anode
+AnodeSegmentA
 Text Label 1900 3850 2    50   ~ 0
-SegmentE_Anode
+AnodeSegmentE
 Text Label 3050 3850 0    50   ~ 0
-SegmentF_Anode
+AnodeSegmentF
 Text Label 3050 3950 0    50   ~ 0
-SegmentB_Anode
+AnodeSegmentB
 Text Label 3050 4050 0    50   ~ 0
-SegmentG_Anode
-Text Label 3050 4150 0    50   ~ 0
-Digit21_Cathode
+AnodeSegmentG
 Text Label 3050 4250 0    50   ~ 0
-Digit14_Cathode
+CathodeDigit14
 Text Label 3050 4350 0    50   ~ 0
-Digit8_Cathode
+CathodeDigit8
 Text Label 3050 4450 0    50   ~ 0
-Digit10_Cathode
+CathodeDigit10
 Text Label 3050 4550 0    50   ~ 0
-Digit12_Cathode
+CathodeDigit12
 Text Label 3050 4650 0    50   ~ 0
-Digit6_Cathode
+CathodeDigit6
 Text Label 3050 4750 0    50   ~ 0
-DigitA_Cathode
+CathodeDigitA
 Text Label 3050 4850 0    50   ~ 0
-Digit1_Cathode
+CathodeDigit1
 Text Label 3050 4950 0    50   ~ 0
-Digit3_Cathode
+CathodeDigit3
 Text Label 3050 5050 0    50   ~ 0
-Digit5_Cathode
-Text Label 3050 5150 0    50   ~ 0
-Pinline_GND
-Text Label 3050 5250 0    50   ~ 0
-Pinline_VCC
+CathodeDigit5
 Wire Wire Line
 	2750 3850 3050 3850
 Wire Wire Line
 	2750 3950 3050 3950
 Wire Wire Line
 	2750 4050 3050 4050
-Wire Wire Line
-	3050 4150 2750 4150
 Wire Wire Line
 	2750 4250 3050 4250
 Wire Wire Line
@@ -799,7 +742,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 5150 2750 5150
 Wire Wire Line
-	2750 5250 3050 5250
+	2750 5250 2900 5250
 Wire Wire Line
 	2250 4950 1900 4950
 Wire Wire Line
@@ -814,8 +757,6 @@ Wire Wire Line
 	1900 4450 2250 4450
 Wire Wire Line
 	2250 4350 1900 4350
-Wire Wire Line
-	1900 4250 2250 4250
 Wire Wire Line
 	2250 4150 1900 4150
 Wire Wire Line
@@ -838,8 +779,6 @@ Wire Wire Line
 Wire Wire Line
 	12550 4500 12800 4500
 Wire Wire Line
-	12800 4600 12550 4600
-Wire Wire Line
 	12550 4700 12800 4700
 Wire Wire Line
 	12800 4800 12550 4800
@@ -853,8 +792,6 @@ Wire Wire Line
 	13500 4500 13300 4500
 Wire Wire Line
 	13300 4400 13500 4400
-Wire Wire Line
-	13300 4300 13500 4300
 Wire Wire Line
 	13500 4200 13300 4200
 Wire Wire Line
@@ -1025,7 +962,7 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 14200 900 
 	1    0    0    -1  
 $EndComp
 Text Label 14700 900  0    50   ~ 0
-SegmentB_Anode
+AnodeSegmentB
 Wire Wire Line
 	14300 1000 14300 900 
 Wire Wire Line
@@ -1180,14 +1117,14 @@ Wire Wire Line
 	14100 850  14100 1000
 Connection ~ 13350 850 
 Text Label 14700 800  0    50   ~ 0
-SegmentF_Anode
+AnodeSegmentF
 Wire Wire Line
 	14100 800  14100 850 
 Connection ~ 14100 850 
 Text Label 14700 700  0    50   ~ 0
-SegmentC_Anode
+AnodeSegmentC
 Text Label 14700 600  0    50   ~ 0
-SegmentA_Anode
+AnodeSegmentA
 Wire Wire Line
 	14450 1300 14450 600 
 Wire Wire Line
@@ -1695,47 +1632,47 @@ NoConn ~ 4850 1700
 NoConn ~ 4150 1700
 NoConn ~ 3400 1700
 Text Label 2800 1800 2    50   ~ 0
-SegmentE_Anode
+AnodeSegmentE
 Text Label 2800 2000 2    50   ~ 0
-SegmentG_Anode
+AnodeSegmentG
 Text Label 2800 2100 2    50   ~ 0
-SegmentD_Anode
+AnodeSegmentD
 Text Label 13450 2350 2    50   ~ 0
-DigitA_Cathode
+CathodeDigitA
 Wire Wire Line
 	3300 2350 3200 2350
 Wire Wire Line
 	3300 1700 3300 2350
 Text Label 14200 2350 2    50   ~ 0
-DigitB_Cathode
+CathodeDigitB
 Text Label 12700 2350 2    50   ~ 0
-Digit14_Cathode
+CathodeDigit14
 Text Label 8350 2350 2    50   ~ 0
-Digit8_Cathode
+CathodeDigit8
 Text Label 9750 2350 2    50   ~ 0
-Digit10_Cathode
+CathodeDigit10
 Text Label 11200 2350 2    50   ~ 0
-Digit12_Cathode
+CathodeDigit12
 Text Label 6850 2350 2    50   ~ 0
-Digit6_Cathode
+CathodeDigit6
 Text Label 3200 2350 2    50   ~ 0
-Digit1_Cathode
+CathodeDigit1
 Text Label 4650 2350 2    50   ~ 0
-Digit3_Cathode
+CathodeDigit3
 Text Label 6150 2350 2    50   ~ 0
-Digit5_Cathode
+CathodeDigit5
 Text Label 5400 2350 2    50   ~ 0
-Digit4_Cathode
+CathodeDigit4
 Text Label 3900 2350 2    50   ~ 0
-Digit2_Cathode
+CathodeDigit2
 Text Label 11950 2350 2    50   ~ 0
-Digit13_Cathode
+CathodeDigit13
 Text Label 10500 2350 2    50   ~ 0
-Digit11_Cathode
+CathodeDigit11
 Text Label 9000 2350 2    50   ~ 0
-Digit9_Cathode
+CathodeDigit9
 Text Label 7650 2350 2    50   ~ 0
-Digit7_Cathode
+CathodeDigit7
 Wire Wire Line
 	12700 2350 12750 2350
 Wire Wire Line
@@ -1788,4 +1725,208 @@ Wire Wire Line
 	13450 2350 13450 1700
 Wire Wire Line
 	14200 2350 14200 1700
+NoConn ~ 2750 4150
+NoConn ~ 2250 4250
+Text Label 12550 4200 2    50   ~ 0
+LedRedCathode
+Text Label 12550 4100 2    50   ~ 0
+LedYellowCathode
+Text Label 13500 4200 0    50   ~ 0
+LedGreenCathode
+Text Label 13500 4100 0    50   ~ 0
+UiLdr
+Text Label 12550 4700 2    50   ~ 0
+OnSwitchLedAnode
+Text Label 13500 4700 0    50   ~ 0
+OnSwitchLedCathode
+Text Label 3350 7750 2    50   ~ 0
+ButtonA2GND
+Wire Wire Line
+	3350 7750 3750 7750
+$Comp
+L power:GND #PWR?
+U 1 1 613B4904
+P 3950 7850
+F 0 "#PWR?" H 3950 7600 50  0001 C CNN
+F 1 "GND" H 3955 7677 50  0000 C CNN
+F 2 "" H 3950 7850 50  0001 C CNN
+F 3 "" H 3950 7850 50  0001 C CNN
+	1    3950 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613B5252
+P 3050 5350
+F 0 "#PWR?" H 3050 5100 50  0001 C CNN
+F 1 "GND" H 3055 5177 50  0000 C CNN
+F 2 "" H 3050 5350 50  0001 C CNN
+F 3 "" H 3050 5350 50  0001 C CNN
+	1    3050 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 613B5A09
+P 2900 3550
+F 0 "#PWR?" H 2900 3400 50  0001 C CNN
+F 1 "+5V" H 2915 3723 50  0000 C CNN
+F 2 "" H 2900 3550 50  0001 C CNN
+F 3 "" H 2900 3550 50  0001 C CNN
+	1    2900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5250 2900 3550
+Wire Wire Line
+	3050 5150 3050 5350
+$Comp
+L power:+5V #PWR?
+U 1 1 61534FA9
+P 5400 4400
+F 0 "#PWR?" H 5400 4250 50  0001 C CNN
+F 1 "+5V" H 5415 4573 50  0000 C CNN
+F 2 "" H 5400 4400 50  0001 C CNN
+F 3 "" H 5400 4400 50  0001 C CNN
+	1    5400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61535946
+P 6050 4400
+F 0 "#PWR?" H 6050 4250 50  0001 C CNN
+F 1 "+5V" H 6065 4573 50  0000 C CNN
+F 2 "" H 6050 4400 50  0001 C CNN
+F 3 "" H 6050 4400 50  0001 C CNN
+	1    6050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61535D16
+P 6550 4400
+F 0 "#PWR?" H 6550 4250 50  0001 C CNN
+F 1 "+5V" H 6565 4573 50  0000 C CNN
+F 2 "" H 6550 4400 50  0001 C CNN
+F 3 "" H 6550 4400 50  0001 C CNN
+	1    6550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 615360C8
+P 7100 4400
+F 0 "#PWR?" H 7100 4250 50  0001 C CNN
+F 1 "+5V" H 7115 4573 50  0000 C CNN
+F 2 "" H 7100 4400 50  0001 C CNN
+F 3 "" H 7100 4400 50  0001 C CNN
+	1    7100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6153721F
+P 11700 8000
+F 0 "#PWR?" H 11700 7750 50  0001 C CNN
+F 1 "GND" H 11705 7827 50  0000 C CNN
+F 2 "" H 11700 8000 50  0001 C CNN
+F 3 "" H 11700 8000 50  0001 C CNN
+	1    11700 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 7800 11700 8000
+$Comp
+L power:GND #PWR?
+U 1 1 6157595B
+P 12350 8000
+F 0 "#PWR?" H 12350 7750 50  0001 C CNN
+F 1 "GND" H 12355 7827 50  0000 C CNN
+F 2 "" H 12350 8000 50  0001 C CNN
+F 3 "" H 12350 8000 50  0001 C CNN
+	1    12350 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 7800 12350 8000
+$Comp
+L power:GND #PWR?
+U 1 1 615B2E15
+P 12900 8000
+F 0 "#PWR?" H 12900 7750 50  0001 C CNN
+F 1 "GND" H 12905 7827 50  0000 C CNN
+F 2 "" H 12900 8000 50  0001 C CNN
+F 3 "" H 12900 8000 50  0001 C CNN
+	1    12900 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 7800 12900 8000
+$Comp
+L power:+5V #PWR?
+U 1 1 6162DFB1
+P 11700 6000
+F 0 "#PWR?" H 11700 5850 50  0001 C CNN
+F 1 "+5V" H 11715 6173 50  0000 C CNN
+F 2 "" H 11700 6000 50  0001 C CNN
+F 3 "" H 11700 6000 50  0001 C CNN
+	1    11700 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 6000 11700 6200
+$Comp
+L power:+5V #PWR?
+U 1 1 616E6EAC
+P 11400 3850
+F 0 "#PWR?" H 11400 3700 50  0001 C CNN
+F 1 "+5V" H 11415 4023 50  0000 C CNN
+F 2 "" H 11400 3850 50  0001 C CNN
+F 3 "" H 11400 3850 50  0001 C CNN
+	1    11400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 4600 12800 4600
+Wire Wire Line
+	11400 3850 11400 4600
+NoConn ~ 13300 4300
+$Comp
+L Device:C C?
+U 1 1 617A13A0
+P 12300 5900
+F 0 "C?" H 12415 5946 50  0000 L CNN
+F 1 "100n/10V/X7R" H 12415 5855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12338 5750 50  0001 C CNN
+F 3 "~" H 12300 5900 50  0001 C CNN
+	1    12300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617A2E20
+P 12300 6150
+F 0 "#PWR?" H 12300 5900 50  0001 C CNN
+F 1 "GND" H 12305 5977 50  0000 C CNN
+F 2 "" H 12300 6150 50  0001 C CNN
+F 3 "" H 12300 6150 50  0001 C CNN
+	1    12300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 6050 12300 6150
+$Comp
+L power:+5V #PWR?
+U 1 1 6185C9DD
+P 12300 5650
+F 0 "#PWR?" H 12300 5500 50  0001 C CNN
+F 1 "+5V" H 12315 5823 50  0000 C CNN
+F 2 "" H 12300 5650 50  0001 C CNN
+F 3 "" H 12300 5650 50  0001 C CNN
+	1    12300 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 5750 12300 5650
 $EndSCHEMATC
