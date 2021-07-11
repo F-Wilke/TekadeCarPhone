@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 2 9
 Title ""
 Date ""
 Rev ""
@@ -14,721 +14,604 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega2560-16AU U?
-U 1 1 60F80B5B
-P 5950 4300
-AR Path="/60F80B5B" Ref="U?"  Part="1" 
-AR Path="/60F18E7A/60F80B5B" Ref="U4"  Part="1" 
-F 0 "U4" H 5950 1311 50  0000 C CNN
-F 1 "ATmega2560-16AU" H 5950 1220 50  0000 C CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 5950 4300 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf" H 5950 4300 50  0001 C CNN
-F 4 "sufficient" H 5950 4300 50  0001 C CNN "Availability"
-	1    5950 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60F80B61
-P 5100 750
-AR Path="/60F80B61" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80B61" Ref="#PWR072"  Part="1" 
-F 0 "#PWR072" H 5100 600 50  0001 C CNN
-F 1 "+5V" H 5115 923 50  0000 C CNN
-F 2 "" H 5100 750 50  0001 C CNN
-F 3 "" H 5100 750 50  0001 C CNN
-	1    5100 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 1050 5100 950 
-$Comp
-L Device:Crystal Y?
-U 1 1 60F80B6E
-P 4200 1750
-AR Path="/60F80B6E" Ref="Y?"  Part="1" 
-AR Path="/60F18E7A/60F80B6E" Ref="Y2"  Part="1" 
-F 0 "Y2" V 4154 1881 50  0000 L CNN
-F 1 "16MHz" V 4245 1881 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 4200 1750 50  0001 C CNN
-F 3 "https://abracon.com/Resonators/abm3.pdf" H 4200 1750 50  0001 C CNN
-	1    4200 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60F80B7A
-P 3950 1550
-AR Path="/60F80B7A" Ref="C?"  Part="1" 
-AR Path="/60F18E7A/60F80B7A" Ref="C37"  Part="1" 
-F 0 "C37" V 3698 1550 50  0000 C CNN
-F 1 "22pF" V 3789 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1400 50  0001 C CNN
-F 3 "~" H 3950 1550 50  0001 C CNN
-	1    3950 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60F80B80
-P 3950 2000
-AR Path="/60F80B80" Ref="C?"  Part="1" 
-AR Path="/60F18E7A/60F80B80" Ref="C38"  Part="1" 
-F 0 "C38" V 3698 2000 50  0000 C CNN
-F 1 "22pF" V 3789 2000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1850 50  0001 C CNN
-F 3 "~" H 3950 2000 50  0001 C CNN
-	1    3950 2000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4100 1550 4200 1550
-Wire Wire Line
-	4200 1550 4200 1600
-Wire Wire Line
-	4200 1900 4200 2000
-Wire Wire Line
-	4200 2000 4100 2000
-Wire Wire Line
-	3800 2000 3500 2000
-Wire Wire Line
-	3800 1550 3500 1550
-Connection ~ 4200 1550
-Wire Wire Line
-	4200 1550 4400 1550
-Wire Wire Line
-	4200 2000 4400 2000
-Connection ~ 4200 2000
-$Comp
-L Device:R_US R?
-U 1 1 60F80B93
-P 2900 1750
-AR Path="/60F80B93" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80B93" Ref="R10"  Part="1" 
-F 0 "R10" H 2968 1796 50  0000 L CNN
-F 1 "1M" H 2968 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2940 1740 50  0001 C CNN
-F 3 "~" H 2900 1750 50  0001 C CNN
-	1    2900 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 1600 2900 1250
-Wire Wire Line
-	2900 1250 4200 1250
-Wire Wire Line
-	4200 1250 4200 1550
-Wire Wire Line
-	4200 2000 4200 2150
-Wire Wire Line
-	4200 2150 3350 2150
-Wire Wire Line
-	2900 2150 2900 1900
-$Comp
 L Device:C C?
 U 1 1 60F80B9F
-P 5100 1200
+P 4600 2200
 AR Path="/60F80B9F" Ref="C?"  Part="1" 
-AR Path="/60F18E7A/60F80B9F" Ref="C40"  Part="1" 
-F 0 "C40" H 5215 1246 50  0000 L CNN
-F 1 "100n" H 5215 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5138 1050 50  0001 C CNN
-F 3 "~" H 5100 1200 50  0001 C CNN
-	1    5100 1200
+AR Path="/60F18E7A/60F80B9F" Ref="C?"  Part="1" 
+F 0 "C?" H 4715 2246 50  0000 L CNN
+F 1 "100n" H 4715 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4638 2050 50  0001 C CNN
+F 3 "~" H 4600 2200 50  0001 C CNN
+	1    4600 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 60F80BA5
-P 5400 1200
-AR Path="/60F80BA5" Ref="C?"  Part="1" 
-AR Path="/60F18E7A/60F80BA5" Ref="C41"  Part="1" 
-F 0 "C41" H 5515 1246 50  0000 L CNN
-F 1 "100n" H 5515 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 1050 50  0001 C CNN
-F 3 "~" H 5400 1200 50  0001 C CNN
-	1    5400 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60F80BAB
-P 5750 1200
-AR Path="/60F80BAB" Ref="C?"  Part="1" 
-AR Path="/60F18E7A/60F80BAB" Ref="C42"  Part="1" 
-F 0 "C42" H 5865 1246 50  0000 L CNN
-F 1 "100n" H 5865 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 1050 50  0001 C CNN
-F 3 "~" H 5750 1200 50  0001 C CNN
-	1    5750 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 950  5400 1050
-Wire Wire Line
-	5400 950  5750 950 
-Wire Wire Line
-	5750 950  5750 1050
-Connection ~ 5400 950 
-Wire Wire Line
-	5750 950  6050 950 
-Wire Wire Line
-	6050 950  6050 1300
-Connection ~ 5750 950 
-Wire Wire Line
-	6050 1300 5950 1300
-Wire Wire Line
-	5950 1300 5950 1400
-Connection ~ 6050 1300
-Wire Wire Line
-	6050 1300 6050 1400
-Wire Wire Line
-	5750 1350 5400 1350
-Wire Wire Line
-	5400 1350 5100 1350
-Connection ~ 5400 1350
-Wire Wire Line
-	5100 1350 5100 1450
-Connection ~ 5100 1350
-Wire Wire Line
-	5100 950  5400 950 
-Wire Wire Line
-	5100 950  5100 750 
-Connection ~ 5100 950 
-Wire Wire Line
-	4400 2000 4400 2100
-Wire Wire Line
-	4400 1550 4400 1900
-$Comp
-L Device:C C?
-U 1 1 60F80BD2
-P 4300 2300
-AR Path="/60F80BD2" Ref="C?"  Part="1" 
-AR Path="/60F18E7A/60F80BD2" Ref="C39"  Part="1" 
-F 0 "C39" V 4048 2300 50  0000 C CNN
-F 1 "100nF" V 4139 2300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 2150 50  0001 C CNN
-F 3 "~" H 4300 2300 50  0001 C CNN
-	1    4300 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6750 5400 7600 5400
-Wire Wire Line
-	6750 5300 7600 5300
-Wire Wire Line
-	4400 1900 5150 1900
-Wire Wire Line
-	4400 2100 5150 2100
-Wire Wire Line
-	4450 2300 5150 2300
-Text Notes 8750 1300 2    50   ~ 0
-Platzierung einer Schnittstelle zum Flashen vor oder nach CH340G?
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 60F80C0C
-P 2150 3250
+P 6350 1150
 AR Path="/60F80C0C" Ref="J?"  Part="1" 
-AR Path="/60F18E7A/60F80C0C" Ref="J10"  Part="1" 
-F 0 "J10" H 2200 3567 50  0000 C CNN
-F 1 "ATMEGA_ICSP" H 2200 3476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2150 3250 50  0001 C CNN
-F 3 "~" H 2150 3250 50  0001 C CNN
-	1    2150 3250
+AR Path="/60F18E7A/60F80C0C" Ref="J?"  Part="1" 
+F 0 "J?" H 6400 1467 50  0000 C CNN
+F 1 "ATMEGA_ICSP" H 6400 1376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6350 1150 50  0001 C CNN
+F 3 "~" H 6350 1150 50  0001 C CNN
+	1    6350 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 3350 2850 3550
-Wire Wire Line
-	2850 3350 2450 3350
 $Comp
 L power:+5V #PWR?
 U 1 1 60F80C1A
-P 2850 3000
+P 6750 900
 AR Path="/60F80C1A" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C1A" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 2850 2850 50  0001 C CNN
-F 1 "+5V" H 2865 3173 50  0000 C CNN
-F 2 "" H 2850 3000 50  0001 C CNN
-F 3 "" H 2850 3000 50  0001 C CNN
-	1    2850 3000
+AR Path="/60F18E7A/60F80C1A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 750 50  0001 C CNN
+F 1 "+5V" H 6765 1073 50  0000 C CNN
+F 2 "" H 6750 900 50  0001 C CNN
+F 3 "" H 6750 900 50  0001 C CNN
+	1    6750 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 3000 2850 3150
+	6750 900  6750 1050
 Wire Wire Line
-	2850 3150 2450 3150
-Wire Wire Line
-	1700 3250 1950 3250
-Wire Wire Line
-	1700 3150 1950 3150
-Wire Wire Line
-	1950 3350 1700 3350
-$Comp
-L power:+5V #PWR?
-U 1 1 60F80C26
-P 4800 1200
-AR Path="/60F80C26" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C26" Ref="#PWR071"  Part="1" 
-F 0 "#PWR071" H 4800 1050 50  0001 C CNN
-F 1 "+5V" H 4815 1373 50  0000 C CNN
-F 2 "" H 4800 1200 50  0001 C CNN
-F 3 "" H 4800 1200 50  0001 C CNN
-	1    4800 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 1400 4800 1200
-$Comp
-L Device:R_US R?
-U 1 1 60F80C2D
-P 4800 1550
-AR Path="/60F80C2D" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C2D" Ref="R11"  Part="1" 
-F 0 "R11" H 4868 1596 50  0000 L CNN
-F 1 "100k" H 4868 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4840 1540 50  0001 C CNN
-F 3 "~" H 4800 1550 50  0001 C CNN
-	1    4800 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 1700 4800 1700
-Wire Wire Line
-	5150 1700 4800 1700
-Connection ~ 4800 1700
-Wire Wire Line
-	4650 1700 4650 1050
-Wire Wire Line
-	4650 1050 4300 1050
-Wire Wire Line
-	6750 6200 8300 6200
-$Comp
-L Device:R_US R?
-U 1 1 60F80C3F
-P 8450 6200
-AR Path="/60F80C3F" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C3F" Ref="R14"  Part="1" 
-F 0 "R14" V 8245 6200 50  0000 C CNN
-F 1 "22k" V 8336 6200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8490 6190 50  0001 C CNN
-F 3 "~" H 8450 6200 50  0001 C CNN
-	1    8450 6200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 60F80C4B
-P 8850 6300
-AR Path="/60F80C4B" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C4B" Ref="R15"  Part="1" 
-F 0 "R15" V 8645 6300 50  0000 C CNN
-F 1 "22k" V 8736 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8890 6290 50  0001 C CNN
-F 3 "~" H 8850 6300 50  0001 C CNN
-	1    8850 6300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 60F80C57
-P 9250 6400
-AR Path="/60F80C57" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C57" Ref="R16"  Part="1" 
-F 0 "R16" V 9045 6400 50  0000 C CNN
-F 1 "22k" V 9136 6400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9290 6390 50  0001 C CNN
-F 3 "~" H 9250 6400 50  0001 C CNN
-	1    9250 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 60F80C63
-P 9650 6500
-AR Path="/60F80C63" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C63" Ref="R17"  Part="1" 
-F 0 "R17" V 9445 6500 50  0000 C CNN
-F 1 "22k" V 9536 6500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9690 6490 50  0001 C CNN
-F 3 "~" H 9650 6500 50  0001 C CNN
-	1    9650 6500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6750 6300 8700 6300
-Wire Wire Line
-	6750 6400 9100 6400
-Wire Wire Line
-	6750 6500 9500 6500
-Text Label 7150 6200 0    50   ~ 0
-DataEncoderDataOutA
-Text Label 7150 6300 0    50   ~ 0
-DataEncoderDataOutB
-Text Label 7150 6400 0    50   ~ 0
-DataEncoderDataOutC
-Text Label 7150 6500 0    50   ~ 0
-DataEncoderDataOutD
-$Comp
-L Device:R_US R?
-U 1 1 60F80C76
-P 10050 6600
-AR Path="/60F80C76" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C76" Ref="R18"  Part="1" 
-F 0 "R18" V 9845 6600 50  0000 C CNN
-F 1 "22k" V 9936 6600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10090 6590 50  0001 C CNN
-F 3 "~" H 10050 6600 50  0001 C CNN
-	1    10050 6600
-	0    1    1    0   
-$EndComp
-Text Label 7150 6600 0    50   ~ 0
-DataEncoderDataOutE
-Wire Wire Line
-	6750 6600 9900 6600
-$Comp
-L Device:R_US R?
-U 1 1 60F80C84
-P 10450 6700
-AR Path="/60F80C84" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C84" Ref="R19"  Part="1" 
-F 0 "R19" V 10245 6700 50  0000 C CNN
-F 1 "22k" V 10336 6700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10490 6690 50  0001 C CNN
-F 3 "~" H 10450 6700 50  0001 C CNN
-	1    10450 6700
-	0    1    1    0   
-$EndComp
-Text Label 7150 6700 0    50   ~ 0
-DataEncoderDataAvailable
-Wire Wire Line
-	6750 6700 10300 6700
-$Comp
-L Device:R_US R?
-U 1 1 60F80C8C
-P 10850 6800
-AR Path="/60F80C8C" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C8C" Ref="R20"  Part="1" 
-F 0 "R20" V 10645 6800 50  0000 C CNN
-F 1 "22k" V 10736 6800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10890 6790 50  0001 C CNN
-F 3 "~" H 10850 6800 50  0001 C CNN
-	1    10850 6800
-	0    1    1    0   
-$EndComp
-Text Label 7150 6800 0    50   ~ 0
-ButtonA2GND
-Wire Wire Line
-	6750 6800 10700 6800
-$Comp
-L power:+5V #PWR?
-U 1 1 60F80C94
-P 11000 6800
-AR Path="/60F80C94" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/60F80C94" Ref="#PWR085"  Part="1" 
-F 0 "#PWR085" H 11000 6650 50  0001 C CNN
-F 1 "+5V" V 11015 6928 50  0000 L CNN
-F 2 "" H 11000 6800 50  0001 C CNN
-F 3 "" H 11000 6800 50  0001 C CNN
-	1    11000 6800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7200 3300 8000 3300
-$Comp
-L Device:R_US R?
-U 1 1 60F80C9B
-P 7050 3300
-AR Path="/60F80C9B" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80C9B" Ref="R12"  Part="1" 
-F 0 "R12" V 6845 3300 50  0000 C CNN
-F 1 "10k" V 6936 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7090 3290 50  0001 C CNN
-F 3 "~" H 7050 3300 50  0001 C CNN
-	1    7050 3300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6750 3300 6900 3300
-Wire Wire Line
-	5150 2700 4550 2700
-Text Label 4550 2700 2    50   ~ 0
-Mic_Mode_Switch
-Wire Wire Line
-	5150 2600 4550 2600
-Text Label 4550 2600 2    50   ~ 0
-DataEncoderOutputEnable
-Text Label 8000 3300 0    50   ~ 0
-Signal_Strength_Dial_+
-Wire Wire Line
-	7250 2000 6750 2000
-Wire Wire Line
-	6750 2100 7250 2100
-Wire Wire Line
-	7250 2200 6750 2200
-Wire Wire Line
-	6750 2300 7250 2300
-Text Label 7450 2600 0    50   ~ 0
-7_Segment_Driver_A
-Wire Wire Line
-	7450 2600 6750 2600
-Text Label 4650 6400 2    50   ~ 0
-7_Segment_Driver_B
-Text Label 4550 3300 2    50   ~ 0
-7_Segment_Driver_C
-Text Label 7250 5100 0    50   ~ 0
-7_Segment_Driver_D
-Wire Wire Line
-	5150 6400 4650 6400
-Wire Wire Line
-	5150 3300 4550 3300
-Wire Wire Line
-	6750 5100 7250 5100
-Wire Wire Line
-	5950 7200 5950 7500
-Text Label 7250 6900 0    50   ~ 0
+	5900 1050 6150 1050
+Text Label 3700 4700 2    50   ~ 0
 UiLdr
-Wire Wire Line
-	7250 6900 6750 6900
-Text Label 4550 3600 2    50   ~ 0
-LedRedCathode
-Text Label 4550 3500 2    50   ~ 0
-LedYellowCathode
-Wire Wire Line
-	4550 3500 5150 3500
-Wire Wire Line
-	4550 3600 5150 3600
-Text Label 4550 3700 2    50   ~ 0
+Text HLabel 8300 4100 2    50   Input ~ 0
+IGNITION_SENSE
+Text HLabel 8300 4200 2    50   Output ~ 0
+5V_EN_OUT
+Text Label 8300 5400 0    50   ~ 0
+DecoderData4
+Text Label 8300 5300 0    50   ~ 0
+DecoderData3
+Text Label 8300 5200 0    50   ~ 0
+DecoderData2
+Text Label 8300 5100 0    50   ~ 0
+DecoderData1
+Text Label 3700 3600 2    50   ~ 0
+OnSwitchLedCathode
+Text Label 3700 3500 2    50   ~ 0
 LedGreenCathode
+Text Label 3700 3300 2    50   ~ 0
+LedYellowCathode
+Text Label 3700 3400 2    50   ~ 0
+LedRedCathode
 Wire Wire Line
-	4550 3700 5150 3700
-Text Label 4550 3800 2    50   ~ 0
-OnSwitchLedAnode
+	5400 3600 3700 3600
 Wire Wire Line
-	4550 3800 5150 3800
+	5400 3500 3700 3500
 Wire Wire Line
-	7450 2900 6750 2900
+	5400 3400 3700 3400
 Wire Wire Line
-	7450 2800 6750 2800
+	5400 3300 3700 3300
 Wire Wire Line
-	7450 2700 6750 2700
-Text Label 7450 2700 0    50   ~ 0
-ATMEGA_ICSP_SCK
-Text Label 7450 2800 0    50   ~ 0
-ATMEGA_ICSP_MOSI
-Text Label 7450 2900 0    50   ~ 0
-ATMEGA_ICSP_MISO
-Text Label 2450 3250 0    50   ~ 0
-ATMEGA_ICSP_MOSI
-Text Label 1700 3150 2    50   ~ 0
-ATMEGA_ICSP_MISO
-Text Label 1700 3250 2    50   ~ 0
-ATMEGA_ICSP_SCK
-Text Label 4300 1050 2    50   ~ 0
-ATMEGA_RESET
-Text Label 1700 3350 2    50   ~ 0
-ATMEGA_RESET
-Text Label 7600 5300 0    50   ~ 0
-ATMEGA_RX0
-Text Label 7600 5400 0    50   ~ 0
-ATMEGA_TX0
-Text Label 4600 6700 2    50   ~ 0
+	6600 5100 8300 5100
+Wire Wire Line
+	6600 5200 8300 5200
+Wire Wire Line
+	6600 5300 8300 5300
+Wire Wire Line
+	6600 5400 8300 5400
+$Comp
+L Device:R R?
+U 1 1 60F96179
+P 4200 5650
+F 0 "R?" H 4270 5696 50  0000 L CNN
+F 1 "22k" H 4270 5605 50  0000 L CNN
+F 2 "" V 4130 5650 50  0001 C CNN
+F 3 "~" H 4200 5650 50  0001 C CNN
+	1    4200 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F96DE0
+P 4200 6450
+F 0 "#PWR?" H 4200 6200 50  0001 C CNN
+F 1 "GND" H 4205 6277 50  0000 C CNN
+F 2 "" H 4200 6450 50  0001 C CNN
+F 3 "" H 4200 6450 50  0001 C CNN
+	1    4200 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5800 4200 6450
+$Comp
+L Device:R R?
+U 1 1 60FB522E
+P 4400 6000
+F 0 "R?" H 4470 6046 50  0000 L CNN
+F 1 "22k" H 4470 5955 50  0000 L CNN
+F 2 "" V 4330 6000 50  0001 C CNN
+F 3 "~" H 4400 6000 50  0001 C CNN
+	1    4400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FB5234
+P 4400 6450
+F 0 "#PWR?" H 4400 6200 50  0001 C CNN
+F 1 "GND" H 4405 6277 50  0000 C CNN
+F 2 "" H 4400 6450 50  0001 C CNN
+F 3 "" H 4400 6450 50  0001 C CNN
+	1    4400 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6150 4400 6450
+$Comp
+L Device:R R?
+U 1 1 60FC9493
+P 4600 6300
+F 0 "R?" H 4670 6346 50  0000 L CNN
+F 1 "22k" H 4670 6255 50  0000 L CNN
+F 2 "" V 4530 6300 50  0001 C CNN
+F 3 "~" H 4600 6300 50  0001 C CNN
+	1    4600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FC9499
+P 4600 6450
+F 0 "#PWR?" H 4600 6200 50  0001 C CNN
+F 1 "GND" H 4605 6277 50  0000 C CNN
+F 2 "" H 4600 6450 50  0001 C CNN
+F 3 "" H 4600 6450 50  0001 C CNN
+	1    4600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FD57EF
+P 4800 5650
+F 0 "R?" H 4870 5696 50  0000 L CNN
+F 1 "22k" H 4870 5605 50  0000 L CNN
+F 2 "" V 4730 5650 50  0001 C CNN
+F 3 "~" H 4800 5650 50  0001 C CNN
+	1    4800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FD57F5
+P 4800 6450
+F 0 "#PWR?" H 4800 6200 50  0001 C CNN
+F 1 "GND" H 4805 6277 50  0000 C CNN
+F 2 "" H 4800 6450 50  0001 C CNN
+F 3 "" H 4800 6450 50  0001 C CNN
+	1    4800 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5800 4800 6450
+$Comp
+L Device:R R?
+U 1 1 60FD57FC
+P 5000 6000
+F 0 "R?" H 5070 6046 50  0000 L CNN
+F 1 "22k" H 5070 5955 50  0000 L CNN
+F 2 "" V 4930 6000 50  0001 C CNN
+F 3 "~" H 5000 6000 50  0001 C CNN
+	1    5000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FD5802
+P 5000 6450
+F 0 "#PWR?" H 5000 6200 50  0001 C CNN
+F 1 "GND" H 5005 6277 50  0000 C CNN
+F 2 "" H 5000 6450 50  0001 C CNN
+F 3 "" H 5000 6450 50  0001 C CNN
+	1    5000 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6150 5000 6450
+$Comp
+L Device:R R?
+U 1 1 60FD5809
+P 5200 6300
+F 0 "R?" H 5270 6346 50  0000 L CNN
+F 1 "22k" H 5270 6255 50  0000 L CNN
+F 2 "" V 5130 6300 50  0001 C CNN
+F 3 "~" H 5200 6300 50  0001 C CNN
+	1    5200 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FD580F
+P 5200 6450
+F 0 "#PWR?" H 5200 6200 50  0001 C CNN
+F 1 "GND" H 5205 6277 50  0000 C CNN
+F 2 "" H 5200 6450 50  0001 C CNN
+F 3 "" H 5200 6450 50  0001 C CNN
+	1    5200 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6102D9AD
+P 4050 2750
+F 0 "R?" H 4120 2796 50  0000 L CNN
+F 1 "22k" H 4120 2705 50  0000 L CNN
+F 2 "" V 3980 2750 50  0001 C CNN
+F 3 "~" H 4050 2750 50  0001 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6102E230
+P 4050 2300
+F 0 "#PWR?" H 4050 2150 50  0001 C CNN
+F 1 "+5V" H 4065 2473 50  0000 C CNN
+F 2 "" H 4050 2300 50  0001 C CNN
+F 3 "" H 4050 2300 50  0001 C CNN
+	1    4050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4200 8300 4200
+Wire Wire Line
+	6600 4000 8300 4000
+$Comp
+L power:GND #PWR?
+U 1 1 61095FB8
+P 6000 6450
+F 0 "#PWR?" H 6000 6200 50  0001 C CNN
+F 1 "GND" H 6005 6277 50  0000 C CNN
+F 2 "" H 6000 6450 50  0001 C CNN
+F 3 "" H 6000 6450 50  0001 C CNN
+	1    6000 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4100 3700 4100
+Wire Wire Line
+	5400 4200 3700 4200
+Wire Wire Line
+	5400 4300 3700 4300
+Wire Wire Line
+	5400 4400 3700 4400
+Wire Wire Line
+	6600 4400 8300 4400
+Wire Wire Line
+	6600 4300 8300 4300
+Wire Wire Line
+	6600 4800 8300 4800
+Wire Wire Line
+	6600 4700 8300 4700
+Text Label 3700 4100 2    50   ~ 0
+7_Segment_Driver_A
+Text Label 3700 4200 2    50   ~ 0
+7_Segment_Driver_B
+Text Label 3700 4300 2    50   ~ 0
+7_Segment_Driver_C
+Text Label 3700 4400 2    50   ~ 0
+7_Segment_Driver_D
+Text Label 8300 4300 0    50   ~ 0
+KeySwitch.A
+Text Label 8300 4400 0    50   ~ 0
+KeySwitch.B
+Text Label 8300 3200 0    50   ~ 0
+Signal_Strength_Dial_+
+$Comp
+L Device:R R?
+U 1 1 6103F708
+P 8000 3200
+F 0 "R?" V 7793 3200 50  0000 C CNN
+F 1 "10k" V 7884 3200 50  0000 C CNN
+F 2 "" V 7930 3200 50  0001 C CNN
+F 3 "~" H 8000 3200 50  0001 C CNN
+	1    8000 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3200 7850 3200
+Wire Wire Line
+	8150 3200 8300 3200
+Text Label 8300 3100 0    50   ~ 0
 BrightnessRegulation
 Wire Wire Line
-	4600 6700 5150 6700
-Text Label 7250 2000 0    50   ~ 0
-DecoderData1
-Text Label 7250 2100 0    50   ~ 0
-DecoderData2
-Text Label 7250 2200 0    50   ~ 0
-DecoderData3
-Text Label 7250 2300 0    50   ~ 0
-DecoderData4
-Text Label 8150 2400 0    50   ~ 0
-DecoderExtraSwitch
-Text Label 7250 1800 0    50   ~ 0
-KeyLock.A
-Text Label 7250 1700 0    50   ~ 0
-KeyLock.B
-Wire Wire Line
-	7250 1800 6750 1800
-Wire Wire Line
-	6750 1700 7250 1700
+	6600 3100 8300 3100
+Text Label 3700 3800 2    50   ~ 0
+ButtonA2GND
 $Comp
-L Device:R_US R?
-U 1 1 60F80D2C
-P 7950 2400
-AR Path="/60F80D2C" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/60F80D2C" Ref="R13"  Part="1" 
-F 0 "R13" V 7745 2400 50  0000 C CNN
-F 1 "330" V 7836 2400 50  0000 C CNN
-F 2 "" V 7990 2390 50  0001 C CNN
-F 3 "~" H 7950 2400 50  0001 C CNN
-	1    7950 2400
-	0    1    1    0   
+L power:+5V #PWR?
+U 1 1 6117E842
+P 4600 1850
+F 0 "#PWR?" H 4600 1700 50  0001 C CNN
+F 1 "+5V" H 4615 2023 50  0000 C CNN
+F 2 "" H 4600 1850 50  0001 C CNN
+F 3 "" H 4600 1850 50  0001 C CNN
+	1    4600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 611817A3
+P 4600 2550
+F 0 "#PWR?" H 4600 2300 50  0001 C CNN
+F 1 "GND" H 4605 2377 50  0000 C CNN
+F 2 "" H 4600 2550 50  0001 C CNN
+F 3 "" H 4600 2550 50  0001 C CNN
+	1    4600 2550
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 2400 8150 2400
+	4600 1850 4600 2050
 Wire Wire Line
-	6750 2400 7800 2400
+	4600 2350 4600 2550
+$Comp
+L Device:C C?
+U 1 1 6118A649
+P 5050 2200
+AR Path="/6118A649" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/6118A649" Ref="C?"  Part="1" 
+F 0 "C?" H 5165 2246 50  0000 L CNN
+F 1 "100n" H 5165 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 2050 50  0001 C CNN
+F 3 "~" H 5050 2200 50  0001 C CNN
+	1    5050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6118A64F
+P 5050 1850
+F 0 "#PWR?" H 5050 1700 50  0001 C CNN
+F 1 "+5V" H 5065 2023 50  0000 C CNN
+F 2 "" H 5050 1850 50  0001 C CNN
+F 3 "" H 5050 1850 50  0001 C CNN
+	1    5050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6118A655
+P 5050 2550
+F 0 "#PWR?" H 5050 2300 50  0001 C CNN
+F 1 "GND" H 5055 2377 50  0000 C CNN
+F 2 "" H 5050 2550 50  0001 C CNN
+F 3 "" H 5050 2550 50  0001 C CNN
+	1    5050 2550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3050 2150 2900 2150
-Text HLabel 9850 4250 2    50   Output ~ 0
+	5050 1850 5050 2050
+Wire Wire Line
+	5050 2350 5050 2550
+$Comp
+L Device:C C?
+U 1 1 6118CFC4
+P 5500 2200
+AR Path="/6118CFC4" Ref="C?"  Part="1" 
+AR Path="/60F18E7A/6118CFC4" Ref="C?"  Part="1" 
+F 0 "C?" H 5615 2246 50  0000 L CNN
+F 1 "100n" H 5615 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 2050 50  0001 C CNN
+F 3 "~" H 5500 2200 50  0001 C CNN
+	1    5500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6118CFCA
+P 5500 1850
+F 0 "#PWR?" H 5500 1700 50  0001 C CNN
+F 1 "+5V" H 5515 2023 50  0000 C CNN
+F 2 "" H 5500 1850 50  0001 C CNN
+F 3 "" H 5500 1850 50  0001 C CNN
+	1    5500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6118CFD0
+P 5500 2550
+F 0 "#PWR?" H 5500 2300 50  0001 C CNN
+F 1 "GND" H 5505 2377 50  0000 C CNN
+F 2 "" H 5500 2550 50  0001 C CNN
+F 3 "" H 5500 2550 50  0001 C CNN
+	1    5500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1850 5500 2050
+Wire Wire Line
+	5500 2350 5500 2550
+$Comp
+L power:GND #PWR?
+U 1 1 611B8BF3
+P 6750 1450
+F 0 "#PWR?" H 6750 1200 50  0001 C CNN
+F 1 "GND" H 6755 1277 50  0000 C CNN
+F 2 "" H 6750 1450 50  0001 C CNN
+F 3 "" H 6750 1450 50  0001 C CNN
+	1    6750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1450 6750 1250
+Wire Wire Line
+	6750 1250 6650 1250
+Wire Wire Line
+	6750 1050 6650 1050
+$Comp
+L power:+5V #PWR?
+U 1 1 611E7B66
+P 6000 1800
+AR Path="/611E7B66" Ref="#PWR?"  Part="1" 
+AR Path="/60F18E7A/611E7B66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 1650 50  0001 C CNN
+F 1 "+5V" H 6015 1973 50  0000 C CNN
+F 2 "" H 6000 1800 50  0001 C CNN
+F 3 "" H 6000 1800 50  0001 C CNN
+	1    6000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1800 6000 2900
+$Comp
+L MCU_Microchip_ATmega:ATmega4809-A U?
+U 1 1 60DE3AC7
+P 6000 4300
+F 0 "U?" H 6000 2811 50  0000 C CNN
+F 1 "ATmega4809-A" H 6000 2720 50  0000 C CNN
+F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 6000 4300 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40002016A.pdf" H 6000 4300 50  0001 C CNN
+	1    6000 4300
+	1    0    0    -1  
+$EndComp
+Text Label 3700 5400 2    50   ~ 0
+DataEncoderOutputEnable
+Text Label 3700 4800 2    50   ~ 0
+DataEncoderDataAvailable
+Text Label 3700 5300 2    50   ~ 0
+DataEncoderDataOutE
+Text Label 3700 5200 2    50   ~ 0
+DataEncoderDataOutD
+Text Label 3700 5100 2    50   ~ 0
+DataEncoderDataOutC
+Text Label 3700 5000 2    50   ~ 0
+DataEncoderDataOutB
+Text Label 3700 4900 2    50   ~ 0
+DataEncoderDataOutA
+Wire Wire Line
+	3700 5400 5400 5400
+Wire Wire Line
+	8300 4100 6600 4100
+Wire Wire Line
+	3700 4800 4200 4800
+Wire Wire Line
+	3700 5000 4600 5000
+Wire Wire Line
+	3700 5100 4800 5100
+Wire Wire Line
+	3700 5200 5000 5200
+Wire Wire Line
+	3700 5300 5200 5300
+Wire Wire Line
+	4200 5500 4200 4800
+Connection ~ 4200 4800
+Wire Wire Line
+	4200 4800 5400 4800
+Wire Wire Line
+	4400 4900 4400 5850
+Connection ~ 4400 4900
+Wire Wire Line
+	4400 4900 5400 4900
+Wire Wire Line
+	3700 4900 4400 4900
+Wire Wire Line
+	4600 6150 4600 5000
+Connection ~ 4600 5000
+Wire Wire Line
+	4600 5000 5400 5000
+Wire Wire Line
+	4800 5100 4800 5500
+Connection ~ 4800 5100
+Wire Wire Line
+	4800 5100 5400 5100
+Wire Wire Line
+	5000 5850 5000 5200
+Connection ~ 5000 5200
+Wire Wire Line
+	5000 5200 5400 5200
+Wire Wire Line
+	5200 6150 5200 5300
+Connection ~ 5200 5300
+Wire Wire Line
+	5200 5300 5400 5300
+Wire Wire Line
+	4050 2300 4050 2600
+Wire Wire Line
+	6000 5700 6000 6450
+Wire Wire Line
+	6000 2900 6100 2900
+Connection ~ 6000 2900
+Wire Wire Line
+	3700 4700 4000 4700
+Wire Wire Line
+	3700 3800 4050 3800
+Wire Wire Line
+	4050 2900 4050 3800
+Connection ~ 4050 3800
+Wire Wire Line
+	4050 3800 5400 3800
+$Comp
+L Device:R R?
+U 1 1 60E994CF
+P 4000 6000
+F 0 "R?" H 4070 6046 50  0000 L CNN
+F 1 "22k" H 4070 5955 50  0000 L CNN
+F 2 "" V 3930 6000 50  0001 C CNN
+F 3 "~" H 4000 6000 50  0001 C CNN
+	1    4000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4700 4000 5850
+Connection ~ 4000 4700
+Wire Wire Line
+	4000 4700 5400 4700
+$Comp
+L power:GND #PWR?
+U 1 1 60EA6769
+P 4000 6450
+F 0 "#PWR?" H 4000 6200 50  0001 C CNN
+F 1 "GND" H 4005 6277 50  0000 C CNN
+F 2 "" H 4000 6450 50  0001 C CNN
+F 3 "" H 4000 6450 50  0001 C CNN
+	1    4000 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6150 4000 6450
+Wire Notes Line
+	3900 5800 4100 5800
+Wire Notes Line
+	4100 5800 4100 6200
+Wire Notes Line
+	4100 6200 3900 6200
+Wire Notes Line
+	3900 6200 3900 5800
+Text Notes 3250 5850 0    50   ~ 0
+Wert nicht final
+Text HLabel 8300 4000 2    50   Output ~ 0
 RPI_RUN_3.3V
-Text Label 9300 4250 2    50   ~ 0
-RPI_RUN_5V
-Text Label 7250 5000 0    50   ~ 0
-RPI_RUN_5V
-Wire Wire Line
-	7250 5000 6750 5000
-Text HLabel 7250 4900 2    50   Input ~ 0
-IGNITION_SENSE
-Text HLabel 7250 4800 2    50   Output ~ 0
-5V_EN_OUT
-Wire Wire Line
-	7250 4800 6750 4800
-Wire Wire Line
-	6750 4900 7250 4900
-Text Label 9400 5400 2    50   ~ 0
-ATMEGA_RX0
-Text Label 9400 5300 2    50   ~ 0
-ATMEGA_TX0
-Wire Wire Line
-	9400 5400 9750 5400
-$Comp
-L power:GND #PWR074
-U 1 1 60E95E20
-P 5950 7500
-F 0 "#PWR074" H 5950 7250 50  0001 C CNN
-F 1 "GND" H 5955 7327 50  0000 C CNN
-F 2 "" H 5950 7500 50  0001 C CNN
-F 3 "" H 5950 7500 50  0001 C CNN
-	1    5950 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR066
-U 1 1 60EA9CE3
-P 2850 3550
-F 0 "#PWR066" H 2850 3300 50  0001 C CNN
-F 1 "GND" H 2855 3377 50  0000 C CNN
-F 2 "" H 2850 3550 50  0001 C CNN
-F 3 "" H 2850 3550 50  0001 C CNN
-	1    2850 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR073
-U 1 1 60EAA21B
-P 5100 1450
-F 0 "#PWR073" H 5100 1200 50  0001 C CNN
-F 1 "GND" H 5105 1277 50  0000 C CNN
-F 2 "" H 5100 1450 50  0001 C CNN
-F 3 "" H 5100 1450 50  0001 C CNN
-	1    5100 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR070
-U 1 1 60EAA6B6
-P 4150 2300
-F 0 "#PWR070" H 4150 2050 50  0001 C CNN
-F 1 "GND" H 4155 2127 50  0000 C CNN
-F 2 "" H 4150 2300 50  0001 C CNN
-F 3 "" H 4150 2300 50  0001 C CNN
-	1    4150 2300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3500 1550 3500 1750
-$Comp
-L power:GND #PWR067
-U 1 1 60EAAEB7
-P 3400 1750
-F 0 "#PWR067" H 3400 1500 50  0001 C CNN
-F 1 "GND" H 3405 1577 50  0000 C CNN
-F 2 "" H 3400 1750 50  0001 C CNN
-F 3 "" H 3400 1750 50  0001 C CNN
-	1    3400 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3400 1750 3500 1750
-Connection ~ 3500 1750
-Wire Wire Line
-	3500 1750 3500 2000
-$Comp
-L power:GND #PWR078
-U 1 1 60EB154A
-P 8600 6200
-F 0 "#PWR078" H 8600 5950 50  0001 C CNN
-F 1 "GND" H 8605 6027 50  0000 C CNN
-F 2 "" H 8600 6200 50  0001 C CNN
-F 3 "" H 8600 6200 50  0001 C CNN
-	1    8600 6200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR079
-U 1 1 60EB1D90
-P 9000 6300
-F 0 "#PWR079" H 9000 6050 50  0001 C CNN
-F 1 "GND" H 9005 6127 50  0000 C CNN
-F 2 "" H 9000 6300 50  0001 C CNN
-F 3 "" H 9000 6300 50  0001 C CNN
-	1    9000 6300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR080
-U 1 1 60EB207D
-P 9400 6400
-F 0 "#PWR080" H 9400 6150 50  0001 C CNN
-F 1 "GND" H 9405 6227 50  0000 C CNN
-F 2 "" H 9400 6400 50  0001 C CNN
-F 3 "" H 9400 6400 50  0001 C CNN
-	1    9400 6400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR082
-U 1 1 60EB239D
-P 9800 6500
-F 0 "#PWR082" H 9800 6250 50  0001 C CNN
-F 1 "GND" H 9805 6327 50  0000 C CNN
-F 2 "" H 9800 6500 50  0001 C CNN
-F 3 "" H 9800 6500 50  0001 C CNN
-	1    9800 6500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR083
-U 1 1 60EB2710
-P 10200 6600
-F 0 "#PWR083" H 10200 6350 50  0001 C CNN
-F 1 "GND" H 10205 6427 50  0000 C CNN
-F 2 "" H 10200 6600 50  0001 C CNN
-F 3 "" H 10200 6600 50  0001 C CNN
-	1    10200 6600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR084
-U 1 1 60EB2A2C
-P 10600 6700
-F 0 "#PWR084" H 10600 6450 50  0001 C CNN
-F 1 "GND" H 10605 6527 50  0000 C CNN
-F 2 "" H 10600 6700 50  0001 C CNN
-F 3 "" H 10600 6700 50  0001 C CNN
-	1    10600 6700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9300 4250 9850 4250
-Wire Wire Line
-	9750 5300 9400 5300
-Text HLabel 9750 5400 2    50   Input ~ 0
+Text HLabel 8300 4800 2    50   Input ~ 0
 UART_RX
-Text HLabel 9750 5300 2    50   Output ~ 0
+Text HLabel 8300 4700 2    50   Output ~ 0
 UART_TX
+NoConn ~ 6600 3300
+NoConn ~ 6600 3400
+NoConn ~ 6600 3800
+NoConn ~ 6600 4500
+NoConn ~ 6600 4900
+NoConn ~ 6600 5000
+NoConn ~ 5400 3700
+Wire Wire Line
+	5400 3100 3700 3100
+Text Label 3700 3100 2    50   ~ 0
+UPDI_DATA
+Text Label 5900 1050 2    50   ~ 0
+UPDI_DATA
+NoConn ~ 6650 1150
+NoConn ~ 6150 1150
+NoConn ~ 6150 1250
+NoConn ~ 5400 3900
+Text Notes 5300 3950 2    50   ~ 0
+Software Reset + internal pullup -> n.c
+NoConn ~ 6600 3500
+NoConn ~ 6600 3600
+NoConn ~ 6600 3700
+Text Notes 6900 1100 0    50   ~ 0
+Empfehlung zur Kompatibilität:\nhttps://microchipdeveloper.com/atmelice:updi
 $EndSCHEMATC

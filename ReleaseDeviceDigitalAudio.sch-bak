@@ -535,7 +535,7 @@ F 3 "" H 11950 8550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 6100 10100 0    50   ~ 0
-Levelshift prüfen (Zuordnung RX/TX)\nChecken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\nSteckverbinder KFZ\nLDO für MAX98089?\n
+Levelshift prüfen (Zuordnung RX/TX)\nSignalzuordungen I2C / I2S / UART checken\nChecken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\nSteckverbinder KFZ\nLDO für MAX98089?\n
 $Comp
 L power:GND #PWR02
 U 1 1 622523CD
