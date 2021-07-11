@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -190,7 +190,7 @@ F 4 "good" H 2600 4750 50  0001 C CNN "Availability"
 	1    0    0    -1  
 $EndComp
 Text HLabel 1400 1350 0    50   Input ~ 0
-BrightnessRegulation
+BrightnessPWM
 Wire Wire Line
 	1400 1850 5150 1850
 Wire Wire Line
@@ -715,6 +715,8 @@ $Comp
 L power:GND #PWR?
 U 1 1 6202C821
 P 800 5700
+AR Path="/60D33366/6202C821" Ref="#PWR?"  Part="1" 
+AR Path="/60F87146/6202C821" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 800 5450 50  0001 C CNN
 F 1 "GND" H 805 5527 50  0000 C CNN
 F 2 "" H 800 5700 50  0001 C CNN
@@ -730,6 +732,8 @@ $Comp
 L Device:C C?
 U 1 1 6202C82F
 P 800 5350
+AR Path="/60D33366/6202C82F" Ref="C?"  Part="1" 
+AR Path="/60F87146/6202C82F" Ref="C?"  Part="1" 
 F 0 "C?" V 1050 5300 50  0000 L CNN
 F 1 "100n/10V/X7R" V 950 5100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 838 5200 50  0001 C CNN
@@ -771,6 +775,8 @@ $Comp
 L Device:C C?
 U 1 1 620341F4
 P 4500 1100
+AR Path="/60D33366/620341F4" Ref="C?"  Part="1" 
+AR Path="/60F87146/620341F4" Ref="C?"  Part="1" 
 F 0 "C?" V 4750 1050 50  0000 L CNN
 F 1 "100n/10V/X7R" V 4650 850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4538 950 50  0001 C CNN
