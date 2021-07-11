@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -573,38 +573,10 @@ Wire Wire Line
 	6750 2400 7800 2400
 Wire Wire Line
 	3050 2150 2900 2150
-$Comp
-L Transistor_FET:BSS138 Q1
-U 1 1 61627570
-P 9350 4450
-F 0 "Q1" H 9554 4496 50  0000 L CNN
-F 1 "BSS138" H 9554 4405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9550 4375 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9350 4450 50  0001 L CNN
-	1    9350 4450
-	1    0    0    -1  
-$EndComp
 Text HLabel 9850 4250 2    50   Output ~ 0
 RPI_RUN_3.3V
-Wire Wire Line
-	9450 4250 9850 4250
-Text Label 9000 4450 2    50   ~ 0
+Text Label 9300 4250 2    50   ~ 0
 RPI_RUN_5V
-$Comp
-L power:GND #PWR081
-U 1 1 6163335F
-P 9450 5050
-F 0 "#PWR081" H 9450 4800 50  0001 C CNN
-F 1 "GND" H 9455 4877 50  0000 C CNN
-F 2 "" H 9450 5050 50  0001 C CNN
-F 3 "" H 9450 5050 50  0001 C CNN
-	1    9450 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 4650 9450 5050
-Wire Wire Line
-	9000 4450 9150 4450
 Text Label 7250 5000 0    50   ~ 0
 RPI_RUN_5V
 Wire Wire Line
@@ -617,138 +589,12 @@ Wire Wire Line
 	7250 4800 6750 4800
 Wire Wire Line
 	6750 4900 7250 4900
-Text Label 2450 -750 2    50   ~ 0
-RPi_UART1_TX
-Entry Wire Line
-	1800 -850 1900 -750
-Wire Bus Line
-	1800 -850 1750 -850
-Text HLabel 1750 -850 0    50   BiDi ~ 0
-3V3_UART
-$Comp
-L TeKaDe:SN74LV1T126DBVR U3
-U 1 1 60EAFEDD
-P 3650 -950
-F 0 "U3" H 4494 -897 60  0000 L CNN
-F 1 "SN74LV1T126DBVR" H 4494 -1003 60  0000 L CNN
-F 2 "" H 3650 -1010 60  0001 C CNN
-F 3 "" H 3650 -950 60  0000 C CNN
-	1    3650 -950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR068
-U 1 1 60EB75AD
-P 3650 -1950
-F 0 "#PWR068" H 3650 -2100 50  0001 C CNN
-F 1 "+5V" H 3665 -1777 50  0000 C CNN
-F 2 "" H 3650 -1950 50  0001 C CNN
-F 3 "" H 3650 -1950 50  0001 C CNN
-	1    3650 -1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 -1750 3650 -1950
-$Comp
-L power:+5V #PWR075
-U 1 1 60EBD1D7
-P 6400 -1950
-F 0 "#PWR075" H 6400 -2100 50  0001 C CNN
-F 1 "+5V" H 6415 -1777 50  0000 C CNN
-F 2 "" H 6400 -1950 50  0001 C CNN
-F 3 "" H 6400 -1950 50  0001 C CNN
-	1    6400 -1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 -1150 2950 -1150
-Wire Wire Line
-	2850 -1950 2850 -1150
-$Comp
-L power:GND #PWR069
-U 1 1 60EC6F57
-P 3650 350
-F 0 "#PWR069" H 3650 100 50  0001 C CNN
-F 1 "GND" H 3655 177 50  0000 C CNN
-F 2 "" H 3650 350 50  0001 C CNN
-F 3 "" H 3650 350 50  0001 C CNN
-	1    3650 350 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 350  3650 -150
-$Comp
-L TeKaDe:SN74LV1T126DBVR U5
-U 1 1 60EDF3D9
-P 7200 -950
-F 0 "U5" H 8044 -897 60  0000 L CNN
-F 1 "SN74LV1T126DBVR" H 8044 -1003 60  0000 L CNN
-F 2 "" H 7200 -1010 60  0001 C CNN
-F 3 "" H 7200 -950 60  0000 C CNN
-	1    7200 -950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 -1750 7200 -1950
-Wire Wire Line
-	6400 -1150 6500 -1150
-Wire Wire Line
-	6400 -1950 6400 -1150
-$Comp
-L power:GND #PWR077
-U 1 1 60EDF3EE
-P 7200 350
-F 0 "#PWR077" H 7200 100 50  0001 C CNN
-F 1 "GND" H 7205 177 50  0000 C CNN
-F 2 "" H 7200 350 50  0001 C CNN
-F 3 "" H 7200 350 50  0001 C CNN
-	1    7200 350 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 350  7200 -150
-$Comp
-L power:+3V3 #PWR076
-U 1 1 60EF02E8
-P 7200 -1950
-F 0 "#PWR076" H 7200 -2100 50  0001 C CNN
-F 1 "+3V3" H 7215 -1777 50  0000 C CNN
-F 2 "" H 7200 -1950 50  0001 C CNN
-F 3 "" H 7200 -1950 50  0001 C CNN
-	1    7200 -1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR064
-U 1 1 60EF0C4F
-P 2850 -1950
-F 0 "#PWR064" H 2850 -2100 50  0001 C CNN
-F 1 "+3V3" H 2865 -1777 50  0000 C CNN
-F 2 "" H 2850 -1950 50  0001 C CNN
-F 3 "" H 2850 -1950 50  0001 C CNN
-	1    2850 -1950
-	1    0    0    -1  
-$EndComp
-Text Label 8800 -750 0    50   ~ 0
-RPi_UART1_RX
-Entry Wire Line
-	9600 -850 9500 -750
-Text HLabel 9750 -850 2    50   BiDi ~ 0
-3V3_UART
-Wire Bus Line
-	9600 -850 9750 -850
-Wire Wire Line
-	8000 -750 9500 -750
-Text Label 4850 -750 0    50   ~ 0
+Text Label 9400 5400 2    50   ~ 0
 ATMEGA_RX0
-Text Label 5900 -750 2    50   ~ 0
+Text Label 9400 5300 2    50   ~ 0
 ATMEGA_TX0
 Wire Wire Line
-	4850 -750 4450 -750
-Wire Wire Line
-	5900 -750 6500 -750
-Wire Wire Line
-	1900 -750 2950 -750
+	9400 5400 9750 5400
 $Comp
 L power:GND #PWR074
 U 1 1 60E95E20
@@ -877,4 +723,12 @@ F 3 "" H 10600 6700 50  0001 C CNN
 	1    10600 6700
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	9300 4250 9850 4250
+Wire Wire Line
+	9750 5300 9400 5300
+Text HLabel 9750 5400 2    50   Input ~ 0
+UART_RX
+Text HLabel 9750 5300 2    50   Output ~ 0
+UART_TX
 $EndSCHEMATC

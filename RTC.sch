@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -54,10 +54,6 @@ F 3 "" H 3800 2700 50  0001 C CNN
 	1    3800 2700
 	1    0    0    -1  
 $EndComp
-Text Label 7000 4150 0    50   ~ 0
-RPi_I2C0_SCL
-Text Label 7000 4250 0    50   ~ 0
-RPi_I2C0_SDA
 $Comp
 L Device:Battery BT?
 U 1 1 649427F4
@@ -100,10 +96,6 @@ F 3 "" H 6750 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6650 3950
-Wire Wire Line
-	6650 4150 7600 4150
-Wire Wire Line
-	6650 4250 7600 4250
 Wire Wire Line
 	6650 3850 6750 3850
 Wire Wire Line
@@ -175,16 +167,14 @@ Wire Wire Line
 	4700 3200 6750 3200
 Wire Wire Line
 	4700 4350 4700 3750
-Entry Wire Line
-	7600 4150 7700 4050
-Entry Wire Line
-	7600 4250 7700 4150
-Wire Bus Line
-	7700 4150 7700 4050
-Wire Bus Line
-	7700 4050 7800 4050
-Text HLabel 7800 4050 2    50   BiDi ~ 0
-I2C
+Text HLabel 7600 4250 2    50   BiDi ~ 0
+I2C_SDA
 Text Notes 4450 5800 0    50   ~ 0
 RTC nicht via doppelten hierarchischen Label\nRTC IC gewechselt jetzt mit Quarz\nBattery Holder so lieferbar?
+Wire Wire Line
+	6650 4250 7600 4250
+Wire Wire Line
+	6650 4150 7600 4150
+Text HLabel 7600 4150 2    50   Input ~ 0
+I2C_SCL
 $EndSCHEMATC

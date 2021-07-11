@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -64,10 +64,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 2050 7900 2150
 Connection ~ 7900 2150
-Text Label 9300 2550 0    50   ~ 0
-RPi_I2C0_SDA
-Text Label 9300 2650 0    50   ~ 0
-RPi_I2C0_SCL
 NoConn ~ 7150 3850
 NoConn ~ 7150 3950
 Text Label 7850 3650 0    50   ~ 0
@@ -465,60 +461,20 @@ Text HLabel 10150 4450 2    50   Output ~ 0
 Audio_Handset_Out_L
 Text HLabel 10150 2150 2    50   Output ~ 0
 IRQ
-Text Label 7850 2350 0    50   ~ 0
-RPi_I2S_SD_OUT
-Text Label 3100 2050 2    50   ~ 0
-RPi_I2S_SD_IN
-Text Label 3100 2350 2    50   ~ 0
-RPi_I2S_WS
-Text Label 3100 2150 2    50   ~ 0
-RPi_I2S_SD_CLK
-Text HLabel 1700 1950 0    50   BiDi ~ 0
-I2S2_Slave
-Entry Wire Line
-	1850 1950 1950 2050
 Wire Wire Line
-	1950 2050 4550 2050
-Entry Wire Line
-	1850 2050 1950 2150
+	1700 2050 4550 2050
 Wire Wire Line
-	1950 2150 4550 2150
-Entry Wire Line
-	1850 2250 1950 2350
+	1700 2150 4550 2150
 Wire Wire Line
-	1950 2350 4550 2350
-Wire Bus Line
-	1850 1950 1700 1950
+	1700 2350 4550 2350
 Wire Wire Line
-	7850 2350 7150 2350
-Text HLabel 1700 2550 0    50   BiDi ~ 0
-I2S1_Master
-Entry Wire Line
-	1850 2550 1950 2650
-Entry Wire Line
-	1850 2650 1950 2750
-Wire Bus Line
-	1850 2550 1700 2550
+	10150 2350 7150 2350
 Wire Wire Line
-	1950 2650 4550 2650
+	1700 2650 4550 2650
 Wire Wire Line
-	1950 2750 4550 2750
-Text Label 3100 2650 2    50   ~ 0
-BM83_I2S_SD_IN
-Text Label 3100 2750 2    50   ~ 0
-BM83_I2S_CLK
-Text Label 3100 2850 2    50   ~ 0
-BM83_I2S_SD_OUT
-Text Label 3100 2950 2    50   ~ 0
-BM83_I2S_WS
-Entry Wire Line
-	1850 2750 1950 2850
-Entry Wire Line
-	1850 2850 1950 2950
+	1700 2750 4550 2750
 Wire Wire Line
-	1950 2950 4550 2950
-Wire Wire Line
-	1950 2850 4550 2850
+	1700 2850 4550 2850
 $Comp
 L power:GND #PWR030
 U 1 1 60F47C10
@@ -536,16 +492,6 @@ Connection ~ 2600 4250
 Connection ~ 2300 4350
 Wire Wire Line
 	2600 4750 2600 4950
-Entry Wire Line
-	10050 2550 9950 2650
-Entry Wire Line
-	10050 2450 9950 2550
-Text HLabel 10150 2450 2    50   BiDi ~ 0
-I2C
-Wire Bus Line
-	10050 2550 10050 2450
-Wire Bus Line
-	10050 2450 10150 2450
 Wire Notes Line
 	9350 3650 10100 3650
 Wire Notes Line
@@ -638,9 +584,9 @@ F 3 "" H 2300 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 2550 9950 2550
+	7150 2550 10150 2550
 Wire Wire Line
-	7150 2650 9950 2650
+	7150 2650 10150 2650
 Wire Wire Line
 	7900 2150 10150 2150
 Text Notes 1400 650  0    50   ~ 0
@@ -1439,14 +1385,30 @@ F 3 "" H 5250 6950 50  0001 C CNN
 	1    5250 6950
 	1    0    0    -1  
 $EndComp
-Entry Wire Line
-	1950 2250 1850 2150
-Text Label 2500 2250 0    50   ~ 0
-RPi_I2S_SD_OUT
+Text HLabel 10150 2550 2    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 10150 2650 2    50   Input ~ 0
+I2C_SCL
+Text HLabel 1700 2850 0    50   Input ~ 0
+I2S1_SD_IN
+Text HLabel 1700 2650 0    50   Output ~ 0
+I2S1_SD_OUT
+Text HLabel 1700 2750 0    50   BiDi ~ 0
+I2S1_SD_CLK
 Wire Wire Line
-	2500 2250 1950 2250
-Wire Bus Line
-	1850 2550 1850 2850
-Wire Bus Line
-	1850 1950 1850 2250
+	1700 2950 4550 2950
+Text HLabel 1700 2950 0    50   BiDi ~ 0
+I2S1_SD_WS
+Text Notes 650  2100 0    50   ~ 0
+I2S2_Slave
+Text Notes 600  2800 0    50   ~ 0
+I2S1_Master
+Text HLabel 10150 2350 2    50   Input ~ 0
+I2S2_SD_IN
+Text HLabel 1700 2050 0    50   Output ~ 0
+I2S2_SD_OUT
+Text HLabel 1700 2150 0    50   BiDi ~ 0
+I2S2_SD_CLK
+Text HLabel 1700 2350 0    50   BiDi ~ 0
+I2S2_SD_WS
 $EndSCHEMATC

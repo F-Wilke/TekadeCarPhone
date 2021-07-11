@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -134,16 +134,16 @@ UIBoard interfacing\n
 $Comp
 L power:+5V #PWR01
 U 1 1 6AE91C4A
-P 2950 1600
-F 0 "#PWR01" H 2950 1450 50  0001 C CNN
-F 1 "+5V" H 2965 1773 50  0000 C CNN
-F 2 "" H 2950 1600 50  0001 C CNN
-F 3 "" H 2950 1600 50  0001 C CNN
-	1    2950 1600
+P 3150 1600
+F 0 "#PWR01" H 3150 1450 50  0001 C CNN
+F 1 "+5V" H 3165 1773 50  0000 C CNN
+F 2 "" H 3150 1600 50  0001 C CNN
+F 3 "" H 3150 1600 50  0001 C CNN
+	1    3150 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 1600 2800 1600
+	3150 1600 3000 1600
 $Comp
 L Connector:Conn_01x03_Male J6
 U 1 1 6188FA04
@@ -279,51 +279,12 @@ Text Label 9200 2650 0    50   ~ 0
 Audio_Handset_Out_R
 Text Label 9200 2750 0    50   ~ 0
 Audio_Handset_Out_L
-Text Label 5800 1900 0    50   ~ 0
-MAX_IRQ
 Wire Wire Line
-	7200 1900 5550 1900
-Text Label 5800 1600 0    50   ~ 0
-I2S_RPI_MAX98
-$Sheet
-S 7200 3900 1600 2250
-U 620639FD
-F0 "BluetoothModule" 50
-F1 "BluetoothModule.sch" 50
-F2 "I2S_Slave" B L 7200 4050 50 
-F3 "BM83_MFB" I L 7200 4350 50 
-F4 "UART" B L 7200 4200 50 
-$EndSheet
-Text Label 5800 4350 0    50   ~ 0
-BM83_MFB
+	7200 1950 5550 1950
 Wire Wire Line
-	7200 4350 5550 4350
-Text Label 7100 3300 2    50   ~ 0
-I2S_MAX98_BM83
-Text Label 5800 4200 0    50   ~ 0
-UART_RPI_BM83
+	7200 5150 5550 5150
 Wire Wire Line
 	11450 6500 12800 6500
-$Sheet
-S 7200 1350 1600 2250
-U 60D33366
-F0 "AudioMAX98089" 50
-F1 "AudioMixing.sch" 50
-F2 "Audio_Master_Out_R" O R 8800 1600 50 
-F3 "Audio_Master_Out_L" O R 8800 1700 50 
-F4 "Line_In_R" I R 8800 2250 50 
-F5 "Line_In_L" I R 8800 2350 50 
-F6 "Audio_Handset_Out_R" O R 8800 2650 50 
-F7 "Audio_Handset_Out_L" O R 8800 2750 50 
-F8 "MasterMicInN" I R 8800 1850 50 
-F9 "MasterMicInP" I R 8800 1950 50 
-F10 "HandsetMicInP" I R 8800 2950 50 
-F11 "HandsetMicInN" I R 8800 3050 50 
-F12 "IRQ" O L 7200 1900 50 
-F13 "I2S2_Slave" B L 7200 1600 50 
-F14 "I2S1_Master" B L 7200 3300 50 
-F15 "I2C" B L 7200 1750 50 
-$EndSheet
 Connection ~ 11050 2150
 Wire Wire Line
 	11050 2150 11050 2850
@@ -344,10 +305,11 @@ S 7200 6450 1600 1200
 U 60F18E7A
 F0 "ControllerUIBoard" 50
 F1 "ControllerUIBoard.sch" 50
-F2 "RPI_RUN_3.3V" O L 7200 6800 50 
+F2 "RPI_RUN_3.3V" O L 7200 6750 50 
 F3 "IGNITION_SENSE" I R 8800 6800 50 
 F4 "5V_EN_OUT" O R 8800 6950 50 
-F5 "3V3_UART" B L 7200 6650 50 
+F5 "UART_RX" I L 7200 7050 50 
+F6 "UART_TX" O L 7200 7150 50 
 $EndSheet
 $Sheet
 S 900  8250 1600 2250
@@ -360,10 +322,6 @@ F4 "SegmentAnodes" O R 2500 8650 50
 F5 "SegmentDriverData" I L 900 8650 50 
 F6 "BrightnessRegulation" I L 900 8900 50 
 $EndSheet
-Text Label 5800 6800 0    50   ~ 0
-RPI_RUN
-Wire Wire Line
-	5550 6800 7200 6800
 Text Label 9100 6800 0    50   ~ 0
 IGNITION_5V
 Wire Wire Line
@@ -372,14 +330,14 @@ Text Label 9100 6950 0    50   ~ 0
 5V_EN_Signal
 Wire Wire Line
 	8800 6950 9100 6950
-Text Label 900  1850 2    50   ~ 0
+Text Label 1100 1850 2    50   ~ 0
 IGNITION_5V
 Wire Wire Line
-	1200 1850 900  1850
-Text Label 900  1700 2    50   ~ 0
+	1400 1850 1100 1850
+Text Label 1100 1700 2    50   ~ 0
 5V_EN_Signal
 Wire Wire Line
-	1200 1700 900  1700
+	1400 1700 1100 1700
 Text Label 2950 8650 0    50   ~ 0
 SegmentAnodes
 Wire Bus Line
@@ -493,12 +451,6 @@ Wire Notes Line
 	9700 8850 15950 8850
 Wire Notes Line
 	9700 4700 9700 8850
-Text Label 5800 1750 0    50   ~ 0
-I2C_RPI_MAX98
-Wire Bus Line
-	6450 3300 6450 4050
-Wire Bus Line
-	6450 3300 7200 3300
 Wire Wire Line
 	8800 1600 11200 1600
 Wire Wire Line
@@ -563,18 +515,8 @@ Wire Wire Line
 	13350 6900 14300 6900
 Wire Wire Line
 	8800 1950 12000 1950
-Wire Bus Line
-	6450 4050 7200 4050
-Wire Bus Line
-	5550 1600 7200 1600
 Wire Wire Line
 	8800 2650 12000 2650
-Wire Bus Line
-	5550 1750 7200 1750
-Text Label 5800 6650 0    50   ~ 0
-UART_RPI_ATMEGA
-Wire Bus Line
-	7200 6650 5550 6650
 Wire Wire Line
 	14100 7100 14300 7100
 Wire Wire Line
@@ -593,9 +535,7 @@ F 3 "" H 11950 8550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 6100 10100 0    50   ~ 0
-Alles bzgl Levelshifter checken\nChecken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind
-Wire Bus Line
-	5550 4200 7200 4200
+Levelshift prüfen (Zuordnung RX/TX)\nSignalzuordungen I2C / I2S / UART checken\nChecken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\nSteckverbinder KFZ\nLDO für MAX98089?\n
 $Comp
 L power:GND #PWR02
 U 1 1 622523CD
@@ -619,36 +559,21 @@ F 3 "" H 11850 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 3950 1350 1600 7600
-U 631EEDC8
-F0 "RPiCM4" 50
-F1 "RaspberryPiCM4.sch" 50
-F2 "I2S_Master" B R 5550 1600 50 
-F3 "GPIO9" O R 5550 4350 50 
-F4 "GPIO10" I R 5550 1900 50 
-F5 "I2C0" B R 5550 8150 50 
-F6 "I2C1" B R 5550 1750 50 
-F7 "RUN" I R 5550 6800 50 
-F8 "UART3" B R 5550 4200 50 
-F9 "UART0" B R 5550 6650 50 
-$EndSheet
-$Sheet
 S 7200 7950 1600 1000
 U 6493C3D2
 F0 "RTC" 50
 F1 "RTC.sch" 50
-F2 "I2C" B L 7200 8150 50 
+F2 "I2C_SDA" B L 7200 8200 50 
+F3 "I2C_SCL" I L 7200 8300 50 
 $EndSheet
-Wire Bus Line
-	5550 8150 7200 8150
 $Sheet
-S 1200 1350 1600 900 
+S 1400 1350 1600 900 
 U 64BEC8E8
 F0 "PowerSupply" 50
 F1 "PowerSupplyCM4.sch" 50
-F2 "5V" U R 2800 1600 50 
-F3 "5V_EN_Coupled" I L 1200 1700 50 
-F4 "Ignition_5V" O L 1200 1850 50 
+F2 "5V" U R 3000 1600 50 
+F3 "5V_EN_Coupled" I L 1400 1700 50 
+F4 "Ignition_5V" O L 1400 1850 50 
 $EndSheet
 $Comp
 L power:GND #PWR0158
@@ -676,6 +601,163 @@ Wire Wire Line
 	10800 6600 10800 7000
 Wire Wire Line
 	10650 7450 10650 7750
+Text Notes 7250 1500 0    50   ~ 0
+IO Voltage: 3V3
+Text Notes 7250 4050 0    50   ~ 0
+IO Voltage: 3V3
+Text Notes 4050 1550 0    50   ~ 0
+IO Voltage: 3V3\nRPi NOT 5V tolerant!\n
+Text Notes 7250 8100 0    50   ~ 0
+IO Voltage: 3V3
+Text Notes 7250 6600 0    50   ~ 0
+IO Voltage: 5V
+Text Notes 7450 7500 0    50   ~ 0
+Voltage Highlevel TH:\n0,7 x Vdd = 0,7 * 5V = 3,5V\n-> Levelshift notwendig!
+Text Notes 7600 1750 0    50   ~ 0
+I2C Slave
+Text Notes 7650 8300 0    50   ~ 0
+I2C Slave
+Wire Wire Line
+	5550 8200 7200 8200
+Wire Wire Line
+	5550 8300 7200 8300
+Wire Wire Line
+	5550 1650 7200 1650
+Wire Wire Line
+	5550 1750 7200 1750
+Text Notes 4600 1750 0    50   ~ 0
+I2C Master
+Text Notes 4600 8300 0    50   ~ 0
+I2C Master
+$Sheet
+S 3950 1350 1600 7600
+U 631EEDC8
+F0 "RPiCM4" 50
+F1 "RaspberryPiCM4.sch" 50
+F2 "GPIO9" O R 5550 5150 50 
+F3 "GPIO10" I R 5550 1950 50 
+F4 "RUN" I R 5550 6750 50 
+F5 "I2C0_SDA" B R 5550 8200 50 
+F6 "I2C1_SDA" B R 5550 1650 50 
+F7 "I2C1_SCL" O R 5550 1750 50 
+F8 "I2C0_SCL" O R 5550 8300 50 
+F9 "UART3_RX" I R 5550 4900 50 
+F10 "UART3_TX" O R 5550 4800 50 
+F11 "UART0_RX" I R 5550 7150 50 
+F12 "UART0_TX" O R 5550 7050 50 
+F13 "I2S_SD_IN" I R 5550 2500 50 
+F14 "I2S_SD_OUT" O R 5550 2400 50 
+F15 "I2S_SD_CLK" B R 5550 2600 50 
+F16 "I2S_SD_WS" B R 5550 2700 50 
+$EndSheet
+$Sheet
+S 7200 3900 1600 2250
+U 620639FD
+F0 "BluetoothModule" 50
+F1 "BluetoothModule.sch" 50
+F2 "BM83_MFB" I L 7200 5150 50 
+F3 "UART_RX" I L 7200 4800 50 
+F4 "UART_TX" O L 7200 4900 50 
+F5 "I2S_SD_IN" I L 7200 4200 50 
+F6 "I2S_SD_OUT" O L 7200 4300 50 
+F7 "I2S_SD_CLK" B L 7200 4400 50 
+F8 "I2S_SD_WS" B L 7200 4500 50 
+$EndSheet
+Wire Wire Line
+	7200 4900 5550 4900
+Wire Wire Line
+	7200 4800 5550 4800
+$Sheet
+S 5800 6450 1200 1200
+U 6131300C
+F0 "LevelShift" 50
+F1 "LevelShift.sch" 50
+F2 "RUN_3V3" O L 5800 6750 50 
+F3 "RUN_5V" I R 7000 6750 50 
+F4 "UART_TX_5V" I R 7000 7150 50 
+F5 "UART_TX_3V3" O L 5800 7150 50 
+F6 "UART_RX_5V" O R 7000 7050 50 
+F7 "UART_RX_3V3" I L 5800 7050 50 
+$EndSheet
+Wire Wire Line
+	5550 7050 5800 7050
+Wire Wire Line
+	5550 7150 5800 7150
+Wire Wire Line
+	7000 7050 7200 7050
+Wire Wire Line
+	7000 7150 7200 7150
+Wire Wire Line
+	7200 6750 7000 6750
+Wire Wire Line
+	5800 6750 5550 6750
+Text Notes 7800 2500 0    50   ~ 0
+I2S Slave
+Text Notes 4600 2550 0    50   ~ 0
+I2S Master
+Text Notes 7800 3200 0    50   ~ 0
+I2S Master
+Text Notes 7800 4400 0    50   ~ 0
+I2S Slave
+Wire Wire Line
+	7200 4500 7050 4500
+Wire Wire Line
+	7050 4500 7050 3300
+Wire Wire Line
+	7050 3300 7200 3300
+Wire Wire Line
+	7200 4400 6950 4400
+Wire Wire Line
+	6950 4400 6950 3200
+Wire Wire Line
+	6950 3200 7200 3200
+Wire Wire Line
+	7200 4300 6850 4300
+Wire Wire Line
+	6850 4300 6850 3100
+Wire Wire Line
+	6850 3100 7200 3100
+Wire Wire Line
+	7200 3000 6750 3000
+Wire Wire Line
+	6750 3000 6750 4200
+Wire Wire Line
+	6750 4200 7200 4200
+$Sheet
+S 7200 1350 1600 2250
+U 60D33366
+F0 "AudioMAX98089" 50
+F1 "AudioMixing.sch" 50
+F2 "Audio_Master_Out_R" O R 8800 1600 50 
+F3 "Audio_Master_Out_L" O R 8800 1700 50 
+F4 "Line_In_R" I R 8800 2250 50 
+F5 "Line_In_L" I R 8800 2350 50 
+F6 "Audio_Handset_Out_R" O R 8800 2650 50 
+F7 "Audio_Handset_Out_L" O R 8800 2750 50 
+F8 "MasterMicInN" I R 8800 1850 50 
+F9 "MasterMicInP" I R 8800 1950 50 
+F10 "HandsetMicInP" I R 8800 2950 50 
+F11 "HandsetMicInN" I R 8800 3050 50 
+F12 "IRQ" O L 7200 1950 50 
+F13 "I2C_SDA" B L 7200 1650 50 
+F14 "I2C_SCL" I L 7200 1750 50 
+F15 "I2S1_SD_IN" I L 7200 3100 50 
+F16 "I2S1_SD_OUT" O L 7200 3000 50 
+F17 "I2S1_SD_CLK" B L 7200 3200 50 
+F18 "I2S1_SD_WS" B L 7200 3300 50 
+F19 "I2S2_SD_IN" I L 7200 2400 50 
+F20 "I2S2_SD_OUT" O L 7200 2500 50 
+F21 "I2S2_SD_CLK" B L 7200 2600 50 
+F22 "I2S2_SD_WS" B L 7200 2700 50 
+$EndSheet
+Wire Wire Line
+	5550 2400 7200 2400
+Wire Wire Line
+	5550 2500 7200 2500
+Wire Wire Line
+	5550 2600 7200 2600
+Wire Wire Line
+	5550 2700 7200 2700
 Wire Bus Line
 	13250 5150 13250 5800
 Wire Bus Line

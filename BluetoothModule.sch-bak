@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -13,12 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 4050 1450 2    50   ~ 0
-BM83_I2S_SD_IN
-Text Label 4050 1550 2    50   ~ 0
-BM83_I2S_WS
-Text Label 4050 1650 2    50   ~ 0
-BM83_I2S_SD_CLK
 $Comp
 L TeKaDe:BM83SM1-00TA U1
 U 1 1 620D3641
@@ -152,14 +146,8 @@ Wire Wire Line
 	4100 900  4100 3650
 Text HLabel 1750 3950 0    50   Input ~ 0
 BM83_MFB
-Text HLabel 10050 1450 2    50   BiDi ~ 0
-UART
-Entry Wire Line
-	9900 1650 10000 1550
-Entry Wire Line
-	9900 1750 10000 1650
-Wire Bus Line
-	10000 1450 10050 1450
+Text HLabel 9900 1650 2    50   Input ~ 0
+UART_RX
 Wire Wire Line
 	6600 3950 6600 4800
 Wire Wire Line
@@ -1295,26 +1283,12 @@ Wire Wire Line
 Connection ~ 3700 3850
 Wire Wire Line
 	3700 3850 4400 3850
-Text Label 4050 1750 2    50   ~ 0
-BM83_I2S_SD_OUT
-Wire Bus Line
-	1850 1350 1750 1350
 Wire Wire Line
 	1950 1750 4400 1750
-Entry Wire Line
-	1850 1650 1950 1750
-Wire Wire Line
-	1950 1650 4400 1650
-Entry Wire Line
-	1850 1550 1950 1650
 Wire Wire Line
 	1950 1550 4400 1550
-Entry Wire Line
-	1850 1450 1950 1550
-Entry Wire Line
-	1850 1350 1950 1450
-Text HLabel 1750 1350 0    50   BiDi ~ 0
-I2S_Slave
+Text HLabel 1950 1450 0    50   Input ~ 0
+I2S_SD_IN
 Text Notes 2600 1350 0    50   ~ 0
 The point-to-point nature of I2S \ntransmission eliminates the need \nfor I2C’s pullup resistors
 Text Notes 3400 7600 0    50   ~ 0
@@ -1417,10 +1391,6 @@ Wire Wire Line
 	8200 4100 8200 4250
 Wire Wire Line
 	8200 1300 8200 1450
-Text Label 9250 1750 0    50   ~ 0
-RPi_UART0_RX
-Text Label 9250 1650 0    50   ~ 0
-RPi_UART0_TX
 $Comp
 L Device:R R3
 U 1 1 620D36AB
@@ -1567,8 +1537,14 @@ Wire Notes Line
 	11000 4750 8050 4750
 Wire Notes Line
 	8050 4750 8050 4200
-Wire Bus Line
-	10000 1450 10000 1650
-Wire Bus Line
-	1850 1350 1850 1650
+Text HLabel 9900 1750 2    50   Output ~ 0
+UART_TX
+Text HLabel 1950 1750 0    50   Output ~ 0
+I2S_SD_OUT
+Text HLabel 1950 1650 0    50   BiDi ~ 0
+I2S_SD_CLK
+Text HLabel 1950 1550 0    50   BiDi ~ 0
+I2S_SD_WS
+Wire Wire Line
+	1950 1650 4400 1650
 $EndSCHEMATC
