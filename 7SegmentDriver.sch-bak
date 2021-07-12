@@ -158,16 +158,16 @@ Wire Wire Line
 Wire Wire Line
 	3350 3800 3350 4500
 Wire Wire Line
-	1400 3800 3350 3800
+	1250 3800 3350 3800
 Wire Wire Line
 	3250 3900 3250 4400
 Wire Wire Line
-	1400 3900 3250 3900
-Text HLabel 1400 3800 0    50   Input ~ 0
+	1250 3900 3250 3900
+Text HLabel 1250 3800 0    50   Input ~ 0
 7Seg_Decoder_D3
-Text HLabel 1400 3900 0    50   Input ~ 0
+Text HLabel 1250 3900 0    50   Input ~ 0
 7Seg_Decoder_D4
-Text HLabel 1400 4400 0    50   Input ~ 0
+Text HLabel 1250 4400 0    50   Input ~ 0
 7Seg_Decoder_D2
 Text HLabel 1250 1900 0    50   Input ~ 0
 7Seg_Driver_D
@@ -208,14 +208,14 @@ Wire Wire Line
 Wire Wire Line
 	4200 1600 6850 1600
 Wire Wire Line
-	1400 4400 2200 4400
+	1250 4400 2200 4400
 Wire Wire Line
-	1400 4300 2200 4300
+	1250 4300 2200 4300
 Wire Wire Line
 	3000 4400 3250 4400
 Wire Wire Line
 	3000 4500 3350 4500
-Text HLabel 1400 4300 0    50   Input ~ 0
+Text HLabel 1250 4300 0    50   Input ~ 0
 7Seg_Decoder_D1
 Text Label 6850 3750 0    50   ~ 0
 CathodeDigit5

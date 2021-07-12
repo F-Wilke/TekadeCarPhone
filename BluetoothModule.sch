@@ -1481,8 +1481,8 @@ Wire Wire Line
 	2650 4400 2650 4750
 NoConn ~ 6400 3550
 NoConn ~ 6400 1850
-Text Notes 3800 9050 0    50   ~ 0
-Warum Temperatur messen?\nUnused Pin Connections nicht beschrieben\nMFB wird noch getestet\n\nHat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
+Text Notes -150 3150 0    50   ~ 0
+Hat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
 Wire Wire Line
 	3000 3750 3200 3750
 Connection ~ 3200 3750
