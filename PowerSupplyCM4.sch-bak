@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 4 9
+Sheet 9 9
 Title "TIDA-00746-SchDoc"
 Date "05 06 2020"
 Rev ""
@@ -992,8 +992,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 10350 5000 9900
 Wire Wire Line
-	5600 8950 5650 8950
-Wire Wire Line
 	5000 9150 5650 9150
 Connection ~ 5000 9150
 Wire Wire Line
@@ -1028,9 +1026,6 @@ Wire Wire Line
 	3350 9050 3600 9050
 Wire Wire Line
 	3600 8250 5600 8250
-Wire Wire Line
-	5600 8950 5600 8450
-Connection ~ 5600 8450
 Text Notes 1750 3950 1    50   ~ 0
 Steckverbinder KFZ Spannungseingang
 $Comp
@@ -6353,227 +6348,323 @@ Wire Wire Line
 Wire Wire Line
 	10900 2500 11300 2500
 $Comp
-L power:VPP #PWR0155
-U 1 1 60D96107
-P 18650 7400
-F 0 "#PWR0155" H 18650 7250 50  0001 C CNN
-F 1 "VPP" H 18665 7573 50  0000 C CNN
-F 2 "" H 18650 7400 50  0001 C CNN
-F 3 "" H 18650 7400 50  0001 C CNN
-	1    18650 7400
-	1    0    0    -1  
-$EndComp
-Text HLabel 17000 10050 0    50   Input ~ 0
-5V_EN_Coupled
-$Comp
-L power:GND #PWR0156
-U 1 1 60DC4DCB
-P 19950 9500
-F 0 "#PWR0156" H 19950 9250 50  0001 C CNN
-F 1 "GND" H 19955 9327 50  0000 C CNN
-F 2 "" H 19950 9500 50  0001 C CNN
-F 3 "" H 19950 9500 50  0001 C CNN
-	1    19950 9500
-	1    0    0    -1  
-$EndComp
-Text HLabel 20850 8750 2    50   Output ~ 0
-Ignition_5V
-Text Label 19500 10250 0    50   ~ 0
-5V_EN
-$Comp
 L power:-BATT #PWR0152
 U 1 1 60E53236
-P 17700 8550
-F 0 "#PWR0152" H 17700 8400 50  0001 C CNN
-F 1 "-BATT" H 17715 8723 50  0000 C CNN
-F 2 "" H 17700 8550 50  0001 C CNN
-F 3 "" H 17700 8550 50  0001 C CNN
-	1    17700 8550
+P 2650 13850
+F 0 "#PWR0152" H 2650 13700 50  0001 C CNN
+F 1 "-BATT" H 2665 14023 50  0000 C CNN
+F 2 "" H 2650 13850 50  0001 C CNN
+F 3 "" H 2650 13850 50  0001 C CNN
+	1    2650 13850
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	17700 8550 17700 8150
-Wire Wire Line
-	17700 8150 18050 8150
-Wire Wire Line
-	18050 7950 17700 7950
-$Comp
-L Isolator:NSL-32 U18
-U 1 1 60EE3D3B
-P 20250 8650
-F 0 "U18" H 20250 8967 50  0000 C CNN
-F 1 "NSL-32" H 20250 8876 50  0000 C CNN
-F 2 "OptoDevice:Luna_NSL-32" H 20250 8350 50  0001 C CNN
-F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 20300 8650 50  0001 C CNN
-	1    20250 8650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0157
-U 1 1 60F76FDA
-P 20550 7950
-F 0 "#PWR0157" H 20550 7800 50  0001 C CNN
-F 1 "+5V" H 20565 8123 50  0000 C CNN
-F 2 "" H 20550 7950 50  0001 C CNN
-F 3 "" H 20550 7950 50  0001 C CNN
-	1    20550 7950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	19800 8550 19950 8550
-Wire Wire Line
-	18650 8150 18800 8150
-$Comp
-L Isolator:NSL-32 U17
-U 1 1 60E503E3
-P 18350 8050
-F 0 "U17" H 18350 8367 50  0000 C CNN
-F 1 "NSL-32" H 18350 8276 50  0000 C CNN
-F 2 "OptoDevice:Luna_NSL-32" H 18350 7750 50  0001 C CNN
-F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 18400 8050 50  0001 C CNN
-	1    18350 8050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	18650 7950 18650 7400
-Wire Wire Line
-	19950 8750 19950 9500
-Wire Wire Line
-	20550 8550 20550 7950
-Wire Wire Line
-	20550 8750 20850 8750
-$Comp
-L Isolator:NSL-32 U16
-U 1 1 61106169
-P 18250 10150
-F 0 "U16" H 18250 10467 50  0000 C CNN
-F 1 "NSL-32" H 18250 10376 50  0000 C CNN
-F 2 "OptoDevice:Luna_NSL-32" H 18250 9850 50  0001 C CNN
-F 3 "http://lunainc.com/wp-content/uploads/2016/06/NSL-32.pdf" H 18300 10150 50  0001 C CNN
-	1    18250 10150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	17700 10050 17950 10050
-$Comp
-L power:GND #PWR0153
-U 1 1 6119BF29
-P 17950 11000
-F 0 "#PWR0153" H 17950 10750 50  0001 C CNN
-F 1 "GND" H 17955 10827 50  0000 C CNN
-F 2 "" H 17950 11000 50  0001 C CNN
-F 3 "" H 17950 11000 50  0001 C CNN
-	1    17950 11000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	17950 10250 17950 11000
-$Comp
-L power:VPP #PWR0154
-U 1 1 611CEBBE
-P 18550 9500
-F 0 "#PWR0154" H 18550 9350 50  0001 C CNN
-F 1 "VPP" H 18565 9673 50  0000 C CNN
-F 2 "" H 18550 9500 50  0001 C CNN
-F 3 "" H 18550 9500 50  0001 C CNN
-	1    18550 9500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	18550 10050 18550 9500
-Text Label 18800 8150 0    50   ~ 0
-Ignition_VPP
-Text Label 19250 8550 2    50   ~ 0
-Ignition_VPP
-$Comp
-L pspice:DIODE D7
-U 1 1 612EFD78
-P 19050 9900
-F 0 "D7" H 19050 10165 50  0000 C CNN
-F 1 "DIODE" H 19050 10074 50  0000 C CNN
-F 2 "" H 19050 9900 50  0001 C CNN
-F 3 "~" H 19050 9900 50  0001 C CNN
-	1    19050 9900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	19250 9900 19250 10250
-Wire Wire Line
-	19250 10250 19500 10250
-Wire Wire Line
-	18550 10250 19250 10250
-Connection ~ 19250 10250
-Text Label 18800 9450 0    50   ~ 0
-Ignition_VPP
-Wire Wire Line
-	18800 9450 18800 9900
-Wire Wire Line
-	18800 9900 18850 9900
+	3550 12800 3250 12800
 $Comp
 L Device:R R32
 U 1 1 613760CF
-P 17550 7950
-F 0 "R32" V 17343 7950 50  0000 C CNN
-F 1 "R" V 17434 7950 50  0000 C CNN
-F 2 "" V 17480 7950 50  0001 C CNN
-F 3 "~" H 17550 7950 50  0001 C CNN
-	1    17550 7950
+P 3100 12800
+F 0 "R32" V 2893 12800 50  0000 C CNN
+F 1 "2k2/1%/250mW" V 2984 12800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 12800 50  0001 C CNN
+F 3 "~" H 3100 12800 50  0001 C CNN
+	1    3100 12800
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R33
-U 1 1 613FB201
-P 17550 10050
-F 0 "R33" V 17343 10050 50  0000 C CNN
-F 1 "R" V 17434 10050 50  0000 C CNN
-F 2 "" V 17480 10050 50  0001 C CNN
-F 3 "~" H 17550 10050 50  0001 C CNN
-	1    17550 10050
-	0    1    1    0   
-$EndComp
+Wire Notes Line
+	1900 14200 12100 14200
+Wire Notes Line
+	12100 14200 12100 11200
+Wire Notes Line
+	12100 11200 1900 11200
+Wire Notes Line
+	1900 11200 1900 14200
 Wire Wire Line
-	17400 10050 17000 10050
-$Comp
-L Device:R R34
-U 1 1 6146556A
-P 19650 8550
-F 0 "R34" V 19443 8550 50  0000 C CNN
-F 1 "R" V 19534 8550 50  0000 C CNN
-F 2 "" V 19580 8550 50  0001 C CNN
-F 3 "~" H 19650 8550 50  0001 C CNN
-	1    19650 8550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	19250 8550 19500 8550
-Wire Notes Line
-	16050 11300 21350 11300
-Wire Notes Line
-	21350 11300 21350 7000
-Wire Notes Line
-	21350 7000 16050 7000
-Wire Notes Line
-	16050 7000 16050 11300
-Text Notes 16150 7200 0    50   ~ 0
-Ermöglicht verzögertes Abschalten durch ATMEGA
-Wire Wire Line
-	17400 7950 17050 7950
+	2950 12800 2650 12800
 $Comp
 L Connector_Generic:Conn_01x02 J12
 U 1 1 60F9E7C8
-P 16850 7950
-F 0 "J12" H 16850 8150 50  0000 C CNN
-F 1 "IGNITION" H 16850 8050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" V 17150 7900 50  0000 C CNN
-F 3 "~" H 16850 7950 50  0001 C CNN
-	1    16850 7950
+P 2250 12800
+F 0 "J12" H 2250 13000 50  0000 C CNN
+F 1 "IGNITION" H 2250 12900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" V 2700 12800 50  0000 C CNN
+F 3 "~" H 2250 12800 50  0001 C CNN
+	1    2250 12800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	17050 8050 17700 8050
-Wire Wire Line
-	17700 8050 17700 8150
-Connection ~ 17700 8150
+	2450 12900 2650 12900
 Wire Wire Line
 	11100 8900 11100 10350
+Wire Wire Line
+	4150 12800 4250 12800
+Wire Wire Line
+	4150 11750 4250 11750
+Wire Wire Line
+	3250 11750 3550 11750
+Text HLabel 6500 11950 2    50   Output ~ 0
+Ignition
+$Comp
+L power:+5V #PWR0157
+U 1 1 60F76FDA
+P 4250 11600
+F 0 "#PWR0157" H 4250 11450 50  0001 C CNN
+F 1 "+5V" H 4265 11773 50  0000 C CNN
+F 2 "" H 4250 11600 50  0001 C CNN
+F 3 "" H 4250 11600 50  0001 C CNN
+	1    4250 11600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VPP #PWR0155
+U 1 1 60D96107
+P 4250 12650
+F 0 "#PWR0155" H 4250 12500 50  0001 C CNN
+F 1 "VPP" H 4265 12823 50  0000 C CNN
+F 2 "" H 4250 12650 50  0001 C CNN
+F 3 "" H 4250 12650 50  0001 C CNN
+	1    4250 12650
+	1    0    0    -1  
+$EndComp
+Text Label 5550 8950 2    50   ~ 0
+PWR_ENABLE
+Wire Wire Line
+	5550 8950 5650 8950
+Wire Notes Line
+	2750 11250 4400 11250
+Wire Notes Line
+	4400 11250 4400 12050
+Text Notes 2800 11400 0    50   ~ 0
+Signalisierung an ATMega
+Wire Notes Line
+	5150 12600 6350 12600
+$Comp
+L Isolator:PC817 U?
+U 1 1 6118390D
+P 3850 12900
+F 0 "U?" H 3850 13225 50  0000 C CNN
+F 1 "VOMA617A" H 3850 13134 50  0000 C CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 3650 12700 50  0001 L CIN
+F 3 "" H 3850 12900 50  0001 L CNN
+	1    3850 12900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:PC817 U?
+U 1 1 61185582
+P 3850 11850
+F 0 "U?" H 3850 12175 50  0000 C CNN
+F 1 "VOMA617A" H 3850 12084 50  0000 C CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 3650 11650 50  0001 L CIN
+F 3 "" H 3850 11850 50  0001 L CNN
+	1    3850 11850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611868FC
+P 3100 11750
+F 0 "R?" V 2893 11750 50  0000 C CNN
+F 1 "2k2/1%/250mW" V 2984 11750 50  0000 C CNN
+F 2 "" V 3030 11750 50  0001 C CNN
+F 3 "~" H 3100 11750 50  0001 C CNN
+	1    3100 11750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 11750 2950 11750
+$Comp
+L power:-BATT #PWR?
+U 1 1 611D798D
+P 3450 13850
+F 0 "#PWR?" H 3450 13700 50  0001 C CNN
+F 1 "-BATT" H 3465 14023 50  0000 C CNN
+F 2 "" H 3450 13850 50  0001 C CNN
+F 3 "" H 3450 13850 50  0001 C CNN
+	1    3450 13850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 13000 3450 13000
+Wire Wire Line
+	3450 13000 3450 13850
+Wire Wire Line
+	3550 11950 3450 11950
+Wire Wire Line
+	3450 11950 3450 13000
+Wire Wire Line
+	2650 11750 2650 12800
+Connection ~ 2650 12800
+Wire Wire Line
+	2650 12800 2450 12800
+Wire Wire Line
+	2650 12900 2650 13850
+Text Notes 4950 13300 0    50   ~ 0
+5V
+Text Notes 4950 12950 0    50   ~ 0
+12V
+Wire Notes Line
+	5150 14100 5150 12600
+Wire Notes Line
+	6350 14100 5150 14100
+Wire Notes Line
+	6350 12600 6350 14100
+$Comp
+L Device:D D?
+U 1 1 60F51161
+P 5550 13350
+F 0 "D?" H 5550 13134 50  0000 C CNN
+F 1 "1N4148WQ-7-F" H 5550 13225 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 5550 13350 50  0001 C CNN
+F 3 "~" H 5550 13350 50  0001 C CNN
+	1    5550 13350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 13350 6500 13350
+Wire Wire Line
+	5700 13000 6050 13000
+$Comp
+L Device:D D?
+U 1 1 60EE583B
+P 5550 13000
+F 0 "D?" H 5550 12784 50  0000 C CNN
+F 1 "1N4148WQ-7-F" H 5550 12875 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 5550 13000 50  0001 C CNN
+F 3 "~" H 5550 13000 50  0001 C CNN
+	1    5550 13000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 13350 6050 13450
+Wire Wire Line
+	2400 13350 5400 13350
+Wire Wire Line
+	6050 13750 6050 13850
+$Comp
+L power:GND #PWR?
+U 1 1 60FB7C2A
+P 6050 13850
+F 0 "#PWR?" H 6050 13600 50  0001 C CNN
+F 1 "GND" H 6055 13677 50  0000 C CNN
+F 2 "" H 6050 13850 50  0001 C CNN
+F 3 "" H 6050 13850 50  0001 C CNN
+	1    6050 13850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FB6A44
+P 6050 13600
+F 0 "R?" V 5843 13600 50  0000 C CNN
+F 1 "10k/1%" V 5934 13600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5980 13600 50  0001 C CNN
+F 3 "~" H 6050 13600 50  0001 C CNN
+	1    6050 13600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 13350 6050 13350
+Text Notes 7300 13700 0    50   ~ 0
+Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: VIN)\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
+Connection ~ 6050 13350
+Text Label 6500 13350 0    50   ~ 0
+PWR_ENABLE
+Wire Wire Line
+	6050 13000 6050 13350
+Text HLabel 2400 13350 0    50   Input ~ 0
+PWRHold
+Wire Wire Line
+	4150 13000 4550 13000
+$Comp
+L Device:R R?
+U 1 1 6126E17B
+P 4550 13600
+F 0 "R?" V 4343 13600 50  0000 C CNN
+F 1 "10k/1%" V 4434 13600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 13600 50  0001 C CNN
+F 3 "~" H 4550 13600 50  0001 C CNN
+	1    4550 13600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4550 13000 4550 13450
+$Comp
+L power:GND #PWR?
+U 1 1 6127A507
+P 4550 13850
+F 0 "#PWR?" H 4550 13600 50  0001 C CNN
+F 1 "GND" H 4555 13677 50  0000 C CNN
+F 2 "" H 4550 13850 50  0001 C CNN
+F 3 "" H 4550 13850 50  0001 C CNN
+	1    4550 13850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 13850 4550 13750
+$Comp
+L Device:R R?
+U 1 1 6129E1FA
+P 4750 13600
+F 0 "R?" V 4543 13600 50  0000 C CNN
+F 1 "10k/1%" V 4634 13600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 13600 50  0001 C CNN
+F 3 "~" H 4750 13600 50  0001 C CNN
+	1    4750 13600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6129E205
+P 4750 13850
+F 0 "#PWR?" H 4750 13600 50  0001 C CNN
+F 1 "GND" H 4755 13677 50  0000 C CNN
+F 2 "" H 4750 13850 50  0001 C CNN
+F 3 "" H 4750 13850 50  0001 C CNN
+	1    4750 13850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 13850 4750 13750
+Wire Wire Line
+	4750 11950 6500 11950
+Wire Wire Line
+	4150 11950 4750 11950
+Wire Wire Line
+	4750 11950 4750 13450
+Connection ~ 4750 11950
+Wire Wire Line
+	4550 13000 5400 13000
+Connection ~ 4550 13000
+Connection ~ 3450 13000
+Wire Wire Line
+	4250 12800 4250 12650
+Wire Wire Line
+	4250 11750 4250 11600
+Wire Notes Line
+	4400 13100 2750 13100
+Wire Notes Line
+	2750 12300 2750 13100
+Wire Notes Line
+	2750 12300 4400 12300
+Wire Notes Line
+	4400 12300 4400 13100
+Text Notes 2800 12450 0    50   ~ 0
+Aktivierung Buckconverter
+Text Notes 5200 12700 0    50   ~ 0
+OR Gate
+Wire Notes Line
+	2750 11250 2750 12050
+Wire Notes Line
+	4400 12050 2750 12050
+Wire Notes Line
+	2750 13200 2750 13400
+Wire Notes Line
+	4400 13400 2750 13400
+Wire Notes Line
+	2750 13200 4400 13200
+Wire Notes Line
+	4400 13200 4400 13400
+Text Notes 2800 13350 0    50   ~ 0
+Selbsthaltung Buckconverter
 $EndSCHEMATC

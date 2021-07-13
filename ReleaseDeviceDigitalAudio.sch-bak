@@ -189,7 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 2650 12000 2650
 Text Notes 900  6050 0    50   ~ 0
-Levelshift prüfen (Zuordnung RX/TX)\nSignalzuordungen I2C / I2S / UART checken\nChecken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\nSteckverbinder KFZ\nLDO für MAX98089?\n
+Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ\n\nPower Sequencing\n- warum doppelter Optokoppler for Ignition?\n- 5V Enable an Buckconverter anschließen\n- Soll das eine ODER Schaltung sein? (unterer Optokoppler)\n  Und 5V kommen da nicht raus, sondern VPP - Vf\n- SMD optokoppler!\n\nBM83:\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n\nMAX98089:\n- LDO für MAX98089?\n\nRTC:\n- Battery Holder so ok?\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n- Footprint checken durch Fredrik\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n- Schaltfrequenz onboard Regler\n\nATmega:\n- interner DCO für UART ok?\n- Programmierverbindung checken\n- 10k R an PWM output?\n- Resetbeschaltung?\n
 $Comp
 L power:GND #PWR02
 U 1 1 622523CD
@@ -219,15 +219,6 @@ F0 "RTC" 50
 F1 "RTC.sch" 50
 F2 "I2C_SDA" B L 7200 6050 50 
 F3 "I2C_SCL" I L 7200 6150 50 
-$EndSheet
-$Sheet
-S 1400 1350 1600 900 
-U 64BEC8E8
-F0 "PowerSupply" 50
-F1 "PowerSupplyCM4.sch" 50
-F2 "5V" U R 3000 1600 50 
-F3 "5V_EN_Coupled" I L 1400 1700 50 
-F4 "Ignition_5V" O L 1400 1850 50 
 $EndSheet
 Text Notes 7250 1500 0    50   ~ 0
 IO Voltage: 3V3
@@ -420,5 +411,14 @@ F13 "I2S_SD_IN" I R 5550 2500 50
 F14 "I2S_SD_OUT" O R 5550 2400 50 
 F15 "I2S_SD_CLK" B R 5550 2600 50 
 F16 "I2S_SD_WS" B R 5550 2700 50 
+$EndSheet
+$Sheet
+S 1400 1350 1600 900 
+U 64BEC8E8
+F0 "PowerSupply" 50
+F1 "PowerSupplyCM4.sch" 50
+F2 "5V" U R 3000 1600 50 
+F3 "PWRHold" I L 1400 1700 50 
+F4 "Ignition" O L 1400 1850 50 
 $EndSheet
 $EndSCHEMATC
