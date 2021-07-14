@@ -6365,7 +6365,7 @@ L Device:R R32
 U 1 1 613760CF
 P 3100 12800
 F 0 "R32" V 2893 12800 50  0000 C CNN
-F 1 "2k2/1%/250mW" V 2984 12800 50  0000 C CNN
+F 1 "2k2/5%/250mW" V 2984 12800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3030 12800 50  0001 C CNN
 F 3 "~" H 3100 12800 50  0001 C CNN
 	1    3100 12800
@@ -6465,7 +6465,7 @@ L Device:R R?
 U 1 1 611868FC
 P 3100 11750
 F 0 "R?" V 2893 11750 50  0000 C CNN
-F 1 "2k2/1%/250mW" V 2984 11750 50  0000 C CNN
+F 1 "2k2/5%/250mW" V 2984 11750 50  0000 C CNN
 F 2 "" V 3030 11750 50  0001 C CNN
 F 3 "~" H 3100 11750 50  0001 C CNN
 	1    3100 11750
@@ -6538,7 +6538,7 @@ $EndComp
 Wire Wire Line
 	6050 13350 6050 13450
 Wire Wire Line
-	2400 13350 5400 13350
+	2400 13350 4250 13350
 Wire Wire Line
 	6050 13750 6050 13850
 $Comp
@@ -6566,7 +6566,7 @@ $EndComp
 Wire Wire Line
 	5700 13350 6050 13350
 Text Notes 7300 13700 0    50   ~ 0
-Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: VIN)\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
+Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
 Connection ~ 6050 13350
 Text Label 6500 13350 0    50   ~ 0
 PWR_ENABLE
@@ -6574,8 +6574,6 @@ Wire Wire Line
 	6050 13000 6050 13350
 Text HLabel 2400 13350 0    50   Input ~ 0
 PWRHold
-Wire Wire Line
-	4150 13000 4550 13000
 $Comp
 L Device:R R?
 U 1 1 6126E17B
@@ -6667,4 +6665,39 @@ Wire Notes Line
 	4400 13200 4400 13400
 Text Notes 2800 13350 0    50   ~ 0
 Selbsthaltung Buckconverter
+Text Notes 3000 14450 0    50   ~ 0
+Bleibt ATmega GPIO auf GND wenn er sich Vcc selbst abdreht?\nFalls nicht, Pulldown ausreichend?
+$Comp
+L Device:R R?
+U 1 1 616BB340
+P 4250 14900
+F 0 "R?" V 4043 14900 50  0000 C CNN
+F 1 "10k/1%" V 4134 14900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 14900 50  0001 C CNN
+F 3 "~" H 4250 14900 50  0001 C CNN
+	1    4250 14900
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616BB34B
+P 4250 15200
+F 0 "#PWR?" H 4250 14950 50  0001 C CNN
+F 1 "GND" H 4255 15027 50  0000 C CNN
+F 2 "" H 4250 15200 50  0001 C CNN
+F 3 "" H 4250 15200 50  0001 C CNN
+	1    4250 15200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 15200 4250 15050
+Wire Wire Line
+	4150 13000 4550 13000
+Wire Wire Line
+	4250 13350 4250 14750
+Connection ~ 4250 13350
+Wire Wire Line
+	4250 13350 5400 13350
+Text Notes 5250 13950 0    50   ~ 0
+Funktioniert \nnicht mit TTL
 $EndSCHEMATC
