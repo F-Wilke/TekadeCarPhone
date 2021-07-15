@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:AudioJack3 J7
+L Connector:AudioJack3 J4
 U 1 1 66962862
 P 12200 1850
-F 0 "J7" H 12182 2175 50  0000 C CNN
+F 0 "J4" H 12182 2175 50  0000 C CNN
 F 1 "AudioJack3" H 12182 2084 50  0000 C CNN
 F 2 "TeKaDe:LumbergKLB4" H 12200 1850 50  0001 C CNN
 F 3 "~" H 12200 1850 50  0001 C CNN
@@ -38,10 +38,10 @@ $EndComp
 Wire Wire Line
 	3150 1600 3000 1600
 $Comp
-L Connector:AudioJack3 J3
+L Connector:AudioJack3 J1
 U 1 1 60575B8C
 P 11400 1600
-F 0 "J3" H 11382 1925 50  0000 C CNN
+F 0 "J1" H 11382 1925 50  0000 C CNN
 F 1 "AudioJack3" H 11382 1834 50  0000 C CNN
 F 2 "TeKaDe:LumbergKLB4" H 11400 1600 50  0001 C CNN
 F 3 "~" H 11400 1600 50  0001 C CNN
@@ -49,10 +49,10 @@ F 3 "~" H 11400 1600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J4
+L Connector:AudioJack3 J2
 U 1 1 6066C958
 P 11400 2250
-F 0 "J4" H 11382 2575 50  0000 C CNN
+F 0 "J2" H 11382 2575 50  0000 C CNN
 F 1 "AudioJack3" H 11382 2484 50  0000 C CNN
 F 2 "TeKaDe:LumbergKLB4" H 11400 2250 50  0001 C CNN
 F 3 "~" H 11400 2250 50  0001 C CNN
@@ -60,10 +60,10 @@ F 3 "~" H 11400 2250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J5
+L Connector:AudioJack3 J3
 U 1 1 6105818C
 P 11400 2950
-F 0 "J5" H 11382 3275 50  0000 C CNN
+F 0 "J3" H 11382 3275 50  0000 C CNN
 F 1 "AudioJack3" H 11382 3184 50  0000 C CNN
 F 2 "TeKaDe:LumbergKLB4" H 11400 2950 50  0001 C CNN
 F 3 "~" H 11400 2950 50  0001 C CNN
@@ -71,10 +71,10 @@ F 3 "~" H 11400 2950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:AudioJack3 J8
+L Connector:AudioJack3 J5
 U 1 1 6123782D
 P 12200 2650
-F 0 "J8" H 12182 2975 50  0000 C CNN
+F 0 "J5" H 12182 2975 50  0000 C CNN
 F 1 "AudioJack3" H 12182 2884 50  0000 C CNN
 F 2 "TeKaDe:LumbergKLB4" H 12200 2650 50  0001 C CNN
 F 3 "~" H 12200 2650 50  0001 C CNN
@@ -132,26 +132,6 @@ Wire Wire Line
 Connection ~ 11850 2550
 Wire Wire Line
 	11850 2550 11850 3450
-$Sheet
-S 7200 7150 1600 2550
-U 60F18E7A
-F0 "ControllerUIBoard" 50
-F1 "ControllerUIBoard.sch" 50
-F2 "RPI_RUN_3.3V" O L 7200 7450 50 
-F3 "IGNITION_SENSE" I R 8800 9150 50 
-F4 "5V_EN_OUT" O R 8800 9300 50 
-F5 "UART_RX" I L 7200 7750 50 
-F6 "UART_TX" O L 7200 7850 50 
-F7 "7Seg_Driver_D" O R 8800 8600 50 
-F8 "7Seg_Driver_C" O R 8800 8500 50 
-F9 "7Seg_Driver_B" O R 8800 8400 50 
-F10 "7Seg_Driver_A" O R 8800 8300 50 
-F11 "7Seg_Decoder_D3" O R 8800 7900 50 
-F12 "7Seg_Decoder_D4" O R 8800 8000 50 
-F13 "7Seg_Decoder_D2" O R 8800 7800 50 
-F14 "7Seg_Decoder_D1" O R 8800 7700 50 
-F15 "BrightnessPWM" O R 8800 7450 50 
-$EndSheet
 Text Label 9100 9150 0    50   ~ 0
 IGNITION_5V
 Wire Wire Line
@@ -189,7 +169,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 2650 12000 2650
 Text Notes 900  6050 0    50   ~ 0
-Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout\n\nBM83:\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n\nMAX98089:\n- LDO für MAX98089?\n\nRTC:\n- Battery Holder so ok?\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n- Footprint checken durch Fredrik\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n- Schaltfrequenz onboard Regler\n\nATmega:\n- interner DCO für UART ok?\n- Programmierverbindung checken\n- 10k R an PWM output?\n- Resetbeschaltung?\n
+Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n- Test (Simulation wäre zu aufwendig)\n\nBM83:\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n\nMAX98089:\n- LDO für MAX98089?\n\nRTC:\n- Battery Holder so ok (CR1220)?\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n- Footprint checken durch Fredrik\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n- Schaltfrequenz onboard Regler\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n
 $Comp
 L power:GND #PWR02
 U 1 1 622523CD
@@ -420,5 +400,25 @@ F1 "PowerSupplyCM4.sch" 50
 F2 "5V" U R 3000 1600 50 
 F3 "PWRHold" I L 1400 1700 50 
 F4 "Ignition" O L 1400 1850 50 
+$EndSheet
+$Sheet
+S 7200 7150 1600 2550
+U 60F18E7A
+F0 "ControllerUIBoard" 50
+F1 "ControllerUIBoard.sch" 50
+F2 "IGNITION_SENSE" I R 8800 9150 50 
+F3 "5V_EN_OUT" O R 8800 9300 50 
+F4 "7Seg_Driver_D" O R 8800 8600 50 
+F5 "7Seg_Driver_C" O R 8800 8500 50 
+F6 "7Seg_Driver_B" O R 8800 8400 50 
+F7 "7Seg_Driver_A" O R 8800 8300 50 
+F8 "7Seg_Decoder_D3" O R 8800 7900 50 
+F9 "7Seg_Decoder_D4" O R 8800 8000 50 
+F10 "7Seg_Decoder_D2" O R 8800 7800 50 
+F11 "7Seg_Decoder_D1" O R 8800 7700 50 
+F12 "BrightnessPWM" O R 8800 7450 50 
+F13 "RPI_RUN" O L 7200 7450 50 
+F14 "UART1_RX" I L 7200 7750 50 
+F15 "UART1_TX" O L 7200 7850 50 
 $EndSheet
 $EndSCHEMATC
