@@ -14,15 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J?
+L Connector_Generic:Conn_02x08_Odd_Even J17
 U 1 1 5F670C41
 P 13000 4400
-AR Path="/5F670C41" Ref="J?"  Part="1" 
+AR Path="/5F670C41" Ref="J17"  Part="1" 
 AR Path="/602283F4/5F670C41" Ref="J?"  Part="1" 
 AR Path="/6101166B/5F670C41" Ref="J17"  Part="1" 
 F 0 "J17" H 13050 4917 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 13050 4826 50  0000 C CNN
-F 2 "" H 13000 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 13000 4400 50  0001 C CNN
 F 3 "~" H 13000 4400 50  0001 C CNN
 	1    13000 4400
 	1    0    0    -1  
@@ -47,9 +47,9 @@ $Comp
 L 74xx:MM74C923 U10
 U 1 1 60D1026E
 P 11700 7000
-F 0 "U10" H 11700 7981 50  0000 C CNN
-F 1 "MM74C923" H 11700 7890 50  0000 C CNN
-F 2 "" H 11700 7000 50  0001 C CNN
+F 0 "U10" H 11850 7800 50  0000 C CNN
+F 1 "MM74C923" H 12000 7700 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 11700 7000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/snMM74C923" H 11700 7000 50  0001 C CNN
 	1    11700 7000
 	1    0    0    -1  
@@ -571,11 +571,9 @@ Wire Wire Line
 Wire Wire Line
 	5400 4400 5400 4500
 Text Label 5250 5150 2    50   ~ 0
-LedRedCathode
+LED_RD
 Text Label 5250 5050 2    50   ~ 0
-LedYellowCathode
-Text Label 5250 4950 2    50   ~ 0
-LedGreenCathode
+LED_YL
 Wire Wire Line
 	5250 4950 5400 4950
 Wire Wire Line
@@ -609,45 +607,39 @@ Wire Wire Line
 $Comp
 L Device:LED D4
 U 1 1 5FB3CE46
-P 8400 4700
-F 0 "D4" V 8347 4780 50  0000 L CNN
-F 1 "OnSwitchLED" V 8438 4780 50  0000 L CNN
-F 2 "" H 8400 4700 50  0001 C CNN
-F 3 "~" H 8400 4700 50  0001 C CNN
-	1    8400 4700
+P 7050 4650
+F 0 "D4" V 6997 4730 50  0000 L CNN
+F 1 "LED_ON" V 7088 4730 50  0000 L CNN
+F 2 "" H 7050 4650 50  0001 C CNN
+F 3 "~" H 7050 4650 50  0001 C CNN
+	1    7050 4650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8400 4450 8400 4550
+	7050 5250 7050 4800
+Text Label 5250 5250 2    50   ~ 0
+LED_ON
 Wire Wire Line
-	8400 5000 8400 4850
-Text Label 8300 4450 2    50   ~ 0
-OnSwitchLedAnode
-Text Label 8300 5000 2    50   ~ 0
-OnSwitchLedCathode
-Wire Wire Line
-	8300 5000 8400 5000
-Wire Wire Line
-	8400 4450 8300 4450
+	5250 5250 7050 5250
 $Comp
 L Device:R_PHOTO R61
 U 1 1 5FC1430B
-P 7100 4700
-F 0 "R61" H 7170 4746 50  0000 L CNN
-F 1 "LDR" H 7170 4655 50  0000 L CNN
-F 2 "" V 7150 4450 50  0001 L CNN
-F 3 "~" H 7100 4650 50  0001 C CNN
-	1    7100 4700
+P 7700 4700
+F 0 "R61" H 7770 4746 50  0000 L CNN
+F 1 "LDR" H 7770 4655 50  0000 L CNN
+F 2 "" V 7750 4450 50  0001 L CNN
+F 3 "~" H 7700 4650 50  0001 C CNN
+	1    7700 4700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7100 4550 7100 4400
+	7700 4550 7700 4400
 Wire Wire Line
-	7100 4850 7100 5250
-Text Label 5250 5250 2    50   ~ 0
-UiLdr
+	7700 4850 7700 5350
+Text Label 5250 5350 2    50   ~ 0
+LDR
 Wire Wire Line
-	7100 5250 5250 5250
+	7700 5350 5250 5350
 Wire Wire Line
 	6550 5150 5250 5150
 Wire Wire Line
@@ -657,14 +649,14 @@ Wire Wire Line
 Wire Wire Line
 	3950 7600 3950 7850
 $Comp
-L Connector_Generic:Conn_02x15_Odd_Even J?
+L Connector_Generic:Conn_02x15_Odd_Even J10
 U 1 1 60B2D605
 P 2450 4550
-AR Path="/60B2D605" Ref="J?"  Part="1" 
+AR Path="/60B2D605" Ref="J10"  Part="1" 
 AR Path="/6101166B/60B2D605" Ref="J10"  Part="1" 
 F 0 "J10" H 2500 5467 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 2500 5376 50  0000 C CNN
-F 2 "" H 2450 4550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 2450 4550 50  0001 C CNN
 F 3 "~" H 2450 4550 50  0001 C CNN
 	1    2450 4550
 	1    0    0    -1  
@@ -779,8 +771,6 @@ Wire Wire Line
 Wire Wire Line
 	12550 4500 12800 4500
 Wire Wire Line
-	12550 4700 12800 4700
-Wire Wire Line
 	12800 4800 12550 4800
 Wire Wire Line
 	13300 4800 13500 4800
@@ -796,949 +786,26 @@ Wire Wire Line
 	13500 4200 13300 4200
 Wire Wire Line
 	13300 4100 13500 4100
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 61846D93
-P 3300 800
-F 0 "U?" H 3250 700 50  0000 L CNN
-F 1 "HD1077R" H 3100 800 50  0000 L CNN
-F 2 "" H 3300 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 3300 900 50  0001 C CNN
-	1    3300 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618635E6
-P 4050 800
-F 0 "U?" H 4000 700 50  0000 L CNN
-F 1 "HD1077R" H 3850 800 50  0000 L CNN
-F 2 "" H 4050 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 4050 900 50  0001 C CNN
-	1    4050 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 6187EE3E
-P 4750 800
-F 0 "U?" H 4700 700 50  0000 L CNN
-F 1 "HD1077R" H 4550 800 50  0000 L CNN
-F 2 "" H 4750 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 4750 900 50  0001 C CNN
-	1    4750 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 6187EE44
-P 5500 800
-F 0 "U?" H 5450 700 50  0000 L CNN
-F 1 "HD1077R" H 5300 800 50  0000 L CNN
-F 2 "" H 5500 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 5500 900 50  0001 C CNN
-	1    5500 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 6189C8E7
-P 6950 800
-F 0 "U?" H 6900 700 50  0000 L CNN
-F 1 "HD1077R" H 6750 800 50  0000 L CNN
-F 2 "" H 6950 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 6950 900 50  0001 C CNN
-	1    6950 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 6189C8ED
-P 7650 800
-F 0 "U?" H 7600 700 50  0000 L CNN
-F 1 "HD1077R" H 7450 800 50  0000 L CNN
-F 2 "" H 7650 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 7650 900 50  0001 C CNN
-	1    7650 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 6189C8F3
-P 8400 800
-F 0 "U?" H 8350 700 50  0000 L CNN
-F 1 "HD1077R" H 8200 800 50  0000 L CNN
-F 2 "" H 8400 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 8400 900 50  0001 C CNN
-	1    8400 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618B84C4
-P 9050 800
-F 0 "U?" H 9000 700 50  0000 L CNN
-F 1 "HD1077R" H 8850 800 50  0000 L CNN
-F 2 "" H 9050 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 9050 900 50  0001 C CNN
-	1    9050 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618B84CA
-P 9800 800
-F 0 "U?" H 9750 700 50  0000 L CNN
-F 1 "HD1077R" H 9600 800 50  0000 L CNN
-F 2 "" H 9800 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 9800 900 50  0001 C CNN
-	1    9800 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618B84D0
-P 10500 800
-F 0 "U?" H 10450 700 50  0000 L CNN
-F 1 "HD1077R" H 10300 800 50  0000 L CNN
-F 2 "" H 10500 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 10500 900 50  0001 C CNN
-	1    10500 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618B84D6
-P 11250 800
-F 0 "U?" H 11200 700 50  0000 L CNN
-F 1 "HD1077R" H 11050 800 50  0000 L CNN
-F 2 "" H 11250 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 11250 900 50  0001 C CNN
-	1    11250 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618D410F
-P 12000 800
-F 0 "U?" H 11950 700 50  0000 L CNN
-F 1 "HD1077R" H 11800 800 50  0000 L CNN
-F 2 "" H 12000 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 12000 900 50  0001 C CNN
-	1    12000 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618D4115
-P 12750 800
-F 0 "U?" H 12700 700 50  0000 L CNN
-F 1 "HD1077R" H 12550 800 50  0000 L CNN
-F 2 "" H 12750 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 12750 900 50  0001 C CNN
-	1    12750 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618D411B
-P 13450 800
-F 0 "U?" H 13400 700 50  0000 L CNN
-F 1 "HD1077R" H 13250 800 50  0000 L CNN
-F 2 "" H 13450 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 13450 900 50  0001 C CNN
-	1    13450 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 618D4121
-P 14200 800
-F 0 "U?" H 14150 700 50  0000 L CNN
-F 1 "HD1077R" H 14000 800 50  0000 L CNN
-F 2 "" H 14200 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 14200 900 50  0001 C CNN
-	1    14200 800 
-	1    0    0    -1  
-$EndComp
 Text Label 14700 900  0    50   ~ 0
 AnodeSegmentB
-Wire Wire Line
-	14300 1000 14300 900 
-Wire Wire Line
-	13550 1000 13550 900 
-Wire Wire Line
-	13550 900  14300 900 
-Connection ~ 14300 900 
-Wire Wire Line
-	13550 900  12850 900 
-Wire Wire Line
-	12850 900  12850 1000
-Connection ~ 13550 900 
-Wire Wire Line
-	12850 900  12100 900 
-Wire Wire Line
-	12100 900  12100 1000
-Connection ~ 12850 900 
-Wire Wire Line
-	12100 900  11350 900 
-Wire Wire Line
-	11350 900  11350 1000
-Connection ~ 12100 900 
-Wire Wire Line
-	11350 900  10600 900 
-Wire Wire Line
-	10600 900  10600 1000
-Connection ~ 11350 900 
-Wire Wire Line
-	10600 900  9900 900 
-Wire Wire Line
-	9900 900  9900 1000
-Connection ~ 10600 900 
-Wire Wire Line
-	9900 900  9150 900 
-Wire Wire Line
-	9150 900  9150 1000
-Connection ~ 9900 900 
-Wire Wire Line
-	8500 1000 8500 900 
-Connection ~ 9150 900 
-Wire Wire Line
-	7750 900  7750 1000
-Wire Wire Line
-	7750 900  8500 900 
-Connection ~ 8500 900 
-Wire Wire Line
-	8500 900  9150 900 
-Wire Wire Line
-	7750 900  7050 900 
-Wire Wire Line
-	7050 900  7050 1000
-Connection ~ 7750 900 
-Wire Wire Line
-	7050 900  6300 900 
-Wire Wire Line
-	6300 900  6300 1000
-Connection ~ 7050 900 
-Wire Wire Line
-	6300 900  5600 900 
-Wire Wire Line
-	5600 900  5600 1000
-Connection ~ 6300 900 
-Wire Wire Line
-	5600 900  4850 900 
-Wire Wire Line
-	4850 900  4850 1000
-Connection ~ 5600 900 
-Wire Wire Line
-	4850 900  4150 900 
-Wire Wire Line
-	4150 900  4150 1000
-Connection ~ 4850 900 
-Wire Wire Line
-	4150 900  3400 900 
-Wire Wire Line
-	3400 900  3400 1000
-Connection ~ 4150 900 
-Wire Wire Line
-	3200 1000 3200 850 
-Wire Wire Line
-	3200 850  3950 850 
-Wire Wire Line
-	3950 850  3950 1000
-Wire Wire Line
-	3950 850  4650 850 
-Wire Wire Line
-	4650 850  4650 1000
-Connection ~ 3950 850 
-Wire Wire Line
-	4650 850  5400 850 
-Wire Wire Line
-	5400 850  5400 1000
-Connection ~ 4650 850 
-Wire Wire Line
-	5400 850  6100 850 
-Wire Wire Line
-	6100 850  6100 1000
-Connection ~ 5400 850 
-Wire Wire Line
-	6100 850  6850 850 
-Wire Wire Line
-	6850 850  6850 1000
-Connection ~ 6100 850 
-Wire Wire Line
-	6850 850  7550 850 
-Wire Wire Line
-	7550 850  7550 1000
-Connection ~ 6850 850 
-Wire Wire Line
-	7550 850  8300 850 
-Wire Wire Line
-	8300 850  8300 1000
-Connection ~ 7550 850 
-Wire Wire Line
-	8300 850  8950 850 
-Wire Wire Line
-	8950 850  8950 1000
-Connection ~ 8300 850 
-Wire Wire Line
-	8950 850  9700 850 
-Wire Wire Line
-	9700 850  9700 1000
-Connection ~ 8950 850 
-Wire Wire Line
-	9700 850  10400 850 
-Wire Wire Line
-	10400 850  10400 1000
-Connection ~ 9700 850 
-Wire Wire Line
-	10400 850  11150 850 
-Wire Wire Line
-	11150 850  11150 1000
-Connection ~ 10400 850 
-Wire Wire Line
-	11150 850  11900 850 
-Wire Wire Line
-	11900 850  11900 1000
-Connection ~ 11150 850 
-Wire Wire Line
-	11900 850  12650 850 
-Wire Wire Line
-	12650 850  12650 1000
-Connection ~ 11900 850 
-Wire Wire Line
-	12650 850  13350 850 
-Wire Wire Line
-	13350 850  13350 1000
-Connection ~ 12650 850 
-Wire Wire Line
-	13350 850  14100 850 
-Wire Wire Line
-	14100 850  14100 1000
-Connection ~ 13350 850 
 Text Label 14700 800  0    50   ~ 0
 AnodeSegmentF
-Wire Wire Line
-	14100 800  14100 850 
-Connection ~ 14100 850 
 Text Label 14700 700  0    50   ~ 0
 AnodeSegmentC
 Text Label 14700 600  0    50   ~ 0
 AnodeSegmentA
-Wire Wire Line
-	14450 1300 14450 600 
-Wire Wire Line
-	14450 1400 14550 1400
-Wire Wire Line
-	14450 600  14700 600 
-Wire Wire Line
-	14700 700  14550 700 
-Wire Wire Line
-	14100 800  14700 800 
-Wire Wire Line
-	14300 900  14700 900 
-Wire Wire Line
-	14550 700  14550 1400
-Wire Wire Line
-	13700 1300 13700 600 
-Wire Wire Line
-	13700 600  14450 600 
-Connection ~ 14450 600 
-Wire Wire Line
-	13700 1400 13750 1400
-Wire Wire Line
-	13750 1400 13750 700 
-Wire Wire Line
-	13750 700  14550 700 
-Connection ~ 14550 700 
-Wire Wire Line
-	13000 1300 13000 600 
-Wire Wire Line
-	13000 600  13700 600 
-Connection ~ 13700 600 
-Wire Wire Line
-	13000 1400 13050 1400
-Wire Wire Line
-	13050 1400 13050 700 
-Wire Wire Line
-	13050 700  13750 700 
-Connection ~ 13750 700 
-Wire Wire Line
-	12250 1300 12250 600 
-Wire Wire Line
-	12250 600  13000 600 
-Connection ~ 13000 600 
-Wire Wire Line
-	13050 700  12300 700 
-Wire Wire Line
-	12300 700  12300 1400
-Wire Wire Line
-	12300 1400 12250 1400
-Connection ~ 13050 700 
-Wire Wire Line
-	11500 1300 11500 600 
-Wire Wire Line
-	11500 600  12250 600 
-Connection ~ 12250 600 
-Wire Wire Line
-	12300 700  11550 700 
-Wire Wire Line
-	11550 700  11550 1400
-Wire Wire Line
-	11550 1400 11500 1400
-Connection ~ 12300 700 
-Wire Wire Line
-	10750 1300 10750 600 
-Wire Wire Line
-	10750 600  11500 600 
-Connection ~ 11500 600 
-Wire Wire Line
-	10750 1400 10800 1400
-Wire Wire Line
-	10800 1400 10800 700 
-Wire Wire Line
-	10800 700  11550 700 
-Connection ~ 11550 700 
-Wire Wire Line
-	10050 1300 10050 600 
-Wire Wire Line
-	10050 600  10750 600 
-Connection ~ 10750 600 
-Wire Wire Line
-	10800 700  10100 700 
-Wire Wire Line
-	10100 700  10100 1400
-Wire Wire Line
-	10100 1400 10050 1400
-Connection ~ 10800 700 
-Wire Wire Line
-	9300 1400 9350 1400
-Wire Wire Line
-	9350 1400 9350 700 
-Wire Wire Line
-	9350 700  10100 700 
-Connection ~ 10100 700 
-Wire Wire Line
-	10050 600  9300 600 
-Wire Wire Line
-	9300 600  9300 1300
-Connection ~ 10050 600 
-Wire Wire Line
-	8650 1300 8650 600 
-Wire Wire Line
-	8650 600  9300 600 
-Connection ~ 9300 600 
-Wire Wire Line
-	8650 1400 8700 1400
-Wire Wire Line
-	8700 1400 8700 700 
-Wire Wire Line
-	8700 700  9350 700 
-Connection ~ 9350 700 
-Wire Wire Line
-	8650 600  7900 600 
-Wire Wire Line
-	7900 600  7900 1300
-Connection ~ 8650 600 
-Wire Wire Line
-	7900 1400 7950 1400
-Wire Wire Line
-	7950 1400 7950 700 
-Wire Wire Line
-	7950 700  8700 700 
-Connection ~ 8700 700 
-Wire Wire Line
-	7900 600  7200 600 
-Wire Wire Line
-	7200 600  7200 1300
-Connection ~ 7900 600 
-Wire Wire Line
-	7200 1400 7250 1400
-Wire Wire Line
-	7250 1400 7250 700 
-Wire Wire Line
-	7250 700  7950 700 
-Connection ~ 7950 700 
-Wire Wire Line
-	7200 600  6450 600 
-Wire Wire Line
-	6450 600  6450 1300
-Connection ~ 7200 600 
-Wire Wire Line
-	6450 1400 6500 1400
-Wire Wire Line
-	6500 1400 6500 700 
-Wire Wire Line
-	6500 700  7250 700 
-Connection ~ 7250 700 
-Wire Wire Line
-	6450 600  5750 600 
-Wire Wire Line
-	5750 600  5750 1300
-Connection ~ 6450 600 
-Wire Wire Line
-	5750 1400 5800 1400
-Wire Wire Line
-	5800 1400 5800 700 
-Wire Wire Line
-	5800 700  6500 700 
-Connection ~ 6500 700 
-Wire Wire Line
-	5750 600  5000 600 
-Wire Wire Line
-	5000 600  5000 1300
-Connection ~ 5750 600 
-Wire Wire Line
-	5000 1400 5050 1400
-Wire Wire Line
-	5050 1400 5050 700 
-Wire Wire Line
-	5050 700  5800 700 
-Connection ~ 5800 700 
-Wire Wire Line
-	5000 600  4300 600 
-Wire Wire Line
-	4300 600  4300 1300
-Connection ~ 5000 600 
-Wire Wire Line
-	4300 1400 4350 1400
-Wire Wire Line
-	4350 1400 4350 700 
-Wire Wire Line
-	4350 700  5050 700 
-Connection ~ 5050 700 
-Wire Wire Line
-	4300 600  3550 600 
-Wire Wire Line
-	3550 600  3550 1300
-Connection ~ 4300 600 
-Wire Wire Line
-	3550 1400 3600 1400
-Wire Wire Line
-	3600 1400 3600 700 
-Wire Wire Line
-	3600 700  4350 700 
-Connection ~ 4350 700 
-Connection ~ 13150 2000
-Wire Wire Line
-	13900 2000 13150 2000
-Wire Wire Line
-	13900 1300 13900 2000
-Wire Wire Line
-	13950 1300 13900 1300
-Connection ~ 13200 2100
-Wire Wire Line
-	13950 2100 13950 1400
-Wire Wire Line
-	13200 2100 13950 2100
-Connection ~ 12450 2000
-Wire Wire Line
-	13150 2000 12450 2000
-Wire Wire Line
-	13150 1300 13150 2000
-Wire Wire Line
-	13200 1300 13150 1300
-Connection ~ 12500 2100
-Wire Wire Line
-	13200 2100 13200 1400
-Wire Wire Line
-	12500 2100 13200 2100
-Connection ~ 11700 2000
-Wire Wire Line
-	12450 2000 11700 2000
-Wire Wire Line
-	12450 1300 12450 2000
-Wire Wire Line
-	12500 1300 12450 1300
-Connection ~ 11750 2100
-Wire Wire Line
-	12500 2100 12500 1400
-Wire Wire Line
-	11750 2100 12500 2100
-Wire Wire Line
-	11700 1300 11700 2000
-Wire Wire Line
-	11750 1300 11700 1300
-Wire Wire Line
-	11750 2100 11750 1400
-Connection ~ 5200 2000
-Connection ~ 5250 2100
-Connection ~ 4450 2000
-Wire Wire Line
-	5200 1300 5250 1300
-Wire Wire Line
-	5200 2000 5200 1300
-Wire Wire Line
-	4450 2000 5200 2000
-Connection ~ 4500 2100
-Wire Wire Line
-	5250 2100 4500 2100
-Wire Wire Line
-	5250 1400 5250 2100
-Connection ~ 3750 2000
-Wire Wire Line
-	4450 2000 3750 2000
-Wire Wire Line
-	4450 1300 4450 2000
-Wire Wire Line
-	4500 1300 4450 1300
-Connection ~ 3800 2100
-Wire Wire Line
-	4500 2100 3800 2100
-Wire Wire Line
-	4500 1400 4500 2100
-Connection ~ 2950 2000
-Wire Wire Line
-	3750 2000 2950 2000
-Wire Wire Line
-	3750 1300 3750 2000
-Wire Wire Line
-	3800 1300 3750 1300
-Connection ~ 3050 2100
-Wire Wire Line
-	3800 2100 3050 2100
-Wire Wire Line
-	3800 1400 3800 2100
-Wire Wire Line
-	2950 2000 2950 1300
-Wire Wire Line
-	3200 1800 2800 1800
-Wire Wire Line
-	2800 2000 2950 2000
-Wire Wire Line
-	3050 2100 2800 2100
-Wire Wire Line
-	3050 1300 2950 1300
-Wire Wire Line
-	3050 1400 3050 2100
-Connection ~ 13350 1800
-Wire Wire Line
-	14100 1800 14100 1700
-Wire Wire Line
-	13350 1800 14100 1800
-Connection ~ 12650 1800
-Wire Wire Line
-	13350 1800 13350 1700
-Wire Wire Line
-	12650 1800 13350 1800
-Connection ~ 11900 1800
-Wire Wire Line
-	12650 1800 12650 1700
-Wire Wire Line
-	11900 1800 12650 1800
-Wire Wire Line
-	11900 1800 11900 1700
-Connection ~ 5400 1800
-Connection ~ 4650 1800
-Wire Wire Line
-	5400 1800 5400 1700
-Wire Wire Line
-	4650 1800 5400 1800
-Connection ~ 3950 1800
-Wire Wire Line
-	4650 1800 4650 1700
-Wire Wire Line
-	3950 1800 4650 1800
-Connection ~ 3200 1800
-Wire Wire Line
-	3950 1800 3200 1800
-Wire Wire Line
-	3950 1700 3950 1800
-Wire Wire Line
-	3200 1700 3200 1800
-Wire Wire Line
-	11000 1400 11000 2100
-Connection ~ 11000 2100
-Wire Wire Line
-	11000 2100 11750 2100
-Wire Wire Line
-	10950 2000 10950 1300
-Wire Wire Line
-	10950 1300 11000 1300
-Connection ~ 10950 2000
-Wire Wire Line
-	10950 2000 11700 2000
-$Comp
-L TeKaDe:HD1077R U?
-U 1 1 6189C8E1
-P 6200 800
-F 0 "U?" H 6150 700 50  0000 L CNN
-F 1 "HD1077R" H 6000 800 50  0000 L CNN
-F 2 "" H 6200 900 50  0001 C CNN
-F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 6200 900 50  0001 C CNN
-	1    6200 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 2100 5950 2100
-Wire Wire Line
-	5900 2000 5900 1300
-Wire Wire Line
-	5950 1400 5950 2100
-Wire Wire Line
-	6650 2000 6650 1300
-Wire Wire Line
-	6700 1400 6700 2100
-Wire Wire Line
-	7350 2000 7350 1300
-Wire Wire Line
-	7400 1400 7400 2100
-Wire Wire Line
-	8100 2000 8100 1300
-Wire Wire Line
-	8150 1400 8150 2100
-Wire Wire Line
-	8750 2000 8750 1300
-Wire Wire Line
-	8800 1400 8800 2100
-Wire Wire Line
-	9500 2000 9500 1300
-Wire Wire Line
-	9550 1400 9550 2100
-Wire Wire Line
-	10200 2000 10200 1300
-Wire Wire Line
-	10250 1400 10250 2100
-Wire Wire Line
-	10200 1300 10250 1300
-Wire Wire Line
-	5200 2000 5900 2000
-Connection ~ 10200 2000
-Wire Wire Line
-	10200 2000 10950 2000
-Connection ~ 9500 2000
-Wire Wire Line
-	9500 2000 10200 2000
-Wire Wire Line
-	9550 1300 9500 1300
-Wire Wire Line
-	8150 1300 8100 1300
-Wire Wire Line
-	7400 1300 7350 1300
-Wire Wire Line
-	6700 1300 6650 1300
-Wire Wire Line
-	5950 1300 5900 1300
-Connection ~ 10250 2100
-Wire Wire Line
-	10250 2100 11000 2100
-Connection ~ 9550 2100
-Wire Wire Line
-	9550 2100 10250 2100
-Connection ~ 8800 2100
-Wire Wire Line
-	8800 2100 9550 2100
-Connection ~ 8750 2000
-Wire Wire Line
-	8750 2000 9500 2000
-Connection ~ 8100 2000
-Wire Wire Line
-	8100 2000 8750 2000
-Connection ~ 8150 2100
-Wire Wire Line
-	8150 2100 8800 2100
-Connection ~ 7400 2100
-Wire Wire Line
-	7400 2100 8150 2100
-Connection ~ 7350 2000
-Wire Wire Line
-	7350 2000 8100 2000
-Connection ~ 6650 2000
-Wire Wire Line
-	6650 2000 7350 2000
-Connection ~ 6700 2100
-Wire Wire Line
-	6700 2100 7400 2100
-Connection ~ 5900 2000
-Wire Wire Line
-	5900 2000 6650 2000
-Connection ~ 5950 2100
-Wire Wire Line
-	5950 2100 6700 2100
-Wire Wire Line
-	5400 1800 6100 1800
-Wire Wire Line
-	11150 1700 11150 1800
-Connection ~ 11150 1800
-Wire Wire Line
-	11150 1800 11900 1800
-Wire Wire Line
-	10400 1700 10400 1800
-Connection ~ 10400 1800
-Wire Wire Line
-	10400 1800 11150 1800
-Wire Wire Line
-	6100 1700 6100 1800
-Connection ~ 6100 1800
-Wire Wire Line
-	6100 1800 6850 1800
-Wire Wire Line
-	6850 1700 6850 1800
-Connection ~ 6850 1800
-Wire Wire Line
-	6850 1800 7550 1800
-Wire Wire Line
-	7550 1700 7550 1800
-Connection ~ 7550 1800
-Wire Wire Line
-	7550 1800 8300 1800
-Wire Wire Line
-	8300 1700 8300 1800
-Connection ~ 8300 1800
-Wire Wire Line
-	8300 1800 8950 1800
-Wire Wire Line
-	8950 1700 8950 1800
-Connection ~ 8950 1800
-Wire Wire Line
-	8950 1800 9700 1800
-Wire Wire Line
-	8750 1300 8800 1300
-Wire Wire Line
-	9700 1700 9700 1800
-Connection ~ 9700 1800
-Wire Wire Line
-	9700 1800 10400 1800
-NoConn ~ 3300 1000
-NoConn ~ 4050 1000
-NoConn ~ 4750 1000
-NoConn ~ 5500 1000
-NoConn ~ 6200 1000
-NoConn ~ 6950 1000
-NoConn ~ 7650 1000
-NoConn ~ 8400 1000
-NoConn ~ 9050 1000
-NoConn ~ 9800 1000
-NoConn ~ 10500 1000
-NoConn ~ 11250 1000
-NoConn ~ 12000 1000
-NoConn ~ 12750 1000
-NoConn ~ 13450 1000
-NoConn ~ 14200 1000
-NoConn ~ 14300 1700
-NoConn ~ 13550 1700
-NoConn ~ 12850 1700
-NoConn ~ 12100 1700
-NoConn ~ 11350 1700
-NoConn ~ 9900 1700
-NoConn ~ 10600 1700
-NoConn ~ 9150 1700
-NoConn ~ 8500 1700
-NoConn ~ 7750 1700
-NoConn ~ 7050 1700
-NoConn ~ 6300 1700
-NoConn ~ 5600 1700
-NoConn ~ 4850 1700
-NoConn ~ 4150 1700
-NoConn ~ 3400 1700
-Text Label 2800 1800 2    50   ~ 0
-AnodeSegmentE
-Text Label 2800 2000 2    50   ~ 0
-AnodeSegmentG
-Text Label 2800 2100 2    50   ~ 0
-AnodeSegmentD
-Text Label 13450 2350 2    50   ~ 0
-CathodeDigitA
-Wire Wire Line
-	3300 2350 3200 2350
-Wire Wire Line
-	3300 1700 3300 2350
-Text Label 14200 2350 2    50   ~ 0
-CathodeDigitB
-Text Label 12700 2350 2    50   ~ 0
-CathodeDigit14
-Text Label 8350 2350 2    50   ~ 0
-CathodeDigit8
-Text Label 9750 2350 2    50   ~ 0
-CathodeDigit10
-Text Label 11200 2350 2    50   ~ 0
-CathodeDigit12
-Text Label 6850 2350 2    50   ~ 0
-CathodeDigit6
-Text Label 3200 2350 2    50   ~ 0
-CathodeDigit1
-Text Label 4650 2350 2    50   ~ 0
-CathodeDigit3
-Text Label 6150 2350 2    50   ~ 0
-CathodeDigit5
-Text Label 5400 2350 2    50   ~ 0
-CathodeDigit4
-Text Label 3900 2350 2    50   ~ 0
-CathodeDigit2
-Text Label 11950 2350 2    50   ~ 0
-CathodeDigit13
-Text Label 10500 2350 2    50   ~ 0
-CathodeDigit11
-Text Label 9000 2350 2    50   ~ 0
-CathodeDigit9
-Text Label 7650 2350 2    50   ~ 0
-CathodeDigit7
-Wire Wire Line
-	12700 2350 12750 2350
-Wire Wire Line
-	12750 1700 12750 2350
-Wire Wire Line
-	12000 2350 11950 2350
-Wire Wire Line
-	12000 1700 12000 2350
-Wire Wire Line
-	11250 2350 11200 2350
-Wire Wire Line
-	11250 1700 11250 2350
-Wire Wire Line
-	10500 1700 10500 2350
-Wire Wire Line
-	9750 2350 9800 2350
-Wire Wire Line
-	9800 1700 9800 2350
-Wire Wire Line
-	9050 2350 9000 2350
-Wire Wire Line
-	9050 1700 9050 2350
-Wire Wire Line
-	8400 2350 8350 2350
-Wire Wire Line
-	8400 1700 8400 2350
-Wire Wire Line
-	7650 1700 7650 2350
-Wire Wire Line
-	6950 2350 6850 2350
-Wire Wire Line
-	6950 1700 6950 2350
-Wire Wire Line
-	6200 1700 6200 2350
-Wire Wire Line
-	5400 2350 5500 2350
-Wire Wire Line
-	5500 1700 5500 2350
-Wire Wire Line
-	4750 1700 4750 2350
-Wire Wire Line
-	4050 1700 4050 2350
-Wire Wire Line
-	4650 2350 4750 2350
-Wire Wire Line
-	6150 2350 6200 2350
-Wire Wire Line
-	3900 2350 4050 2350
-Wire Wire Line
-	13450 2350 13450 1700
-Wire Wire Line
-	14200 2350 14200 1700
 NoConn ~ 2750 4150
 NoConn ~ 2250 4250
 Text Label 12550 4200 2    50   ~ 0
-LedRedCathode
+LED_RD
 Text Label 12550 4100 2    50   ~ 0
-LedYellowCathode
+LED_YL
 Text Label 13500 4200 0    50   ~ 0
-LedGreenCathode
+LED_GN
 Text Label 13500 4100 0    50   ~ 0
-UiLdr
-Text Label 12550 4700 2    50   ~ 0
-OnSwitchLedAnode
+LDR
 Text Label 13500 4700 0    50   ~ 0
-OnSwitchLedCathode
+LED_ON
 Text Label 3350 7750 2    50   ~ 0
 ButtonA2GND
 Wire Wire Line
@@ -1816,12 +883,12 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 615360C8
-P 7100 4400
-F 0 "#PWR?" H 7100 4250 50  0001 C CNN
-F 1 "+5V" H 7115 4573 50  0000 C CNN
-F 2 "" H 7100 4400 50  0001 C CNN
-F 3 "" H 7100 4400 50  0001 C CNN
-	1    7100 4400
+P 7700 4400
+F 0 "#PWR?" H 7700 4250 50  0001 C CNN
+F 1 "+5V" H 7715 4573 50  0000 C CNN
+F 2 "" H 7700 4400 50  0001 C CNN
+F 3 "" H 7700 4400 50  0001 C CNN
+	1    7700 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1895,38 +962,979 @@ NoConn ~ 13300 4300
 $Comp
 L Device:C C?
 U 1 1 617A13A0
-P 11000 6150
-F 0 "C?" H 11115 6196 50  0000 L CNN
-F 1 "100n/10V/X7R" H 11115 6105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11038 6000 50  0001 C CNN
-F 3 "~" H 11000 6150 50  0001 C CNN
-	1    11000 6150
+P 10850 6150
+F 0 "C?" H 10965 6196 50  0000 L CNN
+F 1 "100n/10V/X7R" H 10965 6105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10888 6000 50  0001 C CNN
+F 3 "~" H 10850 6150 50  0001 C CNN
+	1    10850 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 617A2E20
-P 11000 8000
-F 0 "#PWR?" H 11000 7750 50  0001 C CNN
-F 1 "GND" H 11005 7827 50  0000 C CNN
-F 2 "" H 11000 8000 50  0001 C CNN
-F 3 "" H 11000 8000 50  0001 C CNN
-	1    11000 8000
+P 10850 8000
+F 0 "#PWR?" H 10850 7750 50  0001 C CNN
+F 1 "GND" H 10855 7827 50  0000 C CNN
+F 2 "" H 10850 8000 50  0001 C CNN
+F 3 "" H 10850 8000 50  0001 C CNN
+	1    10850 8000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 6300 11000 8000
+	10850 6300 10850 8000
 $Comp
 L power:+5V #PWR?
 U 1 1 6185C9DD
-P 11000 5900
-F 0 "#PWR?" H 11000 5750 50  0001 C CNN
-F 1 "+5V" H 11015 6073 50  0000 C CNN
-F 2 "" H 11000 5900 50  0001 C CNN
-F 3 "" H 11000 5900 50  0001 C CNN
-	1    11000 5900
+P 10850 5900
+F 0 "#PWR?" H 10850 5750 50  0001 C CNN
+F 1 "+5V" H 10865 6073 50  0000 C CNN
+F 2 "" H 10850 5900 50  0001 C CNN
+F 3 "" H 10850 5900 50  0001 C CNN
+	1    10850 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 5900 11000 6000
+	10850 5900 10850 6000
+Text Label 5250 4950 2    50   ~ 0
+LED_GN
+Text Notes 16850 3250 0    50   ~ 0
+SignalStrength / Keyswitch connectoren?\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE
+Wire Wire Line
+	11400 4700 11400 4600
+Wire Wire Line
+	11400 4700 12800 4700
+Connection ~ 11400 4600
+$Comp
+L power:+5V #PWR?
+U 1 1 61296DED
+P 7050 4400
+F 0 "#PWR?" H 7050 4250 50  0001 C CNN
+F 1 "+5V" H 7065 4573 50  0000 C CNN
+F 2 "" H 7050 4400 50  0001 C CNN
+F 3 "" H 7050 4400 50  0001 C CNN
+	1    7050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4500 7050 4400
+Connection ~ 4350 700 
+Connection ~ 4300 600 
+Connection ~ 5050 700 
+Wire Wire Line
+	3600 700  4350 700 
+Wire Wire Line
+	4350 700  5050 700 
+Connection ~ 5000 600 
+Wire Wire Line
+	4300 600  3550 600 
+Wire Wire Line
+	5000 600  4300 600 
+Connection ~ 5800 700 
+Connection ~ 5750 600 
+Connection ~ 6500 700 
+Wire Wire Line
+	5050 700  5800 700 
+Wire Wire Line
+	5800 700  6500 700 
+Connection ~ 6450 600 
+Wire Wire Line
+	5750 600  5000 600 
+Wire Wire Line
+	6450 600  5750 600 
+Connection ~ 7250 700 
+Connection ~ 7200 600 
+Connection ~ 7950 700 
+Wire Wire Line
+	6500 700  7250 700 
+Wire Wire Line
+	7250 700  7950 700 
+Connection ~ 7900 600 
+Wire Wire Line
+	7200 600  6450 600 
+Wire Wire Line
+	7900 600  7200 600 
+Connection ~ 8700 700 
+Connection ~ 8650 600 
+Connection ~ 9350 700 
+Wire Wire Line
+	7950 700  8700 700 
+Wire Wire Line
+	8700 700  9350 700 
+Connection ~ 9300 600 
+Wire Wire Line
+	8650 600  7900 600 
+Wire Wire Line
+	8650 600  9300 600 
+Connection ~ 10050 600 
+Connection ~ 10100 700 
+Connection ~ 10800 700 
+Wire Wire Line
+	9350 700  10100 700 
+Wire Wire Line
+	10800 700  10100 700 
+Connection ~ 10750 600 
+Wire Wire Line
+	10050 600  9300 600 
+Wire Wire Line
+	10050 600  10750 600 
+Connection ~ 11550 700 
+Connection ~ 11500 600 
+Connection ~ 12300 700 
+Wire Wire Line
+	10800 700  11550 700 
+Wire Wire Line
+	12300 700  11550 700 
+Connection ~ 12250 600 
+Wire Wire Line
+	10750 600  11500 600 
+Wire Wire Line
+	11500 600  12250 600 
+Connection ~ 13050 700 
+Connection ~ 13000 600 
+Connection ~ 13750 700 
+Wire Wire Line
+	13050 700  12300 700 
+Wire Wire Line
+	13050 700  13750 700 
+Connection ~ 13700 600 
+Wire Wire Line
+	12250 600  13000 600 
+Wire Wire Line
+	13000 600  13700 600 
+Connection ~ 14550 700 
+Connection ~ 14450 600 
+Wire Wire Line
+	13750 700  14550 700 
+Wire Wire Line
+	14700 700  14550 700 
+Wire Wire Line
+	13700 600  14450 600 
+Wire Wire Line
+	14450 600  14700 600 
+Connection ~ 14100 800 
+Connection ~ 13350 800 
+Connection ~ 12650 800 
+Connection ~ 11900 800 
+Connection ~ 11150 800 
+Connection ~ 10400 800 
+Connection ~ 9700 800 
+Connection ~ 8950 800 
+Connection ~ 8300 800 
+Connection ~ 7550 800 
+Connection ~ 6850 800 
+Connection ~ 6100 800 
+Connection ~ 5400 800 
+Connection ~ 4650 800 
+Connection ~ 3950 800 
+Connection ~ 4150 900 
+Connection ~ 4850 900 
+Connection ~ 5600 900 
+Connection ~ 6300 900 
+Connection ~ 7050 900 
+Connection ~ 7750 900 
+Connection ~ 8500 900 
+Connection ~ 9150 900 
+Connection ~ 9900 900 
+Connection ~ 10600 900 
+Connection ~ 11350 900 
+Connection ~ 12100 900 
+Connection ~ 12850 900 
+Connection ~ 13550 900 
+Connection ~ 14300 900 
+Wire Wire Line
+	14300 900  14700 900 
+Wire Wire Line
+	14100 800  14700 800 
+Wire Wire Line
+	13550 900  14300 900 
+Wire Wire Line
+	13350 800  14100 800 
+Wire Wire Line
+	13550 900  12850 900 
+Wire Wire Line
+	12650 800  13350 800 
+Wire Wire Line
+	12850 900  12100 900 
+Wire Wire Line
+	11900 800  12650 800 
+Wire Wire Line
+	12100 900  11350 900 
+Wire Wire Line
+	11150 800  11900 800 
+Wire Wire Line
+	11350 900  10600 900 
+Wire Wire Line
+	10400 800  11150 800 
+Wire Wire Line
+	10600 900  9900 900 
+Wire Wire Line
+	9700 800  10400 800 
+Wire Wire Line
+	9900 900  9150 900 
+Wire Wire Line
+	8950 800  9700 800 
+Wire Wire Line
+	8500 900  9150 900 
+Wire Wire Line
+	8300 800  8950 800 
+Wire Wire Line
+	7750 900  8500 900 
+Wire Wire Line
+	7550 800  8300 800 
+Wire Wire Line
+	7750 900  7050 900 
+Wire Wire Line
+	6850 800  7550 800 
+Wire Wire Line
+	7050 900  6300 900 
+Wire Wire Line
+	6100 800  6850 800 
+Wire Wire Line
+	6300 900  5600 900 
+Wire Wire Line
+	5400 800  6100 800 
+Wire Wire Line
+	5600 900  4850 900 
+Wire Wire Line
+	4650 800  5400 800 
+Wire Wire Line
+	4850 900  4150 900 
+Wire Wire Line
+	3950 800  4650 800 
+Wire Wire Line
+	4150 900  3400 900 
+Wire Wire Line
+	3200 800  3950 800 
+Connection ~ 13950 2000
+Connection ~ 13900 1900
+Connection ~ 14100 1800
+Wire Wire Line
+	14200 2350 14200 1700
+Wire Wire Line
+	13450 2350 13450 1700
+Wire Wire Line
+	3900 2350 4050 2350
+Wire Wire Line
+	6150 2350 6200 2350
+Wire Wire Line
+	4650 2350 4750 2350
+Wire Wire Line
+	4050 1700 4050 2350
+Wire Wire Line
+	4750 1700 4750 2350
+Wire Wire Line
+	5500 1700 5500 2350
+Wire Wire Line
+	5400 2350 5500 2350
+Wire Wire Line
+	6200 1700 6200 2350
+Wire Wire Line
+	6950 1700 6950 2350
+Wire Wire Line
+	6950 2350 6850 2350
+Wire Wire Line
+	7650 1700 7650 2350
+Wire Wire Line
+	8400 1700 8400 2350
+Wire Wire Line
+	8400 2350 8350 2350
+Wire Wire Line
+	9050 1700 9050 2350
+Wire Wire Line
+	9050 2350 9000 2350
+Wire Wire Line
+	9800 1700 9800 2350
+Wire Wire Line
+	9750 2350 9800 2350
+Wire Wire Line
+	10500 1700 10500 2350
+Wire Wire Line
+	11250 1700 11250 2350
+Wire Wire Line
+	11250 2350 11200 2350
+Wire Wire Line
+	12000 1700 12000 2350
+Wire Wire Line
+	12000 2350 11950 2350
+Wire Wire Line
+	12750 1700 12750 2350
+Wire Wire Line
+	12700 2350 12750 2350
+Text Label 7650 2350 2    50   ~ 0
+CathodeDigit7
+Text Label 9000 2350 2    50   ~ 0
+CathodeDigit9
+Text Label 10500 2350 2    50   ~ 0
+CathodeDigit11
+Text Label 11950 2350 2    50   ~ 0
+CathodeDigit13
+Text Label 3900 2350 2    50   ~ 0
+CathodeDigit2
+Text Label 5400 2350 2    50   ~ 0
+CathodeDigit4
+Text Label 6150 2350 2    50   ~ 0
+CathodeDigit5
+Text Label 4650 2350 2    50   ~ 0
+CathodeDigit3
+Text Label 3200 2350 2    50   ~ 0
+CathodeDigit1
+Text Label 6850 2350 2    50   ~ 0
+CathodeDigit6
+Text Label 11200 2350 2    50   ~ 0
+CathodeDigit12
+Text Label 9750 2350 2    50   ~ 0
+CathodeDigit10
+Text Label 8350 2350 2    50   ~ 0
+CathodeDigit8
+Text Label 12700 2350 2    50   ~ 0
+CathodeDigit14
+Text Label 14200 2350 2    50   ~ 0
+CathodeDigitB
+Wire Wire Line
+	3300 1700 3300 2350
+Wire Wire Line
+	3300 2350 3200 2350
+Text Label 13450 2350 2    50   ~ 0
+CathodeDigitA
+Text Label 14700 2000 0    50   ~ 0
+AnodeSegmentD
+Text Label 14700 1900 0    50   ~ 0
+AnodeSegmentG
+Text Label 14700 1800 0    50   ~ 0
+AnodeSegmentE
+NoConn ~ 3400 1700
+NoConn ~ 4150 1700
+NoConn ~ 4850 1700
+NoConn ~ 5600 1700
+NoConn ~ 6300 1700
+NoConn ~ 7050 1700
+NoConn ~ 7750 1700
+NoConn ~ 8500 1700
+NoConn ~ 9150 1700
+NoConn ~ 10600 1700
+NoConn ~ 9900 1700
+NoConn ~ 11350 1700
+NoConn ~ 12100 1700
+NoConn ~ 12850 1700
+NoConn ~ 13550 1700
+NoConn ~ 14300 1700
+NoConn ~ 14200 1000
+NoConn ~ 13450 1000
+NoConn ~ 12750 1000
+NoConn ~ 12000 1000
+NoConn ~ 11250 1000
+NoConn ~ 10500 1000
+NoConn ~ 9800 1000
+NoConn ~ 9050 1000
+NoConn ~ 8400 1000
+NoConn ~ 7650 1000
+NoConn ~ 6950 1000
+NoConn ~ 6200 1000
+NoConn ~ 5500 1000
+NoConn ~ 4750 1000
+NoConn ~ 4050 1000
+NoConn ~ 3300 1000
+Wire Wire Line
+	9700 1800 10400 1800
+Connection ~ 9700 1800
+Wire Wire Line
+	9700 1700 9700 1800
+Wire Wire Line
+	8750 1300 8800 1300
+Wire Wire Line
+	8950 1800 9700 1800
+Connection ~ 8950 1800
+Wire Wire Line
+	8950 1700 8950 1800
+Wire Wire Line
+	8300 1800 8950 1800
+Connection ~ 8300 1800
+Wire Wire Line
+	8300 1700 8300 1800
+Wire Wire Line
+	7550 1800 8300 1800
+Connection ~ 7550 1800
+Wire Wire Line
+	7550 1700 7550 1800
+Wire Wire Line
+	6850 1800 7550 1800
+Connection ~ 6850 1800
+Wire Wire Line
+	6850 1700 6850 1800
+Wire Wire Line
+	6100 1800 6850 1800
+Connection ~ 6100 1800
+Wire Wire Line
+	6100 1700 6100 1800
+Wire Wire Line
+	10400 1800 11150 1800
+Connection ~ 10400 1800
+Wire Wire Line
+	10400 1700 10400 1800
+Wire Wire Line
+	11150 1800 11900 1800
+Connection ~ 11150 1800
+Wire Wire Line
+	11150 1700 11150 1800
+Wire Wire Line
+	5400 1800 6100 1800
+Wire Wire Line
+	5950 2000 6700 2000
+Connection ~ 5950 2000
+Wire Wire Line
+	5900 1900 6650 1900
+Connection ~ 5900 1900
+Wire Wire Line
+	6700 2000 7400 2000
+Connection ~ 6700 2000
+Wire Wire Line
+	6650 1900 7350 1900
+Connection ~ 6650 1900
+Wire Wire Line
+	7350 1900 8100 1900
+Connection ~ 7350 1900
+Wire Wire Line
+	7400 2000 8150 2000
+Connection ~ 7400 2000
+Wire Wire Line
+	8150 2000 8800 2000
+Connection ~ 8150 2000
+Wire Wire Line
+	8100 1900 8750 1900
+Connection ~ 8100 1900
+Wire Wire Line
+	8750 1900 9500 1900
+Connection ~ 8750 1900
+Wire Wire Line
+	8800 2000 9550 2000
+Connection ~ 8800 2000
+Wire Wire Line
+	9550 2000 10250 2000
+Connection ~ 9550 2000
+Wire Wire Line
+	10250 2000 11000 2000
+Connection ~ 10250 2000
+Wire Wire Line
+	5950 1300 5900 1300
+Wire Wire Line
+	6700 1300 6650 1300
+Wire Wire Line
+	7400 1300 7350 1300
+Wire Wire Line
+	8150 1300 8100 1300
+Wire Wire Line
+	9550 1300 9500 1300
+Wire Wire Line
+	9500 1900 10200 1900
+Connection ~ 9500 1900
+Wire Wire Line
+	10200 1900 10950 1900
+Connection ~ 10200 1900
+Wire Wire Line
+	5200 1900 5900 1900
+Wire Wire Line
+	10200 1300 10250 1300
+Wire Wire Line
+	10250 1400 10250 2000
+Wire Wire Line
+	10200 1900 10200 1300
+Wire Wire Line
+	9550 1400 9550 2000
+Wire Wire Line
+	9500 1900 9500 1300
+Wire Wire Line
+	8800 1400 8800 2000
+Wire Wire Line
+	8750 1900 8750 1300
+Wire Wire Line
+	8150 1400 8150 2000
+Wire Wire Line
+	8100 1900 8100 1300
+Wire Wire Line
+	7400 1400 7400 2000
+Wire Wire Line
+	7350 1900 7350 1300
+Wire Wire Line
+	6700 1400 6700 2000
+Wire Wire Line
+	6650 1900 6650 1300
+Wire Wire Line
+	5950 1400 5950 2000
+Wire Wire Line
+	5900 1900 5900 1300
+Wire Wire Line
+	5250 2000 5950 2000
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 6189C8E1
+P 6200 800
+F 0 "U?" H 6150 700 50  0000 L CNN
+F 1 "HD1077R" H 6000 800 50  0000 L CNN
+F 2 "" H 6200 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 6200 900 50  0001 C CNN
+	1    6200 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 1900 11700 1900
+Connection ~ 10950 1900
+Wire Wire Line
+	10950 1300 11000 1300
+Wire Wire Line
+	10950 1900 10950 1300
+Wire Wire Line
+	11000 2000 11750 2000
+Connection ~ 11000 2000
+Wire Wire Line
+	11000 1400 11000 2000
+Wire Wire Line
+	3200 1700 3200 1800
+Wire Wire Line
+	3950 1700 3950 1800
+Wire Wire Line
+	3950 1800 3200 1800
+Wire Wire Line
+	3950 1800 4650 1800
+Wire Wire Line
+	4650 1800 4650 1700
+Connection ~ 3950 1800
+Wire Wire Line
+	4650 1800 5400 1800
+Wire Wire Line
+	5400 1800 5400 1700
+Connection ~ 4650 1800
+Connection ~ 5400 1800
+Wire Wire Line
+	11900 1800 11900 1700
+Wire Wire Line
+	11900 1800 12650 1800
+Wire Wire Line
+	12650 1800 12650 1700
+Connection ~ 11900 1800
+Wire Wire Line
+	12650 1800 13350 1800
+Wire Wire Line
+	13350 1800 13350 1700
+Connection ~ 12650 1800
+Wire Wire Line
+	13350 1800 14100 1800
+Wire Wire Line
+	14100 1800 14100 1700
+Connection ~ 13350 1800
+Wire Wire Line
+	3050 1400 3050 2000
+Wire Wire Line
+	3050 1300 2950 1300
+Wire Wire Line
+	13950 2000 14700 2000
+Wire Wire Line
+	14700 1900 13900 1900
+Wire Wire Line
+	14100 1800 14700 1800
+Wire Wire Line
+	2950 1900 2950 1300
+Wire Wire Line
+	3800 1400 3800 2000
+Wire Wire Line
+	3800 2000 3050 2000
+Wire Wire Line
+	3800 1300 3750 1300
+Wire Wire Line
+	3750 1300 3750 1900
+Wire Wire Line
+	3750 1900 2950 1900
+Wire Wire Line
+	4500 1400 4500 2000
+Wire Wire Line
+	4500 2000 3800 2000
+Connection ~ 3800 2000
+Wire Wire Line
+	4500 1300 4450 1300
+Wire Wire Line
+	4450 1300 4450 1900
+Wire Wire Line
+	4450 1900 3750 1900
+Connection ~ 3750 1900
+Wire Wire Line
+	5250 1400 5250 2000
+Wire Wire Line
+	5250 2000 4500 2000
+Connection ~ 4500 2000
+Wire Wire Line
+	4450 1900 5200 1900
+Wire Wire Line
+	5200 1900 5200 1300
+Wire Wire Line
+	5200 1300 5250 1300
+Connection ~ 4450 1900
+Connection ~ 5250 2000
+Connection ~ 5200 1900
+Wire Wire Line
+	11750 2000 11750 1400
+Wire Wire Line
+	11750 1300 11700 1300
+Wire Wire Line
+	11700 1300 11700 1900
+Wire Wire Line
+	11750 2000 12500 2000
+Wire Wire Line
+	12500 2000 12500 1400
+Connection ~ 11750 2000
+Wire Wire Line
+	12500 1300 12450 1300
+Wire Wire Line
+	12450 1300 12450 1900
+Wire Wire Line
+	12450 1900 11700 1900
+Connection ~ 11700 1900
+Wire Wire Line
+	12500 2000 13200 2000
+Wire Wire Line
+	13200 2000 13200 1400
+Connection ~ 12500 2000
+Wire Wire Line
+	13200 1300 13150 1300
+Wire Wire Line
+	13150 1300 13150 1900
+Wire Wire Line
+	13150 1900 12450 1900
+Connection ~ 12450 1900
+Wire Wire Line
+	13200 2000 13950 2000
+Wire Wire Line
+	13950 2000 13950 1400
+Connection ~ 13200 2000
+Wire Wire Line
+	13950 1300 13900 1300
+Wire Wire Line
+	13900 1300 13900 1900
+Wire Wire Line
+	13900 1900 13150 1900
+Connection ~ 13150 1900
+Wire Wire Line
+	3600 1400 3600 700 
+Wire Wire Line
+	3550 1400 3600 1400
+Wire Wire Line
+	3550 600  3550 1300
+Wire Wire Line
+	4350 1400 4350 700 
+Wire Wire Line
+	4300 1400 4350 1400
+Wire Wire Line
+	4300 600  4300 1300
+Wire Wire Line
+	5050 1400 5050 700 
+Wire Wire Line
+	5000 1400 5050 1400
+Wire Wire Line
+	5000 600  5000 1300
+Wire Wire Line
+	5800 1400 5800 700 
+Wire Wire Line
+	5750 1400 5800 1400
+Wire Wire Line
+	5750 600  5750 1300
+Wire Wire Line
+	6500 1400 6500 700 
+Wire Wire Line
+	6450 1400 6500 1400
+Wire Wire Line
+	6450 600  6450 1300
+Wire Wire Line
+	7250 1400 7250 700 
+Wire Wire Line
+	7200 1400 7250 1400
+Wire Wire Line
+	7200 600  7200 1300
+Wire Wire Line
+	7950 1400 7950 700 
+Wire Wire Line
+	7900 1400 7950 1400
+Wire Wire Line
+	7900 600  7900 1300
+Wire Wire Line
+	8700 1400 8700 700 
+Wire Wire Line
+	8650 1400 8700 1400
+Wire Wire Line
+	8650 1300 8650 600 
+Wire Wire Line
+	9300 600  9300 1300
+Wire Wire Line
+	9350 1400 9350 700 
+Wire Wire Line
+	9300 1400 9350 1400
+Wire Wire Line
+	10100 1400 10050 1400
+Wire Wire Line
+	10100 700  10100 1400
+Wire Wire Line
+	10050 1300 10050 600 
+Wire Wire Line
+	10800 1400 10800 700 
+Wire Wire Line
+	10750 1400 10800 1400
+Wire Wire Line
+	10750 1300 10750 600 
+Wire Wire Line
+	11550 1400 11500 1400
+Wire Wire Line
+	11550 700  11550 1400
+Wire Wire Line
+	11500 1300 11500 600 
+Wire Wire Line
+	12300 1400 12250 1400
+Wire Wire Line
+	12300 700  12300 1400
+Wire Wire Line
+	12250 1300 12250 600 
+Wire Wire Line
+	13050 1400 13050 700 
+Wire Wire Line
+	13000 1400 13050 1400
+Wire Wire Line
+	13000 1300 13000 600 
+Wire Wire Line
+	13750 1400 13750 700 
+Wire Wire Line
+	13700 1400 13750 1400
+Wire Wire Line
+	13700 1300 13700 600 
+Wire Wire Line
+	14550 700  14550 1400
+Wire Wire Line
+	14450 1400 14550 1400
+Wire Wire Line
+	14450 1300 14450 600 
+Wire Wire Line
+	14100 800  14100 1000
+Wire Wire Line
+	13350 800  13350 1000
+Wire Wire Line
+	12650 800  12650 1000
+Wire Wire Line
+	11900 800  11900 1000
+Wire Wire Line
+	11150 800  11150 1000
+Wire Wire Line
+	10400 800  10400 1000
+Wire Wire Line
+	9700 800  9700 1000
+Wire Wire Line
+	8950 800  8950 1000
+Wire Wire Line
+	8300 800  8300 1000
+Wire Wire Line
+	7550 800  7550 1000
+Wire Wire Line
+	6850 800  6850 1000
+Wire Wire Line
+	6100 800  6100 1000
+Wire Wire Line
+	5400 800  5400 1000
+Wire Wire Line
+	4650 800  4650 1000
+Wire Wire Line
+	3950 800  3950 1000
+Wire Wire Line
+	3200 1000 3200 800 
+Wire Wire Line
+	3400 900  3400 1000
+Wire Wire Line
+	4150 900  4150 1000
+Wire Wire Line
+	4850 900  4850 1000
+Wire Wire Line
+	5600 900  5600 1000
+Wire Wire Line
+	6300 900  6300 1000
+Wire Wire Line
+	7050 900  7050 1000
+Wire Wire Line
+	7750 900  7750 1000
+Wire Wire Line
+	8500 1000 8500 900 
+Wire Wire Line
+	9150 900  9150 1000
+Wire Wire Line
+	9900 900  9900 1000
+Wire Wire Line
+	10600 900  10600 1000
+Wire Wire Line
+	11350 900  11350 1000
+Wire Wire Line
+	12100 900  12100 1000
+Wire Wire Line
+	12850 900  12850 1000
+Wire Wire Line
+	13550 1000 13550 900 
+Wire Wire Line
+	14300 1000 14300 900 
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618D4121
+P 14200 800
+F 0 "U?" H 14150 700 50  0000 L CNN
+F 1 "HD1077R" H 14000 800 50  0000 L CNN
+F 2 "" H 14200 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 14200 900 50  0001 C CNN
+	1    14200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618D411B
+P 13450 800
+F 0 "U?" H 13400 700 50  0000 L CNN
+F 1 "HD1077R" H 13250 800 50  0000 L CNN
+F 2 "" H 13450 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 13450 900 50  0001 C CNN
+	1    13450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618D4115
+P 12750 800
+F 0 "U?" H 12700 700 50  0000 L CNN
+F 1 "HD1077R" H 12550 800 50  0000 L CNN
+F 2 "" H 12750 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 12750 900 50  0001 C CNN
+	1    12750 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618D410F
+P 12000 800
+F 0 "U?" H 11950 700 50  0000 L CNN
+F 1 "HD1077R" H 11800 800 50  0000 L CNN
+F 2 "" H 12000 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 12000 900 50  0001 C CNN
+	1    12000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618B84D6
+P 11250 800
+F 0 "U?" H 11200 700 50  0000 L CNN
+F 1 "HD1077R" H 11050 800 50  0000 L CNN
+F 2 "" H 11250 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 11250 900 50  0001 C CNN
+	1    11250 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618B84D0
+P 10500 800
+F 0 "U?" H 10450 700 50  0000 L CNN
+F 1 "HD1077R" H 10300 800 50  0000 L CNN
+F 2 "" H 10500 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 10500 900 50  0001 C CNN
+	1    10500 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618B84CA
+P 9800 800
+F 0 "U?" H 9750 700 50  0000 L CNN
+F 1 "HD1077R" H 9600 800 50  0000 L CNN
+F 2 "" H 9800 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 9800 900 50  0001 C CNN
+	1    9800 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618B84C4
+P 9050 800
+F 0 "U?" H 9000 700 50  0000 L CNN
+F 1 "HD1077R" H 8850 800 50  0000 L CNN
+F 2 "" H 9050 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 9050 900 50  0001 C CNN
+	1    9050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 6189C8F3
+P 8400 800
+F 0 "U?" H 8350 700 50  0000 L CNN
+F 1 "HD1077R" H 8200 800 50  0000 L CNN
+F 2 "" H 8400 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 8400 900 50  0001 C CNN
+	1    8400 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 6189C8ED
+P 7650 800
+F 0 "U?" H 7600 700 50  0000 L CNN
+F 1 "HD1077R" H 7450 800 50  0000 L CNN
+F 2 "" H 7650 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 7650 900 50  0001 C CNN
+	1    7650 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 6189C8E7
+P 6950 800
+F 0 "U?" H 6900 700 50  0000 L CNN
+F 1 "HD1077R" H 6750 800 50  0000 L CNN
+F 2 "" H 6950 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 6950 900 50  0001 C CNN
+	1    6950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 6187EE44
+P 5500 800
+F 0 "U?" H 5450 700 50  0000 L CNN
+F 1 "HD1077R" H 5300 800 50  0000 L CNN
+F 2 "" H 5500 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 5500 900 50  0001 C CNN
+	1    5500 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 6187EE3E
+P 4750 800
+F 0 "U?" H 4700 700 50  0000 L CNN
+F 1 "HD1077R" H 4550 800 50  0000 L CNN
+F 2 "" H 4750 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 4750 900 50  0001 C CNN
+	1    4750 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 618635E6
+P 4050 800
+F 0 "U?" H 4000 700 50  0000 L CNN
+F 1 "HD1077R" H 3850 800 50  0000 L CNN
+F 2 "" H 4050 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 4050 900 50  0001 C CNN
+	1    4050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TeKaDe:HD1077R U?
+U 1 1 61846D93
+P 3300 800
+F 0 "U?" H 3250 700 50  0000 L CNN
+F 1 "HD1077R" H 3100 800 50  0000 L CNN
+F 2 "" H 3300 900 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 3300 900 50  0001 C CNN
+	1    3300 800 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

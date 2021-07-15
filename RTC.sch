@@ -35,8 +35,8 @@ AR Path="/614D7E9D/649427E4" Ref="C?"  Part="1"
 AR Path="/631EEDC8/649427E4" Ref="C?"  Part="1" 
 AR Path="/6493C3D2/649427E4" Ref="C1"  Part="1" 
 F 0 "C1" H 4850 3750 50  0000 L CNN
-F 1 "100n/16V/X5R" H 4850 3650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 3450 50  0001 C CNN
+F 1 "100n/16V/X7R" H 4850 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4738 3450 50  0001 C CNN
 F 3 "~" H 4700 3600 50  0001 C CNN
 	1    4700 3600
 	1    0    0    -1  
@@ -170,11 +170,13 @@ Wire Wire Line
 Text HLabel 7600 4250 2    50   BiDi ~ 0
 I2C_SDA
 Text Notes 4450 5800 0    50   ~ 0
-RTC nicht via doppelten hierarchischen Label\nRTC IC gewechselt jetzt mit Quarz\nBattery Holder so lieferbar?
+Änderungen:\n- RTC IC gewechselt jetzt mit Quarz
 Wire Wire Line
 	6650 4250 7600 4250
 Wire Wire Line
 	6650 4150 7600 4150
 Text HLabel 7600 4150 2    50   Input ~ 0
 I2C_SCL
+Text Notes 5100 4500 0    50   ~ 0
+32.768 kHz
 $EndSCHEMATC
