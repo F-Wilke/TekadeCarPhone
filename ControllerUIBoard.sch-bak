@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 2 9
 Title ""
 Date ""
 Rev ""
@@ -198,7 +198,7 @@ L Device:R R46
 U 1 1 6103F708
 P 5900 1750
 F 0 "R46" V 5693 1750 50  0000 C CNN
-F 1 "10k" V 5784 1750 50  0000 C CNN
+F 1 "15k" V 5784 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5830 1750 50  0001 C CNN
 F 3 "~" H 5900 1750 50  0001 C CNN
 	1    5900 1750
@@ -210,8 +210,6 @@ Wire Wire Line
 	6050 1750 6350 1750
 Wire Wire Line
 	5300 1650 6350 1650
-Text Label 1600 2350 2    50   ~ 0
-ButtonA2GND
 $Comp
 L power:+5V #PWR0168
 U 1 1 6117E842
@@ -381,13 +379,6 @@ Wire Wire Line
 	4700 4250 4700 4400
 Wire Wire Line
 	1600 3250 2500 3250
-Wire Wire Line
-	1600 2350 3300 2350
-Wire Wire Line
-	3300 1400 3300 2350
-Connection ~ 3300 2350
-Wire Wire Line
-	3300 2350 4100 2350
 $Comp
 L Device:R R36
 U 1 1 60E994CF
@@ -439,7 +430,6 @@ NoConn ~ 5300 2350
 NoConn ~ 5300 3050
 NoConn ~ 5300 3450
 NoConn ~ 5300 3550
-NoConn ~ 4100 2250
 Wire Wire Line
 	4100 1650 1600 1650
 Text Label 1600 1650 2    50   ~ 0
@@ -1524,4 +1514,14 @@ F 3 "~" H 2750 2050 50  0001 C CNN
 	1    2750 2050
 	0    1    1    0   
 $EndComp
+Text Label 1600 2350 2    50   ~ 0
+ButtonA2GND
+Wire Wire Line
+	1600 2350 3300 2350
+Connection ~ 3300 2350
+Wire Wire Line
+	3300 1400 3300 2350
+Wire Wire Line
+	3300 2350 4100 2350
+NoConn ~ 4100 2250
 $EndSCHEMATC

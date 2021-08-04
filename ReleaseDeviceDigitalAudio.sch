@@ -17,7 +17,7 @@ NoConn ~ 3100 -2900
 NoConn ~ 3100 -2800
 NoConn ~ 3100 -2600
 NoConn ~ 3100 -2500
-Text Notes 5750 8250 1    50   ~ 0
+Text Notes 5650 7850 1    50   ~ 0
 RPi NOT 5V tolerant!
 $Sheet
 S 8050 6350 1600 2350
@@ -35,7 +35,7 @@ F9 "7Seg_Decoder_D4" O R 9650 7150 50
 F10 "7Seg_Decoder_D2" O R 9650 6950 50 
 F11 "7Seg_Decoder_D1" O R 9650 6850 50 
 F12 "BrightnessPWM" O R 9650 6650 50 
-F13 "RPI_RUN" O L 8050 6650 50 
+F13 "RPI_RUN" O L 8050 8450 50 
 F14 "UART1_RX" I L 8050 6950 50 
 F15 "UART1_TX" O L 8050 7050 50 
 $EndSheet
@@ -54,7 +54,7 @@ F0 "RPiCM4" 50
 F1 "RaspberryPiCM4.sch" 50
 F2 "GPIO9" O R 5550 4900 50 
 F3 "GPIO10" I R 5550 1700 50 
-F4 "RUN" I R 5550 6650 50 
+F4 "RUN" I R 5550 8450 50 
 F5 "I2C0_SDA" B R 5550 5700 50 
 F6 "I2C1_SDA" B R 5550 1400 50 
 F7 "I2C1_SCL" O R 5550 1500 50 
@@ -171,10 +171,6 @@ I2S Master
 Text Notes 8650 2250 0    50   ~ 0
 I2S Slave
 Wire Wire Line
-	6200 6650 5550 6650
-Wire Wire Line
-	8050 6650 7400 6650
-Wire Wire Line
 	7400 7050 8050 7050
 Wire Wire Line
 	7400 6950 8050 6950
@@ -187,12 +183,10 @@ S 6200 6350 1200 1200
 U 6131300C
 F0 "LevelShift" 50
 F1 "LevelShift.sch" 50
-F2 "RUN_3V3" O L 6200 6650 50 
-F3 "RUN_5V" I R 7400 6650 50 
-F4 "UART_TX_5V" I R 7400 7050 50 
-F5 "UART_TX_3V3" O L 6200 7050 50 
-F6 "UART_RX_5V" O R 7400 6950 50 
-F7 "UART_RX_3V3" I L 6200 6950 50 
+F2 "UART_TX_5V" I R 7400 7050 50 
+F3 "UART_TX_3V3" O L 6200 7050 50 
+F4 "UART_RX_5V" O R 7400 6950 50 
+F5 "UART_RX_3V3" I L 6200 6950 50 
 $EndSheet
 Wire Wire Line
 	8050 4550 5550 4550
@@ -268,7 +262,7 @@ F 3 "" H 11900 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 900  5800 0    50   ~ 0
-Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n- Footprint Q von Dauerstrom Verpolschutz machen\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n- Test (Simulation wäre zu aufwendig)\n\nBM83:\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n\nMAX98089:\n- LDO für MAX98089?\n\nRTC:\n- Battery Holder so ok (CR1220)?\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n- Footprint checken durch Fredrik\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n- Schaltfrequenz onboard Regler\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n
+Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n- Footprint Q von Dauerstrom Verpolschutz machen\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n- Test (Simulation wäre zu aufwendig)\n\nBM83:\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n-Config: Voice vs. Music filter: Done\n\n\nRTC:\n- Battery Holder so ok (CR1220)?\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt\n- Footprint checken durch Fredrik\n    -> Passt perfekt\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszilloskop fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollaussteuerung bei 0.22V, 0.5-1k Eigenwiderstand -> 15k Vorwiderstand (geprüft)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n
 Wire Wire Line
 	9650 2400 12850 2400
 Wire Wire Line
@@ -399,4 +393,6 @@ Text Notes 4600 5800 0    50   ~ 0
 I2C Master
 Text Notes 11000 8300 0    50   ~ 0
 IO Voltage: 5V
+Wire Wire Line
+	8050 8450 5550 8450
 $EndSCHEMATC

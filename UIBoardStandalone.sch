@@ -1937,4 +1937,8 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 3300 900 5
 	1    3300 800 
 	1    0    0    -1  
 $EndComp
+Text Notes 12100 6100 0    50   ~ 0
+https://www.aeri.com/products/search/?q=mm74c923\n
+Text Notes 15150 1400 0    50   ~ 0
+https://www.aeri.com/products/search/?q=hd1077\n
 $EndSCHEMATC

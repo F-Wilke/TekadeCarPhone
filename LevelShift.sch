@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -13,122 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L TeKaDe:SN74LV1T126 U?
-U 1 1 61321836
-P 5550 5400
-AR Path="/61321836" Ref="U?"  Part="1" 
-AR Path="/6131300C/61321836" Ref="U5"  Part="1" 
-F 0 "U5" H 5550 5725 50  0000 C CNN
-F 1 "SN74LV1T126" H 5550 5634 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5550 5150 50  0001 C CNN
-F 3 "" H 5350 5350 50  0001 C CNN
-	1    5550 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6132183C
-P 6250 5700
-AR Path="/60D33366/6132183C" Ref="#PWR?"  Part="1" 
-AR Path="/6132183C" Ref="#PWR?"  Part="1" 
-AR Path="/6131300C/6132183C" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 6250 5450 50  0001 C CNN
-F 1 "GND" H 6255 5527 50  0000 C CNN
-F 2 "" H 6250 5700 50  0001 C CNN
-F 3 "" H 6250 5700 50  0001 C CNN
-	1    6250 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 5350 6250 5700
-$Comp
-L Device:C C?
-U 1 1 61321843
-P 6250 5200
-AR Path="/60D33366/61321843" Ref="C?"  Part="1" 
-AR Path="/61321843" Ref="C?"  Part="1" 
-AR Path="/6131300C/61321843" Ref="C9"  Part="1" 
-F 0 "C9" V 6500 5150 50  0000 L CNN
-F 1 "100n/16V/X7R" V 6400 4950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6288 5050 50  0001 C CNN
-F 3 "~" H 6250 5200 50  0001 C CNN
-	1    6250 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61321849
-P 5100 5700
-AR Path="/60D33366/61321849" Ref="#PWR?"  Part="1" 
-AR Path="/61321849" Ref="#PWR?"  Part="1" 
-AR Path="/6131300C/61321849" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 5100 5450 50  0001 C CNN
-F 1 "GND" H 5105 5527 50  0000 C CNN
-F 2 "" H 5100 5700 50  0001 C CNN
-F 3 "" H 5100 5700 50  0001 C CNN
-	1    5100 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 5500 5100 5500
-Wire Wire Line
-	5100 5500 5100 5700
-$Comp
-L power:+5V #PWR?
-U 1 1 61321851
-P 5100 5050
-AR Path="/61321851" Ref="#PWR?"  Part="1" 
-AR Path="/6131300C/61321851" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 5100 4900 50  0001 C CNN
-F 1 "+5V" H 5115 5223 50  0000 C CNN
-F 2 "" H 5100 5050 50  0001 C CNN
-F 3 "" H 5100 5050 50  0001 C CNN
-	1    5100 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 5500 7700 5500
-Wire Wire Line
-	5900 5300 6000 5300
-Wire Wire Line
-	6000 5300 6000 5050
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6132185B
-P 6000 5050
-AR Path="/620639FD/6132185B" Ref="#PWR?"  Part="1" 
-AR Path="/6132185B" Ref="#PWR?"  Part="1" 
-AR Path="/6131300C/6132185B" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 6000 4900 50  0001 C CNN
-F 1 "+3.3V" H 6015 5223 50  0000 C CNN
-F 2 "" H 6000 5050 50  0001 C CNN
-F 3 "" H 6000 5050 50  0001 C CNN
-	1    6000 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 5050 5100 5300
-Wire Wire Line
-	5100 5300 5200 5300
-Wire Wire Line
-	5200 5400 3500 5400
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61321865
-P 6250 5050
-AR Path="/620639FD/61321865" Ref="#PWR?"  Part="1" 
-AR Path="/61321865" Ref="#PWR?"  Part="1" 
-AR Path="/6131300C/61321865" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 6250 4900 50  0001 C CNN
-F 1 "+3.3V" H 6265 5223 50  0000 C CNN
-F 2 "" H 6250 5050 50  0001 C CNN
-F 3 "" H 6250 5050 50  0001 C CNN
-	1    6250 5050
-	1    0    0    -1  
-$EndComp
-Text HLabel 7700 5500 2    50   Output ~ 0
-RUN_3V3
 $Comp
 L TeKaDe:SN74LV1T126 U?
 U 1 1 61348F64
@@ -244,16 +128,6 @@ $EndComp
 Wire Wire Line
 	7650 3850 5900 3850
 Wire Notes Line
-	8450 4550 2950 4550
-Wire Notes Line
-	2950 4550 2950 6050
-Wire Notes Line
-	2950 6050 8450 6050
-Wire Notes Line
-	8450 6050 8450 4550
-Text Notes 3050 4700 0    50   ~ 0
-Converts 5V RUN Signal from ATMega to 3V3 for RPI
-Wire Notes Line
 	2950 1700 8450 1700
 Wire Notes Line
 	8450 1700 8450 4400
@@ -263,8 +137,6 @@ Wire Notes Line
 	2950 4400 2950 1700
 Text Notes 3050 1850 0    50   ~ 0
 Converts 5V UART from ATMega to 3V3 for RPI
-Text HLabel 3500 5400 0    50   Input ~ 0
-RUN_5V
 Text HLabel 7650 3850 2    50   Output ~ 0
 UART_TX_3V3
 Text HLabel 7650 2650 2    50   Output ~ 0
