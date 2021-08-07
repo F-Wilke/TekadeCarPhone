@@ -999,7 +999,7 @@ Wire Wire Line
 Text Label 5250 4950 2    50   ~ 0
 LED_GN
 Text Notes 16850 3250 0    50   ~ 0
-SignalStrength / Keyswitch connectoren?\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE
+Footprint 7Seg machen\n\nTaster spezifizieren\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\nLDR spezifizieren (bedrahtet, Montagehöhe)\nZiffernblock Backlight??\nSignalStrength / Keyswitch connectoren?\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE
 Wire Wire Line
 	11400 4700 11400 4600
 Wire Wire Line
@@ -1937,4 +1937,8 @@ F 3 "http://pdf.datasheetcatalog.com/datasheet/siemens/HD1077O.pdf" H 3300 900 5
 	1    3300 800 
 	1    0    0    -1  
 $EndComp
+Text Notes 12100 6100 0    50   ~ 0
+https://www.aeri.com/products/search/?q=mm74c923\n
+Text Notes 15150 1400 0    50   ~ 0
+https://www.aeri.com/products/search/?q=hd1077\n
 $EndSCHEMATC
