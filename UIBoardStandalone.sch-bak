@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J17
+L Connector_Generic:Conn_02x08_Odd_Even J1
 U 1 1 5F670C41
 P 14100 4400
-AR Path="/5F670C41" Ref="J17"  Part="1" 
+AR Path="/5F670C41" Ref="J1"  Part="1" 
 AR Path="/602283F4/5F670C41" Ref="J?"  Part="1" 
 AR Path="/6101166B/5F670C41" Ref="J17"  Part="1" 
-F 0 "J17" H 14150 4917 50  0000 C CNN
+F 0 "J1" H 14150 4917 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 14150 4826 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 14100 4400 50  0001 C CNN
 F 3 "~" H 14100 4400 50  0001 C CNN
@@ -111,10 +111,10 @@ $EndComp
 Wire Wire Line
 	13300 7500 13450 7500
 $Comp
-L Switch:SW_Push_45deg SW2
+L Switch:SW_Push_45deg SW1
 U 1 1 5EF300D4
 P 5000 6550
-F 0 "SW2" H 5000 6831 50  0000 C CNN
+F 0 "SW1" H 5000 6831 50  0000 C CNN
 F 1 "Button_X" H 5000 6740 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 5000 6550 50  0001 C CNN
 F 3 "~" H 5000 6550 50  0001 C CNN
@@ -122,10 +122,10 @@ F 3 "~" H 5000 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW1
+L Switch:SW_Push_45deg SW6
 U 1 1 5EF30B4B
 P 4950 7500
-F 0 "SW1" H 4950 7781 50  0000 C CNN
+F 0 "SW6" H 4950 7781 50  0000 C CNN
 F 1 "Button_P" H 4950 7690 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 4950 7500 50  0001 C CNN
 F 3 "~" H 4950 7500 50  0001 C CNN
@@ -133,10 +133,10 @@ F 3 "~" H 4950 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW5
+L Switch:SW_Push_45deg SW2
 U 1 1 5EF53780
 P 5900 6600
-F 0 "SW5" H 5900 6881 50  0000 C CNN
+F 0 "SW2" H 5900 6881 50  0000 C CNN
 F 1 "Button_R" H 5900 6790 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 5900 6600 50  0001 C CNN
 F 3 "~" H 5900 6600 50  0001 C CNN
@@ -144,10 +144,10 @@ F 3 "~" H 5900 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW6
+L Switch:SW_Push_45deg SW7
 U 1 1 5EF53786
 P 5900 7500
-F 0 "SW6" H 5900 7781 50  0000 C CNN
+F 0 "SW7" H 5900 7781 50  0000 C CNN
 F 1 "Button_M" H 5900 7690 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 5900 7500 50  0001 C CNN
 F 3 "~" H 5900 7500 50  0001 C CNN
@@ -155,10 +155,10 @@ F 3 "~" H 5900 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW9
+L Switch:SW_Push_45deg SW3
 U 1 1 5EF5F078
 P 6900 6600
-F 0 "SW9" H 6900 6881 50  0000 C CNN
+F 0 "SW3" H 6900 6881 50  0000 C CNN
 F 1 "Button_1" H 6900 6790 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 6900 6600 50  0001 C CNN
 F 3 "~" H 6900 6600 50  0001 C CNN
@@ -166,10 +166,10 @@ F 3 "~" H 6900 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW10
+L Switch:SW_Push_45deg SW8
 U 1 1 5EF5F07E
 P 6900 7500
-F 0 "SW10" H 6900 7781 50  0000 C CNN
+F 0 "SW8" H 6900 7781 50  0000 C CNN
 F 1 "Button_4" H 6900 7690 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 6900 7500 50  0001 C CNN
 F 3 "~" H 6900 7500 50  0001 C CNN
@@ -177,10 +177,10 @@ F 3 "~" H 6900 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW13
+L Switch:SW_Push_45deg SW4
 U 1 1 5EF6AFBA
 P 7900 6600
-F 0 "SW13" H 7900 6881 50  0000 C CNN
+F 0 "SW4" H 7900 6881 50  0000 C CNN
 F 1 "Button_2" H 7900 6790 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 7900 6600 50  0001 C CNN
 F 3 "~" H 7900 6600 50  0001 C CNN
@@ -188,10 +188,10 @@ F 3 "~" H 7900 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW14
+L Switch:SW_Push_45deg SW9
 U 1 1 5EF6AFC0
 P 7900 7500
-F 0 "SW14" H 7900 7781 50  0000 C CNN
+F 0 "SW9" H 7900 7781 50  0000 C CNN
 F 1 "Button_5" H 7900 7690 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 7900 7500 50  0001 C CNN
 F 3 "~" H 7900 7500 50  0001 C CNN
@@ -199,10 +199,10 @@ F 3 "~" H 7900 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW15
+L Switch:SW_Push_45deg SW5
 U 1 1 5EF76920
 P 8950 6600
-F 0 "SW15" H 8950 6881 50  0000 C CNN
+F 0 "SW5" H 8950 6881 50  0000 C CNN
 F 1 "Button_3" H 8950 6790 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 8950 6600 50  0001 C CNN
 F 3 "~" H 8950 6600 50  0001 C CNN
@@ -210,10 +210,10 @@ F 3 "~" H 8950 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW16
+L Switch:SW_Push_45deg SW10
 U 1 1 5EF76926
 P 8950 7500
-F 0 "SW16" H 8950 7781 50  0000 C CNN
+F 0 "SW10" H 8950 7781 50  0000 C CNN
 F 1 "Button_6" H 8950 7690 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 8950 7500 50  0001 C CNN
 F 3 "~" H 8950 7500 50  0001 C CNN
@@ -221,10 +221,10 @@ F 3 "~" H 8950 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW17
+L Switch:SW_Push_45deg SW14
 U 1 1 5EF82402
 P 8950 8250
-F 0 "SW17" H 8950 8531 50  0000 C CNN
+F 0 "SW14" H 8950 8531 50  0000 C CNN
 F 1 "Button_9" H 8950 8440 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 8950 8250 50  0001 C CNN
 F 3 "~" H 8950 8250 50  0001 C CNN
@@ -243,10 +243,10 @@ F 3 "~" H 8950 9200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW11
+L Switch:SW_Push_45deg SW13
 U 1 1 5EF8E18C
 P 7900 8250
-F 0 "SW11" H 7900 8531 50  0000 C CNN
+F 0 "SW13" H 7900 8531 50  0000 C CNN
 F 1 "Button_8" H 7900 8440 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 7900 8250 50  0001 C CNN
 F 3 "~" H 7900 8250 50  0001 C CNN
@@ -254,10 +254,10 @@ F 3 "~" H 7900 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW12
+L Switch:SW_Push_45deg SW17
 U 1 1 5EF8E192
 P 7900 9200
-F 0 "SW12" H 7900 9481 50  0000 C CNN
+F 0 "SW17" H 7900 9481 50  0000 C CNN
 F 1 "Button_0" H 7900 9390 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 7900 9200 50  0001 C CNN
 F 3 "~" H 7900 9200 50  0001 C CNN
@@ -265,10 +265,10 @@ F 3 "~" H 7900 9200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW7
+L Switch:SW_Push_45deg SW12
 U 1 1 5EF99D72
 P 6900 8250
-F 0 "SW7" H 6900 8531 50  0000 C CNN
+F 0 "SW12" H 6900 8531 50  0000 C CNN
 F 1 "Button_7" H 6900 8440 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 6900 8250 50  0001 C CNN
 F 3 "~" H 6900 8250 50  0001 C CNN
@@ -276,10 +276,10 @@ F 3 "~" H 6900 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW8
+L Switch:SW_Push_45deg SW16
 U 1 1 5EF99D78
 P 6900 9200
-F 0 "SW8" H 6900 9481 50  0000 C CNN
+F 0 "SW16" H 6900 9481 50  0000 C CNN
 F 1 "Button_Y" H 6900 9390 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 6900 9200 50  0001 C CNN
 F 3 "~" H 6900 9200 50  0001 C CNN
@@ -287,10 +287,10 @@ F 3 "~" H 6900 9200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW3
+L Switch:SW_Push_45deg SW11
 U 1 1 5EFA5688
 P 5800 8250
-F 0 "SW3" H 5800 8531 50  0000 C CNN
+F 0 "SW11" H 5800 8531 50  0000 C CNN
 F 1 "Button_S" H 5800 8440 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 5800 8250 50  0001 C CNN
 F 3 "~" H 5800 8250 50  0001 C CNN
@@ -298,10 +298,10 @@ F 3 "~" H 5800 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_45deg SW4
+L Switch:SW_Push_45deg SW15
 U 1 1 5EFA568E
 P 5800 9200
-F 0 "SW4" H 5800 9481 50  0000 C CNN
+F 0 "SW15" H 5800 9481 50  0000 C CNN
 F 1 "Button_G" H 5800 9390 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVQP0" H 5800 9200 50  0001 C CNN
 F 3 "~" H 5800 9200 50  0001 C CNN
@@ -649,12 +649,12 @@ Wire Wire Line
 Wire Wire Line
 	5050 7600 5050 7850
 $Comp
-L Connector_Generic:Conn_02x15_Odd_Even J10
+L Connector_Generic:Conn_02x15_Odd_Even J2
 U 1 1 60B2D605
 P 5550 4550
-AR Path="/60B2D605" Ref="J10"  Part="1" 
+AR Path="/60B2D605" Ref="J2"  Part="1" 
 AR Path="/6101166B/60B2D605" Ref="J10"  Part="1" 
-F 0 "J10" H 5600 5467 50  0000 C CNN
+F 0 "J2" H 5600 5467 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 5600 5376 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 5550 4550 50  0001 C CNN
 F 3 "~" H 5550 4550 50  0001 C CNN
@@ -8677,10 +8677,10 @@ F 3 "" H 14200 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 6141F4AD
 P 1550 9150
-F 0 "H?" H 1650 9196 50  0000 L CNN
+F 0 "H1" H 1650 9196 50  0000 L CNN
 F 1 "MountingHole" H 1650 9105 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9150 50  0001 C CNN
 F 3 "~" H 1550 9150 50  0001 C CNN
@@ -8688,10 +8688,10 @@ F 3 "~" H 1550 9150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 61420AE8
 P 1550 9350
-F 0 "H?" H 1650 9396 50  0000 L CNN
+F 0 "H2" H 1650 9396 50  0000 L CNN
 F 1 "MountingHole" H 1650 9305 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9350 50  0001 C CNN
 F 3 "~" H 1550 9350 50  0001 C CNN
@@ -8699,10 +8699,10 @@ F 3 "~" H 1550 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H3
 U 1 1 61420D8B
 P 1550 9550
-F 0 "H?" H 1650 9596 50  0000 L CNN
+F 0 "H3" H 1650 9596 50  0000 L CNN
 F 1 "MountingHole" H 1650 9505 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9550 50  0001 C CNN
 F 3 "~" H 1550 9550 50  0001 C CNN
@@ -8710,10 +8710,10 @@ F 3 "~" H 1550 9550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 61421099
 P 1550 9750
-F 0 "H?" H 1650 9796 50  0000 L CNN
+F 0 "H4" H 1650 9796 50  0000 L CNN
 F 1 "MountingHole" H 1650 9705 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9750 50  0001 C CNN
 F 3 "~" H 1550 9750 50  0001 C CNN
@@ -8721,10 +8721,10 @@ F 3 "~" H 1550 9750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H5
 U 1 1 614213A7
 P 1550 9950
-F 0 "H?" H 1650 9996 50  0000 L CNN
+F 0 "H5" H 1650 9996 50  0000 L CNN
 F 1 "MountingHole" H 1650 9905 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9950 50  0001 C CNN
 F 3 "~" H 1550 9950 50  0001 C CNN
@@ -8732,10 +8732,10 @@ F 3 "~" H 1550 9950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H6
 U 1 1 61421B55
 P 1550 10150
-F 0 "H?" H 1650 10196 50  0000 L CNN
+F 0 "H6" H 1650 10196 50  0000 L CNN
 F 1 "MountingHole" H 1650 10105 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 10150 50  0001 C CNN
 F 3 "~" H 1550 10150 50  0001 C CNN

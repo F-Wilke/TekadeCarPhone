@@ -262,7 +262,7 @@ F 3 "" H 11900 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 900  5800 0    50   ~ 0
-Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n- Footprint Q von Dauerstrom Verpolschutz machen\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n- Test (Simulation wäre zu aufwendig)\n\nBM83:\n- Ersetzen durch Modell mit automotive Zulassung?\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n- Microchip Design Checklist ausfuellen, wenn Layout fertig\n\nRTC:\n- Battery Holder CR1220 ? Layout wirds zeigen...\n\nATmega:\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n\n\n\n\nErledigt:\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n\n
+Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n- Footprint Q von Dauerstrom Verpolschutz machen\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n- Test (Simulation wäre zu aufwendig)\n\nBM83:\n- Ersetzen durch Modell mit automotive Zulassung?\n- Warum Temperatur messen?\n- Unused Pin Connections nicht beschrieben\n- MFB wird noch getestet durch Fredrik\n- Microchip Design Checklist ausfuellen, wenn Layout fertig\n\nRTC:\n- Battery Holder CR1220 ? Layout wirds zeigen...\n\nATmega:\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n\n\n\n\nERLEDIGT:\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n\n
 Wire Wire Line
 	9650 2400 12850 2400
 Wire Wire Line
@@ -395,4 +395,103 @@ Text Notes 11000 8300 0    50   ~ 0
 IO Voltage: 5V
 Wire Wire Line
 	8050 8450 5550 8450
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61231129
+P 1550 9500
+F 0 "H1" H 1650 9546 50  0000 L CNN
+F 1 "MountingHole" H 1650 9455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9500 50  0001 C CNN
+F 3 "~" H 1550 9500 50  0001 C CNN
+	1    1550 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61231823
+P 1550 9700
+F 0 "H2" H 1650 9746 50  0000 L CNN
+F 1 "MountingHole" H 1650 9655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9700 50  0001 C CNN
+F 3 "~" H 1550 9700 50  0001 C CNN
+	1    1550 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61231952
+P 1550 9900
+F 0 "H3" H 1650 9946 50  0000 L CNN
+F 1 "MountingHole" H 1650 9855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 9900 50  0001 C CNN
+F 3 "~" H 1550 9900 50  0001 C CNN
+	1    1550 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61231AC2
+P 1550 10100
+F 0 "H4" H 1650 10146 50  0000 L CNN
+F 1 "MountingHole" H 1650 10055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965" H 1550 10100 50  0001 C CNN
+F 3 "~" H 1550 10100 50  0001 C CNN
+	1    1550 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 61231C44
+P 2400 9500
+F 0 "H5" H 2500 9546 50  0000 L CNN
+F 1 "MountingHole" H 2500 9455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4mm" H 2400 9500 50  0001 C CNN
+F 3 "~" H 2400 9500 50  0001 C CNN
+	1    2400 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 612320B2
+P 2400 9700
+F 0 "H6" H 2500 9746 50  0000 L CNN
+F 1 "MountingHole" H 2500 9655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4mm" H 2400 9700 50  0001 C CNN
+F 3 "~" H 2400 9700 50  0001 C CNN
+	1    2400 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6124617A
+P 2500 10150
+F 0 "H?" H 2600 10196 50  0000 L CNN
+F 1 "MountingHole" H 2600 10105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2500 10150 50  0001 C CNN
+F 3 "~" H 2500 10150 50  0001 C CNN
+	1    2500 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 61246456
+P 2500 10350
+F 0 "H?" H 2600 10396 50  0000 L CNN
+F 1 "MountingHole" H 2600 10305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 2500 10350 50  0001 C CNN
+F 3 "~" H 2500 10350 50  0001 C CNN
+	1    2500 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6124668A
+P 2500 10550
+F 0 "H?" H 2600 10596 50  0000 L CNN
+F 1 "MountingHole" H 2600 10505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_8.4mm_M8" H 2500 10550 50  0001 C CNN
+F 3 "~" H 2500 10550 50  0001 C CNN
+	1    2500 10550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
