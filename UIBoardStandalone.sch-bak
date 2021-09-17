@@ -539,6 +539,7 @@ F 0 "D1" V 9597 5130 50  0000 L CNN
 F 1 "LED_RD" V 9688 5130 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm" H 9650 5050 50  0001 C CNN
 F 3 "~" H 9650 5050 50  0001 C CNN
+F 4 "9mm" V 9650 5050 50  0001 C CNN "Montagehöhe"
 	1    9650 5050
 	0    -1   -1   0   
 $EndComp
@@ -550,6 +551,7 @@ F 0 "D2" V 9097 5130 50  0000 L CNN
 F 1 "LED_YL" V 9188 5130 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm" H 9150 5050 50  0001 C CNN
 F 3 "~" H 9150 5050 50  0001 C CNN
+F 4 "9mm" V 9150 5050 50  0001 C CNN "Montagehöhe"
 	1    9150 5050
 	0    -1   -1   0   
 $EndComp
@@ -561,6 +563,7 @@ F 0 "D3" V 8447 5130 50  0000 L CNN
 F 1 "LED_GN" V 8538 5130 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm" H 8500 5050 50  0001 C CNN
 F 3 "~" H 8500 5050 50  0001 C CNN
+F 4 "9mm" V 8500 5050 50  0001 C CNN "Montagehöhe"
 	1    8500 5050
 	0    -1   -1   0   
 $EndComp
@@ -612,6 +615,7 @@ F 0 "D4" V 10097 5130 50  0000 L CNN
 F 1 "LED_ON" V 10188 5130 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 10150 5050 50  0001 C CNN
 F 3 "~" H 10150 5050 50  0001 C CNN
+F 4 "8mm" V 10150 5050 50  0001 C CNN "Montagehöhe"
 	1    10150 5050
 	0    -1   -1   0   
 $EndComp
@@ -629,6 +633,7 @@ F 0 "R1" H 10870 5146 50  0000 L CNN
 F 1 "LDR" H 10870 5055 50  0000 L CNN
 F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 10850 4850 50  0001 L CNN
 F 3 "~" H 10800 5050 50  0001 C CNN
+F 4 "7mm" H 10800 5100 50  0001 C CNN "Montagehöhe"
 	1    10800 5100
 	-1   0    0    1   
 $EndComp
@@ -999,7 +1004,7 @@ Wire Wire Line
 Text Label 8350 5350 2    50   ~ 0
 LED_GN
 Text Notes 1750 5600 0    50   ~ 0
-Footprint HD1077R prüfen\n\nLED Farbzuordnung prüfen\nTaster spezifizieren\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\nLDR spezifizieren (bedrahtet, Montagehöhe)\nZiffernblock Backlight??\nSignalStrength / Keyswitch connectoren?\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE\n- Footprint HD1077R
+Footprint HD1077R prüfen\n\nLED Farbzuordnung prüfen -> stimmt\nTaster spezifizieren\n    -> 5mm Gesamthöhe, 0,5mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nLDR spezifizieren (bedrahtet, Montagehöhe)\n    -> bedrahtet?\nZiffernblock Backlight?? -> LED_BL1-5\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE\n- Footprint HD1077R
 Wire Wire Line
 	12500 4700 12500 4600
 Wire Wire Line
@@ -8750,6 +8755,7 @@ F 0 "D5" V 8447 3730 50  0000 L CNN
 F 1 "LED_BL1" V 8538 3730 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 8500 3650 50  0001 C CNN
 F 3 "~" H 8500 3650 50  0001 C CNN
+F 4 "10mm" V 8500 3650 50  0001 C CNN "Montagehöhe"
 	1    8500 3650
 	0    -1   -1   0   
 $EndComp
@@ -8772,6 +8778,7 @@ F 0 "D6" V 8947 3730 50  0000 L CNN
 F 1 "LED_BL2" V 9038 3730 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 9000 3650 50  0001 C CNN
 F 3 "~" H 9000 3650 50  0001 C CNN
+F 4 "10mm" V 9000 3650 50  0001 C CNN "Montagehöhe"
 	1    9000 3650
 	0    -1   -1   0   
 $EndComp
@@ -8794,6 +8801,7 @@ F 0 "D7" V 9447 3730 50  0000 L CNN
 F 1 "LED_BL3" V 9538 3730 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 9500 3650 50  0001 C CNN
 F 3 "~" H 9500 3650 50  0001 C CNN
+F 4 "10mm" V 9500 3650 50  0001 C CNN "Montagehöhe"
 	1    9500 3650
 	0    -1   -1   0   
 $EndComp
@@ -8816,6 +8824,7 @@ F 0 "D8" V 9947 3730 50  0000 L CNN
 F 1 "LED_BL4" V 10038 3730 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 10000 3650 50  0001 C CNN
 F 3 "~" H 10000 3650 50  0001 C CNN
+F 4 "10mm" V 10000 3650 50  0001 C CNN "Montagehöhe"
 	1    10000 3650
 	0    -1   -1   0   
 $EndComp
@@ -8838,6 +8847,7 @@ F 0 "D9" V 10447 3730 50  0000 L CNN
 F 1 "LED_BL5" V 10538 3730 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 10500 3650 50  0001 C CNN
 F 3 "~" H 10500 3650 50  0001 C CNN
+F 4 "10mm" V 10500 3650 50  0001 C CNN "Montagehöhe"
 	1    10500 3650
 	0    -1   -1   0   
 $EndComp

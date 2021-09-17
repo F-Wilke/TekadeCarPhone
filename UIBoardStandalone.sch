@@ -102,7 +102,7 @@ L Device:C C2
 U 1 1 60E085DC
 P 13450 7650
 F 0 "C2" H 13565 7696 50  0000 L CNN
-F 1 "52uF" H 13565 7605 50  0000 L CNN
+F 1 "2.2uF" H 13565 7605 50  0000 L CNN
 F 2 "" H 13488 7500 50  0001 C CNN
 F 3 "~" H 13450 7650 50  0001 C CNN
 	1    13450 7650
@@ -1004,7 +1004,7 @@ Wire Wire Line
 Text Label 8350 5350 2    50   ~ 0
 LED_GN
 Text Notes 1750 5600 0    50   ~ 0
-Footprint HD1077R prüfen\n\nLED Farbzuordnung prüfen -> stimmt\nTaster spezifizieren\n    -> 5,25mm Gesamthöhe, 1mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nLDR spezifizieren (bedrahtet, Montagehöhe)\n    -> bedrahtet?\nZiffernblock Backlight?? -> LED_BL1-5\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE\n- Footprint HD1077R
+Footprint HD1077R prüfen\n\nLED Farbzuordnung prüfen -> stimmt\nTaster spezifizieren\n    -> 5mm Gesamthöhe, 0,5mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nLDR spezifizieren (bedrahtet, Montagehöhe)\n    -> bedrahtet?\nZiffernblock Backlight?? -> LED_BL1-5\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE\n- Footprint HD1077R
 Wire Wire Line
 	12500 4700 12500 4600
 Wire Wire Line
