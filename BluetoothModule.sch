@@ -1284,7 +1284,7 @@ Text Notes 3400 7600 0    50   ~ 0
 For the I2C, I2S, and UART groups, each respective group's traces should run parallel\nwith as wide spacing as possible and be isolated from other groups with GND copper\nfoil. If isolation is not possible due to limited space, please at least increase the \ninterval between traces belonging to different groups. 
 NoConn ~ 4400 1850
 Text Notes 7000 6350 0    50   ~ 0
-Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung \ndes Slaves verwendet werden. Dies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten.\nvgl. DS 6.5. Vermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, \nso dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK is not part of the I2S standard, but is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
+Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung \ndes Slaves verwendet werden. Dies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten.\nvgl. DS 6.5. Vermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, \nso dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK is not part of the I2S standard, but is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S\n\nMCLk nur während Playback/Record aktiv -> Forum-Thread geöffnet
 $Comp
 L Device:R R2
 U 1 1 60DB214B
@@ -1460,7 +1460,7 @@ Wire Wire Line
 NoConn ~ 6400 3550
 NoConn ~ 6400 1850
 Text Notes -150 3150 0    50   ~ 0
-Hat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
+Hat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.\n\nDatasheet Table 6-1 : P3_4 floating -> Application mode
 Wire Wire Line
 	3000 3750 3200 3750
 Connection ~ 3200 3750
