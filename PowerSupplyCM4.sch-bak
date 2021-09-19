@@ -6651,7 +6651,7 @@ Wire Notes Line
 Text Notes 4600 13400 0    50   ~ 0
 Selbsthaltung Buckconverter
 Text Notes 4800 14550 0    50   ~ 0
-Bleibt ATmega GPIO auf GND wenn er sich Vcc selbst abdreht?\nFalls nicht, Pulldown ausreichend?
+Bleibt ATmega GPIO auf GND wenn er sich Vcc selbst abdreht? Ja, getestet\nFalls nicht, Pulldown ausreichend?
 $Comp
 L Device:R R23
 U 1 1 616BB340
