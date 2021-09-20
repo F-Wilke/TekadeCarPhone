@@ -17,10 +17,6 @@ Wire Wire Line
 	1000 2150 2100 2150
 Wire Wire Line
 	1000 2050 2100 2050
-Text HLabel 6400 2750 2    50   Output ~ 0
-GPIO9
-Wire Wire Line
-	6400 2750 4500 2750
 Text HLabel 6400 2950 2    50   Input ~ 0
 GPIO10
 Wire Wire Line
@@ -46,7 +42,7 @@ F 3 "~" H 5600 4450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 700  7600 0    50   ~ 0
-Änderungen: \nAlle I2C Pullups hier, aber unbestückt (Pin 56/58/80/82 int. 1k8 PU)\nLogik von RUN input nun negiert!\nUART0 wurde zu UART3\nUART1 wurde zu UART0, da UART1 miniUART auf den gleichen Pins\n(vgl. https://www.raspberrypi.org/documentation/configuration/uart.md)\nUSB komplett entfernt, SSH zugriff via Wifi\nActivity LED hinzugefuegt\nPower LED nur als Testpoint\n\nFeststellungen: \n3,5A 5V Regler reicht leicht, auch inkl. 1,8 und 3,3V Ausgänge\nnEXTRST wird nicht verwendet\nQuelle CM4 Lib: https://github.com/Kedarius/RPi-CM4-Kicad
+Änderungen: \nAlle I2C Pullups hier, aber unbestückt (Pin 56/58/80/82 int. 1k8 PU)\nLogik von RUN input nun negiert!\nUART0 wurde zu UART3\nUART1 wurde zu UART0, da UART1 miniUART auf den gleichen Pins\n(vgl. https://www.raspberrypi.org/documentation/configuration/uart.md)\nUSB komplett entfernt, SSH zugriff via Wifi\nActivity LED hinzugefuegt\nPower LED nur als Testpoint\nGPIO9 entfernt, da BM83.MFB nicht benötigt\n\nFeststellungen: \n3,5A 5V Regler reicht leicht, auch inkl. 1,8 und 3,3V Ausgänge\nnEXTRST wird nicht verwendet\nQuelle CM4 Lib: https://github.com/Kedarius/RPi-CM4-Kicad
 $Comp
 L Device:C C?
 U 1 1 60F304BE

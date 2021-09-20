@@ -144,8 +144,6 @@ Wire Wire Line
 	2400 900  2400 2450
 Wire Wire Line
 	4100 900  4100 3650
-Text HLabel 1750 3950 0    50   Input ~ 0
-BM83_MFB
 Text HLabel 9900 1650 2    50   Input ~ 0
 UART_RX
 Wire Wire Line
@@ -161,7 +159,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 3850 6600 3950
 Text Notes 1050 7150 0    50   ~ 0
-BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57
+BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57\n- MFB von RPi getrennt
 $Bitmap
 Pos 5150 6250
 Scale 1.000000
@@ -1452,9 +1450,6 @@ F 3 "" H 2650 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 3950 2650 4100
-Connection ~ 2650 3950
-Wire Wire Line
-	2650 3950 1750 3950
 Wire Wire Line
 	2650 4400 2650 4750
 NoConn ~ 6400 3550
@@ -1547,4 +1542,6 @@ F 3 "~" H 8450 3350 50  0001 C CNN
 	1    8450 3350
 	1    0    0    -1  
 $EndComp
+Text Notes 450  4300 0    50   ~ 0
+Pulldown wirklich benötigt? -> Designcheck abwarten
 $EndSCHEMATC

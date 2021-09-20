@@ -52,21 +52,20 @@ S 3950 1100 1600 7600
 U 631EEDC8
 F0 "RPiCM4" 50
 F1 "RaspberryPiCM4.sch" 50
-F2 "GPIO9" O R 5550 4900 50 
-F3 "GPIO10" I R 5550 1700 50 
-F4 "RUN" I R 5550 8450 50 
-F5 "I2C0_SDA" B R 5550 5700 50 
-F6 "I2C1_SDA" B R 5550 1400 50 
-F7 "I2C1_SCL" O R 5550 1500 50 
-F8 "I2C0_SCL" O R 5550 5800 50 
-F9 "UART3_RX" I R 5550 4650 50 
-F10 "UART3_TX" O R 5550 4550 50 
-F11 "UART0_RX" I R 5550 7050 50 
-F12 "UART0_TX" O R 5550 6950 50 
-F13 "I2S_SD_IN" I R 5550 2250 50 
-F14 "I2S_SD_OUT" O R 5550 2150 50 
-F15 "I2S_SD_CLK" B R 5550 2350 50 
-F16 "I2S_SD_WS" B R 5550 2450 50 
+F2 "GPIO10" I R 5550 1700 50 
+F3 "RUN" I R 5550 8450 50 
+F4 "I2C0_SDA" B R 5550 5700 50 
+F5 "I2C1_SDA" B R 5550 1400 50 
+F6 "I2C1_SCL" O R 5550 1500 50 
+F7 "I2C0_SCL" O R 5550 5800 50 
+F8 "UART3_RX" I R 5550 4650 50 
+F9 "UART3_TX" O R 5550 4550 50 
+F10 "UART0_RX" I R 5550 7050 50 
+F11 "UART0_TX" O R 5550 6950 50 
+F12 "I2S_SD_IN" I R 5550 2250 50 
+F13 "I2S_SD_OUT" O R 5550 2150 50 
+F14 "I2S_SD_CLK" B R 5550 2350 50 
+F15 "I2S_SD_WS" B R 5550 2450 50 
 $EndSheet
 $Sheet
 S 10950 6350 1600 1550
@@ -197,13 +196,12 @@ S 8050 3650 1550 1500
 U 620639FD
 F0 "BluetoothModule" 50
 F1 "BluetoothModule.sch" 50
-F2 "BM83_MFB" I L 8050 4900 50 
-F3 "UART_RX" I L 8050 4550 50 
-F4 "UART_TX" O L 8050 4650 50 
-F5 "I2S_SD_IN" I L 8050 3950 50 
-F6 "I2S_SD_OUT" O L 8050 4050 50 
-F7 "I2S_SD_CLK" B L 8050 4150 50 
-F8 "I2S_SD_WS" B L 8050 4250 50 
+F2 "UART_RX" I L 8050 4550 50 
+F3 "UART_TX" O L 8050 4650 50 
+F4 "I2S_SD_IN" I L 8050 3950 50 
+F5 "I2S_SD_OUT" O L 8050 4050 50 
+F6 "I2S_SD_CLK" B L 8050 4150 50 
+F7 "I2S_SD_WS" B L 8050 4250 50 
 $EndSheet
 Text Notes 4600 1500 0    50   ~ 0
 I2C Master
@@ -262,7 +260,7 @@ F 3 "" H 11900 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 900  5800 0    50   ~ 0
-Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n- Footprint Q von Dauerstrom Verpolschutz machen\n\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout -> Test, Foreneinträge stimmen zuversichtlich\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n- Test (Simulation wäre zu aufwendig)\n\nBM83:\n- Ersetzen durch Modell mit automotive Zulassung? -> Rat aus Nürnberg einholen\n- Warum Temperatur messen?\n- MFB wird noch getestet durch Fredrik\n- Microchip Design Checklist ausfuellen, wenn Layout fertig\n\nRTC:\n- Battery Holder CR1220 ? Layout wirds zeigen...\n\nATmega:\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n\n\n\n\nERLEDIGT:\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nBM83\n- Unused Pin Connections nicht beschrieben -> Prüfung mit Design check\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n\n
+Allgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Steckverbinder KFZ (Dauerstrom / Zündung)\n- Steckverbinder Analog Audio\n- Footprint Q von Dauerstrom Verpolschutz machen\n\nSelbsthaltung:\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse...)\n\nBM83:\n- Ersetzen durch Modell mit automotive Zulassung? -> Rat aus Nürnberg einholen\n- Warum Temperatur messen?\n- Microchip Design Checklist ausfuellen, wenn Layout fertig\n\nRTC:\n- Battery Holder CR1220 ? Layout wirds zeigen...\n\nATmega:\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> macht Fredrik\n- Auslegung Vorwiderstände an reale LEDs\n- Auslegung Spannungsteiler mit LDR\n\n\n\n\nERLEDIGT:\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout \n    -> Dauerhaft unter Schwelle, Pulldown trotzdem sinnvoll\n- Test (Simulation wäre zu aufwendig)\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nBM83\n- Unused Pin Connections nicht beschrieben -> Prüfung mit Design check\n- MFB wird noch getestet durch Fredrik -> nicht benötigt, da Power On/Off per UART konfigurierbar\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik -> Reset nicht benötigt\n
 Wire Wire Line
 	9650 2400 12850 2400
 Wire Wire Line
@@ -302,8 +300,6 @@ Wire Wire Line
 Wire Wire Line
 	11900 1900 11900 2600
 Connection ~ 11900 1900
-Wire Wire Line
-	8050 4900 5550 4900
 Wire Wire Line
 	8050 1700 5550 1700
 Text Label 10050 2500 0    50   ~ 0
