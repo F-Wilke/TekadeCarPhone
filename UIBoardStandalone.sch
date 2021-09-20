@@ -9002,4 +9002,6 @@ Wire Wire Line
 	10500 2900 10500 3100
 Wire Wire Line
 	10500 3400 10500 3500
+Text Notes 550  8350 0    50   ~ 0
+Buttons:\nhttps://www.digikey.de/product-detail/de/KST241JLFS/401-1850-1-ND/1003967?itemSeq=376558534\nhttps://www.digikey.de/product-detail/de/c-k/KST221JLFS/401-1848-1-ND/1003965\nhttps://www.digikey.de/product-detail/de/1571634-2/450-2408-1-ND/6810844?itemSeq=376561973
 $EndSCHEMATC
