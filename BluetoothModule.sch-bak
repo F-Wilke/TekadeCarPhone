@@ -71,7 +71,7 @@ $EndComp
 Wire Wire Line
 	4100 3650 4400 3650
 Wire Wire Line
-	4400 3950 2650 3950
+	4400 3950 4350 3950
 NoConn ~ 6400 2350
 NoConn ~ 6400 2450
 Wire Wire Line
@@ -159,7 +159,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 3850 6600 3950
 Text Notes 1050 7150 0    50   ~ 0
-BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57
+BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57\n- MFB von RPi getrennt
 $Bitmap
 Pos 5150 6250
 Scale 1.000000
@@ -1429,29 +1429,29 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 60E6FDE1
-P 2650 4250
-F 0 "R1" H 2450 4200 50  0000 C CNN
-F 1 "10k/5%" H 2400 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2690 4240 50  0001 C CNN
-F 3 "~" H 2650 4250 50  0001 C CNN
-	1    2650 4250
+P 4350 4250
+F 0 "R1" H 4150 4200 50  0000 C CNN
+F 1 "10k/5%" H 4100 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4390 4240 50  0001 C CNN
+F 3 "~" H 4350 4250 50  0001 C CNN
+	1    4350 4250
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 60E7094B
-P 2650 4750
-F 0 "#PWR010" H 2650 4500 50  0001 C CNN
-F 1 "GND" H 2655 4577 50  0000 C CNN
-F 2 "" H 2650 4750 50  0001 C CNN
-F 3 "" H 2650 4750 50  0001 C CNN
-	1    2650 4750
+P 4350 4800
+F 0 "#PWR010" H 4350 4550 50  0001 C CNN
+F 1 "GND" H 4355 4627 50  0000 C CNN
+F 2 "" H 4350 4800 50  0001 C CNN
+F 3 "" H 4350 4800 50  0001 C CNN
+	1    4350 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 3950 2650 4100
+	4350 3950 4350 4100
 Wire Wire Line
-	2650 4400 2650 4750
+	4350 4400 4350 4800
 NoConn ~ 6400 3550
 NoConn ~ 6400 1850
 Text Notes -150 3150 0    50   ~ 0
@@ -1542,6 +1542,6 @@ F 3 "~" H 8450 3350 50  0001 C CNN
 	1    8450 3350
 	1    0    0    -1  
 $EndComp
-Text Notes 450  4300 0    50   ~ 0
-Pulldown wirklich benötigt? -> Designcheck abwarten
+Text Notes 4450 4500 0    50   ~ 0
+Pulldown wirklich benötigt? \n-> Designcheck abwarten
 $EndSCHEMATC
