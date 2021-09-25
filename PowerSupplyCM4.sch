@@ -6523,7 +6523,7 @@ $EndComp
 Wire Wire Line
 	7850 13450 7850 13550
 Wire Wire Line
-	5000 13450 6050 13450
+	5000 13450 5950 13450
 Wire Wire Line
 	7850 13850 7850 13950
 $Comp
@@ -6551,7 +6551,7 @@ $EndComp
 Wire Wire Line
 	7500 13450 7850 13450
 Text Notes 9100 13800 0    50   ~ 0
-Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n- Eingangsschutzbeschaltung wie bei Vbat\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
+Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt (nicht fuer TTL)\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n- Eingangsschutzbeschaltung wie bei Vbat\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
 Connection ~ 7850 13450
 Text Label 8300 13450 0    50   ~ 0
 PWR_ENABLE
@@ -6650,41 +6650,37 @@ Wire Notes Line
 	6200 13250 6200 13550
 Text Notes 4600 13400 0    50   ~ 0
 Selbsthaltung Buckconverter
-Text Notes 4800 14550 0    50   ~ 0
-Bleibt ATmega GPIO auf GND wenn er sich Vcc selbst abdreht?\nFalls nicht, Pulldown ausreichend?
 $Comp
 L Device:R R23
 U 1 1 616BB340
-P 6050 15000
-F 0 "R23" V 5843 15000 50  0000 C CNN
-F 1 "10k/1%" V 5934 15000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 15000 50  0001 C CNN
-F 3 "~" H 6050 15000 50  0001 C CNN
-	1    6050 15000
+P 5950 13700
+F 0 "R23" V 5743 13700 50  0000 C CNN
+F 1 "10k/1%" V 5834 13700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 13700 50  0001 C CNN
+F 3 "~" H 5950 13700 50  0001 C CNN
+	1    5950 13700
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0146
 U 1 1 616BB34B
-P 6050 15300
-F 0 "#PWR0146" H 6050 15050 50  0001 C CNN
-F 1 "GND" H 6055 15127 50  0000 C CNN
-F 2 "" H 6050 15300 50  0001 C CNN
-F 3 "" H 6050 15300 50  0001 C CNN
-	1    6050 15300
+P 5950 13950
+F 0 "#PWR0146" H 5950 13700 50  0001 C CNN
+F 1 "GND" H 5955 13777 50  0000 C CNN
+F 2 "" H 5950 13950 50  0001 C CNN
+F 3 "" H 5950 13950 50  0001 C CNN
+	1    5950 13950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 15300 6050 15150
+	5950 13950 5950 13850
 Wire Wire Line
 	5950 13100 6350 13100
 Wire Wire Line
-	6050 13450 6050 14850
-Connection ~ 6050 13450
+	5950 13450 5950 13550
+Connection ~ 5950 13450
 Wire Wire Line
-	6050 13450 7200 13450
-Text Notes 7050 14050 0    50   ~ 0
-Funktioniert \nnicht mit TTL
+	5950 13450 7200 13450
 Wire Wire Line
 	2550 12750 2550 12550
 Wire Wire Line

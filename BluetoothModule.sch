@@ -161,7 +161,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 3850 6600 3950
 Text Notes 1050 7150 0    50   ~ 0
-BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57
+BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57 \n BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57\n- MFB von RPi getrennt
 $Bitmap
 Pos 5150 6250
 Scale 1.000000
