@@ -619,7 +619,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1100 4850 1450
 Text Notes 5250 5400 0    50   ~ 0
-\n\nÄnderungen:\n- Alle Vcc, Gnd Pins von ATmega herausgeführt\n- Bypass Cs angepasst\n- Ferrit für AVcc hinzugefuegt\n- 3 Pin Programmierstecker\n- Pullup für Reset hinzugefügt\n- Spannungsteiler R für LDR auf 10k geändet (typ.)\n- LED Vorwiderstande (ATmega min. 100mA / Pingroup)\n   -> Vorwiderstände auf ca 10mA auslegen\n
+\n\nÄnderungen:\n- Alle Vcc, Gnd Pins von ATmega herausgeführt\n- Bypass Cs angepasst\n- Ferrit für AVcc hinzugefuegt\n- 3 Pin Programmierstecker\n- Pullup für Reset hinzugefügt\n- Spannungsteiler R für LDR auf 10k geändet (typ.)\n- LED Vorwiderstande (ATmega min. 100mA / Pingroup)\n   -> Vorwiderstände auf ca 10mA auslegen\n- KeySwitch definiert
 $Comp
 L Device:C C?
 U 1 1 60F3645F
@@ -757,17 +757,6 @@ F 1 "ATMEGA_PROG" H 5850 6900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5500 6950 50  0001 C CNN
 F 3 "~" H 5500 6950 50  0001 C CNN
 	1    5500 6950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J12
-U 1 1 60FFA72C
-P 9100 5850
-F 0 "J12" H 9180 5892 50  0000 L CNN
-F 1 "KeySwitch" H 9180 5801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9100 5850 50  0001 C CNN
-F 3 "~" H 9100 5850 50  0001 C CNN
-	1    9100 5850
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1524,4 +1513,15 @@ Wire Wire Line
 Wire Wire Line
 	3300 2350 4100 2350
 NoConn ~ 4100 2250
+$Comp
+L TeKaDe:KeySwitch SW1
+U 1 1 614FE351
+P 9300 5750
+F 0 "SW1" H 9058 6015 50  0000 C CNN
+F 1 "KeySwitch" H 9058 5924 50  0000 C CNN
+F 2 "TeKaDe:KeySwitch" H 9350 6200 50  0001 C CNN
+F 3 "" H 9250 5500 50  0001 C CNN
+	1    9300 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

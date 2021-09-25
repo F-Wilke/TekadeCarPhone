@@ -1004,7 +1004,7 @@ Wire Wire Line
 Text Label 8350 5350 2    50   ~ 0
 LED_GN
 Text Notes 1750 5600 0    50   ~ 0
-Footprint HD1077R prüfen\n\nLED Farbzuordnung prüfen -> stimmt\nTaster spezifizieren\n    -> 5,25mm Gesamthöhe, 1mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nLDR spezifizieren (bedrahtet, Montagehöhe)\n    -> bedrahtet?\nZiffernblock Backlight?? -> LED_BL1-5\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE\n- Footprint HD1077R
+Footprint HD1077R prüfen -> erledigt\n\nLED Farbzuordnung prüfen -> stimmt\nTaster spezifizieren\n    -> 5,25mm Gesamthöhe, 1mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nLDR spezifizieren (bedrahtet, Montagehöhe)\n    -> bedrahtet?\nZiffernblock Backlight?? -> LED_BL1-5\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- Footprint Konnektoren MALE\n- Footprint HD1077R
 Wire Wire Line
 	12500 4700 12500 4600
 Wire Wire Line
