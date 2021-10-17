@@ -1282,7 +1282,6 @@ Text Notes 2600 1350 0    50   ~ 0
 The point-to-point nature of I2S \ntransmission eliminates the need \nfor I2C’s pullup resistors
 Text Notes 3400 7600 0    50   ~ 0
 For the I2C, I2S, and UART groups, each respective group's traces should run parallel\nwith as wide spacing as possible and be isolated from other groups with GND copper\nfoil. If isolation is not possible due to limited space, please at least increase the \ninterval between traces belonging to different groups. 
-NoConn ~ 4400 1850
 Text Notes 7000 6350 0    50   ~ 0
 Wird das Modul als I2S Master betrieben, kann dessen MCLK Ausgang zur Frequenzversorgung \ndes Slaves verwendet werden. Dies ist hier aber nicht der Fall, daher bleibt MCLK unbeschalten.\nvgl. DS 6.5. Vermutlich könnte das Modul den MAX98089 mit dem Takt versorgen, \nso dass der Oszillator für MAX98 entfallen kann\n\nThe BM83 serves as a master to provide clock and frame synchronous signals for the master/slave data\nsynchronizations, as illustrated in the following figures. The MCLK is optional and is not required if the\nexternal I2S device can drive its system clock on its own.\n\nMaster CLK is not part of the I2S standard, but is commonly included for synchronizing \nthe internal operation of the analog/digital converters.\nQuelle: https://en.wikipedia.org/wiki/I%C2%B2S
 $Comp
@@ -1547,4 +1546,8 @@ F 3 "~" H 8450 3350 50  0001 C CNN
 	1    8450 3350
 	1    0    0    -1  
 $EndComp
+Text HLabel 1950 1850 0    50   Output ~ 0
+MCLK
+Wire Wire Line
+	1950 1850 4400 1850
 $EndSCHEMATC

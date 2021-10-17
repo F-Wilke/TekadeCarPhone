@@ -189,10 +189,6 @@ F 3 "" H 4400 4950 50  0001 C CNN
 	1    4400 4950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 2450 4550 2450
-Text Label 3650 2450 2    50   ~ 0
-MAX_MCLK
 NoConn ~ 4550 3450
 NoConn ~ 4550 3650
 NoConn ~ 4550 3950
@@ -1279,112 +1275,6 @@ F 3 "~" H 3200 7000 50  0001 C CNN
 	1    3200 7000
 	1    0    0    -1  
 $EndComp
-Text Notes 4800 6700 0    50   ~ 0
-Clock Generator MCLK\n12.2880MHz für 48kHz / 11.2896 für 44,1kHz
-$Comp
-L Device:C C27
-U 1 1 61268F71
-P 4900 7200
-F 0 "C27" V 5150 7150 50  0000 L CNN
-F 1 "100n/16V/X7R" V 5050 6950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4938 7050 50  0001 C CNN
-F 3 "~" H 4900 7200 50  0001 C CNN
-	1    4900 7200
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4750 7750 4750 6500
-Wire Notes Line
-	6900 7750 4750 7750
-Wire Notes Line
-	6900 6500 6900 7750
-Wire Notes Line
-	4750 6500 6900 6500
-Text Notes 5650 7400 0    50   ~ 0
-12.2880MHz
-Wire Wire Line
-	4900 7350 4900 7500
-Wire Wire Line
-	4900 6950 4900 7050
-$Comp
-L power:GND #PWR057
-U 1 1 613F5D34
-P 4900 7500
-F 0 "#PWR057" H 4900 7250 50  0001 C CNN
-F 1 "GND" H 4905 7327 50  0000 C CNN
-F 2 "" H 4900 7500 50  0001 C CNN
-F 3 "" H 4900 7500 50  0001 C CNN
-	1    4900 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR056
-U 1 1 613F5D2E
-P 4900 6950
-F 0 "#PWR056" H 4900 6800 50  0001 C CNN
-F 1 "+3V3" H 4915 7123 50  0000 C CNN
-F 2 "" H 4900 6950 50  0001 C CNN
-F 3 "" H 4900 6950 50  0001 C CNN
-	1    4900 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR059
-U 1 1 613206C7
-P 6450 7500
-F 0 "#PWR059" H 6450 7250 50  0001 C CNN
-F 1 "GND" H 6455 7327 50  0000 C CNN
-F 2 "" H 6450 7500 50  0001 C CNN
-F 3 "" H 6450 7500 50  0001 C CNN
-	1    6450 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L TeKaDe:WE_830208220101 Y2
-U 1 1 60E6079E
-P 4700 7100
-F 0 "Y2" H 5900 7350 50  0000 C CNN
-F 1 "830208220101" H 5900 7250 50  0000 C CNN
-F 2 "TeKaDe:WE_IQXO-791" H 6250 7200 50  0001 L CNN
-F 3 "https://www.we-online.de/katalog/datasheet/830208220101.pdf" H 6250 7100 50  0001 L CNN
-F 4 "Standard 2.5 x 2.0 oscillator in a ceramic package with a hermetically sealed metal lid." H 6250 7000 50  0001 L CNN "Description"
-F 5 "1" H 6250 6900 50  0001 L CNN "Height"
-F 6 "" H 6250 6800 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 6250 6700 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Wurth Elektronik" H 6250 6600 50  0001 L CNN "Manufacturer_Name"
-F 9 "830208220101" H 6250 6500 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "sufficient" H 4700 7100 50  0001 C CNN "Availability"
-	1    4700 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 7200 6400 7200
-Wire Wire Line
-	6450 7500 6450 7200
-Wire Wire Line
-	6400 7100 6450 7100
-Text Label 6450 7100 0    50   ~ 0
-MAX_MCLK
-Wire Wire Line
-	5250 7100 5300 7100
-Connection ~ 5250 7100
-Wire Wire Line
-	5250 7200 5300 7200
-Wire Wire Line
-	5250 7100 5250 7200
-Wire Wire Line
-	5250 6950 5250 7100
-$Comp
-L power:+3V3 #PWR058
-U 1 1 60E6077F
-P 5250 6950
-F 0 "#PWR058" H 5250 6800 50  0001 C CNN
-F 1 "+3V3" H 5265 7123 50  0000 C CNN
-F 2 "" H 5250 6950 50  0001 C CNN
-F 3 "" H 5250 6950 50  0001 C CNN
-	1    5250 6950
-	1    0    0    -1  
-$EndComp
 Text HLabel 10150 2550 2    50   BiDi ~ 0
 I2C_SDA
 Text HLabel 10150 2650 2    50   Input ~ 0
@@ -1411,4 +1301,8 @@ Text HLabel 1700 2150 0    50   BiDi ~ 0
 I2S2_SD_CLK
 Text HLabel 1700 2350 0    50   BiDi ~ 0
 I2S2_SD_WS
+Text HLabel 1700 2450 0    50   Input ~ 0
+MCLK
+Wire Wire Line
+	4550 2450 1700 2450
 $EndSCHEMATC
