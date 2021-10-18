@@ -1305,4 +1305,6 @@ Text HLabel 1700 2450 0    50   Input ~ 0
 MCLK
 Wire Wire Line
 	4550 2450 1700 2450
+Text Notes 5000 6400 0    50   ~ 0
+Oszillator@12.28MHz entfernt, \nda BM83-CODEC, von dem MCLK ausgeht, \nsich als dauerhaft aktiv konfigurieren lässt
 $EndSCHEMATC
