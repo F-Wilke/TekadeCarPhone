@@ -1,4 +1,4 @@
-19463895989672444
+19470433923944444
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -77847,12 +77847,33 @@ Raspberry Pi 4 Compute Module
 200
 200
 TeKaDe
+RoHS-Logo_3mm_SilkScreen
+Restriction of Hazardous Substances Directive Logo
+Logo RoHS
+0
+0
+0
+TeKaDe
+RoHS-Logo_4mm_SilkScreen
+Restriction of Hazardous Substances Directive Logo
+Logo RoHS
+0
+0
+0
+TeKaDe
 SOT505-1
 
 
 0
 8
 8
+TeKaDe
+SW_Push_CK_KST2x1G
+CK components KSC6 tactile switch https://www.ckswitches.com/media/1972/ksc6.pdf
+tactile switch ksc6
+0
+4
+2
 TeKaDe
 TI-PWQFN-N16-1EP
 WQFN, 16 Pin (https://www.onsemi.com/pub/Collateral/FUSB307B-D.PDF#page=56), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -77888,6 +77909,13 @@ U-DFN3030-10
 0
 11
 11
+TeKaDe
+VIA_0.6mm
+
+
+0
+1
+1
 TeKaDe
 WE_IQXO-791
 

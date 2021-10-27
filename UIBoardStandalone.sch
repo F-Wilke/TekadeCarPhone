@@ -1981,6 +1981,58 @@ F 3 "~" H 1550 10150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:LED D5
+U 1 1 61273E6B
+P 4700 4250
+F 0 "D5" V 4647 4330 50  0000 L CNN
+F 1 "LED_BL1" V 4738 4330 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 4700 4250 50  0001 C CNN
+F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 4700 4250 50  0001 C CNN
+F 4 "10mm" V 4700 4250 50  0001 C CNN "Montagehöhe"
+F 5 "1516-QBL7IW60D-WW-ND" V 4700 4250 50  0001 C CNN "Digikey Part Number"
+	1    4700 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 612B359B
+P 5200 4250
+F 0 "D6" V 5147 4330 50  0000 L CNN
+F 1 "LED_BL2" V 5238 4330 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 5200 4250 50  0001 C CNN
+F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 5200 4250 50  0001 C CNN
+F 4 "10mm" V 5200 4250 50  0001 C CNN "Montagehöhe"
+F 5 "1516-QBL7IW60D-WW-ND" V 5200 4250 50  0001 C CNN "Digikey Part Number"
+	1    5200 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 612F1FBB
+P 5700 4250
+F 0 "D7" V 5647 4330 50  0000 L CNN
+F 1 "LED_BL3" V 5738 4330 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 5700 4250 50  0001 C CNN
+F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 5700 4250 50  0001 C CNN
+F 4 "10mm" V 5700 4250 50  0001 C CNN "Montagehöhe"
+F 5 "1516-QBL7IW60D-WW-ND" V 5700 4250 50  0001 C CNN "Digikey Part Number"
+	1    5700 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 61330C4E
+P 6200 4250
+F 0 "D8" V 6147 4330 50  0000 L CNN
+F 1 "LED_BL4" V 6238 4330 50  0000 L CNN
+F 2 "LED_THT:LED_D3.0mm" H 6200 4250 50  0001 C CNN
+F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 6200 4250 50  0001 C CNN
+F 4 "10mm" V 6200 4250 50  0001 C CNN "Montagehöhe"
+F 5 "1516-QBL7IW60D-WW-ND" V 6200 4250 50  0001 C CNN "Digikey Part Number"
+	1    6200 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
 L Device:LED D9
 U 1 1 6136FE41
 P 6700 4250
@@ -2211,56 +2263,4 @@ Text Notes 3450 3500 0    50   ~ 0
 Backlight Schaltbar
 Text Notes 12550 3850 0    50   ~ 0
 KONSTANT\n
-$Comp
-L Device:LED D8
-U 1 1 6178E674
-P 6200 4250
-F 0 "D8" V 6147 4330 50  0000 L CNN
-F 1 "LED_BL4" V 6238 4330 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" H 6200 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 6200 4250 50  0001 C CNN
-F 4 "10mm" V 6200 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 6200 4250 50  0001 C CNN "Digikey Part Number"
-	1    6200 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D7
-U 1 1 6178EE25
-P 5700 4250
-F 0 "D7" V 5647 4330 50  0000 L CNN
-F 1 "LED_BL3" V 5738 4330 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" H 5700 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 5700 4250 50  0001 C CNN
-F 4 "10mm" V 5700 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 5700 4250 50  0001 C CNN "Digikey Part Number"
-	1    5700 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D6
-U 1 1 6178F54F
-P 5200 4250
-F 0 "D6" V 5147 4330 50  0000 L CNN
-F 1 "LED_BL2" V 5238 4330 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" H 5200 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 5200 4250 50  0001 C CNN
-F 4 "10mm" V 5200 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 5200 4250 50  0001 C CNN "Digikey Part Number"
-	1    5200 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D5
-U 1 1 6178FF52
-P 4700 4250
-F 0 "D5" V 4647 4330 50  0000 L CNN
-F 1 "LED_BL1" V 4738 4330 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm" H 4700 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 4700 4250 50  0001 C CNN
-F 4 "10mm" V 4700 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 4700 4250 50  0001 C CNN "Digikey Part Number"
-	1    4700 4250
-	0    -1   -1   0   
-$EndComp
 $EndSCHEMATC
