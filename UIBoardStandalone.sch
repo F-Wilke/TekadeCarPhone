@@ -539,8 +539,8 @@ P 10750 4250
 F 0 "D1" V 10697 4330 50  0000 L CNN
 F 1 "LED_RD" V 10788 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm" H 10750 4250 50  0001 C CNN
-F 3 "https://www.aopled.com/AOP_PDFs/L513SRD-B.pdf" H 10750 4250 50  0001 C CNN
-F 4 "9mm" V 10750 4250 50  0001 C CNN "Montagehöhe"
+F 3 "" H 10750 4250 50  0001 C CNN
+F 4 "9mm" V 10750 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    10750 4250
 	0    -1   -1   0   
 $EndComp
@@ -551,8 +551,8 @@ P 10250 4250
 F 0 "D2" V 10197 4330 50  0000 L CNN
 F 1 "LED_YL" V 10288 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm" H 10250 4250 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTL-4273.pdf" H 10250 4250 50  0001 C CNN
-F 4 "9mm" V 10250 4250 50  0001 C CNN "Montagehöhe"
+F 3 "" H 10250 4250 50  0001 C CNN
+F 4 "9mm" V 10250 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    10250 4250
 	0    -1   -1   0   
 $EndComp
@@ -563,8 +563,8 @@ P 9600 4250
 F 0 "D3" V 9547 4330 50  0000 L CNN
 F 1 "LED_GN" V 9638 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D5.0mm" H 9600 4250 50  0001 C CNN
-F 3 "https://www.aopled.com/AOP_PDFs/L513GD-B.pdf" H 9600 4250 50  0001 C CNN
-F 4 "9mm" V 9600 4250 50  0001 C CNN "Montagehöhe"
+F 3 "" H 9600 4250 50  0001 C CNN
+F 4 "9mm" V 9600 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    9600 4250
 	0    -1   -1   0   
 $EndComp
@@ -615,8 +615,8 @@ P 11250 4250
 F 0 "D4" V 11197 4330 50  0000 L CNN
 F 1 "LED_ON" V 11288 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 11250 4250 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTL-1CHYE.pdf" H 11250 4250 50  0001 C CNN
-F 4 "8mm" V 11250 4250 50  0001 C CNN "Montagehöhe"
+F 3 "" H 11250 4250 50  0001 C CNN
+F 4 "8mm" V 11250 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    11250 4250
 	0    -1   -1   0   
 $EndComp
@@ -633,8 +633,8 @@ P 11900 4300
 F 0 "R1" H 11970 4346 50  0000 L CNN
 F 1 "LDR" H 11970 4255 50  0000 L CNN
 F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 11950 4050 50  0001 L CNN
-F 3 "~" H 11900 4250 50  0001 C CNN
-F 4 "7mm" H 11900 4300 50  0001 C CNN "Montagehöhe"
+F 3 "" H 11900 4250 50  0001 C CNN
+F 4 "7mm" H 11900 4300 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    11900 4300
 	-1   0    0    1   
 $EndComp
@@ -992,7 +992,7 @@ Wire Wire Line
 Text Label 9450 4550 2    50   ~ 0
 LED_GN
 Text Notes 1050 8550 0    50   ~ 0
-TODO FREDRIK:\n- Bauteil "Schloss" definieren mit Abmessungen und el. Anschlüssen -> erledigt\n- Backlight LED spezifizieren, damit Vorwiderstand ausgelegt werden kann\n- LDR spezifizieren\n\nERLEDIGT:\nLED Farbzuordnung prüfen\n    -> stimmt\nTaster spezifizieren\n    -> 5mm Gesamthöhe, 0,5mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\n- Button Footprint machen\n- Footprint HD1077R prüfen\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- OnSwitchLedAnode ursprünglichen Stand wiederhergestellt\n- Footprint Konnektoren MALE\n- Footprint HD1077R\n- C Werte des Keyboard ICs angepasst\n- Ziffernblock Backlight hinzugefügt -> LED_BL1-5
+TODO\n- LDR spezifizieren\n- RoHS klären\n\nERLEDIGT:\nLED Farbzuordnung prüfen\nTaster spezifizieren\n    -> 5mm Gesamthöhe, 0,5mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\n- Button Footprint machen\n- Footprint HD1077R prüfen\n- Bauteil "Schloss" definieren mit Abmessungen und el. Anschlüssen\n- Backlight LED spezifizieren, damit Vorwiderstand ausgelegt werden kann\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- OnSwitchLedAnode ursprünglichen Stand wiederhergestellt\n- Footprint Konnektoren MALE\n- Footprint HD1077R\n- C Werte des Keyboard ICs angepasst\n- Ziffernblock Backlight hinzugefügt -> LED_BL1-5
 Wire Wire Line
 	13650 4700 13900 4700
 Connection ~ 3750 1100
@@ -1987,9 +1987,8 @@ P 4700 4250
 F 0 "D5" V 4647 4330 50  0000 L CNN
 F 1 "LED_BL1" V 4738 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 4700 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 4700 4250 50  0001 C CNN
-F 4 "10mm" V 4700 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 4700 4250 50  0001 C CNN "Digikey Part Number"
+F 3 "" H 4700 4250 50  0001 C CNN
+F 4 "10mm" V 4700 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    4700 4250
 	0    -1   -1   0   
 $EndComp
@@ -2000,9 +1999,8 @@ P 5200 4250
 F 0 "D6" V 5147 4330 50  0000 L CNN
 F 1 "LED_BL2" V 5238 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 5200 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 5200 4250 50  0001 C CNN
-F 4 "10mm" V 5200 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 5200 4250 50  0001 C CNN "Digikey Part Number"
+F 3 "" H 5200 4250 50  0001 C CNN
+F 4 "10mm" V 5200 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    5200 4250
 	0    -1   -1   0   
 $EndComp
@@ -2013,9 +2011,8 @@ P 5700 4250
 F 0 "D7" V 5647 4330 50  0000 L CNN
 F 1 "LED_BL3" V 5738 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 5700 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 5700 4250 50  0001 C CNN
-F 4 "10mm" V 5700 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 5700 4250 50  0001 C CNN "Digikey Part Number"
+F 3 "" H 5700 4250 50  0001 C CNN
+F 4 "10mm" V 5700 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    5700 4250
 	0    -1   -1   0   
 $EndComp
@@ -2026,9 +2023,8 @@ P 6200 4250
 F 0 "D8" V 6147 4330 50  0000 L CNN
 F 1 "LED_BL4" V 6238 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 6200 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 6200 4250 50  0001 C CNN
-F 4 "10mm" V 6200 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 6200 4250 50  0001 C CNN "Digikey Part Number"
+F 3 "" H 6200 4250 50  0001 C CNN
+F 4 "10mm" V 6200 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    6200 4250
 	0    -1   -1   0   
 $EndComp
@@ -2039,9 +2035,8 @@ P 6700 4250
 F 0 "D9" V 6647 4330 50  0000 L CNN
 F 1 "LED_BL5" V 6738 4330 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 6700 4250 50  0001 C CNN
-F 3 "http://www.qt-brightek.com/datasheet/QBL7IW60D-XX.pdf" H 6700 4250 50  0001 C CNN
-F 4 "10mm" V 6700 4250 50  0001 C CNN "Montagehöhe"
-F 5 "1516-QBL7IW60D-WW-ND" V 6700 4250 50  0001 C CNN "Digikey Part Number"
+F 3 "" H 6700 4250 50  0001 C CNN
+F 4 "10mm" V 6700 4250 50  0001 C CNN "Montagehoehe Lichtes Mass"
 	1    6700 4250
 	0    -1   -1   0   
 $EndComp
@@ -2115,7 +2110,7 @@ L Device:R R2
 U 1 1 616B9735
 P 4700 3850
 F 0 "R2" H 4770 3896 50  0000 L CNN
-F 1 "tbd" H 4770 3805 50  0000 L CNN
+F 1 "210R/5%" H 4770 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 3850 50  0001 C CNN
 F 3 "~" H 4700 3850 50  0001 C CNN
 	1    4700 3850
@@ -2152,7 +2147,7 @@ L Device:R R3
 U 1 1 6159C5ED
 P 5200 3850
 F 0 "R3" H 5270 3896 50  0000 L CNN
-F 1 "tbd" H 5270 3805 50  0000 L CNN
+F 1 "210R/5%" H 5270 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 3850 50  0001 C CNN
 F 3 "~" H 5200 3850 50  0001 C CNN
 	1    5200 3850
@@ -2163,7 +2158,7 @@ L Device:R R4
 U 1 1 6159C9CB
 P 5700 3850
 F 0 "R4" H 5770 3896 50  0000 L CNN
-F 1 "tbd" H 5770 3805 50  0000 L CNN
+F 1 "210R/5%" H 5770 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5630 3850 50  0001 C CNN
 F 3 "~" H 5700 3850 50  0001 C CNN
 	1    5700 3850
@@ -2174,7 +2169,7 @@ L Device:R R5
 U 1 1 6159CC9C
 P 6200 3850
 F 0 "R5" H 6270 3896 50  0000 L CNN
-F 1 "tbd" H 6270 3805 50  0000 L CNN
+F 1 "210R/5%" H 6270 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6130 3850 50  0001 C CNN
 F 3 "~" H 6200 3850 50  0001 C CNN
 	1    6200 3850
@@ -2187,7 +2182,7 @@ L Device:R R6
 U 1 1 6159DAE5
 P 6700 3850
 F 0 "R6" H 6770 3896 50  0000 L CNN
-F 1 "tbd" H 6770 3805 50  0000 L CNN
+F 1 "210R/5%" H 6770 3805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6630 3850 50  0001 C CNN
 F 3 "~" H 6700 3850 50  0001 C CNN
 	1    6700 3850
