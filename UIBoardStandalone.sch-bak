@@ -992,7 +992,7 @@ Wire Wire Line
 Text Label 9450 4550 2    50   ~ 0
 LED_GN
 Text Notes 1050 8550 0    50   ~ 0
-TODO FREDRIK:\n- Bauteil "Schloss" definieren mit Abmessungen und el. Anschlüssen -> erledigt\n- Backlight LED spezifizieren, damit Vorwiderstand ausgelegt werden kann\n- LDR spezifizieren\n\nERLEDIGT:\nLED Farbzuordnung prüfen\n    -> stimmt\nTaster spezifizieren\n    -> 5mm Gesamthöhe, 0,5mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\n- Button Footprint machen\n- Footprint HD1077R prüfen\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- OnSwitchLedAnode ursprünglichen Stand wiederhergestellt\n- Footprint Konnektoren MALE\n- Footprint HD1077R\n- C Werte des Keyboard ICs angepasst\n- Ziffernblock Backlight hinzugefügt -> LED_BL1-5
+TODO\n- LDR spezifizieren\n- RoHS klären\n\nERLEDIGT:\nLED Farbzuordnung prüfen\nTaster spezifizieren\n    -> 5mm Gesamthöhe, 0,5mm Tastenhub\nLEDs spezifizieren (3 oder 5mm bedrahtet, Montagehöhe)\n    -> Montagehöhe jeweils als Field hinzugefügt\nSignalStrength / Keyswitch connectoren?\n    -> Baseboard\n- Button Footprint machen\n- Footprint HD1077R prüfen\n- Bauteil "Schloss" definieren mit Abmessungen und el. Anschlüssen\n- Backlight LED spezifizieren, damit Vorwiderstand ausgelegt werden kann\n\nÄnderungen:\n- OnSwitchLedAnode durch 5V ersetzt\n- OnSwitchLedAnode ursprünglichen Stand wiederhergestellt\n- Footprint Konnektoren MALE\n- Footprint HD1077R\n- C Werte des Keyboard ICs angepasst\n- Ziffernblock Backlight hinzugefügt -> LED_BL1-5
 Wire Wire Line
 	13650 4700 13900 4700
 Connection ~ 3750 1100

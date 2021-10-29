@@ -92,19 +92,6 @@ F 3 "" H 9450 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9450 3850 9450 4200
-$Comp
-L power:+5V #PWR?
-U 1 1 618C0D04
-P 9100 3950
-AR Path="/618C0D04" Ref="#PWR?"  Part="1" 
-AR Path="/60F87146/618C0D04" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 9100 3800 50  0001 C CNN
-F 1 "+5V" H 9115 4123 50  0000 C CNN
-F 2 "" H 9100 3950 50  0001 C CNN
-F 3 "" H 9100 3950 50  0001 C CNN
-	1    9100 3950
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	10000 2550 10150 2550
 Wire Wire Line
@@ -154,7 +141,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 3850 9450 3850
 Wire Wire Line
-	9100 3950 9500 3950
+	9000 3950 9500 3950
 Wire Wire Line
 	3350 3800 3350 4500
 Wire Wire Line
@@ -955,4 +942,6 @@ Wire Notes Line
 	1400 2550 1400 950 
 Text Notes 1400 900  0    50   ~ 0
 RC Filter for PWM
+Text GLabel 9000 3950 0    50   Input ~ 0
+5V_BL_SUPPLY
 $EndSCHEMATC
