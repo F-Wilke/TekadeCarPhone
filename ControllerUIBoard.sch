@@ -462,62 +462,50 @@ BrightnessPWM
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J?
 U 1 1 6205CD91
-P 9000 4150
+P 9350 4050
 AR Path="/6205CD91" Ref="J?"  Part="1" 
 AR Path="/60F87146/6205CD91" Ref="J?"  Part="1" 
 AR Path="/60F18E7A/6205CD91" Ref="J10"  Part="1" 
-F 0 "J10" H 9050 4667 50  0000 C CNN
-F 1 "UIBoardCON1" H 9050 4576 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 9000 4150 50  0001 C CNN
-F 3 "~" H 9000 4150 50  0001 C CNN
-	1    9000 4150
+F 0 "J10" H 9400 4567 50  0000 C CNN
+F 1 "UIBoardCON1" H 9400 4476 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 9350 4050 50  0001 C CNN
+F 3 "~" H 9350 4050 50  0001 C CNN
+	1    9350 4050
 	1    0    0    -1  
 $EndComp
-Text Label 8550 4150 2    50   ~ 0
-DataEncoderDataAvailable
-Text Label 8550 4250 2    50   ~ 0
-DataEncoderDataOutC
-Text Label 8550 4350 2    50   ~ 0
-DataEncoderDataOutA
-Text Label 8550 4550 2    50   ~ 0
-DataEncoderDataOutE
-Text Label 9550 4550 0    50   ~ 0
+Text Label 8900 4450 2    50   ~ 0
 DataEncoderDataOutD
-Text Label 9550 4450 0    50   ~ 0
+Text Label 8900 4350 2    50   ~ 0
 OnSwitchLedAnode
-Text Label 9550 4250 0    50   ~ 0
+Text Label 8900 4150 2    50   ~ 0
 DataEncoderDataOutB
 Text Label 9600 5100 0    50   ~ 0
 Signal_Strength_Dial_+
-Text Label 8550 3850 2    50   ~ 0
-LDR
-Text Label 8550 3950 2    50   ~ 0
-LED_GN
-Text Label 9550 4150 0    50   ~ 0
+Text Label 8900 4050 2    50   ~ 0
 DataEncoderOutputEnable
-Text Label 9550 4050 0    50   ~ 0
+Text Label 8900 3950 2    50   ~ 0
 ButtonA2GND
-Text Label 9550 3950 0    50   ~ 0
+Text Label 8900 3850 2    50   ~ 0
 LED_RD
-Text Label 9550 3850 0    50   ~ 0
+Text Label 8900 3750 2    50   ~ 0
 LED_YL
 $Comp
 L power:+5V #PWR?
 U 1 1 6205CDAB
-P 10650 3450
+P 7800 3350
 AR Path="/6205CDAB" Ref="#PWR?"  Part="1" 
 AR Path="/60F87146/6205CDAB" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/6205CDAB" Ref="#PWR0189"  Part="1" 
-F 0 "#PWR0189" H 10650 3300 50  0001 C CNN
-F 1 "+5V" H 10665 3623 50  0000 C CNN
-F 2 "" H 10650 3450 50  0001 C CNN
-F 3 "" H 10650 3450 50  0001 C CNN
-	1    10650 3450
-	1    0    0    -1  
+F 0 "#PWR0189" H 7800 3200 50  0001 C CNN
+F 1 "+5V" H 7815 3523 50  0000 C CNN
+F 2 "" H 7800 3350 50  0001 C CNN
+F 3 "" H 7800 3350 50  0001 C CNN
+	1    7800 3350
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10650 4350 10650 3450
-Text Notes 8650 3550 0    50   ~ 0
+	7800 4250 7800 3350
+Text Notes 9000 3450 0    50   ~ 0
 UIBoard interfacing\n
 Wire Wire Line
 	9600 5850 9300 5850
@@ -528,34 +516,33 @@ Wire Wire Line
 Wire Wire Line
 	9600 5950 9300 5950
 Wire Wire Line
-	8800 3850 8550 3850
+	9650 3750 9900 3750
 Wire Wire Line
-	8550 3950 8800 3950
+	9900 3850 9650 3850
 Wire Wire Line
-	8800 4150 8550 4150
+	9650 4050 9900 4050
 Wire Wire Line
-	8550 4250 8800 4250
+	9900 4150 9650 4150
 Wire Wire Line
-	8800 4350 8550 4350
+	9650 4250 9900 4250
 Wire Wire Line
-	8800 4550 8550 4550
+	9650 4450 9900 4450
 Wire Wire Line
-	9300 4550 9550 4550
+	9150 4450 8900 4450
 Wire Wire Line
-	9550 4250 9300 4250
+	8900 4150 9150 4150
 Wire Wire Line
-	9300 4150 9550 4150
+	9150 4050 8900 4050
 Wire Wire Line
-	9550 4050 9300 4050
+	8900 3950 9150 3950
 Wire Wire Line
-	9300 3950 9550 3950
+	9150 3850 8900 3850
 Wire Wire Line
-	9550 3850 9300 3850
-NoConn ~ 8800 4050
+	8900 3750 9150 3750
 Wire Wire Line
 	9300 5100 9600 5100
 Wire Wire Line
-	9300 4350 10650 4350
+	9150 4250 7800 4250
 $Comp
 L power:GND #PWR?
 U 1 1 6205CDD3
@@ -570,10 +557,8 @@ F 3 "" H 9600 6050 50  0001 C CNN
 	1    9600 6050
 	1    0    0    -1  
 $EndComp
-Text Label 8550 4450 2    50   ~ 0
-LED_ON
 Wire Wire Line
-	8550 4450 8800 4450
+	9900 4350 9650 4350
 Text Label 9600 5750 0    50   ~ 0
 KeySwitchA
 Text Label 9600 5850 0    50   ~ 0
@@ -971,15 +956,15 @@ $EndComp
 Text Notes 8200 4800 0    50   ~ 0
 J10 Pin13/14 hier ist nur die LED auf UI Board, sonst nichts.\nAnsteuerung invertiert via Pin13, Pin14 auf konstante 5V
 Wire Wire Line
-	10650 4450 10650 4350
+	7800 4350 7800 4250
 Wire Wire Line
-	9300 4450 10650 4450
-Connection ~ 10650 4350
+	9150 4350 7800 4350
+Connection ~ 7800 4250
 $Comp
-L Device:Q_PMOS_GSD Q?
+L Device:Q_PMOS_GSD Q5
 U 1 1 617E35E3
 P 10000 1750
-F 0 "Q?" H 10205 1796 50  0000 L CNN
+F 0 "Q5" H 10205 1796 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 10205 1705 50  0000 L CNN
 F 2 "" H 10200 1850 50  0001 C CNN
 F 3 "~" H 10000 1750 50  0001 C CNN
@@ -994,8 +979,8 @@ U 1 1 617EFAAD
 P 10100 1400
 AR Path="/617EFAAD" Ref="#PWR?"  Part="1" 
 AR Path="/60F87146/617EFAAD" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/617EFAAD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10100 1250 50  0001 C CNN
+AR Path="/60F18E7A/617EFAAD" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 10100 1250 50  0001 C CNN
 F 1 "+5V" H 10115 1573 50  0000 C CNN
 F 2 "" H 10100 1400 50  0001 C CNN
 F 3 "" H 10100 1400 50  0001 C CNN
@@ -1003,10 +988,10 @@ F 3 "" H 10100 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R48
 U 1 1 617F3C36
 P 9650 2050
-F 0 "R?" H 9720 2096 50  0000 L CNN
+F 0 "R48" H 9720 2096 50  0000 L CNN
 F 1 "47k/5%" H 9720 2005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9580 2050 50  0001 C CNN
 F 3 "~" H 9650 2050 50  0001 C CNN
@@ -1019,8 +1004,8 @@ U 1 1 617F448C
 P 9650 2450
 AR Path="/617F448C" Ref="#PWR?"  Part="1" 
 AR Path="/60F87146/617F448C" Ref="#PWR?"  Part="1" 
-AR Path="/60F18E7A/617F448C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9650 2200 50  0001 C CNN
+AR Path="/60F18E7A/617F448C" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 9650 2200 50  0001 C CNN
 F 1 "GND" H 9655 2277 50  0000 C CNN
 F 2 "" H 9650 2450 50  0001 C CNN
 F 3 "" H 9650 2450 50  0001 C CNN
@@ -1037,10 +1022,10 @@ Wire Wire Line
 Wire Wire Line
 	9650 2200 9650 2450
 $Comp
-L Device:R R?
+L Device:R R47
 U 1 1 61801558
 P 9250 1750
-F 0 "R?" V 9043 1750 50  0000 C CNN
+F 0 "R47" V 9043 1750 50  0000 C CNN
 F 1 "100R/1%" V 9134 1750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9180 1750 50  0001 C CNN
 F 3 "~" H 9250 1750 50  0001 C CNN
@@ -1059,4 +1044,19 @@ Wire Wire Line
 	8800 1750 9100 1750
 Text HLabel 10450 2100 2    50   Output ~ 0
 5V_BL_SUPPLY
+Text Label 9900 4350 0    50   ~ 0
+LED_ON
+Text Label 9900 3850 0    50   ~ 0
+LED_GN
+Text Label 9900 3750 0    50   ~ 0
+LDR
+Text Label 9900 4450 0    50   ~ 0
+DataEncoderDataOutE
+Text Label 9900 4250 0    50   ~ 0
+DataEncoderDataOutA
+Text Label 9900 4150 0    50   ~ 0
+DataEncoderDataOutC
+Text Label 9900 4050 0    50   ~ 0
+DataEncoderDataAvailable
+NoConn ~ 9650 3950
 $EndSCHEMATC

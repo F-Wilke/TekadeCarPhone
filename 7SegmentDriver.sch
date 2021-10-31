@@ -13,51 +13,48 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 10400 3550 0    50   ~ 0
+Text Label 9100 3550 2    50   ~ 0
 CathodeDigit2
-Text Label 10400 3450 0    50   ~ 0
+Text Label 9100 3450 2    50   ~ 0
 CathodeDigitB
-Text Label 10400 3350 0    50   ~ 0
+Text Label 9100 3350 2    50   ~ 0
 CathodeDigit13
-Text Label 10400 3250 0    50   ~ 0
+Text Label 9100 3250 2    50   ~ 0
 CathodeDigit11
-Text Label 10400 3050 0    50   ~ 0
+Text Label 9100 3050 2    50   ~ 0
 CathodeDigit7
-Text Label 10150 2850 0    50   ~ 0
+Text Label 9350 2850 2    50   ~ 0
 SegmentCAnode
-Text Label 10150 2750 0    50   ~ 0
+Text Label 9350 2750 2    50   ~ 0
 SegmentDAnode
-Text Label 10150 2650 0    50   ~ 0
+Text Label 9350 2650 2    50   ~ 0
 SegmentAAnode
-Text Label 10150 2550 0    50   ~ 0
+Text Label 9350 2550 2    50   ~ 0
 SegmentEAnode
-Text Label 9200 2550 2    50   ~ 0
+Text Label 10300 2550 0    50   ~ 0
 SegmentFAnode
-Text Label 9200 2650 2    50   ~ 0
+Text Label 10300 2650 0    50   ~ 0
 SegmentBAnode
-Text Label 9200 2750 2    50   ~ 0
+Text Label 10300 2750 0    50   ~ 0
 SegmentGAnode
-Text Label 9000 2950 2    50   ~ 0
+Text Label 10500 2950 0    50   ~ 0
 CathodeDigit14
-Text Label 9000 3050 2    50   ~ 0
+Text Label 10500 3050 0    50   ~ 0
 CathodeDigit8
-Text Label 9000 3150 2    50   ~ 0
+Text Label 10500 3150 0    50   ~ 0
 CathodeDigit10
-Text Label 9000 3250 2    50   ~ 0
+Text Label 10500 3250 0    50   ~ 0
 CathodeDigit12
-Text Label 9000 3350 2    50   ~ 0
+Text Label 10500 3350 0    50   ~ 0
 CathodeDigit6
-Text Label 9000 3450 2    50   ~ 0
+Text Label 10500 3450 0    50   ~ 0
 CathodeDigitA
-Text Label 9000 3550 2    50   ~ 0
+Text Label 10500 3550 0    50   ~ 0
 CathodeDigit1
-Text Label 9000 3650 2    50   ~ 0
+Text Label 10500 3650 0    50   ~ 0
 CathodeDigit3
-Text Label 9000 3750 2    50   ~ 0
+Text Label 10500 3750 0    50   ~ 0
 CathodeDigit5
-NoConn ~ 10000 3750
-NoConn ~ 10000 3850
-NoConn ~ 10000 3950
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J?
 U 1 1 618C0CEF
@@ -71,77 +68,75 @@ F 3 "~" H 9700 3250 50  0001 C CNN
 	1    9700 3250
 	1    0    0    -1  
 $EndComp
-Text Label 10400 3650 0    50   ~ 0
+Text Label 9100 3650 2    50   ~ 0
 CathodeDigit4
-Text Label 10400 3150 0    50   ~ 0
+Text Label 9100 3150 2    50   ~ 0
 CathodeDigit9
-NoConn ~ 10000 2950
-NoConn ~ 9500 2850
 $Comp
 L power:GND #PWR?
 U 1 1 618C0CFD
-P 9450 4200
+P 10050 4200
 AR Path="/618C0CFD" Ref="#PWR?"  Part="1" 
 AR Path="/60F87146/618C0CFD" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 9450 3950 50  0001 C CNN
-F 1 "GND" H 9455 4027 50  0000 C CNN
-F 2 "" H 9450 4200 50  0001 C CNN
-F 3 "" H 9450 4200 50  0001 C CNN
-	1    9450 4200
-	1    0    0    -1  
+F 0 "#PWR0102" H 10050 3950 50  0001 C CNN
+F 1 "GND" H 10055 4027 50  0000 C CNN
+F 2 "" H 10050 4200 50  0001 C CNN
+F 3 "" H 10050 4200 50  0001 C CNN
+	1    10050 4200
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 3850 9450 4200
+	10050 3850 10050 4200
 Wire Wire Line
-	10000 2550 10150 2550
+	9500 2550 9350 2550
 Wire Wire Line
-	10000 2650 10150 2650
+	9500 2650 9350 2650
 Wire Wire Line
-	10000 2750 10150 2750
+	9500 2750 9350 2750
 Wire Wire Line
-	10000 2850 10150 2850
+	9500 2850 9350 2850
 Wire Wire Line
-	10000 3050 10400 3050
+	9500 3050 9100 3050
 Wire Wire Line
-	10000 3150 10400 3150
+	9500 3150 9100 3150
 Wire Wire Line
-	10000 3250 10400 3250
+	9500 3250 9100 3250
 Wire Wire Line
-	10000 3350 10400 3350
+	9500 3350 9100 3350
 Wire Wire Line
-	10000 3450 10400 3450
+	9500 3450 9100 3450
 Wire Wire Line
-	10000 3550 10400 3550
+	9500 3550 9100 3550
 Wire Wire Line
-	10000 3650 10400 3650
+	9500 3650 9100 3650
 Wire Wire Line
-	9200 2550 9500 2550
+	10300 2550 10000 2550
 Wire Wire Line
-	9200 2650 9500 2650
+	10300 2650 10000 2650
 Wire Wire Line
-	9200 2750 9500 2750
+	10300 2750 10000 2750
 Wire Wire Line
-	9000 2950 9500 2950
+	10500 2950 10000 2950
 Wire Wire Line
-	9000 3050 9500 3050
+	10500 3050 10000 3050
 Wire Wire Line
-	9000 3150 9500 3150
+	10500 3150 10000 3150
 Wire Wire Line
-	9000 3250 9500 3250
+	10500 3250 10000 3250
 Wire Wire Line
-	9000 3350 9500 3350
+	10500 3350 10000 3350
 Wire Wire Line
-	9000 3450 9500 3450
+	10500 3450 10000 3450
 Wire Wire Line
-	9000 3550 9500 3550
+	10500 3550 10000 3550
 Wire Wire Line
-	9000 3650 9500 3650
+	10500 3650 10000 3650
 Wire Wire Line
-	9000 3750 9500 3750
+	10500 3750 10000 3750
 Wire Wire Line
-	9500 3850 9450 3850
+	10000 3850 10050 3850
 Wire Wire Line
-	9000 3950 9500 3950
+	10500 3950 10000 3950
 Wire Wire Line
 	3350 3800 3350 4500
 Wire Wire Line
@@ -942,6 +937,11 @@ Wire Notes Line
 	1400 2550 1400 950 
 Text Notes 1400 900  0    50   ~ 0
 RC Filter for PWM
-Text HLabel 9000 3950 0    50   Input ~ 0
+Text HLabel 10500 3950 2    50   Input ~ 0
 5V_BL_SUPPLY
+NoConn ~ 10000 2850
+NoConn ~ 9500 2950
+NoConn ~ 9500 3750
+NoConn ~ 9500 3850
+NoConn ~ 9500 3950
 $EndSCHEMATC
