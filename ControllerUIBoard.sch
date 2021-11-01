@@ -505,8 +505,6 @@ F 3 "" H 7800 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 4250 7800 3350
-Text Notes 9000 3450 0    50   ~ 0
-UIBoard interfacing\n
 Wire Wire Line
 	9600 5850 9300 5850
 Wire Wire Line
@@ -597,7 +595,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1100 4850 1450
 Text Notes 5250 5400 0    50   ~ 0
-Vorwiderstände auslegen\nSpiegelung J10??\nPMosfet auswählen\n\nÄnderungen:\n- Alle Vcc, Gnd Pins von ATmega herausgeführt\n- Bypass Cs angepasst\n- Ferrit für AVcc hinzugefuegt\n- 3 Pin Programmierstecker\n- Pullup für Reset hinzugefügt\n- Spannungsteiler R für LDR auf 10k geändet (typ.)\n- LED Vorwiderstande (ATmega min. 100mA / Pingroup)\n   -> Vorwiderstände auf ca 10mA auslegen\n- KeySwitch definiert
+Vorwiderstände auslegen\nPMosfet auswählen\n\nÄnderungen:\n- Alle Vcc, Gnd Pins von ATmega herausgeführt\n- Bypass Cs angepasst\n- Ferrit für AVcc hinzugefuegt\n- 3 Pin Programmierstecker\n- Pullup für Reset hinzugefügt\n- Spannungsteiler R für LDR auf 10k geändet (typ.)\n- LED Vorwiderstande (ATmega min. 100mA / Pingroup)\n   -> Vorwiderstände auf ca 10mA auslegen\n- KeySwitch definiert
 $Comp
 L Device:C C?
 U 1 1 60F3645F
@@ -954,7 +952,7 @@ F 3 "" H 9250 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8200 4800 0    50   ~ 0
-J10 Pin13/14 hier ist nur die LED auf UI Board, sonst nichts.\nAnsteuerung invertiert via Pin13, Pin14 auf konstante 5V
+J10 Pin13/14 hier ist nur die LED auf UI Board, sonst nichts.\nAnsteuerung invertiert via Pin14, Pin13 auf konstante 5V
 Wire Wire Line
 	7800 4350 7800 4250
 Wire Wire Line

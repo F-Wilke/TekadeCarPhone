@@ -24,19 +24,19 @@ CathodeDigit11
 Text Label 9100 3050 2    50   ~ 0
 CathodeDigit7
 Text Label 9350 2850 2    50   ~ 0
-SegmentCAnode
+AnodeSegmentC
 Text Label 9350 2750 2    50   ~ 0
-SegmentDAnode
+AnodeSegmentD
 Text Label 9350 2650 2    50   ~ 0
-SegmentAAnode
+AnodeSegmentA
 Text Label 9350 2550 2    50   ~ 0
-SegmentEAnode
+AnodeSegmentE
 Text Label 10300 2550 0    50   ~ 0
-SegmentFAnode
+AnodeSegmentF
 Text Label 10300 2650 0    50   ~ 0
-SegmentBAnode
+AnodeSegmentB
 Text Label 10300 2750 0    50   ~ 0
-SegmentGAnode
+AnodeSegmentG
 Text Label 10500 2950 0    50   ~ 0
 CathodeDigit14
 Text Label 10500 3050 0    50   ~ 0
@@ -262,19 +262,19 @@ F 8 "good" H 3500 1400 50  0001 C CNN "Availability"
 	1    0    0    -1  
 $EndComp
 Text Label 6850 1000 0    50   ~ 0
-SegmentAAnode
+AnodeSegmentA
 Text Label 6850 1100 0    50   ~ 0
-SegmentBAnode
+AnodeSegmentB
 Text Label 6850 1200 0    50   ~ 0
-SegmentCAnode
+AnodeSegmentC
 Text Label 6850 1300 0    50   ~ 0
-SegmentDAnode
+AnodeSegmentD
 Text Label 6850 1400 0    50   ~ 0
-SegmentEAnode
+AnodeSegmentE
 Text Label 6850 1600 0    50   ~ 0
-SegmentFAnode
+AnodeSegmentF
 Text Label 6850 1500 0    50   ~ 0
-SegmentGAnode
+AnodeSegmentG
 $Comp
 L power:+5V #PWR?
 U 1 1 618C0DF9
