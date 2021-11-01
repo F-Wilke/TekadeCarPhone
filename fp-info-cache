@@ -1,505 +1,799 @@
-113433964417010
-OptoDevice
-ADNS-9800
-Laser Gaming Sensor ADNS-9800
-MOUSE MOUSE_SENSOR LASER_GAMING_SENSOR
+179603776994145
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-2-5.08, 2 pins, pitch 5.08mm, size 10.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-2-5.08 pitch 5.08mm size 10.2x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-16
-16
-OptoDevice
-AGILENT_HFBR-152x
-Fiberoptic Transmitter TX, HFBR series (https://docs.broadcom.com/docs/AV02-3283EN)
-Fiberoptic Transmitter
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-6
-6
-OptoDevice
-AGILENT_HFBR-252x
-Fiberoptic Receiver RX, HFBR series (https://docs.broadcom.com/docs/AV02-3283EN)
-Fiberoptic Transmitter
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-3-5.08, 3 pins, pitch 5.08mm, size 15.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-3-5.08 pitch 5.08mm size 15.2x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-6
-6
-OptoDevice
-AMS_TSL2550_SMD
-http://ams.com/eng/content/download/250130/975613/142977
-TSL2550 ambient light sensor
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-3, 3 pins, pitch 5mm, size 15x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-3 pitch 5mm size 15x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-4-5.08, 4 pins, pitch 5.08mm, size 20.3x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-4-5.08 pitch 5.08mm size 20.3x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 4
 4
-OptoDevice
-Broadcom_AFBR-16xxZ_Horizontal
-Fiber Optic Transmitter and Receiver, https://docs.broadcom.com/docs/AV02-4369EN
-Fiber Optic Transmitter and Receiver
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-4, 4 pins, pitch 5mm, size 20x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-4 pitch 5mm size 20x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-5-5.08, 5 pins, pitch 5.08mm, size 25.4x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-5-5.08 pitch 5.08mm size 25.4x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-5_1x05_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-5, 5 pins, pitch 5mm, size 25x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-5 pitch 5mm size 25x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-6-5.08, 6 pins, pitch 5.08mm, size 30.5x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-6-5.08 pitch 5.08mm size 30.5x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 6
 6
-OptoDevice
-Broadcom_AFBR-16xxZ_Tilted
-Fiber Optic Transmitter and Receiver, https://docs.broadcom.com/docs/AV02-4369EN
-Fiber Optic Transmitter and Receiver
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-6_1x06_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-6, 6 pins, pitch 5mm, size 30x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-6 pitch 5mm size 30x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 6
 6
-OptoDevice
-Broadcom_AFBR-16xxZ_Vertical
-Fiber Optic Transmitter and Receiver, https://docs.broadcom.com/docs/AV02-4369EN
-Fiber Optic Transmitter and Receiver
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-7-5.08_1x07_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-7-5.08, 7 pins, pitch 5.08mm, size 35.6x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-7-5.08 pitch 5.08mm size 35.6x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-6
-6
-OptoDevice
-Broadcom_APDS-9301
-ambient light sensor, i2c interface, 6-pin chipled package, https://docs.broadcom.com/docs/AV02-2315EN
-ambient light sensor chipled
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-7_1x07_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-7, 7 pins, pitch 5mm, size 35x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-7 pitch 5mm size 35x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-6
-6
-OptoDevice
-Broadcom_DFN-6_2x2mm_P0.65mm
-Broadcom  DFN, 6 Pin (https://docs.broadcom.com/docs/AV02-4755EN), generated with kicad-footprint-generator ipc_noLead_generator.py
-Broadcom DFN NoLead
-0
-6
-6
-OptoDevice
-Broadcom_LGA-8_2x2mm_P0.53mm
-Broadcom  LGA, 8 Pin (https://docs.broadcom.com/docs/AV02-4755EN), generated with kicad-footprint-generator ipc_noLead_generator.py
-Broadcom LGA NoLead
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-8-5.08, 8 pins, pitch 5.08mm, size 40.6x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-8-5.08 pitch 5.08mm size 40.6x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 8
 8
-OptoDevice
-Everlight_ITR8307
-package for Everlight ITR8307 with PCB cutout, light-direction upwards, see http://www.everlight.com/file/ProductFile/ITR8307.pdf
-refective opto couple photo coupler
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-8_1x08_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-8, 8 pins, pitch 5mm, size 40x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-8 pitch 5mm size 40x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Everlight_ITR8307F43
-package for Everlight ITR8307/F43, see https://everlighteurope.com/index.php?controller=attachment&id_attachment=5385
-refective opto couple photo coupler
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-9-5.08_1x09_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-9-5.08, 9 pins, pitch 5.08mm, size 45.7x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-9-5.08 pitch 5.08mm size 45.7x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Everlight_ITR8307_Reverse
-package for Everlight ITR8307 with PCB cutout, light-direction downwards, see http://www.everlight.com/file/ProductFile/ITR8307.pdf
-refective opto couple photo coupler
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-9_1x09_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-9, 9 pins, pitch 5mm, size 45x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-9 pitch 5mm size 45x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Finder_34.81
-Relay SPST, Finder Type 34.81 (opto relays/coupler), vertical/standing form, see https://gfinder.findernet.com/public/attachments/34/EN/S34USAEN.pdf
-Relay SPST Finder
-0
-4
-4
-OptoDevice
-Hamamatsu_C12880
-Hamamatsu spectrometer, see http://www.hamamatsu.com/resources/pdf/ssd/c12880ma_kacc1226e.pdf
-opto spectrometer Hamamatsu
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-10-5.08_1x10_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-10-5.08, 10 pins, pitch 5.08mm, size 50.8x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-10-5.08 pitch 5.08mm size 50.8x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 10
 10
-OptoDevice
-Hamamatsu_S13360-30CS
-SiPM, 2pin
-Hamamatsu SiPM
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-10_1x10_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-10, 10 pins, pitch 5mm, size 50x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-10 pitch 5mm size 50x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-2
-2
-OptoDevice
-Kingbright_KPS-5130
-http://www.kingbright.com/attachments/file/psearch/000/00/00/KPS-5130PD7C(Ver.14).pdf
-KPS-5130 photodiode RGB sensor
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-11-5.08_1x11_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-11-5.08, 11 pins, pitch 5.08mm, size 55.9x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-11-5.08 pitch 5.08mm size 55.9x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Kingbright_KRC011_Horizontal
-Subminiature Reflective Optical Sensor, http://www.kingbright.com/attachments/file/psearch/000/00/00/KRC011(Ver.15).pdf
-Subminiature Reflective Optical Sensor
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-11_1x11_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-11, 11 pins, pitch 5mm, size 55x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-11 pitch 5mm size 55x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Kingbright_KRC011_Vertical
-Subminiature Reflective Optical Sensor, http://www.kingbright.com/attachments/file/psearch/000/00/00/KRC011(Ver.15).pdf
-Subminiature Reflective Optical Sensor
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-12-5.08_1x12_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-12-5.08, 12 pins, pitch 5.08mm, size 61x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-12-5.08 pitch 5.08mm size 61x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Kodenshi_LG206D
-http://kodenshi.co.jp/products/pdf/sensor/photointerrupter_ic/LG206D.pdf
-Photointerrupter  infrared LED with photo IC
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-12_1x12_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-12, 12 pins, pitch 5mm, size 60x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-12 pitch 5mm size 60x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-5
-5
-OptoDevice
-Kodenshi_LG206L
-http://kodenshi.co.jp/products/pdf/sensor/photointerrupter_ic/LG205L.pdf
-Photointerrupter  infrared LED with photo IC
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-13-5.08_1x13_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-13-5.08, 13 pins, pitch 5.08mm, size 66x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-13-5.08 pitch 5.08mm size 66x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-5
-5
-OptoDevice
-Kodenshi_SG105
-package for Kodenshi SG-105 with PCB cutout, light-direction upwards, see http://www.kodenshi.co.jp/products/pdf/sensor/photointerrupter_ref/SG-105.pdf
-refective opto couple photo coupler
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-13_1x13_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-13, 13 pins, pitch 5mm, size 65x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-13 pitch 5mm size 65x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-OptoDevice
-Kodenshi_SG105F
-package for Kodenshi SG-105F, see http://www.kodenshi.co.jp/products/pdf/sensor/photointerrupter_ref/SG-105F.pdf
-refective opto couple photo coupler
-0
-4
-4
-OptoDevice
-Kodenshi_SG105_Reverse
-package for Kodenshi SG-105 with PCB cutout, light-direction downwards, see http://www.kodenshi.co.jp/products/pdf/sensor/photointerrupter_ref/SG-105.pdf
-refective opto couple photo coupler
-0
-4
-4
-OptoDevice
-LaserDiode_TO3.3-D3.3-3
-Laser Diode, TO-3.3mm, 3pin
-Laser Diode TO3.3
-0
-3
-3
-OptoDevice
-LaserDiode_TO5-D9-3
-Laser Diode, TO5-like (D=9mm), 3pin
-Laser Diode TO5-like
-0
-3
-3
-OptoDevice
-LaserDiode_TO18-D5.6-3
-Laser Diode, TO18-like (D=5.6mm), 3pin
-Laser Diode TO18-like
-0
-3
-3
-OptoDevice
-LaserDiode_TO38ICut-3
-Laser Diode, TO-38-ICut, 3pin
-Laser Diode TO38-ICut
-0
-3
-3
-OptoDevice
-LaserDiode_TO56-3
-Laser Diode, TO-56, 3pin
-Laser Diode TO56
-0
-3
-3
-OptoDevice
-Lightpipe_LPF-C012303S
-https://www.lumex.com/spec/LPF-C012303S.pdf
-lightpipe dual tower right angle 3mm
-0
-0
-0
-OptoDevice
-Lightpipe_Mentor_1276.1004
-https://www.mentor-bauelemente.de/katalog/ll/MENTOR-LL.pdf
-spherical light pipe 4 way 3mm PLCC-2 PLCC-4
-0
-0
-0
-OptoDevice
-Lightpipe_Mentor_1276.2004
-https://www.mentor-bauelemente.de/katalog/ll/MENTOR-LL.pdf
-planar light pipe 4 way 3mm PLCC-2 PLCC-4
-0
-0
-0
-OptoDevice
-Lite-On_LTR-303ALS-01
-ambient light sensor, i2c interface, 6-pin chipled package, http://optoelectronics.liteon.com/upload/download/DS86-2013-0004/LTR-303ALS-01_DS_V1.pdf
-ambient light sensor chipled
-0
-6
-6
-OptoDevice
-Luna_NSL-32
-Optoisolator with LED and photoresistor
-optoisolator
-0
-4
-4
-OptoDevice
-Maxim_OLGA-14_3.3x5.6mm_P0.8mm
-https://pdfserv.maximintegrated.com/land_patterns/90-0602.PDF
-OLGA-14 OESIP-14
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-14-5.08_1x14_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-14-5.08, 14 pins, pitch 5.08mm, size 71.1x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-14-5.08 pitch 5.08mm size 71.1x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 14
 14
-OptoDevice
-ONSemi_QSE15x
-3 Lead Plastic Package
-ONSemi QSE158 QSE159
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-14_1x14_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-14, 14 pins, pitch 5mm, size 70x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-14 pitch 5mm size 70x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-15-5.08_1x15_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-15-5.08, 15 pins, pitch 5.08mm, size 76.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-15-5.08 pitch 5.08mm size 76.2x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-15_1x15_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-15, 15 pins, pitch 5mm, size 75x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-15 pitch 5mm size 75x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-16-5.08_1x16_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-16-5.08, 16 pins, pitch 5.08mm, size 81.3x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-16-5.08 pitch 5.08mm size 81.3x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-16_1x16_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-16, 16 pins, pitch 5mm, size 80x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-16 pitch 5mm size 80x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-2-5.08, 2 pins, pitch 5.08mm, size 10.2x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-2-5.08 pitch 5.08mm size 10.2x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-3-5.08, 3 pins, pitch 5.08mm, size 15.2x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-3-5.08 pitch 5.08mm size 15.2x11.2mm^2 drill 1.3mm pad 2.6mm
 0
 3
 3
-OptoDevice
-OnSemi_CASE100CY
-OnSemi CASE 100CY, light-direction upwards, see http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF
-refective opto couple photo coupler
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-4-5.08, 4 pins, pitch 5.08mm, size 20.3x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-4-5.08 pitch 5.08mm size 20.3x11.2mm^2 drill 1.3mm pad 2.6mm
 0
 4
 4
-OptoDevice
-Osram_BPW82
-PhotoDiode, BPW82, RM2.54
-PhotoDiode BPW82 RM2.54
-0
-2
-2
-OptoDevice
-Osram_DIL2_4.3x4.65mm_P5.08mm
-PhotoDiode, plastic DIL, 4.3x4.65mm², RM5.08
-PhotoDiode plastic DIL RM5.08
-0
-2
-2
-OptoDevice
-Osram_LPT80A
-PhotoTransistor, sidelooker package, RM2.54
-PhotoTransistor sidelooker package RM2.54
-0
-2
-2
-OptoDevice
-Osram_SFH9x0x
-package for Osram SFH9x0x series of reflective photo interrupters/couplers, see http://www.osram-os.com/Graphics/XPic6/00200860_0.pdf
-reflective photo interrupter SMD
-0
-6
-6
-OptoDevice
-Osram_SFH205
-PhotoDiode, SFH205, RM2.54
-PhotoDiode SFH205 RM2.54
-0
-2
-2
-OptoDevice
-Osram_SFH225
-PhotoDiode, SFH225, RM2.54
-PhotoDiode SFH225 RM2.54
-0
-2
-2
-OptoDevice
-Osram_SMD-DIL2_4.5x4.0mm
-PhotoDiode, plastic SMD DIL, 4.5x4mm²
-PhotoDiode plastic SMD DIL
-0
-2
-2
-OptoDevice
-Osram_SMD-SmartDIL
-PhotoDiode, plastic SMD SmatDIL
-PhotoDiode plastic SMD SmatDIL
-0
-3
-3
-OptoDevice
-Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm
-https://www.panasonic-electric-works.com/cps/rde/xbcr/pew_eu_en/technical_information_photomos_en.pdf
-SSOP4 APV21 AQY22
-0
-4
-4
-OptoDevice
-PerkinElmer_VTL5C
-Axial Vactrol (http://www.qsl.net/wa1ion/vactrol/vactrol.pdf)
-vactrol
-0
-4
-4
-OptoDevice
-PerkinElmer_VTL5Cx2
-Axial Vactrol (http://www.qsl.net/wa1ion/vactrol/vactrol.pdf)
-vactrol
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-5-5.08_1x05_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-5-5.08, 5 pins, pitch 5.08mm, size 25.4x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-5-5.08 pitch 5.08mm size 25.4x11.2mm^2 drill 1.3mm pad 2.6mm
 0
 5
 5
-OptoDevice
-R_LDR_4.9x4.2mm_P2.54mm_Vertical
-Resistor, LDR 4.9x4.2mm
-Resistor LDR4.9x4.2
-0
-2
-2
-OptoDevice
-R_LDR_5.0x4.1mm_P3mm_Vertical
-Resistor, LDR 5x4.1mm, see http://cdn-reichelt.de/documents/datenblatt/A500/A90xxxx%23PE.pdf
-Resistor LDR5x4.1mm
-0
-2
-2
-OptoDevice
-R_LDR_5.1x4.3mm_P3.4mm_Vertical
-Resistor, LDR 5.1x3.4mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
-Resistor LDR5.1x3.4mm
-0
-2
-2
-OptoDevice
-R_LDR_5.2x5.2mm_P3.5mm_Horizontal
-Resistor, LDR 5.2x5.2, upright, see http://cdn-reichelt.de/documents/datenblatt/A500/M996011A.pdf
-Resistor LDR5.2x5.2 
-0
-2
-2
-OptoDevice
-R_LDR_7x6mm_P5.1mm_Vertical
-Resistor, LDR 7x6mm
-Resistor LDR7x6mm
-0
-2
-2
-OptoDevice
-R_LDR_10x8.5mm_P7.6mm_Vertical
-Resistor, LDR 10x8.5mm
-Resistor LDR10.8.5mm
-0
-2
-2
-OptoDevice
-R_LDR_11x9.4mm_P8.2mm_Vertical
-Resistor, LDR 11x9.4mm
-Resistor LDR11x9.4mm
-0
-2
-2
-OptoDevice
-R_LDR_12x10.8mm_P9.0mm_Vertical
-Resistor, LDR 12x10.8mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
-Resistor LDR12x10.8mm
-0
-2
-2
-OptoDevice
-R_LDR_D6.4mm_P3.4mm_Vertical
-Resistor, LDR D=6.4mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
-Resistor LDRD=6.4mm
-0
-2
-2
-OptoDevice
-R_LDR_D13.8mm_P9.0mm_Vertical
-Resistor, diameter 13.8mm pitch 9mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
-Resistor LDR 
-0
-2
-2
-OptoDevice
-R_LDR_D20mm_P17.5mm_Vertical
-Resistor, LDR 20mm diameter, pin pitch 17.5mm, see http://yourduino.com/docs/Photoresistor-5516-datasheet.pdf
-Resistor LDR
-0
-2
-2
-OptoDevice
-ST_VL53L0X
-https://www.st.com/resource/en/datasheet/vl53l1x.pdf
-laser-ranging sensor
-0
-12
-12
-OptoDevice
-ST_VL53L1X
-https://www.st.com/resource/en/datasheet/vl53l1x.pdf
-laser-ranging sensor
-0
-12
-12
-OptoDevice
-Sharp_GP2Y0A41SK0F
-http://www.sharp-world.com/products/device/lineup/data/pdf/datasheet/gp2y0a41sk_e.pdf
-Distance Sensor Sharp
-0
-2
-2
-OptoDevice
-Sharp_IS471F
-Sharp OPIC IS471F, see http://pdf.datasheetcatalog.com/datasheet/Sharp/mXvrzty.pdf
-Sharp OPIC IS471F
-0
-4
-4
-OptoDevice
-Sharp_IS485
-Sharp OPIC, IS485, IS486, see http://microrato.ua.pt/main/Actividades/Estagios/Docs/IS485_6.pdf
-Sharp OPIC IS485 IS486
-0
-3
-3
-OptoDevice
-Siemens_SFH900
-package for Siemens SFH900 reflex photo interrupter/coupler/object detector, see https://www.batronix.com/pdf/sfh900.pdf
-Siemens SFH900 reflex photo interrupter coupler object detector
-0
-3
-3
-OptoDevice
-Toshiba_TORX170_TORX173_TORX193_TORX194
-Fiberoptic Reciver, RX, Toshiba, Toslink, TORX170, TORX173, TORX193, TORX194
-Fiberoptic Reciver RX Toshiba Toslink TORX170 TORX173 TORX193 TORX194
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-6-5.08_1x06_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-6-5.08, 6 pins, pitch 5.08mm, size 30.5x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-6-5.08 pitch 5.08mm size 30.5x11.2mm^2 drill 1.3mm pad 2.6mm
 0
 6
 6
-OptoDevice
-Toshiba_TOTX170_TOTX173_TOTX193_TOTX194
-Fiberoptic Reciver, RX, Toshiba, Toslink, TORX170, TORX173, TORX193, TORX194
-Fiberoptic Reciver RX Toshiba Toslink TORX170 TORX173 TORX193 TORX194
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-7-5.08_1x07_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-7-5.08, 7 pins, pitch 5.08mm, size 35.6x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-7-5.08 pitch 5.08mm size 35.6x11.2mm^2 drill 1.3mm pad 2.6mm
 0
-6
-6
-OptoDevice
-Vishay_CAST-3Pin
-IR Receiver Vishay TSOP-xxxx, CAST package, see https://www.vishay.com/docs/82493/tsop311.pdf
-IRReceiverVishayTSOP-xxxx CAST
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-8-5.08_1x08_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-8-5.08, 8 pins, pitch 5.08mm, size 40.6x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-8-5.08 pitch 5.08mm size 40.6x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-9-5.08_1x09_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-9-5.08, 9 pins, pitch 5.08mm, size 45.7x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-9-5.08 pitch 5.08mm size 45.7x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-10-5.08_1x10_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-10-5.08, 10 pins, pitch 5.08mm, size 50.8x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-10-5.08 pitch 5.08mm size 50.8x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-11-5.08_1x11_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-11-5.08, 11 pins, pitch 5.08mm, size 55.9x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-11-5.08 pitch 5.08mm size 55.9x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-12-5.08_1x12_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-12-5.08, 12 pins, pitch 5.08mm, size 61x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-12-5.08 pitch 5.08mm size 61x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-13-5.08_1x13_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-13-5.08, 13 pins, pitch 5.08mm, size 66x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-13-5.08 pitch 5.08mm size 66x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-14-5.08_1x14_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-14-5.08, 14 pins, pitch 5.08mm, size 71.1x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-14-5.08 pitch 5.08mm size 71.1x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-15-5.08_1x15_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-15-5.08, 15 pins, pitch 5.08mm, size 76.2x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-15-5.08 pitch 5.08mm size 76.2x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-16-5.08_1x16_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-16-5.08, 16 pins, pitch 5.08mm, size 81.3x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-16-5.08 pitch 5.08mm size 81.3x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-2-2.54, 2 pins, pitch 2.54mm, size 5.54x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725656-920552.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-2-2.54 pitch 2.54mm size 5.54x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-3-2.54, 3 pins, pitch 2.54mm, size 8.08x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725656-920552.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-3-2.54 pitch 2.54mm size 8.08x6.2mm^2 drill 1.1mm pad 2.2mm
 0
 3
 3
-OptoDevice
-Vishay_CNY70
-package for Vishay CNY70 refective photo coupler/interrupter
-Vishay CNY70 refective photo coupler
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-4-2.54, 4 pins, pitch 2.54mm, size 10.6x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-4-2.54 pitch 2.54mm size 10.6x6.2mm^2 drill 1.1mm pad 2.2mm
 0
 4
 4
-OptoDevice
-Vishay_MINICAST-3Pin
-IR Receiver Vishay TSOP-xxxx, MINICAST package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf
-IR Receiver Vishay TSOP-xxxx MINICAST
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-5-2.54_1x05_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-5-2.54, 5 pins, pitch 2.54mm, size 13.2x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-5-2.54 pitch 2.54mm size 13.2x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-6-2.54_1x06_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-6-2.54, 6 pins, pitch 2.54mm, size 15.7x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-6-2.54 pitch 2.54mm size 15.7x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-7-2.54_1x07_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-7-2.54, 7 pins, pitch 2.54mm, size 18.2x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-7-2.54 pitch 2.54mm size 18.2x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-8-2.54, 8 pins, pitch 2.54mm, size 20.8x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-8-2.54 pitch 2.54mm size 20.8x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-9-2.54_1x09_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-9-2.54, 9 pins, pitch 2.54mm, size 23.3x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-9-2.54 pitch 2.54mm size 23.3x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-10-2.54, 10 pins, pitch 2.54mm, size 25.9x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-10-2.54 pitch 2.54mm size 25.9x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-11-2.54_1x11_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-11-2.54, 11 pins, pitch 2.54mm, size 28.4x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-11-2.54 pitch 2.54mm size 28.4x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-12-2.54_1x12_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-12-2.54, 12 pins, pitch 2.54mm, size 30.9x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-12-2.54 pitch 2.54mm size 30.9x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-2-3.5-H, 2 pins, pitch 3.5mm, size 7x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-2-3.5-H pitch 3.5mm size 7x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-2-5.0-H, 2 pins, pitch 5mm, size 10x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-2-5.0-H pitch 5mm size 10x9mm^2 drill 1.3mm pad 2.6mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-3-3.5-H, 3 pins, pitch 3.5mm, size 10.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-3-3.5-H pitch 3.5mm size 10.5x7.6mm^2 drill 1.2mm pad 2.4mm
 0
 3
 3
-OptoDevice
-Vishay_MINIMOLD-3Pin
-IR Receiver Vishay TSOP-xxxx, MINIMOLD package, see https://www.vishay.com/docs/82742/tsop331.pdf
-IR Receiver Vishay TSOP-xxxx MINIMOLD
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-3-5.0-H, 3 pins, pitch 5mm, size 15x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-3-5.0-H pitch 5mm size 15x9mm^2 drill 1.3mm pad 2.6mm
 0
 3
 3
-OptoDevice
-Vishay_MOLD-3Pin
-IR Receiver Vishay TSOP-xxxx, MOLD package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf
-IR Receiver Vishay TSOP-xxxx MOLD
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-4-3.5-H, 4 pins, pitch 3.5mm, size 14x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-4-3.5-H pitch 3.5mm size 14x7.6mm^2 drill 1.2mm pad 2.4mm
 0
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-4-5.0-H_1x04_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-4-5.0-H, 4 pins, pitch 5mm, size 20x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-4-5.0-H pitch 5mm size 20x9mm^2 drill 1.3mm pad 2.6mm
+0
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-5-3.5-H_1x05_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-5-3.5-H, 5 pins, pitch 3.5mm, size 17.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-5-3.5-H pitch 3.5mm size 17.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-5-5.0-H_1x05_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-5-5.0-H, 5 pins, pitch 5mm, size 25x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-5-5.0-H pitch 5mm size 25x9mm^2 drill 1.3mm pad 2.6mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-6-3.5-H, 6 pins, pitch 3.5mm, size 21x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-6-3.5-H pitch 3.5mm size 21x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-6-5.0-H, 6 pins, pitch 5mm, size 30x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-6-5.0-H pitch 5mm size 30x9mm^2 drill 1.3mm pad 2.6mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-7-3.5-H_1x07_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-7-3.5-H, 7 pins, pitch 3.5mm, size 24.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-7-3.5-H pitch 3.5mm size 24.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-7-5.0-H_1x07_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-7-5.0-H, 7 pins, pitch 5mm, size 35x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-7-5.0-H pitch 5mm size 35x9mm^2 drill 1.3mm pad 2.6mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-8-3.5-H_1x08_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-8-3.5-H, 8 pins, pitch 3.5mm, size 28x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-8-3.5-H pitch 3.5mm size 28x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-8-5.0-H_1x08_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-8-5.0-H, 8 pins, pitch 5mm, size 40x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-8-5.0-H pitch 5mm size 40x9mm^2 drill 1.3mm pad 2.6mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-9-3.5-H_1x09_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-9-3.5-H, 9 pins, pitch 3.5mm, size 31.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-9-3.5-H pitch 3.5mm size 31.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-9-5.0-H_1x09_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-9-5.0-H, 9 pins, pitch 5mm, size 45x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-9-5.0-H pitch 5mm size 45x9mm^2 drill 1.3mm pad 2.6mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-10-3.5-H_1x10_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-10-3.5-H, 10 pins, pitch 3.5mm, size 35x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-10-3.5-H pitch 3.5mm size 35x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-10-5.0-H_1x10_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-10-5.0-H, 10 pins, pitch 5mm, size 50x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-10-5.0-H pitch 5mm size 50x9mm^2 drill 1.3mm pad 2.6mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-11-3.5-H_1x11_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-11-3.5-H, 11 pins, pitch 3.5mm, size 38.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-11-3.5-H pitch 3.5mm size 38.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-11-5.0-H_1x11_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-11-5.0-H, 11 pins, pitch 5mm, size 55x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-11-5.0-H pitch 5mm size 55x9mm^2 drill 1.3mm pad 2.6mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-12-3.5-H_1x12_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-12-3.5-H, 12 pins, pitch 3.5mm, size 42x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-12-3.5-H pitch 3.5mm size 42x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-12-5.0-H_1x12_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-12-5.0-H, 12 pins, pitch 5mm, size 60x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-12-5.0-H pitch 5mm size 60x9mm^2 drill 1.3mm pad 2.6mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-13-3.5-H_1x13_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-13-3.5-H, 13 pins, pitch 3.5mm, size 45.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-13-3.5-H pitch 3.5mm size 45.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-13-5.0-H_1x13_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-13-5.0-H, 13 pins, pitch 5mm, size 65x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-13-5.0-H pitch 5mm size 65x9mm^2 drill 1.3mm pad 2.6mm
+0
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-14-3.5-H_1x14_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-14-3.5-H, 14 pins, pitch 3.5mm, size 49x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-14-3.5-H pitch 3.5mm size 49x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-14-5.0-H_1x14_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-14-5.0-H, 14 pins, pitch 5mm, size 70x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-14-5.0-H pitch 5mm size 70x9mm^2 drill 1.3mm pad 2.6mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-15-3.5-H_1x15_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-15-3.5-H, 15 pins, pitch 3.5mm, size 52.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-15-3.5-H pitch 3.5mm size 52.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-15-5.0-H_1x15_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-15-5.0-H, 15 pins, pitch 5mm, size 75x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-15-5.0-H pitch 5mm size 75x9mm^2 drill 1.3mm pad 2.6mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-16-3.5-H_1x16_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-16-3.5-H, 16 pins, pitch 3.5mm, size 56x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-16-3.5-H pitch 3.5mm size 56x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-16-5.0-H_1x16_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-16-5.0-H, 16 pins, pitch 5mm, size 80x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-16-5.0-H pitch 5mm size 80x9mm^2 drill 1.3mm pad 2.6mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-2,5-V-SMD_1x02-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 2 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814702/pdf
+PhoenixContact PTSM0.5 2 2.5mm vertical SMD spring clamp terminal block connector 
+0
+4
 3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-2.5-H-THR_1x02_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-2-2.5-H-THR, 2 pins, pitch 2.5mm, size 7.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-2-2.5-H-THR pitch 2.5mm size 7.2x10mm^2 drill 1.2mm pad 3mm
+0
+4
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-2.5-V-THR_1x02_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-2-2.5-V-THR, vertical (cable from top), 2 pins, pitch 2.5mm, size 5.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-2-2.5-V-THR vertical pitch 2.5mm size 5.5x5mm^2 drill 1.2mm pad 2mm
+0
+4
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-HV-2.5-SMD_1x02-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 2 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778696/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+4
 3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-2,5-V-SMD_1x03-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 3 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814715/pdf
+PhoenixContact PTSM0.5 3 2.5mm vertical SMD spring clamp terminal block connector 
+0
+5
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-2.5-H-THR_1x03_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-3-2.5-H-THR, 3 pins, pitch 2.5mm, size 9.7x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-3-2.5-H-THR pitch 2.5mm size 9.7x10mm^2 drill 1.2mm pad 3mm
+0
+6
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-2.5-V-THR_1x03_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-3-2.5-V-THR, vertical (cable from top), 3 pins, pitch 2.5mm, size 8x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-3-2.5-V-THR vertical pitch 2.5mm size 8x5mm^2 drill 1.2mm pad 2mm
+0
+6
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-HV-2.5-SMD_1x03-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 3 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778706/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+5
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-2,5-V-SMD_1x04-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 4 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814728/pdf
+PhoenixContact PTSM0.5 4 2.5mm vertical SMD spring clamp terminal block connector 
+0
+6
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-2.5-H-THR_1x04_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-4-2.5-H-THR, 4 pins, pitch 2.5mm, size 12.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-4-2.5-H-THR pitch 2.5mm size 12.2x10mm^2 drill 1.2mm pad 3mm
+0
+8
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-2.5-V-THR_1x04_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-4-2.5-V-THR, vertical (cable from top), 4 pins, pitch 2.5mm, size 10.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-4-2.5-V-THR vertical pitch 2.5mm size 10.5x5mm^2 drill 1.2mm pad 2mm
+0
+8
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-HV-2.5-SMD_1x04-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 4 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778719/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+4
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-2,5-V-SMD_1x05-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 5 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814731/pdf
+PhoenixContact PTSM0.5 5 2.5mm vertical SMD spring clamp terminal block connector 
+0
+7
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-2.5-H-THR_1x05_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-5-2.5-H-THR, 5 pins, pitch 2.5mm, size 14.7x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-5-2.5-H-THR pitch 2.5mm size 14.7x10mm^2 drill 1.2mm pad 3mm
+0
+10
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-2.5-V-THR_1x05_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-5-2.5-V-THR, vertical (cable from top), 5 pins, pitch 2.5mm, size 13x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-5-2.5-V-THR vertical pitch 2.5mm size 13x5mm^2 drill 1.2mm pad 2mm
+0
+10
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-HV-2.5-SMD_1x05-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 5 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778722/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+7
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-2,5-V-SMD_1x06-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 6 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814744/pdf
+PhoenixContact PTSM0.5 6 2.5mm vertical SMD spring clamp terminal block connector 
+0
+8
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-2.5-H-THR_1x06_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-6-2.5-H-THR, 6 pins, pitch 2.5mm, size 17.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-6-2.5-H-THR pitch 2.5mm size 17.2x10mm^2 drill 1.2mm pad 3mm
+0
+12
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-2.5-V-THR_1x06_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-6-2.5-V-THR, vertical (cable from top), 6 pins, pitch 2.5mm, size 15.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-6-2.5-V-THR vertical pitch 2.5mm size 15.5x5mm^2 drill 1.2mm pad 2mm
+0
+12
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-HV-2.5-SMD_1x06-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 6 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778735/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+8
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-2,5-V-SMD_1x07-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 7 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814757/pdf
+PhoenixContact PTSM0.5 7 2.5mm vertical SMD spring clamp terminal block connector 
+0
+9
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-2.5-H-THR_1x07_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-7-2.5-H-THR, 7 pins, pitch 2.5mm, size 19.7x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-7-2.5-H-THR pitch 2.5mm size 19.7x10mm^2 drill 1.2mm pad 3mm
+0
+14
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-2.5-V-THR_1x07_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-7-2.5-V-THR, vertical (cable from top), 7 pins, pitch 2.5mm, size 18x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-7-2.5-V-THR vertical pitch 2.5mm size 18x5mm^2 drill 1.2mm pad 2mm
+0
+14
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-HV-2.5-SMD_1x07-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 7 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778748/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+9
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-2,5-V-SMD_1x08-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 8 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814760/pdf
+PhoenixContact PTSM0.5 8 2.5mm vertical SMD spring clamp terminal block connector 
+0
+10
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-2.5-H-THR_1x08_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-8-2.5-H-THR, 8 pins, pitch 2.5mm, size 22.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-8-2.5-H-THR pitch 2.5mm size 22.2x10mm^2 drill 1.2mm pad 3mm
+0
+16
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-2.5-V-THR_1x08_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-8-2.5-V-THR, vertical (cable from top), 8 pins, pitch 2.5mm, size 20.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-8-2.5-V-THR vertical pitch 2.5mm size 20.5x5mm^2 drill 1.2mm pad 2mm
+0
+16
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-HV-2.5-SMD_1x08-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 8 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778751/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+10
+9
