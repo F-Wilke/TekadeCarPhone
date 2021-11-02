@@ -585,7 +585,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1100 4850 1450
 Text Notes 5250 5400 0    50   ~ 0
-Vorwiderstände auslegen\n\nÄnderungen:\n- Alle Vcc, Gnd Pins von ATmega herausgeführt\n- Bypass Cs angepasst\n- Ferrit für AVcc hinzugefuegt\n- 3 Pin Programmierstecker\n- Pullup für Reset hinzugefügt\n- Spannungsteiler R für LDR auf 10k geändet (typ.)\n- LED Vorwiderstande (ATmega min. 100mA / Pingroup)\n   -> Vorwiderstände auf ca 10mA auslegen\n- KeySwitch definiert\n- Schaltbare 5V für UI Backlight hinzugefügt
+- Vorwiderstände auslegen\n\nÄnderungen:\n- Alle Vcc, Gnd Pins von ATmega herausgeführt\n- Bypass Cs angepasst\n- Ferrit für AVcc hinzugefuegt\n- 3 Pin Programmierstecker\n- Pullup für Reset hinzugefügt\n- Spannungsteiler R für LDR auf 10k geändet (typ.)\n- LED Vorwiderstande (ATmega min. 100mA / Pingroup)\n   -> Vorwiderstände auf ca 10mA auslegen\n- KeySwitch definiert\n- Schaltbare 5V für UI Backlight hinzugefügt\n- Anschluss Zeigerinstr. und Schloss steckbar
 $Comp
 L Device:C C?
 U 1 1 60F3645F
@@ -930,17 +930,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 2350 4100 2350
 NoConn ~ 4100 2250
-$Comp
-L TeKaDe:KeySwitch SW1
-U 1 1 614FE351
-P 9300 5750
-F 0 "SW1" H 9058 6015 50  0000 C CNN
-F 1 "KeySwitch" H 9058 5924 50  0000 C CNN
-F 2 "TeKaDe:KeySwitch" H 9350 6200 50  0001 C CNN
-F 3 "" H 9250 5500 50  0001 C CNN
-	1    9300 5750
-	1    0    0    -1  
-$EndComp
 Text Notes 8100 4500 0    50   ~ 0
 J10 Pin13/14 hier ist nur die LED auf UI Board, sonst nichts.\nAnsteuerung invertiert via Pin14, Pin13 auf konstante 5V
 Wire Wire Line
@@ -1053,4 +1042,33 @@ Wire Notes Line
 	10250 2600 7900 2600
 Wire Notes Line
 	7900 2600 7900 1150
+$Comp
+L Connector_Generic:Conn_01x03 J11
+U 1 1 6182A98D
+P 9100 5850
+F 0 "J11" H 9250 5900 50  0000 C CNN
+F 1 "KeySwitch" H 9400 5800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9100 5850 50  0001 C CNN
+F 3 "~" H 9100 5850 50  0001 C CNN
+	1    9100 5850
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	7800 4800 10550 4800
+Wire Notes Line
+	10550 4800 10550 6400
+Wire Notes Line
+	10550 6400 7800 6400
+Wire Notes Line
+	7800 6400 7800 4800
+Text Notes 7950 5550 0    50   ~ 0
+Schloss und Zeigerinst. werden \nüber Kabel angeschlossen
+Wire Notes Line
+	7400 2750 10900 2750
+Wire Notes Line
+	10900 2750 10900 4600
+Wire Notes Line
+	10900 4600 7400 4600
+Wire Notes Line
+	7400 4600 7400 2750
 $EndSCHEMATC
