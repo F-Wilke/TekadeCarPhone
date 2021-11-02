@@ -835,7 +835,7 @@ U 1 1 6103284D
 P 9100 5100
 F 0 "J7" H 9250 5100 50  0000 C CNN
 F 1 "SignalStrength" H 9450 5000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9100 5100 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 9100 5100 50  0001 C CNN
 F 3 "~" H 9100 5100 50  0001 C CNN
 	1    9100 5100
 	-1   0    0    -1  
@@ -1048,7 +1048,7 @@ U 1 1 6182A98D
 P 9100 5850
 F 0 "J11" H 9250 5900 50  0000 C CNN
 F 1 "KeySwitch" H 9400 5800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9100 5850 50  0001 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0310_1x03_P1.25mm_Horizontal" H 9100 5850 50  0001 C CNN
 F 3 "~" H 9100 5850 50  0001 C CNN
 	1    9100 5850
 	-1   0    0    -1  
