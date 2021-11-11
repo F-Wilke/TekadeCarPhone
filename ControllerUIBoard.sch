@@ -455,8 +455,8 @@ U 1 1 6205CD91
 P 9250 3750
 AR Path="/6205CD91" Ref="J?"  Part="1" 
 AR Path="/60F87146/6205CD91" Ref="J?"  Part="1" 
-AR Path="/60F18E7A/6205CD91" Ref="J8"  Part="1" 
-F 0 "J8" H 9300 4267 50  0000 C CNN
+AR Path="/60F18E7A/6205CD91" Ref="J4"  Part="1" 
+F 0 "J4" H 9300 4267 50  0000 C CNN
 F 1 "UIBoardCON1" H 9300 4176 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 9250 3750 50  0001 C CNN
 F 3 "~" H 9250 3750 50  0001 C CNN
@@ -715,10 +715,10 @@ Wire Wire Line
 Text Notes 3850 6900 0    50   ~ 0
 BLM18AG471SN1D
 $Comp
-L Connector_Generic:Conn_01x03 J6
+L Connector_Generic:Conn_01x03 J2
 U 1 1 60FF9EA7
 P 5500 6950
-F 0 "J6" H 5650 7000 50  0000 C CNN
+F 0 "J2" H 5650 7000 50  0000 C CNN
 F 1 "ATMEGA_PROG" H 5850 6900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 5500 6950 50  0001 C CNN
 F 3 "~" H 5500 6950 50  0001 C CNN
@@ -830,10 +830,10 @@ Wire Wire Line
 Wire Wire Line
 	3800 1100 3800 950 
 $Comp
-L Connector_Generic:Conn_01x02 J7
+L Connector_Generic:Conn_01x02 J3
 U 1 1 6103284D
 P 9100 5100
-F 0 "J7" H 9250 5100 50  0000 C CNN
+F 0 "J3" H 9250 5100 50  0000 C CNN
 F 1 "SignalStrength" H 9450 5000 50  0000 C CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 9100 5100 50  0001 C CNN
 F 3 "~" H 9100 5100 50  0001 C CNN
@@ -1043,10 +1043,10 @@ Wire Notes Line
 Wire Notes Line
 	7900 2600 7900 1150
 $Comp
-L Connector_Generic:Conn_01x03 J11
+L Connector_Generic:Conn_01x03 J7
 U 1 1 6182A98D
 P 9100 5850
-F 0 "J11" H 9250 5900 50  0000 C CNN
+F 0 "J7" H 9250 5900 50  0000 C CNN
 F 1 "KeySwitch" H 9400 5800 50  0000 C CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53048-0310_1x03_P1.25mm_Horizontal" H 9100 5850 50  0001 C CNN
 F 3 "~" H 9100 5850 50  0001 C CNN

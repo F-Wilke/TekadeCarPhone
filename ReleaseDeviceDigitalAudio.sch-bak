@@ -246,66 +246,34 @@ $EndSheet
 $Comp
 L power:GND #PWR02
 U 1 1 62252CE5
-P 12700 3200
-F 0 "#PWR02" H 12700 2950 50  0001 C CNN
-F 1 "GND" H 12705 3027 50  0000 C CNN
-F 2 "" H 12700 3200 50  0001 C CNN
-F 3 "" H 12700 3200 50  0001 C CNN
-	1    12700 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 622523CD
-P 11900 3200
-F 0 "#PWR01" H 11900 2950 50  0001 C CNN
-F 1 "GND" H 11905 3027 50  0000 C CNN
-F 2 "" H 11900 3200 50  0001 C CNN
-F 3 "" H 11900 3200 50  0001 C CNN
-	1    11900 3200
+P 13000 2600
+F 0 "#PWR02" H 13000 2350 50  0001 C CNN
+F 1 "GND" H 13005 2427 50  0000 C CNN
+F 2 "" H 13000 2600 50  0001 C CNN
+F 3 "" H 13000 2600 50  0001 C CNN
+	1    13000 2600
 	1    0    0    -1  
 $EndComp
 Text Notes 800  7100 0    50   ~ 0
 ToDo: \n- Auswahl Steckverbinder Analog Audio\n- Auswahl Steckverbinder KFZ (Dauerstrom / Zündung) 3Pol\n\n- Footprint Q von Dauerstrom Verpolschutz machen\n\n- BM83: Microchip Design Checklist ausfuellen, wenn Layout fertig\n\n- Battery Holder CR1220 ? Layout wirds zeigen…\n\n\nERLEDIGT:\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout \n    -> Dauerhaft unter Schwelle, Pulldown R23 trotzdem sinnvoll\n- Test durch Fredrik (Simulation wäre zu aufwendig)\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nBM83\n- Unused Pin Connections nicht beschrieben \n    -> floating lassen und später Prüfung mit Design check\n- Temperatur Messung HW seitig implementieren\n   -> Fredrik kümmert sich ggf. um SW Implementierung, etc.\n- MFB wird noch getestet durch Fredrik  \n   -> nicht benötigt, da Power On/Off per UART konfigurierbar\n- MCLK-Ausgang implementiert\n- Ersetzen durch Modell mit automotive Zulassung?\n   -> Nein weiter so mit 4Layers Aussage zur Typgenehmigung\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n- MCLK-Eingang implementiert\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik -> Reset nicht benötigt\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> betrifft nur SW, Bearbeitung durch Fredrik\n- Auslegung Spannungsteiler mit LDR\n    -> Standard 10k\n\nAllgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Abschaltung UI Board implementieren (SW6 soll 5V von UI Board schalten, LED_ON alternierend dazu\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse…)\n    -> Ja, mit 3 poligen Kombistecker\n- Auslegung Vorwiderstände an reale LEDs
 Wire Wire Line
-	9650 2400 12850 2400
+	9650 2400 10050 2400
 Wire Wire Line
-	9650 1700 12850 1700
+	9650 1700 10050 1700
 Wire Wire Line
-	9650 2800 12050 2800
+	9650 2800 10050 2800
 Wire Wire Line
-	9650 2700 12050 2700
+	9650 2700 10050 2700
 Wire Wire Line
-	9650 2500 12850 2500
+	9650 2500 10050 2500
 Wire Wire Line
-	9650 2100 12050 2100
+	9650 2100 10050 2100
 Wire Wire Line
-	9650 2000 12050 2000
-Wire Wire Line
-	9650 1600 12850 1600
-Wire Wire Line
-	9650 1450 12050 1450
-Wire Wire Line
-	9650 1350 12050 1350
+	9650 1600 10050 1600
 Wire Wire Line
 	9650 8500 10950 8500
 Wire Wire Line
 	9650 8400 10950 8400
-Wire Wire Line
-	12700 2300 12700 3200
-Connection ~ 12700 2300
-Wire Wire Line
-	12850 2300 12700 2300
-Wire Wire Line
-	11900 2600 11900 3200
-Connection ~ 11900 2600
-Wire Wire Line
-	12050 2600 11900 2600
-Wire Wire Line
-	12700 1500 12700 2300
-Wire Wire Line
-	11900 1900 11900 2600
-Connection ~ 11900 1900
 Wire Wire Line
 	8050 4900 5550 4900
 Wire Wire Line
@@ -331,68 +299,7 @@ Line_In_R
 Text Label 10050 2100 0    50   ~ 0
 Line_In_L
 Wire Wire Line
-	11900 1250 11900 1900
-Wire Wire Line
-	12050 1250 11900 1250
-Wire Wire Line
-	12050 1900 11900 1900
-Wire Wire Line
-	12850 1500 12700 1500
-$Comp
-L Connector:AudioJack3 J5
-U 1 1 6123782D
-P 13050 2400
-F 0 "J5" H 13032 2725 50  0000 C CNN
-F 1 "AudioJack3" H 13032 2634 50  0000 C CNN
-F 2 "TeKaDe:LumbergKLB4" H 13050 2400 50  0001 C CNN
-F 3 "~" H 13050 2400 50  0001 C CNN
-	1    13050 2400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J3
-U 1 1 6105818C
-P 12250 2700
-F 0 "J3" H 12232 3025 50  0000 C CNN
-F 1 "AudioJack3" H 12232 2934 50  0000 C CNN
-F 2 "TeKaDe:LumbergKLB4" H 12250 2700 50  0001 C CNN
-F 3 "~" H 12250 2700 50  0001 C CNN
-	1    12250 2700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J2
-U 1 1 6066C958
-P 12250 2000
-F 0 "J2" H 12232 2325 50  0000 C CNN
-F 1 "AudioJack3" H 12232 2234 50  0000 C CNN
-F 2 "TeKaDe:LumbergKLB4" H 12250 2000 50  0001 C CNN
-F 3 "~" H 12250 2000 50  0001 C CNN
-	1    12250 2000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J1
-U 1 1 60575B8C
-P 12250 1350
-F 0 "J1" H 12232 1675 50  0000 C CNN
-F 1 "AudioJack3" H 12232 1584 50  0000 C CNN
-F 2 "TeKaDe:LumbergKLB4" H 12250 1350 50  0001 C CNN
-F 3 "~" H 12250 1350 50  0001 C CNN
-	1    12250 1350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 J4
-U 1 1 66962862
-P 13050 1600
-F 0 "J4" H 13032 1925 50  0000 C CNN
-F 1 "AudioJack3" H 13032 1834 50  0000 C CNN
-F 2 "TeKaDe:LumbergKLB4" H 13050 1600 50  0001 C CNN
-F 3 "~" H 13050 1600 50  0001 C CNN
-	1    13050 1600
-	-1   0    0    -1  
-$EndComp
+	13150 1800 13000 1800
 Text Notes 4600 5800 0    50   ~ 0
 I2C Master
 Text Notes 11000 8300 0    50   ~ 0
@@ -473,4 +380,98 @@ Wire Wire Line
 	7500 2650 8050 2650
 Wire Wire Line
 	9650 7850 10950 7850
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J1
+U 1 1 618DA775
+P 13350 2000
+F 0 "J1" H 13400 2517 50  0000 C CNN
+F 1 "Conn_02x08_Counter_Clockwise" H 13400 2426 50  0000 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_2x07_P2.00mm_Vertical" H 13350 2000 50  0001 C CNN
+F 3 "~" H 13350 2000 50  0001 C CNN
+	1    13350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2000 10050 2000
+Wire Wire Line
+	9650 1350 10050 1350
+Wire Wire Line
+	12750 1700 13150 1700
+Wire Wire Line
+	9650 1450 10050 1450
+Wire Wire Line
+	13150 2200 12750 2200
+Wire Wire Line
+	13650 2400 14050 2400
+Wire Wire Line
+	13150 2400 12750 2400
+Wire Wire Line
+	13150 1900 12750 1900
+Wire Wire Line
+	13150 2000 12750 2000
+Wire Wire Line
+	13650 2200 14050 2200
+Text Label 12750 1900 2    50   ~ 0
+Audio_Handset_Out_L
+Text Label 14050 1900 0    50   ~ 0
+Audio_Handset_Out_R
+Text Label 14050 2400 0    50   ~ 0
+HeadsetMicInN
+Text Label 12750 2400 2    50   ~ 0
+HeadsetMicInP
+Text Label 12750 1700 2    50   ~ 0
+Audio_Master_Out_L
+Text Label 14050 1700 0    50   ~ 0
+Audio_Master_Out_R
+Text Label 14050 2200 0    50   ~ 0
+MasterMicInN
+Text Label 12750 2200 2    50   ~ 0
+MasterMicInP
+Text Label 14050 2000 0    50   ~ 0
+Line_In_R
+Text Label 12750 2000 2    50   ~ 0
+Line_In_L
+Wire Wire Line
+	13650 2000 14050 2000
+Wire Wire Line
+	13650 1700 14050 1700
+Wire Wire Line
+	13650 1900 14050 1900
+Wire Wire Line
+	13000 1800 13000 2100
+Wire Wire Line
+	13150 2100 13000 2100
+Connection ~ 13000 2100
+Wire Wire Line
+	13150 2300 13000 2300
+Wire Wire Line
+	13000 2100 13000 2300
+Connection ~ 13000 2300
+Wire Wire Line
+	13000 2300 13000 2600
+$Comp
+L power:GND #PWR0183
+U 1 1 6194BA95
+P 13800 2600
+F 0 "#PWR0183" H 13800 2350 50  0001 C CNN
+F 1 "GND" H 13805 2427 50  0000 C CNN
+F 2 "" H 13800 2600 50  0001 C CNN
+F 3 "" H 13800 2600 50  0001 C CNN
+	1    13800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 1800 13800 1800
+Wire Wire Line
+	13800 1800 13800 2100
+Wire Wire Line
+	13650 2100 13800 2100
+Connection ~ 13800 2100
+Wire Wire Line
+	13800 2100 13800 2300
+Wire Wire Line
+	13650 2300 13800 2300
+Connection ~ 13800 2300
+Wire Wire Line
+	13800 2300 13800 2600
 $EndSCHEMATC

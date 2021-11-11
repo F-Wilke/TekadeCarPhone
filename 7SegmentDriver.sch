@@ -60,8 +60,8 @@ L Connector_Generic:Conn_02x15_Odd_Even J?
 U 1 1 618C0CEF
 P 9700 3250
 AR Path="/618C0CEF" Ref="J?"  Part="1" 
-AR Path="/60F87146/618C0CEF" Ref="J10"  Part="1" 
-F 0 "J10" H 9750 4167 50  0000 C CNN
+AR Path="/60F87146/618C0CEF" Ref="J6"  Part="1" 
+F 0 "J6" H 9750 4167 50  0000 C CNN
 F 1 "UIBoardCON2" H 9750 4076 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 9700 3250 50  0001 C CNN
 F 3 "~" H 9700 3250 50  0001 C CNN
