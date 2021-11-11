@@ -255,7 +255,7 @@ F 3 "" H 13000 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 800  7100 0    50   ~ 0
-ToDo: \n- Auswahl Steckverbinder Analog Audio\n- Auswahl Steckverbinder KFZ (Dauerstrom / Zündung) 3Pol\n\n- Footprint Q von Dauerstrom Verpolschutz machen\n\n- BM83: Microchip Design Checklist ausfuellen, wenn Layout fertig\n\n- Battery Holder CR1220 ? Layout wirds zeigen…\n\n\nERLEDIGT:\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout \n    -> Dauerhaft unter Schwelle, Pulldown R23 trotzdem sinnvoll\n- Test durch Fredrik (Simulation wäre zu aufwendig)\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nBM83\n- Unused Pin Connections nicht beschrieben \n    -> floating lassen und später Prüfung mit Design check\n- Temperatur Messung HW seitig implementieren\n   -> Fredrik kümmert sich ggf. um SW Implementierung, etc.\n- MFB wird noch getestet durch Fredrik  \n   -> nicht benötigt, da Power On/Off per UART konfigurierbar\n- MCLK-Ausgang implementiert\n- Ersetzen durch Modell mit automotive Zulassung?\n   -> Nein weiter so mit 4Layers Aussage zur Typgenehmigung\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n- MCLK-Eingang implementiert\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik -> Reset nicht benötigt\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> betrifft nur SW, Bearbeitung durch Fredrik\n- Auslegung Spannungsteiler mit LDR\n    -> Standard 10k\n\nAllgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Abschaltung UI Board implementieren (SW6 soll 5V von UI Board schalten, LED_ON alternierend dazu\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse…)\n    -> Ja, mit 3 poligen Kombistecker\n- Auslegung Vorwiderstände an reale LEDs
+ToDo: \n- Footprint Q von Dauerstrom Verpolschutz machen\n- BM83: Microchip Design Checklist ausfuellen, wenn Layout fertig\n- Battery Holder CR1220 ? Layout wirds zeigen…\n\n\nERLEDIGT:\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout \n    -> Dauerhaft unter Schwelle, Pulldown R23 trotzdem sinnvoll\n- Test durch Fredrik (Simulation wäre zu aufwendig)\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nBM83\n- Unused Pin Connections nicht beschrieben \n    -> floating lassen und später Prüfung mit Design check\n- Temperatur Messung HW seitig implementieren\n   -> Fredrik kümmert sich ggf. um SW Implementierung, etc.\n- MFB wird noch getestet durch Fredrik  \n   -> nicht benötigt, da Power On/Off per UART konfigurierbar\n- MCLK-Ausgang implementiert\n- Ersetzen durch Modell mit automotive Zulassung?\n   -> Nein weiter so mit 4Layers Aussage zur Typgenehmigung\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n- MCLK-Eingang implementiert\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik -> Reset nicht benötigt\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> betrifft nur SW, Bearbeitung durch Fredrik\n- Auslegung Spannungsteiler mit LDR\n    -> Standard 10k\n\nAllgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Abschaltung UI Board implementieren \n   (SW6 soll 5V von UI Board schalten, LED_ON alternierend dazu)\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse…)\n    -> Ja, mit 3 poligen Kombistecker\n- Auslegung Vorwiderstände an reale LEDs\n- Auswahl Steckverbinder Analog Audio\n- Auswahl Steckverbinder KFZ (Dauerstrom / Zündung) 3Pol
 Wire Wire Line
 	9650 2400 10050 2400
 Wire Wire Line
@@ -386,7 +386,7 @@ U 1 1 618DA775
 P 13350 2000
 F 0 "J1" H 13400 2517 50  0000 C CNN
 F 1 "Conn_02x08_Counter_Clockwise" H 13400 2426 50  0000 C CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_2x07_P2.00mm_Vertical" H 13350 2000 50  0001 C CNN
+F 2 "TeKaDe:Molex_34825-0160" H 13350 2000 50  0001 C CNN
 F 3 "~" H 13350 2000 50  0001 C CNN
 	1    13350 2000
 	1    0    0    -1  
@@ -404,7 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	13650 2400 14050 2400
 Wire Wire Line
-	13150 2400 12750 2400
+	13150 2300 12750 2300
 Wire Wire Line
 	13150 1900 12750 1900
 Wire Wire Line
@@ -417,7 +417,7 @@ Text Label 14050 1900 0    50   ~ 0
 Audio_Handset_Out_R
 Text Label 14050 2400 0    50   ~ 0
 HeadsetMicInN
-Text Label 12750 2400 2    50   ~ 0
+Text Label 12750 2300 2    50   ~ 0
 HeadsetMicInP
 Text Label 12750 1700 2    50   ~ 0
 Audio_Master_Out_L
@@ -427,12 +427,12 @@ Text Label 14050 2200 0    50   ~ 0
 MasterMicInN
 Text Label 12750 2200 2    50   ~ 0
 MasterMicInP
-Text Label 14050 2000 0    50   ~ 0
+Text Label 14050 2100 0    50   ~ 0
 Line_In_R
 Text Label 12750 2000 2    50   ~ 0
 Line_In_L
 Wire Wire Line
-	13650 2000 14050 2000
+	13650 2100 14050 2100
 Wire Wire Line
 	13650 1700 14050 1700
 Wire Wire Line
@@ -443,12 +443,7 @@ Wire Wire Line
 	13150 2100 13000 2100
 Connection ~ 13000 2100
 Wire Wire Line
-	13150 2300 13000 2300
-Wire Wire Line
-	13000 2100 13000 2300
-Connection ~ 13000 2300
-Wire Wire Line
-	13000 2300 13000 2600
+	13150 2400 13000 2400
 $Comp
 L power:GND #PWR0183
 U 1 1 6194BA95
@@ -463,15 +458,22 @@ $EndComp
 Wire Wire Line
 	13650 1800 13800 1800
 Wire Wire Line
-	13800 1800 13800 2100
+	13800 1800 13800 2000
 Wire Wire Line
-	13650 2100 13800 2100
-Connection ~ 13800 2100
-Wire Wire Line
-	13800 2100 13800 2300
+	13650 2000 13800 2000
 Wire Wire Line
 	13650 2300 13800 2300
 Connection ~ 13800 2300
 Wire Wire Line
 	13800 2300 13800 2600
+Text Notes 12950 3350 0    50   ~ 0
+Pinzuordnung anpassen
+Connection ~ 13000 2400
+Wire Wire Line
+	13000 2400 13000 2600
+Wire Wire Line
+	13000 2100 13000 2400
+Connection ~ 13800 2000
+Wire Wire Line
+	13800 2000 13800 2300
 $EndSCHEMATC
