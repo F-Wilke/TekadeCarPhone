@@ -348,8 +348,8 @@ Wire Wire Line
 	8700 5800 8700 5250
 Text Label 7850 3350 0    50   ~ 0
 MAX_MICBIAS
-Text Notes 4700 1550 0    50   ~ 0
-HPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\nMic: differential + biasing\n\nÄnderungen:\nI2C Pullups auf RPi Seite machen\nFootprints angepasst\nSPKRVDD auf 3V3, nicht mehr 5V (siehe DS S.126)\nReihen Cs bei Line Out entfernt (siehe Email Maxim 02.07.2021)\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert
+Text Notes 4400 1600 0    50   ~ 0
+HPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\nMic: differential + biasing\n\nÄnderungen:\nI2C Pullups auf RPi Seite machen\nFootprints angepasst\nSPKRVDD auf 3V3, nicht mehr 5V (siehe DS S.126)\nReihen Cs bei Line Out entfernt (siehe Email Maxim 02.07.2021)\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert\nOszillator@12.28MHz entfernt,  da BM83-CODEC, von dem MCLK ausgeht, \nsich als dauerhaft aktiv konfigurieren lässt
 $Comp
 L power:+3V3 #PWR0124
 U 1 1 60D18DB4
@@ -1305,6 +1305,4 @@ Text HLabel 1700 2450 0    50   Input ~ 0
 MCLK
 Wire Wire Line
 	4550 2450 1700 2450
-Text Notes 5000 6400 0    50   ~ 0
-Oszillator@12.28MHz entfernt, \nda BM83-CODEC, von dem MCLK ausgeht, \nsich als dauerhaft aktiv konfigurieren lässt
 $EndSCHEMATC

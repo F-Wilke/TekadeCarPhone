@@ -402,41 +402,41 @@ Wire Wire Line
 Wire Wire Line
 	13150 2200 12750 2200
 Wire Wire Line
-	13650 2400 14050 2400
+	13650 2200 14050 2200
 Wire Wire Line
-	13150 2300 12750 2300
+	13650 2100 14050 2100
 Wire Wire Line
 	13150 1900 12750 1900
 Wire Wire Line
 	13150 2000 12750 2000
 Wire Wire Line
-	13650 2200 14050 2200
+	13650 1700 14050 1700
 Text Label 12750 1900 2    50   ~ 0
 Audio_Handset_Out_L
-Text Label 14050 1900 0    50   ~ 0
-Audio_Handset_Out_R
 Text Label 14050 2400 0    50   ~ 0
+Audio_Handset_Out_R
+Text Label 14050 2200 0    50   ~ 0
 HeadsetMicInN
-Text Label 12750 2300 2    50   ~ 0
+Text Label 14050 2100 0    50   ~ 0
 HeadsetMicInP
 Text Label 12750 1700 2    50   ~ 0
 Audio_Master_Out_L
-Text Label 14050 1700 0    50   ~ 0
+Text Label 12750 2300 2    50   ~ 0
 Audio_Master_Out_R
-Text Label 14050 2200 0    50   ~ 0
+Text Label 14050 1700 0    50   ~ 0
 MasterMicInN
 Text Label 12750 2200 2    50   ~ 0
 MasterMicInP
-Text Label 14050 2100 0    50   ~ 0
+Text Label 14050 1900 0    50   ~ 0
 Line_In_R
 Text Label 12750 2000 2    50   ~ 0
 Line_In_L
 Wire Wire Line
-	13650 2100 14050 2100
-Wire Wire Line
-	13650 1700 14050 1700
-Wire Wire Line
 	13650 1900 14050 1900
+Wire Wire Line
+	13150 2300 12750 2300
+Wire Wire Line
+	13650 2400 14050 2400
 Wire Wire Line
 	13000 1800 13000 2100
 Wire Wire Line
@@ -466,8 +466,6 @@ Wire Wire Line
 Connection ~ 13800 2300
 Wire Wire Line
 	13800 2300 13800 2600
-Text Notes 12950 3350 0    50   ~ 0
-Pinzuordnung anpassen
 Connection ~ 13000 2400
 Wire Wire Line
 	13000 2400 13000 2600
