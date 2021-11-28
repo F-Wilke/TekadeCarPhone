@@ -246,12 +246,12 @@ $EndSheet
 $Comp
 L power:GND #PWR02
 U 1 1 62252CE5
-P 13000 2600
-F 0 "#PWR02" H 13000 2350 50  0001 C CNN
-F 1 "GND" H 13005 2427 50  0000 C CNN
-F 2 "" H 13000 2600 50  0001 C CNN
-F 3 "" H 13000 2600 50  0001 C CNN
-	1    13000 2600
+P 13000 2750
+F 0 "#PWR02" H 13000 2500 50  0001 C CNN
+F 1 "GND" H 13005 2577 50  0000 C CNN
+F 2 "" H 13000 2750 50  0001 C CNN
+F 3 "" H 13000 2750 50  0001 C CNN
+	1    13000 2750
 	1    0    0    -1  
 $EndComp
 Text Notes 800  7100 0    50   ~ 0
@@ -380,98 +380,118 @@ Wire Wire Line
 	7500 2650 8050 2650
 Wire Wire Line
 	9650 7850 10950 7850
-$Comp
-L Connector_Generic:Conn_02x08_Counter_Clockwise J1
-U 1 1 618DA775
-P 13350 2000
-F 0 "J1" H 13400 2517 50  0000 C CNN
-F 1 "Conn_02x08_Counter_Clockwise" H 13400 2426 50  0000 C CNN
-F 2 "TeKaDe:Molex_34825-0160" H 13350 2000 50  0001 C CNN
-F 3 "~" H 13350 2000 50  0001 C CNN
-	1    13350 2000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9650 2000 10050 2000
 Wire Wire Line
 	9650 1350 10050 1350
 Wire Wire Line
-	12750 1700 13150 1700
+	12750 2600 13150 2600
 Wire Wire Line
 	9650 1450 10050 1450
 Wire Wire Line
-	13150 2200 12750 2200
-Wire Wire Line
-	13650 2200 14050 2200
-Wire Wire Line
-	13650 2100 14050 2100
-Wire Wire Line
-	13150 1900 12750 1900
-Wire Wire Line
-	13150 2000 12750 2000
-Wire Wire Line
-	13650 1700 14050 1700
-Text Label 12750 1900 2    50   ~ 0
-Audio_Handset_Out_L
-Text Label 14050 2400 0    50   ~ 0
-Audio_Handset_Out_R
-Text Label 14050 2200 0    50   ~ 0
-HeadsetMicInN
-Text Label 14050 2100 0    50   ~ 0
-HeadsetMicInP
-Text Label 12750 1700 2    50   ~ 0
-Audio_Master_Out_L
-Text Label 12750 2300 2    50   ~ 0
-Audio_Master_Out_R
-Text Label 14050 1700 0    50   ~ 0
-MasterMicInN
-Text Label 12750 2200 2    50   ~ 0
-MasterMicInP
-Text Label 14050 1900 0    50   ~ 0
-Line_In_R
-Text Label 12750 2000 2    50   ~ 0
-Line_In_L
-Wire Wire Line
 	13650 1900 14050 1900
 Wire Wire Line
-	13150 2300 12750 2300
+	13650 1700 14050 1700
 Wire Wire Line
-	13650 2400 14050 2400
+	13650 2300 14050 2300
 Wire Wire Line
-	13000 1800 13000 2100
+	13650 2500 14050 2500
+Wire Wire Line
+	13650 2000 14050 2000
+Text Label 14050 2300 0    50   ~ 0
+Audio_Handset_Out_L
+Text Label 14050 2200 0    50   ~ 0
+Audio_Handset_Out_R
+Text Label 14050 1700 0    50   ~ 0
+HeadsetMicInP
+Text Label 12750 2600 2    50   ~ 0
+Audio_Master_Out_L
+Text Label 12750 2500 2    50   ~ 0
+Audio_Master_Out_R
+Text Label 14050 2000 0    50   ~ 0
+MasterMicInN
+Text Label 14050 1900 0    50   ~ 0
+MasterMicInP
+Text Label 14050 2600 0    50   ~ 0
+Line_In_R
+Text Label 14050 2500 0    50   ~ 0
+Line_In_L
+Wire Wire Line
+	13650 2600 14050 2600
+Wire Wire Line
+	13150 2500 12750 2500
+Wire Wire Line
+	13650 2200 14050 2200
+$Comp
+L power:GND #PWR0183
+U 1 1 6194BA95
+P 13800 2750
+F 0 "#PWR0183" H 13800 2500 50  0001 C CNN
+F 1 "GND" H 13805 2577 50  0000 C CNN
+F 2 "" H 13800 2750 50  0001 C CNN
+F 3 "" H 13800 2750 50  0001 C CNN
+	1    13800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Counter_Clockwise J1
+U 1 1 61A33ABF
+P 13350 2100
+F 0 "J1" H 13400 2717 50  0000 C CNN
+F 1 "Conn_02x10_Counter_Clockwise" H 13400 2626 50  0000 C CNN
+F 2 "TeKaDe:Molex_34825-0200" H 13350 2100 50  0001 C CNN
+F 3 "~" H 13350 2100 50  0001 C CNN
+	1    13350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 1800 13000 1900
+Wire Wire Line
+	13150 2000 13000 2000
+Connection ~ 13000 2000
+Wire Wire Line
+	13000 2000 13000 2100
+Wire Wire Line
+	13650 2400 13800 2400
+Wire Wire Line
+	13650 2100 13800 2100
+Wire Wire Line
+	13800 2100 13800 2400
+Connection ~ 13800 2400
 Wire Wire Line
 	13150 2100 13000 2100
 Connection ~ 13000 2100
 Wire Wire Line
+	13000 2100 13000 2200
+Wire Wire Line
+	13150 2300 13000 2300
+Connection ~ 13000 2300
+Wire Wire Line
+	13000 2300 13000 2400
+Wire Wire Line
+	13150 1700 13000 1700
+Wire Wire Line
+	13000 1700 13000 1800
+Connection ~ 13000 1800
+Wire Wire Line
+	13800 2400 13800 2750
+Wire Wire Line
+	13150 1900 13000 1900
+Connection ~ 13000 1900
+Wire Wire Line
+	13000 1900 13000 2000
+Text Label 14050 1800 0    50   ~ 0
+HeadsetMicInN
+Wire Wire Line
+	13650 1800 14050 1800
+Wire Wire Line
 	13150 2400 13000 2400
-$Comp
-L power:GND #PWR0183
-U 1 1 6194BA95
-P 13800 2600
-F 0 "#PWR0183" H 13800 2350 50  0001 C CNN
-F 1 "GND" H 13805 2427 50  0000 C CNN
-F 2 "" H 13800 2600 50  0001 C CNN
-F 3 "" H 13800 2600 50  0001 C CNN
-	1    13800 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13650 1800 13800 1800
-Wire Wire Line
-	13800 1800 13800 2000
-Wire Wire Line
-	13650 2000 13800 2000
-Wire Wire Line
-	13650 2300 13800 2300
-Connection ~ 13800 2300
-Wire Wire Line
-	13800 2300 13800 2600
 Connection ~ 13000 2400
 Wire Wire Line
-	13000 2400 13000 2600
+	13000 2400 13000 2750
 Wire Wire Line
-	13000 2100 13000 2400
-Connection ~ 13800 2000
+	13150 2200 13000 2200
+Connection ~ 13000 2200
 Wire Wire Line
-	13800 2000 13800 2300
+	13000 2200 13000 2300
 $EndSCHEMATC
