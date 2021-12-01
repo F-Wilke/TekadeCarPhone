@@ -199,49 +199,47 @@ Wire Wire Line
 	3000 4500 3350 4500
 Text HLabel 1250 4300 0    50   Input ~ 0
 7Seg_Decoder_D1
-Text Label 6850 3750 0    50   ~ 0
+Text Label 6850 6450 0    50   ~ 0
 CathodeDigit5
-Text Label 6850 3650 0    50   ~ 0
+Text Label 6850 6350 0    50   ~ 0
 CathodeDigit4
-Text Label 6850 3550 0    50   ~ 0
+Text Label 6850 6250 0    50   ~ 0
 CathodeDigit3
-Text Label 6850 2550 0    50   ~ 0
+Text Label 6850 6150 0    50   ~ 0
 CathodeDigit2
-Text Label 6850 2450 0    50   ~ 0
+Text Label 6850 5150 0    50   ~ 0
 CathodeDigit1
-Text Label 6850 2350 0    50   ~ 0
+Text Label 6850 5050 0    50   ~ 0
 CathodeDigitB
-Text Label 6850 2250 0    50   ~ 0
-CathodeDigitA
 Text Label 6850 3850 0    50   ~ 0
 CathodeDigit6
-Text Label 6850 5150 0    50   ~ 0
+Text Label 6850 2550 0    50   ~ 0
 CathodeDigit10
-Text Label 6850 5050 0    50   ~ 0
+Text Label 6850 3550 0    50   ~ 0
 CathodeDigit9
-Text Label 6850 4950 0    50   ~ 0
+Text Label 6850 2350 0    50   ~ 0
 CathodeDigit8
-Text Label 6850 4850 0    50   ~ 0
+Text Label 6850 2450 0    50   ~ 0
 CathodeDigit7
-Text Label 6850 6250 0    50   ~ 0
+Text Label 6850 3650 0    50   ~ 0
 CathodeDigit12
-Text Label 6850 6150 0    50   ~ 0
+Text Label 6850 3750 0    50   ~ 0
 CathodeDigit11
-Text Label 6850 6350 0    50   ~ 0
+Text Label 6850 4850 0    50   ~ 0
 CathodeDigit13
-Text Label 6850 6450 0    50   ~ 0
+Text Label 6850 2250 0    50   ~ 0
 CathodeDigit14
-Text Label 5350 6150 2    50   ~ 0
+Text Label 5350 3750 2    50   ~ 0
 CathodeDigit11Signal
-Text Label 5350 6250 2    50   ~ 0
+Text Label 5350 3650 2    50   ~ 0
 CathodeDigit12Signal
-Text Label 5350 5050 2    50   ~ 0
+Text Label 5350 3550 2    50   ~ 0
 CathodeDigit9Signal
-Text Label 5350 5150 2    50   ~ 0
+Text Label 5350 2550 2    50   ~ 0
 CathodeDigit10Signal
-Text Label 5350 4850 2    50   ~ 0
+Text Label 5350 2450 2    50   ~ 0
 CathodeDigit7Signal
-Text Label 5350 4950 2    50   ~ 0
+Text Label 5350 2350 2    50   ~ 0
 CathodeDigit8Signal
 $Comp
 L TeKaDe:CD4511BE U?
@@ -332,34 +330,24 @@ F 3 "" H 6750 5800 50  0001 C CNN
 	1    6750 5800
 	1    0    0    -1  
 $EndComp
-Text Label 5350 3750 2    50   ~ 0
+Text Label 5350 6450 2    50   ~ 0
 CathodeDigit5Signal
-Text Label 5350 3650 2    50   ~ 0
+Text Label 5350 6350 2    50   ~ 0
 CathodeDigit4Signal
-Text Label 5350 3550 2    50   ~ 0
+Text Label 5350 6250 2    50   ~ 0
 CathodeDigit3Signal
-Text Label 5350 2550 2    50   ~ 0
+Text Label 5350 6150 2    50   ~ 0
 CathodeDigit2Signal
-Text Label 5350 2450 2    50   ~ 0
+Text Label 5350 5150 2    50   ~ 0
 CathodeDigit1Signal
-Text Label 5350 2350 2    50   ~ 0
+Text Label 5350 5050 2    50   ~ 0
 CathodeDigitBSignal
-Text Label 5350 2250 2    50   ~ 0
+Text Label 5350 4950 2    50   ~ 0
 CathodeDigitASignal
 Wire Wire Line
-	5350 3750 5500 3750
+	5350 6450 5500 6450
 Wire Wire Line
-	5500 3650 5350 3650
-Wire Wire Line
-	5350 3550 5500 3550
-Wire Wire Line
-	5500 2550 5350 2550
-Wire Wire Line
-	5350 2450 5500 2450
-Wire Wire Line
-	5350 2350 5500 2350
-Wire Wire Line
-	5350 2250 5500 2250
+	5500 6350 5350 6350
 Wire Wire Line
 	5350 6250 5500 6250
 Wire Wire Line
@@ -367,18 +355,28 @@ Wire Wire Line
 Wire Wire Line
 	5350 5150 5500 5150
 Wire Wire Line
-	5500 5050 5350 5050
+	5350 5050 5500 5050
 Wire Wire Line
 	5350 4950 5500 4950
 Wire Wire Line
-	5350 4850 5500 4850
+	5350 3650 5500 3650
+Wire Wire Line
+	5500 3750 5350 3750
+Wire Wire Line
+	5350 2550 5500 2550
+Wire Wire Line
+	5500 3550 5350 3550
+Wire Wire Line
+	5350 2350 5500 2350
+Wire Wire Line
+	5350 2450 5500 2450
 Wire Wire Line
 	5350 3850 5500 3850
 Text Label 5350 3850 2    50   ~ 0
 CathodeDigit6Signal
-Text Label 5350 6350 2    50   ~ 0
+Text Label 5350 4850 2    50   ~ 0
 CathodeDigit13Signal
-Text Label 5350 6450 2    50   ~ 0
+Text Label 5350 2250 2    50   ~ 0
 CathodeDigit14Signal
 $Comp
 L power:+5V #PWR?
@@ -618,17 +616,17 @@ F 9 "ULN2003F12FN-7" H 6550 5550 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 6350 5500 6350
+	5350 4850 5500 4850
 Wire Wire Line
-	5500 6450 5350 6450
+	5500 2250 5350 2250
 Wire Wire Line
-	6700 6250 6850 6250
+	6700 3650 6850 3650
 Wire Wire Line
-	6850 6150 6700 6150
+	6850 3750 6700 3750
 Wire Wire Line
-	6700 6350 6850 6350
+	6700 4850 6850 4850
 Wire Wire Line
-	6850 6450 6700 6450
+	6850 2250 6700 2250
 Wire Wire Line
 	6700 6550 6750 6550
 Wire Wire Line
@@ -666,13 +664,9 @@ F 9 "ULN2003F12FN-7" H 6550 1650 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 2350 6850 2350
+	6700 5050 6850 5050
 Wire Wire Line
-	6850 2250 6700 2250
-Wire Wire Line
-	6700 2450 6850 2450
-Wire Wire Line
-	6850 2550 6700 2550
+	6850 6150 6700 6150
 Wire Wire Line
 	6700 2650 6750 2650
 Wire Wire Line
@@ -734,11 +728,11 @@ F 9 "ULN2003F12FN-7" H 6550 2950 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 3650 6850 3650
+	6700 6350 6850 6350
 Wire Wire Line
-	6850 3550 6700 3550
+	6850 6250 6700 6250
 Wire Wire Line
-	6700 3750 6850 3750
+	6700 6450 6850 6450
 Wire Wire Line
 	6850 3850 6700 3850
 Wire Wire Line
@@ -810,17 +804,15 @@ F 9 "ULN2003F12FN-7" H 6550 4250 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 4950 6850 4950
+	6700 2350 6850 2350
 Wire Wire Line
-	6850 4850 6700 4850
+	6850 2450 6700 2450
 Wire Wire Line
-	6700 5050 6850 5050
+	6700 3550 6850 3550
 Wire Wire Line
-	6850 5150 6700 5150
+	6850 2550 6700 2550
 Wire Wire Line
 	6700 5250 6750 5250
-Wire Wire Line
-	6750 5250 6750 4500
 Wire Wire Line
 	5450 5250 5500 5250
 $Comp
@@ -944,4 +936,12 @@ NoConn ~ 9500 2950
 NoConn ~ 9500 3750
 NoConn ~ 9500 3850
 NoConn ~ 9500 3950
+Wire Wire Line
+	6700 5150 6850 5150
+Wire Wire Line
+	6750 5250 6750 4500
+Wire Wire Line
+	6850 4950 6700 4950
+Text Label 6850 4950 0    50   ~ 0
+CathodeDigitA
 $EndSCHEMATC

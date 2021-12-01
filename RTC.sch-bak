@@ -64,7 +64,7 @@ AR Path="/631EEDC8/649427F4" Ref="BT?"  Part="1"
 AR Path="/6493C3D2/649427F4" Ref="BT1"  Part="1" 
 F 0 "BT1" H 3908 4146 50  0000 L CNN
 F 1 "Battery" H 3908 4055 50  0000 L CNN
-F 2 "TeKaDeConn:CR1220" V 3800 4160 50  0001 C CNN
+F 2 "Battery:BatteryHolder_MPD_BC2003_1x2032" V 3800 4160 50  0001 C CNN
 F 3 "~" V 3800 4160 50  0001 C CNN
 	1    3800 4100
 	1    0    0    -1  
@@ -170,7 +170,7 @@ Wire Wire Line
 Text HLabel 7600 4250 2    50   BiDi ~ 0
 I2C_SDA
 Text Notes 4450 5800 0    50   ~ 0
-Änderungen:\n- RTC IC gewechselt jetzt mit Quarz
+Änderungen:\n- RTC IC gewechselt jetzt mit Quarz\n- auf CR2032 gewechselt, SMD auf BOTTOM
 Wire Wire Line
 	6650 4250 7600 4250
 Wire Wire Line

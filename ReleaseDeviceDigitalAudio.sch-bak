@@ -397,7 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	13650 2500 14050 2500
 Wire Wire Line
-	13150 2200 12750 2200
+	13650 2000 14050 2000
 Text Label 14050 2300 0    50   ~ 0
 Audio_Handset_Out_L
 Text Label 14050 2200 0    50   ~ 0
@@ -408,7 +408,7 @@ Text Label 12750 2600 2    50   ~ 0
 Audio_Master_Out_L
 Text Label 12750 2500 2    50   ~ 0
 Audio_Master_Out_R
-Text Label 12750 2200 2    50   ~ 0
+Text Label 14050 2000 0    50   ~ 0
 MasterMicInN
 Text Label 14050 1900 0    50   ~ 0
 MasterMicInP
@@ -462,12 +462,7 @@ Wire Wire Line
 	13150 2100 13000 2100
 Connection ~ 13000 2100
 Wire Wire Line
-	13000 2100 13000 2300
-Wire Wire Line
-	13650 2000 13800 2000
-Wire Wire Line
-	13800 2000 13800 2100
-Connection ~ 13800 2100
+	13000 2100 13000 2200
 Wire Wire Line
 	13150 2300 13000 2300
 Connection ~ 13000 2300
@@ -494,4 +489,9 @@ Wire Wire Line
 Connection ~ 13000 2400
 Wire Wire Line
 	13000 2400 13000 2750
+Wire Wire Line
+	13150 2200 13000 2200
+Connection ~ 13000 2200
+Wire Wire Line
+	13000 2200 13000 2300
 $EndSCHEMATC
