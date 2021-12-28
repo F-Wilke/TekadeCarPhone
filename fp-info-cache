@@ -1,288 +1,253 @@
-64594340848731
-Battery
-BatteryHolder_Bulgin_BX0036_1xC
-Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
-Bulgin BX0036
+58420504066508
+TeKaDe
+7SegmentLED_HD1077R
+
+
+0
+10
+10
+TeKaDe
+ACM1211
+
+
+0
+4
+4
+TeKaDe
+BAT-HLD-005-THM
+
+
+0
+3
+2
+TeKaDe
+BM83SM1
+
+
+0
+52
+52
+TeKaDe
+Conn_TE-DDR2-SODIMM-0.6-200P-doublesided
+
+
+0
+202
+200
+TeKaDe
+IHLP-2020CZ-11
+
+
 0
 2
 2
-Battery
-BatteryHolder_ComfortableElectronic_CH273-2450_1x2450
-Comfortable Electronic CR2450 battery holder, http://www.comf.com.tw/ProductDetail.asp?no=148
-Comfortable Electronic CR2450
+TeKaDe
+IHLP-3232DZ
+
+
 0
 2
 2
-Battery
-BatteryHolder_Eagle_12BH611-GR
-https://eu.mouser.com/datasheet/2/209/EPD-200766-1274481.pdf
-9V Battery Holder
+TeKaDe
+KeySwitch
+
+
+0
+3
+3
+TeKaDe
+LGA50-1.0-26X13.5MM
+
+
+0
+50
+50
+TeKaDe
+LumbergKLB4
+
+
+0
+3
+3
+TeKaDe
+MAX98089ETN&plus_
+
+
+0
+57
+57
+TeKaDe
+Molex_31101-0040
+Through hole straight socket strip, 1x04, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x04 2.54mm single row
+0
+4
+4
+TeKaDe
+Molex_34825-0160
+Through hole straight socket strip, 2x10, 2.00mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x10 2.00mm double row
+0
+16
+16
+TeKaDe
+Molex_34825-0200
+Through hole straight socket strip, 2x10, 2.00mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x10 2.00mm double row
+0
+20
+20
+TeKaDe
+Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal
+Molex PicoBlade Connector System, 53048-0210, 2 Pins per row (http://www.molex.com/pdm_docs/sd/530480210_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade top entry
 0
 2
 2
-Battery
-BatteryHolder_Keystone_103_1x20mm
-http://www.keyelco.com/product-pdf.cfm?p=719
-Keystone type 103 battery holder
+TeKaDe
+Molex_PicoBlade_53048-0310_1x03_P1.25mm_Horizontal
+Molex PicoBlade Connector System, 53048-0310, 3 Pins per row (http://www.molex.com/pdm_docs/sd/530480210_sd.pdf), generated with kicad-footprint-generator
+connector Molex PicoBlade top entry
 0
-2
-2
-Battery
-BatteryHolder_Keystone_104_1x23mm
-http://www.keyelco.com/product-pdf.cfm?p=744
-Keystone type 104 battery holder
+3
+3
+TeKaDe
+OSC_ABMM-6.000MHZ-B2-T
+CRYSTAL 24MHZ 18PF SMD
+
 0
-2
-2
-Battery
-BatteryHolder_Keystone_105_1x2430
-http://www.keyelco.com/product-pdf.cfm?p=745
-Keystone type 105 battery holder
+4
+4
+TeKaDe
+PCM2900CDB
+
+
 0
-2
-2
-Battery
-BatteryHolder_Keystone_106_1x20mm
-http://www.keyelco.com/product-pdf.cfm?p=720
-Keystone type 106 battery holder
+28
+28
+TeKaDe
+PCM2903CDB
+
+
 0
-2
-2
-Battery
-BatteryHolder_Keystone_107_1x23mm
-http://www.keyelco.com/product-pdf.cfm?p=746
-Keystone type 107 battery holder
+28
+28
+TeKaDe
+PCM2904DB
+
+
 0
-2
-2
-Battery
-BatteryHolder_Keystone_500
-Keystone #500, CR1220 battery holder, http://www.keyelco.com/product-pdf.cfm?p=710
-CR1220 battery holder
+28
+28
+TeKaDe
+PCM2912APJT
+
+
 0
-2
-2
-Battery
-BatteryHolder_Keystone_1042_1x18650
-Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
-18650 Keystone 1042 Li-ion
+32
+32
+TeKaDe
+PowerPAK-SO-8L-SINGLE
+PowerPAK SO-8 Single (https://www.vishay.com/docs/71655/powerpak.pdf, https://www.vishay.com/docs/72599/72599.pdf)
+PowerPAK SO-8 Single
 0
-2
-2
-Battery
-BatteryHolder_Keystone_1058_1x2032
-http://www.keyelco.com/product-pdf.cfm?p=14028
-Keystone type 1058 coin cell retainer
+8
+5
+TeKaDe
+QFN-56_EP_7x7_Pitch0.4mm
+
+
 0
-2
-2
-Battery
-BatteryHolder_Keystone_1060_1x2032
-http://www.keyelco.com/product-pdf.cfm?p=726
-CR2032 BR2032 BatteryHolder Battery
+72
+57
+TeKaDe
+Raspberry-Pi-4-Compute-Module
+Raspberry Pi 4 Compute Module
+Raspberry Pi 4 Compute Module
 0
-2
-2
-Battery
-BatteryHolder_Keystone_2460_1xAA
-https://www.keyelco.com/product-pdf.cfm?p=1025
-AA battery cell holder
+200
+200
+TeKaDe
+RoHS-Logo_3mm_SilkScreen
+Restriction of Hazardous Substances Directive Logo
+Logo RoHS
 0
-2
-2
-Battery
-BatteryHolder_Keystone_2462_2xAA
-2xAA cell battery holder, Keystone P/N 2462, https://www.keyelco.com/product-pdf.cfm?p=1027
-AA battery cell holder
 0
-2
-2
-Battery
-BatteryHolder_Keystone_2466_1xAAA
-1xAAA Battery Holder, Keystone, Plastic Case, http://www.keyelco.com/product-pdf.cfm?p=1031
-AAA battery holder Keystone
 0
-2
-2
-Battery
-BatteryHolder_Keystone_2468_2xAAA
-2xAAA cell battery holder, Keystone P/N 2468, http://www.keyelco.com/product-pdf.cfm?p=1033
-AAA battery cell holder
+TeKaDe
+RoHS-Logo_4mm_SilkScreen
+Restriction of Hazardous Substances Directive Logo
+Logo RoHS
 0
-2
-2
-Battery
-BatteryHolder_Keystone_2479_3xAAA
-3xAAA cell battery holder, Keystone P/N 2479, http://www.keyelco.com/product-pdf.cfm?p=1041
-AAA battery cell holder
 0
+0
+TeKaDe
+SOT505-1
+
+
+0
+8
+8
+TeKaDe
+SW_Push_CK_KST2x1G
+CK components KSC6 tactile switch https://www.ckswitches.com/media/1972/ksc6.pdf
+tactile switch ksc6
+0
+4
 2
-2
-Battery
-BatteryHolder_Keystone_2993
-http://www.keyelco.com/product-pdf.cfm?p=776
-Keystone type 2993 negative battery contact
+TeKaDe
+TI-PWQFN-N16-1EP
+WQFN, 16 Pin (https://www.onsemi.com/pub/Collateral/FUSB307B-D.PDF#page=56), generated with kicad-footprint-generator ipc_noLead_generator.py
+WQFN NoLead
+0
+27
+17
+TeKaDe
+TI-VQFN-HR
+
+
+0
+29
+23
+TeKaDe
+TI-WSON-6-1EP
+WSON, 6 Pin (http://www.ti.com/lit/ds/symlink/tps61040.pdf#page=35), generated with kicad-footprint-generator ipc_noLead_generator.py
+WSON NoLead
+0
+12
+7
+TeKaDe
+TPA6112A2DGQ
+
+
+0
+10
+10
+TeKaDe
+U-DFN3030-10
+
+
+0
+11
+11
+TeKaDe
+VIA_0.6mm
+
+
 0
 1
 1
-Battery
-BatteryHolder_Keystone_3000_1x12mm
-http://www.keyelco.com/product-pdf.cfm?p=777
-Keystone type 3000 coin cell retainer
+TeKaDe
+WE_IQXO-791
+
+
 0
-3
-2
-Battery
-BatteryHolder_Keystone_3001_1x12mm
-http://www.keyelco.com/product-pdf.cfm?p=778
-Keystone type 3001 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3002_1x2032
-https://www.tme.eu/it/Document/a823211ec201a9e209042d155fe22d2b/KEYS2996.pdf
-BR2016 CR2016 DL2016 BR2020 CL2020 BR2025 CR2025 DL2025 DR2032 CR2032 DL2032
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3008_1x2450
-http://www.keyelco.com/product-pdf.cfm?p=786
-Keystone type 3008 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3009_1x2450
-http://www.keyelco.com/product-pdf.cfm?p=787
-Keystone type 3009 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_Keystone_3034_1x20mm
-Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798
-Keystone type 3034 coin cell retainer
-0
-3
-2
-Battery
-BatteryHolder_LINX_BAT-HLD-012-SMT
-SMT battery holder for CR1216/1220/1225, https://linxtechnologies.com/wp/wp-content/uploads/bat-hld-012-smt.pdf
-battery holder coin cell cr1216 cr1220 cr1225
-0
-3
-2
-Battery
-BatteryHolder_MPD_BC2AAPC_2xAA
-2xAA cell battery holder, Memory Protection Devices P/N BC2AAPC, http://www.memoryprotectiondevices.com/datasheets/BC2AAPC-datasheet.pdf
-AA battery cell holder
-0
-2
-2
-Battery
-BatteryHolder_MPD_BC12AAPC_2xAA
-2xAA cell battery holder, Memory Protection Devices P/N BC12AAPC, http://www.memoryprotectiondevices.com/datasheets/BC12AAPC-datasheet.pdf
-AA battery cell holder
-0
-2
-2
-Battery
-BatteryHolder_MPD_BC2003_1x2032
-http://www.memoryprotectiondevices.com/datasheets/BC-2003-datasheet.pdf
-BC2003 CR2032 2032 Battery Holder
-0
-3
-2
-Battery
-BatteryHolder_MPD_BH-18650-PC2
-18650 Battery Holder (http://www.memoryprotectiondevices.com/datasheets/BK-18650-PC2-datasheet.pdf)
-18650 Battery Holder
-0
-2
-2
-Battery
-BatteryHolder_Seiko_MS621F
-Seiko MS621F, https://www.sii.co.jp/en/me/files/2014/02/file_EXTENDED_PRDCT_SPEC_75_FILE_11.jpg
-Seiko MS621F
-0
-2
-2
-Battery
-BatteryHolder_TruPower_BH-331P_3xAA
-Keystone Battery Holder BH-331P Battery Type 3xAA (Script generated with StandardBox.py) (Keystone Battery Holder BH-331P Battery Type 3xAA)
-Battery Holder BH-331P Battery Type 3xAA
-0
-2
-2
-Battery
-Battery_CR1225
-CR1225 battery
-battery CR1225 coin cell
-0
-0
-0
-Battery
-Battery_Panasonic_CR1025-VSK_Vertical_CircularHoles
-Panasonic CR-1025/VSK battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-1025 coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR1220-VCN_Vertical_CircularHoles
-Panasonic CR-1220/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-1220 coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR1632-V1AN_Vertical_CircularHoles
-Panasonic CR-1632-V1AN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-1632 coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR2025-V1AK_Vertical_CircularHoles
-Panasonic CR-2025/V1AK battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-2025 coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR2032-VS1N_Vertical_CircularHoles
-Panasonic CR-2032/VS1N battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-2032 coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR2354-VCN_Vertical_CircularHoles
-Panasonic CR-2354/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-2354/VCN coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR2450-VAN_Vertical_CircularHoles
-Panasonic CR-2450/VAN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-2450 coin cell
-0
-2
-2
-Battery
-Battery_Panasonic_CR2477-VCN_Vertical_CircularHoles
-Panasonic CR-2477/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-2477 coin cell vertical
-0
-2
-2
-Battery
-Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles
-Panasonic CR-3032/VCN battery, https://industrial.panasonic.com/cdbs/www-data/pdf2/AAA4000/AAA4000D140.pdf
-battery CR-3032 coin cell vertical
+4
+4
+TeKaDe
+XLF4020
+
+
 0
 2
 2
