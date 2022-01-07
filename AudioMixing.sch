@@ -464,7 +464,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 2350 4550 2350
 Wire Wire Line
-	10150 2350 7150 2350
+	9200 2350 7150 2350
 Wire Wire Line
 	1700 2650 4550 2650
 Wire Wire Line
@@ -1293,7 +1293,7 @@ Text Notes 650  2100 0    50   ~ 0
 I2S2_Slave
 Text Notes 600  2800 0    50   ~ 0
 I2S1_Master
-Text HLabel 10150 2350 2    50   Input ~ 0
+Text HLabel 9200 2350 2    50   Input ~ 0
 I2S2_SD_IN
 Text HLabel 1700 2050 0    50   Output ~ 0
 I2S2_SD_OUT
@@ -1305,4 +1305,14 @@ Text HLabel 1700 2450 0    50   Input ~ 0
 MCLK
 Wire Wire Line
 	4550 2450 1700 2450
+Text Notes 10000 2450 0    50   ~ 0
+1V8 Pegel\nDurch DVDD festgelegt\nmax. 2,0V erlaubt
+Wire Notes Line
+	9900 2050 10950 2050
+Wire Notes Line
+	10950 2050 10950 2750
+Wire Notes Line
+	10950 2750 9900 2750
+Wire Notes Line
+	9900 2750 9900 2050
 $EndSCHEMATC

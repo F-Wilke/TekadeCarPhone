@@ -389,39 +389,39 @@ Wire Wire Line
 Wire Wire Line
 	9650 1450 10050 1450
 Wire Wire Line
-	13650 1900 14050 1900
+	13650 1800 14050 1800
 Wire Wire Line
-	13650 1700 14050 1700
+	13650 2000 14050 2000
+Wire Wire Line
+	13650 2600 14050 2600
 Wire Wire Line
 	13650 2300 14050 2300
 Wire Wire Line
-	13650 2500 14050 2500
-Wire Wire Line
-	13650 2000 14050 2000
-Text Label 14050 2300 0    50   ~ 0
+	13650 1700 14050 1700
+Text Label 14050 2600 0    50   ~ 0
 Audio_Handset_Out_L
-Text Label 14050 2200 0    50   ~ 0
+Text Label 14050 2500 0    50   ~ 0
 Audio_Handset_Out_R
-Text Label 14050 1700 0    50   ~ 0
+Text Label 14050 2000 0    50   ~ 0
 HeadsetMicInP
 Text Label 12750 2600 2    50   ~ 0
 Audio_Master_Out_L
 Text Label 12750 2500 2    50   ~ 0
 Audio_Master_Out_R
-Text Label 14050 2000 0    50   ~ 0
+Text Label 14050 1700 0    50   ~ 0
 MasterMicInN
-Text Label 14050 1900 0    50   ~ 0
+Text Label 14050 1800 0    50   ~ 0
 MasterMicInP
-Text Label 14050 2600 0    50   ~ 0
+Text Label 14050 2200 0    50   ~ 0
 Line_In_R
-Text Label 14050 2500 0    50   ~ 0
+Text Label 14050 2300 0    50   ~ 0
 Line_In_L
 Wire Wire Line
-	13650 2600 14050 2600
+	13650 2200 14050 2200
 Wire Wire Line
 	13150 2500 12750 2500
 Wire Wire Line
-	13650 2200 14050 2200
+	13650 2500 14050 2500
 $Comp
 L power:GND #PWR0183
 U 1 1 6194BA95
@@ -480,10 +480,10 @@ Wire Wire Line
 Connection ~ 13000 1900
 Wire Wire Line
 	13000 1900 13000 2000
-Text Label 14050 1800 0    50   ~ 0
+Text Label 14050 1900 0    50   ~ 0
 HeadsetMicInN
 Wire Wire Line
-	13650 1800 14050 1800
+	13650 1900 14050 1900
 Wire Wire Line
 	13150 2400 13000 2400
 Connection ~ 13000 2400

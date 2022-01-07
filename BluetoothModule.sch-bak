@@ -1457,9 +1457,8 @@ Wire Wire Line
 Wire Wire Line
 	2650 4400 2650 4750
 NoConn ~ 6400 3550
-NoConn ~ 6400 1850
-Text Notes -150 3150 0    50   ~ 0
-Hat P3_4 internen Pullup? GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
+Text Notes 10300 2250 0    50   ~ 0
+GND -> TEST MODE\nGPIO P3_4 is used to enter Test mode during reset. If the user wants to use this pin to control external\nperipherals, care must be taken to ensure this pin is not pulled LOW and accidentally enters Test mode.
 Wire Wire Line
 	3000 3750 3200 3750
 Connection ~ 3200 3750
@@ -1550,4 +1549,47 @@ Text HLabel 1950 1850 0    50   Output ~ 0
 MCLK
 Wire Wire Line
 	1950 1850 4400 1850
+$Comp
+L Device:R R49
+U 1 1 61D7F80E
+P 10300 2650
+F 0 "R49" H 10100 2600 50  0000 C CNN
+F 1 "0R" H 10050 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10340 2640 50  0001 C CNN
+F 3 "~" H 10300 2650 50  0001 C CNN
+	1    10300 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 61D8065B
+P 10300 3000
+F 0 "#PWR0185" H 10300 2750 50  0001 C CNN
+F 1 "GND" H 10305 2827 50  0000 C CNN
+F 2 "" H 10300 3000 50  0001 C CNN
+F 3 "" H 10300 3000 50  0001 C CNN
+	1    10300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 61D80D80
+P 9900 2400
+F 0 "SW1" H 9900 2667 50  0000 C CNN
+F 1 "SW_DIP_x01" H 9900 2576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9900 2400 50  0001 C CNN
+F 3 "~" H 9900 2400 50  0001 C CNN
+	1    9900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1850 9600 1850
+Wire Wire Line
+	9600 1850 9600 2400
+Wire Wire Line
+	10200 2400 10300 2400
+Wire Wire Line
+	10300 2400 10300 2500
+Wire Wire Line
+	10300 2800 10300 3000
 $EndSCHEMATC

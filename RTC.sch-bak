@@ -170,7 +170,7 @@ Wire Wire Line
 Text HLabel 7600 4250 2    50   BiDi ~ 0
 I2C_SDA
 Text Notes 4450 5800 0    50   ~ 0
-Änderungen:\n- RTC IC gewechselt jetzt mit Quarz\n- auf CR2032 gewechselt, SMD auf BOTTOM
+Änderungen:\n- RTC IC gewechselt jetzt mit Quarz\n- auf CR2032 gewechselt, THT auf BOTTOM
 Wire Wire Line
 	6650 4250 7600 4250
 Wire Wire Line
