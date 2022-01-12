@@ -338,7 +338,7 @@ Wire Wire Line
 Text Label 7850 3350 0    50   ~ 0
 MAX_MICBIAS
 Text Notes 4400 1600 0    50   ~ 0
-HPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\nMic: differential + biasing\n\nÄnderungen:\nI2C Pullups auf RPi Seite machen\nFootprints angepasst\nSPKRVDD auf 3V3, nicht mehr 5V (siehe DS S.126)\nReihen Cs bei Line Out entfernt (siehe Email Maxim 02.07.2021)\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert\nOszillator@12.28MHz entfernt,  da BM83-CODEC, von dem MCLK ausgeht, \nsich als dauerhaft aktiv konfigurieren lässt
+HPSNS ist GND an Klinkenbuchse, vgl. Fig 40\nJack sensing nicht vorgesehen -> HPSNS direkt an GND\nMic: differential + biasing\n\nÄnderungen:\nIRQ Pullup auf 3,3V statt 1,8V ziehen\nI2C Pullups auf RPi Seite machen\nFootprints angepasst\nSPKRVDD auf 3V3, nicht mehr 5V (siehe DS S.126)\nReihen Cs bei Line Out entfernt (siehe Email Maxim 02.07.2021)\nfix: AGND keine Verbindung zu GND\nfix: EPAD auf GND, nicht NC\nfix: bypass C an Oszilator, wie in Datenblatt gefordert\nOszillator@12.28MHz entfernt,  da BM83-CODEC, von dem MCLK ausgeht, \nsich als dauerhaft aktiv konfigurieren lässt
 $Comp
 L power:+3V3 #PWR0124
 U 1 1 60D18DB4
@@ -1295,10 +1295,10 @@ MCLK
 Wire Wire Line
 	4550 2450 1700 2450
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0145
 U 1 1 61D9B108
 P 7900 1700
-F 0 "#PWR?" H 7900 1550 50  0001 C CNN
+F 0 "#PWR0145" H 7900 1550 50  0001 C CNN
 F 1 "+3V3" H 7915 1873 50  0000 C CNN
 F 2 "" H 7900 1700 50  0001 C CNN
 F 3 "" H 7900 1700 50  0001 C CNN

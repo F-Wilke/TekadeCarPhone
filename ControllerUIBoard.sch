@@ -617,7 +617,7 @@ U 1 1 60FF9EA7
 P 5500 6950
 F 0 "J2" H 5650 7000 50  0000 C CNN
 F 1 "ATMEGA_PROG" H 5850 6900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 5500 6950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5500 6950 50  0001 C CNN
 F 3 "~" H 5500 6950 50  0001 C CNN
 	1    5500 6950
 	-1   0    0    -1  
