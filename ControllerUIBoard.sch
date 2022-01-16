@@ -45,9 +45,9 @@ Wire Wire Line
 	5950 6950 5700 6950
 Text Label 1600 3250 2    50   ~ 0
 LDR
-Text HLabel 6350 3850 2    50   Input ~ 0
+Text HLabel 6350 3950 2    50   Input ~ 0
 IGNITION_SENSE
-Text HLabel 6350 3950 2    50   Output ~ 0
+Text HLabel 6350 3850 2    50   Output ~ 0
 5V_EN_OUT
 Text Label 1600 2850 2    50   ~ 0
 LED_ON
@@ -107,7 +107,7 @@ F 3 "" H 3200 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 3950 6350 3950
+	5300 3850 6350 3850
 Wire Wire Line
 	5300 3450 6350 3450
 $Comp
@@ -277,7 +277,7 @@ DataEncoderDataOutB
 Wire Wire Line
 	1600 3750 4100 3750
 Wire Wire Line
-	6350 3850 5300 3850
+	6350 3950 5300 3950
 Wire Wire Line
 	1600 3950 2750 3950
 Wire Wire Line
