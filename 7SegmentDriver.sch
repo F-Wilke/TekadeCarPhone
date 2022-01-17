@@ -892,6 +892,6 @@ Wire Wire Line
 	6850 4950 6700 4950
 Text Label 6850 4950 0    50   ~ 0
 CathodeDigitA
-Text Notes 5300 7400 0    50   ~ 0
-ULN2003F12 hat internen Input Pulldown\n
+Text Notes 4900 7400 0    50   ~ 0
+ULN2003F12 hat internen Input Pulldown\nPad wird in Datenblatt nicht elektrisch erwähnt.\n
 $EndSCHEMATC
