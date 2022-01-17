@@ -682,17 +682,6 @@ F 3 "" H 5450 3000 50  0001 C CNN
 	1    5450 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 60FC7F2E
-P 6100 3000
-F 0 "#PWR0109" H 6100 2750 50  0001 C CNN
-F 1 "GND" H 6105 2827 50  0000 C CNN
-F 2 "" H 6100 3000 50  0001 C CNN
-F 3 "" H 6100 3000 50  0001 C CNN
-	1    6100 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 3000 5450 2650
 Wire Wire Line
@@ -758,21 +747,8 @@ F 3 "" H 5450 4300 50  0001 C CNN
 	1    5450 4300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 6107D228
-P 6100 4300
-F 0 "#PWR0110" H 6100 4050 50  0001 C CNN
-F 1 "GND" H 6105 4127 50  0000 C CNN
-F 2 "" H 6100 4300 50  0001 C CNN
-F 3 "" H 6100 4300 50  0001 C CNN
-	1    6100 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 4300 5450 3950
-Wire Wire Line
-	6100 4300 6100 4250
 $Comp
 L power:+5V #PWR?
 U 1 1 6108D307
@@ -826,21 +802,8 @@ F 3 "" H 5450 5600 50  0001 C CNN
 	1    5450 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 6108D326
-P 6100 5600
-F 0 "#PWR0111" H 6100 5350 50  0001 C CNN
-F 1 "GND" H 6105 5427 50  0000 C CNN
-F 2 "" H 6100 5600 50  0001 C CNN
-F 3 "" H 6100 5600 50  0001 C CNN
-	1    6100 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 5600 5450 5250
-Wire Wire Line
-	6100 5600 6100 5550
 Wire Wire Line
 	6750 3200 6750 3950
 $Comp
@@ -854,23 +817,8 @@ F 3 "" H 5450 6900 50  0001 C CNN
 	1    5450 6900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 610F2AFB
-P 6100 6900
-F 0 "#PWR0112" H 6100 6650 50  0001 C CNN
-F 1 "GND" H 6105 6727 50  0000 C CNN
-F 2 "" H 6100 6900 50  0001 C CNN
-F 3 "" H 6100 6900 50  0001 C CNN
-	1    6100 6900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 6900 5450 6550
-Wire Wire Line
-	6100 6900 6100 6850
-Wire Wire Line
-	6100 2950 6100 3000
 $Comp
 L Device:R R39
 U 1 1 621006B8
@@ -944,4 +892,6 @@ Wire Wire Line
 	6850 4950 6700 4950
 Text Label 6850 4950 0    50   ~ 0
 CathodeDigitA
+Text Notes 5300 7400 0    50   ~ 0
+ULN2003F12 hat internen Input Pulldown\n
 $EndSCHEMATC
