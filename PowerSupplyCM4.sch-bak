@@ -1058,8 +1058,8 @@ L Connector:Screw_Terminal_01x08 J5
 U 1 1 62505DBB
 P 11500 5600
 F 0 "J5" H 11500 6050 50  0000 C CNN
-F 1 "Screw_Terminal_01x08" V 11700 5600 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-8-5.0-H_1x08_P5.00mm_Horizontal" H 11500 5600 50  0001 C CNN
+F 1 "Phoenix_PTS-1,5-8-5.0-H" V 11700 5600 50  0000 C CNN
+F 2 "TeKaDe:TerminalBlock_Phoenix_PTS-1,5-8-5.0-H_1x08_P5.00mm_Horizontal" H 11500 5600 50  0001 C CNN
 F 3 "~" H 11500 5600 50  0001 C CNN
 	1    11500 5600
 	-1   0    0    -1  

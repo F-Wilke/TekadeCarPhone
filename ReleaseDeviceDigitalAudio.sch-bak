@@ -243,17 +243,6 @@ F1 "RTC.sch" 50
 F2 "I2C_SDA" B L 8050 5700 50 
 F3 "I2C_SCL" I L 8050 5800 50 
 $EndSheet
-$Comp
-L power:GND #PWR02
-U 1 1 62252CE5
-P 13000 2750
-F 0 "#PWR02" H 13000 2500 50  0001 C CNN
-F 1 "GND" H 13005 2577 50  0000 C CNN
-F 2 "" H 13000 2750 50  0001 C CNN
-F 3 "" H 13000 2750 50  0001 C CNN
-	1    13000 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9650 2400 10050 2400
 Wire Wire Line
@@ -421,17 +410,6 @@ Wire Wire Line
 Wire Wire Line
 	13650 2500 14050 2500
 $Comp
-L power:GND #PWR0183
-U 1 1 6194BA95
-P 13800 2750
-F 0 "#PWR0183" H 13800 2500 50  0001 C CNN
-F 1 "GND" H 13805 2577 50  0000 C CNN
-F 2 "" H 13800 2750 50  0001 C CNN
-F 3 "" H 13800 2750 50  0001 C CNN
-	1    13800 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x10_Counter_Clockwise J1
 U 1 1 61A33ABF
 P 13350 2100
@@ -494,4 +472,26 @@ Wire Wire Line
 	13000 2200 13000 2300
 Text Notes 800  7100 0    50   ~ 0
 ToDo: \n- BM83: Microchip Design Checklist ausfuellen, wenn Layout fertig\n\n\nERLEDIGT:\nSelbsthaltung:\n- Verhalten GPIO output bei undervoltage lockout \n    -> Dauerhaft unter Schwelle, Pulldown R23 trotzdem sinnvoll\n- Test durch Fredrik (Simulation wäre zu aufwendig)\n\nCM4: \n- RUN PG / Global_EN Test durch Fredrik\n    -> 5V-Kompatibel -> LevelShift entfällt (GETESTET)\n- Footprint checken durch Fredrik\n    -> Passt perfekt (GETESTET)\n- Checken ob die 3,3 und 1,8V ausgänge bzgl. Ripple in Ordnung sind\n    -> Für MAX98089 ausreichend, Oszi fehlt, daher keine genauen Daten\n- Schaltfrequenz onboard Regler\n    -> 1 - 2.1 MHz (abhängig von Config)\n\nBM83\n- Unused Pin Connections nicht beschrieben \n    -> floating lassen und später Prüfung mit Design check\n- Temperatur Messung HW seitig implementieren\n   -> Fredrik kümmert sich ggf. um SW Implementierung, etc.\n- MFB wird noch getestet durch Fredrik  \n   -> nicht benötigt, da Power On/Off per UART konfigurierbar\n- MCLK-Ausgang implementiert\n- Ersetzen durch Modell mit automotive Zulassung?\n   -> Nein weiter so mit 4Layers Aussage zur Typgenehmigung\n\nMAX98089:\n- LDO für MAX98089? \n    - Test: Stromversorgung über CM: kein Noise, Load unerheblich\n- Config: Voice vs. Music filter: Done\n- MCLK-Eingang implementiert\n\nATmega:\n- Wozu 10k R an PWM Ausgang?\n   -> 1V macht Vollaussteuerung\n        Fredrik klärt PWM Frequenz, Auflöung und Eingangs-R des Zeigers\n        -> Vollausst. bei 0.22V, 0.5-1k R_innen -> 15k Vorwiderstand (GETESTET)\n        -> PER=100 -> 0,05V-Schritte, f=100kHz\n- Programmierbeschaltung ohne Reset?\n    -> check durch Fredrik -> Reset nicht benötigt\n- int. OSC checken bzgl. Kalwerte und UART Baudrate\n    -> betrifft nur SW, Bearbeitung durch Fredrik\n- Auslegung Spannungsteiler mit LDR\n    -> Standard 10k\n\nAllgemeines: \n- Levelshift prüfen (Zuordnung RX/TX)\n- Signalzuordungen I2C / I2S / UART checken\n- Abschaltung UI Board implementieren \n   (SW6 soll 5V von UI Board schalten, LED_ON alternierend dazu)\n- Zündung nur 1pol anschließen? -> kein Verpolschutz notwendig\n  (Optokoppler Eingang verträgt nur 5V reverse…)\n    -> Ja, mit 3 poligen Kombistecker\n- Auslegung Vorwiderstände an reale LEDs\n- Auswahl Steckverbinder Analog Audio\n- Auswahl Steckverbinder KFZ (Dauerstrom / Zündung) 3Pol\n- Battery Holder auf SMD Variante CR2032 geändert
+$Comp
+L power:GND #PWR0183
+U 1 1 6194BA95
+P 13800 2750
+F 0 "#PWR0183" H 13800 2500 50  0001 C CNN
+F 1 "GND" H 13805 2577 50  0000 C CNN
+F 2 "" H 13800 2750 50  0001 C CNN
+F 3 "" H 13800 2750 50  0001 C CNN
+	1    13800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 62252CE5
+P 13000 2750
+F 0 "#PWR02" H 13000 2500 50  0001 C CNN
+F 1 "GND" H 13005 2577 50  0000 C CNN
+F 2 "" H 13000 2750 50  0001 C CNN
+F 3 "" H 13000 2750 50  0001 C CNN
+	1    13000 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
