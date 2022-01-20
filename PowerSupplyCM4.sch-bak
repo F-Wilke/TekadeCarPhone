@@ -55,8 +55,8 @@ Wire Notes Line
 	1250 1250 9000 1250
 Wire Notes Line
 	9000 1250 9000 4450
-Text Notes 10000 3650 0    50   ~ 0
-Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt (nicht fuer TTL)\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n- Eingangsschutzbeschaltung wie bei Vbat\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
+Text Notes 7400 9850 0    50   ~ 0
+Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt (nicht fuer TTL)\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n- Eingangsschutzbeschaltung wie bei Vbat\n\n\n
 Connection ~ 3350 3800
 Wire Wire Line
 	3350 3950 3350 3800
@@ -829,17 +829,6 @@ Wire Wire Line
 	13800 6400 13800 6750
 Wire Wire Line
 	13500 6100 13500 6750
-$Comp
-L Device:D_Schottky D14
-U 1 1 622C78C1
-P 13500 5950
-F 0 "D14" V 13454 6029 50  0000 L CNN
-F 1 "SMBJ12A-13-F" V 13545 6029 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 13500 5950 50  0001 C CNN
-F 3 "~" H 13500 5950 50  0001 C CNN
-	1    13500 5950
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	10900 7100 10900 4650
 Wire Notes Line
@@ -1182,5 +1171,16 @@ F 2 "" H 4700 7550 50  0001 C CNN
 F 3 "" H 4700 7550 50  0001 C CNN
 	1    4700 7550
 	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky D14
+U 1 1 61E6FD0C
+P 13500 5950
+F 0 "D14" V 13546 5871 50  0000 R CNN
+F 1 "SMBJ14A-13-F" V 13455 5871 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 13500 5950 50  0001 C CNN
+F 3 "~" H 13500 5950 50  0001 C CNN
+	1    13500 5950
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
