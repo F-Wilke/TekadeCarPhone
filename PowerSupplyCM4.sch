@@ -55,8 +55,8 @@ Wire Notes Line
 	1250 1250 9000 1250
 Wire Notes Line
 	9000 1250 9000 4450
-Text Notes 10000 3650 0    50   ~ 0
-Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt (nicht fuer TTL)\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n- Eingangsschutzbeschaltung wie bei Vbat\n\nBerechnung Vorwiderstand OC:\nLED Vf  1,33 - 1,5 V @ 5mA (max 20mA)\nKFZ Spannung max ~14V\n=> R = (14V -1,4V) / 5mA = 2500\nWahl: 2k2, etwas mehr Strom, genug Sicherheit\n\n
+Text Notes 7400 9850 0    50   ~ 0
+Ermöglicht verzögertes Abschalten durch ATMEGA\n\nAus DS LM53635 S. 16:\nStart-up and shutdown of the LM53625/35-Q1 are controlled by the EN input. \nApplying a voltage of ≥ 2 V activates the device, while a voltage of ≤ 0.8 V is required to shut it down. \n(Max EN voltage: 40V (wie VIN))\nD.h. ATmega Ausgangspegel von 5V reicht für die Ansteuerung\nDas Zündungsignal muss aber auf 12V bleiben, da 5V nur verfügbar wenn alles an ist.\n\nÄnderungen:\n- Topologie geändert: OCs nun parallel an Ignition, statt in Reihe\n- ODER Schaltung um 2te Diode und Pulldown ergänzt (nicht fuer TTL)\n- PWR_Enable an Buckconverter angeschlossen\n- Optokoppler für ATmega Ausgangssignal entfernt, da galv. Trennung hier unnötig\n- SMD Optokoppler\n- Nicht Invertierender Ausgang\n- Eingangsschutzbeschaltung wie bei Vbat\n\n\n
 Connection ~ 3350 3800
 Wire Wire Line
 	3350 3950 3350 3800
