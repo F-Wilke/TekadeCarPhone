@@ -72,8 +72,6 @@ Wire Wire Line
 	3300 3650 3600 3650
 Wire Wire Line
 	3600 3950 1850 3950
-NoConn ~ 5600 2350
-NoConn ~ 5600 2450
 Wire Wire Line
 	5600 3750 5800 3750
 Text Label 2200 3850 2    50   ~ 0
@@ -81,7 +79,6 @@ VDD_IO
 NoConn ~ 5600 3350
 NoConn ~ 5600 3450
 NoConn ~ 5600 2050
-NoConn ~ 5600 2250
 NoConn ~ 5600 2550
 NoConn ~ 5600 2650
 NoConn ~ 5600 2750
@@ -161,7 +158,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 3850 5800 3950
 Text Notes 1050 7150 0    50   ~ 0
-BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57 \n- MFB von RPi getrennt\n- Testmode Pin auf Schalter gefuehrt
+BM83 im Host Mode (gesteuert von RPI)\nKein USB FW update implementiert\n\nÄnderungen:\n- Bypass C an VDD_IO Ausgang\n- Bypass C an SYS_PWR\n- Cs für Temperaturmessung hinzugefuegt\n- Pullup für active low reset pin\n- Pulldown für active high MBR pin (Power Up)\n- CTS / RTS entfernt\n- NTC Thermistor spezifiziert\n- LED1/2 hinzugefuegt\n- Footprint hinzugefuegt\n- Prefix von IC auf U geaendert\n- Pins EP1/2 umbenannt zu 56/57 \n- MFB von RPi getrennt\n- Testmode Pin auf Schalter gefuehrt\n- Testpoints für USB hinzugefügt
 $Bitmap
 Pos 5150 6250
 Scale 1.000000
@@ -1598,4 +1595,39 @@ Wire Notes Line
 	11200 3900 8500 3900
 Wire Notes Line
 	8500 3900 8500 2100
+NoConn ~ 5600 2250
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61F8CAC4
+P 6250 2650
+F 0 "TP2" V 6204 2838 50  0000 L CNN
+F 1 "BM83_DM" V 6295 2838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6450 2650 50  0001 C CNN
+F 3 "~" H 6450 2650 50  0001 C CNN
+	1    6250 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 61F8F1C2
+P 6250 2850
+F 0 "TP3" V 6204 3038 50  0000 L CNN
+F 1 "BM83_DP" V 6295 3038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6450 2850 50  0001 C CNN
+F 3 "~" H 6450 2850 50  0001 C CNN
+	1    6250 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 2350 5800 2350
+Wire Wire Line
+	5800 2350 5800 2650
+Wire Wire Line
+	5800 2650 6250 2650
+Wire Wire Line
+	5600 2450 5700 2450
+Wire Wire Line
+	5700 2450 5700 2850
+Wire Wire Line
+	5700 2850 6250 2850
 $EndSCHEMATC
