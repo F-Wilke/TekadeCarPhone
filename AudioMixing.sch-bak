@@ -993,10 +993,8 @@ Text HLabel 1700 2150 0    50   BiDi ~ 0
 I2S2_SD_CLK
 Text HLabel 1700 2350 0    50   BiDi ~ 0
 I2S2_SD_WS
-Text HLabel 1700 2450 0    50   Input ~ 0
-MCLK
 Wire Wire Line
-	4550 2450 1700 2450
+	4550 2450 2550 2450
 $Comp
 L power:+3V3 #PWR0145
 U 1 1 61D9B108
@@ -1305,4 +1303,105 @@ F 3 "" H 1400 7500 50  0001 C CNN
 	1    1400 7500
 	-1   0    0    -1  
 $EndComp
+Text Label 2550 2450 2    50   ~ 0
+MCLK
+$Comp
+L TeKaDe:WE_830208220101 Y?
+U 1 1 624E0C4D
+P 1200 3500
+F 0 "Y?" H 2350 3765 50  0000 C CNN
+F 1 "WE_830208220101" H 2350 3674 50  0000 C CNN
+F 2 "TeKaDe:WE_IQXO-791" H 2750 3600 50  0001 L CNN
+F 3 "https://www.we-online.de/katalog/datasheet/830208220101.pdf" H 2750 3500 50  0001 L CNN
+F 4 "Standard 2.5 x 2.0 oscillator in a ceramic package with a hermetically sealed metal lid." H 2750 3400 50  0001 L CNN "Description"
+F 5 "1" H 2750 3300 50  0001 L CNN "Height"
+F 6 "Wurth Elektronik" H 2750 3000 50  0001 L CNN "Manufacturer_Name"
+F 7 "830208220101" H 2750 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 624E26F0
+P 3150 3850
+F 0 "#PWR?" H 3150 3600 50  0001 C CNN
+F 1 "GND" H 3155 3677 50  0000 C CNN
+F 2 "" H 3150 3850 50  0001 C CNN
+F 3 "" H 3150 3850 50  0001 C CNN
+	1    3150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 624E2F8D
+P 1150 3600
+F 0 "C?" V 1400 3550 50  0000 L CNN
+F 1 "100n/16V/X7R" V 1300 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1188 3450 50  0001 C CNN
+F 3 "~" H 1150 3600 50  0001 C CNN
+	1    1150 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 624E36F3
+P 1150 3350
+F 0 "#PWR?" H 1150 3200 50  0001 C CNN
+F 1 "+3V3" H 1165 3523 50  0000 C CNN
+F 2 "" H 1150 3350 50  0001 C CNN
+F 3 "" H 1150 3350 50  0001 C CNN
+	1    1150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 624E400D
+P 1650 3350
+F 0 "#PWR?" H 1650 3200 50  0001 C CNN
+F 1 "+3V3" H 1665 3523 50  0000 C CNN
+F 2 "" H 1650 3350 50  0001 C CNN
+F 3 "" H 1650 3350 50  0001 C CNN
+	1    1650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 624E4364
+P 1150 3850
+F 0 "#PWR?" H 1150 3600 50  0001 C CNN
+F 1 "GND" H 1155 3677 50  0000 C CNN
+F 2 "" H 1150 3850 50  0001 C CNN
+F 3 "" H 1150 3850 50  0001 C CNN
+	1    1150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3600 3150 3600
+Wire Wire Line
+	3150 3600 3150 3850
+Wire Wire Line
+	1650 3350 1650 3500
+Wire Wire Line
+	1650 3600 1800 3600
+Wire Wire Line
+	1800 3500 1650 3500
+Connection ~ 1650 3500
+Wire Wire Line
+	1650 3500 1650 3600
+Wire Wire Line
+	1150 3350 1150 3450
+Wire Wire Line
+	1150 3750 1150 3850
+Text Label 3150 3500 0    50   ~ 0
+MCLK
+Wire Wire Line
+	3150 3500 2900 3500
+Wire Notes Line
+	1000 3050 3400 3050
+Wire Notes Line
+	3400 3050 3400 4100
+Wire Notes Line
+	3400 4100 1000 4100
+Wire Notes Line
+	1000 4100 1000 3050
 $EndSCHEMATC
