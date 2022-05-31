@@ -295,28 +295,6 @@ F 3 "~" H 5750 4450 50  0001 C CNN
 	1    5750 4450
 	1    0    0    -1  
 $EndComp
-$Comp
-L CM4:Compute_Module_4_Connectors U7
-U 1 1 622AF813
-P 2100 850
-F 0 "U7" H 3300 1137 60  0000 C CNN
-F 1 "Compute_Module_4_Connectors" H 3300 1031 60  0000 C CNN
-F 2 "TeKaDe:Raspberry-Pi-4-Compute-Module" H 2300 900 60  0001 L CNN
-F 3 "" H 2300 700 60  0001 L CNN
-	1    2100 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L CM4:Compute_Module_4_Connectors U7
-U 2 1 622B2EA9
-P 8900 850
-F 0 "U7" H 9900 1137 60  0000 C CNN
-F 1 "Compute_Module_4_Connectors" H 9900 1031 60  0000 C CNN
-F 2 "TeKaDe:Raspberry-Pi-4-Compute-Module" H 9100 900 60  0001 L CNN
-F 3 "" H 9100 700 60  0001 L CNN
-	2    8900 850 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2100 850  2000 850 
 Wire Wire Line
@@ -10700,6 +10678,28 @@ F 1 "100n/16V/X7R" H 7265 4805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7188 4700 50  0001 C CNN
 F 3 "~" H 7150 4850 50  0001 C CNN
 	1    7150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM4:CM4_Connectors_Part1 U6
+U 1 1 629A08EC
+P 2100 850
+F 0 "U6" H 3300 1115 50  0000 C CNN
+F 1 "CM4_Connectors_Part1" H 3300 1024 50  0000 C CNN
+F 2 "TeKaDe:CM4-Part1" H 3050 1050 50  0001 C CNN
+F 3 "" H 3050 1050 50  0001 C CNN
+	1    2100 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CM4:CM4_Connectors_Part2 U7
+U 1 1 629A6B87
+P 8900 850
+F 0 "U7" H 9900 1115 50  0000 C CNN
+F 1 "CM4_Connectors_Part2" H 9900 1024 50  0000 C CNN
+F 2 "TeKaDe:CM4-Part2" H 9500 1300 50  0001 C CNN
+F 3 "" H 9500 1300 50  0001 C CNN
+	1    8900 850 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
