@@ -1,17 +1,21 @@
 EESchema-DOCLIB  Version 2.0
 #
+<<<<<<< HEAD
 $CMP APX803L
 D Microcontroller reset monitor, 2.70V threshold, active low output
 K supervisor reset push-pull
 F http://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf
 $ENDCMP
 #
+=======
+>>>>>>> c8682f972d5f1715705e1d3e66b790fb45b56f4e
 $CMP ATmega4809-A
 D 20MHz, 48kB Flash, 6kB SRAM, 256B EEPROM, TQFP-48
 K AVR 8bit Microcontroller MegaAVR
 F http://ww1.microchip.com/downloads/en/DeviceDoc/40002016A.pdf
 $ENDCMP
 #
+<<<<<<< HEAD
 $CMP MCP100-300D
 D Microcontroller reset monitor, 3.00V threshold, active low output
 K supervisor reset push-pull
@@ -48,6 +52,8 @@ K supervisor reset push-pull
 F http://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf
 $ENDCMP
 #
+=======
+>>>>>>> c8682f972d5f1715705e1d3e66b790fb45b56f4e
 $CMP ULN2003F12FN-7
 D DiodesZetex ULN2003F12FN-7, MOSFET Sink Driver, 3.3  5 V, 10-Pin DFN3030
 $ENDCMP
