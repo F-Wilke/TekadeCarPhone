@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 update=17.01.2022 09:03:24
-=======
-update=17.01.2022 09:48:53
->>>>>>> c8682f972d5f1715705e1d3e66b790fb45b56f4e
 version=1
 last_client=kicad
 [general]
