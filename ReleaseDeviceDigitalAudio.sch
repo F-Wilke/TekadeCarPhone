@@ -24,8 +24,8 @@ S 8050 6350 1600 2350
 U 60F18E7A
 F0 "ControllerUIBoard" 50
 F1 "ControllerUIBoard.sch" 50
-F2 "IGNITION_SENSE" I R 9650 8400 50 
-F3 "5V_EN_OUT" O R 9650 8500 50 
+F2 "IGNITION_SENSE" I R 9650 8500 50 
+F3 "5V_EN_OUT" O R 9650 8400 50 
 F4 "7Seg_Driver_D" O R 9650 7700 50 
 F5 "7Seg_Driver_C" O R 9650 7600 50 
 F6 "7Seg_Driver_B" O R 9650 7500 50 
@@ -486,4 +486,6 @@ F 3 "" H 13000 2750 50  0001 C CNN
 	1    13000 2750
 	1    0    0    -1  
 $EndComp
+Text Notes 9600 8900 0    50   Italic 0
+Ignition sense und power hold vertauscht\n\n03.07.23: behoben
 $EndSCHEMATC

@@ -1183,4 +1183,18 @@ F 3 "~" H 13500 5950 50  0001 C CNN
 	1    13500 5950
 	0    1    1    0   
 $EndComp
+Text Notes 7750 2250 0    50   Italic 0
+Unzureichend um U4 zu driven\nVpp test = ca0.9V
+Text Notes 6550 5200 0    50   Italic 0
+U2.1: ca 0.9V kommen nur an
+Text Notes 6600 6200 0    50   Italic 0
+U3.1: ca 0.9V kommen nur an
+Text Notes 9150 2500 0    50   Italic 0
+-> andere Z-Diode: Spannung auf Eingangsspannung von Optokoppler reduzierbar\n    -> Was hängt noch an VPP?\n        -> nur Optokoppler für diskretes Or-Gate\n-> anderer Widerstand: \n    - müsste deutlich geringer sein, um Z-Diode bei 12V zu halten\n    - gleiches Verhalten wie derzeit, wenn Batt+ < 12V
+Text Notes 9350 2850 0    50   Italic 0
+Wo findet der Spannungsabfall an VPP statt?\n—> An R24 -> Warum Ist der Widerstand dahinter so gering?
+Text Notes 9350 3450 0    50   Italic 0
+Bei Ingnition low:\nI_vpp = I_batt+ = \nBei Ignition high:\nI_vpp = I_batt+ =\n
+Text Notes 7450 2950 0    50   Italic 0
+Footprint ist falsch \n-> falschherum eingebaut
 $EndSCHEMATC
