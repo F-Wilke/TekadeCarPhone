@@ -487,5 +487,5 @@ F 3 "" H 13000 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9600 8900 0    50   Italic 0
-Ignition sense und power hold vertauscht
+Ignition sense und power hold vertauscht\n\n03.07.23: behoben
 $EndSCHEMATC
