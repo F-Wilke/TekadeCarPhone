@@ -43,22 +43,16 @@ Wire Wire Line
 	5800 6550 5800 6850
 Wire Wire Line
 	5950 6950 5700 6950
-Text Label 1600 3250 2    50   ~ 0
-LDR
 Text HLabel 6350 3850 2    50   Input ~ 0
 IGNITION_SENSE
 Text HLabel 6350 3950 2    50   Output ~ 0
 5V_EN_OUT
-Text Label 1600 2850 2    50   ~ 0
-LED_ON
 Text Label 1600 3550 2    50   ~ 0
 LED_GN
 Text Label 1600 3350 2    50   ~ 0
 LED_YL
 Text Label 1600 3450 2    50   ~ 0
 LED_RD
-Wire Wire Line
-	4100 2850 2100 2850
 Wire Wire Line
 	4100 3550 2600 3550
 Wire Wire Line
@@ -69,32 +63,6 @@ Wire Wire Line
 	5300 2550 6350 2550
 Wire Wire Line
 	5300 2250 6350 2250
-$Comp
-L power:GND #PWR011
-U 1 1 60FB5234
-P 3350 5100
-F 0 "#PWR011" H 3350 4850 50  0001 C CNN
-F 1 "GND" H 3355 4927 50  0000 C CNN
-F 2 "" H 3350 5100 50  0001 C CNN
-F 3 "" H 3350 5100 50  0001 C CNN
-	1    3350 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 4500 3350 5100
-$Comp
-L power:GND #PWR015
-U 1 1 60FD5802
-P 3650 5100
-F 0 "#PWR015" H 3650 4850 50  0001 C CNN
-F 1 "GND" H 3655 4927 50  0000 C CNN
-F 2 "" H 3650 5100 50  0001 C CNN
-F 3 "" H 3650 5100 50  0001 C CNN
-	1    3650 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 4800 3650 5100
 $Comp
 L power:+5V #PWR012
 U 1 1 6102E230
@@ -128,17 +96,9 @@ Wire Wire Line
 Wire Wire Line
 	5300 2850 6350 2850
 Wire Wire Line
-	5300 1950 6350 1950
-Wire Wire Line
-	5300 2050 6350 2050
-Wire Wire Line
 	5300 3350 6350 3350
 Wire Wire Line
 	5300 3250 6350 3250
-Text Label 6350 2050 0    50   ~ 0
-KeySwitchA
-Text Label 6350 1950 0    50   ~ 0
-KeySwitchB
 Text Label 6350 1750 0    50   ~ 0
 Signal_Strength_Dial_+
 $Comp
@@ -156,8 +116,6 @@ Wire Wire Line
 	5300 1750 5750 1750
 Wire Wire Line
 	6050 1750 6350 1750
-Wire Wire Line
-	5300 1650 6350 1650
 $Comp
 L power:+5V #PWR05
 U 1 1 6117E842
@@ -268,71 +226,18 @@ F 3 "" H 4700 950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4700 950  4700 1100
-Text Label 1600 3750 2    50   ~ 0
-DataEncoderOutputEnable
-Text Label 1600 2650 2    50   ~ 0
-DataEncoderDataOutC
-Text Label 1600 3950 2    50   ~ 0
-DataEncoderDataOutB
-Wire Wire Line
-	1600 3750 4100 3750
 Wire Wire Line
 	6350 3950 5300 3950
-Wire Wire Line
-	1600 3950 2750 3950
-Wire Wire Line
-	1600 2650 3050 2650
-Connection ~ 3350 2750
-Wire Wire Line
-	3350 2750 4100 2750
-Wire Wire Line
-	1600 2750 3350 2750
-Wire Wire Line
-	2750 4500 2750 3950
-Wire Wire Line
-	2750 3950 4100 3950
-Wire Wire Line
-	3050 2650 4100 2650
 Wire Wire Line
 	3200 950  3200 1100
 Wire Wire Line
 	4700 4250 4700 4400
-$Comp
-L Device:R R3
-U 1 1 60E994CF
-P 2150 4650
-F 0 "R3" H 2220 4696 50  0000 L CNN
-F 1 "10k/1%" H 2220 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 4650 50  0001 C CNN
-F 3 "~" H 2150 4650 50  0001 C CNN
-	1    2150 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 3250 2150 4500
-$Comp
-L power:GND #PWR07
-U 1 1 60EA6769
-P 2150 5100
-F 0 "#PWR07" H 2150 4850 50  0001 C CNN
-F 1 "GND" H 2155 4927 50  0000 C CNN
-F 2 "" H 2150 5100 50  0001 C CNN
-F 3 "" H 2150 5100 50  0001 C CNN
-	1    2150 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 4800 2150 5100
 Text HLabel 6350 3450 2    50   Output ~ 0
 RPI_RUN
 Text HLabel 6350 3350 2    50   Input ~ 0
 UART1_RX
 Text HLabel 6350 3250 2    50   Output ~ 0
 UART1_TX
-NoConn ~ 5300 1850
-NoConn ~ 4100 2150
-NoConn ~ 4100 1950
-NoConn ~ 4100 2350
 NoConn ~ 5300 3550
 NoConn ~ 5300 3750
 Wire Wire Line
@@ -344,7 +249,6 @@ UPDI_DATA
 Text Notes 4100 2500 2    50   ~ 0
 Software Reset + internal pullup -> n.c
 NoConn ~ 5300 3650
-NoConn ~ 4100 2050
 Text HLabel 6350 2850 2    50   Output ~ 0
 7Seg_Driver_D
 Text HLabel 6350 2950 2    50   Output ~ 0
@@ -359,8 +263,6 @@ Text HLabel 6350 2350 2    50   Output ~ 0
 7Seg_Decoder_D2
 Text HLabel 6350 2150 2    50   Output ~ 0
 7Seg_Decoder_D1
-Text HLabel 6350 1650 2    50   Output ~ 0
-BrightnessPWM
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J?
 U 1 1 6205CD91
@@ -586,17 +488,6 @@ Pin 14/15
 Text Notes 3750 6250 0    50   ~ 0
 AVCC
 $Comp
-L power:GND #PWR019
-U 1 1 60FD580F
-P 3900 5100
-F 0 "#PWR019" H 3900 4850 50  0001 C CNN
-F 1 "GND" H 3905 4927 50  0000 C CNN
-F 2 "" H 3900 5100 50  0001 C CNN
-F 3 "" H 3900 5100 50  0001 C CNN
-	1    3900 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L L1
 U 1 1 60FA5308
 P 3800 6750
@@ -632,39 +523,6 @@ Wire Notes Line
 	4800 7550 4800 6100
 Text Notes 4900 6250 0    50   ~ 0
 PROG
-$Comp
-L Device:R R7
-U 1 1 6101B026
-P 3350 4350
-F 0 "R7" H 3420 4396 50  0000 L CNN
-F 1 "22k/1%" H 3420 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3280 4350 50  0001 C CNN
-F 3 "~" H 3350 4350 50  0001 C CNN
-	1    3350 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 6101B549
-P 2750 4650
-F 0 "R9" H 2820 4696 50  0000 L CNN
-F 1 "22k/1%" H 2820 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2680 4650 50  0001 C CNN
-F 3 "~" H 2750 4650 50  0001 C CNN
-	1    2750 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 6101BD56
-P 3650 4650
-F 0 "R11" H 3720 4696 50  0000 L CNN
-F 1 "22k/1%" H 3720 4605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3580 4650 50  0001 C CNN
-F 3 "~" H 3650 4650 50  0001 C CNN
-	1    3650 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R12
 U 1 1 6101D19A
@@ -752,8 +610,6 @@ Wire Wire Line
 	2300 3550 1600 3550
 Wire Wire Line
 	1750 3450 1600 3450
-Wire Wire Line
-	1800 2850 1600 2850
 $Comp
 L Device:R R?
 U 1 1 6109F54B
@@ -765,19 +621,6 @@ F 1 "150R/1%" V 2400 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2380 3550 50  0001 C CNN
 F 3 "~" H 2450 3550 50  0001 C CNN
 	1    2450 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6109FC15
-P 1950 2850
-AR Path="/631EEDC8/6109FC15" Ref="R?"  Part="1" 
-AR Path="/60F18E7A/6109FC15" Ref="R2"  Part="1" 
-F 0 "R2" V 1900 2650 50  0000 C CNN
-F 1 "150R/1%" V 1900 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 2850 50  0001 C CNN
-F 3 "~" H 1950 2850 50  0001 C CNN
-	1    1950 2850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -795,11 +638,8 @@ F 3 "~" H 1900 3450 50  0001 C CNN
 	1    1900 3450
 	0    1    1    0   
 $EndComp
-Text Label 1600 3650 2    50   ~ 0
-ButtonA2GND
 Wire Wire Line
 	3200 1400 3200 3650
-NoConn ~ 4100 2250
 Text Notes 8100 4500 0    50   ~ 0
 J10 Pin13/14 hier ist nur die LED auf UI Board, sonst nichts.\nAnsteuerung invertiert via Pin14, Pin13 auf konstante 5V
 Wire Wire Line
@@ -946,126 +786,9 @@ Auf Innenseite \ndes Sandwiches
 Text Label 3800 2450 0    50   ~ 0
 AVRRESET
 Wire Wire Line
-	1600 3250 2150 3250
-Wire Wire Line
-	1600 3650 3200 3650
-Connection ~ 3200 3650
-Wire Wire Line
 	3200 3650 4100 3650
-Connection ~ 2150 3250
-Wire Wire Line
-	2150 3250 4100 3250
-Wire Wire Line
-	2450 4500 2450 5100
-$Comp
-L power:GND #PWR010
-U 1 1 60F96DE0
-P 2450 5100
-F 0 "#PWR010" H 2450 4850 50  0001 C CNN
-F 1 "GND" H 2455 4927 50  0000 C CNN
-F 2 "" H 2450 5100 50  0001 C CNN
-F 3 "" H 2450 5100 50  0001 C CNN
-	1    2450 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 60F96179
-P 2450 4350
-F 0 "R6" H 2520 4396 50  0000 L CNN
-F 1 "22k/1%" H 2520 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2380 4350 50  0001 C CNN
-F 3 "~" H 2450 4350 50  0001 C CNN
-	1    2450 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 3850 4100 3850
-Connection ~ 2450 3850
-Wire Wire Line
-	2450 4200 2450 3850
-Wire Wire Line
-	1600 3850 2450 3850
-Text Label 1600 2750 2    50   ~ 0
-DataEncoderDataOutA
-Text Label 1600 3850 2    50   ~ 0
-DataEncoderDataAvailable
-Connection ~ 2750 3950
 Wire Wire Line
 	4100 3350 2600 3350
-$Comp
-L Device:R R10
-U 1 1 6101BA43
-P 3050 4900
-F 0 "R10" H 3120 4946 50  0000 L CNN
-F 1 "22k/1%" H 3120 4855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2980 4900 50  0001 C CNN
-F 3 "~" H 3050 4900 50  0001 C CNN
-	1    3050 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 2650 3050 4750
-Wire Wire Line
-	3050 5050 3050 5100
-$Comp
-L power:GND #PWR014
-U 1 1 60FD57F5
-P 3050 5100
-F 0 "#PWR014" H 3050 4850 50  0001 C CNN
-F 1 "GND" H 3055 4927 50  0000 C CNN
-F 2 "" H 3050 5100 50  0001 C CNN
-F 3 "" H 3050 5100 50  0001 C CNN
-	1    3050 5100
-	1    0    0    -1  
-$EndComp
-Connection ~ 3050 2650
-Wire Wire Line
-	3350 2750 3350 4200
-Wire Wire Line
-	1600 2950 3900 2950
-Wire Wire Line
-	1800 1850 3650 1850
-Wire Wire Line
-	3900 4750 3900 2950
-Wire Wire Line
-	3900 2950 4100 2950
-$Comp
-L Device:R R13
-U 1 1 61C10E9A
-P 3900 4900
-F 0 "R13" H 3970 4946 50  0000 L CNN
-F 1 "22k/1%" H 3970 4855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3830 4900 50  0001 C CNN
-F 3 "~" H 3900 4900 50  0001 C CNN
-	1    3900 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 5050 3900 5100
-$Comp
-L power:GND #PWR0184
-U 1 1 61C34C04
-P 2750 5100
-F 0 "#PWR0184" H 2750 4850 50  0001 C CNN
-F 1 "GND" H 2755 4927 50  0000 C CNN
-F 2 "" H 2750 5100 50  0001 C CNN
-F 3 "" H 2750 5100 50  0001 C CNN
-	1    2750 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 4800 2750 5100
-Connection ~ 3900 2950
-Wire Wire Line
-	3650 1850 3650 4500
-Connection ~ 3650 1850
-Wire Wire Line
-	3650 1850 4100 1850
-Text Label 1600 2950 2    50   ~ 0
-DataEncoderDataOutD
-Text Label 1800 1850 2    50   ~ 0
-DataEncoderDataOutE
 Text HLabel 6350 3050 2    50   Output ~ 0
 7Seg_Driver_B
 Wire Wire Line
@@ -1084,4 +807,64 @@ Text Label 9600 5750 0    50   ~ 0
 KeySwitchA
 Wire Wire Line
 	9300 5750 9600 5750
+Text Label 6350 1650 0    50   ~ 0
+Button_G
+Text Label 6350 1850 0    50   ~ 0
+Button_S
+Text Label 6350 1950 0    50   ~ 0
+Button_P
+Text Label 6350 2050 0    50   ~ 0
+Button_X
+Wire Wire Line
+	5300 1650 6350 1650
+Wire Wire Line
+	6350 1850 5300 1850
+Wire Wire Line
+	5300 1950 6350 1950
+Wire Wire Line
+	6350 2050 5300 2050
+Text Label 1800 1850 2    50   ~ 0
+Button_1
+Wire Wire Line
+	1800 1850 4100 1850
+Text Label 1800 1950 2    50   ~ 0
+Button_2
+Wire Wire Line
+	1800 1950 4100 1950
+Text Label 1800 2050 2    50   ~ 0
+Button_3
+Wire Wire Line
+	1800 2050 4100 2050
+Text Label 1800 2150 2    50   ~ 0
+Button_4
+Wire Wire Line
+	1800 2150 4100 2150
+Text Label 1800 2250 2    50   ~ 0
+Button_5
+Wire Wire Line
+	1800 2250 4100 2250
+Text Label 1800 2350 2    50   ~ 0
+Button_6
+Wire Wire Line
+	1800 2350 4100 2350
+Text Label 1800 2650 2    50   ~ 0
+Button_7
+Wire Wire Line
+	1800 2650 4100 2650
+Text Label 1800 2750 2    50   ~ 0
+Button_8
+Wire Wire Line
+	1800 2750 4100 2750
+Text Label 1800 2850 2    50   ~ 0
+Button_R
+Wire Wire Line
+	1800 2850 4100 2850
+Text Label 1800 2950 2    50   ~ 0
+Button_0
+Wire Wire Line
+	1800 2950 4100 2950
+Text Label 1800 3250 2    50   ~ 0
+Button_S
+Wire Wire Line
+	1800 3250 4100 3250
 $EndSCHEMATC
