@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -43,10 +43,8 @@ Wire Wire Line
 	5800 6550 5800 6850
 Wire Wire Line
 	5950 6950 5700 6950
-Text HLabel 6350 3850 2    50   Input ~ 0
+Text HLabel 6350 3550 2    50   Input ~ 0
 IGNITION_SENSE
-Text HLabel 6350 3950 2    50   Output ~ 0
-5V_EN_OUT
 Text Label 1600 3550 2    50   ~ 0
 LED_GN
 Text Label 1600 3350 2    50   ~ 0
@@ -73,8 +71,6 @@ F 3 "" H 3350 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 3850 6350 3850
-Wire Wire Line
 	5300 3450 6350 3450
 $Comp
 L power:GND #PWR021
@@ -90,7 +86,7 @@ $EndComp
 Wire Wire Line
 	5300 2750 6350 2750
 Wire Wire Line
-	5300 2950 6350 2950
+	4100 3850 3050 3850
 Wire Wire Line
 	5300 2850 6350 2850
 Wire Wire Line
@@ -225,13 +221,9 @@ $EndComp
 Wire Wire Line
 	4700 950  4700 1100
 Wire Wire Line
-	6350 3950 5300 3950
-Wire Wire Line
 	3350 950  3350 1100
 Wire Wire Line
 	4700 4250 4700 4400
-Text HLabel 6350 3450 2    50   Output ~ 0
-RPI_RUN
 Text HLabel 6350 3350 2    50   Input ~ 0
 UART1_RX
 Text HLabel 6350 3250 2    50   Output ~ 0
@@ -244,7 +236,6 @@ Text Label 5950 6950 0    50   ~ 0
 UPDI_DATA
 Text Notes 4100 2500 2    50   ~ 0
 Software Reset + internal pullup -> n.c
-NoConn ~ 5300 3650
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J?
 U 1 1 6205CD91
@@ -268,29 +259,25 @@ LED_YL
 $Comp
 L power:+5V #PWR?
 U 1 1 6205CDAB
-P 7700 3050
+P 10600 3100
 AR Path="/6205CDAB" Ref="#PWR?"  Part="1" 
 AR Path="/60F87146/6205CDAB" Ref="#PWR?"  Part="1" 
 AR Path="/60F18E7A/6205CDAB" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 7700 2900 50  0001 C CNN
-F 1 "+5V" H 7715 3223 50  0000 C CNN
-F 2 "" H 7700 3050 50  0001 C CNN
-F 3 "" H 7700 3050 50  0001 C CNN
-	1    7700 3050
+F 0 "#PWR024" H 10600 2950 50  0001 C CNN
+F 1 "+5V" H 10615 3273 50  0000 C CNN
+F 2 "" H 10600 3100 50  0001 C CNN
+F 3 "" H 10600 3100 50  0001 C CNN
+	1    10600 3100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7700 3950 7700 3050
-Wire Wire Line
-	9800 3550 9550 3550
+	9800 3450 9550 3450
 Wire Wire Line
 	9550 3650 9800 3650
 Wire Wire Line
 	9800 3750 9550 3750
 Wire Wire Line
 	9550 3850 9800 3850
-Wire Wire Line
-	9050 4150 8800 4150
 Wire Wire Line
 	8800 3850 9050 3850
 Wire Wire Line
@@ -304,7 +291,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 5600 3500 5600
 Wire Wire Line
-	9050 3950 7700 3950
+	9550 4150 10600 4150
 Wire Wire Line
 	9800 3950 9550 3950
 $Comp
@@ -518,7 +505,7 @@ U 1 1 6103284D
 P 3000 5600
 F 0 "J3" H 3150 5600 50  0000 C CNN
 F 1 "SignalStrength" H 3350 5500 50  0000 C CNN
-F 2 "TeKaDe:Molex_PicoBlade_53048-0210_1x02_P1.25mm_Horizontal" H 3000 5600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 5600 50  0001 C CNN
 F 3 "~" H 3000 5600 50  0001 C CNN
 	1    3000 5600
 	-1   0    0    -1  
@@ -590,11 +577,6 @@ F 3 "~" H 1900 3450 50  0001 C CNN
 $EndComp
 Text Notes 8100 4500 0    50   ~ 0
 J10 Pin13/14 hier ist nur die LED auf UI Board, sonst nichts.\nAnsteuerung invertiert via Pin14, Pin13 auf konstante 5V
-Wire Wire Line
-	7700 4050 7700 3950
-Wire Wire Line
-	9050 4050 7700 4050
-Connection ~ 7700 3950
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 617E35E3
@@ -655,7 +637,7 @@ Wire Wire Line
 	9200 2350 9200 2500
 Wire Wire Line
 	9200 2500 9550 2500
-Text Label 9800 3550 0    50   ~ 0
+Text Label 9800 3450 0    50   ~ 0
 LED_GN
 $Comp
 L power:+5V #PWR?
@@ -706,16 +688,16 @@ AVRRESET
 Wire Wire Line
 	4100 3350 2600 3350
 Wire Wire Line
-	5300 3050 6350 3050
+	4100 3750 3050 3750
 Wire Wire Line
 	5300 2650 7400 2650
 Wire Wire Line
 	7400 2650 7400 2150
 Wire Wire Line
 	7400 2150 8200 2150
-Text Label 6350 1650 0    50   ~ 0
-Button_G
 Text Label 6350 1850 0    50   ~ 0
+Button_G
+Text Label 6350 1650 0    50   ~ 0
 Button_S
 Text Label 6350 1950 0    50   ~ 0
 Button_P
@@ -771,11 +753,11 @@ Text Label 1800 3650 2    50   ~ 0
 Button_M
 Wire Wire Line
 	1800 3650 3050 3650
-Text Label 6350 3550 0    50   ~ 0
+Text Label 3050 3950 2    50   ~ 0
 7Seg_Driver_BI
 Wire Wire Line
-	6350 3550 5300 3550
-Text Notes 5550 3650 0    50   ~ 0
+	3050 3950 4100 3950
+Text Notes 3800 4050 2    50   ~ 0
 high: display number\nlow: blank
 Text Label 1800 2850 2    50   ~ 0
 Button_9
@@ -1239,13 +1221,10 @@ F 3 "" H 6200 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4650 6200 5350
-NoConn ~ 4100 3750
-NoConn ~ 4100 3850
-NoConn ~ 4100 3950
-Text HLabel 6350 3750 2    50   Output ~ 0
+Text HLabel 6350 3650 2    50   Output ~ 0
 Bell_Out
 Wire Wire Line
-	6350 3750 5300 3750
+	6350 3550 5300 3550
 Text Label 6350 2150 0    50   ~ 0
 7seg_dec_D1
 Wire Wire Line
@@ -1262,12 +1241,10 @@ Text Label 6350 2750 0    50   ~ 0
 7seg_dr_A
 Text Label 6350 2850 0    50   ~ 0
 7seg_dr_D
-Text Label 6350 2950 0    50   ~ 0
+Text Label 3050 3850 2    50   ~ 0
 7seg_dr_C
-Text Label 6350 3050 0    50   ~ 0
+Text Label 3050 3750 2    50   ~ 0
 7seg_dr_B
-Text Label 8800 4150 2    50   ~ 0
-7seg_dec_D1
 Text Label 8800 3850 2    50   ~ 0
 7seg_dec_D4
 Text Label 8800 3750 2    50   ~ 0
@@ -1282,18 +1259,258 @@ Text Label 9800 3850 0    50   ~ 0
 7seg_dr_C
 Text Label 9800 3950 0    50   ~ 0
 7seg_dr_B
-NoConn ~ 9550 3450
 Text Label 9550 2500 0    50   ~ 0
 5V_BL
-Text Label 9800 4150 0    50   ~ 0
+Text Label 8800 4050 2    50   ~ 0
 5V_BL
 Wire Wire Line
-	9800 4150 9650 4150
+	8800 4050 8950 4050
 Wire Wire Line
-	9650 4150 9650 4050
+	8950 4050 8950 4150
 Wire Wire Line
-	9650 4050 9550 4050
-Connection ~ 9650 4150
+	8950 4150 9050 4150
+Connection ~ 8950 4050
 Wire Wire Line
-	9650 4150 9550 4150
+	8950 4050 9050 4050
+Wire Wire Line
+	7000 3050 5300 3050
+Text HLabel 7000 3050 2    50   Input ~ 0
+Hoerer_2
+Text Label 9800 3550 0    50   ~ 0
+7Seg_Driver_BI
+Wire Wire Line
+	9550 3550 9800 3550
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 655EC850
+P 8350 5950
+F 0 "J8" H 8430 5942 50  0000 L CNN
+F 1 "Conn_01x04" H 8430 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8350 5950 50  0001 C CNN
+F 3 "~" H 8350 5950 50  0001 C CNN
+	1    8350 5950
+	1    0    0    -1  
+$EndComp
+Text Label 8100 5200 0    50   ~ 0
+Button_1
+Text Label 8800 5200 0    50   ~ 0
+Button_2
+Text Label 9600 5200 0    50   ~ 0
+Button_3
+Text Label 8100 5350 0    50   ~ 0
+Button_4
+Text Label 8800 5350 0    50   ~ 0
+Button_5
+Text Label 9600 5350 0    50   ~ 0
+Button_6
+Text Label 8100 5450 0    50   ~ 0
+Button_7
+Text Label 8800 5450 0    50   ~ 0
+Button_8
+Text Label 8100 5550 0    50   ~ 0
+Button_R
+Text Label 9600 5450 0    50   ~ 0
+Button_9
+Text Label 8800 5550 0    50   ~ 0
+Button_0
+Text Label 9600 5550 0    50   ~ 0
+Button_M
+Text Label 10150 5950 2    50   ~ 0
+Button_G
+Text Label 10150 6050 2    50   ~ 0
+Button_P
+Text Label 10950 5950 0    50   ~ 0
+Button_S
+Text Label 10950 6050 0    50   ~ 0
+Button_X
+Wire Wire Line
+	10950 6050 10800 6050
+Wire Wire Line
+	10800 5950 10950 5950
+Wire Wire Line
+	10300 5950 10150 5950
+Wire Wire Line
+	10150 6050 10300 6050
+Wire Wire Line
+	9250 6150 9550 6150
+Wire Wire Line
+	9550 6150 9550 5550
+Wire Wire Line
+	9550 5550 9600 5550
+Wire Wire Line
+	9600 5450 9500 5450
+Wire Wire Line
+	9500 5450 9500 6050
+Wire Wire Line
+	9500 6050 9250 6050
+Wire Wire Line
+	9250 5950 9450 5950
+Wire Wire Line
+	9450 5950 9450 5350
+Wire Wire Line
+	9450 5350 9600 5350
+Wire Wire Line
+	9600 5200 9400 5200
+Wire Wire Line
+	9400 5200 9400 5850
+Wire Wire Line
+	9400 5850 9250 5850
+Wire Wire Line
+	8800 5550 8700 5550
+Wire Wire Line
+	8700 5550 8700 6150
+Wire Wire Line
+	8700 6150 8750 6150
+Wire Wire Line
+	8750 6050 8650 6050
+Wire Wire Line
+	8650 6050 8650 5450
+Wire Wire Line
+	8650 5450 8800 5450
+Wire Wire Line
+	8800 5350 8600 5350
+Wire Wire Line
+	8600 5350 8600 5950
+Wire Wire Line
+	8600 5950 8750 5950
+Wire Wire Line
+	8750 5850 8550 5850
+Wire Wire Line
+	8550 5850 8550 5200
+Wire Wire Line
+	8550 5200 8800 5200
+Wire Wire Line
+	8100 5550 8050 5550
+Wire Wire Line
+	8050 5550 8050 6150
+Wire Wire Line
+	8050 6150 8150 6150
+Wire Wire Line
+	8150 6050 8000 6050
+Wire Wire Line
+	8000 6050 8000 5450
+Wire Wire Line
+	8000 5450 8100 5450
+Wire Wire Line
+	8150 5950 7950 5950
+Wire Wire Line
+	7950 5950 7950 5350
+Wire Wire Line
+	7950 5350 8100 5350
+Wire Wire Line
+	8150 5850 7900 5850
+Wire Wire Line
+	7900 5850 7900 5200
+Wire Wire Line
+	7900 5200 8100 5200
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J6
+U 1 1 65792FC8
+P 3650 4700
+F 0 "J6" H 3700 5017 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 3700 4926 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3650 4700 50  0001 C CNN
+F 3 "~" H 3650 4700 50  0001 C CNN
+	1    3650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0171
+U 1 1 6579FFFD
+P 4300 4800
+F 0 "#PWR0171" H 4300 4550 50  0001 C CNN
+F 1 "GND" H 4305 4627 50  0000 C CNN
+F 2 "" H 4300 4800 50  0001 C CNN
+F 3 "" H 4300 4800 50  0001 C CNN
+	1    4300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4800 4300 4600
+$Comp
+L power:+5V #PWR0172
+U 1 1 657ACA9A
+P 3200 4400
+F 0 "#PWR0172" H 3200 4250 50  0001 C CNN
+F 1 "+5V" H 3215 4573 50  0000 C CNN
+F 2 "" H 3200 4400 50  0001 C CNN
+F 3 "" H 3200 4400 50  0001 C CNN
+	1    3200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4400 3200 4600
+Wire Wire Line
+	3200 4600 3450 4600
+Wire Wire Line
+	6350 3650 5300 3650
+Text Label 6350 3950 0    50   ~ 0
+Ext2
+Wire Wire Line
+	6350 3950 5300 3950
+Text Label 6350 3750 0    50   ~ 0
+Ext3
+Wire Wire Line
+	6350 3750 5300 3750
+Text Label 3350 4700 2    50   ~ 0
+Ext1
+Text Label 3350 4800 2    50   ~ 0
+Ext2
+Wire Wire Line
+	3350 4800 3450 4800
+Wire Wire Line
+	3450 4700 3350 4700
+Text Label 4050 4800 0    50   ~ 0
+Ext3
+Wire Wire Line
+	4050 4800 3950 4800
+Text Label 6350 3850 0    50   ~ 0
+Ext4
+Wire Wire Line
+	6350 3850 5300 3850
+Text Label 4050 4700 0    50   ~ 0
+Ext4
+Wire Wire Line
+	4050 4700 3950 4700
+Wire Wire Line
+	3950 4600 4300 4600
+Text HLabel 6350 3450 2    50   Output ~ 0
+RPI_RUN
+Text HLabel 7000 2950 2    50   Input ~ 0
+Hoerer_1
+Wire Wire Line
+	7000 2950 5300 2950
+Text Label 8800 3950 2    50   ~ 0
+7seg_dec_D1
+Wire Wire Line
+	9050 3950 8800 3950
+Wire Wire Line
+	10600 3100 10600 4050
+Wire Wire Line
+	9550 4050 10600 4050
+Connection ~ 10600 4050
+Wire Wire Line
+	10600 4050 10600 4150
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J9
+U 1 1 65C1C3A4
+P 8950 5950
+F 0 "J9" H 9000 6267 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 9000 6176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8950 5950 50  0001 C CNN
+F 3 "~" H 8950 5950 50  0001 C CNN
+	1    8950 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J10
+U 1 1 65C1DA72
+P 10500 5950
+F 0 "J10" H 10550 6167 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 10550 6076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 10500 5950 50  0001 C CNN
+F 3 "~" H 10500 5950 50  0001 C CNN
+	1    10500 5950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

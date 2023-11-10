@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 8
+Sheet 2 6
 Title "TIDA-00746-SchDoc"
 Date "05 06 2020"
 Rev ""
@@ -130,208 +130,12 @@ Wire Wire Line
 	3350 2900 3350 2200
 Wire Wire Line
 	3350 2200 2650 2200
-$Comp
-L TeKaDe:ACM1211-102-2PL-TL01- L2
-U 1 1 5EDA4410
-P 4950 2400
-F 0 "L2" H 4900 2800 60  0000 L BNN
-F 1 "ACM1211-102-2PL-TL01" H 4350 2650 60  0000 L BNN
-F 2 "TeKaDe:ACM1211" H 4550 1900 60  0001 C CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_power_acm1211_en.pdf" H 4550 1900 60  0001 C CNN
-	1    4950 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C18
-U 1 1 60D7B006
-P 5900 2700
-F 0 "C18" H 6015 2746 50  0000 L CNN
-F 1 "10u/50V/X7R" H 6015 2655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 5938 2550 50  0001 C CNN
-F 3 "~" H 5900 2700 50  0001 C CNN
-	1    5900 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 60D7B909
-P 4100 2450
-F 0 "C15" H 4215 2496 50  0000 L CNN
-F 1 "1n/100V/X7R" H 4215 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4138 2300 50  0001 C CNN
-F 3 "~" H 4100 2450 50  0001 C CNN
-	1    4100 2450
-	-1   0    0    1   
-$EndComp
-Connection ~ 4100 2600
-Connection ~ 4100 2300
-$Comp
-L Device:C C17
-U 1 1 60D7C59F
-P 5550 2450
-F 0 "C17" H 5665 2496 50  0000 L CNN
-F 1 "1n/100V/X7R" H 5665 2405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5588 2300 50  0001 C CNN
-F 3 "~" H 5550 2450 50  0001 C CNN
-	1    5550 2450
-	1    0    0    -1  
-$EndComp
-Connection ~ 5550 2300
-Wire Wire Line
-	5450 2300 5550 2300
-Connection ~ 5550 2600
-$Comp
-L Device:C C19
-U 1 1 60D7B5D8
-P 6200 2950
-F 0 "C19" H 6315 2996 50  0000 L CNN
-F 1 "10u/50V/X7R" H 6315 2905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 6238 2800 50  0001 C CNN
-F 3 "~" H 6200 2950 50  0001 C CNN
-	1    6200 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR045
-U 1 1 60F1A723
-P 5900 3950
-F 0 "#PWR045" H 5900 3700 50  0001 C CNN
-F 1 "GND" H 5900 3800 50  0000 C CNN
-F 2 "" H 5900 3950 50  0001 C CNN
-F 3 "~" H 5900 3950 50  0001 C CNN
-	1    5900 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 3250 5900 3950
-Wire Wire Line
-	5900 3250 5550 3250
-Connection ~ 5900 3250
-Wire Wire Line
-	5900 2850 5900 3250
-Wire Wire Line
-	6200 3250 5900 3250
-Wire Wire Line
-	6200 3100 6200 3250
-Wire Wire Line
-	5900 2550 5900 2300
-Connection ~ 5900 2300
-Wire Wire Line
-	5900 2300 6200 2300
-Wire Wire Line
-	6200 2300 6200 2800
-Wire Wire Line
-	5550 2600 5550 3250
-$Comp
-L power:+BATT #PWR035
-U 1 1 5F41EFC7
-P 4100 2050
-F 0 "#PWR035" H 4100 1900 50  0001 C CNN
-F 1 "+BATT" H 4115 2223 50  0000 C CNN
-F 2 "" H 4100 2050 50  0001 C CNN
-F 3 "" H 4100 2050 50  0001 C CNN
-	1    4100 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2600 5550 2600
-$Comp
-L power:-BATT #PWR036
-U 1 1 5F40FAB1
-P 4100 3950
-F 0 "#PWR036" H 4100 3800 50  0001 C CNN
-F 1 "-BATT" H 4115 4123 50  0000 C CNN
-F 2 "" H 4100 3950 50  0001 C CNN
-F 3 "" H 4100 3950 50  0001 C CNN
-	1    4100 3950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4100 2300 4450 2300
-Wire Wire Line
-	4100 2600 4450 2600
-Wire Wire Line
-	4100 3950 4100 2600
-Wire Wire Line
-	4100 2050 4100 2300
-$Comp
-L power:VPP #PWR0187
-U 1 1 61EDAEDE
-P 8700 2050
-F 0 "#PWR0187" H 8700 1900 50  0001 C CNN
-F 1 "VPP" H 8715 2223 50  0000 C CNN
-F 2 "" H 8700 2050 50  0001 C CNN
-F 3 "" H 8700 2050 50  0001 C CNN
-	1    8700 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 2300 8700 2050
-Text Notes 7250 2050 0    50   ~ 0
-Spannungsbegrenzung\nmit Zenerdiode auf Uz = 12V\nUinmax = 28V Imax = 100mA\nRv = (Uin - Uz) / 100mA\nRv = 140R -> 150R
-$Comp
-L Device:R R24
-U 1 1 62026E24
-P 7450 2300
-F 0 "R24" V 7243 2300 50  0000 C CNN
-F 1 "150R/1%" V 7334 2300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7380 2300 50  0001 C CNN
-F 3 "~" H 7450 2300 50  0001 C CNN
-	1    7450 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Zener_Small D12
-U 1 1 62026E2E
-P 7750 2600
-F 0 "D12" V 7704 2668 50  0000 L CNN
-F 1 "BZX84B12-7-F" V 7795 2668 50  0000 L CNN
-F 2 "TeKaDe:SOT-23-2-DiodesInc" V 7750 2600 50  0001 C CNN
-F 3 "~" V 7750 2600 50  0001 C CNN
-	1    7750 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7600 2300 7750 2300
-$Comp
-L power:GND #PWR0193
-U 1 1 62026E3A
-P 7750 3950
-F 0 "#PWR0193" H 7750 3700 50  0001 C CNN
-F 1 "GND" H 7755 3777 50  0000 C CNN
-F 2 "" H 7750 3950 50  0001 C CNN
-F 3 "" H 7750 3950 50  0001 C CNN
-	1    7750 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 3950 7750 2700
-Wire Wire Line
-	7750 2300 7750 2500
-Connection ~ 7750 2300
-Wire Wire Line
-	7750 2300 8700 2300
-Wire Notes Line
-	7150 1550 8550 1550
-Wire Notes Line
-	8550 1550 8550 3050
-Wire Notes Line
-	8550 3050 7150 3050
-Wire Notes Line
-	7150 3050 7150 1550
-Wire Wire Line
-	6200 2300 7300 2300
-Wire Wire Line
-	5550 2300 5900 2300
-Connection ~ 6200 2300
 Wire Notes Line
 	10200 8000 1250 8000
 Wire Notes Line
 	1250 4650 1250 8000
 Wire Notes Line
 	10200 4650 10200 8000
-Text Label 1950 9150 2    50   ~ 0
-PWR_ENABLE
 Wire Notes Line
 	2200 10000 2200 8400
 Wire Notes Line
@@ -383,34 +187,6 @@ F 3 "~" H 2500 9150 50  0001 C CNN
 $EndComp
 Text Notes 2300 8850 0    50   ~ 0
 Spannungsbegrenzung\nmit Zenerdiode auf Uz = 5,1V\nUinmax = 12V (VPP)\nRv = (Uin - Uz) / 100mA\nRv = 69R -> 68R
-Wire Notes Line
-	10200 4650 1250 4650
-Wire Wire Line
-	9650 6950 9200 6950
-Text Label 9650 6950 0    50   ~ 0
-PWR_ENABLE
-$Comp
-L Device:R R18
-U 1 1 613760CF
-P 6250 6400
-F 0 "R18" V 6043 6400 50  0000 C CNN
-F 1 "1k/1%" V 6134 6400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6180 6400 50  0001 C CNN
-F 3 "~" H 6250 6400 50  0001 C CNN
-	1    6250 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L Isolator:PC817 U3
-U 1 1 6118390D
-P 7000 6500
-F 0 "U3" H 7000 6825 50  0000 C CNN
-F 1 "VOMA617A" H 7000 6734 50  0000 C CNN
-F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 6800 6300 50  0001 L CIN
-F 3 "" H 7000 6500 50  0001 L CNN
-	1    7000 6500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Isolator:PC817 U2
 U 1 1 61185582
@@ -434,50 +210,6 @@ F 3 "~" H 6250 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D D6
-U 1 1 60F51161
-P 8700 6950
-F 0 "D6" H 8700 6734 50  0000 C CNN
-F 1 "1N4148WQ-7-F" H 8700 6825 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 8700 6950 50  0001 C CNN
-F 3 "~" H 8700 6950 50  0001 C CNN
-	1    8700 6950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D5
-U 1 1 60EE583B
-P 8700 6600
-F 0 "D5" H 8700 6384 50  0000 C CNN
-F 1 "1N4148WQ-7-F" H 8700 6475 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 8700 6600 50  0001 C CNN
-F 3 "~" H 8700 6600 50  0001 C CNN
-	1    8700 6600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R25
-U 1 1 60FB6A44
-P 9200 7200
-F 0 "R25" V 8993 7200 50  0000 C CNN
-F 1 "10k/1%" V 9084 7200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9130 7200 50  0001 C CNN
-F 3 "~" H 9200 7200 50  0001 C CNN
-	1    9200 7200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 6126E17B
-P 7700 7200
-F 0 "R21" V 7493 7200 50  0000 C CNN
-F 1 "10k/1%" V 7584 7200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7630 7200 50  0001 C CNN
-F 3 "~" H 7700 7200 50  0001 C CNN
-	1    7700 7200
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R22
 U 1 1 6129E1FA
 P 7900 7200
@@ -488,71 +220,12 @@ F 3 "~" H 7900 7200 50  0001 C CNN
 	1    7900 7200
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R R20
-U 1 1 616BB340
-P 7300 7200
-F 0 "R20" V 7093 7200 50  0000 C CNN
-F 1 "10k/1%" V 7184 7200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7230 7200 50  0001 C CNN
-F 3 "~" H 7300 7200 50  0001 C CNN
-	1    7300 7200
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7300 6950 8550 6950
-Connection ~ 7300 6950
-Wire Wire Line
-	7300 6950 7300 7050
-Wire Wire Line
-	7300 6600 7700 6600
-Wire Wire Line
-	7300 7550 7300 7350
-$Comp
-L power:GND #PWR040
-U 1 1 616BB34B
-P 7300 7550
-F 0 "#PWR040" H 7300 7300 50  0001 C CNN
-F 1 "GND" H 7305 7377 50  0000 C CNN
-F 2 "" H 7300 7550 50  0001 C CNN
-F 3 "" H 7300 7550 50  0001 C CNN
-	1    7300 7550
-	1    0    0    -1  
-$EndComp
-Text Notes 5950 6900 0    50   ~ 0
-Selbsthaltung Buckconverter
-Wire Notes Line
-	7550 6750 7550 7050
-Wire Notes Line
-	5900 6750 7550 6750
-Wire Notes Line
-	7550 7050 5900 7050
-Wire Notes Line
-	5900 6750 5900 7050
 Wire Notes Line
 	7550 5650 5900 5650
 Wire Notes Line
 	5900 4850 5900 5650
-Text Notes 8350 6300 0    50   ~ 0
-OR Gate
-Text Notes 5950 6050 0    50   ~ 0
-Aktivierung Buckconverter
-Wire Notes Line
-	7550 5900 7550 6700
-Wire Notes Line
-	5900 5900 7550 5900
-Wire Notes Line
-	5900 5900 5900 6700
-Wire Notes Line
-	7550 6700 5900 6700
 Wire Wire Line
 	7400 5350 7400 5200
-Wire Wire Line
-	7400 6400 7400 6250
-Connection ~ 6600 6600
-Connection ~ 7700 6600
-Wire Wire Line
-	7700 6600 8550 6600
 Connection ~ 7900 5550
 Wire Wire Line
 	7900 5550 7900 7050
@@ -573,86 +246,18 @@ F 3 "" H 7900 7550 50  0001 C CNN
 	1    7900 7550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7700 7550 7700 7350
-$Comp
-L power:GND #PWR043
-U 1 1 6127A507
-P 7700 7550
-F 0 "#PWR043" H 7700 7300 50  0001 C CNN
-F 1 "GND" H 7705 7377 50  0000 C CNN
-F 2 "" H 7700 7550 50  0001 C CNN
-F 3 "" H 7700 7550 50  0001 C CNN
-	1    7700 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 6600 7700 7050
-Text HLabel 6350 6950 0    50   Input ~ 0
-PWRHold
-Wire Wire Line
-	9200 6600 9200 6950
-Connection ~ 9200 6950
-Wire Wire Line
-	8850 6950 9200 6950
-$Comp
-L power:GND #PWR048
-U 1 1 60FB7C2A
-P 9200 7550
-F 0 "#PWR048" H 9200 7300 50  0001 C CNN
-F 1 "GND" H 9205 7377 50  0000 C CNN
-F 2 "" H 9200 7550 50  0001 C CNN
-F 3 "" H 9200 7550 50  0001 C CNN
-	1    9200 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 7350 9200 7550
-Wire Wire Line
-	6350 6950 7300 6950
-Wire Wire Line
-	9200 6950 9200 7050
-Wire Wire Line
-	8850 6600 9200 6600
-Wire Notes Line
-	9500 6200 9500 7800
-Wire Notes Line
-	9500 7800 8300 7800
-Wire Notes Line
-	8300 7800 8300 6200
-Text Notes 8100 6550 0    50   ~ 0
-12V
-Text Notes 8100 6900 0    50   ~ 0
-5V
-Wire Wire Line
-	6600 5550 6600 6600
+Text HLabel 1950 9150 0    50   Input ~ 0
+Bell_In
 Wire Wire Line
 	6700 5550 6600 5550
 Wire Wire Line
-	6600 6600 6600 7550
-Wire Wire Line
-	6700 6600 6600 6600
-Wire Wire Line
 	5800 5350 6100 5350
-Wire Notes Line
-	8300 6200 9500 6200
 Text Notes 5950 5000 0    50   ~ 0
 Signalisierung an ATMega
 Wire Notes Line
 	7550 4850 7550 5650
 Wire Notes Line
 	5900 4850 7550 4850
-$Comp
-L power:VPP #PWR042
-U 1 1 60D96107
-P 7400 6250
-F 0 "#PWR042" H 7400 6100 50  0001 C CNN
-F 1 "VPP" H 7415 6423 50  0000 C CNN
-F 2 "" H 7400 6250 50  0001 C CNN
-F 3 "" H 7400 6250 50  0001 C CNN
-	1    7400 6250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR041
 U 1 1 60F76FDA
@@ -670,12 +275,6 @@ Wire Wire Line
 	6400 5350 6700 5350
 Wire Wire Line
 	7300 5350 7400 5350
-Wire Wire Line
-	7300 6400 7400 6400
-Wire Wire Line
-	6100 6400 5800 6400
-Wire Wire Line
-	6700 6400 6400 6400
 Wire Notes Line
 	9000 4450 1250 4450
 $Comp
@@ -838,17 +437,6 @@ Wire Notes Line
 Wire Notes Line
 	1250 10250 7150 10250
 $Comp
-L power:-BATT #PWR063
-U 1 1 618BBB9B
-P 13500 7000
-F 0 "#PWR063" H 13500 6850 50  0001 C CNN
-F 1 "-BATT" H 13515 7173 50  0000 C CNN
-F 2 "" H 13500 7000 50  0001 C CNN
-F 3 "" H 13500 7000 50  0001 C CNN
-	1    13500 7000
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+BATT #PWR062
 U 1 1 618BC6A5
 P 13500 5400
@@ -859,10 +447,6 @@ F 3 "" H 13500 5400 50  0001 C CNN
 	1    13500 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13200 6250 13650 6250
-Text Label 13650 6250 0    50   ~ 0
-IGNITION
 Text Notes 15300 5450 2    50   ~ 0
 5V / 3,5A \n
 $Comp
@@ -1038,34 +622,12 @@ F 3 "" H 5600 9950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 9750 4250 9350
-$Comp
-L Connector:Screw_Terminal_01x08 J5
-U 1 1 62505DBB
-P 13000 5850
-F 0 "J5" H 13000 6300 50  0000 C CNN
-F 1 "Phoenix_PTS-1,5-8-5.0-H" V 13200 5850 50  0000 C CNN
-F 2 "TeKaDe:TerminalBlock_Phoenix_PTS-1,5-8-5.0-H_1x08_P5.00mm_Horizontal" H 13000 5850 50  0001 C CNN
-F 3 "~" H 13000 5850 50  0001 C CNN
-	1    13000 5850
-	-1   0    0    -1  
-$EndComp
 Text Notes 2850 9700 0    50   ~ 0
 Zener 5V1 350mW
 Text Notes 4750 5950 0    50   ~ 0
 Zener 12V 350mW
-Text Notes 7800 2800 0    50   ~ 0
-Zener 12V 350mW
 Text Notes 6250 9600 0    50   ~ 0
 VGS +-20V
-Wire Wire Line
-	13200 6150 13500 6150
-Connection ~ 13500 6150
-Wire Wire Line
-	13500 6150 13500 7000
-Wire Wire Line
-	13200 6050 13500 6050
-Wire Wire Line
-	13500 6050 13500 6150
 Wire Wire Line
 	13200 5950 13500 5950
 Wire Wire Line
@@ -1097,9 +659,6 @@ F 3 "" H 4550 9250 50  0001 L CNN
 	1    4550 9250
 	1    0    0    -1  
 $EndComp
-Connection ~ 5800 5450
-Wire Wire Line
-	5800 5450 5800 6400
 Wire Wire Line
 	3350 5450 4250 5450
 Connection ~ 3350 5450
@@ -1179,163 +738,57 @@ F 3 "~" H 15000 6200 50  0001 C CNN
 	1    15000 6200
 	0    1    1    0   
 $EndComp
-Text Notes 7750 2250 0    50   Italic 0
-Unzureichend um U4 zu driven\nVpp test = ca0.9V
 Text Notes 6550 5200 0    50   Italic 0
 U2.1: ca 0.9V kommen nur an
-Text Notes 6600 6200 0    50   Italic 0
-U3.1: ca 0.9V kommen nur an
-Text Notes 9150 2500 0    50   Italic 0
--> andere Z-Diode: Spannung auf Eingangsspannung von Optokoppler reduzierbar\n    -> Was hängt noch an VPP?\n        -> nur Optokoppler für diskretes Or-Gate\n-> anderer Widerstand: \n    - müsste deutlich geringer sein, um Z-Diode bei 12V zu halten\n    - gleiches Verhalten wie derzeit, wenn Batt+ < 12V
-Text Notes 9350 2850 0    50   Italic 0
-Wo findet der Spannungsabfall an VPP statt?\n—> An R24 -> Warum Ist der Widerstand dahinter so gering?
-Text Notes 9350 3450 0    50   Italic 0
-Bei Ingnition low:\nI_vpp = I_batt+ = \nBei Ignition high:\nI_vpp = I_batt+ =\n
-Text Notes 7450 2950 0    50   Italic 0
-Footprint ist falsch \n-> falschherum eingebaut
-$Comp
-L Relay:ADW11 K1
-U 1 1 654AF821
-P 13700 8800
-F 0 "K1" H 13270 8754 50  0000 R CNN
-F 1 "ADW11" H 13270 8845 50  0000 R CNN
-F 2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 15025 8750 50  0001 C CNN
-F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 13700 8800 50  0001 C CNN
-	1    13700 8800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J6
-U 1 1 654B6B2B
-P 15250 8750
-F 0 "J6" H 15330 8742 50  0000 L CNN
-F 1 "Conn_01x08" H 15330 8651 50  0000 L CNN
-F 2 "" H 15250 8750 50  0001 C CNN
-F 3 "~" H 15250 8750 50  0001 C CNN
-	1    15250 8750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Transformer_1P_1S T1
-U 1 1 654C0F6B
-P 14000 7900
-F 0 "T1" H 14000 8281 50  0000 C CNN
-F 1 "Spannungswandler" H 14000 8190 50  0000 C CNN
-F 2 "" H 14000 7900 50  0001 C CNN
-F 3 "~" H 14000 7900 50  0001 C CNN
-	1    14000 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery BT2
-U 1 1 654C3267
-P 12550 8450
-F 0 "BT2" H 12658 8496 50  0000 L CNN
-F 1 "Battery" H 12658 8405 50  0000 L CNN
-F 2 "" V 12550 8510 50  0001 C CNN
-F 3 "~" V 12550 8510 50  0001 C CNN
-	1    12550 8450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15050 8650 14300 8650
-Wire Wire Line
-	14300 8650 14300 8350
-Wire Wire Line
-	14300 8350 13900 8350
-Wire Wire Line
-	13900 8350 13900 8500
-Wire Wire Line
-	13900 9100 13900 9200
-Wire Wire Line
-	13900 9200 14300 9200
-Wire Wire Line
-	14300 8750 15050 8750
-Wire Wire Line
-	14300 8750 14300 9200
-Wire Wire Line
-	12550 8250 12550 7700
-Wire Wire Line
-	12550 7700 13600 7700
-Wire Wire Line
-	13600 8100 13500 8100
-Wire Wire Line
-	13500 8100 13500 8500
-Wire Wire Line
-	13400 9100 13400 9400
-Wire Wire Line
-	13400 9400 12550 9400
-Wire Wire Line
-	12550 9400 12550 8650
-Wire Wire Line
-	14400 8100 14800 8100
-Wire Wire Line
-	14800 8100 14800 8450
-Wire Wire Line
-	14800 8450 15050 8450
-Wire Wire Line
-	14400 7700 14700 7700
-Wire Wire Line
-	14700 7700 14700 8550
-Wire Wire Line
-	14700 8550 15050 8550
-Wire Wire Line
-	15050 8850 14400 8850
-Wire Wire Line
-	14400 8850 14400 9500
-Wire Wire Line
-	12250 9500 12250 8250
-Wire Wire Line
-	12250 8250 12550 8250
-Connection ~ 12550 8250
-Wire Wire Line
-	13400 9400 14650 9400
-Wire Wire Line
-	14650 9400 14650 9050
-Wire Wire Line
-	14650 9050 14900 9050
-Connection ~ 13400 9400
-Wire Wire Line
-	14900 9050 14900 8950
-Wire Wire Line
-	14900 8950 15050 8950
-Connection ~ 14900 9050
-Wire Wire Line
-	14900 9050 15050 9050
-$Comp
-L Switch:SW_DIP_x01 SW1
-U 1 1 65555F1C
-P 14150 9650
-F 0 "SW1" H 13900 9700 50  0000 C CNN
-F 1 "Zündung" H 14150 9500 50  0000 C CNN
-F 2 "" H 14150 9650 50  0001 C CNN
-F 3 "~" H 14150 9650 50  0001 C CNN
-	1    14150 9650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12250 9500 13400 9500
-Wire Wire Line
-	13400 9500 13400 9650
-Wire Wire Line
-	13400 9650 13850 9650
-Connection ~ 13400 9500
-Wire Wire Line
-	13400 9500 14400 9500
-Wire Wire Line
-	14450 9650 14750 9650
-Wire Wire Line
-	14750 9650 14750 9150
-Wire Wire Line
-	14750 9150 15050 9150
 Text Notes 14000 5150 0    50   ~ 0
 Intern\n
-Text Notes 13000 7600 0    50   ~ 0
-Extern\n
 Wire Notes Line
 	12400 4900 12400 7350
 Wire Notes Line
 	12400 7350 15900 7350
-Text HLabel 14200 2850 0    50   Output ~ 0
-3V3_LDO_Out
+Wire Wire Line
+	13500 6050 13500 6150
+Wire Wire Line
+	13200 6050 13500 6050
+Wire Wire Line
+	13500 6150 13500 7000
+Connection ~ 13500 6150
+Wire Wire Line
+	13200 6150 13500 6150
+Text Label 13650 6250 0    50   ~ 0
+IGNITION
+Wire Wire Line
+	13200 6250 13650 6250
+$Comp
+L power:-BATT #PWR063
+U 1 1 618BBB9B
+P 13500 7000
+F 0 "#PWR063" H 13500 6850 50  0001 C CNN
+F 1 "-BATT" H 13515 7173 50  0000 C CNN
+F 2 "" H 13500 7000 50  0001 C CNN
+F 3 "" H 13500 7000 50  0001 C CNN
+	1    13500 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x08 J5
+U 1 1 62505DBB
+P 13000 5850
+F 0 "J5" H 13000 6300 50  0000 C CNN
+F 1 "Phoenix_PTS-1,5-8-5.0-H" V 13200 5850 50  0000 C CNN
+F 2 "TeKaDe:TerminalBlock_Phoenix_PTS-1,5-8-5.0-H_1x08_P5.00mm_Horizontal" H 13000 5850 50  0001 C CNN
+F 3 "~" H 13000 5850 50  0001 C CNN
+	1    13000 5850
+	-1   0    0    -1  
+$EndComp
+Text Notes 9350 3450 0    50   Italic 0
+Bei Ingnition low:\nI_vpp = I_batt+ = \nBei Ignition high:\nI_vpp = I_batt+ =\n
+Text Notes 9350 2850 0    50   Italic 0
+Wo findet der Spannungsabfall an VPP statt?\n—> An R24 -> Warum Ist der Widerstand dahinter so gering?
+Text Notes 9150 2500 0    50   Italic 0
+-> andere Z-Diode: Spannung auf Eingangsspannung von Optokoppler reduzierbar\n    -> Was hängt noch an VPP?\n        -> nur Optokoppler für diskretes Or-Gate\n-> anderer Widerstand: \n    - müsste deutlich geringer sein, um Z-Diode bei 12V zu halten\n    - gleiches Verhalten wie derzeit, wenn Batt+ < 12V
+Wire Notes Line
+	10200 4650 1250 4650
+Wire Wire Line
+	6600 5550 6600 7550
 $EndSCHEMATC

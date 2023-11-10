@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -17,10 +17,6 @@ Wire Wire Line
 	1000 2150 2100 2150
 Wire Wire Line
 	1000 2050 2100 2050
-Text HLabel 6400 2750 2    50   Output ~ 0
-GPIO9
-Wire Wire Line
-	6400 2750 4500 2750
 Text HLabel 6400 2950 2    50   Input ~ 0
 GPIO10
 Wire Wire Line
@@ -31,20 +27,6 @@ Wire Wire Line
 	1000 3550 2100 3550
 Text HLabel 1000 5750 0    50   Input ~ 0
 RUN
-$Comp
-L Device:R R?
-U 1 1 60F86D30
-P 5600 4450
-AR Path="/64BEC8E8/60F86D30" Ref="R?"  Part="1" 
-AR Path="/614D7E9D/60F86D30" Ref="R?"  Part="1" 
-AR Path="/631EEDC8/60F86D30" Ref="R32"  Part="1" 
-F 0 "R32" H 5670 4496 50  0000 L CNN
-F 1 "NA" H 5670 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 4450 50  0001 C CNN
-F 3 "~" H 5600 4450 50  0001 C CNN
-	1    5600 4450
-	-1   0    0    -1  
-$EndComp
 Text Notes 700  7600 0    50   ~ 0
 Änderungen: \nAlle I2C Pullups hier, aber unbestückt (Pin 56/58/80/82 int. 1k8 PU)\nLogik von RUN input nun negiert!\nUART0 wurde zu UART3\nUART1 wurde zu UART0, da UART1 miniUART auf den gleichen Pins\n(vgl. https://www.raspberrypi.org/documentation/configuration/uart.md)\nUSB komplett entfernt, SSH zugriff via Wifi\nActivity LED hinzugefuegt\nPower LED nur als Testpoint\nGPIO9 entfernt, da BM83.MFB nicht benötigt\n\nFeststellungen: \n3,5A 5V Regler reicht leicht, auch inkl. 1,8 und 3,3V Ausgänge\nnEXTRST wird nicht verwendet\nQuelle CM4 Lib: https://github.com/Kedarius/RPi-CM4-Kicad
 $Comp
@@ -281,20 +263,6 @@ Wire Notes Line
 	8150 5600 6950 5600
 Wire Notes Line
 	6950 5600 6950 4200
-$Comp
-L Device:R R?
-U 1 1 60F94A2C
-P 5750 4450
-AR Path="/64BEC8E8/60F94A2C" Ref="R?"  Part="1" 
-AR Path="/614D7E9D/60F94A2C" Ref="R?"  Part="1" 
-AR Path="/631EEDC8/60F94A2C" Ref="R34"  Part="1" 
-F 0 "R34" H 5820 4496 50  0000 L CNN
-F 1 "NA" H 5820 4405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5680 4450 50  0001 C CNN
-F 3 "~" H 5750 4450 50  0001 C CNN
-	1    5750 4450
-	1    0    0    -1  
-$EndComp
 $Comp
 L CM4:Compute_Module_4_Connectors U7
 U 1 1 622AF813
@@ -646,10 +614,6 @@ Connection ~ 4700 4950
 Wire Wire Line
 	4700 4950 4500 4950
 Wire Wire Line
-	4500 4750 5750 4750
-Wire Wire Line
-	4500 4850 5600 4850
-Wire Wire Line
 	4500 3550 5750 3550
 Wire Wire Line
 	4500 3650 5600 3650
@@ -680,10 +644,6 @@ NoConn ~ 2100 4150
 NoConn ~ 2100 4250
 NoConn ~ 2100 4550
 NoConn ~ 2100 3650
-Wire Wire Line
-	4500 3450 6400 3450
-Wire Wire Line
-	4500 2450 6400 2450
 Wire Wire Line
 	4600 2850 4600 3350
 Wire Wire Line
@@ -718,42 +678,6 @@ F 3 "" H 6350 5150 50  0001 C CNN
 	1    6350 5150
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+3V3 #PWR069
-U 1 1 64274D33
-P 5600 4150
-F 0 "#PWR069" H 5600 4000 50  0001 C CNN
-F 1 "+3V3" V 5600 4350 50  0000 C CNN
-F 2 "" H 5600 4150 50  0001 C CNN
-F 3 "" H 5600 4150 50  0001 C CNN
-	1    5600 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR071
-U 1 1 64275A29
-P 5750 4150
-F 0 "#PWR071" H 5750 4000 50  0001 C CNN
-F 1 "+3V3" V 5750 4350 50  0000 C CNN
-F 2 "" H 5750 4150 50  0001 C CNN
-F 3 "" H 5750 4150 50  0001 C CNN
-	1    5750 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 4850 5600 4600
-Connection ~ 5600 4850
-Wire Wire Line
-	5600 4850 6400 4850
-Wire Wire Line
-	5750 4750 5750 4600
-Connection ~ 5750 4750
-Wire Wire Line
-	5750 4750 6400 4750
-Wire Wire Line
-	5600 4300 5600 4150
-Wire Wire Line
-	5750 4300 5750 4150
 $Comp
 L Device:R R?
 U 1 1 642990BB
@@ -924,8 +848,6 @@ NoConn ~ 10900 3150
 NoConn ~ 10900 3050
 NoConn ~ 10900 2850
 NoConn ~ 10900 2750
-NoConn ~ 8900 1050
-NoConn ~ 8900 950 
 NoConn ~ 8900 850 
 $Comp
 L power:+5V #PWR090
@@ -10640,10 +10562,6 @@ Text HLabel 6400 3650 2    50   BiDi ~ 0
 I2C1_SDA
 Text HLabel 6400 3550 2    50   Output ~ 0
 I2C1_SCL
-Text HLabel 6400 2450 2    50   Input ~ 0
-UART3_RX
-Text HLabel 6400 3450 2    50   Output ~ 0
-UART3_TX
 Text HLabel 1000 3350 0    50   Input ~ 0
 UART0_RX
 Text HLabel 1000 3550 0    50   Output ~ 0
@@ -10764,4 +10682,63 @@ $EndComp
 Connection ~ 6500 1650
 Wire Wire Line
 	6500 1650 6450 1650
+NoConn ~ 4500 2450
+NoConn ~ 4500 2750
+NoConn ~ 4500 3450
+NoConn ~ 4500 4750
+NoConn ~ 4500 4850
+Wire Wire Line
+	5750 4300 5750 4150
+Wire Wire Line
+	5600 4300 5600 4150
+$Comp
+L power:+3V3 #PWR071
+U 1 1 64275A29
+P 5750 4150
+F 0 "#PWR071" H 5750 4000 50  0001 C CNN
+F 1 "+3V3" V 5750 4350 50  0000 C CNN
+F 2 "" H 5750 4150 50  0001 C CNN
+F 3 "" H 5750 4150 50  0001 C CNN
+	1    5750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR069
+U 1 1 64274D33
+P 5600 4150
+F 0 "#PWR069" H 5600 4000 50  0001 C CNN
+F 1 "+3V3" V 5600 4350 50  0000 C CNN
+F 2 "" H 5600 4150 50  0001 C CNN
+F 3 "" H 5600 4150 50  0001 C CNN
+	1    5600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F94A2C
+P 5750 4450
+AR Path="/64BEC8E8/60F94A2C" Ref="R?"  Part="1" 
+AR Path="/614D7E9D/60F94A2C" Ref="R?"  Part="1" 
+AR Path="/631EEDC8/60F94A2C" Ref="R34"  Part="1" 
+F 0 "R34" H 5820 4496 50  0000 L CNN
+F 1 "NA" H 5820 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5680 4450 50  0001 C CNN
+F 3 "~" H 5750 4450 50  0001 C CNN
+	1    5750 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F86D30
+P 5600 4450
+AR Path="/64BEC8E8/60F86D30" Ref="R?"  Part="1" 
+AR Path="/614D7E9D/60F86D30" Ref="R?"  Part="1" 
+AR Path="/631EEDC8/60F86D30" Ref="R32"  Part="1" 
+F 0 "R32" H 5670 4496 50  0000 L CNN
+F 1 "NA" H 5670 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 4450 50  0001 C CNN
+F 3 "~" H 5600 4450 50  0001 C CNN
+	1    5600 4450
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

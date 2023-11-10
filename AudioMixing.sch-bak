@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -111,7 +111,7 @@ Connection ~ 4400 3550
 Wire Wire Line
 	4400 2250 4550 2250
 Wire Wire Line
-	4400 2250 4400 3550
+	4400 2250 4400 2850
 NoConn ~ 4550 3450
 NoConn ~ 4550 3650
 NoConn ~ 4550 3950
@@ -311,12 +311,6 @@ Wire Wire Line
 	1700 2350 4550 2350
 Wire Wire Line
 	9200 2350 7150 2350
-Wire Wire Line
-	1700 2650 4550 2650
-Wire Wire Line
-	1700 2750 4550 2750
-Wire Wire Line
-	1700 2850 4550 2850
 Wire Wire Line
 	2600 4450 2600 4250
 Connection ~ 2600 4250
@@ -971,16 +965,6 @@ Text HLabel 10150 2550 2    50   BiDi ~ 0
 I2C_SDA
 Text HLabel 10150 2650 2    50   Input ~ 0
 I2C_SCL
-Text HLabel 1700 2850 0    50   Input ~ 0
-I2S1_SD_IN
-Text HLabel 1700 2650 0    50   Output ~ 0
-I2S1_SD_OUT
-Text HLabel 1700 2750 0    50   BiDi ~ 0
-I2S1_SD_CLK
-Wire Wire Line
-	1700 2950 4550 2950
-Text HLabel 1700 2950 0    50   BiDi ~ 0
-I2S1_SD_WS
 Text Notes 650  2100 0    50   ~ 0
 I2S2_Slave
 Text Notes 600  2800 0    50   ~ 0
@@ -1404,4 +1388,12 @@ Wire Notes Line
 	3400 4100 1000 4100
 Wire Notes Line
 	1000 4100 1000 3050
+NoConn ~ 4550 2650
+NoConn ~ 4550 2750
+NoConn ~ 4550 2950
+Wire Wire Line
+	4550 2850 4400 2850
+Connection ~ 4400 2850
+Wire Wire Line
+	4400 2850 4400 3550
 $EndSCHEMATC
