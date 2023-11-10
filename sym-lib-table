@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name TeKaDe)(type Legacy)(uri ${KIPRJMOD}/libs/TeKaDe.lib)(options "")(descr ""))
   (lib (name CM4)(type Legacy)(uri ${KIPRJMOD}/libs/Raspberry_Pi_Compute_Module_4.lib)(options "")(descr ""))
+  (lib (name 67910-0002)(type Legacy)(uri /Users/fwilke/Development/Tekade/BSA31/BSA31-Bediengeraet/libs/67910-0002.lib)(options "")(descr ""))
 )

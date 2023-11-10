@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -10702,4 +10702,66 @@ F 3 "~" H 7150 4850 50  0001 C CNN
 	1    7150 4850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_A J?
+U 1 1 669C0DA2
+P 6550 950
+F 0 "J?" H 6607 1417 50  0000 C CNN
+F 1 "USB_A" H 6607 1326 50  0000 C CNN
+F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 6700 900 50  0001 C CNN
+F 3 " ~" H 6700 900 50  0001 C CNN
+	1    6550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 669FB474
+P 7000 650
+F 0 "#PWR?" H 7000 500 50  0001 C CNN
+F 1 "+5V" H 7015 823 50  0000 C CNN
+F 2 "" H 7000 650 50  0001 C CNN
+F 3 "" H 7000 650 50  0001 C CNN
+	1    7000 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 750  7000 750 
+Wire Wire Line
+	7000 750  7000 650 
+Wire Wire Line
+	6850 950  7950 950 
+Wire Wire Line
+	7950 950  7950 1050
+Wire Wire Line
+	7950 1050 8900 1050
+Wire Wire Line
+	6850 1050 7050 1050
+Wire Wire Line
+	7050 1050 7050 850 
+Wire Wire Line
+	7050 850  8050 850 
+Wire Wire Line
+	8050 850  8050 950 
+Wire Wire Line
+	8050 950  8900 950 
+Wire Wire Line
+	6550 1350 6550 1650
+Wire Wire Line
+	6550 1650 6500 1650
+Wire Wire Line
+	6450 1650 6450 1350
+$Comp
+L power:GND #PWR?
+U 1 1 66A27290
+P 6500 1650
+F 0 "#PWR?" H 6500 1400 50  0001 C CNN
+F 1 "GND" H 6505 1477 50  0000 C CNN
+F 2 "" H 6500 1650 50  0001 C CNN
+F 3 "" H 6500 1650 50  0001 C CNN
+	1    6500 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 1650
+Wire Wire Line
+	6500 1650 6450 1650
 $EndSCHEMATC

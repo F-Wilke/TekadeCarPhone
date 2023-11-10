@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 9
+Sheet 3 8
 Title "TIDA-00746-SchDoc"
 Date "05 06 2020"
 Rev ""
@@ -1336,4 +1336,6 @@ Wire Notes Line
 	12400 4900 12400 7350
 Wire Notes Line
 	12400 7350 15900 7350
+Text HLabel 14200 2850 0    50   Output ~ 0
+3V3_LDO_Out
 $EndSCHEMATC
