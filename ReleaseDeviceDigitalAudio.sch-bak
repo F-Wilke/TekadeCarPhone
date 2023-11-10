@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 9
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -24,21 +24,11 @@ S 8050 6350 1600 2350
 U 60F18E7A
 F0 "ControllerUIBoard" 50
 F1 "ControllerUIBoard.sch" 50
-F2 "IGNITION_SENSE" I R 9650 8400 50 
-F3 "5V_EN_OUT" O R 9650 8500 50 
-F4 "7Seg_Driver_D" O R 9650 7700 50 
-F5 "7Seg_Driver_C" O R 9650 7600 50 
-F6 "7Seg_Driver_B" O R 9650 7500 50 
-F7 "7Seg_Driver_A" O R 9650 7400 50 
-F8 "7Seg_Decoder_D3" O R 9650 7050 50 
-F9 "7Seg_Decoder_D4" O R 9650 7150 50 
-F10 "7Seg_Decoder_D2" O R 9650 6950 50 
-F11 "7Seg_Decoder_D1" O R 9650 6850 50 
-F12 "BrightnessPWM" O R 9650 6650 50 
-F13 "RPI_RUN" O L 8050 8450 50 
-F14 "UART1_RX" I L 8050 6950 50 
-F15 "UART1_TX" O L 8050 7050 50 
-F16 "5V_BL_SUPPLY" O R 9650 7850 50 
+F2 "IGNITION_SENSE" I R 9650 8500 50 
+F3 "5V_EN_OUT" O R 9650 8400 50 
+F4 "RPI_RUN" O L 8050 8450 50 
+F5 "UART1_RX" I L 8050 6950 50 
+F6 "UART1_TX" O L 8050 7050 50 
 $EndSheet
 $Sheet
 S 10950 8150 1600 550 
@@ -47,6 +37,7 @@ F0 "PowerSupply" 50
 F1 "PowerSupplyCM4.sch" 50
 F2 "PWRHold" I L 10950 8400 50 
 F3 "Ignition" O L 10950 8500 50 
+F4 "3V3_LDO_Out" O L 10950 8600 50 
 $EndSheet
 $Sheet
 S 3950 1100 1600 7600
@@ -69,42 +60,6 @@ F14 "I2S_SD_OUT" O R 5550 2150 50
 F15 "I2S_SD_CLK" B R 5550 2350 50 
 F16 "I2S_SD_WS" B R 5550 2450 50 
 $EndSheet
-$Sheet
-S 10950 6350 1600 1600
-U 60F87146
-F0 "7SegmentDriver" 50
-F1 "7SegmentDriver.sch" 50
-F2 "7Seg_Decoder_D3" I L 10950 7050 50 
-F3 "7Seg_Decoder_D4" I L 10950 7150 50 
-F4 "7Seg_Decoder_D2" I L 10950 6950 50 
-F5 "7Seg_Driver_D" I L 10950 7700 50 
-F6 "7Seg_Driver_C" I L 10950 7600 50 
-F7 "7Seg_Driver_B" I L 10950 7500 50 
-F8 "7Seg_Driver_A" I L 10950 7400 50 
-F9 "7Seg_Decoder_D1" I L 10950 6850 50 
-F10 "BrightnessPWM" I L 10950 6650 50 
-F11 "5V_BL_SUPPLY" I L 10950 7850 50 
-$EndSheet
-Wire Wire Line
-	9650 7400 10950 7400
-Wire Wire Line
-	9650 7700 10950 7700
-Wire Wire Line
-	9650 7600 10950 7600
-Wire Wire Line
-	9650 7500 10950 7500
-Wire Wire Line
-	9650 7150 10950 7150
-Wire Wire Line
-	9650 7050 10950 7050
-Wire Wire Line
-	9650 6950 10950 6950
-Wire Wire Line
-	9650 6850 10950 6850
-Wire Wire Line
-	9650 6650 10950 6650
-Text Notes 11000 6500 0    50   ~ 0
-IO Voltage: 5V
 Wire Wire Line
 	5550 2450 8050 2450
 Wire Wire Line
@@ -358,8 +313,6 @@ F 3 "~" H 2350 9700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 7850 10950 7850
-Wire Wire Line
 	9650 2000 10050 2000
 Wire Wire Line
 	9650 1350 10050 1350
@@ -486,4 +439,6 @@ F 3 "" H 13000 2750 50  0001 C CNN
 	1    13000 2750
 	1    0    0    -1  
 $EndComp
+Text Notes 9600 8900 0    50   Italic 0
+Ignition sense und power hold vertauscht\n\n03.07.23: behoben
 $EndSCHEMATC
