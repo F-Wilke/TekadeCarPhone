@@ -791,4 +791,6 @@ Wire Notes Line
 	10200 4650 1250 4650
 Wire Wire Line
 	6600 5550 6600 7550
+Text Notes 5850 9500 0    50   ~ 0
+Auch hier: Footprint falsch!
 $EndSCHEMATC
