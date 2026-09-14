@@ -43,7 +43,7 @@ Wire Wire Line
 	5800 6550 5800 6850
 Wire Wire Line
 	5950 6950 5700 6950
-Text HLabel 6350 3550 2    50   Input ~ 0
+Text HLabel 1800 3250 0    50   Input ~ 0
 IGNITION_SENSE
 Text Label 1600 3550 2    50   ~ 0
 LED_GN
@@ -695,20 +695,8 @@ Wire Wire Line
 	7400 2650 7400 2150
 Wire Wire Line
 	7400 2150 8200 2150
-Text Label 6350 1850 0    50   ~ 0
-Button_G
-Text Label 6350 1650 0    50   ~ 0
+Text Label 6350 3750 0    50   ~ 0
 Button_S
-Text Label 6350 1950 0    50   ~ 0
-Button_P
-Text Label 6350 2050 0    50   ~ 0
-Button_X
-Wire Wire Line
-	5300 1650 5450 1650
-Wire Wire Line
-	6350 1850 5700 1850
-Wire Wire Line
-	5300 1950 5950 1950
 Text Label 1800 1850 2    50   ~ 0
 Button_1
 Wire Wire Line
@@ -745,10 +733,8 @@ Text Label 1800 2950 2    50   ~ 0
 Button_R
 Wire Wire Line
 	1800 2950 3200 2950
-Text Label 1800 3250 2    50   ~ 0
+Text Label 6350 1950 0    50   ~ 0
 Button_0
-Wire Wire Line
-	1800 3250 2000 3250
 Text Label 1800 3650 2    50   ~ 0
 Button_M
 Wire Wire Line
@@ -1048,23 +1034,23 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0110
 U 1 1 66877D88
-P 950 2800
-F 0 "#PWR0110" H 950 2650 50  0001 C CNN
-F 1 "+5V" H 965 2973 50  0000 C CNN
-F 2 "" H 950 2800 50  0001 C CNN
-F 3 "" H 950 2800 50  0001 C CNN
-	1    950  2800
+P 6200 1100
+F 0 "#PWR0110" H 6200 950 50  0001 C CNN
+F 1 "+5V" H 6215 1273 50  0000 C CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "" H 6200 1100 50  0001 C CNN
+	1    6200 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 66877D8F
-P 950 2950
-F 0 "R7" H 1020 2996 50  0000 L CNN
-F 1 "22k/1%" H 1020 2905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 880 2950 50  0001 C CNN
-F 3 "~" H 950 2950 50  0001 C CNN
-	1    950  2950
+P 6200 1250
+F 0 "R7" H 6270 1296 50  0000 L CNN
+F 1 "22k/1%" H 6270 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6130 1250 50  0001 C CNN
+F 3 "~" H 6200 1250 50  0001 C CNN
+	1    6200 1250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1089,13 +1075,6 @@ F 3 "~" H 700 2950 50  0001 C CNN
 	1    700  2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  3100 2000 3100
-Wire Wire Line
-	2000 3100 2000 3250
-Connection ~ 2000 3250
-Wire Wire Line
-	2000 3250 4100 3250
 Wire Wire Line
 	700  3100 700  3150
 Wire Wire Line
@@ -1149,26 +1128,6 @@ F 3 "~" H 6200 4500 50  0001 C CNN
 	1    6200 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5450 4350 5450 1650
-Connection ~ 5450 1650
-Wire Wire Line
-	5450 1650 6350 1650
-Wire Wire Line
-	5700 4350 5700 1850
-Connection ~ 5700 1850
-Wire Wire Line
-	5700 1850 5300 1850
-Wire Wire Line
-	5950 4350 5950 1950
-Connection ~ 5950 1950
-Wire Wire Line
-	5950 1950 6350 1950
-Wire Wire Line
-	5300 2050 6200 2050
-Connection ~ 6200 2050
-Wire Wire Line
-	6200 2050 6350 2050
 $Comp
 L power:GND #PWR0113
 U 1 1 668B5B6B
@@ -1224,13 +1183,9 @@ Wire Wire Line
 Text HLabel 6350 3650 2    50   Output ~ 0
 Bell_Out
 Wire Wire Line
-	6350 3550 5300 3550
+	6350 1950 6200 1950
 Text Label 6350 2150 0    50   ~ 0
 7seg_dec_D1
-Wire Wire Line
-	5300 2150 6350 2150
-Wire Wire Line
-	6200 2050 6200 4350
 Text Label 6350 2250 0    50   ~ 0
 7seg_dec_D4
 Text Label 6350 2350 0    50   ~ 0
@@ -1403,77 +1358,14 @@ Wire Wire Line
 	7900 5850 7900 5200
 Wire Wire Line
 	7900 5200 8100 5200
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J6
-U 1 1 65792FC8
-P 3650 4700
-F 0 "J6" H 3700 5017 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 3700 4926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3650 4700 50  0001 C CNN
-F 3 "~" H 3650 4700 50  0001 C CNN
-	1    3650 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0171
-U 1 1 6579FFFD
-P 4300 4800
-F 0 "#PWR0171" H 4300 4550 50  0001 C CNN
-F 1 "GND" H 4305 4627 50  0000 C CNN
-F 2 "" H 4300 4800 50  0001 C CNN
-F 3 "" H 4300 4800 50  0001 C CNN
-	1    4300 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 4800 4300 4600
-$Comp
-L power:+5V #PWR0172
-U 1 1 657ACA9A
-P 3200 4400
-F 0 "#PWR0172" H 3200 4250 50  0001 C CNN
-F 1 "+5V" H 3215 4573 50  0000 C CNN
-F 2 "" H 3200 4400 50  0001 C CNN
-F 3 "" H 3200 4400 50  0001 C CNN
-	1    3200 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 4400 3200 4600
-Wire Wire Line
-	3200 4600 3450 4600
 Wire Wire Line
 	6350 3650 5300 3650
-Text Label 6350 3950 0    50   ~ 0
-Ext2
 Wire Wire Line
-	6350 3950 5300 3950
-Text Label 6350 3750 0    50   ~ 0
-Ext3
+	6350 3950 6200 3950
 Wire Wire Line
-	6350 3750 5300 3750
-Text Label 3350 4700 2    50   ~ 0
-Ext1
-Text Label 3350 4800 2    50   ~ 0
-Ext2
+	6350 3750 5700 3750
 Wire Wire Line
-	3350 4800 3450 4800
-Wire Wire Line
-	3450 4700 3350 4700
-Text Label 4050 4800 0    50   ~ 0
-Ext3
-Wire Wire Line
-	4050 4800 3950 4800
-Text Label 6350 3850 0    50   ~ 0
-Ext4
-Wire Wire Line
-	6350 3850 5300 3850
-Text Label 4050 4700 0    50   ~ 0
-Ext4
-Wire Wire Line
-	4050 4700 3950 4700
-Wire Wire Line
-	3950 4600 4300 4600
+	6350 3850 5950 3850
 Text HLabel 6350 3450 2    50   Output ~ 0
 RPI_RUN
 Text HLabel 7000 2950 2    50   Input ~ 0
@@ -1513,4 +1405,44 @@ F 3 "~" H 10500 5950 50  0001 C CNN
 	1    10500 5950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5300 2150 6350 2150
+Wire Wire Line
+	5300 2050 5450 2050
+Text Label 6350 2050 0    50   ~ 0
+Button_X
+Text Label 6350 3950 0    50   ~ 0
+Button_P
+Text Label 6350 3850 0    50   ~ 0
+Button_G
+NoConn ~ 5300 1650
+NoConn ~ 5300 1850
+Wire Wire Line
+	5450 4350 5450 2050
+Connection ~ 5450 2050
+Wire Wire Line
+	5450 2050 6350 2050
+Wire Wire Line
+	5700 4350 5700 3750
+Connection ~ 5700 3750
+Wire Wire Line
+	5700 3750 5300 3750
+Wire Wire Line
+	5950 4350 5950 3850
+Connection ~ 5950 3850
+Wire Wire Line
+	5950 3850 5300 3850
+Wire Wire Line
+	6200 4350 6200 3950
+Connection ~ 6200 3950
+Wire Wire Line
+	6200 3950 5300 3950
+Wire Wire Line
+	1800 3250 4100 3250
+Wire Wire Line
+	6200 1400 6200 1950
+Wire Wire Line
+	5300 1950 6200 1950
+Connection ~ 6200 1950
+NoConn ~ 5300 3550
 $EndSCHEMATC
