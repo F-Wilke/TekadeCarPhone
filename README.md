@@ -1,6 +1,6 @@
 # TekadeCarPhone Hardware Design
 
-This repository contains the KiCad source files for the **TeKaDe Car Phone** electronics, including the main baseboard, standalone UI board, libraries, production outputs, and reference documentation.
+This repository contains the KiCad source files for the **Tekade Car Phone** electronics, including the main baseboard, standalone UI board, libraries, production outputs, and reference documentation.
 
 ## Project Contents
 
