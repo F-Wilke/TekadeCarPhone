@@ -35,8 +35,9 @@ This repository contains the KiCad source files for the **TeKaDe Car Phone** ele
 
 ## Tooling
 
-- KiCad project and schematic format indicates KiCad 5-era files (`EESchema Schematic File Version 4`).
+- **Recommended:** KiCad **5.1.x** (project files use `.pro` format and schematics are `EESchema Schematic File Version 4`).
 - Open `.pro` projects in KiCad to browse schematics, PCB layout, and regenerate outputs.
+- If using newer KiCad versions, open files carefully to avoid unintentionally migrating legacy project formats.
 
 ## Typical Workflow
 
