@@ -66,7 +66,7 @@ The CM4 baseboard design is split into functional blocks. The key components use
 
 ## Tooling
 
-- **Recommended:** KiCad **5.1.x** (project files use `.pro` format and schematics are `EESchema Schematic File Version 4`).
+- Project files are in a legacy KiCad format (`.pro` and `EESchema Schematic File Version 4`).
 - Open `.pro` projects in KiCad to browse schematics, PCB layout, and regenerate outputs.
 - If using newer KiCad versions, open files carefully to avoid unintentionally migrating legacy project formats.
 
